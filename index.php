@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     // Your email (where you receive notifications)
-    $to = "hardikprajapati8104@gmail.com";   // 🔴 change this
+    $to = "Info@theeuphoriagroup.com";    
     $subject = "New Notify Request";
 
     $message = "
