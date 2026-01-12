@@ -14,6 +14,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Admin email
     $to = "Info@theeuphoriagroup.com";
 
+    // CC email
+    $cc = "gk@devoriontech.io";
+
     // Email subject
     $subject = "New User Request Received";
 
@@ -32,6 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Email headers
     $headers  = "From: theeuphoriagroup <no-reply@" . $_SERVER['SERVER_NAME'] . ">\r\n";
     $headers .= "Reply-To: {$email}\r\n";
+    $headers .= "Cc: {$cc}\r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
     // Localhost check
