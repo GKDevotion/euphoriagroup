@@ -115,8 +115,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
  
                     <!-- Social Icons -->
                     <div class="social-icons mt-5">
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/euphoriagroup.official/"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/1FvNRPxKzp/"><i class="bi bi-facebook"></i></a>
                         <a href="#"><i class="bi bi-youtube"></i></a>
                         <a href="#"><i class="bi bi-linkedin"></i></a>
                         <a href="#"><i class="bi bi-twitter-x"></i></a>
@@ -125,7 +125,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
                 <!-- RIGHT IMAGE -->
                 <div class="col-lg-6 text-center">
-                    <img src="assets/images/coming-soon-illustration.png"
+                    <img src="assets/images/welcome.png"
                         class="img-fluid coming-img"
                         alt="Welcome Page Image">
                 </div>
