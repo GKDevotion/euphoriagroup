@@ -11,21 +11,30 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         exit;
     }
 
-    // Your email (where you receive notifications)
-    $to = "Info@theeuphoriagroup.com";    
-    $subject = "New Notify Request";
+    // Admin email
+    $to = "Info@theeuphoriagroup.com";
 
-    $message = "
-    New user requested notification.
+    // Email subject
+    $subject = "New User Request Received";
 
-    Email: $email
-    ";
+    // Email message (TEXT format exactly as requested)
+    $message = "Hello Admin,
 
-    $headers  = "From: Notify <no-reply@" . $_SERVER['SERVER_NAME'] . ">\r\n";
-    $headers .= "Reply-To: $email\r\n";
+                A new user has submitted a request on the platform.
+
+                User Email: {$email}
+
+                Please review the request and take the necessary action.
+
+                Regards,
+                theeuphoriagroup";
+
+    // Email headers
+    $headers  = "From: theeuphoriagroup <no-reply@" . $_SERVER['SERVER_NAME'] . ">\r\n";
+    $headers .= "Reply-To: {$email}\r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
-
+    // Localhost check
     if ($_SERVER['SERVER_NAME'] === '127.0.0.1' || $_SERVER['SERVER_NAME'] === 'localhost') {
         $_SESSION['msg'] = "<div class='alert mt-3' style='color:#1f2b6c;'>Thank you! We’ll notify you soon.</div>";
     } else {
@@ -35,11 +44,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $_SESSION['msg'] = "<div class='alert alert-danger mt-3'>Something went wrong.</div>";
         }
     }
-     // 🔁 Redirect to avoid resubmission
+
+    // Redirect to prevent resubmission
     header("Location: " . $_SERVER['PHP_SELF']);
     exit;
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
