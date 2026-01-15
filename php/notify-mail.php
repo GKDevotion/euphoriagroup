@@ -21,7 +21,7 @@ try {
     $to = "info@theeuphoriagroup.com";
 
     // CC email
-    $cc = "gk@devoriontech.io";
+    $cc = "gk@devotiontech.io";
 
     // Subject
     $subject = "New User Request Received";
@@ -47,7 +47,7 @@ try {
 
     echo json_encode([
         'status' => true,
-        'message' => 'Thank you! We’ll notify you soon.'
+        'message' => "Thank you! We'll notify you soon."
     ]);
 
 } catch (Exception $e) {
