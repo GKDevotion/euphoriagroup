@@ -1,61 +1,3 @@
-<?php
-session_start();
-
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-
-    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $_SESSION['msg'] = "<div class='alert alert-danger mt-3'>Please enter a valid email.</div>";
-        header("Location: " . $_SERVER['PHP_SELF']);
-        exit;
-    }
-
-    // Admin email
-    $to = "Info@theeuphoriagroup.com";
-
-    // CC email
-    $cc = "gk@devoriontech.io";
-
-    // Email subject
-    $subject = "New User Request Received";
-
-    // Email message (TEXT format exactly as requested)
-    $message = "Hello Admin,
-
-                A new user has submitted a request on the platform.
-
-                User Email: {$email}
-
-                Please review the request and take the necessary action.
-
-                Regards,
-                theeuphoriagroup";
-
-    // Email headers
-    $headers  = "From: theeuphoriagroup <no-reply@" . $_SERVER['SERVER_NAME'] . ">\r\n";
-    $headers .= "Reply-To: {$email}\r\n";
-    $headers .= "Cc: {$cc}\r\n";
-    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
-
-    // Localhost check
-    if ($_SERVER['SERVER_NAME'] === '127.0.0.1' || $_SERVER['SERVER_NAME'] === 'localhost') {
-        $_SESSION['msg'] = "<div class='alert mt-3' style='color:#1f2b6c;'>Thank you! We’ll notify you soon.</div>";
-    } else {
-        if (mail($to, $subject, $message, $headers)) {
-            $_SESSION['msg'] = "<div class='alert mt-3' style='color:#1f2b6c;'>Thank you! We’ll notify you soon.</div>";
-        } else {
-            $_SESSION['msg'] = "<div class='alert alert-danger mt-3'>Something went wrong.</div>";
-        }
-    }
-
-    // Redirect to prevent resubmission
-    header("Location: " . $_SERVER['PHP_SELF']);
-    exit;
-}
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -72,6 +14,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 
 <body>
@@ -117,16 +61,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     </p>
 
                     <!-- Subscribe Form -->
-                    <form method="post" class="subscribe-form d-flex flex-column flex-sm-row gap-2 ">
-                        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                    <form id="emailNotifyForm" class="subscribe-form d-flex flex-column flex-sm-row gap-2 ">
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Email Address">
                         <button type="submit" class="btn btn-primary px-4">Notify Me!</button>
                     </form>
-                    <?php
-                    if (!empty($_SESSION['msg'])) {
-                        echo $_SESSION['msg'];
-                        unset($_SESSION['msg']);
-                    }
-                    ?>
+
+                    <div id="responseMsg"></div>
  
                     <!-- Social Icons -->
                     <div class="social-icons mt-5">
@@ -149,6 +89,48 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         </div>
     </section>
     <script src="assets/js/index.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#emailNotifyForm').on('submit', function (e) {
+                e.preventDefault();
+
+                let email = $('#email').val().trim();
+                let responseBox = $('#responseMsg');
+
+                responseBox.html('');
+
+                if (email === '') {
+                    responseBox.html("<div class='alert alert-danger mt-3'>Email is required.</div>");
+                    return;
+                }
+
+                $.ajax({
+                    url: "php/notify-mail.php",
+                    type: "POST",
+                    dataType: "json",
+                    data: { email: email },
+                    beforeSend: function () {
+                        responseBox.html("<div class='alert mt-3'>Processing...</div>");
+                    },
+                    success: function (res) {
+                        if (res.status === true) {
+                            responseBox.html("<div class='alert mt-3' style='color:#1f2b6c;'>" + res.message + "</div>");
+                            $('#emailForm')[0].reset();
+                        } else {
+                            responseBox.html("<div class='alert alert-danger mt-3'>" + res.message + "</div>");
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        responseBox.html(
+                            "<div class='alert alert-danger mt-3'>Server error. Please try again later.</div>"
+                        );
+                        console.error(error);
+                    }
+                });
+            });
+        });
+        </script>
 </body>
 
 </html>
