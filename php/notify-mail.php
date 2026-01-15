@@ -29,7 +29,9 @@ try {
     $mail->Username   = 'info@theeuphoriagroup.com';   // your gmail
     $mail->Password   = 'sbwyvvuallyskhug';           // gmail app password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Port       = 587;
+    $mail->Port       = 465;
+    $mail->SMTPDebug = 2; // remove after testing
+    $mail->Debugoutput = 'error_log';
 
     $mail->setFrom('no-reply@theeuphoriagroup.com', 'theeuphoriagroup');
     $mail->addAddress('info@theeuphoriagroup.com');
