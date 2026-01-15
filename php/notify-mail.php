@@ -1,5 +1,14 @@
 <?php
+
 header('Content-Type: application/json');
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+
 
 try {
 
@@ -7,43 +16,35 @@ try {
         throw new Exception('Invalid request method.');
     }
 
-    if (!isset($_POST['email'])) {
-        throw new Exception('Email is required.');
-    }
-
-    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+    $email = filter_var($_POST['email'] ?? '', FILTER_SANITIZE_EMAIL);
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         throw new Exception('Please enter a valid email.');
     }
 
-    // Admin email
-    $to = "info@theeuphoriagroup.com";
+    $mail = new PHPMailer(true);
+    $mail->isSMTP();
+    $mail->Host       = 'smtp.gmail.com';
+    $mail->SMTPAuth   = true;
+    $mail->Username   = 'info@theeuphoriagroup.com';   // your gmail
+    $mail->Password   = 'sbwyvvuallyskhug';           // gmail app password
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Port       = 587;
 
-    // CC email
-    $cc = "gk@devotiontech.io";
+    $mail->setFrom('no-reply@theeuphoriagroup.com', 'theeuphoriagroup');
+    $mail->addAddress('info@theeuphoriagroup.com');
+    $mail->addCC('gk@devotiontech.io');
+    $mail->addReplyTo($email);
 
-    // Subject
-    $subject = "New User Request Received";
+    $mail->isHTML(false);
+    $mail->Subject = 'New User Request Received';
+    $mail->Body    = "Hello Admin,
+                    A new user has submitted a request.
+                    User Email: {$email}
+                    Regards,
+                    theeuphoriagroup";
 
-    // Message
-    $message = "Hello Admin,
-                A new user has submitted a request on the platform.
-                User Email: {$email}
-                Please review the request and take the necessary action.
-                Regards,
-                theeuphoriagroup";
-
-    // Headers
-    $headers  = "From: theeuphoriagroup <no-reply@" . $_SERVER['SERVER_NAME'] . ">\r\n";
-    $headers .= "Reply-To: {$email}\r\n";
-    $headers .= "Cc: {$cc}\r\n";
-    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
-
-    // Send email
-    if (!mail($to, $subject, $message, $headers)) {
-        throw new Exception('Mail sending failed.');
-    }
+    $mail->send();
 
     echo json_encode([
         'status' => true,
@@ -52,7 +53,7 @@ try {
 
 } catch (Exception $e) {
 
-    http_response_code(400);
+    http_response_code(500);
     echo json_encode([
         'status' => false,
         'message' => $e->getMessage()
