@@ -22,31 +22,31 @@ try {
         throw new Exception('Please enter a valid email.');
     }
 
-    $mail = new PHPMailer(true);
-    $mail->isSMTP();
-    $mail->Host       = 'smtp.gmail.com';
-    $mail->SMTPAuth   = true;
-    $mail->Username   = 'info@theeuphoriagroup.com';   // your gmail
-    $mail->Password   = 'sbwyvvuallyskhug';           // gmail app password
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Port       = 465;
-    $mail->SMTPDebug = 2; // remove after testing
-    $mail->Debugoutput = 'error_log';
+    // $mail = new PHPMailer(true);
+    // $mail->isSMTP();
+    // $mail->Host       = 'smtp.gmail.com';
+    // $mail->SMTPAuth   = true;
+    // $mail->Username   = 'info@theeuphoriagroup.com';   // your gmail
+    // $mail->Password   = 'sbwyvvuallyskhug';           // gmail app password
+    // $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    // $mail->Port       = 465;
+    // $mail->SMTPDebug = 2; // remove after testing
+    // $mail->Debugoutput = 'error_log';
 
-    $mail->setFrom('no-reply@theeuphoriagroup.com', 'theeuphoriagroup');
-    $mail->addAddress('info@theeuphoriagroup.com');
-    $mail->addCC('gk@devotiontech.io');
-    $mail->addReplyTo($email);
+    // $mail->setFrom('no-reply@theeuphoriagroup.com', 'theeuphoriagroup');
+    // $mail->addAddress('info@theeuphoriagroup.com');
+    // $mail->addCC('gk@devotiontech.io');
+    // $mail->addReplyTo($email);
 
-    $mail->isHTML(false);
-    $mail->Subject = 'New User Request Received';
-    $mail->Body    = "Hello Admin,
-                    A new user has submitted a request.
-                    User Email: {$email}
-                    Regards,
-                    theeuphoriagroup";
+    // $mail->isHTML(false);
+    // $mail->Subject = 'New User Request Received';
+    // $mail->Body    = "Hello Admin,
+    //                 A new user has submitted a request.
+    //                 User Email: {$email}
+    //                 Regards,
+    //                 theeuphoriagroup";
 
-    $mail->send();
+    // $mail->send();
 
     echo json_encode([
         'status' => true,
