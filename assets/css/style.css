@@ -2,15 +2,41 @@
     --euphoria-blue: #25356F;
     --euphoria-red: #e31e24;
     --text-dark: #333333;
-    --red-blur:#e31e2524;
-    --black-blur:#33333364;
+    --red-blur: #e31e2524;
+    --black-blur: #33333364;
     --bg-light: #f8faff;
     --card-border: rgba(26, 48, 102, 0.12);
 }
 
+* { box-sizing: border-box; }
+
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+/* ─── BACK TO TOP ─── */
+    #backTop {
+        position:fixed; bottom:28px; right:28px;
+        background: var(--euphoria-red);
+        color:#fff; border:none;
+        width:42px; height:42px;
+        border-radius:50%;
+        font-size:1.1rem;
+        display:none;
+        align-items:center; justify-content:center;
+        cursor:pointer;
+        box-shadow:0 4px 16px rgba(227,30,36,.35);
+        z-index:2000;
+        transition:background .2s, transform .2s;
+    }
+    #backTop:hover { 
+        background:var(--euphoria-red); 
+        transform:scale(1.1); 
+    }
+    #backTop.show { 
+        display:flex; 
+    }
+
 
 /* Top Contact Bar */
 .top-navbar {

@@ -84,115 +84,204 @@
             </div>
         </footer>
 
+        <!-- BACK TO TOP -->
+        <button id="backTop" title="Back to top"><i class="bi bi-arrow-up"></i></button>
+        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
         <script>
-    const track = document.getElementById('serviceTrack');
-    const nav = document.getElementById('sliderNav');
-    const cards = track.querySelectorAll('.service-card');
+            if( $('#serviceTrack').length >0 ){
+                const track = document.getElementById('serviceTrack');
+                const nav = document.getElementById('sliderNav');
+                const cards = track.querySelectorAll('.service-card');
+                
+                let isDown = false;
+                let startX;
+                let scrollLeft;
+                let moved = false;
+
+                // Create dynamic dots
+                cards.forEach((_, i) => {
+                    const dot = document.createElement('button');
+                    dot.classList.add('nav-dot');
+                    if(i === 0) dot.classList.add('active');
+                    dot.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        // Calculate exact position including the track's internal padding/offset
+                        const targetScroll = cards[i].offsetLeft - track.offsetLeft;
+                        track.scrollTo({
+                            left: targetScroll,
+                            behavior: 'smooth'
+                        });
+                    });
+                    nav.appendChild(dot);
+                });
+                
+                const dots = document.querySelectorAll('.nav-dot');
     
-    let isDown = false;
-    let startX;
-    let scrollLeft;
-    let moved = false;
-
-    // Create dynamic dots
-    cards.forEach((_, i) => {
-        const dot = document.createElement('button');
-        dot.classList.add('nav-dot');
-        if(i === 0) dot.classList.add('active');
-        dot.addEventListener('click', (e) => {
-            e.preventDefault();
-            // Calculate exact position including the track's internal padding/offset
-            const targetScroll = cards[i].offsetLeft - track.offsetLeft;
-            track.scrollTo({
-                left: targetScroll,
-                behavior: 'smooth'
-            });
-        });
-        nav.appendChild(dot);
-    });
-
-    const dots = document.querySelectorAll('.nav-dot');
-
-    // Drag to Scroll Logic
-    track.addEventListener('mousedown', (e) => {
-        isDown = true;
-        moved = false;
-        track.style.scrollBehavior = 'auto';
-        track.style.scrollSnapType = 'none'; // Temporarily disable snapping for free drag
-        startX = e.pageX - track.offsetLeft;
-        scrollLeft = track.scrollLeft;
-    });
-
-    track.addEventListener('mouseleave', () => { 
-        if (!isDown) return;
-        isDown = false;
-        track.style.scrollBehavior = 'smooth';
-        track.style.scrollSnapType = 'x mandatory';
-    });
-
-    track.addEventListener('mouseup', (e) => { 
-        isDown = false; 
-        track.style.scrollBehavior = 'smooth';
-        track.style.scrollSnapType = 'x mandatory';
-        
-        // If we actually moved, prevent the click event on any child elements (like links)
-        if (moved) {
-            const preventClick = (e) => {
-                e.stopImmediatePropagation();
-                e.preventDefault();
-                track.removeEventListener('click', preventClick, true);
-            };
-            track.addEventListener('click', preventClick, true);
-        }
-    });
-
-    track.addEventListener('mousemove', (e) => {
-            if (!isDown) return;
-            
-            const x = e.pageX - track.offsetLeft;
-            const walk = (x - startX) * 2; 
-            
-            // Threshold to determine if it's a drag or just a tiny accidental wiggle
-            if (Math.abs(x - startX) > 5) {
-                moved = true;
-                e.preventDefault();
-                track.scrollLeft = scrollLeft - walk;
+                // Drag to Scroll Logic
+                track.addEventListener('mousedown', (e) => {
+                    isDown = true;
+                    moved = false;
+                    track.style.scrollBehavior = 'auto';
+                    track.style.scrollSnapType = 'none'; // Temporarily disable snapping for free drag
+                    startX = e.pageX - track.offsetLeft;
+                    scrollLeft = track.scrollLeft;
+                });
+    
+                track.addEventListener('mouseleave', () => { 
+                    if (!isDown) return;
+                    isDown = false;
+                    track.style.scrollBehavior = 'smooth';
+                    track.style.scrollSnapType = 'x mandatory';
+                });
+    
+                track.addEventListener('mouseup', (e) => { 
+                    isDown = false; 
+                    track.style.scrollBehavior = 'smooth';
+                    track.style.scrollSnapType = 'x mandatory';
+                    
+                    // If we actually moved, prevent the click event on any child elements (like links)
+                    if (moved) {
+                        const preventClick = (e) => {
+                            e.stopImmediatePropagation();
+                            e.preventDefault();
+                            track.removeEventListener('click', preventClick, true);
+                        };
+                        track.addEventListener('click', preventClick, true);
+                    }
+                });
+    
+                track.addEventListener('mousemove', (e) => {
+                    if (!isDown) return;
+                    
+                    const x = e.pageX - track.offsetLeft;
+                    const walk = (x - startX) * 2; 
+                    
+                    // Threshold to determine if it's a drag or just a tiny accidental wiggle
+                    if (Math.abs(x - startX) > 5) {
+                        moved = true;
+                        e.preventDefault();
+                        track.scrollLeft = scrollLeft - walk;
+                    }
+                });
+    
+                // Update active dot on scroll
+                track.addEventListener('scroll', () => {
+                    // Find which card is currently most visible in the center of the track
+                    const trackCenter = track.scrollLeft + (track.offsetWidth / 2);
+                    
+                    let activeIndex = 0;
+                    let minDiff = Infinity;
+                    
+                    cards.forEach((card, i) => {
+                        const cardCenter = card.offsetLeft + (card.offsetWidth / 2);
+                        const diff = Math.abs(trackCenter - cardCenter);
+                        if (diff < minDiff) {
+                            minDiff = diff;
+                            activeIndex = i;
+                        }
+                    });
+    
+                    dots.forEach((dot, i) => {
+                        dot.classList.toggle('active', i === activeIndex);
+                    });
+                });
             }
-        });
 
-        // Update active dot on scroll
-        track.addEventListener('scroll', () => {
-            // Find which card is currently most visible in the center of the track
-            const trackCenter = track.scrollLeft + (track.offsetWidth / 2);
-            
-            let activeIndex = 0;
-            let minDiff = Infinity;
-            
-            cards.forEach((card, i) => {
-                const cardCenter = card.offsetLeft + (card.offsetWidth / 2);
-                const diff = Math.abs(trackCenter - cardCenter);
-                if (diff < minDiff) {
-                    minDiff = diff;
-                    activeIndex = i;
+        </script>
+
+        <script>
+            // Simple animation trigger when page loads
+            document.addEventListener('DOMContentLoaded', () => {
+                const cards = document.querySelectorAll('.blog-card');
+                cards.forEach(card => {
+                    card.classList.add('animate-in');
+                });
+            });
+        </script>
+
+        <script>
+            // ─── HERO SWIPER ───
+            new Swiper('.hero-swiper', {
+                loop: true,
+                autoplay: { delay: 5000, disableOnInteraction: false },
+                pagination: { el: '.hero-swiper .swiper-pagination', clickable: true },
+                effect: 'fade',
+                fadeEffect: { crossFade: true },
+                speed: 900,
+            });
+
+            // ─── SERVICE SWIPER ───
+            new Swiper('.service-swiper', {
+                loop: true,
+                autoplay: { delay: 2800, disableOnInteraction: false },
+                pagination: { el: '.service-swiper .swiper-pagination', clickable: true },
+                slidesPerView: 1,
+                spaceBetween: 20,
+                breakpoints: {
+                576: { slidesPerView: 2 },
+                768: { slidesPerView: 3 },
+                1024: { slidesPerView: 4 },
+                },
+                speed: 600,
+            });
+
+            // ─── SCROLL REVEAL ───
+            const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((e, i) => {
+                if (e.isIntersecting) {
+                    setTimeout(() => e.target.classList.add('visible'), i * 80);
+                    observer.unobserve(e.target);
                 }
-            });
+                });
+            }, { threshold: 0.12 });
+            revealEls.forEach(el => observer.observe(el));
 
-            dots.forEach((dot, i) => {
-                dot.classList.toggle('active', i === activeIndex);
-            });
-        });
-    </script>
+            // ─── COUNTER ───
+            function animateCounter(el) {
+                const target = +el.dataset.target;
+                const duration = 1800;
+                const step = target / (duration / 16);
+                let current = 0;
+                const timer = setInterval(() => {
+                current += step;
+                if (current >= target) { current = target; clearInterval(timer); }
+                el.textContent = Math.floor(current).toLocaleString();
+                }, 16);
+            }
 
-    <script>
-        // Simple animation trigger when page loads
-        document.addEventListener('DOMContentLoaded', () => {
-            const cards = document.querySelectorAll('.blog-card');
-            cards.forEach(card => {
-                card.classList.add('animate-in');
+            const counterObs = new IntersectionObserver((entries) => {
+                entries.forEach(e => {
+                if (e.isIntersecting) {
+                    animateCounter(e.target);
+                    counterObs.unobserve(e.target);
+                }
+                });
+            }, { threshold: 0.5 });
+            document.querySelectorAll('.counter').forEach(el => counterObs.observe(el));
+
+            // ─── BACK TO TOP ───
+            const backBtn = document.getElementById('backTop');
+            window.addEventListener('scroll', () => {
+                backBtn.classList.toggle('show', window.scrollY > 400);
             });
-        });
-    </script>
+            backBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+            // ─── NAVBAR ACTIVE ───
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(s => {
+                    if (window.scrollY >= s.offsetTop - 90) current = s.id;
+                });
+                navLinks.forEach(l => {
+                    l.classList.toggle('active', l.getAttribute('href') === '#' + current);
+                });
+            });
+        </script>
     </body>
 </html>

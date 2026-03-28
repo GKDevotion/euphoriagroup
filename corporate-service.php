@@ -1,0 +1,1337 @@
+<?php
+include_once ('elements/header.php');
+?>
+
+<style>
+    .hero-section {
+        position: relative;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+        margin-top: 120px;
+    }
+
+    .hero-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.75);
+    }
+
+    img, svg {
+        vertical-align: middle;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6));
+        backdrop-filter: blur(2px);
+    }
+
+    .hero-blur {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        background: var(--red-blur);
+        filter: blur(90px);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-title {
+        font-size: clamp(28px, 5vw, 48px);
+        font-weight: 700;
+        color: var(--euphoria-blue);
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+        color: var(--text-dark);
+        margin-top: 10px;
+    }
+
+    @media(max-width:768px){
+        .hero-section{
+            height:60vh;
+        }
+        .hero-subtitle{
+            font-size:14px;
+        }
+    }
+</style>
+<!-- Hero Section -->
+<section class="hero-section">
+
+    <!-- Background Image -->
+    <img src="https://picsum.photos/1920/800?business" class="hero-bg" alt="Corporate">
+
+    <!-- Overlay -->
+    <div class="hero-overlay"></div>
+
+    <!-- Blur effect -->
+    <div class="hero-blur"></div>
+
+    <!-- Content -->
+    <div class="hero-content container">
+        <h1 class="hero-title animate__animated animate__fadeInDown">
+            Corporate Service
+        </h1>
+        <p class="hero-subtitle animate__animated animate__fadeInUp">
+            Expert Corporate Solutions for Modern Businesses
+        </p>
+    </div>
+
+</section>
+
+<style>
+  .custom-tabs{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      justify-content:center;
+      margin-bottom:40px;
+  }
+
+  .custom-tabs button{
+      border:none;
+      padding:10px 10px;
+      border-radius:10px;
+      background:#eee;
+      color:#333;
+      font-size:14px;
+      transition:0.3s;
+  }
+
+  .custom-tabs button.active{
+      background:var(--euphoria-blue);
+      color:#fff;
+  }
+
+  .custom-tabs button:hover{
+      background:var(--euphoria-blue);
+      color:#fff;
+  }
+
+  /* Content Section */
+  .content-section{
+      padding:40px 0;
+  }
+
+  .corporate-content-box{
+      display:none;
+  }
+
+  .corporate-content-box.active{
+      display:block;
+  }
+
+  .illustration{
+      max-width:100%;
+  }
+
+  .text-content{
+      color:var(--text-dark);
+      font-size:15px;
+      line-height:1.8;
+  }
+</style>
+
+<div class="container content-section">
+
+    <!-- Tabs -->
+    <div class="custom-tabs">
+        <button class="tab-btn active" data-tab="tab1">Legal & Compliance Services</button>
+        <button class="tab-btn" data-tab="tab2">Accounting & Taxation</button>
+        <button class="tab-btn" data-tab="tab1">Licensing & Regulatory</button>
+        <button class="tab-btn" data-tab="tab2">Corporate Restructuring</button>
+        <button class="tab-btn" data-tab="tab1">Advisory & Consultancy</button>
+        <button class="tab-btn" data-tab="tab2">Additional Services</button>
+        <button class="tab-btn" data-tab="tab1">FAQ</button>
+    </div>
+
+    <!-- Tab Content -->
+    <div id="tab1" class="corporate-content-box active">
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <img src="https://picsum.photos/500/400?city" class="illustration">
+            </div>
+            <div class="col-md-8 text-content">
+                <p>
+                    Entering the Indian market requires more than just registration—it demands strategic planning, regulatory clarity, and structured execution.
+                </p>
+                <p>
+                    Our inbound corporate services cover business setup, compliance, approvals, and legal structuring aligned with Indian laws.
+                </p>
+                <p>
+                    Entering the Indian market requires more than just registration—it demands strategic planning, regulatory clarity, and structured execution.
+                </p>
+                <p>
+                    Our inbound corporate services cover business setup, compliance, approvals, and legal structuring aligned with Indian laws.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="tab2" class="corporate-content-box">
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <img src="https://picsum.photos/500/400?finance" class="illustration">
+            </div>
+            <div class="col-md-8 text-content">
+                <p>
+                    We provide complete accounting, bookkeeping, GST compliance, and taxation services tailored for growing businesses.
+                </p>
+                <p>
+                    Entering the Indian market requires more than just registration—it demands strategic planning, regulatory clarity, and structured execution.
+                </p>
+                <p>
+                    Our inbound corporate services cover business setup, compliance, approvals, and legal structuring aligned with Indian laws.
+                </p>
+                <p>
+                    Entering the Indian market requires more than just registration—it demands strategic planning, regulatory clarity, and structured execution.
+                </p>
+                <p>
+                    Our inbound corporate services cover business setup, compliance, approvals, and legal structuring aligned with Indian laws.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+  const tabs = document.querySelectorAll('.tab-btn');
+  const contents = document.querySelectorAll('.corporate-content-box');
+
+  tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+          tabs.forEach(btn => btn.classList.remove('active'));
+          contents.forEach(box => box.classList.remove('active'));
+
+          tab.classList.add('active');
+          document.getElementById(tab.dataset.tab).classList.add('active');
+      });
+  });
+</script>
+
+<style>
+    
+    /* ─── SCROLL ANIMATIONS ─── */
+    .reveal {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity .7s ease, transform .7s ease;
+    }
+    .reveal.visible {
+        opacity: 1;
+        transform: none;
+    }
+    .reveal-left  { 
+        opacity:0; 
+        transform:translateX(-50px); 
+        transition: opacity .7s ease, transform .7s ease; 
+    }
+    .reveal-right { 
+        opacity:0; 
+        transform:translateX(50px);  
+        transition: opacity .7s ease, transform .7s ease; 
+    }
+    .reveal-left.visible, .reveal-right.visible { 
+        opacity:1; 
+        transform:none; 
+    }
+
+    /* ─── HERO SLIDER ─── */
+    .hero-swiper { 
+        height: 520px; 
+    }
+    .hero-swiper .swiper-slide {
+        position:relative;
+        background-size:cover;
+        background-position:center;
+        display:flex; align-items:center;
+    }
+    .hero-swiper .swiper-slide::before {
+        content:'';
+        position:absolute; inset:0;
+        background: linear-gradient(90deg, rgba(37,53,111,.88) 40%, rgba(37,53,111,.30));
+    }
+    .hero-content { 
+        position:relative; 
+        z-index:2; 
+        color:#fff; 
+    }
+    .hero-content .badge-tag {
+        display:inline-block;
+        background:var(--euphoria-red);
+        color:#fff;
+        font-size:.75rem;
+        font-weight:700;
+        letter-spacing:2px;
+        text-transform:uppercase;
+        padding:5px 14px;
+        border-radius:2px;
+        margin-bottom:16px;
+    }
+    .hero-content h1 { 
+        font-size:2.8rem; 
+        line-height:1.18; 
+        margin-bottom:18px; 
+    }
+    .hero-content p { 
+        font-size:1.05rem; 
+        opacity:.88; 
+        max-width:520px; 
+        margin-bottom:28px; 
+    }
+    .hero-btn {
+        background:var(--euphoria-red);
+        color:#fff;
+        border:none;
+        padding:12px 30px;
+        font-weight:700;
+        font-size:.95rem;
+        border-radius:4px;
+        text-decoration:none;
+        transition:background .3s, transform .2s;
+        display:inline-block;
+        margin-right:10px;
+    }
+    .hero-btn:hover { 
+        background:#b91419; 
+        color:#fff; 
+        transform:scale(1.04); 
+    }
+    .hero-btn-outline {
+        border:2px solid #fff;
+        color:#fff;
+        background:transparent;
+        padding:10px 28px;
+        font-weight:700;
+        border-radius:4px;
+        text-decoration:none;
+        transition:all .3s;
+        display:inline-block;
+    }
+    .hero-btn-outline:hover { 
+        background:#fff; 
+        olor:var(--euphoria-blue); 
+    }
+    .swiper-pagination-bullet { 
+        background:#fff !important; 
+    }
+    .swiper-pagination-bullet-active { 
+        background:var(--euphoria-red) !important; 
+    }
+
+    /* ─── SECTION TITLE ─── */
+    .section-label {
+        display:inline-block;
+        font-size:.75rem;
+        font-weight:700;
+        letter-spacing:3px;
+        text-transform:uppercase;
+        color:var(--euphoria-red);
+        margin-bottom:8px;
+    }
+    .section-title {
+        font-size:2rem;
+        color:var(--euphoria-blue);
+        font-weight:700;
+        line-height:1.2;
+    }
+    .section-divider {
+        width:52px; 
+        height:3px;
+        background:var(--euphoria-red);
+        border-radius:2px;
+        margin:12px 0 20px;
+    }
+    .section-bg-text {
+        position:absolute;
+        font-size:6rem;
+        font-family:'Playfair Display',serif;
+        color:var(--euphoria-blue);
+        opacity:.04;
+        font-weight:700;
+        top:-20px; left:50%; transform:translateX(-50%);
+        white-space:nowrap;
+        pointer-events:none;
+    }
+
+    /* ─── STATS BAR ─── */
+    .stats-bar {
+        background: var(--euphoria-blue);
+        padding:28px 0;
+    }
+    .stat-item { 
+        text-align:center; 
+        color:#fff; 
+    }
+    .stat-item .num {
+        font-size:2.3rem;
+        font-family:'Playfair Display',serif;
+        font-weight:700;
+        color:#fff;
+    }
+    .stat-item .num span { 
+        color:#ffc107; 
+    }
+    .stat-item p { 
+        margin:0; 
+        font-size:.85rem; 
+        opacity:.8; 
+    }
+
+    /* ─── LEGAL & COMPLIANCE ─── */
+    
+    .service-card {
+        background:#fff;
+        border:1px solid var(--card-border);
+        border-radius:10px;
+        padding:24px 20px;
+        text-align:center;
+        transition:box-shadow .3s, transform .3s;
+        height:100%;
+    }
+    .service-card:hover {
+        box-shadow: 0 8px 32px rgba(37,53,111,.14);
+        transform:translateY(-6px);
+    }
+    .service-card .icon-wrap {
+        width:64px; 
+        height:64px; 
+        border-radius:50%;
+        background: var(--red-blur);
+        display:flex; 
+        align-items:center; 
+        justify-content:center;
+        margin:0 auto 16px;
+        transition:background .3s;
+    }
+    .service-card:hover .icon-wrap { 
+        background:var(--euphoria-red); 
+    }
+    .service-card:hover .icon-wrap i { 
+        color:#fff !important; 
+    }
+    .service-card .icon-wrap i { 
+        font-size:1.7rem; 
+        color:var(--euphoria-red); 
+        transition:color .3s; 
+    }
+    .service-card h6 { 
+        font-size:.95rem; 
+        font-weight:700; 
+        color:var(--euphoria-blue); 
+        margin-bottom:8px; 
+    }
+    .service-card p { 
+        font-size:.83rem; 
+        color:#666; 
+        margin:0; 
+    }
+
+    /* Swiper service slider */
+    .service-swiper { 
+        padding-bottom: 38px !important; 
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media(max-width:768px) {
+      .hero-swiper { height:380px; }
+      .hero-content h1 { font-size:1.7rem; }
+      .section-bg-text { font-size:3.5rem; }
+      .adv-img-wrap img { height:260px; }
+    }
+
+    /* ─── COUNTER ANIMATION ─── */
+    .num[data-target] { transition: all .1s; }
+
+    /* ─── PULSE DOT ─── */
+    @keyframes pulse { 
+        0%,100%{transform:scale(1);opacity:1} 
+        50%{transform:scale(1.5);opacity:.5} 
+    }
+    .pulse-dot {
+        width:10px; height:10px; border-radius:50%;
+        background:var(--euphoria-red);
+        display:inline-block;
+        animation:pulse 1.4s infinite;
+        margin-right:8px;
+    }
+</style>
+
+<!-- LEGAL & COMPLIANCE -->
+<section id="legal" class="about-section legal-section py-5">
+    
+    <div class="about-title-bg" style="font-size: 5.9rem;">Reliable Support</div>
+    
+    <div class="container">
+      <div class="row align-items-center">
+          
+        <h2 class="about-title h1">Legal & Compliance Services</h2>
+        <p class="text-muted mx-auto text-center">We provide end-to-end legal and regulatory compliance solutions to protect and grow your business efficiently.</p>
+
+        <!-- Service Swiper Slider -->
+        <div class="swiper service-swiper reveal">
+            <div class="swiper-wrapper pb-2">
+            <div class="swiper-slide">
+                <div class="service-card">
+                <div class="icon-wrap"><i class="bi bi-building"></i></div>
+                <h6>Company Registration</h6>
+                <p>Pvt Ltd, LLP, OPC and all types of company formation with complete documentation.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="service-card">
+                <div class="icon-wrap"><i class="bi bi-shield-check"></i></div>
+                <h6>Regulatory Schema</h6>
+                <p>Comprehensive guidance on applicable regulatory frameworks for your industry.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="service-card">
+                <div class="icon-wrap"><i class="bi bi-file-earmark-text"></i></div>
+                <h6>Drafting & Vetting</h6>
+                <p>Professional contract drafting, review and legal documentation services.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="service-card">
+                <div class="icon-wrap"><i class="bi bi-bank"></i></div>
+                <h6>Shareholder Advisory</h6>
+                <p>Shareholder agreements, rights management, and governance advisory.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="service-card">
+                <div class="icon-wrap"><i class="bi bi-person-badge"></i></div>
+                <h6>Director of Corporate Affairs</h6>
+                <p>ROC filings, board compliance, and statutory secretarial services.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="service-card">
+                <div class="icon-wrap"><i class="bi bi-clipboard-check"></i></div>
+                <h6>Compliance Audit</h6>
+                <p>Thorough compliance audits across legal, HR, statutory, and operational domains.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="service-card">
+                <div class="icon-wrap"><i class="bi bi-award"></i></div>
+                <h6>FSSAI Licensing</h6>
+                <p>Food business operator registration and renewal under FSSAI regulations.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="service-card">
+                <div class="icon-wrap"><i class="bi bi-people"></i></div>
+                <h6>Labour Law Compliance</h6>
+                <p>PF, ESI, gratuity and all statutory labour law compliance management.</p>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- ACCOUNTING & TAXATION -->
+<style>
+  .acc-section {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #0b1633 0%, #122252 45%, #0f1d44 100%);
+    padding: 72px 0 80px;
+  }
+
+  /* Watermark "Prosper" */
+  .acc-section::before {
+    content: 'Prosper';
+    position: absolute;
+    top: -10px;
+    left: -8px;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(80px, 14vw, 160px);
+    font-weight: 700;
+    color: rgba(255,255,255,0.042);
+    letter-spacing: -4px;
+    pointer-events: none;
+    white-space: nowrap;
+    line-height: 1;
+    z-index: 0;
+  }
+
+  /* Watermark "%" symbol bottom-right */
+  .acc-section::after {
+    content: '%';
+    position: absolute;
+    bottom: -30px;
+    right: 40px;
+    font-size: clamp(160px, 28vw, 280px);
+    font-weight: 900;
+    color: rgba(255,255,255,0.022);
+    pointer-events: none;
+    line-height: 1;
+    z-index: 0;
+  }
+
+  .acc-section .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ── LEFT COLUMN ── */
+  .acc-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.18;
+    margin-bottom: 22px;
+  }
+
+  .acc-desc {
+    font-size: 0.875rem;
+    color: rgba(255,255,255,0.72);
+    line-height: 1.8;
+    margin-bottom: 14px;
+  }
+
+  /* ── WHITE HIGHLIGHT CARD ── */
+  .card-white {
+    background: #fff;
+    border-radius: 14px;
+    padding: 28px 22px 24px;
+    height: 100%;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.22);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-white:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 48px rgba(0,0,0,0.28);
+  }
+
+  .card-white .icon-circle {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: rgba(37,53,111,0.09);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 14px;
+  }
+
+  .card-white .icon-circle i {
+    font-size: 1.5rem;
+    color: var(--euphoria-blue);
+  }
+
+  .card-white h5 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--euphoria-blue);
+    margin-bottom: 10px;
+  }
+
+  .card-white p {
+    font-size: 0.82rem;
+    color: #666;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  /* ── DASHED DARK CARDS ── */
+  .card-dashed {
+    background: rgba(255,255,255,0.04);
+    border: 1.5px dashed var(--dashed-color);
+    border-radius: 14px;
+    padding: 24px 14px 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s ease, border-color 0.3s ease, transform 0.25s ease;
+  }
+
+  .card-dashed:hover {
+    background: var(--card-hover-bg);
+    border-color: rgba(255,255,255,0.55);
+    transform: translateY(-5px);
+  }
+
+  .card-dashed .icon-circle {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    transition: background 0.3s ease;
+  }
+
+  .card-dashed:hover .icon-circle {
+    background: rgba(227,30,36,0.22);
+  }
+
+  .card-dashed .icon-circle i {
+    font-size: 1.7rem;
+    color: #fff;
+    transition: color 0.3s;
+  }
+
+  .card-dashed:hover .icon-circle i {
+    color: #ffc107;
+  }
+
+  .card-dashed h6 {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    letter-spacing: 0.01em;
+  }
+
+  /* ── ANIMATE ON SCROLL ── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* delay helpers */
+  .delay-1 { transition-delay: 0.10s; }
+  .delay-2 { transition-delay: 0.18s; }
+  .delay-3 { transition-delay: 0.26s; }
+  .delay-4 { transition-delay: 0.34s; }
+  .delay-5 { transition-delay: 0.42s; }
+  .delay-6 { transition-delay: 0.50s; }
+  .delay-7 { transition-delay: 0.58s; }
+
+  /* ── EQUAL HEIGHT ROWS ── */
+  .acc-top-row    { --bs-gutter-x: 1rem; --bs-gutter-y: 1rem; }
+  .acc-bottom-row { --bs-gutter-x: 1rem; --bs-gutter-y: 1rem; }
+
+  /* bottom row: 4 cards smaller */
+  .acc-bottom-row .card-dashed {
+    min-height: 150px;
+  }
+
+  /* top row cards */
+  .acc-top-row .card-dashed,
+  .acc-top-row .card-white {
+    min-height: 170px;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 576px) {
+    .card-white, .card-dashed { min-height: auto !important; }
+  }
+</style>
+<section class="acc-section" id="accounting">
+  <div class="container">
+    <div class="row g-5 align-items-start">
+ 
+      <!-- ── LEFT COLUMN ── -->
+      <div class="col-lg-5 col-xl-6 reveal">
+        <h2 class="acc-heading">Accounting &amp; Taxation</h2>
+        <p class="acc-desc">
+          Strong financial management is the foundation of any successful business.
+          Our accounting and taxation services are intended to ensure accuracy, compliance,
+          and financial clarity, allowing you to confidently focus on growth.
+        </p>
+        <p class="acc-desc mb-0">
+          The Euphoria Corporate Service combines regulatory expertise and strategic
+          insight to ensure your company's financial stability and legal compliance.
+        </p>
+      </div>
+ 
+      <!-- ── RIGHT GRID ── -->
+      <div class="col-lg-7 col-xl-6">
+ 
+        <!-- TOP ROW: White card + GST + Income Tax -->
+        <div class="row acc-top-row g-3 mb-3">
+ 
+          <!-- White highlight card -->
+          <div class="col-sm-4 reveal delay-3">
+            <div class="card-dashed">
+              <div class="icon-circle">
+                <span style="position:relative;display:inline-flex;align-items:center;justify-content:center;width:100%;height:100%;">
+                  <i class="bi bi-circle" style="font-size:2rem;position:absolute;opacity:0.4;"></i>
+                  <span style="font-size:0.62rem;font-weight:800;color:#fff;letter-spacing:0.5px;z-index:1;text-align:center;">TAX<br><span style="font-size:1rem;">₹</span></span>
+                </span>
+              </div>
+              <h6>Accounting Service</h6>
+            </div>
+          </div>
+ 
+          <!-- GST Filing -->
+          <div class="col-sm-4 reveal delay-2">
+            <div class="card-dashed">
+              <div class="icon-circle">
+                <!-- Custom GST icon using Bootstrap Icons + text overlay -->
+                <span style="position:relative;display:inline-flex;align-items:center;justify-content:center;width:100%;height:100%;">
+                  <i class="bi bi-circle" style="font-size:2rem;position:absolute;opacity:0.4;"></i>
+                  <span style="font-size:0.7rem;font-weight:800;color:#fff;letter-spacing:0.5px;z-index:1;">GST<br><span style="font-size:0.9rem;">%</span></span>
+                </span>
+              </div>
+              <h6>GST Filing</h6>
+            </div>
+          </div>
+ 
+          <!-- Income Tax Filing -->
+          <div class="col-sm-4 reveal delay-3">
+            <div class="card-dashed">
+              <div class="icon-circle">
+                <span style="position:relative;display:inline-flex;align-items:center;justify-content:center;width:100%;height:100%;">
+                  <i class="bi bi-circle" style="font-size:2rem;position:absolute;opacity:0.4;"></i>
+                  <span style="font-size:0.62rem;font-weight:800;color:#fff;letter-spacing:0.5px;z-index:1;text-align:center;">TAX<br><span style="font-size:1rem;">₹</span></span>
+                </span>
+              </div>
+              <h6>Income Tax Filing</h6>
+            </div>
+          </div>
+        </div><!-- /top row -->
+      </div><!-- /right grid -->
+      <!-- BOTTOM ROW: 4 equal dashed cards -->
+        <div class="row acc-bottom-row g-3">
+ 
+          <!-- Payroll Processing -->
+          <div class="col-6 col-sm-3 reveal delay-4">
+            <div class="card-dashed">
+              <div class="icon-circle">
+                <i class="bi bi-people-fill"></i>
+              </div>
+              <h6>Payroll Processing</h6>
+            </div>
+          </div>
+ 
+          <!-- TDS Filing -->
+          <div class="col-6 col-sm-3 reveal delay-5">
+            <div class="card-dashed">
+              <div class="icon-circle">
+                <i class="bi bi-file-earmark-text-fill"></i>
+              </div>
+              <h6>TDS Filing</h6>
+            </div>
+          </div>
+ 
+          <!-- Audit Coordination -->
+          <div class="col-6 col-sm-3 reveal delay-6">
+            <div class="card-dashed">
+              <div class="icon-circle">
+                <i class="bi bi-patch-check-fill"></i>
+              </div>
+              <h6>Audit Coordination</h6>
+            </div>
+          </div>
+ 
+          <!-- Financial Reporting -->
+          <div class="col-6 col-sm-3 reveal delay-7">
+            <div class="card-dashed">
+              <div class="icon-circle">
+                <i class="bi bi-bar-chart-line-fill"></i>
+              </div>
+              <h6>Financial Reporting</h6>
+            </div>
+          </div>
+ 
+        </div><!-- /bottom row -->
+    </div><!-- /main row -->
+  </div><!-- /container -->
+</section>
+
+<!-- CORPORATE RESTRUCTURING -->
+<style>
+  
+  .step-card {
+      padding:28px;
+      margin-bottom:24px;
+      border-left:4px solid var(--euphoria-red);
+      /* box-shadow:0 2px 18px rgba(37,53,111,.07); */
+      /* display:flex; */
+      align-items:flex-start;
+      gap:20px;
+      transition:box-shadow .3s, transform .3s;
+  }
+  .step-card:hover { 
+      box-shadow:0 8px 30px rgba(37,53,111,.14); 
+      transform:translateX(6px); 
+  }
+  .step-num {
+      font-size:6rem;
+      font-weight:700;
+      color:var(--euphoria-blue);
+      line-height:1;
+      min-width:60px;
+  }
+  .step-card h5 { 
+      font-size:1.05rem; 
+      color:var(--euphoria-blue); 
+      font-weight:700; 
+      margin-bottom:8px; 
+  }
+  .step-card p { 
+      font-size:.86rem; 
+      color:#666; 
+      margin:0; 
+  }
+  .step-img { 
+      border-radius:10px; 
+      width:100%; 
+      height:220px; 
+      object-fit:cover; 
+  }
+
+</style>
+
+<section id="restructuring" class="about-section restructure-section py-5">
+ 
+    <div class="about-title-bg">Transformation</div>
+    <div class="container">
+
+      <div class="row align-items-center">
+          
+        <h2 class="about-title h1" style="margin-top: 50px;">Corporate Restructuring</h2>
+        <p class="text-muted mx-auto text-center">Strategic corporate restructuring solutions to help businesses adapt, grow, and thrive in changing market conditions.</p>
+      </div>
+
+      <div class="row">
+        <!-- Step 01 -->
+        <div class="col-lg-4 reveal-left">
+          <div class="step-card">
+            <div class="step-num">01</div>
+            <div>
+              <h5>Company Conversion (Pvt Ltd / LLP / etc.)</h5>
+              <p>Seamless conversion between company structures — Pvt Ltd to LLP, LLP to Pvt Ltd, and more — with complete legal support and documentation.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-8 reveal-right">
+          <img src="https://picsum.photos/850/220?4" alt="Company Conversion" class="step-img reveal">
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Step 01 -->
+        <div class="col-lg-8 reveal-left">
+          <img src="https://picsum.photos/850/220?3" alt="Company Conversion" class="step-img reveal">
+        </div>
+
+        <div class="col-lg-4 reveal-right">
+          <div class="step-card">
+            <div class="step-num">02</div>
+            <div>
+              <h5>Merger & Acquisition Support</h5>
+              <p>End-to-end M&A advisory, due diligence, valuation, and post-merger integration support to ensure smooth and compliant transactions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Step 03 -->
+        <div class="col-lg-4 reveal-left">
+          <div class="step-card">
+            <div class="step-num">03</div>
+            <div>
+              <h5>Company Conversion (Pvt Ltd / LLP / etc.)</h5>
+              <p>Seamless conversion between company structures — Pvt Ltd to LLP, LLP to Pvt Ltd, and more — with complete legal support and documentation.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-8 reveal-right">
+          <img src="https://picsum.photos/850/220?1" alt="Company Conversion" class="step-img reveal">
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Step 04 -->
+        <div class="col-lg-8 reveal-left">
+          <img src="https://picsum.photos/850/220?2" alt="Company Conversion" class="step-img reveal">
+        </div>
+
+        <div class="col-lg-4 reveal-right">
+          <div class="step-card">
+            <div class="step-num">04</div>
+            <div>
+              <h5>Merger & Acquisition Support</h5>
+              <p>End-to-end M&A advisory, due diligence, valuation, and post-merger integration support to ensure smooth and compliant transactions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LICENSING & REGULATORY APPROVALS -->
+<style>
+  .licensing-section { 
+      background:var(--bg-light);
+      padding-bottom: 250px !important
+  }
+  .lic-card {
+      background:var(--bg-light);
+      border:1px solid var(--card-border);
+      border-radius:10px;
+      padding:22px;
+      height:100%;
+      transition:all .3s;
+  }
+  .lic-card:hover {
+      background:var(--euphoria-blue);
+      border-color:var(--euphoria-blue);
+      transform:translateY(-5px);
+  }
+  .lic-card:hover h6, .lic-card:hover p, .lic-card:hover i { 
+      color:#fff !important; 
+  }
+  .lic-card i { 
+      font-size:1.8rem; 
+      color:var(--euphoria-red); 
+      margin-bottom:12px; 
+      display:block; 
+      transition:color .3s; 
+  }
+  .lic-card h6 { 
+      font-size:.95rem; 
+      font-weight:700; 
+      color:var(--euphoria-blue); 
+      transition:color .3s; 
+  }
+  .lic-card p { 
+      font-size:.82rem; 
+      color:#666; 
+      margin:0; 
+      transition:color .3s; 
+  }
+  .lic-sidebar {
+      background:linear-gradient(135deg,var(--euphoria-blue),#1a2e66);
+      border-radius:12px;
+      padding:32px 26px;
+      color:#fff;
+  }
+  .lic-sidebar h5 { 
+      color:#ffc107; 
+      margin-bottom:16px; 
+  }
+  .lic-sidebar .lic-item {
+      border-bottom:1px solid rgba(255,255,255,.12);
+      padding:10px 0;
+      font-size:.88rem;
+      display:flex;
+      align-items:center;
+      gap:10px;
+  }
+  .lic-sidebar .lic-item:last-child { border:none; }
+  .lic-sidebar .lic-item i { color:#ffc107; }
+</style>
+
+<section id="licensing" class="account-section licensing-section py-5">
+  <div class="container position-relative">
+    
+    <div class="about-title-bg" style="top: -25px;">Permits</div>
+    <div class="container">
+
+      <div class="row align-items-center">
+          
+        <h2 class="about-title h1" style="margin-top: 50px;">Licensing & Regulatory Approvals</h2>
+        <p class="text-muted mx-auto text-center">
+          We streamline licensing processes across industries, helping you obtain and maintain all necessary approvals without hassle.
+        </p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <div class="row g-3">
+          <div class="col-sm-6 reveal">
+            <div class="lic-card">
+              <i class="bi bi-building-gear"></i>
+              <h6>Shop & Establishment License</h6>
+              <p>Registration and renewal of Shop Act license for all types of businesses and establishments.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 reveal">
+            <div class="lic-card">
+              <i class="bi bi-geo-alt"></i>
+              <h6>MSME / Udyam Registration</h6>
+              <p>Quick Udyam registration to access government schemes and benefits for MSMEs.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 reveal">
+            <div class="lic-card">
+              <i class="bi bi-truck"></i>
+              <h6>Import Export Code (IEC)</h6>
+              <p>IEC registration for businesses engaged in international trade and commerce.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 reveal">
+            <div class="lic-card">
+              <i class="bi bi-bank2"></i>
+              <h6>Legal Asset Fund (LAS)</h6>
+              <p>Advisory and documentation support for loan against shares and securities.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 reveal">
+            <div class="lic-card">
+              <i class="bi bi-recycle"></i>
+              <h6>Pollution Control Certificate</h6>
+              <p>Obtaining NOC and consent from State Pollution Control Boards for industrial units.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 reveal">
+            <div class="lic-card">
+              <i class="bi bi-shield-lock"></i>
+              <h6>Trade Mark Registration</h6>
+              <p>Brand protection through trademark search, filing, and registration services.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 reveal-right">
+        <div class="lic-sidebar">
+          <h5><i class="bi bi-list-check me-2"></i>Quick Checklist</h5>
+          <div class="lic-item"><i class="bi bi-check-circle-fill"></i> GST Registration</div>
+          <div class="lic-item"><i class="bi bi-check-circle-fill"></i> PAN / TAN Registration</div>
+          <div class="lic-item"><i class="bi bi-check-circle-fill"></i> Professional Tax</div>
+          <div class="lic-item"><i class="bi bi-check-circle-fill"></i> PF / ESI Registration</div>
+          <div class="lic-item"><i class="bi bi-check-circle-fill"></i> FSSAI License</div>
+          <div class="lic-item"><i class="bi bi-check-circle-fill"></i> ISO Certification</div>
+          <div class="lic-item"><i class="bi bi-check-circle-fill"></i> Drug License</div>
+          <div class="lic-item"><i class="bi bi-check-circle-fill"></i> Environmental Clearance</div>
+          <div class="mt-4 text-center">
+            <a href="#" class="hero-btn" style="font-size:.85rem;padding:10px 22px;">Get Started <i class="bi bi-arrow-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADVISORY & CONSULTANCY -->
+<style>
+  .adv-list-item {
+    display:flex;
+    align-items:flex-start;
+    gap:16px;
+    padding:16px 0;
+    border-bottom:1px solid var(--card-border);
+  }
+  .adv-list-item:last-child { border:none; }
+  .adv-icon {
+    min-width:42px; height:42px; border-radius:8px;
+    background:var(--red-blur);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .adv-icon i { color:var(--euphoria-red); font-size:1.2rem; }
+  .adv-list-item h6 { font-size:.93rem; font-weight:700; color:var(--euphoria-blue); margin-bottom:4px; }
+  .adv-list-item p { font-size:.82rem; color:#666; margin:0; }
+  .adv-img-wrap {
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 8px 32px rgba(37,53,111,.15);
+  }
+  .adv-img-wrap img { width:100%; height:480px; object-fit:cover; }
+
+  .advisory-border{
+    margin-top: -200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 25px;
+    border: 1px solid var(--card-border);
+  }
+</style>
+
+<section id="advisory" class="about-section advisory-section py-5">
+  
+  <div class="">
+    <div class="advisory-border container position-relative">
+    
+      <div class="about-title-bg">Guidance</div>
+      <div class="container ">
+
+        <div class="row align-items-center">
+            
+          <h2 class="about-title h1" style="margin-top: 80px;">Advisory &Consultancy</h2>
+          <p class="text-muted mx-auto text-center">
+            Our advisory team brings decades of cross-industry experience to help your business make informed, strategic decisions.
+          </p>
+        </div>
+      </div>
+
+      <div class="row align-items-center g-5">
+        <div class="col-lg-8 reveal-left">
+          <div class="adv-list-item">
+            <div class="adv-icon"><i class="bi bi-briefcase"></i></div>
+            <div>
+              <h6>Business Strategy Solutions</h6>
+              <p>Market entry, expansion strategies and business model optimization for sustainable growth.</p>
+            </div>
+          </div>
+
+          <div class="adv-list-item">
+            <div class="adv-icon"><i class="bi bi-globe"></i></div>
+            <div>
+              <h6>Foreign Investment (FDI) Advisory</h6>
+              <p>FDI structuring, RBI compliance, FIPB approvals and cross-border investment advisory.</p>
+            </div>
+          </div>
+
+          <div class="adv-list-item">
+            <div class="adv-icon"><i class="bi bi-currency-exchange"></i></div>
+            <div>
+              <h6>FEMA Compliance (Foreign Exchange Management Act)</h6>
+              <p>End-to-end FEMA compliance management for inbound and outbound foreign investments.</p>
+            </div>
+          </div>
+
+          <div class="adv-list-item">
+            <div class="adv-icon"><i class="bi bi-house-gear"></i></div>
+            <div>
+              <h6>Virtual Office Solutions</h6>
+              <p>Professional virtual office addresses for company registration and business correspondence.</p>
+            </div>
+          </div>
+
+          <div class="adv-list-item">
+            <div class="adv-icon"><i class="bi bi-file-earmark-medical"></i></div>
+            <div>
+              <h6>Corporate Document Solutions</h6>
+              <p>Comprehensive document drafting, apostille, notarization and legalization services.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-4 reveal-right">
+          <div class="adv-img-wrap">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=700&q=80" alt="Advisory" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADDITIONAL SERVICES -->
+<style>
+  .additional-section { background:#fff; }
+  .add-card {
+      border:1px solid var(--card-border);
+      border-radius:12px;
+      overflow:hidden;
+      transition:box-shadow .3s, transform .3s;
+      height:100%;
+  }
+  .add-card:hover { box-shadow:0 10px 36px rgba(37,53,111,.16); transform:translateY(-6px); }
+  .add-card img { width:100%; height:180px; object-fit:cover; }
+  .add-card-body { 
+    padding:20px; 
+    background-color: var(--bg-light);
+  }
+  .add-card-body h6 { 
+    font-size:.97rem; 
+    font-weight:700; 
+    color:var(--euphoria-blue); 
+    margin-bottom:8px; 
+    text-align: center;
+    border-bottom: 1px solid;
+    padding-bottom: 15px;
+  }
+  .add-card-body p { font-size:.82rem; color:#666; margin:0; }
+</style>
+
+<section id="additional" class="additional-section py-5">
+  
+  <div class="container position-relative">
+    
+    <div class="about-title-bg" style="top: 0;">Extensions</div>
+    <div class="container ">
+
+      <div class="row align-items-center">
+          
+        <h2 class="about-title h1" style="margin-top: 80px;">Additional Services</h2>
+        <p class="text-muted mx-auto text-center">
+          Comprehensive value-added services to support every aspect of your business journey.
+        </p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-4 reveal">
+        <div class="add-card">
+          <div class="add-card-body">
+            <h6>Trade Mark Registration</h6>
+            <p>Complete trademark search, filing, opposition handling, and brand protection services.</p>
+          </div>
+          <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&q=80" alt="Trademark">
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 reveal">
+        <div class="add-card">
+          <div class="add-card-body">
+            <h6>ISO Certification</h6>
+            <p>ISO 9001, 14001, 45001 and industry-specific certifications with full documentation support.</p>
+          </div>
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80" alt="ISO">
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 reveal">
+        <div class="add-card">
+          <div class="add-card-body">
+            <h6>Business Consulting Services</h6>
+            <p>Strategic planning, process optimization and management consulting for growth-focused businesses.</p>
+          </div>
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Business Consulting">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<?php
+include_once ('elements/faqs.php');
+include_once ('elements/footer.php');
+?>
