@@ -11,10 +11,10 @@
         <div class="collapse navbar-collapse" id="mainNavigation">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="index">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Euphoria</a>
+                    <a class="nav-link" href="about-euphoria.php">About Euphoria</a>
                 </li>
                 
                 <li class="nav-item dropdown">
@@ -37,7 +37,7 @@
                     </ul>
                 </li>
 
-                <li class="nav-item"><a class="nav-link" href="#">Partner Up</a></li>
+                <li class="nav-item"><a class="nav-link" href="become-partner.php">Partner Up</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Career</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
