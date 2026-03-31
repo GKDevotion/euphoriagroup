@@ -24,26 +24,26 @@
                             <div class="col-md-4 col-6">
                                 <h5 class="footer-heading">Company</h5>
                                 <ul class="footer-links">
-                                    <li><a href="#"><i class="fas fa-plus"></i> About Euphoria</a></li>
-                                    <li><a href="#"><i class="fas fa-plus"></i> Partner Up</a></li>
-                                    <li><a href="#"><i class="fas fa-plus"></i> Career</a></li>
-                                    <li><a href="#"><i class="fas fa-plus"></i> Blog</a></li>
-                                    <li><a href="#"><i class="fas fa-plus"></i> Contact</a></li>
+                                    <li><a href="about-us"><i class="fas fa-plus"></i> About Euphoria</a></li>
+                                    <li><a href="partner-up"><i class="fas fa-plus"></i> Partner Up</a></li>
+                                    <li><a href="career"><i class="fas fa-plus"></i> Career</a></li>
+                                    <li><a href="blog"><i class="fas fa-plus"></i> Blog</a></li>
+                                    <li><a href="contact"><i class="fas fa-plus"></i> Contact</a></li>
                                 </ul>
                             </div>
                             <div class="col-md-4 col-6">
                                 <h5 class="footer-heading">Inbound Services</h5>
                                 <ul class="footer-links">
-                                    <li><a href="#"><i class="fas fa-plus"></i> Corporate Establishment</a></li>
-                                    <li><a href="#"><i class="fas fa-plus"></i> Corporate Service</a></li>
-                                    <li><a href="#"><i class="fas fa-plus"></i> Travel & Tourism</a></li>
-                                    <li><a href="#"><i class="fas fa-plus"></i> Wealth & Asset Solutions</a></li>
+                                    <li><a href="corporate-establishment"><i class="fas fa-plus"></i> Corporate Establishment</a></li>
+                                    <li><a href="corporate-service"><i class="fas fa-plus"></i> Corporate Service</a></li>
+                                    <li><a href="tours-travels"><i class="fas fa-plus"></i> Travel & Tourism</a></li>
+                                    <li><a href="wealth-asset-solution"><i class="fas fa-plus"></i> Wealth & Asset Solutions</a></li>
                                 </ul>
                             </div>
                             <div class="col-md-4 col-12">
                                 <h5 class="footer-heading">Outbound Services</h5>
                                 <ul class="footer-links">
-                                    <li><a href="#"><i class="fas fa-plus"></i> Corporate Service Provider</a></li>
+                                    <li><a href="corporate-service"><i class="fas fa-plus"></i> Corporate Service Provider</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -78,7 +78,7 @@
                         copyright &copy; 2026 The Euphoria Group. All rights reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
-                        <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a>
+                        <a href="terms-conditions">Terms & Conditions</a> | <a href="privacy-policy">Privacy Policy</a>
                     </div>
                 </div>
             </div>
