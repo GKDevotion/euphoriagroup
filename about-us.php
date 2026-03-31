@@ -8,7 +8,7 @@
    .about-euphoria {
      position: relative;
      top: 88px;
-     min-height: 700px;
+     min-height: 500px;
      background: linear-gradient(rgba(13, 27, 62, 0.72), rgba(13, 27, 62, 0.72)),
        url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1400&q=80') center/cover no-repeat;
      display: flex;
@@ -937,7 +937,7 @@
      transition: stroke .2s;
    }
 
-   /* ── Swiper pagination bullets ─────────────────── */
+   /* ── Swiper pagination bullets  */
    .swiper-pagination {
      margin-top: 36px;
      position: static !important;
@@ -956,7 +956,7 @@
      transform: scale(1.25);
    }
 
-   /* ── Swiper container position ─────────────────── */
+   /* ── Swiper container position  */
    .swiper-outer {
      position: relative;
      padding: 0 28px;
@@ -1460,8 +1460,7 @@
 
  </section>
 
- <section class="why-section">
-
+ <section class="why-section"> 
 
    <div class="container position-relative" style="z-index:1;">
      <!-- city skyline watermark SVG (decorative) -->

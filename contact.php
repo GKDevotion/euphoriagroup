@@ -76,7 +76,7 @@ include_once('elements/header.php');
         border-radius: 16px;
         overflow: hidden;
         position: relative;
-        min-height: 480px;
+        min-height: 590px;
         background: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80') center/cover no-repeat;
     }
 
@@ -88,87 +88,7 @@ include_once('elements/header.php');
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    /* Contact Us circular diagram */
-    .circle-diagram {
-        position: relative;
-        width: 220px;
-        height: 220px;
-    }
-
-    .center-circle {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 110px;
-        height: 110px;
-        border-radius: 50%;
-        border: 2px solid rgba(255, 255, 255, 0.6);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-        font-weight: 700;
-        font-size: 1rem;
-        text-align: center;
-        line-height: 1.3;
-        z-index: 2;
-    }
-
-    .orbit-ring {
-        position: absolute;
-        inset: 0;
-        border-radius: 50%;
-        border: 1.5px solid rgba(255, 255, 255, 0.3);
-    }
-
-    .orbit-icon {
-        position: absolute;
-        width: 38px;
-        height: 38px;
-        background: rgba(255, 255, 255, 0.15);
-        border: 1.5px solid rgba(255, 255, 255, 0.5);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-        font-size: 0.95rem;
-    }
-
-    .orbit-icon:nth-child(2) {
-        top: -19px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .orbit-icon:nth-child(3) {
-        top: 18px;
-        right: -6px;
-    }
-
-    .orbit-icon:nth-child(4) {
-        bottom: 18px;
-        right: -6px;
-    }
-
-    .orbit-icon:nth-child(5) {
-        bottom: -19px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .orbit-icon:nth-child(6) {
-        bottom: 18px;
-        left: -6px;
-    }
-
-    .orbit-icon:nth-child(7) {
-        top: 18px;
-        left: -6px;
-    }
+    } 
 
     /* ── Right form panel ── */
     .form-panel {
@@ -179,7 +99,7 @@ include_once('elements/header.php');
     .bg-text {
         position: absolute;
         top: -10px;
-        right: 420px;
+        right: 520px;
         font-size: 4.5rem;
         font-weight: 900;
         color: rgba(180, 185, 210, 0.25);
@@ -367,16 +287,12 @@ include_once('elements/header.php');
     <div class="row g-4 align-items-center">
 
         <!-- Left: Image Panel -->
-        <div class="col-md-5">
-            <div class="image-panel">
-
-                <div class="center-circle">Contact Us</div>
-
-            </div>
+        <div class="col-md-4">
+            <div class="image-panel"></div>
         </div>
 
         <!-- Right: Form Panel -->
-        <div class="col-md-7">
+        <div class="col-md-8">
             <div class="form-panel">
                 <div class="bg-text">Let's Talk</div>
                 <h2>Send us a Message</h2>
@@ -444,7 +360,7 @@ include_once('elements/header.php');
         </div>
 
     </div>
-</div>
+</div>  
 
 <!-- Map Section -->
 <section class="w-100">

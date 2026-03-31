@@ -2,25 +2,13 @@
 include_once('elements/header.php');
 ?>
 
-<style>
-    :root {
-        --bg-section: #ffffff;
-        --dark-navy: #1a2340;
-        --text-body: #4a4a5a;
-        --accent: #c9a96e;
-        --pink-light: #f0c0c8; 
-        --navy: #1a2456;
-        --red: #c0392b;
-        --light-gray: #f7f8fc;
-        --border: #e2e5f0;
-        --text-muted: #7a7f9a;
-    }
+<style> 
 
     /* ── HERO ── */
     .become-partner {
         position: relative;
         top: 88px;
-        min-height: 700px;
+        min-height: 500px;
         background: linear-gradient(rgba(13, 27, 62, 0.72), rgba(13, 27, 62, 0.72)),
             url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1400&q=80') center/cover no-repeat;
         display: flex;
@@ -57,7 +45,7 @@ include_once('elements/header.php');
         padding-left: 3rem;
     }
 
-    .content-col .brand-name { 
+    .content-col .brand-name {
         font-weight: 600;
         color: #1a2340;
     }
@@ -74,7 +62,6 @@ include_once('elements/header.php');
         font-weight: 700;
         color: #1a2340;
     }
-
 
     .illustration-wrap {
         position: relative;
@@ -129,7 +116,7 @@ include_once('elements/header.php');
         position: absolute;
         top: 0px;
         left: 50%;
-        transform: translateX(-50%); 
+        transform: translateX(-50%);
         font-size: clamp(60px, 10vw, 145px);
         font-weight: 700;
         color: #f0c0c8;
@@ -143,7 +130,7 @@ include_once('elements/header.php');
     /* ── Heading ── */
     .revenue-heading {
         position: relative;
-        z-index: 1; 
+        z-index: 1;
         color: #1a2456;
         font-size: clamp(1.6rem, 3vw, 2.2rem);
         font-weight: 700;
@@ -202,7 +189,7 @@ include_once('elements/header.php');
         position: absolute;
         top: 0px;
         left: 50%;
-        transform: translateX(-50%); 
+        transform: translateX(-50%);
         font-size: clamp(60px, 10vw, 145px);
         font-weight: 700;
         color: #f0c0c8;
@@ -216,153 +203,158 @@ include_once('elements/header.php');
     /* ── Heading ── */
     .partner-heading {
         position: relative;
-        z-index: 1; 
+        z-index: 1;
         color: #1a2456;
         font-size: clamp(1.6rem, 3vw, 2.2rem);
         font-weight: 700;
         text-align: center;
         margin-bottom: 50px;
     }
-/* ── Partner Cards Wrapper ── */
-.partners-wrapper {
-    display: flex;
-    align-items: stretch; /* IMPORTANT */
-    gap: 10px;
-    min-height: 380px;
-}
 
-/* ── Side Tab Cards ── */
-.partner-tab {
-    flex: 0 0 62px;
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    border: 1.5px solid #e2e5f0;
-    border-radius: 18px;
-    cursor: pointer;
-    background: #fff;
-    transition: flex 0.55s cubic-bezier(.77, 0, .175, 1),
-                background 0.3s,
-                border-color 0.3s,
-                box-shadow 0.3s;
-    overflow: hidden;
-    position: relative;
-    min-width: 62px;
-    height: 500px;
-}
+    /* ── Partner Cards Wrapper ── */
+    .partners-wrapper {
+        display: flex;
+        align-items: stretch;
+        /* IMPORTANT */
+        gap: 10px;
+        min-height: 380px;
+    }
 
-/* ACTIVE TAB */
-.partner-tab.active {
-    flex: 3 1 0;
-    background: #f4f5fb;
-    border-color: #1a2456;
-    box-shadow: 0 8px 36px rgba(26, 36, 86, 0.10);
-    z-index: 2;
-}
+    /* ── Side Tab Cards ── */
+    .partner-tab {
+        flex: 0 0 62px;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        border: 1.5px solid #e2e5f0;
+        border-radius: 18px;
+        cursor: pointer;
+        background: #fff;
+        transition: flex 0.55s cubic-bezier(.77, 0, .175, 1),
+            background 0.3s,
+            border-color 0.3s,
+            box-shadow 0.3s;
+        overflow: hidden;
+        position: relative;
+        min-width: 62px;
+        height: 500px;
+    }
 
-/* Label (collapsed) */
-.tab-label {
-    writing-mode: vertical-rl;
-    transform: translate(-50%, -50%) rotate(180deg); /* FIX */
-    font-size: 0.84rem;
-    font-weight: 600;
+    /* ACTIVE TAB */
+    .partner-tab.active {
+        flex: 3 1 0;
+        background: #f4f5fb;
+        border-color: #1a2456;
+        box-shadow: 0 8px 36px rgba(26, 36, 86, 0.10);
+        z-index: 2;
+    }
 
-    position: absolute;
-    top: 50%;       /* center vertically */
-    left: 50%;      /* center horizontally inside tab */
-    
-    opacity: 1;
-    transition: opacity 0.25s;
-    pointer-events: none;
-}
+    /* Label (collapsed) */
+    .tab-label {
+        writing-mode: vertical-rl;
+        transform: translate(-50%, -50%) rotate(180deg);
+        /* FIX */
+        font-size: 0.84rem;
+        font-weight: 600;
 
-.partner-tab.active .tab-label {
-    opacity: 0;
-}
+        position: absolute;
+        top: 50%;
+        /* center vertically */
+        left: 50%;
+        /* center horizontally inside tab */
 
-/* CONTENT */
-.tab-content-inner {
-    opacity: 0;
-    pointer-events: none;
-    width: 100%;
-    transition: opacity 0.35s ease;
-    padding: 1.6rem 1.4rem;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
+        opacity: 1;
+        transition: opacity 0.25s;
+        pointer-events: none;
+    }
 
-.partner-tab.active .tab-content-inner {
-    opacity: 1;
-    pointer-events: auto;
-}
+    .partner-tab.active .tab-label {
+        opacity: 0;
+    }
 
-/* INNER GRID */
-.tab-inner-grid {
-    display: flex;
-    gap: 1.4rem;
-    flex: 1;
-    height: 100%;
-}
+    /* CONTENT */
+    .tab-content-inner {
+        opacity: 0;
+        pointer-events: none;
+        width: 100%;
+        transition: opacity 0.35s ease;
+        padding: 1.6rem 1.4rem;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
 
-/* IMAGE */
-.tab-img-col {
-    flex: 0 0 200px;
-}
+    .partner-tab.active .tab-content-inner {
+        opacity: 1;
+        pointer-events: auto;
+    }
 
-.tab-img-col img {
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 14px;
-}
+    /* INNER GRID */
+    .tab-inner-grid {
+        display: flex;
+        gap: 1.4rem;
+        flex: 1;
+        height: 100%;
+    }
 
-/* TEXT */
-.tab-text-col {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
+    /* IMAGE */
+    .tab-img-col {
+        flex: 0 0 200px;
+    }
 
-.tab-text-col h4 { 
-    color: #1a2456;
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-bottom: 0.4rem;
-}
+    .tab-img-col img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 14px;
+    }
 
-/* BADGES */
-.tab-badges {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    margin: 0.7rem 0 0.9rem;
-}
+    /* TEXT */
+    .tab-text-col {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
 
-.tab-badge {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 0.77rem;
-    font-weight: 600;
-    color: #1a2456;
-}
+    .tab-text-col h4 {
+        color: #1a2456;
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 0.4rem;
+    }
 
-/* CTA */
-.btn-meeting {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: #1a2456;
-    color: #fff !important;
-    border-radius: 8px;
-    font-size: 0.82rem;
-    font-weight: 600;
-    padding: 8px 14px;
-    text-decoration: none;
-    margin-top: auto; /* PUSH TO BOTTOM */
-}
-   
+    /* BADGES */
+    .tab-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        margin: 0.7rem 0 0.9rem;
+    }
+
+    .tab-badge {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 0.77rem;
+        font-weight: 600;
+        color: #1a2456;
+    }
+
+    /* CTA */
+    .btn-meeting {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: #1a2456;
+        color: #fff !important;
+        border-radius: 8px;
+        font-size: 0.82rem;
+        font-weight: 600;
+        padding: 8px 14px;
+        text-decoration: none;
+        margin-top: auto;
+        /* PUSH TO BOTTOM */
+    }
 </style>
 
 <!-- HERO -->

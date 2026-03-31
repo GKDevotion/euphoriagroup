@@ -19,19 +19,7 @@ include_once('elements/header.php');
     .carrer-hero h1 {
         font-size: clamp(2rem, 5vw, 3.2rem);
         letter-spacing: 1px;
-    }
-
-    :root {
-        --navy: #1a2a5e;
-        --dark: #1e1e2e;
-        --muted: #4b5563;
-        --border: #e5e7eb;
-
-
-
-        --bg: #f0f3fa;
-        --red: #e03131;
-    }
+    } 
 
     /* ── SECTION ── */
     .about-section {
@@ -410,8 +398,7 @@ include_once('elements/header.php');
         padding: 48px 56px;
         background: #fff;
         position: relative;
-    }
-
+    } 
   
     /* ── INTRO ── */
     .intro-text {
@@ -463,8 +450,7 @@ include_once('elements/header.php');
         .intro-text {
             font-size: 0.88rem;
         }
-    }
-
+    } 
      
     /* ── HERO SECTION ── */
     .growth-section {
