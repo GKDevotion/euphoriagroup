@@ -469,21 +469,9 @@
         <a href="blog">Blog</a>
       </li>
 
-      <!-- Contact — CTA style -->
-      <li>
-        <a href="#" style="
-          background: var(--euphoria-blue);
-          color: #fff !important;
-          border-radius: 7px;
-          padding: 9px 20px !important;
-          height: auto !important;
-          font-weight: 600 !important;
-          margin-left: 8px;
-          transition: background .25s, transform .2s;
-        "
-        onmouseover="this.style.background='var(--euphoria-red)';this.style.transform='translateY(-1px)'"
-        onmouseout="this.style.background='var(--euphoria-blue)';this.style.transform='none'"
-        >Contact</a>
+      <!-- Contact -->
+       <li>
+        <a href="contact">Contact</a>
       </li>
 
     </ul>
@@ -544,7 +532,7 @@
   <a href="partner-up" class="eg-mob-link">Partner Up</a>
   <a href="career" class="eg-mob-link">Career</a>
   <a href="blog" class="eg-mob-link">Blog</a>
-  <a href="#" class="eg-mob-link" style="color:var(--euphoria-red);font-weight:600;">Contact</a>
+  <a href="contact" class="eg-mob-link">Contact</a>
 
 </div>
 
