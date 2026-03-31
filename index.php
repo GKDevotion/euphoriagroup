@@ -313,7 +313,7 @@ include_once ('elements/home-slider.php');
                                 <span><i class="far fa-calendar-alt me-1"></i> March 18, 2026</span>
                             </div>
                             <p class="card-text">In the coldest and most unforgiving places on Earth, only the brave can survive. A single penguin walking toward the mountains is more than just a picture...</p>
-                            <a href="#" class="read-more">Read More <i class="fas fa-angle-double-right"></i></a>
+                            <a href="blog-detail" class="read-more">Read More <i class="fas fa-angle-double-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -332,7 +332,7 @@ include_once ('elements/home-slider.php');
                                 <span><i class="far fa-calendar-alt me-1"></i> March 18, 2026</span>
                             </div>
                             <p class="card-text">Innovation is No Longer Optional — It Is Essential. Traditional thinking is no longer sufficient to solve challenges in today's rapidly changing environment...</p>
-                            <a href="#" class="read-more">Read More <i class="fas fa-angle-double-right"></i></a>
+                            <a href="blog-detail" class="read-more">Read More <i class="fas fa-angle-double-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -351,7 +351,7 @@ include_once ('elements/home-slider.php');
                                 <span><i class="far fa-calendar-alt me-1"></i> March 19, 2026</span>
                             </div>
                             <p class="card-text">Sometimes, life doesn't change in a day... It changes in a single night. A night full of questions. A night full of doubts. A night where everything begins...</p>
-                            <a href="#" class="read-more">Read More <i class="fas fa-angle-double-right"></i></a>
+                            <a href="blog-detail" class="read-more">Read More <i class="fas fa-angle-double-right"></i></a>
                         </div>
                     </div>
                 </div>
