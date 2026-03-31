@@ -43,7 +43,7 @@ include_once('elements/header.php');
 
     /* ── Partnership Section ── */
     .partnership-section {
-        background: var(--bg-section);
+        background: #ffffff;
         padding: 80px 0;
         overflow: hidden;
         position: relative;
@@ -57,14 +57,13 @@ include_once('elements/header.php');
         padding-left: 3rem;
     }
 
-    .content-col .brand-name {
-        font-family: 'Playfair Display', serif;
+    .content-col .brand-name { 
         font-weight: 600;
-        color: var(--dark-navy);
+        color: #1a2340;
     }
 
     .content-col p {
-        color: var(--text-body);
+        color: #4a4a5a;
         font-size: 0.97rem;
         line-height: 1.85;
         font-weight: 300;
@@ -73,7 +72,7 @@ include_once('elements/header.php');
 
     .content-col p strong {
         font-weight: 700;
-        color: var(--dark-navy);
+        color: #1a2340;
     }
 
 
@@ -130,11 +129,10 @@ include_once('elements/header.php');
         position: absolute;
         top: 0px;
         left: 50%;
-        transform: translateX(-50%);
-        font-family: 'Playfair Display', serif;
+        transform: translateX(-50%); 
         font-size: clamp(60px, 10vw, 145px);
         font-weight: 700;
-        color: var(--pink-light);
+        color: #f0c0c8;
         white-space: nowrap;
         pointer-events: none;
         z-index: 0;
@@ -145,9 +143,8 @@ include_once('elements/header.php');
     /* ── Heading ── */
     .revenue-heading {
         position: relative;
-        z-index: 1;
-        font-family: 'Playfair Display', serif;
-        color: var(--navy);
+        z-index: 1; 
+        color: #1a2456;
         font-size: clamp(1.6rem, 3vw, 2.2rem);
         font-weight: 700;
         text-align: center;
@@ -199,18 +196,16 @@ include_once('elements/header.php');
         background: #fff;
     }
 
-
     /* Watermark */
     .our-partner::before {
         content: "Our Partners";
         position: absolute;
         top: 0px;
         left: 50%;
-        transform: translateX(-50%);
-        font-family: 'Playfair Display', serif;
+        transform: translateX(-50%); 
         font-size: clamp(60px, 10vw, 145px);
         font-weight: 700;
-        color: var(--pink-light);
+        color: #f0c0c8;
         white-space: nowrap;
         pointer-events: none;
         z-index: 0;
@@ -221,9 +216,8 @@ include_once('elements/header.php');
     /* ── Heading ── */
     .partner-heading {
         position: relative;
-        z-index: 1;
-        font-family: 'Playfair Display', serif;
-        color: var(--navy);
+        z-index: 1; 
+        color: #1a2456;
         font-size: clamp(1.6rem, 3vw, 2.2rem);
         font-weight: 700;
         text-align: center;
@@ -243,7 +237,7 @@ include_once('elements/header.php');
     display: flex;
     align-items: stretch;
     justify-content: center;
-    border: 1.5px solid var(--border);
+    border: 1.5px solid #e2e5f0;
     border-radius: 18px;
     cursor: pointer;
     background: #fff;
@@ -260,8 +254,8 @@ include_once('elements/header.php');
 /* ACTIVE TAB */
 .partner-tab.active {
     flex: 3 1 0;
-    background: var(--light-gray);
-    border-color: var(--navy);
+    background: #f4f5fb;
+    border-color: #1a2456;
     box-shadow: 0 8px 36px rgba(26, 36, 86, 0.10);
     z-index: 2;
 }
@@ -330,9 +324,8 @@ include_once('elements/header.php');
     flex-direction: column;
 }
 
-.tab-text-col h4 {
-    font-family: 'Playfair Display', serif;
-    color: var(--navy);
+.tab-text-col h4 { 
+    color: #1a2456;
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 0.4rem;
@@ -352,7 +345,7 @@ include_once('elements/header.php');
     gap: 6px;
     font-size: 0.77rem;
     font-weight: 600;
-    color: var(--navy);
+    color: #1a2456;
 }
 
 /* CTA */
@@ -360,7 +353,7 @@ include_once('elements/header.php');
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: var(--navy);
+    background: #1a2456;
     color: #fff !important;
     border-radius: 8px;
     font-size: 0.82rem;

@@ -61,7 +61,7 @@ include_once('elements/header.php');
 
     /* ── Partnership Section ── */
     .corporate-tab-section {
-        background: var(--bg-section);
+        background: #ffffff;
         padding: 80px 0;
         overflow: hidden;
         position: relative;
@@ -71,7 +71,7 @@ include_once('elements/header.php');
     .formation-nav-wrapper {
         display: flex;
         align-items: center;
-        border: 1.5px solid var(--border);
+        border: 1.5px solid #e2e5f0;
         border-radius: 50px;
         padding: 5px;
         background: #fff;
@@ -89,7 +89,7 @@ include_once('elements/header.php');
     .nav-active-pill {
         display: inline-flex;
         align-items: center;
-        background: var(--navy);
+        background: #1a2456;
         color: #fff;
         font-weight: 700;
         font-size: 0.88rem;
@@ -105,7 +105,7 @@ include_once('elements/header.php');
         width: 1.5px;
         min-width: 1.5px;
         height: 18px;
-        background: var(--border);
+        background: #e2e5f0;
         flex-shrink: 0;
         margin: 0 2px;
     }
@@ -126,12 +126,12 @@ include_once('elements/header.php');
     }
 
     .nav-link-item:hover {
-        color: var(--navy);
+        color: #1a2456;
         background: #f0f2fa;
     }
 
     .nav-link-item.active-link {
-        color: var(--navy);
+        color: #1a2456;
         font-weight: 700;
     }
 
@@ -207,11 +207,10 @@ include_once('elements/header.php');
         position: absolute;
         top: 0px;
         left: 50%;
-        transform: translateX(-50%);
-        font-family: 'Playfair Display', serif;
+        transform: translateX(-50%); 
         font-size: clamp(60px, 10vw, 145px);
         font-weight: 700;
-        color: var(--pink-light);
+        color: #f0c0c8;
         white-space: nowrap;
         pointer-events: none;
         z-index: 0;
@@ -222,9 +221,8 @@ include_once('elements/header.php');
     /* ── Heading ── */
     .incorporation-heading {
         position: relative;
-        z-index: 1;
-        font-family: 'Playfair Display', serif;
-        color: var(--navy);
+        z-index: 1; 
+        color: #1a2456;
         font-size: clamp(1.6rem, 3vw, 2.2rem);
         font-weight: 700;
         text-align: center;
@@ -238,7 +236,7 @@ include_once('elements/header.php');
 
     /* ── Card ── */
     .service-card {
-        border: 1.5px solid var(--border);
+        border: 1.5px solid #e2e5f0;
         border-radius: 18px;
         padding: 2rem 1.4rem 1.6rem;
         text-align: center;
@@ -258,7 +256,7 @@ include_once('elements/header.php');
         width: 90px;
         height: 90px;
         border-radius: 50%;
-        background: var(--red-light);
+        background: #f0c0c8;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -275,7 +273,7 @@ include_once('elements/header.php');
     .service-card h5 {
         font-size: 0.9rem;
         font-weight: 700;
-        color: var(--navy);
+        color: #1a2456;
         margin-bottom: 0.75rem;
         line-height: 1.35;
     }
@@ -304,8 +302,7 @@ include_once('elements/header.php');
         content: 'Register';
         position: absolute;
         top: 10px;
-        left: -10px;
-        font-family: 'Playfair Display', serif;
+        left: -10px; 
         font-size: 130px;
         color: rgba(26, 45, 107, 0.06);
         font-weight: 700;
@@ -314,11 +311,10 @@ include_once('elements/header.php');
         white-space: nowrap;
     }
 
-    .section-title {
-        font-family: 'Playfair Display', serif;
+    .section-title { 
         font-size: 2.4rem;
         font-weight: 700;
-        color: var(--navy-dark);
+        color: #1a2456;
         line-height: 1.2;
         margin-bottom: 1.5rem;
     }
@@ -334,7 +330,7 @@ include_once('elements/header.php');
         width: 160px;
         height: 160px;
         border-radius: 50%;
-        background: var(--navy);
+        background: #1a2456;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -359,8 +355,7 @@ include_once('elements/header.php');
         opacity: 0.9;
     }
 
-    .feature-circle .label {
-        font-family: 'DM Sans', sans-serif;
+    .feature-circle .label { 
         font-size: 0.78rem;
         font-weight: 600;
         color: #fff;
@@ -427,11 +422,10 @@ include_once('elements/header.php');
         position: absolute;
         top: 0px;
         left: 29%;
-        transform: translateX(-50%);
-        font-family: 'Playfair Display', serif;
+        transform: translateX(-50%); 
         font-size: clamp(60px, 10vw, 145px);
         font-weight: 700;
-        color: var(--pink-light);
+        color: #f0c0c8;
         white-space: nowrap;
         pointer-events: none;
         z-index: 0;
@@ -442,9 +436,8 @@ include_once('elements/header.php');
     /* ── Heading ── */
     .register-heading {
         position: relative;
-        z-index: 1;
-        font-family: 'Playfair Display', serif;
-        color: var(--navy);
+        z-index: 1; 
+        color: #1a2456;
         font-size: clamp(1.6rem, 3vw, 2.2rem);
         font-weight: 700;
         text-align: start;
@@ -458,21 +451,19 @@ include_once('elements/header.php');
         background: linear-gradient(135deg, #f0f4fb 0%, #e8edf8 100%);
     }
 
-    .section-eyebrow {
-        font-family: 'DM Sans', sans-serif;
+    .section-eyebrow { 
         font-size: 0.78rem;
         font-weight: 600;
         letter-spacing: 0.18em;
         text-transform: uppercase;
-        color: var(--gold);
+        color: #c9a84c;
         margin-bottom: 10px;
     }
 
-    .section-title {
-        font-family: 'Playfair Display', serif;
+    .section-title { 
         font-size: clamp(1.9rem, 3.5vw, 2.7rem);
         font-weight: 700;
-        color: var(--navy);
+        color: #1a2456;
         margin-bottom: 14px;
         line-height: 1.2;
     }
@@ -488,7 +479,7 @@ include_once('elements/header.php');
     /* ── Card ── */
     .benefit-card-alliance {
         position: relative;
-        border-radius: var(--card-radius);
+        border-radius: 18px;
         overflow: hidden;
         height: 400px;
         cursor: pointer;
@@ -565,18 +556,17 @@ include_once('elements/header.php');
         color: #fff;
     }
 
-    .card-title-alliance {
-        font-family: 'Playfair Display', serif;
+    .card-title-alliance { 
         font-size: 1.15rem;
         font-weight: 700;
-        color: var(--white);
+        color: #ffffff;
         margin-bottom: 8px;
         line-height: 1.3;
     }
 
     .card-desc-alliance {
         font-size: 0.875rem;
-        color: var(--text-muted);
+        color: #a0aec0;
         line-height: 1.6;
         margin: 0;
     }
@@ -600,7 +590,7 @@ include_once('elements/header.php');
     }
 
     .swiper-pagination-bullet-active {
-        background: var(--navy);
+        background: #1a2456;
         width: 28px;
         border-radius: 5px;
     }
@@ -610,9 +600,9 @@ include_once('elements/header.php');
         width: 46px;
         height: 46px;
         border-radius: 50%;
-        border: 2px solid var(--navy);
-        background: var(--white);
-        color: var(--navy);
+        border: 2px solid #1a2456;
+        background: #ffffff;
+        color: #1a2456;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -622,8 +612,8 @@ include_once('elements/header.php');
     }
 
     .swiper-nav-btn:hover {
-        background: var(--navy);
-        color: var(--white);
+        background: #1a2456;
+        color: #ffffff;
         transform: scale(1.08);
     }
 
@@ -651,11 +641,10 @@ include_once('elements/header.php');
         position: absolute;
         top: 50px;
         left: 50%;
-        transform: translateX(-50%);
-        font-family: 'Playfair Display', serif;
+        transform: translateX(-50%); 
         font-size: clamp(60px, 10vw, 145px);
         font-weight: 700;
-        color: var(--pink-light);
+        color: #f0c0c8;
         white-space: nowrap;
         pointer-events: none;
         z-index: 0;
@@ -666,9 +655,8 @@ include_once('elements/header.php');
     /* ── Heading ── */
     .alliance-heading {
         position: relative;
-        z-index: 1;
-        font-family: 'Playfair Display', serif;
-        color: var(--navy);
+        z-index: 1; 
+        color: #1a2456;
         font-size: clamp(1.6rem, 3vw, 2.2rem);
         font-weight: 700;
         text-align: center;
@@ -682,7 +670,7 @@ include_once('elements/header.php');
 
     /* ── Left: accordion list ── */
     .benefit-item {
-        border-bottom: 1.5px solid var(--border);
+        border-bottom: 1.5px solid #ddd;
         padding: 22px 10px;
         cursor: pointer;
         border-radius: 6px;
@@ -692,7 +680,7 @@ include_once('elements/header.php');
 
     .benefit-item.active,
     .benefit-item:hover {
-        background: var(--hover-bg);
+        background: #f0f0f0;
     }
 
     .benefit-header {
@@ -705,14 +693,14 @@ include_once('elements/header.php');
     .benefit-title {
         font-size: 1.05rem;
         font-weight: 700;
-        color: var(--dark);
+        color: #333;
         margin: 0;
         transition: color 0.22s;
     }
 
     .benefit-item.active .benefit-title,
     .benefit-item:hover .benefit-title {
-        color: var(--red);
+        color: #ff0000;
     }
 
     /* Arrow icon */
@@ -737,8 +725,8 @@ include_once('elements/header.php');
 
     .benefit-item.active .arrow-icon,
     .benefit-item:hover .arrow-icon {
-        border-color: var(--red);
-        background: var(--red);
+        border-color: #c0392b;
+        background: #c0392b;
     }
 
     .benefit-item.active .arrow-icon svg,
@@ -750,7 +738,7 @@ include_once('elements/header.php');
     /* Description */
     .benefit-desc {
         font-size: 0.875rem;
-        color: var(--gray-text);
+        color: #a0aec0;
         line-height: 1.7;
 
         overflow: hidden;
@@ -809,11 +797,10 @@ include_once('elements/header.php');
         position: absolute;
         top: 0px;
         left: 50%;
-        transform: translateX(-50%);
-        font-family: 'Playfair Display', serif;
+        transform: translateX(-50%); 
         font-size: clamp(60px, 10vw, 145px);
         font-weight: 700;
-        color: var(--pink-light);
+        color: #f0c0c8;
         white-space: nowrap;
         pointer-events: none;
         z-index: 0;
@@ -824,9 +811,8 @@ include_once('elements/header.php');
     /* ── Heading ── */
     .individual-heading {
         position: relative;
-        z-index: 1;
-        font-family: 'Playfair Display', serif;
-        color: var(--navy);
+        z-index: 1; 
+        color: #1a2456;
         font-size: clamp(1.6rem, 3vw, 2.2rem);
         font-weight: 700;
         text-align: center;
@@ -847,11 +833,10 @@ include_once('elements/header.php');
         position: absolute;
         top: 0px;
         left: 50%;
-        transform: translateX(-50%);
-        font-family: 'Playfair Display', serif;
+        transform: translateX(-50%); 
         font-size: clamp(60px, 10vw, 145px);
         font-weight: 700;
-        color: var(--pink-light);
+        color: #f0c0c8;
         white-space: nowrap;
         pointer-events: none;
         z-index: 0;
@@ -862,9 +847,8 @@ include_once('elements/header.php');
     /* ── Heading ── */
     .setup-heading {
         position: relative;
-        z-index: 1;
-        font-family: 'Playfair Display', serif;
-        color: var(--navy);
+        z-index: 1; 
+        color: #1a2456;
         font-size: clamp(1.6rem, 3vw, 2.2rem);
         font-weight: 700;
         text-align: center;
@@ -889,7 +873,7 @@ include_once('elements/header.php');
         top: 40px;
         bottom: 160px;
         width: 1.5px;
-        background: var(--red);
+        background: #ff0000;
         opacity: 0;
         transform: scaleY(0.4);
         transition: opacity 0.28s ease, transform 0.28s ease;
@@ -909,7 +893,7 @@ include_once('elements/header.php');
     .icon-wrap {
         width: 68px;
         height: 68px;
-        background: var(--red-light);
+        background: #f0c0c8;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -925,14 +909,14 @@ include_once('elements/header.php');
     .icon-wrap svg {
         width: 32px;
         height: 32px;
-        color: var(--red);
+        color: #ff0000;
     }
 
     /* Text */
     .card-title {
         font-size: 1rem;
         font-weight: 700;
-        color: var(--dark);
+        color: #333;
         margin-bottom: 10px;
         text-align: start;
         line-height: 1.35;
@@ -940,7 +924,7 @@ include_once('elements/header.php');
 
     .card-desc {
         font-size: 0.7rem;
-        color: var(--gray);
+        color: #a0aec0;
         line-height: 1.7;
         margin: 0;
         text-align: start;
@@ -968,11 +952,10 @@ include_once('elements/header.php');
         position: absolute;
         top: 20px;
         left: 65%;
-        transform: translateX(-50%);
-        font-family: 'Playfair Display', serif;
+        transform: translateX(-50%); 
         font-size: clamp(60px, 10vw, 145px);
         font-weight: 700;
-        color: var(--pink-light);
+        color: #f0c0c8;
         white-space: nowrap;
         pointer-events: none;
         z-index: 0;
@@ -983,9 +966,8 @@ include_once('elements/header.php');
     /* ── Heading ── */
     .ownership-heading {
         position: relative;
-        z-index: 1;
-        font-family: 'Playfair Display', serif;
-        color: var(--navy);
+        z-index: 1; 
+        color: #1a2456;
         font-size: clamp(1.6rem, 3vw, 2.2rem);
         font-weight: 700;
         text-align: center;
@@ -1022,7 +1004,7 @@ include_once('elements/header.php');
     .section-title {
         font-size: clamp(1.6rem, 2.8vw, 2.1rem);
         font-weight: 800;
-        color: var(--navy);
+        color: #1a2456;
         margin-bottom: 22px;
         position: relative;
         z-index: 1;
@@ -1030,7 +1012,7 @@ include_once('elements/header.php');
 
     .section-desc {
         font-size: 0.925rem;
-        color: var(--gray);
+        color: #a0aec0;
         line-height: 1.8;
         margin-bottom: 32px;
     }
@@ -1070,7 +1052,7 @@ include_once('elements/header.php');
     .check-label {
         font-size: 0.92rem;
         font-weight: 600;
-        color: var(--navy);
+        color: #1a2456;
         line-height: 1.4;
         padding-top: 3px;
     }
@@ -1100,11 +1082,10 @@ include_once('elements/header.php');
         position: absolute;
         top: 50px;
         left: 50%;
-        transform: translateX(-50%);
-        font-family: 'Playfair Display', serif;
+        transform: translateX(-50%); 
         font-size: clamp(60px, 10vw, 145px);
         font-weight: 700;
-        color: var(--pink-light);
+        color: #f0c0c8;
         white-space: nowrap;
         pointer-events: none;
         z-index: 0;
@@ -1115,9 +1096,8 @@ include_once('elements/header.php');
     /* ── Heading ── */
     .compliance-heading {
         position: relative;
-        z-index: 1;
-        font-family: 'Playfair Display', serif;
-        color: var(--navy);
+        z-index: 1; 
+        color: #1a2456;
         font-size: clamp(1.6rem, 3vw, 2.2rem);
         font-weight: 700;
         text-align: center;
@@ -1131,8 +1111,8 @@ include_once('elements/header.php');
 
     .tax-section .section-tag {
         display: inline-block;
-        background: var(--primary-light);
-        color: var(--primary);
+        background: #f0c0c8;
+        color: #c0392b;
         font-size: 0.75rem;
         font-weight: 700;
         letter-spacing: 1.5px;
@@ -1145,25 +1125,25 @@ include_once('elements/header.php');
     .tax-section h2 {
         font-size: clamp(1.6rem, 3vw, 2.2rem);
         font-weight: 800;
-        color: var(--navy);
+        color: #1a2456;
         line-height: 1.25;
     }
 
     .tax-section h2 span {
-        color: var(--primary);
+        color: #c0392b;
     }
 
     .tax-section .lead {
         font-size: 1rem;
         max-width: 560px;
         margin: 0 auto;
-        color: var(--text);
+        color: #a0aec0;
     }
 
     /* ── Card ── */
     .tax-card {
-        background: var(--card-bg);
-        border: 1.5px solid var(--border);
+        background: #ffffff;
+        border: 1.5px solid #cbd5e0;
         border-radius: 18px;
         padding: 36px 28px 32px;
         text-align: center;
@@ -1180,9 +1160,9 @@ include_once('elements/header.php');
 
     /* Icon circle */
     .tax-card .icon-wrap {
-        width: var(--icon-size);
-        height: var(--icon-size);
-        background: var(--primary-light);
+        width: 80px;
+        height: 80px;
+        background: #f0c0c8;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -1198,7 +1178,7 @@ include_once('elements/header.php');
     .tax-card .icon-wrap svg {
         width: 38px;
         height: 38px;
-        stroke: var(--primary);
+        stroke: #c0392b;
         fill: none;
         stroke-width: 1.6;
         stroke-linecap: round;
@@ -1208,7 +1188,7 @@ include_once('elements/header.php');
     .tax-card h5 {
         font-size: 1rem;
         font-weight: 800;
-        color: var(--navy);
+        color: #1a2456;
         margin-bottom: 12px;
         line-height: 1.3;
     }
@@ -1217,7 +1197,7 @@ include_once('elements/header.php');
         font-size: 0.7rem;
         line-height: 1.7;
         margin: 0;
-        color: var(--text);
+        color: #a0aec0;
     }
 
     /* ── Swiper overrides ── */
@@ -1239,7 +1219,7 @@ include_once('elements/header.php');
     }
 
     .swiper-pagination-bullet-active {
-        background: var(--primary);
+        background: #c0392b;
         width: 24px;
         border-radius: 4px;
     }
@@ -1256,9 +1236,9 @@ include_once('elements/header.php');
         width: 42px;
         height: 42px;
         border-radius: 50%;
-        border: 1.5px solid var(--border);
+        border: 1.5px solid #cbd5e0;
         background: #fff;
-        color: var(--navy);
+        color: #1a2456;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1268,8 +1248,8 @@ include_once('elements/header.php');
     }
 
     .swiper-btn:hover {
-        background: var(--primary);
-        border-color: var(--primary);
+        background: #c0392b;
+        border-color: #c0392b;
         color: #fff;
     }
 
@@ -1293,11 +1273,10 @@ include_once('elements/header.php');
         position: absolute;
         top: 0px;
         left: 50%;
-        transform: translateX(-50%);
-        font-family: 'Playfair Display', serif;
+        transform: translateX(-50%); 
         font-size: clamp(60px, 10vw, 145px);
         font-weight: 700;
-        color: var(--pink-light);
+        color: #f0c0c8;
         white-space: nowrap;
         pointer-events: none;
         z-index: 0;
@@ -1308,9 +1287,8 @@ include_once('elements/header.php');
     /* ── Heading ── */
     .non-profit-heading {
         position: relative;
-        z-index: 1;
-        font-family: 'Playfair Display', serif;
-        color: var(--navy);
+        z-index: 1; 
+        color: #1a2456;
         font-size: clamp(1.6rem, 3vw, 2.2rem);
         font-weight: 700;
         text-align: center;
@@ -1321,7 +1299,7 @@ include_once('elements/header.php');
     .np-feature {
       padding-bottom: 24px;
       margin-bottom: 24px;
-      border-bottom: 1.5px solid var(--np-line);
+      border-bottom: 1.5px solid #cbd5e0;
     }
  
     .np-feature:last-child {
@@ -1333,21 +1311,21 @@ include_once('elements/header.php');
     .np-feature__title {
       font-size: 1rem;
       font-weight: 700;
-      color: var(--np-navy);
+      color: #1a2456;
       margin-bottom: 7px;
       line-height: 1.35;
     }
  
     .np-feature__title em {
       font-style: normal;
-      color: var(--np-red);
+      color: #c0392b;
     }
  
     .np-feature__desc {
       font-size: 0.875rem;
       line-height: 1.75;
       margin: 0;
-      color: var(--np-muted);
+      color: #a0aec0;
     }
  
     /* right-side titles align right on desktop */
@@ -1387,7 +1365,7 @@ include_once('elements/header.php');
    /* ── Banner ── */
     .si-banner {
       position: relative;
-      background: var(--si-bg);
+      background: #f7f8fc;
       overflow: hidden;
       padding: 72px 0 80px;
     }
@@ -1435,18 +1413,18 @@ include_once('elements/header.php');
     }
  
     .si-banner__stripe::before {
-      background: var(--si-saffron);
+      background: #ff9933;
       top: 28%;
     }
  
     .si-banner__stripe::after {
-      background: var(--si-green);
+      background: #138808;
       top: calc(28% + 22px);
     }
  
     .si-banner__stripe span {
       display: block;
-      background: var(--si-blue);
+      background: #3498db;
       top: calc(28% + 44px);
     }
  
@@ -1483,15 +1461,15 @@ include_once('elements/header.php');
     .si-banner__bracket--tl {
       top: 30px;
       left: 220px;
-      border-top: 3px solid var(--si-green);
-      border-left: 3px solid var(--si-green);
+      border-top: 3px solid #138808;
+      border-left: 3px solid #138808;
     }
  
     .si-banner__bracket--br {
       bottom: 30px;
       left: 260px;
-      border-bottom: 3px solid var(--si-green);
-      border-right: 3px solid var(--si-green);
+      border-bottom: 3px solid #138808;
+      border-right: 3px solid #138808;
     }
  
     /* ── Content ── */
@@ -1504,7 +1482,7 @@ include_once('elements/header.php');
     .si-banner__title {
       font-size: clamp(1.6rem, 3.5vw, 2.2rem);
       font-weight: 800;
-      color: var(--si-navy);
+      color: #1a2456;
       margin-bottom: 20px;
       line-height: 1.2;
     }
@@ -1512,7 +1490,7 @@ include_once('elements/header.php');
     .si-banner__desc {
       font-size: clamp(0.9rem, 1.5vw, 1rem);
       line-height: 1.85;
-      color: var(--si-muted);
+      color: #a0aec0;
       max-width: 720px;
       margin: 0 auto;
     }

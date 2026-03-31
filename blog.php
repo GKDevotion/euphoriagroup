@@ -1,0 +1,460 @@
+<?php
+include_once('elements/header.php');
+?>
+
+<style>
+    .blog-euphoria {
+        position: relative;
+        top: 88px;
+        min-height: 500px;
+        background: linear-gradient(rgba(13, 27, 62, 0.72), rgba(13, 27, 62, 0.72)),
+            url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1400&q=80') center/cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+    } 
+
+    .blog-euphoria h1 {
+        font-size: clamp(2rem, 5vw, 3.2rem);
+        letter-spacing: 1px;
+    }
+
+    /* ── Partnership Section ── */
+    .corporate-tab-section {  
+        padding: 80px 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+    /* ── CARD ── */
+    .blog-card {
+        background: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        overflow: hidden;
+        transition: box-shadow 0.25s ease, transform 0.25s ease;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog-card:hover {
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.10);
+        transform: translateY(-4px);
+    }
+
+    /* ── IMAGE WRAPPER ── */
+    .card-img-wrap {
+        position: relative;
+        overflow: hidden;
+        height: 200px;
+    }
+
+    .card-img-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+    }
+
+    .blog-card:hover .card-img-wrap img {
+        transform: scale(1.05);
+    }
+
+    /* ── LOGO BADGE ── */
+    .logo-badge {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        background: rgba(255, 255, 255, 0.92);
+        border-radius: 8px;
+        padding: 4px 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 1;
+    }
+
+    .logo-badge span.brand-top { 
+        font-size: 9px;
+        font-weight: 700;
+        color: #1a1a2e;
+        letter-spacing: 0.5px;
+    }
+
+    .logo-badge span.brand-bottom {
+        font-size: 8px;
+        color: #e03131;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+    }
+
+    /* ── CARD BODY ── */
+    .card-body {
+        padding: 18px 20px 20px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-title { 
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.35;
+        color: #25356F;
+        margin-bottom: 10px;
+    }
+
+    /* ── META ROW ── */
+    .meta-row {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 12px;
+    }
+
+    .meta-row .avatar {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #e5e7eb;
+    }
+
+    .meta-row .author {
+        font-size: 0.82rem;
+        font-weight: 600;
+        color: #1a1a2e;
+    }
+
+    .meta-row .date {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 0.78rem;
+        color: #6b7280;
+    }
+
+    .meta-row .date svg {
+        flex-shrink: 0;
+    }
+
+    /* ── EXCERPT ── */
+    .excerpt {
+        font-size: 0.84rem;
+        color: #6b7280;
+        line-height: 1.6;
+        flex: 1;
+    }
+
+    .excerpt .highlight {
+        font-weight: 600;
+        color: #1a1a2e;
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    /* ── READ MORE ── */
+    .read-more-blog {
+        display: inline-flex;
+        justify-content: end;
+        align-items: center;
+        gap: 5px;
+        margin-top: 14px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: #e03131;
+        text-decoration: none;
+        transition: gap 0.2s;
+    }
+
+    .read-more-blog:hover {
+        gap: 9px;
+        color: #e03131;
+    }
+
+    .read-more-blog svg {
+        transition: transform 0.2s;
+    }
+
+    .read-more-blog:hover svg {
+        transform: translateX(3px);
+    }
+
+    /* ── PAGINATION ── */
+    .pagination .page-link {
+        border-radius: 8px !important;
+        border: 1px solid #e5e7eb;
+        color: #1a1a2e;
+        padding: 8px 14px;
+        font-weight: 500;
+        font-size: 0.9rem;
+        margin: 0 3px;
+        transition: background 0.2s, color 0.2s;
+    }
+
+    .pagination .page-item.active .page-link {
+        background: #e03131;
+        border-color: #e03131;
+        color: #fff;
+    }
+
+    .pagination .page-link:hover:not(.active) {
+        background: #fee2e2;
+        color: #e03131;
+        border-color: #fca5a5;
+    }
+
+    /* ── SECTION WRAPPER ── */
+    .blog-section {
+        padding: 60px 0 80px;
+    }
+</style>
+
+
+<!-- HERO -->
+<section class="blog-euphoria">
+    <div>
+        <h1 class="mb-0">Our Latest Blog</h1>
+        <div class="gold-divider mx-auto mt-3"></div>
+        <p class="text-white-50 mt-2" style="font-size:.9rem;letter-spacing:2px;">Stay updated with the latest insight, trends, and Blogs to grow your business</p>
+    </div>
+</section>
+
+<section class="corporate-tab-section india-section">
+
+    <div class="container position-relative" style="z-index:2">
+
+        <div class="row g-4 py-5">
+
+            <!-- Card 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="blog-card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1551582045-6ec9c11d8697?w=600&q=80" alt="Penguin Leadership" />
+                        <div class="logo-badge"><span class="brand-top">The Euphoria</span><span class="brand-bottom">Group</span></div>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Be That Penguin: A Lesson in Bold Leadership, Global Expansion &amp; Strategic Growth</h2>
+                        <div class="meta-row">
+                            <img class="avatar" src="https://i.pravatar.cc/60?img=47" alt="Ayushi Davda" />
+                            <div>
+                                <div class="author">Ayushi Davda</div>
+                            </div>
+                            <div class="date">
+                                <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" />
+                                    <line x1="16" y1="2" x2="16" y2="6" />
+                                    <line x1="8" y1="2" x2="8" y2="6" />
+                                    <line x1="3" y1="10" x2="21" y2="10" />
+                                </svg>
+                                March 18, 2026
+                            </div>
+                        </div>
+                        <p class="excerpt">In the coldest and most unforgiving places on Earth, only the brave can survive.<br><br>A single penguin walking toward the mountains is more than just a picture; it stands for leadership, resilience, and taking action with a purpose.<br><br>Being a leader is not always easy.</p>
+                        <a href="blog-detail.php" class="read-more-blog">Read More <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                                <polyline points="9 18 15 12 9 6" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="blog-card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" alt="Innovation" />
+                        <div class="logo-badge"><span class="brand-top">The Euphoria</span><span class="brand-bottom">Group</span></div>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Innovation Beyond Tradition: How Euphoria Helps Businesses Scale Efficiently</h2>
+                        <div class="meta-row">
+                            <img class="avatar" src="https://i.pravatar.cc/60?img=47" alt="Ayushi Davda" />
+                            <div>
+                                <div class="author">Ayushi Davda</div>
+                            </div>
+                            <div class="date">
+                                <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" />
+                                    <line x1="16" y1="2" x2="16" y2="6" />
+                                    <line x1="8" y1="2" x2="8" y2="6" />
+                                    <line x1="3" y1="10" x2="21" y2="10" />
+                                </svg>
+                                March 18, 2026
+                            </div>
+                        </div>
+                        <p class="excerpt"><span class="highlight">Innovation Is No Longer Optional — It Is Essential</span>Traditional thinking is no longer sufficient to solve challenges in today's rapidly changing business environment. Markets evolve rapidly. Customer expectations are constantly shifting. Every day, competition intensifies. Businesses that rely solely on traditional methods often struggle to keep up.</p>
+                        <a href="blog-detail.php" class="read-more-blog">Read More <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                                <polyline points="9 18 15 12 9 6" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="blog-card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600&q=80" alt="City Night" />
+                        <div class="logo-badge"><span class="brand-top">The Euphoria</span><span class="brand-bottom">Group</span></div>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">The Night That Changed Everything: A Journey with Euphoria Group</h2>
+                        <div class="meta-row">
+                            <img class="avatar" src="https://i.pravatar.cc/60?img=47" alt="Ayushi Davda" />
+                            <div>
+                                <div class="author">Ayushi Davda</div>
+                            </div>
+                            <div class="date">
+                                <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" />
+                                    <line x1="16" y1="2" x2="16" y2="6" />
+                                    <line x1="8" y1="2" x2="8" y2="6" />
+                                    <line x1="3" y1="10" x2="21" y2="10" />
+                                </svg>
+                                March 19, 2026
+                            </div>
+                        </div>
+                        <p class="excerpt">Sometimes, life doesn't change in a day… It changes in a single night.<br><br>A night full of questions.<br>A night full of doubts.<br>A night where everything feels uncertain.<br><br>But also… A night where everything begins.</p>
+                        <a href="blog-detail.php" class="read-more-blog">Read More <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                                <polyline points="9 18 15 12 9 6" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="blog-card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80" alt="Culture" />
+                        <div class="logo-badge"><span class="brand-top">The Euphoria</span><span class="brand-bottom">Group</span></div>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">The Office That Built Culture First: The Euphoria Group Way</h2>
+                        <div class="meta-row">
+                            <img class="avatar" src="https://i.pravatar.cc/60?img=47" alt="Ayushi Davda" />
+                            <div>
+                                <div class="author">Ayushi Davda</div>
+                            </div>
+                            <div class="date">
+                                <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" />
+                                    <line x1="16" y1="2" x2="16" y2="6" />
+                                    <line x1="8" y1="2" x2="8" y2="6" />
+                                    <line x1="3" y1="10" x2="21" y2="10" />
+                                </svg>
+                                March 18, 2026
+                            </div>
+                        </div>
+                        <p class="excerpt">In today's fast-paced business world, most companies focus on numbers—targets, profits, and growth charts.<br><br>But the most successful organizations know a deeper truth: Culture comes first.<br><br>At Euphoria Group, we didn't just build a company. We built a culture.</p>
+                        <a href="blog-detail.php" class="read-more-blog">Read More <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                                <polyline points="9 18 15 12 9 6" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="blog-card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1551582045-6ec9c11d8697?w=600&q=80" alt="Penguin Leadership" />
+                        <div class="logo-badge"><span class="brand-top">The Euphoria</span><span class="brand-bottom">Group</span></div>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Be That Penguin: A Lesson in Bold Leadership, Global Expansion &amp; Strategic Growth</h2>
+                        <div class="meta-row">
+                            <img class="avatar" src="https://i.pravatar.cc/60?img=47" alt="Ayushi Davda" />
+                            <div>
+                                <div class="author">Ayushi Davda</div>
+                            </div>
+                            <div class="date">
+                                <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" />
+                                    <line x1="16" y1="2" x2="16" y2="6" />
+                                    <line x1="8" y1="2" x2="8" y2="6" />
+                                    <line x1="3" y1="10" x2="21" y2="10" />
+                                </svg>
+                                March 18, 2026
+                            </div>
+                        </div>
+                        <p class="excerpt">In the coldest and most unforgiving places on Earth, only the brave can survive.<br><br>A single penguin walking toward the mountains is more than just a picture; it stands for leadership, resilience, and taking action with a purpose.<br><br>Being a leader is not always easy.</p>
+                        <a href="blog-detail.php" class="read-more-blog">Read More <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                                <polyline points="9 18 15 12 9 6" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="blog-card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" alt="Innovation" />
+                        <div class="logo-badge"><span class="brand-top">The Euphoria</span><span class="brand-bottom">Group</span></div>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Innovation Beyond Tradition: How Euphoria Helps Businesses Scale Efficiently</h2>
+                        <div class="meta-row">
+                            <img class="avatar" src="https://i.pravatar.cc/60?img=47" alt="Ayushi Davda" />
+                            <div>
+                                <div class="author">Ayushi Davda</div>
+                            </div>
+                            <div class="date">
+                                <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" />
+                                    <line x1="16" y1="2" x2="16" y2="6" />
+                                    <line x1="8" y1="2" x2="8" y2="6" />
+                                    <line x1="3" y1="10" x2="21" y2="10" />
+                                </svg>
+                                March 18, 2026
+                            </div>
+                        </div>
+                        <p class="excerpt"><span class="highlight">Innovation Is No Longer Optional — It Is Essential</span>Traditional thinking is no longer sufficient to solve challenges in today's rapidly changing business environment. Markets evolve rapidly. Customer expectations are constantly shifting. Businesses that rely solely on traditional methods often struggle to keep up.</p>
+                        <a href="blog-detail.php" class="read-more-blog">Read More <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                                <polyline points="9 18 15 12 9 6" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- /row -->
+
+        <!-- Pagination -->
+        <div class="d-flex justify-content-center mt-5">
+            <nav aria-label="Blog pagination">
+                <ul class="pagination mb-0">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                                <polyline points="15 18 9 12 15 6" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                                <polyline points="9 18 15 12 9 6" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </div><!-- /container -->
+
+
+
+</section>
+
+
+<?php
+include_once('elements/faqs.php');
+include_once('elements/footer.php');
+?>
