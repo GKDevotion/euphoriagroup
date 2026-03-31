@@ -3,32 +3,6 @@
   ?>
 
  <style>
-   :root {
-     --navy: #1a2756;
-     --gold: #c9a84c;
-     --light-gold: #e8d5a3;
-     --off-white: #f8f6f1;
-     --text-dark: #1a1a2e;
-     --text-body: #444;
-     --text-muted: #777;
-     --section-bg: #f0ede6;
-     --red: #c0001d;
-     --crimson: #c0392b;
-     --crimson-light: rgba(192, 57, 43, 0.08);
-     --red-accent: #c0392b;
-     --bg: #f4f5f8;
-     --card-bg: #ffffff;
-     --text-main: #1a2855;
-     --pink-light: #f0c0c8;
-     --accent: #c0392b;
-     --text-muted-custom: #6b7280;
-     --brand: #2b3990;
-     --accent: #4a5de8;
-     --soft-bg: #f4f5fb;
-     --text: #1a1d3a;
-     --muted: #6b7280;
-     --radius: 18px;
-   }
  
    /* ── HERO ── */
    .about-euphoria {
@@ -50,7 +24,7 @@
    }
 
    .hero-breadcrumb {
-     color: var(--light-gold);
+     color: #e8d5a3;
      font-size: 0.9rem;
      letter-spacing: 2px;
    }
@@ -59,7 +33,7 @@
    .gold-divider {
      width: 60px;
      height: 2px;
-     background: var(--gold);
+     background: #c9a84c;
    }
 
    /* ── Section wrapper ── */
@@ -80,8 +54,8 @@
      left: 0;
      width: 56px;
      height: 56px;
-     border-top: 3px solid var(--red);
-     border-left: 3px solid var(--red);
+     border-top: 3px solid #c0392b;
+     border-left: 3px solid #c0392b;
    }
 
    .bracket-card::after {
@@ -91,13 +65,12 @@
      right: 0;
      width: 56px;
      height: 56px;
-     border-bottom: 3px solid var(--red);
-     border-right: 3px solid var(--red);
+     border-bottom: 3px solid #c0392b;
+     border-right: 3px solid #c0392b;
    }
 
    /* ── Typography ── */
-   .about-text {
-     font-family: 'Source Sans 3', sans-serif;
+   .about-text { 
      font-size: 15px;
      line-height: 1.85;
      color: #2a2a2a;
@@ -105,8 +78,7 @@
      margin-bottom: 0;
    }
 
-   .about-text strong {
-     font-family: 'Libre Baskerville', serif;
+   .about-text strong { 
      font-weight: 700;
      color: #1a1a1a;
    }
@@ -150,11 +122,10 @@
    .ghost-text {
      position: absolute;
      top: -55px;
-     right: -10px;
-     font-family: 'Playfair Display', serif;
+     right: -10px; 
      font-size: clamp(52px, 8vw, 132px);
      font-weight: 700;
-     color: var(--crimson);
+     color: #c0392b;
      opacity: 0.08;
      line-height: 1;
      user-select: none;
@@ -166,11 +137,10 @@
    .mission-text {
      position: absolute;
      top: -55px;
-     right: -10px;
-     font-family: 'Playfair Display', serif;
+     right: -10px; 
      font-size: clamp(52px, 8vw, 115px);
      font-weight: 700;
-     color: var(--crimson);
+     color: #c0392b;
      opacity: 0.08;
      line-height: 1;
      user-select: none;
@@ -179,12 +149,11 @@
    }
 
    /* Heading */
-   .vision-heading {
-     font-family: 'Playfair Display', serif;
+   .vision-heading { 
      font-size: clamp(20px, 4vw, 28px);
      /* FIXED */
      font-weight: 700;
-     color: var(--navy);
+     color: #1a2855;
      text-align: center;
    }
 
@@ -192,7 +161,7 @@
    .vision-tagline {
      font-size: 15px;
      font-weight: 500;
-     color: var(--text-muted);
+     color: #6b7280;
      letter-spacing: 0.02em;
      margin-bottom: 28px;
      text-align: center;
@@ -207,7 +176,7 @@
      font-size: 15.5px;
      text-align: start;
      line-height: 1.8;
-     color: var(--text-body);
+     color: #6b7280;
      margin-bottom: 20px;
    }
 
@@ -217,13 +186,13 @@
 
    /* Highlight */
    .vision-highlight {
-     background: var(--crimson-light);
-     border-left: 3px solid var(--crimson);
+     background: #fee2e2;
+     border-left: 3px solid #c0392b;
      border-radius: 6px;
      padding: 16px 20px;
      margin-top: 28px;
      font-size: 15px;
-     color: var(--navy);
+     color: #1a2855;
      font-weight: 500;
      line-height: 1.7;
    }
@@ -277,11 +246,10 @@
      position: absolute;
      top: 0px;
      left: 50%;
-     transform: translateX(-50%);
-     font-family: 'Playfair Display', serif;
+     transform: translateX(-50%); 
      font-size: clamp(60px, 10vw, 145px);
      font-weight: 700;
-     color: var(--pink-light);
+     color: #f0c0c8;
      white-space: nowrap;
      pointer-events: none;
      z-index: 0;
@@ -290,8 +258,7 @@
    }
 
    /* Section title */
-   .section-title {
-     font-family: 'Playfair Display', serif;
+   .section-title { 
      font-size: 2rem;
      font-weight: 700;
      color: #1a2855;
@@ -417,11 +384,10 @@
      position: absolute;
      top: -10px;
      left: 50%;
-     transform: translateX(-50%);
-     font-family: 'Playfair Display', serif;
+     transform: translateX(-50%); 
      font-size: clamp(60px, 10vw, 120px);
      font-weight: 700;
-     color: var(--pink-light);
+     color: #f0c0c8;
      white-space: nowrap;
      pointer-events: none;
      z-index: 0;
@@ -432,9 +398,8 @@
    /* ── Heading ── */
    .section-heading {
      position: relative;
-     z-index: 1;
-     font-family: 'Playfair Display', serif;
-     color: var(--navy);
+     z-index: 1; 
+     color: #1a2855;
      font-size: clamp(1.6rem, 3vw, 2.2rem);
      font-weight: 700;
      text-align: center;
@@ -494,7 +459,7 @@
      flex-shrink: 0;
      width: 28px;
      height: 28px;
-     background: var(--navy);
+     background: #1a2756;
      border-radius: 50%;
      display: flex;
      align-items: center;
@@ -515,7 +480,7 @@
    /* tagline */
    .tagline {
      font-size: 0.92rem;
-     color: var(--text-muted-custom);
+     color: #6b7280;
      font-style: italic;
      margin-top: 6px;
      padding-left: 42px;
@@ -541,7 +506,7 @@
 
 
    .section-wrapper {
-     background: var(--bg);
+     background: #f4f5f8;
      min-height: 100vh;
      padding: 60px 0 80px;
      position: relative;
@@ -553,11 +518,10 @@
      position: absolute;
      top: 0px;
      left: 29%;
-     transform: translateX(-50%);
-     font-family: 'Playfair Display', serif;
+     transform: translateX(-50%); 
      font-size: clamp(60px, 10vw, 145px);
      font-weight: 700;
-     color: var(--pink-light);
+     color: #f0c0c8;
      white-space: nowrap;
      pointer-events: none;
      z-index: 0;
@@ -569,8 +533,7 @@
    .watermark {
      position: absolute;
      top: 10px;
-     left: 275px;
-     font-family: 'Playfair Display', serif;
+     left: 275px; 
      font-size: clamp(80px, 12vw, 140px);
      font-weight: 700;
      color: rgba(26, 42, 74, 0.06);
@@ -581,11 +544,10 @@
    }
 
    /* Left heading */
-   .section-title {
-     font-family: 'Playfair Display', serif;
+   .section-title { 
      font-size: clamp(28px, 3.5vw, 25px);
      font-weight: 700;
-     color: var(--navy);
+     color: #1a2855;
      line-height: 1.2;
      position: relative;
      z-index: 2;
@@ -650,7 +612,7 @@
    .mindset-item {
      padding-bottom: 32px;
      margin-bottom: 32px;
-     border-bottom: 1px solid var(--border);
+     border-bottom: 1px solid #e2e5f0;
      animation: fadeInUp 0.5s ease both;
    }
 
@@ -669,7 +631,7 @@
      display: flex;
      align-items: center;
      justify-content: center;
-     border: 1.5px solid var(--border);
+     border: 1.5px solid #e2e5f0;
    }
 
    .icon-circle svg {
@@ -677,11 +639,10 @@
      height: 80px;
    }
 
-   .item-title {
-     font-family: 'DM Sans', sans-serif;
+   .item-title { 
      font-weight: 700;
      font-size: 17px;
-     color: var(--navy);
+     color: #1a2855;
      margin-bottom: 8px;
    }
 
@@ -741,11 +702,10 @@
      position: absolute;
      top: 0px;
      left: 50%;
-     transform: translateX(-50%);
-     font-family: 'Playfair Display', serif;
+     transform: translateX(-50%); 
      font-size: clamp(60px, 10vw, 145px);
      font-weight: 700;
-     color: var(--pink-light);
+     color: #f0c0c8;
      white-space: nowrap;
      pointer-events: none;
      z-index: 0;
@@ -835,8 +795,7 @@
      text-align: center;
    }
 
-   .member-name {
-     font-family: 'Playfair Display', serif;
+   .member-name { 
      font-size: 1.2rem;
      color: #1a1a2e;
      margin-bottom: 4px;
@@ -864,11 +823,10 @@
      position: absolute;
      top: 0px;
      left: 50%;
-     transform: translateX(-50%);
-     font-family: 'Playfair Display', serif;
+     transform: translateX(-50%); 
      font-size: clamp(60px, 10vw, 145px);
      font-weight: 700;
-     color: var(--pink-light);
+     color: #f0c0c8;
      white-space: nowrap;
      pointer-events: none;
      z-index: 0;
@@ -878,9 +836,9 @@
 
    /* ── Card ──────────────────────────────────────── */
    .member-card {
-     background: var(--card-bg);
+     background: #ffffff;
      border: 1.5px solid #e8eaf6;
-     border-radius: var(--radius);
+     border-radius: 18px;
      padding: 0 0 28px;
      text-align: center;
      transition: box-shadow .3s ease, transform .3s ease;
@@ -894,8 +852,8 @@
    }
 
    .member-card .photo-wrap {
-     background: var(--soft-bg);
-     border-radius: var(--radius) var(--radius) 0 0;
+     background: #f4f5f8;
+     border-radius: 18px 18px 0 0;
      overflow: hidden;
      aspect-ratio: 3/3.2;
    }
@@ -950,8 +908,8 @@
 
    .swiper-btn-prev:hover,
    .swiper-btn-next:hover {
-     background: var(--brand);
-     border-color: var(--brand);
+     background: #2b3990;
+     border-color: #2b3990;
    }
 
    .swiper-btn-prev:hover svg path,
@@ -975,7 +933,7 @@
 
    .swiper-btn-prev svg path,
    .swiper-btn-next svg path {
-     stroke: var(--brand);
+     stroke: #2b3990;
      transition: stroke .2s;
    }
 
@@ -994,7 +952,7 @@
    }
 
    .swiper-pagination-bullet-active {
-     background: var(--brand);
+     background: #2b3990;
      transform: scale(1.25);
    }
 
@@ -1024,11 +982,10 @@
      position: absolute;
      top: 0px;
      left: 50%;
-     transform: translateX(-50%);
-     font-family: 'Playfair Display', serif;
+     transform: translateX(-50%); 
      font-size: clamp(60px, 10vw, 145px);
      font-weight: 700;
-     color: var(--pink-light);
+     color: #f0c0c8;
      white-space: nowrap;
      pointer-events: none;
      z-index: 0;
@@ -1112,11 +1069,10 @@
      position: absolute;
      top: 0px;
      left: 50%;
-     transform: translateX(-50%);
-     font-family: 'Playfair Display', serif;
+     transform: translateX(-50%); 
      font-size: clamp(60px, 10vw, 145px);
      font-weight: 700;
-     color: var(--pink-light);
+     color: #f0c0c8;
      white-space: nowrap;
      pointer-events: none;
      z-index: 0;
@@ -1148,8 +1104,7 @@
    .quote-icon {
      font-size: 52px;
      line-height: 1;
-     color: #f4b8b8;
-     font-family: 'DM Serif Display', serif;
+     color: #f4b8b8; 
      margin-bottom: 14px;
      display: block;
    }
