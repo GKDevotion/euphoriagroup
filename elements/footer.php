@@ -3,12 +3,12 @@
         <footer class="main-footer">
             <div class="container">
                 <div class="row align-items-center mb-5">
-                    <div class="col-md-8">
+                    <div class="col-md-9">
                         <img src="assets/img/logo-512-white.png" alt="Euphoria Group" class="footer-logo">
                         <p class="tagline">Providing Global Businesses with Comprehensive Strategic Solutions.</p>
-                        <p class="description col-lg-8 ps-0">Euphoria Group is a global advisory firm offering company formation, corporate services, visas, real estate, and tourism solutions with expert support and seamless execution.</p>
+                        <p class="description ps-0">Euphoria Group is a global advisory firm offering company formation, corporate services, visas, real estate, and tourism solutions with expert support and seamless execution.</p>
                     </div>
-                    <div class="col-md-4 text-md-end social-icons">
+                    <div class="col-md-3 text-md-end social-icons">
                         <p class="mb-2 fw-bold">Follow #Euphoria</p>
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -18,8 +18,8 @@
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-lg-7">
+                <div class="row footer-link-background">
+                    <div class="col-lg-7 py-3">
                         <div class="row">
                             <div class="col-md-4 col-6">
                                 <h5 class="footer-heading">Company</h5>
@@ -49,7 +49,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 py-3">
                         <div class="newsletter-card">
                             <h3>Newsletter</h3>
                             <p>Get exclusive insights on finance, asset protection, and global business with the euphoria group newsletter.</p>
@@ -74,10 +74,8 @@
                 </div>
 
                 <div class="row copyright-bar mt-4">
-                    <div class="col-md-6 text-center text-md-start">
+                    <div class="col-md-12 text-center">
                         copyright &copy; 2026 The Euphoria Group. All rights reserved.
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
                         <a href="terms-conditions">Terms & Conditions</a> | <a href="privacy-policy">Privacy Policy</a>
                     </div>
                 </div>

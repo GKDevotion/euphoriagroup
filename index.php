@@ -16,6 +16,11 @@ include_once ('elements/home-slider.php');
     </div>
 </div>
 
+<style>
+    p.text-muted{
+        font-size: 1.2rem;
+    }
+</style>
 <section class="about-section">
     <div class="about-title-bg">About</div>
     
@@ -150,148 +155,163 @@ include_once ('elements/home-slider.php');
     </div>
 </section>
 
-<section class="">
-    <div class="timeline-section">
-        <div class="about-title-bg">Our Success</div>
-        
-        <div class="container timeline-content text-center">
-            <div class="row align-items-center">
-                
-                <h2 class="about-title h1">The Euphoria Timeline</h2>
+<!-- Start Our Success Section-->
+<section class="our-success-banner about-section">
+  <h2 class="about-title h1">The Euphoria Timeline</h2>
+  <div class="stats-row">
 
-                <div class="row g-4 align-items-center">
-
-                    <div class="col-6 col-md-3 stat-box">
-                        <div class="stat-number">108+</div>
-                        <div class="stat-text">
-                            <i class="fa fa-users stat-icon"></i>
-                            Professionals at Euphoria
-                        </div>
-                    </div>
-
-                    <div class="col-6 col-md-3 stat-box">
-                        <div class="stat-number">25+</div>
-                        <div class="stat-text">
-                            <i class="fa fa-globe stat-icon"></i>
-                            Nationalities Represented
-                        </div>
-                    </div>
-
-                    <div class="col-6 col-md-3 stat-box">
-                        <div class="stat-number">12+</div>
-                        <div class="stat-text">
-                            <i class="fa fa-award stat-icon"></i>
-                            Years of Industry Expertise
-                        </div>
-                    </div>
-
-                    <div class="col-6 col-md-3 stat-box">
-                        <div class="stat-number">1,000+</div>
-                        <div class="stat-text">
-                            <i class="fa fa-smile stat-icon"></i>
-                            Satisfied Clients
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+    <div class="stat-item">
+      <span class="stat-number">108+</span>
+      <span class="stat-label">
+        <i class="bi bi-people stat-icon"></i>Professionals at Euphoria
+      </span>
     </div>
 
-    <div class="main-wrapper">
-        <div class="content-box">
-
-            <div class="row align-items-center g-4">
-
-                <!-- LEFT -->
-                <div class="col-lg-7">
-                    <h2 class="section-title">Architecting Tomorrow's Opportunities</h2>
-
-                    <div class="accordion" id="customAccordion">
-
-                        <!-- Item -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#one">
-                                    Future-Ready Business Architecture
-                                    <i class="fas fa-chevron-down accordion-icon"></i>
-                                </button>
-                            </h2>
-                            <div id="one" class="accordion-collapse collapse show" data-bs-parent="#customAccordion">
-                                <div class="accordion-body">
-                                    We build business structures that work with today and tomorrow. Focused on sustainability and scalability.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#two">
-                                    Global Expansion Intelligence
-                                    <i class="fas fa-chevron-down accordion-icon"></i>
-                                </button>
-                            </h2>
-                            <div id="two" class="accordion-collapse collapse" data-bs-parent="#customAccordion">
-                                <div class="accordion-body">
-                                    Expand globally with smart strategies backed by real-time insights.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#three">
-                                    Sustainable Wealth Frameworks
-                                    <i class="fas fa-chevron-down accordion-icon"></i>
-                                </button>
-                            </h2>
-                            <div id="three" class="accordion-collapse collapse" data-bs-parent="#customAccordion">
-                                <div class="accordion-body">
-                                    Build long-term wealth using proven systems.
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Item -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#four">
-                                    Smart Investment Positioning
-                                    <i class="fas fa-chevron-down accordion-icon"></i>
-                                </button>
-                            </h2>
-                            <div id="four" class="accordion-collapse collapse" data-bs-parent="#customAccordion">
-                                <div class="accordion-body">
-                                    Optimize investments with data-driven strategies.
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- RIGHT -->
-                <div class="col-lg-5">
-                    <div class="right-section">
-
-                        <img src="https://picsum.photos/500/600" class="img-large" alt="Office">
-
-                        <div class="img-small">
-                            <img src="https://picsum.photos/400/250" alt="Map">
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
+    <div class="stat-item">
+      <span class="stat-number">25+</span>
+      <span class="stat-label">
+        <i class="bi bi-globe stat-icon"></i>Nationalities Represented
+      </span>
     </div>
+
+    <div class="stat-item">
+      <span class="stat-number">12+</span>
+      <span class="stat-label">
+        <i class="bi bi-gear stat-icon"></i>Years of Industry Expertise
+      </span>
+    </div>
+
+    <div class="stat-item">
+      <span class="stat-number">1,000+</span>
+      <span class="stat-label">
+        <i class="bi bi-emoji-smile stat-icon"></i>Satisfied Clients
+      </span>
+    </div>
+
+  </div>
 </section>
 
-<section class="about-section pb-0">
+<!-- ── Content Card ── -->
+<div class="container-fluid px-3 px-md-4 pb-5">
+  <div class="opportunities-content-card">
+    <span class="card-watermark">Unrestricted</span>
+    <div class="opportunities-content-card-inner">
+      <div class="row">
+
+        <!-- Left: Title + Accordion -->
+        <div class="col-lg-8">
+          <h3 class="section-title">Architecting Tomorrow's Opportunities</h3>
+
+          <div class="mt-5">
+            <div class="accordion euphoria-accordion" id="euphoriaAccordion">
+
+                <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#acc1">
+                    Future-Ready Business Architecture
+                    </button>
+                </h2>
+                <div id="acc1" class="accordion-collapse collapse show" data-bs-parent="#euphoriaAccordion">
+                    <div class="accordion-body">
+                    <p>We build business structures that work with the rules of today and the chances of tomorrow.</p>
+                    <p>Our method is based on long-term sustainability, adaptability, and scalability. This means that your business will grow and change as global markets do.</p>
+                    </div>
+                </div>
+                </div>
+
+                <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc2">
+                    Global Expansion Intelligence
+                    </button>
+                </h2>
+                <div id="acc2" class="accordion-collapse collapse" data-bs-parent="#euphoriaAccordion">
+                    <div class="accordion-body">
+                    <p>We leverage deep market intelligence and local expertise to help businesses expand seamlessly across borders with confidence and strategic clarity.</p>
+                    </div>
+                </div>
+                </div>
+
+                <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc3">
+                    Sustainable Wealth Frameworks
+                    </button>
+                </h2>
+                <div id="acc3" class="accordion-collapse collapse" data-bs-parent="#euphoriaAccordion">
+                    <div class="accordion-body">
+                    <p>Our wealth frameworks are designed to preserve and grow capital across generations, aligned with ethical, sustainable, and future-proof principles.</p>
+                    </div>
+                </div>
+                </div>
+
+                <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc4">
+                    Smart Investment Positioning
+                    </button>
+                </h2>
+                <div id="acc4" class="accordion-collapse collapse" data-bs-parent="#euphoriaAccordion">
+                    <div class="accordion-body">
+                    <p>We identify and position clients for high-value opportunities across emerging and established markets using data-driven investment strategies.</p>
+                    </div>
+                </div>
+                </div>
+
+                <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc5">
+                    Seamless Global Mobility Solutions
+                    </button>
+                </h2>
+                <div id="acc5" class="accordion-collapse collapse" data-bs-parent="#euphoriaAccordion">
+                    <div class="accordion-body">
+                    <p>From residency by investment to citizenship programs, we offer end-to-end global mobility solutions that open doors to new horizons.</p>
+                    </div>
+                </div>
+                </div>
+
+                <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc6">
+                    Strategic Partnership Approach
+                    </button>
+                </h2>
+                <div id="acc6" class="accordion-collapse collapse" data-bs-parent="#euphoriaAccordion">
+                    <div class="accordion-body">
+                    <p>We go beyond consulting — we become your strategic partners, deeply invested in your success through every phase of growth and transformation.</p>
+                    </div>
+                </div>
+                </div>
+
+            </div><!-- /accordion -->
+          </div>
+        </div><!-- /col-left -->
+
+        <!-- Right: Images -->
+        <div class="col-lg-4">
+          <div class="right-col">
+            <img
+              class="img-office"
+              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&q=80"
+              alt="Professionals at work"
+            />
+            <div class="img-world-card">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/1280px-World_map_-_low_resolution.svg.png"
+                alt="World map global network"
+              />
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /row -->
+    </div><!-- /inner -->
+  </div><!-- /card -->
+</div>
+<!-- End Our Success Section-->
+
+<section class="about-section pb-0 mt-5">
     <div class="about-title-bg">Blog</div>
         
         <div class="container timeline-content text-center">

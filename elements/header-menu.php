@@ -77,6 +77,7 @@
       white-space: nowrap;
       position: relative;
       transition: color .2s ease;
+      font-size: 1rem;
   }
 
   /* Active / hover underline */
