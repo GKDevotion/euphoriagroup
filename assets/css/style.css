@@ -4,6 +4,7 @@
     --text-dark:     #333333;
     --red-blur:      #e31e250f;
     --black-blur:    #33333364;
+    --black-blur2:  #c8c7c4;
     --bg-light:      #FFEFEF;
     --card-border:   rgba(26, 48, 102, 0.12);
     --nav-h:         72px;
@@ -173,34 +174,6 @@ h1, h2, h3, h4, h5, h6 {
     .hero-content { text-align: center; padding: 20px; }
     .hero-person { display: none; } /* Hide people on small phones for space */
     .country-tag { display: none; }
-}
-
-/* 1. Header Sliding Logos (Add this to your Header file) */
-.logo-slider-container {
-    background: #fff;
-    overflow: hidden;
-    padding: 20px 0;
-    border-bottom: 1px solid #eee;
-}
-.logo-track {
-    display: flex;
-    width: calc(250px * 10); /* Adjust based on logo count */
-    /* animation: scrollLogos 30s linear infinite; */
-}
-.logo-track img {
-    height: 50px;
-    margin: 0 50px;
-    filter: grayscale(100%);
-    transition: 0.3s;
-    opacity: 0.7;
-}
-.logo-track img:hover {
-    filter: grayscale(0%);
-    opacity: 1;
-}
-@keyframes scrollLogos {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-250px * 5)); }
 }
 
 /* 2. About Us Section Styling */

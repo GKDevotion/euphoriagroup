@@ -3,18 +3,254 @@ include_once ('elements/header.php');
 include_once ('elements/home-slider.php');
 ?>
 
-<div class="logo-slider-container">
-    <div class="container">
-        <div class="logo-track">
-            <img src="assets/img/logo.png" alt="Corporate Service">
-            <img src="assets/img/logo.png" alt="Real Estate">
-            <img src="assets/img/logo.png" alt="Travel & Tourism">
-            <img src="assets/img/logo.png" alt="Private Wealth">
-            <img src="assets/img/logo.png" alt="Corporate Service">
-            <img src="assets/img/logo.png" alt="Real Estate">
-        </div>
-    </div>
+<!-- Start Image Slider SHELL -->
+<style>
+    
+    /* ══════════════════════════════════
+        CAROUSEL OUTER
+    ══════════════════════════════════ */
+    .carousel-outer {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        z-index: 2;
+        padding: 30px 0;
+    }
+
+    /* soft fade on edges */
+    .carousel-outer::before,
+    .carousel-outer::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 140px;
+        height: 100%;
+        z-index: 10;
+        pointer-events: none;
+    }
+    .carousel-outer::before { left:  0; background: linear-gradient(to right, var(--light-blue), transparent); }
+    .carousel-outer::after  { right: 0; background: linear-gradient(to left,  var(--light-blue), transparent); }
+
+    /* ── track ── */
+    .carousel-track {
+        display: flex;
+        align-items: center;
+        animation: slide 30s linear infinite;
+    }
+    .carousel-outer:hover .carousel-track { animation-play-state: paused; }
+
+    @keyframes slide {
+        from { transform: translateX(0); }
+        to   { transform: translateX(-50%); }
+    }
+
+    /* ══════════════════════════════════
+        ITEM = LOGO + SEPARATOR(STAR)
+        Layout: [logo-block] [star-sep] [logo-block] [star-sep] …
+    ══════════════════════════════════ */
+    .item {
+        display: flex;
+        align-items: center;
+    }
+
+    /* ── LOGO BLOCK ── */
+    .logo-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        padding: 18px 28px;
+        cursor: pointer;
+        transition: transform .55s cubic-bezier(.25,.46,.45,.94);
+        position: relative;
+    }
+    .logo-block:hover { transform: scale(1.13); z-index: 20; }
+
+    /* top arc line */
+    .logo-arc {
+        width: 96px;
+        height: 8px;
+        position: relative;
+        margin-bottom: 2px;
+    }
+    .logo-arc::after {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 2px;
+        background: linear-gradient(to right, transparent 0%, var(--card-border) 20%, var(--card-border) 80%, transparent 100%);
+        border-radius: 50%;
+        transition: background .5s ease;
+    }
+    .logo-block:hover .logo-arc::after {
+        background: linear-gradient(to right,
+        transparent 0%,
+        var(--euphoria-blue) 20%,
+        var(--euphoria-red)  50%,
+        var(--euphoria-blue) 80%,
+        transparent 100%);
+    }
+
+    /* tagline row */
+    .tagline-row {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+    .tline {
+        width: 20px;
+        height: 1px;
+        background: var(--card-border);
+        transition: background .5s ease;
+    }
+    .tagline {
+        font-size: 7.5px;
+        letter-spacing: .28em;
+        text-transform: uppercase;
+        color: var(--card-border);
+        white-space: nowrap;
+        transition: color .5s ease;
+    }
+    .logo-block:hover .tline    { background: var(--euphoria-blue); }
+    .logo-block:hover .tagline  { color: var(--euphoria-red); }
+
+    /* ── STAR SEPARATOR (centered BETWEEN two logos) ── */
+    .star-sep {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        flex-shrink: 0;
+        position: relative;
+        z-index: 5;
+    }
+
+    /* The SVG star */
+    .star-svg {
+        width: 18px;
+        height: 18px;
+        animation: starBreath 3.6s ease-in-out infinite;
+        transition: filter .5s ease;
+        filter: grayscale(1) brightness(.65);
+    }
+
+    /* on hover of EITHER adjacent logo — achieved via JS class */
+    .star-sep.lit .star-svg {
+        filter: grayscale(0) brightness(1);
+    }
+
+    @keyframes starBreath {
+        0%,100% { transform: scale(1)    rotate(0deg);   opacity: .7; }
+        30%      { transform: scale(1.22) rotate(22.5deg); opacity: 1; }
+        60%      { transform: scale(.92) rotate(22.5deg); opacity: .85; }
+        80%      { transform: scale(1.1) rotate(0deg);   opacity: 1; }
+    }
+
+    /* ── LOGO BLOCK ── */
+    .logo-block {
+        cursor: pointer;
+        position: relative;
+        filter: grayscale(0) brightness(1);
+        transition: filter .55s ease, transform .55s cubic-bezier(.25,.46,.45,.94);
+        /* subtle zoom breathe */
+    }
+    .logo-block img {
+        height: 70px;
+        width: 180px;
+        mix-blend-mode: multiply;
+    }
+
+    .logo-block:hover {
+        filter: grayscale(0) brightness(1);
+        transform: scale(1.15) !important;
+        animation: none;
+        z-index: 20;
+    }
+
+    .logo-block:hover::after { opacity: 1; }
+</style>
+<div class="carousel-outer">
+  <div class="carousel-track" id="track"></div>
 </div>
+<script>
+    /* ── Data ── */
+    const logos = [
+    { src: 'assets/img/logo/corporate-service.png', alt: 'Corporate Service' },
+    { src: 'assets/img/logo/private-wealth.png', alt: 'Private Wealth'    },
+    { src: 'assets/img/logo/real-state.png', alt: 'Real Estate'       },
+    { src: 'assets/img/logo/travel-tourism.png', alt: 'Travel & Tourism'  },
+    ];
+
+    /* ── Inline SVG star (4-point compass crosshair style matching the original) ── */
+    function starSVG(color = '#999') {
+    return '<img class="star-svg" src="assets/img/logo/star.png" alt="Star">';
+    return `
+    <svg class="star-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <!-- horizontal bar -->
+        <line x1="2" y1="12" x2="22" y2="12" stroke="${color}" stroke-width="1.2"/>
+        <!-- vertical bar -->
+        <line x1="12" y1="2" x2="12" y2="22" stroke="${color}" stroke-width="1.2"/>
+        <!-- diagonal tick NW-SE -->
+        <line x1="7.5" y1="7.5" x2="16.5" y2="16.5" stroke="${color}" stroke-width=".8"/>
+        <!-- diagonal tick NE-SW -->
+        <line x1="16.5" y1="7.5" x2="7.5" y2="16.5" stroke="${color}" stroke-width=".8"/>
+        <!-- centre dot -->
+        <circle cx="12" cy="12" r="1.8" fill="${color}"/>
+        <!-- outer ring -->
+        <circle cx="12" cy="12" r="5" fill="none" stroke="${color}" stroke-width=".7" opacity=".5"/>
+    </svg>`;
+    }
+
+    /* ── Logo block HTML ── */
+    function logoHTML(logo, idx) {
+    return `<div class="logo-block" data-idx="${idx}">
+        <img src="${logo.src}" alt="${logo.alt}">
+    </div>`;
+    }
+
+    /* ── Star separator HTML ── */
+    function sepHTML(idx) {
+    return `<div class="star-sep" data-sep="${idx}">${starSVG('#999')}</div>`;
+    }
+
+    /* ── Build track (logos × 2 for seamless loop) ── */
+    function buildTrack(logos) {
+    let html = '';
+    const all = [...logos, ...logos]; // duplicate for seamless loop
+    all.forEach((logo, i) => {
+        html += `<div class="item">`;
+        html += logoHTML(logo, i);
+        html += sepHTML(i);          // star AFTER each logo = sits between this and the next
+        html += `</div>`;
+    });
+    return html;
+    }
+
+    document.getElementById('track').innerHTML = buildTrack(logos);
+
+    /* ── Light up the star between two logos on hover ── */
+    document.querySelectorAll('.logo-block').forEach(block => {
+    function getNeighbourSeps(block) {
+        // The star-sep is a sibling AFTER the logo-block inside .item,
+        // AND the star-sep of the previous .item
+        const item    = block.closest('.item');
+        const sepAfter = item.querySelector('.star-sep');
+        const prevItem = item.previousElementSibling;
+        const sepBefore = prevItem ? prevItem.querySelector('.star-sep') : null;
+        return [sepAfter, sepBefore].filter(Boolean);
+    }
+
+    block.addEventListener('mouseenter', () => {
+        getNeighbourSeps(block).forEach(s => s.classList.add('lit'));
+    });
+    block.addEventListener('mouseleave', () => {
+        getNeighbourSeps(block).forEach(s => s.classList.remove('lit'));
+    });
+    });
+</script>
+<!-- End Image Slider SHELL -->
+
 
 <style>
     p.text-muted{
