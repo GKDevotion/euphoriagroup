@@ -29,14 +29,14 @@ include_once ('elements/home-slider.php');
             
             <h2 class="about-title h1">About Euphoria Group</h2>
 
-            <div class="col-lg-6">
+            <div class="col-lg-5">
                 <div class="image-overlap-container">
                     <img src="assets/img/img-7.png" class="oval-img img-large" alt="Our Team">
                     <img src="assets/img/img-6.png" class="oval-img img-small" alt="Business Meeting">
                 </div>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-7">
                 <p class="text-muted mb-4">
                     Euphoria Group is a reputable multi-service consultancy that provides international business setup, 
                     global travel and visa services, real estate brokerage, insurance solutions, and stock market 
