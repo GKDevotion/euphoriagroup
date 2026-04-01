@@ -263,10 +263,41 @@
 
             // ─── BACK TO TOP ───
             const backBtn = document.getElementById('backTop');
+
             window.addEventListener('scroll', () => {
                 backBtn.classList.toggle('show', window.scrollY > 400);
             });
-            backBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+            
+            backBtn.addEventListener('click', () => {
+                // slowScrollToTop(1000); // duration in ms (increase = slower)
+                window.scrollTo({ top: 0, behavior: 'smooth' })
+            });
+
+
+            function slowScrollToTop(duration) {
+                const start = window.scrollY;
+                const startTime = performance.now();
+
+                function scrollStep(currentTime) {
+                    const elapsed = currentTime - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+
+                    window.scrollTo(0, start * (1 - easeInOut(progress)));
+
+                    if (progress < 1) {
+                        requestAnimationFrame(scrollStep);
+                    }
+                }
+
+                function easeInOut(t) {
+                    return t < 0.5
+                        ? 2 * t * t
+                        : 1 - Math.pow(-2 * t + 2, 2) / 2;
+                }
+
+                requestAnimationFrame(scrollStep);
+            }
+
 
             // ─── NAVBAR ACTIVE ───
             const sections = document.querySelectorAll('section[id]');
