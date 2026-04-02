@@ -24,26 +24,76 @@
                             <div class="col-md-4 col-6">
                                 <h5 class="footer-heading">Company</h5>
                                 <ul class="footer-links">
-                                    <li><a href="about-us"><i class="fas fa-plus"></i> About Euphoria</a></li>
-                                    <li><a href="partner-up"><i class="fas fa-plus"></i> Partner Up</a></li>
-                                    <li><a href="career"><i class="fas fa-plus"></i> Career</a></li>
-                                    <li><a href="blog"><i class="fas fa-plus"></i> Blog</a></li>
-                                    <li><a href="contact"><i class="fas fa-plus"></i> Contact</a></li>
+                                    <li>
+                                        <a href="about-us">
+                                            <img src="assets/img/icon/star-white.png" class="stat-icon-footer">
+                                            About Euphoria
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="partner-up">
+                                            <img src="assets/img/icon/star-white.png" class="stat-icon-footer">
+                                            Partner Up
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="career">
+                                            <img src="assets/img/icon/star-white.png" class="stat-icon-footer">
+                                            Career
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="blog">
+                                            <img src="assets/img/icon/star-white.png" class="stat-icon-footer">
+                                            Blog
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="contact">
+                                            <img src="assets/img/icon/star-white.png" class="stat-icon-footer">
+                                            Contact
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="col-md-4 col-6">
                                 <h5 class="footer-heading">Inbound Services</h5>
                                 <ul class="footer-links">
-                                    <li><a href="corporate-establishment"><i class="fas fa-plus"></i> Corporate Establishment</a></li>
-                                    <li><a href="corporate-service"><i class="fas fa-plus"></i> Corporate Service</a></li>
-                                    <li><a href="tours-travels"><i class="fas fa-plus"></i> Travel & Tourism</a></li>
-                                    <li><a href="wealth-asset-solution"><i class="fas fa-plus"></i> Wealth & Asset Solutions</a></li>
+                                    <li>
+                                        <a href="corporate-establishment">
+                                            <img src="assets/img/icon/star-white.png" class="stat-icon-footer">
+                                            Corporate Establishment
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="corporate-service">
+                                            <img src="assets/img/icon/star-white.png" class="stat-icon-footer">
+                                            Corporate Service
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="tours-travels">
+                                            <img src="assets/img/icon/star-white.png" class="stat-icon-footer">
+                                            Travel & Tourism
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="wealth-asset-solution">
+                                            <img src="assets/img/icon/star-white.png" class="stat-icon-footer">
+                                            Wealth & Asset Solutions
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="col-md-4 col-12">
                                 <h5 class="footer-heading">Outbound Services</h5>
                                 <ul class="footer-links">
-                                    <li><a href="corporate-service"><i class="fas fa-plus"></i> Corporate Service Provider</a></li>
+                                    <li>
+                                        <a href="corporate-service">
+                                            <img src="assets/img/icon/star-white.png" class="stat-icon-footer">
+                                            Corporate Service Provider
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
