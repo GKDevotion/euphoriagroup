@@ -2,30 +2,29 @@
   include_once('elements/header.php');
   ?>
 
-<style>
- 
+ <style>
    /* ── HERO ── */
-  .about-euphoria {
-    position: relative;
-    min-height: 50vh;
-    background-image: url('assets/img/about-us-bg.png');
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 120px;
-  }
+   .about-euphoria {
+     position: relative;
+     min-height: 50vh;
+     background-image: url('assets/img/about-us-bg.png');
+     display: flex;
+     /* flex-direction: column; */
+     align-items: center;
+     justify-content: center;
+     overflow: hidden;
+     background-size: cover;
+     background-repeat: no-repeat;
+     margin-top: 120px;
+   }
 
    /* ── Section wrapper ── */
    .about-section {
      padding: 80px 0 50px;
    }
-</style>
+ </style>
 
-<!-- HERO -->
+ <!-- HERO -->
  <section class="about-euphoria">
    <div>
      <h1 class="mb-0">About The Euphoria Group</h1>
@@ -33,7 +32,7 @@
    </div>
  </section>
 
-<style>
+ <style>
    /* ── Corner-bracket card ── */
    .bracket-card {
      position: relative;
@@ -63,14 +62,14 @@
    }
 
    /* ── Typography ── */
-   .about-text { 
+   .about-text {
      font-size: 16px;
      line-height: 1.5;
      text-align: justify;
      margin-bottom: 0;
    }
 
-   .about-text strong { 
+   .about-text strong {
      font-weight: 700;
      color: #1a1a1a;
    }
@@ -78,7 +77,7 @@
    .para-gap {
      margin-top: 1.75rem;
    }
-</style>
+ </style>
 
  <section class="about-section">
    <div class="container">
@@ -117,7 +116,7 @@
    </div>
  </section>
 
-<style>
+ <style>
    /* ── Vision Section ── */
    .vision-section {
      padding: 50px 0;
@@ -168,7 +167,7 @@
    .mission-text {
      position: absolute;
      top: -55px;
-     right: -10px; 
+     right: -10px;
      font-size: clamp(52px, 8vw, 115px);
      font-weight: 700;
      color: #c0392b;
@@ -248,9 +247,9 @@
        opacity: 0.06;
      }
    }
-</style>
+ </style>
 
-<section class="vision-section">
+ <section class="vision-section">
    <div class="container">
      <div class="row align-items-center g-5">
 
@@ -341,271 +340,273 @@
    </div>
  </section>
 
-<style>
-   /* Section */
+ <style>
    .trust-section {
      position: relative;
-     padding: 100px 0 120px;
-     overflow: hidden;
-     background: #fff;
+     padding: 60px 40px 80px;
+     overflow: hidden; 
    }
 
-   /* Watermark */
+   /* "Our Commitment" watermark */
    .trust-section::before {
      content: "Our Commitment";
      position: absolute;
-     top: 0px;
+     top: -20px;
      left: 50%;
-     transform: translateX(-50%); 
-     font-size: clamp(60px, 10vw, 145px);
-     font-weight: 700;
-     color: #f0c0c8;
+     transform: translateX(-50%);
+     font-size: clamp(50px, 9vw, 120px);
+     font-weight: 800;
+     color: #c0392b;
      white-space: nowrap;
      pointer-events: none;
+     opacity: 0.08;
      z-index: 0;
-     opacity: 0.2;
      letter-spacing: 2px;
    }
-
-   /* Section title */
-   .section-title { 
-     font-size: 2rem;
+  
+   .outerline{
+    outline: 2px solid #c8c8c8; 
+    outline-offset : 2px;
+    z-index: -1;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
+   }
+   .section-heading {
+     text-align: center;
+     font-size: 1.7rem;
      font-weight: 700;
      color: #1a2855;
-   }
-
-   /* CARD */
-   .trust-card {
-     background: #fff;
-     border-radius: 14px;
-     border: 1px solid #eee;
-     border-right: 3px solid rgba(230, 57, 70, 0.4);
-     /* 0.4 = opacity */
-     display: flex;
-     align-items: center;
+     margin-bottom: 60px;
      position: relative;
-     min-height: 110px;
-     box-shadow: 0 6px 20px rgba(26, 40, 85, 0.06);
-     transition: all 0.3s ease;
-     width: 100%;
-     max-width: 340px;
-
-
-   }
-
-   /* Hover */
-   .trust-card:hover {
-     transform: translateY(-6px);
-     box-shadow: 0 18px 40px rgba(26, 40, 85, 0.12);
-   }
-
-   .trust-icon-wrap {
-     width: 120px;
-     height: 120px;
-     border-radius: 50%;
-     background: #1a2855;
-
-     display: flex;
-     align-items: center;
-     justify-content: center;
-
-     position: absolute;
-     left: -60px;
-     top: 50%;
-     transform: translateY(-50%);
-
-     /* Outer light ring */
-     border: 6px solid #e6e6e6;
-
-     /* Create second soft ring effect */
-     outline: 3px solid grey;
-     outline-offset: 2px;
-
-     /* Soft shadow */
-     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-
      z-index: 2;
    }
 
-   /* SVG Icon */
+   .cards-grid {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 30px 60px;
+     position: relative;
+     z-index: 2;
+     max-width: 1100px;
+     margin: 0 auto;
+   }
+
+   .trust-card {
+     background: #ffffff;
+     border-radius: 16px;
+     border: 1px solid #e8e8e8;
+     border-right: 3px solid rgba(220, 60, 70, 0.45);
+     display: flex;
+     align-items: center;
+     position: relative;
+     min-height: 105px;
+     margin-left: 55px;
+     box-shadow: 0 4px 20px rgba(26, 40, 85, 0.07);
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     padding: 18px 18px 18px 70px;
+   }
+
+   .trust-card:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 14px 35px rgba(26, 40, 85, 0.13);
+   }
+
+   .trust-icon-wrap {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    background: #1a2855;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -52px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 5px solid #e8e8e8;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
+    z-index: 3;
+}
+
+/* Back-side outline ring using a pseudo-element */
+.trust-icon-wrap::before {
+    content: '';
+    position: absolute;
+    inset: -8px;          /* controls how far the ring sits outside the border */
+    border-radius: 50%;
+    border: 2px solid #c8c8c8;
+    z-index: -1;          /* pushes it BEHIND the element */
+    pointer-events: none;
+}
+
    .trust-icon-wrap svg {
-     width: 36px;
-     height: 36px;
+     width: 34px;
+     height: 34px;
      stroke: #ffffff;
      fill: none;
-     stroke-width: 1.8;
+     stroke-width: 1.6;
+     stroke-linecap: round;
+     stroke-linejoin: round;
    }
 
-   /* TEXT */
    .trust-card-text {
-     padding-left: 80px;
-     font-size: 0.95rem;
+     font-size: 0.88rem;
      color: #6c757d;
-     line-height: 1.6;
+     line-height: 1.55;
      font-weight: 500;
-     max-width: 280px;
    }
 
-   /* Skyline */
+   .plus {
+     position: absolute;
+     color: rgba(26, 40, 85, 0.12);
+     font-size: 1.1rem;
+     font-weight: 300;
+     pointer-events: none;
+     z-index: 1;
+   }
+
+   /* Skyline watermark */
    .skyline-bg {
      position: absolute;
      bottom: 0;
-     width: 100%;
-     height: 160px;
-     opacity: 0.05;
-     background-size: cover;
-   }
-
-   /* PLUS SIGNS */
-   .plus {
-     position: absolute;
-     color: rgba(26, 40, 85, 0.1);
-     font-size: 1rem;
+     left: 0;
+     right: 0;
+     height: 180px;
+     opacity: 0.06;
+     z-index: 0;
      pointer-events: none;
+     overflow: hidden;
    }
 
-   /* RESPONSIVE */
-   @media (max-width: 768px) {
+   .skyline-bg svg {
+     width: 100%;
+     height: 100%;
+   }
+
+   @media (max-width: 992px) {
+     .cards-grid {
+       grid-template-columns: repeat(2, 1fr);
+     }
+   }
+
+   @media (max-width: 600px) {
+     .cards-grid {
+       grid-template-columns: 1fr;
+     }
+
      .trust-card {
-       padding: 20px;
+       margin-left: 45px;
+       padding-left: 60px;
      }
 
      .trust-icon-wrap {
-       margin-left: -30px;
-       width: 70px;
-       height: 70px;
-     }
-
-     .trust-card-text {
-       max-width: 100%;
-       font-size: 0.9rem;
+       width: 85px;
+       height: 85px;
+       left: -42px;
      }
    }
-
-   .custom-gap {
-
-     column-gap: 0rem;
-     /* horizontal gap */
-   }
-</style>
+ </style>
 
  <section class="container ">
+   <div class="trust-section ">
+     <!-- Plus signs -->
+     <span class="plus" style="top:32%; left:8%">+</span>
+     <span class="plus" style="top:32%; left:36%">+</span>
+     <span class="plus" style="top:32%; left:65%">+</span>
+     <span class="plus" style="top:32%; right:5%">+</span>
+     <span class="plus" style="top:62%; left:8%">+</span>
+     <span class="plus" style="top:62%; left:36%">+</span>
+     <span class="plus" style="top:62%; left:65%">+</span>
+     <span class="plus" style="top:62%; right:5%">+</span>
 
-   <div class="trust-section position-relative" style="z-index:1;">
+     <h2 class="section-heading">Built on Trust</h2>
 
-     <h2 class="section-heading">Built On Trust</h2>
+     <div class="cards-grid">
 
-     <!-- Row 1 -->
-     <div class="row custom-gap mb-5">
-
-       <div class="col-12 col-md-4">
-         <div class="trust-card">
-           <div class="trust-icon-wrap">
-             <svg viewBox="0 0 24 24">
-               <path d="M6 9c0 0 1-1 3-1s3.5 1.5 3.5 1.5S14 8 16 8s3 1 3 1" />
-               <path d="M3 12c0 4 3 6 9 9 6-3 9-5 9-9V6l-9-3-9 3z" />
-               <path d="M9 12l2 2 4-4" />
-             </svg>
-           </div>
-           <div class="trust-card-text">
-             Building long-term relationships based on trust and transparency
-           </div>
+       <!-- Card 1 -->
+       <div class="trust-card ">
+         <div class="trust-icon-wrap ">
+           <svg viewBox="0 0 24 24">
+             <path d="M20.42 4.58a5.4 5.4 0 00-7.65 0l-.77.78-.77-.78a5.4 5.4 0 00-7.65 7.65l8.42 8.42 8.42-8.42a5.4 5.4 0 000-7.65z" />
+           </svg>
          </div>
+         <div class="trust-card-text">Building long-term relationships based on trust and transparency</div>
        </div>
 
-       <div class="col-12 col-md-4">
-         <div class="trust-card">
-           <div class="trust-icon-wrap">
-             <svg viewBox="0 0 24 24">
-               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-               <circle cx="12" cy="10" r="2.5" />
-               <path d="M7.5 19.5C7.5 17 9.5 15 12 15s4.5 2 4.5 4.5" />
-             </svg>
-           </div>
-           <div class="trust-card-text">
-             Safeguarding client interests at every stage
-           </div>
+       <!-- Card 2 -->
+       <div class="trust-card">
+         <div class="trust-icon-wrap">
+           <svg viewBox="0 0 24 24">
+             <circle cx="9" cy="7" r="2.5" />
+             <path d="M14 7h2a2 2 0 012 2v1" />
+             <path d="M3 19v-1a5 5 0 015-5h3" />
+             <path d="M14 14l2.5 2.5L21 12" />
+             <circle cx="17" cy="17" r="4" />
+           </svg>
          </div>
+         <div class="trust-card-text">Safeguarding client interests at every stage</div>
        </div>
 
-       <div class="col-12 col-md-4">
-         <div class="trust-card">
-           <div class="trust-icon-wrap">
-             <svg viewBox="0 0 24 24">
-               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-               <polyline points="9 12 11 14 15 10" />
-             </svg>
-           </div>
-           <div class="trust-card-text">
-             Delivering value that goes beyond transactions
-           </div>
+       <!-- Card 3 -->
+       <div class="trust-card">
+         <div class="trust-icon-wrap">
+           <svg viewBox="0 0 24 24">
+             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+             <polyline points="9 12 11 14 15 10" />
+           </svg>
          </div>
+         <div class="trust-card-text">Delivering value that goes beyond transactions</div>
        </div>
 
-     </div>
-
-     <!-- Row 2 -->
-     <div class="row custom-gap">
-
-       <div class="col-12 col-md-4">
-         <div class="trust-card">
-           <div class="trust-icon-wrap">
-             <svg viewBox="0 0 24 24">
-               <circle cx="12" cy="12" r="3" />
-               <path
-                 d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z" />
-             </svg>
-           </div>
-           <div class="trust-card-text">
-             Providing recommendations guided by integrity and responsibility
-           </div>
+       <!-- Card 4 -->
+       <div class="trust-card">
+         <div class="trust-icon-wrap">
+           <svg viewBox="0 0 24 24">
+             <circle cx="12" cy="12" r="3" />
+             <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z" />
+           </svg>
          </div>
+         <div class="trust-card-text">Providing recommendations guided by integrity and responsibility</div>
        </div>
 
-       <div class="col-12 col-md-4">
-         <div class="trust-card">
-           <div class="trust-icon-wrap">
-             <svg viewBox="0 0 24 24">
-               <line x1="12" y1="20" x2="12" y2="10" />
-               <line x1="18" y1="20" x2="18" y2="4" />
-               <line x1="6" y1="20" x2="6" y2="16" />
-               <path d="M22 12l-4-4-4 4-4-4-4 4" />
-             </svg>
-           </div>
-           <div class="trust-card-text">
-             Understanding client goals through a personalized approach
-           </div>
+       <!-- Card 5 -->
+       <div class="trust-card">
+         <div class="trust-icon-wrap">
+           <svg viewBox="0 0 24 24">
+             <line x1="6" y1="20" x2="6" y2="14" />
+             <line x1="12" y1="20" x2="12" y2="8" />
+             <line x1="18" y1="20" x2="18" y2="4" />
+             <circle cx="18" cy="4" r="1.5" />
+             <path d="M6 10l3-4 4 3 3-5" />
+           </svg>
          </div>
+         <div class="trust-card-text">Understanding client goals through a personalized approach</div>
        </div>
 
-       <div class="col-12 col-md-4">
-         <div class="trust-card">
-           <div class="trust-icon-wrap">
-             <svg viewBox="0 0 24 24">
-               <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
-               <polyline points="17 6 23 6 23 12" />
-             </svg>
-           </div>
-           <div class="trust-card-text">
-             Measuring success by lasting trust and sustainable outcomes, not quick wins
-           </div>
+       <!-- Card 6 -->
+       <div class="trust-card">
+         <div class="trust-icon-wrap">
+           <svg viewBox="0 0 24 24">
+             <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+             <polyline points="17 6 23 6 23 12" />
+           </svg>
          </div>
+         <div class="trust-card-text">Measuring success by lasting trust and sustainable outcomes, not quick wins</div>
        </div>
 
      </div>
 
    </div>
-
+   
  </section>
 
-<style>
+ <style>
    /* watermark background text */
    .why-section::before {
      content: "Our Advantage";
      position: absolute;
      top: -10px;
      left: 50%;
-     transform: translateX(-50%); 
+     transform: translateX(-50%);
      font-size: clamp(60px, 10vw, 120px);
      font-weight: 700;
      color: #f0c0c8;
@@ -619,7 +620,7 @@
    /* ── Heading ── */
    .section-heading {
      position: relative;
-     z-index: 1; 
+     z-index: 1;
      color: #1a2855;
      font-size: clamp(1.6rem, 3vw, 2.2rem);
      font-weight: 700;
@@ -739,7 +740,7 @@
      position: absolute;
      top: 0px;
      left: 29%;
-     transform: translateX(-50%); 
+     transform: translateX(-50%);
      font-size: clamp(60px, 10vw, 145px);
      font-weight: 700;
      color: #f0c0c8;
@@ -754,7 +755,7 @@
    .watermark {
      position: absolute;
      top: 10px;
-     left: 275px; 
+     left: 275px;
      font-size: clamp(80px, 12vw, 140px);
      font-weight: 700;
      color: rgba(26, 42, 74, 0.06);
@@ -765,7 +766,7 @@
    }
 
    /* Left heading */
-   .section-title { 
+   .section-title {
      font-size: clamp(28px, 3.5vw, 25px);
      font-weight: 700;
      color: #1a2855;
@@ -860,7 +861,7 @@
      height: 80px;
    }
 
-   .item-title { 
+   .item-title {
      font-weight: 700;
      font-size: 17px;
      color: #1a2855;
@@ -923,7 +924,7 @@
      position: absolute;
      top: 0px;
      left: 50%;
-     transform: translateX(-50%); 
+     transform: translateX(-50%);
      font-size: clamp(60px, 10vw, 145px);
      font-weight: 700;
      color: #f0c0c8;
@@ -1016,7 +1017,7 @@
      text-align: center;
    }
 
-   .member-name { 
+   .member-name {
      font-size: 1.2rem;
      color: #1a1a2e;
      margin-bottom: 4px;
@@ -1044,7 +1045,7 @@
      position: absolute;
      top: 0px;
      left: 50%;
-     transform: translateX(-50%); 
+     transform: translateX(-50%);
      font-size: clamp(60px, 10vw, 145px);
      font-weight: 700;
      color: #f0c0c8;
@@ -1203,7 +1204,7 @@
      position: absolute;
      top: 0px;
      left: 50%;
-     transform: translateX(-50%); 
+     transform: translateX(-50%);
      font-size: clamp(60px, 10vw, 145px);
      font-weight: 700;
      color: #f0c0c8;
@@ -1290,7 +1291,7 @@
      position: absolute;
      top: 0px;
      left: 50%;
-     transform: translateX(-50%); 
+     transform: translateX(-50%);
      font-size: clamp(60px, 10vw, 145px);
      font-weight: 700;
      color: #f0c0c8;
@@ -1325,7 +1326,7 @@
    .quote-icon {
      font-size: 52px;
      line-height: 1;
-     color: #f4b8b8; 
+     color: #f4b8b8;
      margin-bottom: 14px;
      display: block;
    }
@@ -1430,7 +1431,7 @@
      gap: 14px;
      margin-top: 32px;
    }
-</style> 
+ </style>
 
 
  <section class="why-section">
@@ -2097,7 +2098,7 @@
   include_once('elements/faqs.php');
   include_once('elements/footer.php');
   ?>
- 
+
 
  <script>
    const swiper = new Swiper('#teamSwiper', {
