@@ -63,7 +63,7 @@
 
                 <div class="row contact-info-bar justify-content-center text-center">
                     <div class="col-md-auto px-4 contact-item">
-                        <i class="fas fa-phone-alt"></i> +91 261 3686846
+                        <i class="fas fa-phone-volume"></i> +91 261 3686846
                     </div>
                     <div class="col-md-auto px-4 contact-item">
                         <i class="fas fa-envelope"></i> info@theeuphoriagroup.com

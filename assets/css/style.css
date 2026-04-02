@@ -243,7 +243,10 @@ h1, h2, h3, h4, h5, h6 {
 .about-list li i {
     color: var(--euphoria-red); /* Red checkmark */
     margin-right: 12px;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
+    margin-top: 5px;
+    background-color: var(--bg-light);
+    border-radius: 20px;
 }
 
 @media (max-width: 991px) {
@@ -480,16 +483,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .stat-icon {
-    font-size: 15px;
-    margin-right: 4px;
+    /* font-size: 15px;
+    margin-right: 4px; */
     color: rgba(255,255,255,.75);
+    width: 20px;
 }
 
 .stat-label {
-    font-size: 1.2rem;
+    font-size: 16px;
     color: rgba(255,255,255,.78);
     font-weight: 500;
-    margin-top: 6px;
+    margin-top: 20px;
     display: block;
 }
 
