@@ -2,49 +2,42 @@
   include_once('elements/header.php');
   ?>
 
- <style>
+<style>
  
    /* ── HERO ── */
-   .about-euphoria {
-     position: relative;
-     top: 88px;
-     min-height: 700px;
-     background: linear-gradient(rgba(13, 27, 62, 0.72), rgba(13, 27, 62, 0.72)),
-       url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1400&q=80') center/cover no-repeat;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     text-align: center;
-     color: #fff;
-   }
-
-   .about-euphoria h1 {
-     font-size: clamp(2rem, 5vw, 3.2rem);
-     letter-spacing: 1px;
-   }
-
-   .hero-breadcrumb {
-     color: #e8d5a3;
-     font-size: 0.9rem;
-     letter-spacing: 2px;
-   }
-
-   /* Divider */
-   .gold-divider {
-     width: 60px;
-     height: 2px;
-     background: #c9a84c;
-   }
+  .about-euphoria {
+    position: relative;
+    min-height: 50vh;
+    background-image: url('assets/img/about-us-bg.png');
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 120px;
+  }
 
    /* ── Section wrapper ── */
    .about-section {
-     padding: 80px 0;
+     padding: 80px 0 50px;
    }
+</style>
 
+<!-- HERO -->
+ <section class="about-euphoria">
+   <div>
+     <h1 class="mb-0">About The Euphoria Group</h1>
+     <p class="text-black text-center mt-2">Your Integrated Partner for Business and Global Opportunities</p>
+   </div>
+ </section>
+
+<style>
    /* ── Corner-bracket card ── */
    .bracket-card {
      position: relative;
-     padding: 48px 56px;
+     padding: 30px;
    }
 
    .bracket-card::before {
@@ -52,8 +45,8 @@
      position: absolute;
      top: 0;
      left: 0;
-     width: 56px;
-     height: 56px;
+     width: 70px;
+     height: 70px;
      border-top: 3px solid #c0392b;
      border-left: 3px solid #c0392b;
    }
@@ -71,10 +64,9 @@
 
    /* ── Typography ── */
    .about-text { 
-     font-size: 15px;
-     line-height: 1.85;
-     color: #2a2a2a;
-     text-align: center;
+     font-size: 16px;
+     line-height: 1.5;
+     text-align: justify;
      margin-bottom: 0;
    }
 
@@ -86,10 +78,49 @@
    .para-gap {
      margin-top: 1.75rem;
    }
+</style>
 
+ <section class="about-section">
+   <div class="container">
+     <div class="row justify-content-center">
+       <div class="col-12 col-lg-12">
+
+         <div class="bracket-card">
+
+           <!-- Paragraph 1 -->
+           <p class="about-text">
+             Founded in 2025, <strong>The Euphoria Group</strong> was established with a clear belief: every
+             individual and business deserves clarity, confidence, and trusted guidance when making important
+             financial and life decisions. For us, relationships come before transactions. We take the time to
+             understand each client's aspirations, concerns, and goals, crafting solutions that are strategic,
+             personalised, and sustainable. We do more than provide services; we deliver reassurance,
+             transparency, and long-term partnership. Our commitment is to help our clients grow with
+             confidence, protect with certainty, and move forward with peace of mind—today and for generations
+             to come.
+           </p>
+
+           <!-- Paragraph 2 -->
+           <p class="about-text para-gap">
+             What began as a vision for The Euphoria Group has grown into a multi-service global consultancy
+             that provides integrated solutions to individuals and businesses all over the world. Our main
+             services include Inbound And overseas business setup, real estate investment, inbound and outbound
+             travel services, Global Immigration &amp; Mobility, stock market opportunities, and comprehensive
+             insurance solutions. With a strong presence in India and access to international markets, we help
+             our clients at every stage of their journey, whether they are building generational wealth,
+             expanding a business overseas, investing in real estate, protecting their assets, or confidently
+             exploring global opportunities.
+           </p>
+
+         </div><!-- /.bracket-card -->
+       </div>
+     </div>
+   </div>
+ </section>
+
+<style>
    /* ── Vision Section ── */
    .vision-section {
-     padding: 80px 0;
+     padding: 50px 0;
      overflow: hidden;
    }
 
@@ -122,7 +153,7 @@
    .ghost-text {
      position: absolute;
      top: -55px;
-     right: -10px; 
+     /* right: -10px;  */
      font-size: clamp(52px, 8vw, 132px);
      font-weight: 700;
      color: #c0392b;
@@ -146,15 +177,6 @@
      user-select: none;
      pointer-events: none;
      white-space: nowrap;
-   }
-
-   /* Heading */
-   .vision-heading { 
-     font-size: clamp(20px, 4vw, 28px);
-     /* FIXED */
-     font-weight: 700;
-     color: #1a2855;
-     text-align: center;
    }
 
    /* Tagline */
@@ -221,17 +243,105 @@
        padding-left: 0;
      }
 
-     .vision-heading,
-     .vision-tagline {
-       text-align: left;
-     }
-
      .ghost-text {
        font-size: 48px;
        opacity: 0.06;
      }
    }
+</style>
 
+<section class="vision-section">
+   <div class="container">
+     <div class="row align-items-center g-5">
+
+       <!-- Left: Image -->
+       <div class="col-md-6">
+         <div class="vision-img-wrap">
+           <!--
+            Replace the src below with your actual image path.
+            The image should show the businessman on a red paper plane
+            over a cityscape (as in the original design).
+          -->
+           <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
+             alt="Vision – man looking through telescope over city skyline" />
+         </div>
+       </div>
+
+       <!-- Right: Content -->
+       <div class="col-md-6">
+         <div class="vision-content">
+
+           <!-- Ghost watermark -->
+           <span class="ghost-text" aria-hidden="true">Our Vision</span>
+
+           <h2 class="text-center">Shaping the Future</h2>
+
+
+           <div class="vision-body">
+             <p class="vision-tagline">Creating Global Confidence. Building Enduring Legacies.</p>
+             <p>
+               Our vision is to become a globally trusted partner for wealth creation,
+               asset protection, and international expansion. We aspire to empower
+               individuals and businesses with the clarity, structure, and confidence
+               needed to grow beyond borders—financially, professionally, and personally.
+             </p>
+             <p>At Euphoria Group, we envision a future where wealth is not just accumulated
+               but protected, sustained, and passed forward with purpose.</p>
+           </div>
+
+         </div>
+       </div>
+
+     </div>
+   </div>
+ </section>
+
+ <section class="vision-section">
+   <div class="container">
+     <div class="row align-items-center g-5">
+       <!-- Right: Content -->
+       <div class="col-md-6">
+         <div class="vision-content">
+
+           <!-- Ghost watermark -->
+           <span class="mission-text" aria-hidden="true">Our Mission</span>
+
+           <h2 class="text-center">Shaping the Future</h2>
+
+
+           <div class="vision-body">
+             <p>
+               The Euphoria Group's mission is to provide strategic, transparent, and fully compliant solutions that
+               transform complex financial and global opportunities into clear, actionable paths. We are dedicated to
+               assisting our clients throughout their journey, empowering them to confidently grow, protect, and
+               diversify their assets.
+             </p>
+             <p>Through disciplined execution, ethical governance, and forward-thinking strategies, we aim to build
+               resilient, long-term prosperity that will last across changing markets and generations.</p>
+           </div>
+
+         </div>
+       </div>
+
+       <!-- Left: Image -->
+       <div class="col-md-6">
+         <div class="vision-img-wrap">
+           <!--
+            Replace the src below with your actual image path.
+            The image should show the businessman on a red paper plane
+            over a cityscape (as in the original design).
+          -->
+           <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
+             alt="Vision – man looking through telescope over city skyline" />
+         </div>
+       </div>
+
+
+     </div>
+   </div>
+ </section>
+
+<style>
    /* Section */
    .trust-section {
      position: relative;
@@ -377,7 +487,118 @@
      column-gap: 0rem;
      /* horizontal gap */
    }
+</style>
 
+ <section class="container ">
+
+   <div class="trust-section position-relative" style="z-index:1;">
+
+     <h2 class="section-heading">Built On Trust</h2>
+
+     <!-- Row 1 -->
+     <div class="row custom-gap mb-5">
+
+       <div class="col-12 col-md-4">
+         <div class="trust-card">
+           <div class="trust-icon-wrap">
+             <svg viewBox="0 0 24 24">
+               <path d="M6 9c0 0 1-1 3-1s3.5 1.5 3.5 1.5S14 8 16 8s3 1 3 1" />
+               <path d="M3 12c0 4 3 6 9 9 6-3 9-5 9-9V6l-9-3-9 3z" />
+               <path d="M9 12l2 2 4-4" />
+             </svg>
+           </div>
+           <div class="trust-card-text">
+             Building long-term relationships based on trust and transparency
+           </div>
+         </div>
+       </div>
+
+       <div class="col-12 col-md-4">
+         <div class="trust-card">
+           <div class="trust-icon-wrap">
+             <svg viewBox="0 0 24 24">
+               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+               <circle cx="12" cy="10" r="2.5" />
+               <path d="M7.5 19.5C7.5 17 9.5 15 12 15s4.5 2 4.5 4.5" />
+             </svg>
+           </div>
+           <div class="trust-card-text">
+             Safeguarding client interests at every stage
+           </div>
+         </div>
+       </div>
+
+       <div class="col-12 col-md-4">
+         <div class="trust-card">
+           <div class="trust-icon-wrap">
+             <svg viewBox="0 0 24 24">
+               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+               <polyline points="9 12 11 14 15 10" />
+             </svg>
+           </div>
+           <div class="trust-card-text">
+             Delivering value that goes beyond transactions
+           </div>
+         </div>
+       </div>
+
+     </div>
+
+     <!-- Row 2 -->
+     <div class="row custom-gap">
+
+       <div class="col-12 col-md-4">
+         <div class="trust-card">
+           <div class="trust-icon-wrap">
+             <svg viewBox="0 0 24 24">
+               <circle cx="12" cy="12" r="3" />
+               <path
+                 d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z" />
+             </svg>
+           </div>
+           <div class="trust-card-text">
+             Providing recommendations guided by integrity and responsibility
+           </div>
+         </div>
+       </div>
+
+       <div class="col-12 col-md-4">
+         <div class="trust-card">
+           <div class="trust-icon-wrap">
+             <svg viewBox="0 0 24 24">
+               <line x1="12" y1="20" x2="12" y2="10" />
+               <line x1="18" y1="20" x2="18" y2="4" />
+               <line x1="6" y1="20" x2="6" y2="16" />
+               <path d="M22 12l-4-4-4 4-4-4-4 4" />
+             </svg>
+           </div>
+           <div class="trust-card-text">
+             Understanding client goals through a personalized approach
+           </div>
+         </div>
+       </div>
+
+       <div class="col-12 col-md-4">
+         <div class="trust-card">
+           <div class="trust-icon-wrap">
+             <svg viewBox="0 0 24 24">
+               <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+               <polyline points="17 6 23 6 23 12" />
+             </svg>
+           </div>
+           <div class="trust-card-text">
+             Measuring success by lasting trust and sustainable outcomes, not quick wins
+           </div>
+         </div>
+       </div>
+
+     </div>
+
+   </div>
+
+ </section>
+
+<style>
    /* watermark background text */
    .why-section::before {
      content: "Our Advantage";
@@ -1209,256 +1430,8 @@
      gap: 14px;
      margin-top: 32px;
    }
- </style>
- </head>
+</style> 
 
-
- <!-- HERO -->
- <section class="about-euphoria">
-   <div>
-     <h1 class="mb-0">About The Euphoria Group</h1>
-     <div class="gold-divider mx-auto mt-3"></div>
-     <p class="text-white-50 mt-2" style="font-size:.9rem;letter-spacing:2px;">Building India's Future, One Business at
-       a Time</p>
-   </div>
- </section>
-
- <section class="about-section">
-   <div class="container">
-     <div class="row justify-content-center">
-       <div class="col-12 col-lg-12">
-
-         <div class="bracket-card">
-
-           <!-- Paragraph 1 -->
-           <p class="about-text">
-             Founded in 2025, <strong>The Euphoria Group</strong> was established with a clear belief: every
-             individual and business deserves clarity, confidence, and trusted guidance when making important
-             financial and life decisions. For us, relationships come before transactions. We take the time to
-             understand each client's aspirations, concerns, and goals, crafting solutions that are strategic,
-             personalised, and sustainable. We do more than provide services; we deliver reassurance,
-             transparency, and long-term partnership. Our commitment is to help our clients grow with
-             confidence, protect with certainty, and move forward with peace of mind—today and for generations
-             to come.
-           </p>
-
-           <!-- Paragraph 2 -->
-           <p class="about-text para-gap">
-             What began as a vision for The Euphoria Group has grown into a multi-service global consultancy
-             that provides integrated solutions to individuals and businesses all over the world. Our main
-             services include Inbound And overseas business setup, real estate investment, inbound and outbound
-             travel services, Global Immigration &amp; Mobility, stock market opportunities, and comprehensive
-             insurance solutions. With a strong presence in India and access to international markets, we help
-             our clients at every stage of their journey, whether they are building generational wealth,
-             expanding a business overseas, investing in real estate, protecting their assets, or confidently
-             exploring global opportunities.
-           </p>
-
-         </div><!-- /.bracket-card -->
-       </div>
-     </div>
-   </div>
- </section>
-
- <section class="vision-section">
-   <div class="container">
-     <div class="row align-items-center g-5">
-
-       <!-- Left: Image -->
-       <div class="col-md-6">
-         <div class="vision-img-wrap">
-           <!--
-            Replace the src below with your actual image path.
-            The image should show the businessman on a red paper plane
-            over a cityscape (as in the original design).
-          -->
-           <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
-             alt="Vision – man looking through telescope over city skyline" />
-         </div>
-       </div>
-
-       <!-- Right: Content -->
-       <div class="col-md-6">
-         <div class="vision-content">
-
-           <!-- Ghost watermark -->
-           <span class="ghost-text" aria-hidden="true">Our Vision</span>
-
-           <h2 class="vision-heading">Shaping the Future</h2>
-
-
-           <div class="vision-body">
-             <p class="vision-tagline">Creating Global Confidence. Building Enduring Legacies.</p>
-             <p>
-               Our vision is to become a globally trusted partner for wealth creation,
-               asset protection, and international expansion. We aspire to empower
-               individuals and businesses with the clarity, structure, and confidence
-               needed to grow beyond borders—financially, professionally, and personally.
-             </p>
-             <p>At Euphoria Group, we envision a future where wealth is not just accumulated
-               but protected, sustained, and passed forward with purpose.</p>
-           </div>
-
-         </div>
-       </div>
-
-     </div>
-   </div>
- </section>
-
- <section class="vision-section">
-   <div class="container">
-     <div class="row align-items-center g-5">
-       <!-- Right: Content -->
-       <div class="col-md-6">
-         <div class="vision-content">
-
-           <!-- Ghost watermark -->
-           <span class="mission-text" aria-hidden="true">Our Mission</span>
-
-           <h2 class="vision-heading">Shaping the Future</h2>
-
-
-           <div class="vision-body">
-             <p>
-               The Euphoria Group's mission is to provide strategic, transparent, and fully compliant solutions that
-               transform complex financial and global opportunities into clear, actionable paths. We are dedicated to
-               assisting our clients throughout their journey, empowering them to confidently grow, protect, and
-               diversify their assets.
-             </p>
-             <p>Through disciplined execution, ethical governance, and forward-thinking strategies, we aim to build
-               resilient, long-term prosperity that will last across changing markets and generations.</p>
-           </div>
-
-         </div>
-       </div>
-
-       <!-- Left: Image -->
-       <div class="col-md-6">
-         <div class="vision-img-wrap">
-           <!--
-            Replace the src below with your actual image path.
-            The image should show the businessman on a red paper plane
-            over a cityscape (as in the original design).
-          -->
-           <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
-             alt="Vision – man looking through telescope over city skyline" />
-         </div>
-       </div>
-
-
-     </div>
-   </div>
- </section>
-
- <section class="trust-section">
-
-   <div class="container position-relative" style="z-index:1;">
-
-     <h2 class="section-heading">Built On Trust</h2>
-
-     <!-- Row 1 -->
-     <div class="row custom-gap mb-5">
-
-       <div class="col-12 col-md-4">
-         <div class="trust-card">
-           <div class="trust-icon-wrap">
-             <svg viewBox="0 0 24 24">
-               <path d="M6 9c0 0 1-1 3-1s3.5 1.5 3.5 1.5S14 8 16 8s3 1 3 1" />
-               <path d="M3 12c0 4 3 6 9 9 6-3 9-5 9-9V6l-9-3-9 3z" />
-               <path d="M9 12l2 2 4-4" />
-             </svg>
-           </div>
-           <div class="trust-card-text">
-             Building long-term relationships based on trust and transparency
-           </div>
-         </div>
-       </div>
-
-       <div class="col-12 col-md-4">
-         <div class="trust-card">
-           <div class="trust-icon-wrap">
-             <svg viewBox="0 0 24 24">
-               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-               <circle cx="12" cy="10" r="2.5" />
-               <path d="M7.5 19.5C7.5 17 9.5 15 12 15s4.5 2 4.5 4.5" />
-             </svg>
-           </div>
-           <div class="trust-card-text">
-             Safeguarding client interests at every stage
-           </div>
-         </div>
-       </div>
-
-       <div class="col-12 col-md-4">
-         <div class="trust-card">
-           <div class="trust-icon-wrap">
-             <svg viewBox="0 0 24 24">
-               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-               <polyline points="9 12 11 14 15 10" />
-             </svg>
-           </div>
-           <div class="trust-card-text">
-             Delivering value that goes beyond transactions
-           </div>
-         </div>
-       </div>
-
-     </div>
-
-     <!-- Row 2 -->
-     <div class="row custom-gap">
-
-       <div class="col-12 col-md-4">
-         <div class="trust-card">
-           <div class="trust-icon-wrap">
-             <svg viewBox="0 0 24 24">
-               <circle cx="12" cy="12" r="3" />
-               <path
-                 d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z" />
-             </svg>
-           </div>
-           <div class="trust-card-text">
-             Providing recommendations guided by integrity and responsibility
-           </div>
-         </div>
-       </div>
-
-       <div class="col-12 col-md-4">
-         <div class="trust-card">
-           <div class="trust-icon-wrap">
-             <svg viewBox="0 0 24 24">
-               <line x1="12" y1="20" x2="12" y2="10" />
-               <line x1="18" y1="20" x2="18" y2="4" />
-               <line x1="6" y1="20" x2="6" y2="16" />
-               <path d="M22 12l-4-4-4 4-4-4-4 4" />
-             </svg>
-           </div>
-           <div class="trust-card-text">
-             Understanding client goals through a personalized approach
-           </div>
-         </div>
-       </div>
-
-       <div class="col-12 col-md-4">
-         <div class="trust-card">
-           <div class="trust-icon-wrap">
-             <svg viewBox="0 0 24 24">
-               <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
-               <polyline points="17 6 23 6 23 12" />
-             </svg>
-           </div>
-           <div class="trust-card-text">
-             Measuring success by lasting trust and sustainable outcomes, not quick wins
-           </div>
-         </div>
-       </div>
-
-     </div>
-
-   </div>
-
- </section>
 
  <section class="why-section">
 

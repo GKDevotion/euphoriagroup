@@ -24,7 +24,13 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Anek Kannada', 'Poppins', sans-serif;
+    color: var(--euphoria-blue);
 }
+
+h1, h2 {
+    font-weight: 700;
+}
+
 /* ─── BACK TO TOP ─── */
 #backTop {
     position:fixed; bottom:28px; right:28px;
