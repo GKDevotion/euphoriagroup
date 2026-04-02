@@ -1158,7 +1158,7 @@
      transition: stroke .2s;
    }
 
-   /* ── Swiper pagination bullets ─────────────────── */
+   /* ── Swiper pagination bullets  */
    .swiper-pagination {
      margin-top: 36px;
      position: static !important;
@@ -1177,7 +1177,7 @@
      transform: scale(1.25);
    }
 
-   /* ── Swiper container position ─────────────────── */
+   /* ── Swiper container position  */
    .swiper-outer {
      position: relative;
      padding: 0 28px;

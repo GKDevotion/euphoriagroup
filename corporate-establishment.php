@@ -1,49 +1,12 @@
 <?php
 include_once('elements/header.php');
 ?>
-<style>
-    :root {
-        --bg-section: #ffffff;
-        --dark-navy: #1a2340;
-        --text-body: #4a4a5a;
-        --accent: #c9a96e;
-        --pink-light: #f0c0c8;
-        --navy: #1a2456;
-        --red: #c0392b;
-        --light-gray: #f7f8fc;
-        --border: #e2e5f0;
-        --text-muted: #7a7f9a;
-        --red-light: #fdf0f0;
-        --navy-light: #162952;
-        --gold: #c9a84c;
-        --gold-light: #e8c97a;
-        --white: #ffffff;
-        --text-muted: rgba(255, 255, 255, 0.72);
-        --card-radius: 18px;
-        --primary: #c0392b;
-        --primary-light: #fdecea;
-        --text: #4a5568;
-        --bg: #f7f8fc;
-        --card-bg: #ffffff;
-        --icon-size: 80px;
-        --np-red:       #c0392b;
-      --np-navy:      #1a2a4a;
-      --np-muted:     #5a6a7e;
-      --np-line:      #e2e8f0;
-      --np-bg:        #ffffff;
-            --si-navy:   #1a2a4a;
-      --si-muted:  #4a5568;
-      --si-bg:     #f7f8fc;
-      --si-saffron:#ff9933;
-      --si-green:  #138808;
-      --si-blue:   #000080;
-    }
-
+<style> 
     /* ── HERO ── */
     .corporate-establishment {
         position: relative;
         top: 88px;
-        min-height: 700px;
+        min-height: 500px;
         background: linear-gradient(rgba(13, 27, 62, 0.72), rgba(13, 27, 62, 0.72)),
             url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1400&q=80') center/cover no-repeat;
         display: flex;
@@ -261,8 +224,7 @@ include_once('elements/header.php');
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
-    }
-
+    } 
 
     .icon-wrap svg {
         width: 48px;
@@ -291,25 +253,7 @@ include_once('elements/header.php');
         row-gap: 24px;
     }
 
-    .section-wrapper {
-        background: linear-gradient(135deg, #eef0f8 0%, #f5f6fc 100%);
-        padding: 80px 0;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .section-wrapper::before {
-        content: 'Register';
-        position: absolute;
-        top: 10px;
-        left: -10px; 
-        font-size: 130px;
-        color: rgba(26, 45, 107, 0.06);
-        font-weight: 700;
-        pointer-events: none;
-        line-height: 1;
-        white-space: nowrap;
-    }
+  
 
     .section-title { 
         font-size: 2.4rem;
@@ -391,11 +335,7 @@ include_once('elements/header.php');
     @media (max-width: 991px) {
         .circles-grid {
             grid-template-columns: repeat(3, 1fr);
-        }
-
-        .section-wrapper::before {
-            font-size: 80px;
-        }
+        } 
     }
 
     @media (max-width: 576px) {
