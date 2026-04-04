@@ -1,7 +1,7 @@
 <?php
 include_once('elements/header.php');
 ?>
-<style> 
+<style>
     /* ── HERO ── */
     .corporate-establishment {
         position: relative;
@@ -168,10 +168,10 @@ include_once('elements/header.php');
     .incorporation::before {
         content: "Incorporation";
         position: absolute;
-        top: 0px;
+        top: 24px;
         left: 50%;
-        transform: translateX(-50%); 
-        font-size: clamp(60px, 10vw, 145px);
+        transform: translateX(-50%);
+        font-size: clamp(60px, 10vw, 115px);
         font-weight: 700;
         color: #f0c0c8;
         white-space: nowrap;
@@ -184,7 +184,7 @@ include_once('elements/header.php');
     /* ── Heading ── */
     .incorporation-heading {
         position: relative;
-        z-index: 1; 
+        z-index: 1;
         color: #1a2456;
         font-size: clamp(1.6rem, 3vw, 2.2rem);
         font-weight: 700;
@@ -198,42 +198,48 @@ include_once('elements/header.php');
     }
 
     /* ── Card ── */
-    .service-card {
+    .service-card-incorporation {
         border: 1.5px solid #e2e5f0;
         border-radius: 18px;
         padding: 2rem 1.4rem 1.6rem;
         text-align: center;
         background: #fff;
         height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         transition: box-shadow 0.25s, transform 0.25s, border-color 0.25s;
     }
 
-    .service-card:hover {
+    .service-card-incorporation:hover {
         box-shadow: 0 8px 32px rgba(26, 36, 86, 0.10);
         transform: translateY(-4px);
         border-color: #c8cce0;
     }
 
     /* ── Icon Circle ── */
-    .icon-wrap {
-        width: 90px;
-        height: 90px;
+    .icon-wrap-incorporation {
+
+        width: 68px;
+        height: 68px;
+        background: #fbf0f1;
         border-radius: 50%;
-        background: #f0c0c8;
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-shrink: 0;
-    } 
+        margin-bottom: 20px;
+        transition: background 0.28s ease, transform 0.28s ease;
+    }
 
-    .icon-wrap svg {
+    .icon-wrap-incorporation svg {
         width: 48px;
         height: 48px;
     }
 
     /* ── Title ── */
-    .service-card h5 {
-        font-size: 0.9rem;
+    .service-card-incorporation h5 {
+        font-size: 17.5px;
         font-weight: 700;
         color: #1a2456;
         margin-bottom: 0.75rem;
@@ -241,8 +247,8 @@ include_once('elements/header.php');
     }
 
     /* ── Description ── */
-    .service-card p {
-        font-size: 0.7rem;
+    .service-card-incorporation p {
+        font-size: 12px;
         color: #5a5e78;
         line-height: 1.7;
         margin: 0;
@@ -253,9 +259,7 @@ include_once('elements/header.php');
         row-gap: 24px;
     }
 
-  
-
-    .section-title { 
+    .section-title {
         font-size: 2.4rem;
         font-weight: 700;
         color: #1a2456;
@@ -299,7 +303,7 @@ include_once('elements/header.php');
         opacity: 0.9;
     }
 
-    .feature-circle .label { 
+    .feature-circle .label {
         font-size: 0.78rem;
         font-weight: 600;
         color: #fff;
@@ -328,14 +332,13 @@ include_once('elements/header.php');
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto auto;
-        gap: 16px;
         align-items: center;
     }
 
     @media (max-width: 991px) {
         .circles-grid {
             grid-template-columns: repeat(3, 1fr);
-        } 
+        }
     }
 
     @media (max-width: 576px) {
@@ -360,10 +363,10 @@ include_once('elements/header.php');
     .register::before {
         content: "Register";
         position: absolute;
-        top: 0px;
-        left: 29%;
-        transform: translateX(-50%); 
-        font-size: clamp(60px, 10vw, 145px);
+        top: 25px;
+        left: 20%;
+        transform: translateX(-50%);
+        font-size: clamp(60px, 10vw, 115px);
         font-weight: 700;
         color: #f0c0c8;
         white-space: nowrap;
@@ -376,7 +379,7 @@ include_once('elements/header.php');
     /* ── Heading ── */
     .register-heading {
         position: relative;
-        z-index: 1; 
+        z-index: 1;
         color: #1a2456;
         font-size: clamp(1.6rem, 3vw, 2.2rem);
         font-weight: 700;
@@ -391,7 +394,7 @@ include_once('elements/header.php');
         background: linear-gradient(135deg, #f0f4fb 0%, #e8edf8 100%);
     }
 
-    .section-eyebrow { 
+    .section-eyebrow {
         font-size: 0.78rem;
         font-weight: 600;
         letter-spacing: 0.18em;
@@ -400,7 +403,7 @@ include_once('elements/header.php');
         margin-bottom: 10px;
     }
 
-    .section-title { 
+    .section-title {
         font-size: clamp(1.9rem, 3.5vw, 2.7rem);
         font-weight: 700;
         color: #1a2456;
@@ -421,7 +424,7 @@ include_once('elements/header.php');
         position: relative;
         border-radius: 18px;
         overflow: hidden;
-        height: 400px;
+        height: 330px;
         cursor: pointer;
         box-shadow: 0 8px 32px rgba(13, 27, 62, 0.13);
         transition: transform 0.38s cubic-bezier(.25, .8, .25, 1),
@@ -470,6 +473,7 @@ include_once('elements/header.php');
         bottom: 0;
         left: 0;
         right: 0;
+        text-align: center;
         padding: 28px 24px 26px;
     }
 
@@ -496,8 +500,8 @@ include_once('elements/header.php');
         color: #fff;
     }
 
-    .card-title-alliance { 
-        font-size: 1.15rem;
+    .card-title-alliance {
+        font-size: 1rem;
         font-weight: 700;
         color: #ffffff;
         margin-bottom: 8px;
@@ -505,8 +509,8 @@ include_once('elements/header.php');
     }
 
     .card-desc-alliance {
-        font-size: 0.875rem;
-        color: #a0aec0;
+        font-size: 0.75rem;
+        color: #fff;
         line-height: 1.6;
         margin: 0;
     }
@@ -579,10 +583,10 @@ include_once('elements/header.php');
     .alliance::before {
         content: "Alliance";
         position: absolute;
-        top: 50px;
+        top: 76px;
         left: 50%;
-        transform: translateX(-50%); 
-        font-size: clamp(60px, 10vw, 145px);
+        transform: translateX(-50%);
+        font-size: clamp(60px, 10vw, 115px);
         font-weight: 700;
         color: #f0c0c8;
         white-space: nowrap;
@@ -595,9 +599,9 @@ include_once('elements/header.php');
     /* ── Heading ── */
     .alliance-heading {
         position: relative;
-        z-index: 1; 
+        z-index: 1;
         color: #1a2456;
-        font-size: clamp(1.6rem, 3vw, 2.2rem);
+        font-size: clamp(1.6rem, 3vw, 2.3rem);
         font-weight: 700;
         text-align: center;
         margin-bottom: 50px;
@@ -616,12 +620,7 @@ include_once('elements/header.php');
         border-radius: 6px;
         transition: background 0.22s;
     }
-
-
-    .benefit-item.active,
-    .benefit-item:hover {
-        background: #f0f0f0;
-    }
+ 
 
     .benefit-header {
         display: flex;
@@ -631,8 +630,8 @@ include_once('elements/header.php');
     }
 
     .benefit-title {
-        font-size: 1.05rem;
-        font-weight: 700;
+        font-size: 1.3rem;
+        font-weight: 600;
         color: #333;
         margin: 0;
         transition: color 0.22s;
@@ -640,7 +639,7 @@ include_once('elements/header.php');
 
     .benefit-item.active .benefit-title,
     .benefit-item:hover .benefit-title {
-        color: #ff0000;
+        color: #e73f3f;
     }
 
     /* Arrow icon */
@@ -677,19 +676,18 @@ include_once('elements/header.php');
 
     /* Description */
     .benefit-desc {
-        font-size: 0.875rem;
-        color: #a0aec0;
+        font-size: 0.85rem; 
         line-height: 1.7;
-
+        width: 90%;
         overflow: hidden;
-
+        margin-bottom: 0px;
         transition: max-height 0.38s ease, opacity 0.3s ease, margin 0.3s ease;
     }
 
     .benefit-item.active .benefit-desc {
         max-height: 120px;
-        opacity: 1;
-        margin-top: 10px;
+        margin-bottom: 0px;
+        opacity: 1; 
     }
 
     /* ── Right: image ── */
@@ -702,7 +700,7 @@ include_once('elements/header.php');
 
     .img-wrapper img {
         width: 100%;
-        height: 100%;
+        height: 700px;
         object-fit: cover;
         display: block;
         transition: transform 0.6s ease;
@@ -728,17 +726,17 @@ include_once('elements/header.php');
         position: relative;
         padding: 100px 0 0px;
         overflow: hidden;
-        background: #fff;
+        background: #f9fafb;
     }
 
     /* Watermark */
     .individual::before {
         content: "Individual";
         position: absolute;
-        top: 0px;
+        top: 23px;
         left: 50%;
-        transform: translateX(-50%); 
-        font-size: clamp(60px, 10vw, 145px);
+        transform: translateX(-50%);
+        font-size: clamp(60px, 10vw, 115px);
         font-weight: 700;
         color: #f0c0c8;
         white-space: nowrap;
@@ -751,689 +749,14 @@ include_once('elements/header.php');
     /* ── Heading ── */
     .individual-heading {
         position: relative;
-        z-index: 1; 
-        color: #1a2456;
-        font-size: clamp(1.6rem, 3vw, 2.2rem);
-        font-weight: 700;
-        text-align: center;
-        margin-bottom: 50px;
-    }
-
-    /* Section */
-    .setup {
-        position: relative;
-        padding: 100px 0 0px;
-        overflow: hidden;
-        background: #fff;
-    }
-
-    /* Watermark */
-    .setup::before {
-        content: "Setup";
-        position: absolute;
-        top: 0px;
-        left: 50%;
-        transform: translateX(-50%); 
-        font-size: clamp(60px, 10vw, 145px);
-        font-weight: 700;
-        color: #f0c0c8;
-        white-space: nowrap;
-        pointer-events: none;
-        z-index: 0;
-        opacity: 0.2;
-        letter-spacing: 2px;
-    }
-
-    /* ── Heading ── */
-    .setup-heading {
-        position: relative;
-        z-index: 1; 
-        color: #1a2456;
-        font-size: clamp(1.6rem, 3vw, 2.2rem);
-        font-weight: 700;
-        text-align: center;
-        margin-bottom: 50px;
-    }
-
-
-    /* ── Card ── */
-    .benefit-card {
-
-        padding: 32px 28px 28px;
-        height: 100%;
-        position: relative;
-        overflow: hidden;
-        border-left: 1px solid lightgrey;
-    }
-
-    .benefit-card::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 40px;
-        bottom: 160px;
-        width: 1.5px;
-        background: #ff0000;
-        opacity: 0;
-        transform: scaleY(0.4);
-        transition: opacity 0.28s ease, transform 0.28s ease;
-    }
-
-    .benefit-card:hover {
-        transform: translateY(-4px);
-        border-left: 1px solid lightgrey;
-    }
-
-    .benefit-card:hover::before {
-        opacity: 1;
-        transform: scaleY(1);
-    }
-
-    /* Icon circle */
-    .icon-wrap {
-        width: 68px;
-        height: 68px;
-        background: #f0c0c8;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 20px;
-        transition: background 0.28s ease, transform 0.28s ease;
-    }
-
-    .benefit-card:hover .icon-wrap {
-        transform: scale(1.07) rotate(-4deg);
-    }
-
-    .icon-wrap svg {
-        width: 32px;
-        height: 32px;
-        color: #ff0000;
-    }
-
-    /* Text */
-    .card-title {
-        font-size: 1rem;
-        font-weight: 700;
-        color: #333;
-        margin-bottom: 10px;
-        text-align: start;
-        line-height: 1.35;
-    }
-
-    .card-desc {
-        font-size: 0.7rem;
-        color: #a0aec0;
-        line-height: 1.7;
-        margin: 0;
-        text-align: start;
-    }
-
-    /* Vertical divider between cols on desktop */
-    @media (min-width: 992px) {
-
-        .col-divider:last-child {
-            border-right: none;
-        }
-    }
-
-    /* Section */
-    .ownership {
-        position: relative;
-        padding: 100px 0 0px;
-        overflow: hidden;
-        background: #fff;
-    }
-
-    /* Watermark */
-    .ownership::before {
-        content: "Ownership";
-        position: absolute;
-        top: 20px;
-        left: 65%;
-        transform: translateX(-50%); 
-        font-size: clamp(60px, 10vw, 145px);
-        font-weight: 700;
-        color: #f0c0c8;
-        white-space: nowrap;
-        pointer-events: none;
-        z-index: 0;
-        opacity: 0.2;
-        letter-spacing: 2px;
-    }
-
-    /* ── Heading ── */
-    .ownership-heading {
-        position: relative;
-        z-index: 1; 
-        color: #1a2456;
-        font-size: clamp(1.6rem, 3vw, 2.2rem);
-        font-weight: 700;
-        text-align: center;
-        margin-bottom: 50px;
-    }
-
-    .setup-section {
-        padding: 70px 0;
-        background: #fff;
-        overflow: hidden;
-    }
-
-    /* ── Left Image ── */
-    .img-wrapper-ownership {
-        overflow: hidden;
-        height: 100%;
-        min-height: 580px;
-    }
-
-    .img-wrapper-ownership img {
-        width: 100%;
-        height: 560px;
-        border-radius: 20px;
-        max-height: 100%;
-        object-fit: cover;
-        display: block;
-    }
-
-    /* ── Right Content ── */
-    .content-side {
-        position: relative;
-    }
-
-    .section-title {
-        font-size: clamp(1.6rem, 2.8vw, 2.1rem);
-        font-weight: 800;
-        color: #1a2456;
-        margin-bottom: 22px;
-        position: relative;
         z-index: 1;
-    }
-
-    .section-desc {
-        font-size: 0.925rem;
-        color: #a0aec0;
-        line-height: 1.8;
-        margin-bottom: 32px;
-    }
-
-    /* ── Checklist grid ── */
-    .checklist {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 18px 24px;
-    }
-
-    @media (max-width: 480px) {
-        .checklist {
-            grid-template-columns: 1fr;
-        }
-    }
-
-    .check-item {
-        display: flex;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    /* Red checkmark icon */
-    .check-icon {
-        flex-shrink: 0;
-        width: 26px;
-        height: 26px;
-        margin-top: 1px;
-    }
-
-    .check-icon svg {
-        width: 26px;
-        height: 26px;
-    }
-
-    .check-label {
-        font-size: 0.92rem;
-        font-weight: 600;
-        color: #1a2456;
-        line-height: 1.4;
-        padding-top: 3px;
-    }
-
-    @media (max-width: 991px) {
-        .img-wrapper {
-            min-height: 300px;
-            margin-bottom: 40px;
-        }
-
-        .watermark {
-            font-size: 3rem;
-        }
-    }
-
-    /* Section */
-    .compliance {
-        position: relative;
-        padding: 100px 0 0px;
-        overflow: hidden;
-        background: #fff;
-    }
-
-    /* Watermark */
-    .compliance::before {
-        content: "Compliance";
-        position: absolute;
-        top: 50px;
-        left: 50%;
-        transform: translateX(-50%); 
-        font-size: clamp(60px, 10vw, 145px);
-        font-weight: 700;
-        color: #f0c0c8;
-        white-space: nowrap;
-        pointer-events: none;
-        z-index: 0;
-        opacity: 0.2;
-        letter-spacing: 2px;
-    }
-
-    /* ── Heading ── */
-    .compliance-heading {
-        position: relative;
-        z-index: 1; 
         color: #1a2456;
         font-size: clamp(1.6rem, 3vw, 2.2rem);
         font-weight: 700;
         text-align: center;
+        margin-bottom: 50px;
     }
 
-
-    /* ── Section wrapper ── */
-    .tax-section {
-        padding: 60px 0 70px;
-    }
-
-    .tax-section .section-tag {
-        display: inline-block;
-        background: #f0c0c8;
-        color: #c0392b;
-        font-size: 0.75rem;
-        font-weight: 700;
-        letter-spacing: 1.5px;
-        text-transform: uppercase;
-        border-radius: 20px;
-        padding: 5px 16px;
-        margin-bottom: 12px;
-    }
-
-    .tax-section h2 {
-        font-size: clamp(1.6rem, 3vw, 2.2rem);
-        font-weight: 800;
-        color: #1a2456;
-        line-height: 1.25;
-    }
-
-    .tax-section h2 span {
-        color: #c0392b;
-    }
-
-    .tax-section .lead {
-        font-size: 1rem;
-        max-width: 560px;
-        margin: 0 auto;
-        color: #a0aec0;
-    }
-
-    /* ── Card ── */
-    .tax-card {
-        background: #ffffff;
-        border: 1.5px solid #cbd5e0;
-        border-radius: 18px;
-        padding: 36px 28px 32px;
-        text-align: center;
-        transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
-        height: 100%;
-        user-select: none;
-    }
-
-    .tax-card:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 18px 40px rgba(192, 57, 43, .12);
-        border-color: rgba(192, 57, 43, .35);
-    }
-
-    /* Icon circle */
-    .tax-card .icon-wrap {
-        width: 80px;
-        height: 80px;
-        background: #f0c0c8;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto 22px;
-        transition: background .28s;
-    }
-
-    .tax-card:hover .icon-wrap {
-        background: #f5c6c2;
-    }
-
-    .tax-card .icon-wrap svg {
-        width: 38px;
-        height: 38px;
-        stroke: #c0392b;
-        fill: none;
-        stroke-width: 1.6;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-    }
-
-    .tax-card h5 {
-        font-size: 1rem;
-        font-weight: 800;
-        color: #1a2456;
-        margin-bottom: 12px;
-        line-height: 1.3;
-    }
-
-    .tax-card p {
-        font-size: 0.7rem;
-        line-height: 1.7;
-        margin: 0;
-        color: #a0aec0;
-    }
-
-    /* ── Swiper overrides ── */
-    .swiper {
-        padding-bottom: 52px !important;
-    }
-
-    .swiper-slide {
-        height: auto;
-    }
-
-    /* Pagination bullets */
-    .swiper-pagination-bullet {
-        width: 8px;
-        height: 8px;
-        background: #cbd5e0;
-        opacity: 1;
-        transition: all .25s;
-    }
-
-    .swiper-pagination-bullet-active {
-        background: #c0392b;
-        width: 24px;
-        border-radius: 4px;
-    }
-
-    /* Nav buttons */
-    .swiper-nav {
-        display: flex;
-        gap: 10px;
-        justify-content: center;
-        margin-top: 4px;
-    }
-
-    .swiper-btn {
-        width: 42px;
-        height: 42px;
-        border-radius: 50%;
-        border: 1.5px solid #cbd5e0;
-        background: #fff;
-        color: #1a2456;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        transition: all .22s;
-        font-size: 1rem;
-    }
-
-    .swiper-btn:hover {
-        background: #c0392b;
-        border-color: #c0392b;
-        color: #fff;
-    }
-
-    /* hide default arrows */
-    .swiper-button-next,
-    .swiper-button-prev {
-        display: none;
-    }
-
-    /* Section */
-    .non-profit {
-        position: relative;
-        padding: 100px 0 0px;
-        overflow: hidden;
-        background: #fff;
-    }
-
-    /* Watermark */
-    .non-profit::before {
-        content: "Non Profit Setup";
-        position: absolute;
-        top: 0px;
-        left: 50%;
-        transform: translateX(-50%); 
-        font-size: clamp(60px, 10vw, 145px);
-        font-weight: 700;
-        color: #f0c0c8;
-        white-space: nowrap;
-        pointer-events: none;
-        z-index: 0;
-        opacity: 0.2;
-        letter-spacing: 2px;
-    }
-
-    /* ── Heading ── */
-    .non-profit-heading {
-        position: relative;
-        z-index: 1; 
-        color: #1a2456;
-        font-size: clamp(1.6rem, 3vw, 2.2rem);
-        font-weight: 700;
-        text-align: center;
-    }
-
-    
-    /* ── Feature item ── */
-    .np-feature {
-      padding-bottom: 24px;
-      margin-bottom: 24px;
-      border-bottom: 1.5px solid #cbd5e0;
-    }
- 
-    .np-feature:last-child {
-      border-bottom: none;
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
- 
-    .np-feature__title {
-      font-size: 1rem;
-      font-weight: 700;
-      color: #1a2456;
-      margin-bottom: 7px;
-      line-height: 1.35;
-    }
- 
-    .np-feature__title em {
-      font-style: normal;
-      color: #c0392b;
-    }
- 
-    .np-feature__desc {
-      font-size: 0.875rem;
-      line-height: 1.75;
-      margin: 0;
-      color: #a0aec0;
-    }
- 
-    /* right-side titles align right on desktop */
-    .np-col-right .np-feature__title,
-    .np-col-right .np-feature__desc {
-      text-align: right;
-    }
- 
-    /* ── Center image ── */
-    .np-img-wrap {
-      border-radius: 18px;
-      overflow: hidden;
-      height: 100%;
-      min-height: 420px;
-    }
- 
-    .np-img-wrap img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
- 
-    /* ── Responsive: stack on mobile ── */
-    @media (max-width: 991.98px) {
-      .np-col-right .np-feature__title,
-      .np-col-right .np-feature__desc {
-        text-align: left;
-      }
- 
-      .np-img-wrap {
-        min-height: 280px;
-        margin-bottom: 36px;
-      }
-    }
-
-   /* ── Banner ── */
-    .si-banner {
-      position: relative;
-      background: #f7f8fc;
-      overflow: hidden;
-      padding: 72px 0 80px;
-    }
- 
-    /* ────── Background decorations ────── */
- 
-    /* Faded "startup" watermark text */
-    .si-banner__watermark {
-      position: absolute;
-      left: 300px;
-      top: 70%;
-      transform: translateY(-50%);
-      font-size: clamp(4rem, 10vw, 5rem);
-      font-weight: 800;
-      color: rgba(192, 57, 43, 0.07);
-      white-space: nowrap;
-      pointer-events: none;
-      user-select: none;
-      letter-spacing: -2px;
-      line-height: 1;
-    }
- 
-    /* India flag colour stripe — top right */
-    .si-banner__stripe {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 340px;
-      height: 100%;
-      pointer-events: none;
-      overflow: hidden;
-    }
- 
-    .si-banner__stripe::before,
-    .si-banner__stripe::after,
-    .si-banner__stripe span {
-      content: '';
-      position: absolute;
-      right: -60px;
-      width: 400px;
-      height: 14px;
-      border-radius: 8px;
-      opacity: 0.18;
-      transform: rotate(-38deg);
-    }
- 
-    .si-banner__stripe::before {
-      background: #ff9933;
-      top: 28%;
-    }
- 
-    .si-banner__stripe::after {
-      background: #138808;
-      top: calc(28% + 22px);
-    }
- 
-    .si-banner__stripe span {
-      display: block;
-      background: #3498db;
-      top: calc(28% + 44px);
-    }
- 
-    /* Ashoka Chakra faint circle — right side */
-    .si-banner__chakra {
-      position: absolute;
-      right: 60px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: clamp(120px, 18vw, 220px);
-      height: clamp(120px, 18vw, 220px);
-      border-radius: 50%;
-      border: 2px solid rgba(0, 0, 128, 0.08);
-      pointer-events: none;
-    }
- 
-    .si-banner__chakra::before {
-      content: '';
-      position: absolute;
-      inset: 10px;
-      border-radius: 50%;
-      border: 1.5px dashed rgba(0, 0, 128, 0.07);
-    }
- 
-    /* Bracket / L-shape decorative marks */
-    .si-banner__bracket {
-      position: absolute;
-      width: 28px;
-      height: 28px;
-      pointer-events: none;
-      opacity: 0.25;
-    }
- 
-    .si-banner__bracket--tl {
-      top: 30px;
-      left: 220px;
-      border-top: 3px solid #138808;
-      border-left: 3px solid #138808;
-    }
- 
-    .si-banner__bracket--br {
-      bottom: 30px;
-      left: 260px;
-      border-bottom: 3px solid #138808;
-      border-right: 3px solid #138808;
-    }
- 
-    /* ── Content ── */
-    .si-banner__inner {
-      position: relative;
-      z-index: 2;
-      text-align: center;
-    }
- 
-    .si-banner__title {
-      font-size: clamp(1.6rem, 3.5vw, 2.2rem);
-      font-weight: 800;
-      color: #1a2456;
-      margin-bottom: 20px;
-      line-height: 1.2;
-    }
- 
-    .si-banner__desc {
-      font-size: clamp(0.9rem, 1.5vw, 1rem);
-      line-height: 1.85;
-      color: #a0aec0;
-      max-width: 720px;
-      margin: 0 auto;
-    }
 </style>
 
 <!-- HERO -->
@@ -1503,9 +826,9 @@ include_once('elements/header.php');
 
 </section>
 
-<section class="incorporation">
+<section class="container">
 
-    <div class="container position-relative" style="z-index:1;">
+    <div class="incorporation position-relative" style="z-index:1;">
 
         <h2 class="incorporation-heading">Bussiness Formation & Registration</h2>
 
@@ -1513,8 +836,8 @@ include_once('elements/header.php');
 
             <!-- 1. Business Structure Advisory -->
             <div class="col">
-                <div class="service-card">
-                    <div class="icon-wrap">
+                <div class="service-card-incorporation ">
+                    <div class="icon-wrap-incorporation ">
                         <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="24" cy="10" r="5" stroke="#c0392b" stroke-width="2" />
                             <circle cx="10" cy="36" r="5" stroke="#c0392b" stroke-width="2" />
@@ -1531,8 +854,8 @@ include_once('elements/header.php');
 
             <!-- 2. Company Name Reservation -->
             <div class="col">
-                <div class="service-card">
-                    <div class="icon-wrap">
+                <div class="service-card-incorporation">
+                    <div class="icon-wrap-incorporation">
                         <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="10" y="14" width="28" height="20" rx="4" stroke="#c0392b" stroke-width="2" />
                             <path d="M16 22h6M16 27h10" stroke="#c0392b" stroke-width="2" stroke-linecap="round" />
@@ -1548,8 +871,8 @@ include_once('elements/header.php');
 
             <!-- 3. Incorporation Documentation -->
             <div class="col">
-                <div class="service-card">
-                    <div class="icon-wrap">
+                <div class="service-card-incorporation">
+                    <div class="icon-wrap-incorporation">
                         <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="12" y="8" width="24" height="32" rx="3" stroke="#c0392b" stroke-width="2" />
                             <path d="M18 16h12M18 21h12M18 26h8" stroke="#c0392b" stroke-width="2" stroke-linecap="round" />
@@ -1564,8 +887,8 @@ include_once('elements/header.php');
 
             <!-- 4. Government Registration Process -->
             <div class="col">
-                <div class="service-card">
-                    <div class="icon-wrap">
+                <div class="service-card-incorporation">
+                    <div class="icon-wrap-incorporation">
                         <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M8 38h32M12 38V22M36 38V22" stroke="#c0392b" stroke-width="2" stroke-linecap="round" />
                             <path d="M18 38V30h12v8" stroke="#c0392b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -1580,8 +903,8 @@ include_once('elements/header.php');
 
             <!-- 5. Digital Signature and DIN -->
             <div class="col">
-                <div class="service-card">
-                    <div class="icon-wrap">
+                <div class="service-card-incorporation">
+                    <div class="icon-wrap-incorporation">
                         <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="10" y="10" width="20" height="28" rx="3" stroke="#c0392b" stroke-width="2" />
                             <path d="M14 18h12M14 23h8" stroke="#c0392b" stroke-width="2" stroke-linecap="round" />
@@ -1596,8 +919,8 @@ include_once('elements/header.php');
 
             <!-- 6. PAN & TAN Registration -->
             <div class="col">
-                <div class="service-card">
-                    <div class="icon-wrap">
+                <div class="service-card-incorporation">
+                    <div class="icon-wrap-incorporation">
                         <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="8" y="14" width="32" height="22" rx="4" stroke="#c0392b" stroke-width="2" />
                             <circle cx="18" cy="22" r="4" stroke="#c0392b" stroke-width="2" />
@@ -1612,8 +935,8 @@ include_once('elements/header.php');
 
             <!-- 7. Regulatory Compliance Setup -->
             <div class="col">
-                <div class="service-card">
-                    <div class="icon-wrap">
+                <div class="service-card-incorporation">
+                    <div class="icon-wrap-incorporation">
                         <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M24 6L10 12v10c0 9 6 17 14 20 8-3 14-11 14-20V12L24 6z" stroke="#c0392b" stroke-width="2" stroke-linejoin="round" />
                             <path d="M17 24l4 4 10-10" stroke="#c0392b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -1626,8 +949,8 @@ include_once('elements/header.php');
 
             <!-- 8. Startup & Entrepreneur Support -->
             <div class="col">
-                <div class="service-card">
-                    <div class="icon-wrap">
+                <div class="service-card-incorporation">
+                    <div class="icon-wrap-incorporation">
                         <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M24 8C24 8 14 14 14 26c0 5.5 4.5 10 10 10s10-4.5 10-10c0-12-10-18-10-18z" stroke="#c0392b" stroke-width="2" stroke-linejoin="round" />
                             <path d="M24 36v4M20 40h8" stroke="#c0392b" stroke-width="2" stroke-linecap="round" />
@@ -1641,8 +964,8 @@ include_once('elements/header.php');
 
             <!-- 9. Business Legitimacy & Credibility -->
             <div class="col">
-                <div class="service-card">
-                    <div class="icon-wrap">
+                <div class="service-card-incorporation">
+                    <div class="icon-wrap-incorporation">
                         <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="10" y="10" width="28" height="28" rx="4" stroke="#c0392b" stroke-width="2" />
                             <circle cx="24" cy="20" r="5" stroke="#c0392b" stroke-width="2" />
@@ -1656,8 +979,8 @@ include_once('elements/header.php');
 
             <!-- 10. Seamless End-to-End Incorporation -->
             <div class="col">
-                <div class="service-card">
-                    <div class="icon-wrap">
+                <div class="service-card-incorporation">
+                    <div class="icon-wrap-incorporation">
                         <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="24" cy="24" r="14" stroke="#c0392b" stroke-width="2" />
                             <path d="M24 10v4M24 34v4M10 24h4M34 24h4" stroke="#c0392b" stroke-width="2" stroke-linecap="round" />
@@ -1676,9 +999,9 @@ include_once('elements/header.php');
 
 </section>
 
-<section class="register">
+<section class="container">
 
-    <div class="container position-relative" style="z-index:1;">
+    <div class="register position-relative" style="z-index:1;">
 
         <div class="row align-items-center g-5">
 
@@ -2010,6 +1333,132 @@ include_once('elements/header.php');
 
 </section>
 
+<style>
+    
+    /* Section */
+    .setup {
+        position: relative;
+        padding: 100px 0 0px;
+        overflow: hidden;
+        background: #fff;
+    }
+
+    /* Watermark */
+    .setup::before {
+        content: "Setup";
+        position: absolute;
+        top: 27px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: clamp(60px, 10vw, 115px);
+        font-weight: 700;
+        color: #f0c0c8;
+        white-space: nowrap;
+        pointer-events: none;
+        z-index: 0;
+        opacity: 0.2;
+        letter-spacing: 2px;
+    }
+
+    /* ── Heading ── */
+    .setup-heading {
+        position: relative;
+        z-index: 1;
+        color: #1a2456;
+        font-size: clamp(1.6rem, 3vw, 2.2rem);
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+
+    /* ── Card ── */
+    .benefit-card {
+
+        padding: 32px 28px 28px;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        border-left: 1px solid lightgrey;
+    }
+
+    .benefit-card::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 40px;
+        bottom: 160px;
+        width: 1.5px;
+        background: #ff0000;
+        opacity: 0;
+        transform: scaleY(0.4);
+        transition: opacity 0.28s ease, transform 0.28s ease;
+    }
+
+    .benefit-card:hover {
+        transform: translateY(-4px);
+        border-left: 1px solid lightgrey;
+    }
+
+    .benefit-card:hover::before {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
+    /* Icon circle */
+    .icon-wrap {
+        width: 68px;
+        height: 68px;
+        background: #fbf0f1;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        transition: background 0.28s ease, transform 0.28s ease;
+    }
+
+    .benefit-card:hover .icon-wrap {
+        transform: scale(1.07) rotate(-4deg);
+    }
+
+    .icon-wrap svg {
+        width: 32px;
+        height: 32px;
+        color: #ff0000;
+    }
+
+    /* Text */
+    .card-title {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #333;
+        width: 260px;
+        margin-bottom: 10px;
+        text-align: start;
+        line-height: 1.35;
+    }
+
+    .card-desc {
+        font-size: 0.7rem;
+        color: #77889e;
+        line-height: 1.7;
+        margin: 0;
+        text-align: start;
+    }
+
+    /* Vertical divider between cols on desktop */
+    @media (min-width: 992px) {
+
+        .col-divider:last-child {
+            border-right: none;
+        }
+    }
+
+  
+  
+</style>
+
 <section class="setup">
 
     <div class="container position-relative" style="z-index:1;">
@@ -2131,13 +1580,147 @@ include_once('elements/header.php');
 
 </section>
 
+<style>
+      /* Section */
+    .ownership {
+        position: relative;
+        padding: 100px 0 0px;
+        overflow: hidden;
+        background: #fff;
+    }
+
+    /* Watermark */
+    .ownership::before {
+        content: "Ownership";
+        position: absolute;
+        top: 40px;
+        left: 68%;
+        transform: translateX(-50%);
+        font-size: clamp(60px, 10vw, 115px);
+        font-weight: 700;
+        color: #f0c0c8;
+        white-space: nowrap;
+        pointer-events: none;
+        z-index: 0;
+        opacity: 0.2;
+        letter-spacing: 2px;
+    }
+
+    /* ── Heading ── */
+    .ownership-heading {
+        position: relative;
+        z-index: 1;
+        color: #1a2456;
+        font-size: clamp(1.6rem, 3vw, 2.2rem);
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .setup-section {
+        padding: 70px 0;
+        background: #fff;
+        overflow: hidden;
+    }
+
+    /* ── Left Image ── */
+    .img-wrapper-ownership {
+        overflow: hidden;
+        height: 100%;
+        min-height: 580px;
+    }
+
+    .img-wrapper-ownership img {
+        width: 100%;
+        height: 560px;
+        border-radius: 20px;
+        max-height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* ── Right Content ── */
+    .content-side {
+        position: relative;
+    }
+
+    .section-title {
+        font-size: clamp(1.6rem, 2.8vw, 2.1rem);
+        font-weight: 800;
+        color: #1a2456;
+        margin-bottom: 22px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .section-desc {
+        font-size: 0.78rem;
+        color: #77889e;
+        line-height: 1.8;
+        margin-bottom: 32px;
+    }
+
+    /* ── Checklist grid ── */
+    .checklist {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px 24px;
+    }
+
+    @media (max-width: 480px) {
+        .checklist {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .check-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    /* Red checkmark icon */
+    .check-icon {
+        flex-shrink: 0;
+        width: 26px;
+        height: 26px;
+        margin-top: 1px;
+    }
+
+    .check-icon svg {
+        width: 26px;
+        height: 26px;
+    }
+
+    .check-label {
+        font-size: 0.92rem;
+        font-weight: 600;
+        color: #1a2456;
+        line-height: 1.4;
+        padding-top: 3px;
+    }
+
+    @media (max-width: 991px) {
+        .img-wrapper {
+            min-height: 300px;
+            margin-bottom: 40px;
+        }
+
+        .watermark {
+            font-size: 3rem;
+        }
+    }
+
+   
+</style>
+
 <section class="ownership">
     <div class="container position-relative" style="z-index:1;">
 
         <div class="row align-items-center g-5">
 
             <!-- LEFT: Image -->
-            <div class="col-lg-5">
+            <div class="col-lg-6">
                 <div class="img-wrapper-ownership">
                     <img
                         src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80"
@@ -2146,7 +1729,7 @@ include_once('elements/header.php');
             </div>
 
             <!-- RIGHT: Content -->
-            <div class="col-lg-7">
+            <div class="col-lg-6">
                 <div class="content-side">
 
                     <h2 class="ownership-heading">Proprietorship Setup</h2>
@@ -2260,12 +1843,210 @@ include_once('elements/header.php');
 
 </section>
 
-<section class="compliance">
+<style>
+     /* Section */
+    .compliance {
+        position: relative;
+        padding: 100px 0 0px;
+        overflow: hidden;
+        background: #fff;
+    }
 
-    <div class="container position-relative py-5" style="z-index:1;">
+    /* Watermark */
+    .compliance::before {
+        content: "Compliance";
+        position: absolute;
+        top: 75px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: clamp(60px, 10vw, 115px);
+        font-weight: 700;
+        color: #f0c0c8;
+        white-space: nowrap;
+        pointer-events: none;
+        z-index: 0;
+        opacity: 0.2;
+        letter-spacing: 2px;
+    }
+
+    /* ── Heading ── */
+    .compliance-heading {
+        position: relative;
+        z-index: 1;
+        color: #1a2456;
+        font-size: clamp(1.6rem, 3vw, 2.5rem);
+        font-weight: 700;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+
+
+    /* ── Section wrapper ── */
+    .tax-section {
+        padding: 60px 0 70px;
+    }
+
+    .tax-section .section-tag {
+        display: inline-block;
+        background: #f0c0c8;
+        color: #c0392b;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        border-radius: 20px;
+        padding: 5px 16px;
+        margin-bottom: 12px;
+    }
+
+    .tax-section h2 {
+        font-size: clamp(1.6rem, 3vw, 2.2rem);
+        font-weight: 800;
+        color: #1a2456;
+        line-height: 1.25;
+    }
+
+    .tax-section h2 span {
+        color: #c0392b;
+    }
+
+    .tax-section .lead {
+        font-size: 1rem;
+        max-width: 560px;
+        margin: 0 auto;
+        color: #a0aec0;
+    }
+
+    /* ── Card ── */
+    .tax-card {
+        background: #ffffff;
+        border: 1.5px solid #cbd5e0;
+        border-radius: 18px;
+        padding: 36px 28px 32px;
+        text-align: center;
+        transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
+        height: 100%;
+        user-select: none;
+    }
+
+    .tax-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 18px 40px rgba(192, 57, 43, .12);
+        border-color: rgba(192, 57, 43, .35);
+    }
+
+    /* Icon circle */
+    .tax-card .icon-wrap {
+        width: 80px;
+        height: 80px;
+        background: #fbf0f1;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 22px;
+        transition: background .28s;
+    }
+
+    .tax-card:hover .icon-wrap {
+        background: #f5c6c2;
+    }
+
+    .tax-card .icon-wrap svg {
+        width: 38px;
+        height: 38px;
+        stroke: #c0392b;
+        fill: none;
+        stroke-width: 1.6;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    .tax-card h5 {
+        font-size: 1rem;
+        font-weight: 800;
+        color: #1a2456;
+        margin-bottom: 12px;
+        line-height: 1.3;
+    }
+
+    .tax-card p {
+        font-size: 0.7rem;
+        line-height: 1.7;
+        margin: 0;
+        color: #a0aec0;
+    }
+
+    /* ── Swiper overrides ── */
+    .swiper {
+        padding-bottom: 52px !important;
+    }
+
+    .swiper-slide {
+        height: auto;
+    }
+
+    /* Pagination bullets */
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px; 
+        background: #cbd5e0;
+        opacity: 1;
+        transition: all .25s;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #1a2456;
+        width: 10px;
+        height: 10px;
+        outline: 2px solid #1a2456;
+        outline-offset: 3px;
+        border-radius: 100%;
+    }
+
+    /* Nav buttons */
+    .swiper-nav {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 4px;
+    }
+
+    .swiper-btn {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        border: 1.5px solid #cbd5e0;
+        background: #fff;
+        color: #1a2456;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all .22s;
+        font-size: 1rem;
+    }
+
+    .swiper-btn:hover {
+        background: #c0392b;
+        border-color: #c0392b;
+        color: #fff;
+    }
+
+    /* hide default arrows */
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+
+</style>
+
+<section class="container compliance ">
+
+    <div class=" position-relative py-5 " style="z-index:1;">
         <h2 class="compliance-heading">Pan, Tan, Gst Registration</h2>
 
-        <!-- Heading -->
+        <!-- Heading
         <div class="text-center mb-5">
             <span class="section-tag">Why It Matters</span>
             <h2 class="mb-3">Key <span>Tax Registration</span> Benefits</h2>
@@ -2273,7 +2054,7 @@ include_once('elements/header.php');
                 PAN, TAN, and GST registrations form the foundation of every compliant
                 business operating in India.
             </p>
-        </div>
+        </div> -->
 
         <!-- Swiper -->
         <div class="swiper taxSwiper">
@@ -2379,6 +2160,112 @@ include_once('elements/header.php');
 
 </section>
 
+<style>
+      /* Section */
+    .non-profit {
+        position: relative;
+        padding: 100px 0 0px;
+        overflow: hidden;
+        background: #fff;
+    }
+
+    /* Watermark */
+    .non-profit::before {
+        content: "Non Profit Setup";
+        position: absolute;
+        top: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: clamp(60px, 10vw, 115px);
+        font-weight: 700;
+        color: #f0c0c8;
+        white-space: nowrap;
+        pointer-events: none;
+        z-index: 0;
+        opacity: 0.2;
+        letter-spacing: 2px;
+    }
+
+    /* ── Heading ── */
+    .non-profit-heading {
+        position: relative;
+        z-index: 1;
+        color: #1a2456;
+        font-size: clamp(1.6rem, 3vw, 2.1rem);
+        font-weight: 700;
+        text-align: center;
+    }
+
+
+    /* ── Feature item ── */
+    .np-feature {
+        padding-bottom: 10px;
+        margin-bottom: 24px;
+        border-bottom: 1.5px solid #cbd5e0;
+    }
+
+    .np-feature:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .np-feature__title {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #1a2456;
+        margin-bottom: 7px;
+        line-height: 1.35;
+    }
+
+    .np-feature__title em {
+        font-style: normal;
+        color: #c0392b;
+    }
+
+    .np-feature__desc {
+        font-size: 0.875rem;
+        line-height: 1.75;
+        margin: 0;
+        color: #6f767e;
+    }
+
+    /* right-side titles align right on desktop */
+    .np-col-right .np-feature__title,
+    .np-col-right .np-feature__desc {
+        text-align: left;
+    }
+
+    /* ── Center image ── */
+    .np-img-wrap {
+        border-radius: 18px;
+        overflow: hidden;
+        height: 100%;
+        min-height: 420px;
+    }
+
+    .np-img-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* ── Responsive: stack on mobile ── */
+    @media (max-width: 991.98px) {
+
+        .np-col-right .np-feature__title,
+        .np-col-right .np-feature__desc {
+            text-align: left;
+        }
+
+        .np-img-wrap {
+            min-height: 280px;
+            margin-bottom: 36px;
+        }
+    }
+</style>
+
 <section class="non-profit">
 
     <div class="container position-relative" style="z-index:1;">
@@ -2462,30 +2349,164 @@ include_once('elements/header.php');
 
 </section>
 
+<style>
+    
+    /* ── Banner ── */
+    .si-banner {
+        position: relative;
+        background: #f7f8fc;
+        overflow: hidden;
+        padding: 72px 0 80px;
+    }
+
+    /* ────── Background decorations ────── */
+
+    /* Faded "startup" watermark text */
+    .si-banner__watermark {
+        position: absolute;
+        left: 300px;
+        top: 70%;
+        transform: translateY(-50%);
+        font-size: clamp(4rem, 10vw, 5rem);
+        font-weight: 800;
+        color: rgba(192, 57, 43, 0.07);
+        white-space: nowrap;
+        pointer-events: none;
+        user-select: none;
+        letter-spacing: -2px;
+        line-height: 1;
+    }
+
+    /* India flag colour stripe — top right */
+    .si-banner__stripe {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 340px;
+        height: 100%;
+        pointer-events: none;
+        overflow: hidden;
+    }
+
+    .si-banner__stripe::before,
+    .si-banner__stripe::after,
+    .si-banner__stripe span {
+        content: '';
+        position: absolute;
+        right: -60px;
+        width: 400px;
+        height: 14px;
+        border-radius: 8px;
+        opacity: 0.18;
+        transform: rotate(-38deg);
+    }
+
+    .si-banner__stripe::before {
+        background: #ff9933;
+        top: 28%;
+    }
+
+    .si-banner__stripe::after {
+        background: #138808;
+        top: calc(28% + 22px);
+    }
+
+    .si-banner__stripe span {
+        display: block;
+        background: #3498db;
+        top: calc(28% + 44px);
+    }
+
+    /* Ashoka Chakra faint circle — right side */
+    .si-banner__chakra {
+        position: absolute;
+        right: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: clamp(120px, 18vw, 220px);
+        height: clamp(120px, 18vw, 220px);
+        border-radius: 50%;
+        border: 2px solid rgba(0, 0, 128, 0.08);
+        pointer-events: none;
+    }
+
+    .si-banner__chakra::before {
+        content: '';
+        position: absolute;
+        inset: 10px;
+        border-radius: 50%;
+        border: 1.5px dashed rgba(0, 0, 128, 0.07);
+    }
+
+    /* Bracket / L-shape decorative marks */
+    .si-banner__bracket {
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        pointer-events: none;
+        opacity: 0.25;
+    }
+
+    .si-banner__bracket--tl {
+        top: 30px;
+        left: 220px;
+        border-top: 3px solid #138808;
+        border-left: 3px solid #138808;
+    }
+
+    .si-banner__bracket--br {
+        bottom: 30px;
+        left: 260px;
+        border-bottom: 3px solid #138808;
+        border-right: 3px solid #138808;
+    }
+
+    /* ── Content ── */
+    .si-banner__inner {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+    }
+
+    .si-banner__title {
+        font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+        font-weight: 800;
+        color: #1a2456;
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+
+    .si-banner__desc {
+        font-size: clamp(0.9rem, 1.5vw, 1rem);
+        line-height: 1.85; 
+        margin: 0 auto;
+    }
+</style>
+
 <section class="si-banner mb-5">
- 
-  <!-- Decorative bg elements -->
-  <span class="si-banner__watermark">startupindia</span>
-  <div class="si-banner__stripe"><span></span></div>
-  <div class="si-banner__chakra"></div> 
- 
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-10 col-xl-8 si-banner__inner">
- 
-        <h1 class="si-banner__title">Start-up India Registration</h1>
- 
-        <p class="si-banner__desc">
-          Kickstart your entrepreneurial journey with hassle-free Start-up India
-          registration. We provide end-to-end support—from documentation to
-          approval—ensuring your business is recognised and ready to grow with
-          government benefits and compliance ease.
-        </p>
- 
-      </div>
+
+    <!-- Decorative bg elements -->
+    <span class="si-banner__watermark">startupindia</span>
+    <div class="si-banner__stripe"><span></span></div>
+    <div class="si-banner__chakra"></div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-8 si-banner__inner">
+
+                <h1 class="si-banner__title">Start-up India Registration</h1>
+
+                <p class="si-banner__desc">
+                    Kickstart your entrepreneurial journey with hassle-free Start-up India
+                    registration. We provide end-to-end support—from documentation to
+                    approval—ensuring your business is recognised and ready to grow with
+                    government benefits and compliance ease.
+                </p>
+
+            </div>
+        </div>
     </div>
-  </div>
- 
+
 </section>
 
 <!-- Swiper JS -->
