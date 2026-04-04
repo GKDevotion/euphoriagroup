@@ -2,31 +2,8 @@
   include_once('elements/header.php');
   ?>
 
-<style>
- 
-   /* ── HERO ── */
-  .about-euphoria {
-    position: relative;
-    min-height: 50vh;
-    background-image: url('assets/img/about-us-bg.png');
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 120px;
-  }
-
-   /* ── Section wrapper ── */
-   .about-section {
-     padding: 80px 0 50px;
-   }
-</style>
-
 <!-- HERO -->
- <section class="about-euphoria">
+ <section class="top-banner-background" style="background-image: url('assets/img/background/about-us-bg.png');">
    <div>
      <h1 class="mb-0">About The Euphoria Group</h1>
      <p class="text-black text-center mt-2">Your Integrated Partner for Business and Global Opportunities</p>
@@ -34,6 +11,11 @@
  </section>
 
 <style>
+  /* ── Section wrapper ── */
+  .about-section {
+    padding: 80px 0 50px;
+  }
+
    /* ── Corner-bracket card ── */
    .bracket-card {
      position: relative;

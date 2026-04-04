@@ -2,102 +2,14 @@
 include_once ('elements/header.php');
 ?>
 
-<style>
-    .hero-section {
-        position: relative;
-        height: 70vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        overflow: hidden;
-        margin-top: 120px;
-    }
-
-    .hero-bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        filter: brightness(0.75);
-    }
-
-    img, svg {
-        vertical-align: middle;
-    }
-
-    .hero-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6));
-        backdrop-filter: blur(2px);
-    }
-
-    .hero-blur {
-        position: absolute;
-        width: 250px;
-        height: 250px;
-        background: var(--red-blur);
-        filter: blur(90px);
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1;
-    }
-
-    .hero-content {
-        position: relative;
-        z-index: 2;
-    }
-
-    .hero-title {
-        font-size: clamp(28px, 5vw, 48px);
-        font-weight: 700;
-        color: var(--euphoria-blue);
-    }
-
-    .hero-subtitle {
-        font-size: 16px;
-        color: var(--text-dark);
-        margin-top: 10px;
-    }
-
-    @media(max-width:768px){
-        .hero-section{
-            height:60vh;
-        }
-        .hero-subtitle{
-            font-size:14px;
-        }
-    }
-</style>
 <!-- Hero Section -->
-<section class="hero-section">
-
-    <!-- Background Image -->
-    <img src="https://picsum.photos/1920/800?business" class="hero-bg" alt="Corporate">
-
-    <!-- Overlay -->
-    <div class="hero-overlay"></div>
-
-    <!-- Blur effect -->
-    <div class="hero-blur"></div>
-
-    <!-- Content -->
-    <div class="hero-content container">
-        <h1 class="hero-title animate__animated animate__fadeInDown">
-            Corporate Service
-        </h1>
-        <p class="hero-subtitle animate__animated animate__fadeInUp">
-            Expert Corporate Solutions for Modern Businesses
-        </p>
-    </div>
-
+<section class="top-banner-background" style="background-image: url('assets/img/background/corporate-services.png');">
+  <div>
+    <h1 class="mb-0">Corporate Service</h1>
+    <p class="text-black text-center mt-2">
+      Expert Corporate Solutions for Modern Businesses
+    </p>
+  </div>
 </section>
 
 <style>
@@ -109,22 +21,23 @@ include_once ('elements/header.php');
       margin-bottom:40px;
   }
 
-  .custom-tabs button{
+  .custom-tabs a{
       border:none;
       padding:10px 10px;
-      border-radius:10px;
+      border-radius:5px;
       background:#eee;
       color:#333;
       font-size:14px;
       transition:0.3s;
+      text-decoration: none;
   }
 
-  .custom-tabs button.active{
+  .custom-tabs a.active{
       background:var(--euphoria-blue);
       color:#fff;
   }
 
-  .custom-tabs button:hover{
+  .custom-tabs a:hover{
       background:var(--euphoria-blue);
       color:#fff;
   }
@@ -148,8 +61,8 @@ include_once ('elements/header.php');
 
   .text-content{
       color:var(--text-dark);
-      font-size:15px;
-      line-height:1.8;
+      font-size:17px;
+      line-height:1.5;
   }
 </style>
 
@@ -157,20 +70,20 @@ include_once ('elements/header.php');
 
     <!-- Tabs -->
     <div class="custom-tabs">
-        <button class="tab-btn active" data-tab="tab1">Legal & Compliance Services</button>
-        <button class="tab-btn" data-tab="tab2">Accounting & Taxation</button>
-        <button class="tab-btn" data-tab="tab1">Licensing & Regulatory</button>
-        <button class="tab-btn" data-tab="tab2">Corporate Restructuring</button>
-        <button class="tab-btn" data-tab="tab1">Advisory & Consultancy</button>
-        <button class="tab-btn" data-tab="tab2">Additional Services</button>
-        <button class="tab-btn" data-tab="tab1">FAQ</button>
+        <a class="tab-btn active" href="#legal">Legal & Compliance Services</a>
+        <a class="tab-btn" href="#">Accounting & Taxation</a>
+        <a class="tab-btn" href="#">Licensing & Regulatory</a>
+        <a class="tab-btn" href="#">Corporate Restructuring</a>
+        <a class="tab-btn" href="#">Advisory & Consultancy</a>
+        <a class="tab-btn" href="#">Additional Services</a>
+        <a class="tab-btn" href="#">FAQ</a>
     </div>
 
     <!-- Tab Content -->
     <div id="tab1" class="corporate-content-box active">
         <div class="row align-items-center">
             <div class="col-md-4">
-                <img src="https://picsum.photos/500/400?city" class="illustration">
+                <img src="assets/img/corporate-market.png" class="illustration">
             </div>
             <div class="col-md-8 text-content">
                 <p>
@@ -188,48 +101,7 @@ include_once ('elements/header.php');
             </div>
         </div>
     </div>
-
-    <div id="tab2" class="corporate-content-box">
-        <div class="row align-items-center">
-            <div class="col-md-4">
-                <img src="https://picsum.photos/500/400?finance" class="illustration">
-            </div>
-            <div class="col-md-8 text-content">
-                <p>
-                    We provide complete accounting, bookkeeping, GST compliance, and taxation services tailored for growing businesses.
-                </p>
-                <p>
-                    Entering the Indian market requires more than just registration—it demands strategic planning, regulatory clarity, and structured execution.
-                </p>
-                <p>
-                    Our inbound corporate services cover business setup, compliance, approvals, and legal structuring aligned with Indian laws.
-                </p>
-                <p>
-                    Entering the Indian market requires more than just registration—it demands strategic planning, regulatory clarity, and structured execution.
-                </p>
-                <p>
-                    Our inbound corporate services cover business setup, compliance, approvals, and legal structuring aligned with Indian laws.
-                </p>
-            </div>
-        </div>
-    </div>
-
 </div>
-
-<script>
-  const tabs = document.querySelectorAll('.tab-btn');
-  const contents = document.querySelectorAll('.corporate-content-box');
-
-  tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-          tabs.forEach(btn => btn.classList.remove('active'));
-          contents.forEach(box => box.classList.remove('active'));
-
-          tab.classList.add('active');
-          document.getElementById(tab.dataset.tab).classList.add('active');
-      });
-  });
-</script>
 
 <style>
     
@@ -406,7 +278,7 @@ include_once ('elements/header.php');
         background:#fff;
         border:1px solid var(--card-border);
         border-radius:10px;
-        padding:24px 20px;
+        padding:10px;
         text-align:center;
         transition:box-shadow .3s, transform .3s;
         height:100%;
@@ -416,14 +288,12 @@ include_once ('elements/header.php');
         transform:translateY(-6px);
     }
     .service-card .icon-wrap {
-        width:64px; 
-        height:64px; 
         border-radius:50%;
         background: var(--red-blur);
         display:flex; 
         align-items:center; 
         justify-content:center;
-        margin:0 auto 16px;
+        margin:0 auto 10px;
         transition:background .3s;
     }
     .service-card:hover .icon-wrap { 
@@ -432,19 +302,19 @@ include_once ('elements/header.php');
     .service-card:hover .icon-wrap i { 
         color:#fff !important; 
     }
-    .service-card .icon-wrap i { 
-        font-size:1.7rem; 
-        color:var(--euphoria-red); 
-        transition:color .3s; 
+
+    .service-card .icon-wrap img { 
+      width: 100%;
     }
+
     .service-card h6 { 
-        font-size:.95rem; 
+        font-size:20px;
         font-weight:700; 
         color:var(--euphoria-blue); 
         margin-bottom:8px; 
     }
     .service-card p { 
-        font-size:.83rem; 
+        font-size:16px; 
         color:#666; 
         margin:0; 
     }
@@ -477,12 +347,17 @@ include_once ('elements/header.php');
         animation:pulse 1.4s infinite;
         margin-right:8px;
     }
+
+    .about-title-bg {
+      top: -40px;
+      font-size: 11.4rem !important;
+    }
 </style>
 
 <!-- LEGAL & COMPLIANCE -->
 <section id="legal" class="about-section legal-section py-5">
     
-    <div class="about-title-bg" style="font-size: 5.9rem;">Reliable Support</div>
+    <div class="about-title-bg">Reliable Support</div>
     
     <div class="container">
       <div class="row align-items-center">
@@ -495,56 +370,72 @@ include_once ('elements/header.php');
             <div class="swiper-wrapper pb-2">
             <div class="swiper-slide">
                 <div class="service-card">
-                <div class="icon-wrap"><i class="bi bi-building"></i></div>
+                <div class="icon-wrap">
+                  <img src="assets/img/legal-annual-filling.png">
+                </div>
                 <h6>Company Registration</h6>
                 <p>Pvt Ltd, LLP, OPC and all types of company formation with complete documentation.</p>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="service-card">
-                <div class="icon-wrap"><i class="bi bi-shield-check"></i></div>
+                <div class="icon-wrap">
+                  <img src="assets/img/legal-moa-drafting.png">
+                </div>
                 <h6>Regulatory Schema</h6>
                 <p>Comprehensive guidance on applicable regulatory frameworks for your industry.</p>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="service-card">
-                <div class="icon-wrap"><i class="bi bi-file-earmark-text"></i></div>
+                <div class="icon-wrap">
+                  <img src="assets/img/legal-mca.png">
+                </div>
                 <h6>Drafting & Vetting</h6>
                 <p>Professional contract drafting, review and legal documentation services.</p>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="service-card">
-                <div class="icon-wrap"><i class="bi bi-bank"></i></div>
+                <div class="icon-wrap">
+                  <img src="assets/img/legal-moa-drafting.png">
+                </div>
                 <h6>Shareholder Advisory</h6>
                 <p>Shareholder agreements, rights management, and governance advisory.</p>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="service-card">
-                <div class="icon-wrap"><i class="bi bi-person-badge"></i></div>
+                <div class="icon-wrap">
+                  <img src="assets/img/legal-roc-service.png">
+                </div>
                 <h6>Director of Corporate Affairs</h6>
                 <p>ROC filings, board compliance, and statutory secretarial services.</p>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="service-card">
-                <div class="icon-wrap"><i class="bi bi-clipboard-check"></i></div>
+                <div class="icon-wrap">
+                  <img src="assets/img/legal-shareholder.png">
+                </div>
                 <h6>Compliance Audit</h6>
                 <p>Thorough compliance audits across legal, HR, statutory, and operational domains.</p>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="service-card">
-                <div class="icon-wrap"><i class="bi bi-award"></i></div>
+                <div class="icon-wrap">
+                  <img src="assets/img/legal-annual-filling.png">
+                </div>
                 <h6>FSSAI Licensing</h6>
                 <p>Food business operator registration and renewal under FSSAI regulations.</p>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="service-card">
-                <div class="icon-wrap"><i class="bi bi-people"></i></div>
+                <div class="icon-wrap">
+                  <img src="assets/img/legal-mca.png">
+                </div>
                 <h6>Labour Law Compliance</h6>
                 <p>PF, ESI, gratuity and all statutory labour law compliance management.</p>
                 </div>
@@ -672,14 +563,14 @@ include_once ('elements/header.php');
   /* ── DASHED DARK CARDS ── */
   .card-dashed {
     background: rgba(255,255,255,0.04);
-    border: 1.5px dashed var(--dashed-color);
+    border: 1px dashed var(--dashed-color);
     border-radius: 14px;
-    padding: 24px 14px 20px;
+    padding: 14px;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     text-align: center;
     cursor: pointer;
     transition: background 0.3s ease, border-color 0.3s ease, transform 0.25s ease;
@@ -883,8 +774,8 @@ include_once ('elements/header.php');
   
   .step-card {
       padding:28px;
-      margin-bottom:24px;
-      border-left:4px solid var(--euphoria-red);
+      margin-bottom:40px;
+      border-left:2px solid var(--euphoria-red);
       /* box-shadow:0 2px 18px rgba(37,53,111,.07); */
       /* display:flex; */
       align-items:flex-start;
@@ -914,15 +805,18 @@ include_once ('elements/header.php');
       margin:0; 
   }
   .step-img { 
-      border-radius:10px; 
+      border-radius:15px; 
       width:100%; 
-      height:220px; 
+      height:240px; 
       object-fit:cover; 
   }
 
+  #restructuring .about-title-bg{
+    top: 0 !important;
+  }
 </style>
 
-<section id="restructuring" class="about-section restructure-section py-5">
+<section id="restructuring" class="about-section restructure-section py-5 mt-5">
  
     <div class="about-title-bg">Transformation</div>
     <div class="container">
@@ -1070,7 +964,7 @@ include_once ('elements/header.php');
 <section id="licensing" class="account-section licensing-section py-5">
   <div class="container position-relative">
     
-    <div class="about-title-bg" style="top: -25px;">Permits</div>
+    <div class="about-title-bg">Permits</div>
     <div class="container">
 
       <div class="row align-items-center">
@@ -1165,8 +1059,8 @@ include_once ('elements/header.php');
     display:flex; align-items:center; justify-content:center;
   }
   .adv-icon i { color:var(--euphoria-red); font-size:1.2rem; }
-  .adv-list-item h6 { font-size:.93rem; font-weight:700; color:var(--euphoria-blue); margin-bottom:4px; }
-  .adv-list-item p { font-size:.82rem; color:#666; margin:0; }
+  .adv-list-item h6 { font-size:23px; font-weight:700; color:var(--euphoria-blue); margin-bottom:4px; }
+  .adv-list-item p { font-size:16px; color:#666; margin:0; }
   .adv-img-wrap {
     border-radius:12px;
     overflow:hidden;
@@ -1180,6 +1074,10 @@ include_once ('elements/header.php');
     padding: 20px;
     border-radius: 25px;
     border: 1px solid var(--card-border);
+  }
+
+  .advisory-border .about-title-bg{
+    top: 5px;
   }
 </style>
 
@@ -1265,7 +1163,12 @@ include_once ('elements/header.php');
       height:100%;
   }
   .add-card:hover { box-shadow:0 10px 36px rgba(37,53,111,.16); transform:translateY(-6px); }
-  .add-card img { width:100%; height:180px; object-fit:cover; }
+  .add-card img { 
+    width:100%; 
+    height:180px; 
+    object-fit:cover; 
+    border-radius: 15px;
+  }
   .add-card-body { 
     padding:20px; 
     background-color: var(--bg-light);
@@ -1280,50 +1183,61 @@ include_once ('elements/header.php');
     padding-bottom: 15px;
   }
   .add-card-body p { font-size:.82rem; color:#666; margin:0; }
+
+  #additional .about-title-bg{
+    top: -25px;
+  }
+  #additional p{
+    font-size: 15px;
+  }
 </style>
 
 <section id="additional" class="additional-section py-5">
   
   <div class="container position-relative">
     
-    <div class="about-title-bg" style="top: 0;">Extensions</div>
+    <div class="about-title-bg">Extensions</div>
     <div class="container ">
 
       <div class="row align-items-center">
           
         <h2 class="about-title h1" style="margin-top: 80px;">Additional Services</h2>
         <p class="text-muted mx-auto text-center">
-          Comprehensive value-added services to support every aspect of your business journey.
+          In addition to our core compliance and advisory offerings, we provide a range of additional business support services designed to simplify operations and ensure complete regulatory compliance. Our value-added services help startups, SMEs, and established companies efficiently manage essential registrations, certifications, and corporate requirements.
+        </p>
+
+        <p class="text-muted mx-auto text-center">
+          From business licenses and statutory registrations to certification support and documentation assistance, we ensure your business complies with all legal and operational requirements under Indian law. Our team delivers reliable, timely, and professional support to help your business operate smoothly and grow with confidence.
         </p>
       </div>
     </div>
 
-    <div class="row g-4">
+    <div class="row g-4 pt-4">
       <div class="col-sm-6 col-lg-4 reveal">
         <div class="add-card">
-          <div class="add-card-body">
+          <div class="add-card-body text-center">
             <h6>Trade Mark Registration</h6>
             <p>Complete trademark search, filing, opposition handling, and brand protection services.</p>
+            <img src="assets/img/trademark-registration.png" alt="Trademark" class="mt-4">
           </div>
-          <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&q=80" alt="Trademark">
         </div>
       </div>
       <div class="col-sm-6 col-lg-4 reveal">
         <div class="add-card">
-          <div class="add-card-body">
+          <div class="add-card-body text-center">
             <h6>ISO Certification</h6>
             <p>ISO 9001, 14001, 45001 and industry-specific certifications with full documentation support.</p>
+            <img src="assets/img/iso-certificate.png" alt="ISO" class="mt-4">
           </div>
-          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80" alt="ISO">
         </div>
       </div>
       <div class="col-sm-6 col-lg-4 reveal">
         <div class="add-card">
-          <div class="add-card-body">
+          <div class="add-card-body text-center">
             <h6>Business Consulting Services</h6>
             <p>Strategic planning, process optimization and management consulting for growth-focused businesses.</p>
+            <img src="assets/img/business-volume.png" alt="Business Consulting" class="mt-4">
           </div>
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Business Consulting">
         </div>
       </div>
     </div>

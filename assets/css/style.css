@@ -5,11 +5,12 @@
     --red-blur:      #e31e250f;
     --black-blur:    #33333364;
     --black-blur2:  #c8c7c4;
-    --bg-light:      #FFEFEF;
+    --bg-light:      #F8F9FA;
     --card-border:   rgba(26, 48, 102, 0.12);
     --nav-h:         72px;
     --text-light: #6c757d;
     --light-blue: #F8F9FA;
+    --dashed-color: #fff;
 }
 
 html {
@@ -182,6 +183,29 @@ h1, h2 {
     .country-tag { display: none; }
 }
 
+/**
+ * Top side background image
+ */
+.top-banner-background {
+    position: relative;
+    min-height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 120px;
+}
+
+.top-banner-background h1{
+    font-size: 65px !important;
+}
+
+.top-banner-background p{
+    font-size: 20px !important;
+}
+
 /* 2. About Us Section Styling */
 .about-section {
     padding: 80px 0;
@@ -198,6 +222,8 @@ h1, h2 {
     color: var(--red-blur); /* Very light 'About' text */
     z-index: 0;
     font-family: 'Anek Kannada', 'Poppins', sans-serif;
+    width: 100%;
+    text-align: center;
 }
 .about-title {
     color: var(--euphoria-blue);
@@ -824,6 +850,7 @@ h1, h2 {
         text-transform: uppercase;
         margin-bottom: 5px;
         letter-spacing: 1px;
+        color: var(--bg-light);
     }
 
     .footer-links { list-style: none; padding: 0; }

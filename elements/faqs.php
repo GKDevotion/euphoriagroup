@@ -1,7 +1,7 @@
 <!-- FAQ SECTION -->
 <style>
   .faq-section {
-    padding: 70px 0 80px;
+    padding: 80px 0;
     background: var(--bg-light);
     position: relative;
     overflow: hidden;
@@ -10,21 +10,20 @@
   /* Big watermark "FAQ" behind heading */
   .faq-watermark {
     position: absolute;
-    top: 20px;
-    left: -8px;
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(80px, 16vw, 160px);
-    font-weight: 700;
-    color: rgba(37, 53, 111, 0.07);
+    font-family: 'Anek Kannada', 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--red-blur);
     line-height: 1;
     pointer-events: none;
     white-space: nowrap;
     z-index: 0;
+    font-size: 160px;
+    top: 50px;
   }
 
   /* ── HEADING ── */
   .faq-heading {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Anek Kannada', 'Poppins', sans-serif;
     font-size: clamp(1.7rem, 4vw, 2.4rem);
     font-weight: 700;
     color: var(--euphoria-blue);
@@ -50,9 +49,8 @@
   }
 
   .faq-cta-card h5 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 25px;
+    font-weight: 600;
     color: var(--euphoria-blue);
     margin-bottom: 8px;
   }
@@ -118,12 +116,11 @@
   }
 
   .accordion-button {
-    font-family: 'Mulish', sans-serif;
     font-size: 0.97rem;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--euphoria-blue);
     background: #fff !important;
-    padding: 20px 24px;
+    padding: 10px 0 0 25px;
     box-shadow: none !important;
     border-radius: 10px !important;
   }
@@ -142,8 +139,6 @@
   .acc-chevron {
     width: 32px;
     height: 32px;
-    border-radius: 50%;
-    background: var(--bg-light);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -168,7 +163,7 @@
   }
 
   .accordion-body {
-    padding: 0 24px 20px;
+    padding: 10px 0 10px 25px;
     font-size: 0.87rem;
     color: #666;
     line-height: 1.75;
@@ -210,14 +205,13 @@
 </style>
 <section class="faq-section" id="faq">
 
-  <!-- Watermark -->
-  <div class="faq-watermark">FAQ</div>
-
   <div class="container">
-
+    
     <!-- TOP ROW: Heading (left) + CTA card (right) -->
     <div class="row align-items-center mb-4 g-4">
-
+      
+      <!-- Watermark -->
+      <div class="faq-watermark">FAQs</div>
       <!-- Heading -->
       <div class="col-lg-5 reveal">
         <h2 class="faq-heading">
