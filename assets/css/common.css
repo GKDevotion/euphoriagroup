@@ -1,0 +1,51 @@
+.custom-tabs{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      justify-content:center;
+      margin-bottom:40px;
+  }
+
+  .custom-tabs a{
+      border:none;
+      padding:10px 10px;
+      border-radius:5px;
+      background:#eee;
+      color:#333;
+      font-size:14px;
+      transition:0.3s;
+      text-decoration: none;
+  }
+
+  .custom-tabs a.active{
+      background:var(--euphoria-blue);
+      color:#fff;
+  }
+
+  .custom-tabs a:hover{
+      background:var(--euphoria-blue);
+      color:#fff;
+  }
+
+  /* Content Section */
+  .content-section{
+      padding:40px 0;
+  }
+
+  .corporate-content-box{
+      display:none;
+  }
+
+  .corporate-content-box.active{
+      display:block;
+  }
+
+  .illustration{
+      max-width:100%;
+  }
+
+  .text-content{
+      color:var(--text-dark);
+      font-size:17px;
+      line-height:1.5;
+  }

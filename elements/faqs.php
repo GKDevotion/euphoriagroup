@@ -198,7 +198,7 @@
     }
   }
 </style>
-<section class="faq-section" id="faq">
+<section class="faq-section" id="faqs">
 
   <div class="container">
     

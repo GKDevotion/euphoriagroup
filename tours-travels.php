@@ -2,205 +2,41 @@
 include_once ('elements/header.php');
 ?>
 
-<style>
-    .hero-section {
-        position: relative;
-        height: 70vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        overflow: hidden;
-        margin-top: 120px;
-    }
-
-    .hero-bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        filter: brightness(0.75);
-    }
-
-    img, svg {
-        vertical-align: middle;
-    }
-
-    .hero-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6));
-        backdrop-filter: blur(2px);
-    }
-
-    .hero-blur {
-        position: absolute;
-        width: 250px;
-        height: 250px;
-        background: var(--red-blur);
-        filter: blur(90px);
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1;
-    }
-
-    .hero-content {
-        position: relative;
-        z-index: 2;
-    }
-
-    .hero-title {
-        font-size: clamp(28px, 5vw, 48px);
-        font-weight: 700;
-        color: var(--euphoria-blue);
-    }
-
-    .hero-subtitle {
-        font-size: 16px;
-        color: var(--text-dark);
-        margin-top: 10px;
-    }
-
-    @media(max-width:768px){
-        .hero-section{
-            height:60vh;
-        }
-        .hero-subtitle{
-            font-size:14px;
-        }
-    }
-</style>
 <!-- Hero Section -->
-<section class="hero-section">
-
-    <!-- Background Image -->
-    <img src="https://picsum.photos/1920/800?business" class="hero-bg" alt="Corporate">
-
-    <!-- Overlay -->
-    <div class="hero-overlay"></div>
-
-    <!-- Blur effect -->
-    <div class="hero-blur"></div>
-
-    <!-- Content -->
-    <div class="hero-content container">
-        <h1 class="hero-title animate__animated animate__fadeInDown">
-            Tours & Travels
-        </h1>
-        <p class="hero-subtitle animate__animated animate__fadeInUp">
-            Discover India's Wonders with Seamless Travel Experience
-        </p>
-    </div>
-
+<section class="top-banner-background text-center" style="background-image: url('assets/img/background/tour-travel.png');">
+  <div>
+    <h1 class="mb-0">
+      Tours and Travels
+    </h1>
+    <p class="text-black mt-2">
+      Discover India's Wonders with Seamless Travel Experience
+    </p>
+  </div>
 </section>
-
-<style>
-  .custom-tabs{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      justify-content:center;
-      margin-bottom:40px;
-  }
-
-  .custom-tabs button{
-      border:none;
-      padding:10px 10px;
-      border-radius:10px;
-      background:#eee;
-      color:#333;
-      font-size:14px;
-      transition:0.3s;
-  }
-
-  .custom-tabs button.active{
-      background:var(--euphoria-blue);
-      color:#fff;
-  }
-
-  .custom-tabs button:hover{
-      background:var(--euphoria-blue);
-      color:#fff;
-  }
-
-  /* Content Section */
-  .content-section{
-      padding:40px 0;
-  }
-
-  .corporate-content-box{
-      display:none;
-  }
-
-  .corporate-content-box.active{
-      display:block;
-  }
-
-  .illustration{
-      max-width:100%;
-  }
-
-  .text-content{
-      color:var(--text-dark);
-      font-size:15px;
-      line-height:1.8;
-  }
-</style>
 
 <div class="container content-section">
 
     <!-- Tabs -->
     <div class="custom-tabs">
-        <button class="tab-btn active" data-tab="tab1">Flight</button>
-        <button class="tab-btn" data-tab="tab2">Train</button>
-        <button class="tab-btn" data-tab="tab1">Bus</button>
-        <button class="tab-btn" data-tab="tab2">Taxi</button>
-        <button class="tab-btn" data-tab="tab1">Local Transporatation</button>
-        <button class="tab-btn" data-tab="tab2">Hotel</button>
-        <button class="tab-btn" data-tab="tab1">Holiday Package</button>
-        <button class="tab-btn" data-tab="tab2">Tour Package</button>
-        <button class="tab-btn" data-tab="tab1">Guided Tour</button>
-        <button class="tab-btn" data-tab="tab2">FAQ</button>
+        <a href="#flight-section" class="tab-btn active" data-tab="tab1">Flight</a>
+        <a href="#train-section" class="tab-btn" data-tab="tab2">Train</a>
+        <a href="#bus-section" class="tab-btn" data-tab="tab1">Bus</a>
+        <a href="#taxi-section" class="tab-btn" data-tab="tab2">Taxi</a>
+        <a href="#local-section" class="tab-btn" data-tab="tab1">Local Transporatation</a>
+        <a href="#hotel-section" class="tab-btn" data-tab="tab2">Hotel</a>
+        <a href="#holiday-package-section" class="tab-btn" data-tab="tab1">Holiday Package</a>
+        <a href="#tour-package-section" class="tab-btn" data-tab="tab2">Tour Package</a>
+        <a href="#guide-tour-section" class="tab-btn" data-tab="tab1">Guided Tour</a>
+        <a href="#faqs" class="tab-btn" data-tab="tab2">FAQ</a>
     </div>
 
     <!-- Tab Content -->
     <div id="tab1" class="corporate-content-box active">
         <div class="row align-items-center">
             <div class="col-md-5">
-                <img src="https://picsum.photos/500/400?city" class="illustration">
+                <img src="assets/img/airplan-window.png" class="illustration">
             </div>
             <div class="col-md-7 text-content">
-                <p>
-                    Entering the Indian market requires more than just registration—it demands strategic planning, regulatory clarity, and structured execution.
-                </p>
-                <p>
-                    Our inbound corporate services cover business setup, compliance, approvals, and legal structuring aligned with Indian laws.
-                </p>
-                <p>
-                    Entering the Indian market requires more than just registration—it demands strategic planning, regulatory clarity, and structured execution.
-                </p>
-                <p>
-                    Our inbound corporate services cover business setup, compliance, approvals, and legal structuring aligned with Indian laws.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div id="tab2" class="corporate-content-box">
-        <div class="row align-items-center">
-            <div class="col-md-5">
-                <img src="https://picsum.photos/500/400?tour" class="illustration">
-            </div>
-            <div class="col-md-7 text-content">
-                <p>
-                    We provide complete accounting, bookkeeping, GST compliance, and taxation services tailored for growing businesses.
-                </p>
                 <p>
                     Entering the Indian market requires more than just registration—it demands strategic planning, regulatory clarity, and structured execution.
                 </p>
@@ -219,21 +55,6 @@ include_once ('elements/header.php');
 
 </div>
 
-<script>
-  const tabs = document.querySelectorAll('.tab-btn');
-  const contents = document.querySelectorAll('.corporate-content-box');
-
-  tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-          tabs.forEach(btn => btn.classList.remove('active'));
-          contents.forEach(box => box.classList.remove('active'));
-
-          tab.classList.add('active');
-          document.getElementById(tab.dataset.tab).classList.add('active');
-      });
-  });
-</script>
-
 <style>
   /* ── SECTION ── */
   .flight-section {
@@ -247,13 +68,13 @@ include_once ('elements/header.php');
   .flight-section::before {
     content: "Destinations";
     position: absolute;
-    top: 0; left: 50%;
+    top: 10px;
+    left: 50%;
     transform: translateX(-50%);
-    
-    font-size: clamp(60px, 12vw, 140px);
-    font-weight: 700;
-    color: rgba(37,53,111,0.06);
-    letter-spacing: 6px;
+    font-size: 160px;
+    font-weight: 600;
+    color: var(--red-blur);
+    letter-spacing: 0px;
     white-space: nowrap;
     pointer-events: none;
     user-select: none;
@@ -291,7 +112,6 @@ include_once ('elements/header.php');
   .section-subtitle {
     font-size: clamp(13px, 1.4vw, 16px);
     color: #666;
-    max-width: 580px;
     margin: 0 auto;
     line-height: 1.6;
   }
@@ -366,16 +186,18 @@ include_once ('elements/header.php');
     color:#fff;
   }
   .card-body-content h5 {
-    
     font-size:clamp(14px,1.6vw,18px);
-    font-weight:700;
+    font-weight:600;
     margin-bottom:7px;
     line-height:1.25;
+    text-align: center;
+    color: #fff;
   }
   .card-body-content p {
-    font-size:clamp(11px,1.1vw,13px);
-    color:rgba(255,255,255,.84);
+    font-size:clamp(11px,1.1vw,15px);
+    color:#fff;
     line-height:1.5;
+    text-align: center;
   }
 
   /* hover badge */
@@ -443,17 +265,14 @@ include_once ('elements/header.php');
   .dot:hover:not(.active) { background:var(--euphoria-red); }
 </style>
 
-<section class="flight-section">
+<section id="flight-section" class="flight-section">
   <div class="container position-relative">
  
     <!-- HEADER -->
     <div class="section-header">
-      <img
-        src="https://png.pngtree.com/png-clipart/20230107/original/pngtree-blue-passenger-aircraft-png-image_8879803.png"
-        alt="Airplane" class="plane-img d-none d-md-block"
-      />
+      <img src="assets/img/flight-fly.png" alt="Airplane" class="plane-img d-none d-md-block" />
       <h2 class="section-title">Flight Booking</h2>
-      <p class="section-subtitle">
+      <p class="section-subtitle mt-5 w-100">
         Affordable domestic flight booking services with flexible options and competitive fares.
       </p>
     </div>
@@ -680,9 +499,9 @@ include_once ('elements/header.php');
   ══════════════════════════ */
   .watermark {
     position: absolute;
-    top: 10px; left: 50%;
+    top: 15px; 
+    left: 50%;
     transform: translateX(-50%);
-    
     font-size: clamp(70px, 13vw, 150px);
     font-weight: 800;
     color: var(--euphoria-red);
@@ -723,8 +542,8 @@ include_once ('elements/header.php');
 
   .section-title {
     
-    font-size: clamp(30px, 4.5vw, 52px);
-    font-weight: 700;
+    font-size: clamp(30px, 4.5vw, 48px);
+    font-weight: 600;
     color: var(--euphoria-blue);
     line-height: 1.1;
     margin-bottom: 12px;
@@ -732,7 +551,7 @@ include_once ('elements/header.php');
   }
   .section-title span { color: var(--euphoria-red); }
 
-  .section-subtitle {
+  /* .section-subtitle {
     font-size: clamp(13px, 1.4vw, 16px);
     color: #666;
     max-width: 620px;
@@ -740,7 +559,7 @@ include_once ('elements/header.php');
     font-weight: 400;
     line-height: 1.7;
     animation: fadeUp .7s .15s ease both;
-  }
+  } */
 
   @keyframes fadeUp {
     from { opacity:0; transform:translateY(20px); }
@@ -945,7 +764,7 @@ include_once ('elements/header.php');
   .card-wrap:nth-child(5) { transition-delay:.34s; }
 </style>
 
-<section class="train-section">
+<section id="train-section" class="train-section">
  
   <!-- watermark -->
   <div class="watermark">Rail</div>
@@ -957,13 +776,9 @@ include_once ('elements/header.php');
  
     <!-- ── HEADER ── -->
     <div class="section-header">
-      <img
-        src="https://www.pngall.com/wp-content/uploads/2016/04/Train-PNG-Free-Download.png"
-        alt="Train" class="train-img d-none d-md-block"
-        onerror="this.style.display='none'"
-      />
+      <img src="assets/img/train-on.png" alt="Train" class="train-img d-none d-md-block" onerror="this.style.display='none'" />
       <h2 class="section-title">Train <span>Booking</span></h2>
-      <p class="section-subtitle">
+      <p class="section-subtitle mt-5">
         Reliable train ticket booking assistance with confirmed reservations and smooth travel planning.
       </p>
     </div>
@@ -1378,18 +1193,14 @@ include_once ('elements/header.php');
   .bus-dot:hover:not(.bus-dot-active) { background: var(--euphoria-red); }
 </style>
 
-<section class="bus-section">
+<section id="bus-section" class="bus-section">
   <div class="bus-watermark">Buslines</div>
  
   <div class="container position-relative" style="z-index:2">
  
     <!-- HEADER -->
     <div class="bus-header">
-      <img
-        src="https://www.pngmart.com/files/22/Red-Bus-PNG-Image.png"
-        alt="Bus" class="bus-img d-none d-md-block"
-        onerror="this.style.display='none'"
-      />
+      <img src="assets/img/bus-on.png" alt="Bus" class="bus-img d-none d-md-block" onerror="this.style.display='none'" />
       <h2 class="bus-title">Bus Booking</h2>
       <p class="bus-subtitle">
         Convenient bus booking services for intercity and interstate travel with multiple operator options.
@@ -1444,7 +1255,7 @@ include_once ('elements/header.php');
               <!-- price/tag icon -->
               <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
             </div>
-            <h3 class="bus-card-title">Affordable Fares &amp; Instant Confirmation</h3>
+            <h3 class="bus-card-title">Affordable Fares & Instant Confirmation</h3>
             <p class="bus-card-text">We offer competitive bus ticket prices and instant booking confirmation, helping travellers easily secure their seats while enjoying affordable, reliable transportation.</p>
           </div>
  
@@ -1619,10 +1430,9 @@ include_once ('elements/header.php');
   /* watermark */
   .taxi-watermark {
     position: absolute;
-    top: -10px; right: -10px;
-    
+    top: -20px;
     font-size: clamp(60px, 10vw, 120px);
-    font-weight: 700;
+    font-weight: 600;
     color: var(--euphoria-red);
     opacity: .07;
     letter-spacing: 4px;
@@ -1759,17 +1569,13 @@ include_once ('elements/header.php');
   }
 </style>
 
-<section class="taxi-section bg-white">
+<section id="taxi-section" class="taxi-section bg-white">
   <div class="container">
     <div class="row align-items-center g-4">
  
       <!-- LEFT: Image -->
       <div class="col-lg-5 taxi-img-col">
-        <img
-          src="https://images.unsplash.com/photo-1590736969596-f6a8c1e40b37?w=700&q=80"
-          alt="Taxi Booking"
-          class="taxi-main-img"
-        />
+        <img src="assets/img/taxi-customer.png" alt="Taxi Booking" class="taxi-main-img" />
       </div>
  
       <!-- RIGHT: Content -->
@@ -1779,17 +1585,12 @@ include_once ('elements/header.php');
         <div class="taxi-watermark">Cabs</div>
  
         <!-- floating taxi car -->
-        <img
-          src="https://www.pngmart.com/files/7/Yellow-Taxi-PNG-Pic.png"
-          alt="Taxi Car"
-          class="taxi-car-img d-none d-md-block"
-          onerror="this.style.display='none'"
-        />
+        <img src="assets/img/taxi-on.png" alt="Taxi Car" class="taxi-car-img d-none d-md-block" onerror="this.style.display='none'" />
  
-        <div class="taxi-inner">
+        <div class="taxi-inner p-4">
           <h2 class="taxi-title">Taxi Booking</h2>
  
-          <p class="taxi-bold-sub">
+          <p class="taxi-bold-sub mt-4">
             Professional taxi booking services for local and outstation travel
             with safe and timely transportation.
           </p>
@@ -2026,7 +1827,7 @@ include_once ('elements/header.php');
   }
 </style>
 
-<section class="lt-section">
+<section id="local-section" class="lt-section">
   <div class="container">
     <div class="row g-4 align-items-start">
  
@@ -2061,7 +1862,7 @@ include_once ('elements/header.php');
               <!-- bike/car key -->
               <svg viewBox="0 0 24 24"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M15 6h-2l-3 7H5.5M15 6l3 5h-5.5"/><path d="M11 3h4"/></svg>
             </div>
-            <h3 class="lt-card-title">Private Car &amp; Rental Vehicle Options</h3>
+            <h3 class="lt-card-title">Private Car & Rental Vehicle Options</h3>
             <p class="lt-card-text">Choose from a wide range of private cars and rental vehicles based on your travel needs and budget. Our well-maintained vehicles offer flexibility and comfort for short city trips or extended local travel.</p>
           </div>
  
@@ -2071,7 +1872,7 @@ include_once ('elements/header.php');
               <!-- city building -->
               <svg viewBox="0 0 24 24"><path d="M3 21h18M3 7v14M21 7v14M9 21V7M15 21V7M3 7l9-4 9 4M9 11h.01M9 15h.01M15 11h.01M15 15h.01"/></svg>
             </div>
-            <h3 class="lt-card-title">Flexible &amp; Affordable City Travel</h3>
+            <h3 class="lt-card-title">Flexible & Affordable City Travel</h3>
             <p class="lt-card-text">Our cost-effective local transport services offer flexible booking options for hourly, daily, or customised travel needs, making city transportation simple, comfortable, and convenient.</p>
           </div>
  
@@ -2273,8 +2074,8 @@ include_once ('elements/header.php');
   }
 </style>
 
-<section class="hp-section">
-  <div class="container">
+<section id="holiday-package-section" class="hp-section">
+  <div class="container-flui">
  
     <!-- HEADER -->
     <div class="hp-header">
@@ -2287,18 +2088,7 @@ include_once ('elements/header.php');
  
       <!-- LEFT: scene image -->
       <div class="hp-left">
-        <img
-          class="hp-plane d-none d-md-block"
-          src="https://www.pngmart.com/files/22/Airplane-PNG-Image.png"
-          alt="Plane"
-          onerror="this.style.display='none'"
-        />
-        <img
-          class="hp-scene-img"
-          src="https://png.pngtree.com/png-clipart/20230418/original/pngtree-travel-concept-explore-relax-adventure-png-image_9065081.png"
-          alt="Holiday Scene"
-          onerror="this.src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&q=80'; this.style.borderRadius='16px'; this.style.objectFit='cover'; this.style.height='420px'"
-        />
+        <img class="hp-scene-img" src="assets/img/holiday-package.png" alt="Holiday Scene" onerror="this.src=''" />
       </div>
  
       <!-- RIGHT: 3×2 grid -->
@@ -2584,7 +2374,7 @@ include_once ('elements/header.php');
   }
 </style>
 
-<section class="hotel-reserve-section">
+<section id="hotel-section" class="hotel-reserve-section">
 
   <!-- Heading -->
   <div class="hotel-reserve-heading container">
@@ -2799,7 +2589,7 @@ include_once ('elements/header.php');
       }
   }
 </style>
-<section class="sightseeing-tour-section bg-white">
+<section id="tour-package-section" class="sightseeing-tour-section bg-white">
   <div class="container">
       <div class="row align-items-center">
 
@@ -2963,7 +2753,7 @@ include_once ('elements/header.php');
   }
 </style>
 
-<section class="tour-package-section">
+<section id="guide-tour-section" class="tour-package-section">
 
     <!-- Background -->
     <div class="tour-package-bg">
