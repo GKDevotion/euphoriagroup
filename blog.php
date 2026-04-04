@@ -6,7 +6,7 @@ include_once('elements/header.php');
     .blog-euphoria {
         position: relative;
         top: 88px;
-        min-height: 500px;
+        min-height: 400px;
         background: linear-gradient(rgba(13, 27, 62, 0.72), rgba(13, 27, 62, 0.72)),
             url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1400&q=80') center/cover no-repeat;
         display: flex;
@@ -14,15 +14,26 @@ include_once('elements/header.php');
         justify-content: center;
         text-align: center;
         color: #fff;
-    } 
+    }
 
     .blog-euphoria h1 {
         font-size: clamp(2rem, 5vw, 3.2rem);
         letter-spacing: 1px;
     }
+</style>
 
+<!-- HERO -->
+<section class="blog-euphoria">
+    <div>
+        <h1 class="mb-0">Our Latest Blog</h1>
+        <div class="gold-divider mx-auto mt-3"></div>
+        <p class="text-white-50 mt-2" style="font-size:.9rem;letter-spacing:2px;">Stay updated with the latest insight, trends, and Blogs to grow your business</p>
+    </div>
+</section>
+
+<style>
     /* ── Partnership Section ── */
-    .corporate-tab-section {  
+    .corporate-tab-section {
         padding: 80px 0;
         overflow: hidden;
         position: relative;
@@ -68,16 +79,22 @@ include_once('elements/header.php');
         position: absolute;
         top: 12px;
         right: 12px;
-        background: rgba(255, 255, 255, 0.92);
         border-radius: 8px;
-        padding: 4px 8px;
+        padding: 6px;
         display: flex;
-        flex-direction: column;
         align-items: center;
-        line-height: 1;
+        justify-content: center;
     }
 
-    .logo-badge span.brand-top { 
+    /* Logo image */
+    .logo-badge img {
+        width: 60px;
+        /* adjust size */
+        height: auto;
+        object-fit: contain;
+    }
+
+    .logo-badge span.brand-top {
         font-size: 9px;
         font-weight: 700;
         color: #1a1a2e;
@@ -99,7 +116,7 @@ include_once('elements/header.php');
         flex-direction: column;
     }
 
-    .card-title { 
+    .card-title {
         font-size: 1rem;
         font-weight: 700;
         line-height: 1.35;
@@ -213,19 +230,9 @@ include_once('elements/header.php');
     }
 </style>
 
+<section class="container corporate-tab-section india-section">
 
-<!-- HERO -->
-<section class="blog-euphoria">
-    <div>
-        <h1 class="mb-0">Our Latest Blog</h1>
-        <div class="gold-divider mx-auto mt-3"></div>
-        <p class="text-white-50 mt-2" style="font-size:.9rem;letter-spacing:2px;">Stay updated with the latest insight, trends, and Blogs to grow your business</p>
-    </div>
-</section>
-
-<section class="corporate-tab-section india-section">
-
-    <div class="container position-relative" style="z-index:2">
+    <div class=" position-relative" style="z-index:2">
 
         <div class="row g-4 py-5">
 
@@ -234,7 +241,9 @@ include_once('elements/header.php');
                 <div class="blog-card">
                     <div class="card-img-wrap">
                         <img src="https://images.unsplash.com/photo-1551582045-6ec9c11d8697?w=600&q=80" alt="Penguin Leadership" />
-                        <div class="logo-badge"><span class="brand-top">The Euphoria</span><span class="brand-bottom">Group</span></div>
+                        <div class="logo-badge">
+                            <img src="assets/img/logo-512-origional.png" alt="Euphoria Logo">
+                        </div>
                     </div>
                     <div class="card-body">
                         <h2 class="card-title">Be That Penguin: A Lesson in Bold Leadership, Global Expansion &amp; Strategic Growth</h2>
@@ -266,7 +275,9 @@ include_once('elements/header.php');
                 <div class="blog-card">
                     <div class="card-img-wrap">
                         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" alt="Innovation" />
-                        <div class="logo-badge"><span class="brand-top">The Euphoria</span><span class="brand-bottom">Group</span></div>
+                        <div class="logo-badge">
+                            <img src="assets/img/logo-512-origional.png" alt="Euphoria Logo">
+                        </div>
                     </div>
                     <div class="card-body">
                         <h2 class="card-title">Innovation Beyond Tradition: How Euphoria Helps Businesses Scale Efficiently</h2>
@@ -298,7 +309,9 @@ include_once('elements/header.php');
                 <div class="blog-card">
                     <div class="card-img-wrap">
                         <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600&q=80" alt="City Night" />
-                        <div class="logo-badge"><span class="brand-top">The Euphoria</span><span class="brand-bottom">Group</span></div>
+                        <div class="logo-badge">
+                            <img src="assets/img/logo-512-origional.png" alt="Euphoria Logo">
+                        </div>
                     </div>
                     <div class="card-body">
                         <h2 class="card-title">The Night That Changed Everything: A Journey with Euphoria Group</h2>
@@ -330,7 +343,9 @@ include_once('elements/header.php');
                 <div class="blog-card">
                     <div class="card-img-wrap">
                         <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80" alt="Culture" />
-                        <div class="logo-badge"><span class="brand-top">The Euphoria</span><span class="brand-bottom">Group</span></div>
+                        <div class="logo-badge">
+                            <img src="assets/img/logo-512-origional.png" alt="Euphoria Logo">
+                        </div>
                     </div>
                     <div class="card-body">
                         <h2 class="card-title">The Office That Built Culture First: The Euphoria Group Way</h2>
@@ -362,7 +377,9 @@ include_once('elements/header.php');
                 <div class="blog-card">
                     <div class="card-img-wrap">
                         <img src="https://images.unsplash.com/photo-1551582045-6ec9c11d8697?w=600&q=80" alt="Penguin Leadership" />
-                        <div class="logo-badge"><span class="brand-top">The Euphoria</span><span class="brand-bottom">Group</span></div>
+                        <div class="logo-badge">
+                            <img src="assets/img/logo-512-origional.png" alt="Euphoria Logo">
+                        </div>
                     </div>
                     <div class="card-body">
                         <h2 class="card-title">Be That Penguin: A Lesson in Bold Leadership, Global Expansion &amp; Strategic Growth</h2>
@@ -394,7 +411,9 @@ include_once('elements/header.php');
                 <div class="blog-card">
                     <div class="card-img-wrap">
                         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" alt="Innovation" />
-                        <div class="logo-badge"><span class="brand-top">The Euphoria</span><span class="brand-bottom">Group</span></div>
+                        <div class="logo-badge">
+                            <img src="assets/img/logo-512-origional.png" alt="Euphoria Logo">
+                        </div>
                     </div>
                     <div class="card-body">
                         <h2 class="card-title">Innovation Beyond Tradition: How Euphoria Helps Businesses Scale Efficiently</h2>
@@ -452,7 +471,6 @@ include_once('elements/header.php');
 
 
 </section>
-
 
 <?php
 include_once('elements/faqs.php');

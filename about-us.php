@@ -156,7 +156,7 @@
      font-size: clamp(52px, 8vw, 132px);
      font-weight: 700;
      color: #c0392b;
-     opacity: 0.08;
+     opacity: 0.06;
      line-height: 1;
      user-select: none;
      pointer-events: none;
@@ -168,10 +168,10 @@
      position: absolute;
      top: -55px;
      right: -10px;
-     font-size: clamp(52px, 8vw, 115px);
+     font-size: clamp(52px, 8vw, 120px);
      font-weight: 700;
      color: #c0392b;
-     opacity: 0.08;
+     opacity: 0.06;
      line-height: 1;
      user-select: none;
      pointer-events: none;
@@ -254,7 +254,7 @@
      <div class="row align-items-center g-5">
 
        <!-- Left: Image -->
-       <div class="col-md-6">
+       <div class="col-md-5">
          <div class="vision-img-wrap">
            <!--
             Replace the src below with your actual image path.
@@ -267,7 +267,7 @@
        </div>
 
        <!-- Right: Content -->
-       <div class="col-md-6">
+       <div class="col-md-7">
          <div class="vision-content">
 
            <!-- Ghost watermark -->
@@ -299,7 +299,7 @@
    <div class="container">
      <div class="row align-items-center g-5">
        <!-- Right: Content -->
-       <div class="col-md-6">
+       <div class="col-md-7">
          <div class="vision-content">
 
            <!-- Ghost watermark -->
@@ -323,7 +323,7 @@
        </div>
 
        <!-- Left: Image -->
-       <div class="col-md-6">
+       <div class="col-md-5">
          <div class="vision-img-wrap">
            <!--
             Replace the src below with your actual image path.
@@ -344,7 +344,7 @@
    .trust-section {
      position: relative;
      padding: 60px 40px 80px;
-     overflow: hidden; 
+     overflow: hidden;
    }
 
    /* "Our Commitment" watermark */
@@ -356,20 +356,21 @@
      transform: translateX(-50%);
      font-size: clamp(50px, 9vw, 120px);
      font-weight: 800;
-     color: #c0392b;
+     color: #f0c0c8;
      white-space: nowrap;
      pointer-events: none;
-     opacity: 0.08;
+     opacity: 0.2;
      z-index: 0;
      letter-spacing: 2px;
    }
-  
-   .outerline{
-    outline: 2px solid #c8c8c8; 
-    outline-offset : 2px;
-    z-index: -1;
-    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
+
+   .outerline {
+     outline: 2px solid #c8c8c8;
+     outline-offset: 2px;
+     z-index: -1;
+     box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
    }
+
    .section-heading {
      text-align: center;
      font-size: 1.7rem;
@@ -411,32 +412,34 @@
    }
 
    .trust-icon-wrap {
-    width: 105px;
-    height: 105px;
-    border-radius: 50%;
-    background: #1a2855;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: -52px;
-    top: 50%;
-    transform: translateY(-50%);
-    border: 5px solid #e8e8e8;
-    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
-    z-index: 3;
-}
+     width: 105px;
+     height: 105px;
+     border-radius: 50%;
+     background: #1a2855;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: absolute;
+     left: -52px;
+     top: 50%;
+     transform: translateY(-50%);
+     border: 5px solid #e8e8e8;
+     box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
+     z-index: 3;
+   }
 
-/* Back-side outline ring using a pseudo-element */
-.trust-icon-wrap::before {
-    content: '';
-    position: absolute;
-    inset: -8px;          /* controls how far the ring sits outside the border */
-    border-radius: 50%;
-    border: 2px solid #c8c8c8;
-    z-index: -1;          /* pushes it BEHIND the element */
-    pointer-events: none;
-}
+   /* Back-side outline ring using a pseudo-element */
+   .trust-icon-wrap::before {
+     content: '';
+     position: absolute;
+     inset: -8px;
+     /* controls how far the ring sits outside the border */
+     border-radius: 50%;
+     border: 2px solid #c8c8c8;
+     z-index: -1;
+     /* pushes it BEHIND the element */
+     pointer-events: none;
+   }
 
    .trust-icon-wrap svg {
      width: 34px;
@@ -596,7 +599,6 @@
      </div>
 
    </div>
-   
  </section>
 
  <style>
@@ -604,7 +606,7 @@
    .why-section::before {
      content: "Our Advantage";
      position: absolute;
-     top: -10px;
+     top: 0px;
      left: 50%;
      transform: translateX(-50%);
      font-size: clamp(60px, 10vw, 120px);
@@ -613,7 +615,7 @@
      white-space: nowrap;
      pointer-events: none;
      z-index: 0;
-     opacity: 0.55;
+     opacity: 0.2;
      letter-spacing: 2px;
    }
 
@@ -719,17 +721,107 @@
      z-index: 0;
    }
 
-   /* ── Section wrapper ── */
+
    .why-section {
      position: relative;
      overflow: hidden;
      padding: 80px 0 90px;
    }
+ </style>
 
+ <section class="container">
+   <div class="why-section position-relative" style="z-index:1;">
+     <!-- city skyline watermark SVG (decorative) -->
+     <svg class="skyline-watermark" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+       <rect x="10" y="120" width="30" height="80" fill="#1a2a5e" />
+       <rect x="20" y="100" width="10" height="20" fill="#1a2a5e" />
+       <rect x="50" y="90" width="40" height="110" fill="#1a2a5e" />
+       <rect x="65" y="70" width="10" height="20" fill="#1a2a5e" />
+       <rect x="100" y="110" width="25" height="90" fill="#1a2a5e" />
+       <rect x="135" y="80" width="50" height="120" fill="#1a2a5e" />
+       <rect x="155" y="60" width="10" height="20" fill="#1a2a5e" />
+       <rect x="195" y="95" width="35" height="105" fill="#1a2a5e" />
+       <rect x="240" y="115" width="28" height="85" fill="#1a2a5e" />
+       <rect x="278" y="85" width="45" height="115" fill="#1a2a5e" />
+       <rect x="295" y="65" width="10" height="20" fill="#1a2a5e" />
+       <rect x="333" y="100" width="30" height="100" fill="#1a2a5e" />
+       <rect x="370" y="120" width="30" height="80" fill="#1a2a5e" />
+     </svg>
 
+     <h2 class="section-heading">Why Choose Euphoria Group</h2>
+
+     <div class="row align-items-center g-5">
+
+       <!-- Left: Image -->
+       <div class="col-lg-6">
+         <div class="img-wrapper">
+           <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80"
+             alt="Euphoria Group team meeting" />
+         </div>
+       </div>
+
+       <!-- Right: Content -->
+       <div class="col-lg-6 content-side">
+
+         <p class="intro-text">
+           Euphoria Group brings together wealth advisory, business services, insurance
+           solutions, and global mobility support under one integrated platform—ensuring
+           seamless coordination and consistent outcomes. <span style="font-weight:700;">What sets us apart</span>
+         </p>
+
+         <ul class="advantage-list">
+           <li>
+             <span class="bullet-icon">
+               <svg viewBox="0 0 24 24">
+                 <polyline points="5 12 10 17 20 7" />
+               </svg>
+             </span>
+             <span>Comprehensive wealth, business, and mobility solutions under one group</span>
+           </li>
+           <li>
+             <span class="bullet-icon">
+               <svg viewBox="0 0 24 24">
+                 <polyline points="5 12 10 17 20 7" />
+               </svg>
+             </span>
+             <span>Strong operational presence in India and international markets.</span>
+           </li>
+           <li>
+             <span class="bullet-icon">
+               <svg viewBox="0 0 24 24">
+                 <polyline points="5 12 10 17 20 7" />
+               </svg>
+             </span>
+             <span>Global reach supported by deep local market expertise</span>
+           </li>
+           <li>
+             <span class="bullet-icon">
+               <svg viewBox="0 0 24 24">
+                 <polyline points="5 12 10 17 20 7" />
+               </svg>
+             </span>
+             <span>Ethical practices backed by professional and compliant guidance</span>
+           </li>
+           <li>
+             <span class="bullet-icon">
+               <svg viewBox="0 0 24 24">
+                 <polyline points="5 12 10 17 20 7" />
+               </svg>
+             </span>
+             <span>Customised solutions for individuals, families, and businesses <br>We don't offer shortcuts—we offer
+               clarity, structure, and confidence.</span>
+           </li>
+         </ul>
+
+       </div>
+     </div>
+
+   </div>
+ </section>
+
+ <style>
    .section-wrapper {
-     background: #f4f5f8;
-     min-height: 100vh;
+     background: #f8f9fc;
      padding: 60px 0 80px;
      position: relative;
      overflow: hidden;
@@ -738,20 +830,20 @@
    .section-wrapper::before {
      content: "How We";
      position: absolute;
-     top: 0px;
-     left: 29%;
+     top: -18px;
+     left: 31%;
      transform: translateX(-50%);
-     font-size: clamp(60px, 10vw, 145px);
+     font-size: clamp(60px, 10vw, 110px);
      font-weight: 700;
      color: #f0c0c8;
      white-space: nowrap;
      pointer-events: none;
      z-index: 0;
-     opacity: 0.55;
+     opacity: 0.2;
      letter-spacing: 2px;
    }
 
-   /* Watermark */
+   /* Watermark
    .watermark {
      position: absolute;
      top: 10px;
@@ -763,7 +855,7 @@
      pointer-events: none;
      user-select: none;
      line-height: 1;
-   }
+   } */
 
    /* Left heading */
    .section-title {
@@ -773,8 +865,36 @@
      line-height: 1.2;
      position: relative;
      z-index: 2;
-     left: 90px;
-     top: 40px;
+     left: 140px;
+     top: 10px;
+   }
+
+   .image-box {
+     width: 480px;
+     border-radius: 20px;
+     overflow: hidden;
+     position: relative;
+     left: 45px;
+     top: 30px;
+     box-shadow: 0 16px 48px rgba(26, 42, 74, 0.14);
+   }
+
+   .image-box img {
+     width: 100%;
+     height: 630px;
+     object-fit: cover;
+     object-position: center top;
+     display: block;
+     border-radius: 20px;
+   }
+
+   .image-box::after {
+     content: '';
+     position: absolute;
+     inset: 0;
+     border-radius: 20px;
+     background: linear-gradient(160deg, rgba(192, 57, 43, 0.04) 0%, rgba(26, 42, 74, 0.10) 100%);
+     pointer-events: none;
    }
 
    /* Illustration placeholder area */
@@ -909,11 +1029,140 @@
        margin-bottom: 40px;
      }
    }
+ </style>
 
+ <section class="section-wrapper py-5">
+   <div class="container position-relative" style="z-index:1;">
+     <div class="row align-items-start g-5">
+
+       <!-- LEFT COLUMN -->
+       <div class="col-lg-5">
+         <h2 class="section-title mb-4">The Euphoria Mindset</h2>
+         <div class="image-box">
+           <img src="https://picsum.photos/id/1015/600/500" alt="Euphoria Mindset">
+         </div>
+       </div>
+
+       <!-- RIGHT COLUMN -->
+       <div class="col-lg-7">
+
+         <!-- Item 1 -->
+         <div class="mindset-item d-flex gap-4">
+           <div class="icon-circle flex-shrink-0">
+             <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <!-- Target/bullseye -->
+               <circle cx="20" cy="21" r="12" stroke="#c0392b" stroke-width="1.8" />
+               <circle cx="20" cy="21" r="7" stroke="#c0392b" stroke-width="1.8" />
+               <circle cx="20" cy="21" r="3" fill="#c0392b" />
+               <!-- Arrow -->
+               <line x1="27" y1="10" x2="23" y2="18" stroke="#c0392b" stroke-width="2" stroke-linecap="round" />
+               <polyline points="24,10 27,10 27,13" stroke="#c0392b" stroke-width="2" stroke-linecap="round"
+                 stroke-linejoin="round" fill="none" />
+             </svg>
+           </div>
+           <div>
+             <h5 class="item-title">We See the Bigger Picture</h5>
+             <p class="item-body">
+               Wealth, moving around the world, and investment opportunities are never just about money. They stand for
+               safety, freedom, duty, and the past.
+               <br /><br />
+               That's why we look at every engagement from different angles, weighing opportunity against safety and
+               ambition against stability.
+             </p>
+           </div>
+         </div>
+
+         <!-- Item 2 -->
+         <div class="mindset-item d-flex gap-4">
+           <div class="icon-circle flex-shrink-0">
+             <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <!-- Handshake -->
+               <path d="M8 22 C10 18 14 16 18 18 L22 18 C26 16 30 18 32 22" stroke="#c0392b" stroke-width="1.8"
+                 stroke-linecap="round" />
+               <path d="M8 22 L12 28 L20 24 L28 28 L32 22" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round"
+                 stroke-linejoin="round" />
+               <circle cx="20" cy="14" r="3" stroke="#c0392b" stroke-width="1.6" />
+             </svg>
+           </div>
+           <div>
+             <h5 class="item-title">Precision Over Promises</h5>
+             <p class="item-body">
+               We don't rely on big promises.
+               <br />
+               We need structure, openness, and good planning.
+               <br />
+               Our job is to make things easier, get rid of doubt, and replace confusion with clarity.
+             </p>
+           </div>
+         </div>
+
+         <!-- Item 3 -->
+         <div class="mindset-item d-flex gap-4">
+           <div class="icon-circle flex-shrink-0">
+             <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <!-- Sliders / gears -->
+               <circle cx="16" cy="16" r="4" stroke="#c0392b" stroke-width="1.8" />
+               <line x1="16" y1="8" x2="16" y2="12" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round" />
+               <line x1="16" y1="20" x2="16" y2="32" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round" />
+               <circle cx="26" cy="26" r="4" stroke="#c0392b" stroke-width="1.8" />
+               <line x1="26" y1="8" x2="26" y2="22" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round" />
+               <line x1="26" y1="30" x2="26" y2="32" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round" />
+             </svg>
+           </div>
+           <div>
+             <h5 class="item-title">Tailored, Not Standardised</h5>
+             <p class="item-body">
+               There are no two goals that are alike.
+               <br />
+               Everyone has different levels of risk tolerance.
+               <br />
+               We create plans based on people, taking into account their goals, priorities, timelines, and vision to
+               ensure that everyone is on the same page.
+             </p>
+           </div>
+         </div>
+
+         <!-- Item 4 -->
+         <div class="mindset-item d-flex gap-4">
+           <div class="icon-circle flex-shrink-0">
+             <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <!-- Trophy -->
+               <path d="M14 8 H26 V20 C26 25 22 28 20 28 C18 28 14 25 14 20 Z" stroke="#c0392b" stroke-width="1.8"
+                 stroke-linejoin="round" />
+               <path d="M14 12 H10 C10 18 13 20 15 20" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round" />
+               <path d="M26 12 H30 C30 18 27 20 25 20" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round" />
+               <line x1="20" y1="28" x2="20" y2="33" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round" />
+               <line x1="14" y1="33" x2="26" y2="33" stroke="#c0392b" stroke-width="2" stroke-linecap="round" />
+               <!-- Star -->
+               <path
+                 d="M20 14 L21.2 17.2 L24.5 17.2 L21.9 19.3 L22.9 22.5 L20 20.5 L17.1 22.5 L18.1 19.3 L15.5 17.2 L18.8 17.2 Z"
+                 fill="#c0392b" />
+             </svg>
+           </div>
+           <div>
+             <h5 class="item-title">Confidence as the Outcome</h5>
+             <p class="item-body">
+               Success is more than just growth.
+               <br />
+               It is peace of mind.
+               <br />
+               Our goal is to make clients feel informed, empowered, and in complete control of their financial and
+               international decisions.
+             </p>
+           </div>
+         </div>
+
+       </div><!-- /right col -->
+
+     </div><!-- /row -->
+   </div><!-- /container -->
+ </section>
+
+ <style>
    /* Section */
    .team-section {
      position: relative;
-     padding: 100px 0 0px;
+     padding: 70px 0 0px;
      overflow: hidden;
      background: #fff;
    }
@@ -925,7 +1174,7 @@
      top: 0px;
      left: 50%;
      transform: translateX(-50%);
-     font-size: clamp(60px, 10vw, 145px);
+     font-size: clamp(60px, 10vw, 110px);
      font-weight: 700;
      color: #f0c0c8;
      white-space: nowrap;
@@ -1030,11 +1279,117 @@
      text-transform: uppercase;
      letter-spacing: 0.08em;
    }
+ </style>
 
+ <section class=" container py-5">
+
+   <div class="team-section position-relative" style="z-index:1;">
+
+     <h2 class="section-heading">Executive Leadership</h2>
+
+     <div class="row g-4 justify-content-center">
+
+       <!-- Member 1 -->
+       <div class="col-lg-4 col-md-6">
+         <div class="team-card">
+           <div class="card-img-wrapper">
+             <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Milan Jasoliya" />
+             <div class="social-overlay">
+               <a href="#" class="social-btn linkedin" title="LinkedIn">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                   viewBox="0 0 24 24">
+                   <path
+                     d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V24h-4V8.5zm6.5 0h3.8v2.12h.05c.53-1 1.82-2.06 3.74-2.06 4 0 4.74 2.64 4.74 6.06V24h-4v-8.53c0-2.04-.04-4.66-2.84-4.66-2.85 0-3.28 2.22-3.28 4.51V24H7V8.5z" />
+                 </svg>
+               </a>
+               <a href="#" class="social-btn whatsapp" title="WhatsApp">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                   viewBox="0 0 24 24">
+                   <path
+                     d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12a11.94 11.94 0 0 0 1.64 6.07L0 24l6.13-1.61A11.96 11.96 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.22-3.48-8.52zm-8.52 18.4a9.94 9.94 0 0 1-5.08-1.4l-.36-.22-3.64.95.98-3.55-.24-.37A9.93 9.93 0 0 1 2 12c0-5.51 4.49-10 10-10s10 4.49 10 10-4.49 10-10 10zm5.47-7.43c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.78-1.68-2.08-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.02 1-1.02 2.43s1.04 2.82 1.19 3.02c.15.2 2.05 3.13 4.97 4.39.7.3 1.24.48 1.66.61.7.22 1.33.19 1.83.12.56-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z" />
+                 </svg>
+               </a>
+             </div>
+           </div>
+
+         </div>
+         <div class="card-body">
+           <h5 class="member-name">Milan Jasoliya</h5>
+           <span class="member-role">CEO</span>
+         </div>
+       </div>
+
+       <!-- Member 2 -->
+       <div class="col-lg-4 col-md-6">
+         <div class="team-card">
+           <div class="card-img-wrapper">
+             <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Archit Dhola" />
+             <div class="social-overlay">
+               <a href="#" class="social-btn linkedin" title="LinkedIn">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                   viewBox="0 0 24 24">
+                   <path
+                     d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V24h-4V8.5zm6.5 0h3.8v2.12h.05c.53-1 1.82-2.06 3.74-2.06 4 0 4.74 2.64 4.74 6.06V24h-4v-8.53c0-2.04-.04-4.66-2.84-4.66-2.85 0-3.28 2.22-3.28 4.51V24H7V8.5z" />
+                 </svg>
+               </a>
+               <a href="#" class="social-btn whatsapp" title="WhatsApp">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                   viewBox="0 0 24 24">
+                   <path
+                     d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12a11.94 11.94 0 0 0 1.64 6.07L0 24l6.13-1.61A11.96 11.96 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.22-3.48-8.52zm-8.52 18.4a9.94 9.94 0 0 1-5.08-1.4l-.36-.22-3.64.95.98-3.55-.24-.37A9.93 9.93 0 0 1 2 12c0-5.51 4.49-10 10-10s10 4.49 10 10-4.49 10-10 10zm5.47-7.43c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.78-1.68-2.08-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.02 1-1.02 2.43s1.04 2.82 1.19 3.02c.15.2 2.05 3.13 4.97 4.39.7.3 1.24.48 1.66.61.7.22 1.33.19 1.83.12.56-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z" />
+                 </svg>
+               </a>
+             </div>
+           </div>
+
+         </div>
+         <div class="card-body">
+           <h5 class="member-name">Archit Dhola</h5>
+           <span class="member-role">Chairman</span>
+         </div>
+       </div>
+
+       <!-- Member 3 -->
+       <div class="col-lg-4 col-md-6">
+         <div class="team-card">
+           <div class="card-img-wrapper">
+             <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Romit Lathiya" />
+             <div class="social-overlay">
+               <a href="#" class="social-btn linkedin" title="LinkedIn">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                   viewBox="0 0 24 24">
+                   <path
+                     d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V24h-4V8.5zm6.5 0h3.8v2.12h.05c.53-1 1.82-2.06 3.74-2.06 4 0 4.74 2.64 4.74 6.06V24h-4v-8.53c0-2.04-.04-4.66-2.84-4.66-2.85 0-3.28 2.22-3.28 4.51V24H7V8.5z" />
+                 </svg>
+               </a>
+               <a href="#" class="social-btn whatsapp" title="WhatsApp">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                   viewBox="0 0 24 24">
+                   <path
+                     d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12a11.94 11.94 0 0 0 1.64 6.07L0 24l6.13-1.61A11.96 11.96 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.22-3.48-8.52zm-8.52 18.4a9.94 9.94 0 0 1-5.08-1.4l-.36-.22-3.64.95.98-3.55-.24-.37A9.93 9.93 0 0 1 2 12c0-5.51 4.49-10 10-10s10 4.49 10 10-4.49 10-10 10zm5.47-7.43c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.78-1.68-2.08-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.02 1-1.02 2.43s1.04 2.82 1.19 3.02c.15.2 2.05 3.13 4.97 4.39.7.3 1.24.48 1.66.61.7.22 1.33.19 1.83.12.56-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z" />
+                 </svg>
+               </a>
+             </div>
+           </div>
+
+         </div>
+         <div class="card-body">
+           <h5 class="member-name">Romit Lathiya</h5>
+           <span class="member-role">General Manager</span>
+         </div>
+       </div>
+
+     </div>
+
+   </div>
+
+ </section>
+
+ <style>
    /* Section */
    .our-team {
      position: relative;
-     padding: 100px 0 0px;
+     padding: 80px 30px 0px;
      overflow: hidden;
      background: #fff;
    }
@@ -1046,7 +1401,7 @@
      top: 0px;
      left: 50%;
      transform: translateX(-50%);
-     font-size: clamp(60px, 10vw, 145px);
+     font-size: clamp(60px, 10vw, 125px);
      font-weight: 700;
      color: #f0c0c8;
      white-space: nowrap;
@@ -1054,6 +1409,16 @@
      z-index: 0;
      opacity: 0.2;
      letter-spacing: 2px;
+   }
+
+   .section-heading-our-team {
+     position: relative;
+     z-index: 1;
+     color: #1a2855;
+     font-size: clamp(1.6rem, 3vw, 2.2rem);
+     font-weight: 700;
+     text-align: center;
+     margin-bottom: 100px;
    }
 
    /* ── Card ──────────────────────────────────────── */
@@ -1189,578 +1554,13 @@
      padding-bottom: 4px;
      /* slight shadow room */
    }
-
-   /* Section */
-   .focus-area {
-     position: relative;
-     padding: 100px 0 0px;
-     overflow: hidden;
-     background: #fff;
-   }
-
-   /* Watermark */
-   .focus-area::before {
-     content: "Focus Area";
-     position: absolute;
-     top: 0px;
-     left: 50%;
-     transform: translateX(-50%);
-     font-size: clamp(60px, 10vw, 145px);
-     font-weight: 700;
-     color: #f0c0c8;
-     white-space: nowrap;
-     pointer-events: none;
-     z-index: 0;
-     opacity: 0.2;
-     letter-spacing: 2px;
-   }
-
-   .tagline {
-     color: #1a3a6b;
-     font-style: italic;
-     font-size: 1.15rem;
-     margin-bottom: 40px;
-   }
-
-   .card-option {
-     display: flex;
-     align-items: center;
-     gap: 16px;
-     padding: 22px 28px;
-     background: #ffffff;
-     border: 1.5px solid #d6dce8;
-     border-radius: 12px;
-     cursor: pointer;
-     transition: all 0.25s ease;
-     text-decoration: none;
-     color: #1a3a6b;
-     font-size: 1rem;
-     font-weight: 500;
-     margin-bottom: 20px;
-   }
-
-   .card-option:hover {
-     border-color: #1a3a6b;
-     background: #f5f7fb;
-     color: #1a3a6b;
-     box-shadow: 0 4px 16px rgba(26, 58, 107, 0.1);
-   }
-
-   .card-option.active {
-     color: #1a3a6b;
-   }
-
-   .card-option.active .card-icon {
-     filter: brightness(0) invert(1);
-   }
-
-   .card-icon {
-     width: 40px;
-     height: 40px;
-     flex-shrink: 0;
-   }
-
-   .bottom-tagline {
-     color: #1a3a6b;
-     font-style: italic;
-     font-size: 1.05rem;
-     margin-top: 20px;
-   }
-
-   /* SVG icons inline */
-   .icon-svg {
-     width: 40px;
-     height: 40px;
-     flex-shrink: 0;
-     stroke: currentColor;
-     fill: none;
-     stroke-width: 1.5;
-   }
-
-   /* Section */
-   .testimonial {
-     position: relative;
-     padding: 100px 0 0px;
-     overflow: hidden;
-     background: #fff;
-   }
-
-   /* Watermark */
-   .testimonial::before {
-     content: "Testimonials";
-     position: absolute;
-     top: 0px;
-     left: 50%;
-     transform: translateX(-50%);
-     font-size: clamp(60px, 10vw, 145px);
-     font-weight: 700;
-     color: #f0c0c8;
-     white-space: nowrap;
-     pointer-events: none;
-     z-index: 0;
-     opacity: 0.2;
-     letter-spacing: 2px;
-   }
-
-   /* Card */
-   .testimonial-card {
-     background: #fff;
-     border-radius: 16px;
-     padding: 36px 28px 28px;
-     border: 1px solid #eaedf3;
-     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.05);
-     height: 100%;
-     min-height: 240px;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
-     transition: box-shadow 0.3s ease, transform 0.3s ease;
-   }
-
-   .testimonial-card:hover {
-     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.10);
-     transform: translateY(-2px);
-   }
-
-   /* Quote icon */
-   .quote-icon {
-     font-size: 52px;
-     line-height: 1;
-     color: #f4b8b8;
-     margin-bottom: 14px;
-     display: block;
-   }
-
-   /* Quote text */
-   .testimonial-text {
-     font-size: 14.5px;
-     color: #555e6d;
-     line-height: 1.75;
-     flex: 1;
-     margin-bottom: 24px;
-   }
-
-   /* Author */
-   .testimonial-author {
-     display: flex;
-     align-items: center;
-     gap: 14px;
-     padding-top: 18px;
-     border-top: 1px solid #f0f2f5;
-   }
-
-   .testimonial-author img {
-     width: 52px;
-     height: 52px;
-     border-radius: 50%;
-     object-fit: cover;
-     border: 2px solid #eaedf3;
-   }
-
-   .author-name {
-     font-weight: 700;
-     font-size: 15px;
-     color: #1a2340;
-     margin-bottom: 2px;
-   }
-
-   .author-role {
-     font-size: 12.5px;
-     color: #8a93a6;
-   }
-
-   /* Navigation Buttons */
-   .swiper-nav-btn {
-     width: 42px;
-     height: 42px;
-     border-radius: 50%;
-     border: 1.5px solid #d0d5df;
-     background: #fff;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     cursor: pointer;
-     transition: all 0.2s ease;
-     flex-shrink: 0;
-     color: #1a2340;
-   }
-
-   .swiper-nav-btn:hover {
-     background: #1a2340;
-     border-color: #1a2340;
-     color: #fff;
-   }
-
-   .swiper-nav-btn svg {
-     width: 16px;
-     height: 16px;
-   }
-
-   /* Pagination */
-   .swiper-pagination {
-     position: static;
-     margin-top: 8px;
-     margin-bottom: 30px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     gap: 8px;
-   }
-
-   .swiper-pagination-bullet {
-     width: 10px;
-     height: 10px;
-     border-radius: 50%;
-     background: #c8cdd8;
-     opacity: 1;
-     transition: all 0.3s ease;
-     cursor: pointer;
-   }
-
-   .swiper-pagination-bullet-active {
-     background: #1a2340;
-     width: 28px;
-     border-radius: 999px;
-   }
-
-   /* Nav + pagination row */
-   .swiper-controls {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     gap: 14px;
-     margin-top: 32px;
-   }
  </style>
 
-
- <section class="why-section">
-
-
-   <div class="container position-relative" style="z-index:1;">
-     <!-- city skyline watermark SVG (decorative) -->
-     <svg class="skyline-watermark" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-       <rect x="10" y="120" width="30" height="80" fill="#1a2a5e" />
-       <rect x="20" y="100" width="10" height="20" fill="#1a2a5e" />
-       <rect x="50" y="90" width="40" height="110" fill="#1a2a5e" />
-       <rect x="65" y="70" width="10" height="20" fill="#1a2a5e" />
-       <rect x="100" y="110" width="25" height="90" fill="#1a2a5e" />
-       <rect x="135" y="80" width="50" height="120" fill="#1a2a5e" />
-       <rect x="155" y="60" width="10" height="20" fill="#1a2a5e" />
-       <rect x="195" y="95" width="35" height="105" fill="#1a2a5e" />
-       <rect x="240" y="115" width="28" height="85" fill="#1a2a5e" />
-       <rect x="278" y="85" width="45" height="115" fill="#1a2a5e" />
-       <rect x="295" y="65" width="10" height="20" fill="#1a2a5e" />
-       <rect x="333" y="100" width="30" height="100" fill="#1a2a5e" />
-       <rect x="370" y="120" width="30" height="80" fill="#1a2a5e" />
-     </svg>
-
-     <h2 class="section-heading">Why Choose Euphoria Group</h2>
-
-     <div class="row align-items-center g-5">
-
-       <!-- Left: Image -->
-       <div class="col-lg-6">
-         <div class="img-wrapper">
-           <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80"
-             alt="Euphoria Group team meeting" />
-         </div>
-       </div>
-
-       <!-- Right: Content -->
-       <div class="col-lg-6 content-side">
-
-         <p class="intro-text">
-           Euphoria Group brings together wealth advisory, business services, insurance
-           solutions, and global mobility support under one integrated platform—ensuring
-           seamless coordination and consistent outcomes. <span style="font-weight:700;">What sets us apart</span>
-         </p>
-
-         <ul class="advantage-list">
-           <li>
-             <span class="bullet-icon">
-               <svg viewBox="0 0 24 24">
-                 <polyline points="5 12 10 17 20 7" />
-               </svg>
-             </span>
-             <span>Comprehensive wealth, business, and mobility solutions under one group</span>
-           </li>
-           <li>
-             <span class="bullet-icon">
-               <svg viewBox="0 0 24 24">
-                 <polyline points="5 12 10 17 20 7" />
-               </svg>
-             </span>
-             <span>Strong operational presence in India and international markets.</span>
-           </li>
-           <li>
-             <span class="bullet-icon">
-               <svg viewBox="0 0 24 24">
-                 <polyline points="5 12 10 17 20 7" />
-               </svg>
-             </span>
-             <span>Global reach supported by deep local market expertise</span>
-           </li>
-           <li>
-             <span class="bullet-icon">
-               <svg viewBox="0 0 24 24">
-                 <polyline points="5 12 10 17 20 7" />
-               </svg>
-             </span>
-             <span>Ethical practices backed by professional and compliant guidance</span>
-           </li>
-           <li>
-             <span class="bullet-icon">
-               <svg viewBox="0 0 24 24">
-                 <polyline points="5 12 10 17 20 7" />
-               </svg>
-             </span>
-             <span>Customised solutions for individuals, families, and businesses <br>We don't offer shortcuts—we offer
-               clarity, structure, and confidence.</span>
-           </li>
-         </ul>
-
-       </div>
-     </div>
-
-   </div>
- </section>
-
- <section class="section-wrapper">
-
-   <div class="container position-relative" style="z-index:1;">
-     <div class="row align-items-start g-5">
-
-       <!-- LEFT COLUMN -->
-       <div class="col-lg-5">
-         <h2 class="section-title mb-4">The Euphoria Mindset</h2>
-       </div>
-
-       <!-- RIGHT COLUMN -->
-       <div class="col-lg-7">
-
-         <!-- Item 1 -->
-         <div class="mindset-item d-flex gap-4">
-           <div class="icon-circle flex-shrink-0">
-             <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <!-- Target/bullseye -->
-               <circle cx="20" cy="21" r="12" stroke="#c0392b" stroke-width="1.8" />
-               <circle cx="20" cy="21" r="7" stroke="#c0392b" stroke-width="1.8" />
-               <circle cx="20" cy="21" r="3" fill="#c0392b" />
-               <!-- Arrow -->
-               <line x1="27" y1="10" x2="23" y2="18" stroke="#c0392b" stroke-width="2" stroke-linecap="round" />
-               <polyline points="24,10 27,10 27,13" stroke="#c0392b" stroke-width="2" stroke-linecap="round"
-                 stroke-linejoin="round" fill="none" />
-             </svg>
-           </div>
-           <div>
-             <h5 class="item-title">We See the Bigger Picture</h5>
-             <p class="item-body">
-               Wealth, moving around the world, and investment opportunities are never just about money. They stand for
-               safety, freedom, duty, and the past.
-               <br /><br />
-               That's why we look at every engagement from different angles, weighing opportunity against safety and
-               ambition against stability.
-             </p>
-           </div>
-         </div>
-
-         <!-- Item 2 -->
-         <div class="mindset-item d-flex gap-4">
-           <div class="icon-circle flex-shrink-0">
-             <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <!-- Handshake -->
-               <path d="M8 22 C10 18 14 16 18 18 L22 18 C26 16 30 18 32 22" stroke="#c0392b" stroke-width="1.8"
-                 stroke-linecap="round" />
-               <path d="M8 22 L12 28 L20 24 L28 28 L32 22" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round"
-                 stroke-linejoin="round" />
-               <circle cx="20" cy="14" r="3" stroke="#c0392b" stroke-width="1.6" />
-             </svg>
-           </div>
-           <div>
-             <h5 class="item-title">Precision Over Promises</h5>
-             <p class="item-body">
-               We don't rely on big promises.
-               <br />
-               We need structure, openness, and good planning.
-               <br />
-               Our job is to make things easier, get rid of doubt, and replace confusion with clarity.
-             </p>
-           </div>
-         </div>
-
-         <!-- Item 3 -->
-         <div class="mindset-item d-flex gap-4">
-           <div class="icon-circle flex-shrink-0">
-             <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <!-- Sliders / gears -->
-               <circle cx="16" cy="16" r="4" stroke="#c0392b" stroke-width="1.8" />
-               <line x1="16" y1="8" x2="16" y2="12" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round" />
-               <line x1="16" y1="20" x2="16" y2="32" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round" />
-               <circle cx="26" cy="26" r="4" stroke="#c0392b" stroke-width="1.8" />
-               <line x1="26" y1="8" x2="26" y2="22" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round" />
-               <line x1="26" y1="30" x2="26" y2="32" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round" />
-             </svg>
-           </div>
-           <div>
-             <h5 class="item-title">Tailored, Not Standardised</h5>
-             <p class="item-body">
-               There are no two goals that are alike.
-               <br />
-               Everyone has different levels of risk tolerance.
-               <br />
-               We create plans based on people, taking into account their goals, priorities, timelines, and vision to
-               ensure that everyone is on the same page.
-             </p>
-           </div>
-         </div>
-
-         <!-- Item 4 -->
-         <div class="mindset-item d-flex gap-4">
-           <div class="icon-circle flex-shrink-0">
-             <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <!-- Trophy -->
-               <path d="M14 8 H26 V20 C26 25 22 28 20 28 C18 28 14 25 14 20 Z" stroke="#c0392b" stroke-width="1.8"
-                 stroke-linejoin="round" />
-               <path d="M14 12 H10 C10 18 13 20 15 20" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round" />
-               <path d="M26 12 H30 C30 18 27 20 25 20" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round" />
-               <line x1="20" y1="28" x2="20" y2="33" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round" />
-               <line x1="14" y1="33" x2="26" y2="33" stroke="#c0392b" stroke-width="2" stroke-linecap="round" />
-               <!-- Star -->
-               <path
-                 d="M20 14 L21.2 17.2 L24.5 17.2 L21.9 19.3 L22.9 22.5 L20 20.5 L17.1 22.5 L18.1 19.3 L15.5 17.2 L18.8 17.2 Z"
-                 fill="#c0392b" />
-             </svg>
-           </div>
-           <div>
-             <h5 class="item-title">Confidence as the Outcome</h5>
-             <p class="item-body">
-               Success is more than just growth.
-               <br />
-               It is peace of mind.
-               <br />
-               Our goal is to make clients feel informed, empowered, and in complete control of their financial and
-               international decisions.
-             </p>
-           </div>
-         </div>
-
-       </div><!-- /right col -->
-
-     </div><!-- /row -->
-   </div><!-- /container -->
- </section>
-
- <section class="team-section">
+ <section class=" our-team">
 
    <div class="container position-relative" style="z-index:1;">
 
-     <h2 class="section-heading">Executive Leadership</h2>
-
-     <div class="row g-4 justify-content-center">
-
-       <!-- Member 1 -->
-       <div class="col-lg-4 col-md-6">
-         <div class="team-card">
-           <div class="card-img-wrapper">
-             <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Milan Jasoliya" />
-             <div class="social-overlay">
-               <a href="#" class="social-btn linkedin" title="LinkedIn">
-                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                   viewBox="0 0 24 24">
-                   <path
-                     d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V24h-4V8.5zm6.5 0h3.8v2.12h.05c.53-1 1.82-2.06 3.74-2.06 4 0 4.74 2.64 4.74 6.06V24h-4v-8.53c0-2.04-.04-4.66-2.84-4.66-2.85 0-3.28 2.22-3.28 4.51V24H7V8.5z" />
-                 </svg>
-               </a>
-               <a href="#" class="social-btn whatsapp" title="WhatsApp">
-                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                   viewBox="0 0 24 24">
-                   <path
-                     d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12a11.94 11.94 0 0 0 1.64 6.07L0 24l6.13-1.61A11.96 11.96 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.22-3.48-8.52zm-8.52 18.4a9.94 9.94 0 0 1-5.08-1.4l-.36-.22-3.64.95.98-3.55-.24-.37A9.93 9.93 0 0 1 2 12c0-5.51 4.49-10 10-10s10 4.49 10 10-4.49 10-10 10zm5.47-7.43c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.78-1.68-2.08-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.02 1-1.02 2.43s1.04 2.82 1.19 3.02c.15.2 2.05 3.13 4.97 4.39.7.3 1.24.48 1.66.61.7.22 1.33.19 1.83.12.56-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z" />
-                 </svg>
-               </a>
-             </div>
-           </div>
-
-         </div>
-         <div class="card-body">
-           <h5 class="member-name">Milan Jasoliya</h5>
-           <span class="member-role">CEO</span>
-         </div>
-       </div>
-
-       <!-- Member 2 -->
-       <div class="col-lg-4 col-md-6">
-         <div class="team-card">
-           <div class="card-img-wrapper">
-             <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Archit Dhola" />
-             <div class="social-overlay">
-               <a href="#" class="social-btn linkedin" title="LinkedIn">
-                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                   viewBox="0 0 24 24">
-                   <path
-                     d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V24h-4V8.5zm6.5 0h3.8v2.12h.05c.53-1 1.82-2.06 3.74-2.06 4 0 4.74 2.64 4.74 6.06V24h-4v-8.53c0-2.04-.04-4.66-2.84-4.66-2.85 0-3.28 2.22-3.28 4.51V24H7V8.5z" />
-                 </svg>
-               </a>
-               <a href="#" class="social-btn whatsapp" title="WhatsApp">
-                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                   viewBox="0 0 24 24">
-                   <path
-                     d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12a11.94 11.94 0 0 0 1.64 6.07L0 24l6.13-1.61A11.96 11.96 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.22-3.48-8.52zm-8.52 18.4a9.94 9.94 0 0 1-5.08-1.4l-.36-.22-3.64.95.98-3.55-.24-.37A9.93 9.93 0 0 1 2 12c0-5.51 4.49-10 10-10s10 4.49 10 10-4.49 10-10 10zm5.47-7.43c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.78-1.68-2.08-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.02 1-1.02 2.43s1.04 2.82 1.19 3.02c.15.2 2.05 3.13 4.97 4.39.7.3 1.24.48 1.66.61.7.22 1.33.19 1.83.12.56-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z" />
-                 </svg>
-               </a>
-             </div>
-           </div>
-
-         </div>
-         <div class="card-body">
-           <h5 class="member-name">Archit Dhola</h5>
-           <span class="member-role">Chairman</span>
-         </div>
-       </div>
-
-       <!-- Member 3 -->
-       <div class="col-lg-4 col-md-6">
-         <div class="team-card">
-           <div class="card-img-wrapper">
-             <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Romit Lathiya" />
-             <div class="social-overlay">
-               <a href="#" class="social-btn linkedin" title="LinkedIn">
-                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                   viewBox="0 0 24 24">
-                   <path
-                     d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V24h-4V8.5zm6.5 0h3.8v2.12h.05c.53-1 1.82-2.06 3.74-2.06 4 0 4.74 2.64 4.74 6.06V24h-4v-8.53c0-2.04-.04-4.66-2.84-4.66-2.85 0-3.28 2.22-3.28 4.51V24H7V8.5z" />
-                 </svg>
-               </a>
-               <a href="#" class="social-btn whatsapp" title="WhatsApp">
-                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                   viewBox="0 0 24 24">
-                   <path
-                     d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12a11.94 11.94 0 0 0 1.64 6.07L0 24l6.13-1.61A11.96 11.96 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.22-3.48-8.52zm-8.52 18.4a9.94 9.94 0 0 1-5.08-1.4l-.36-.22-3.64.95.98-3.55-.24-.37A9.93 9.93 0 0 1 2 12c0-5.51 4.49-10 10-10s10 4.49 10 10-4.49 10-10 10zm5.47-7.43c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.78-1.68-2.08-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.02 1-1.02 2.43s1.04 2.82 1.19 3.02c.15.2 2.05 3.13 4.97 4.39.7.3 1.24.48 1.66.61.7.22 1.33.19 1.83.12.56-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z" />
-                 </svg>
-               </a>
-             </div>
-           </div>
-
-         </div>
-         <div class="card-body">
-           <h5 class="member-name">Romit Lathiya</h5>
-           <span class="member-role">General Manager</span>
-         </div>
-       </div>
-
-     </div>
-
-   </div>
-
- </section>
-
- <section class="our-team">
-
-   <div class="container position-relative" style="z-index:1;">
-
-     <h2 class="section-heading">The Euphoria Team</h2>
-
+     <h2 class="section-heading-our-team">The Euphoria Team</h2>
 
      <div class="swiper-outer">
        <!-- Prev -->
@@ -1869,14 +1669,109 @@
 
  </section>
 
+ <style>
+   .focus-area {
+     position: relative;
+     padding: 100px 0 0px;
+     overflow: hidden;
+     background: #fff;
+   }
+
+   /* Watermark */
+   .focus-area::before {
+     content: "Focus Area";
+     position: absolute;
+     top: 0px;
+     left: 50%;
+     transform: translateX(-50%);
+     font-size: clamp(60px, 10vw, 145px);
+     font-weight: 700;
+     color: #f0c0c8;
+     white-space: nowrap;
+     pointer-events: none;
+     z-index: 0;
+     opacity: 0.2;
+     letter-spacing: 2px;
+   }
+
+   .section-heading-focus {
+     position: relative;
+     z-index: 1;
+     color: #1a2855;
+     font-size: clamp(1.6rem, 3vw, 2.2rem);
+     font-weight: 700;
+     text-align: center;
+     margin-bottom: 50px;
+   }
+
+   .tagline-focus {
+     color: #1a3a6b;
+     font-style: italic;
+     font-size: 1.15rem;
+     margin-bottom: 40px;
+   }
+
+   .card-option {
+     display: flex;
+     align-items: center;
+     gap: 16px;
+     padding: 22px 28px;
+     background: #ffffff;
+     border: 1.5px solid #d6dce8;
+     border-radius: 12px;
+     cursor: pointer;
+     transition: all 0.25s ease;
+     text-decoration: none;
+     color: #000;
+     font-size: 1rem;
+     font-weight: 600;
+     ;
+     margin-bottom: 20px;
+   }
+
+   .card-option:hover {
+     border-color: #fff;
+     background: #1a3a6b;
+     color: #fff;
+     box-shadow: 0 4px 16px rgba(26, 58, 107, 0.1);
+   }
+
+   .card-option.active .card-icon {
+     filter: brightness(0) invert(1);
+   }
+
+   .card-icon {
+     width: 40px;
+     height: 40px;
+     flex-shrink: 0;
+   }
+
+   .bottom-tagline {
+     color: #1a3a6b;
+     font-style: italic;
+     font-size: 1.05rem;
+     margin-top: 20px;
+   }
+
+   /* SVG icons inline */
+   .icon-svg {
+     width: 40px;
+     height: 40px;
+     flex-shrink: 0;
+     stroke: currentColor;
+     fill: none;
+     stroke-width: 1.5;
+   }
+ </style>
+
  <section class="focus-area">
 
    <div class="container position-relative" style="z-index:1;">
 
-     <h2 class="section-heading">Who We Serve</h2>
+     <h2 class="section-heading-focus">Who We Serve</h2>
 
      <!-- Top tagline -->
-     <div class="text-center tagline">
+     <div class="text-center tagline-focus">
        <em>Serving Aspirations Across Borders and Life Stages.</em>
      </div>
 
@@ -1962,132 +1857,305 @@
        <em>No matter where you are today, we help you move forward with purpose and protection.</em>
      </div>
 
-
    </div>
 
  </section>
 
- <section class="testimonial">
+ <style>
+   /* Section */
+   .testimonial {
+     position: relative;
+     padding: 70px 0 0px;
+     overflow: hidden;
+     background: #fff;
+   }
 
-   <div class="container position-relative" style="z-index:1;">
+   /* Watermark */
+   .testimonial::before {
+     content: "Testimonials";
+     position: absolute;
+     top: 0px;
+     left: 50%;
+     transform: translateX(-50%);
+     font-size: clamp(60px, 10vw, 115px);
+     font-weight: 700;
+     color: #f0c0c8;
+     white-space: nowrap;
+     pointer-events: none;
+     z-index: 0;
+     opacity: 0.2;
+     letter-spacing: 2px;
+   }
 
-     <h2 class="section-heading">What Our Clients Say</h2>
+   .section-heading-testimonial {
+     position: relative;
+     z-index: 1;
+     color: #1a2855;
+     font-size: clamp(1.6rem, 3vw, 35.6px);
+     font-weight: 700;
+     text-align: center;
+     margin-bottom: 100px;
+   }
+
+   /* Card */
+   .testimonial-card {
+     background: #fff;
+     border-radius: 16px;
+     padding: 36px 28px 28px;
+     border: 1px solid #eaedf3;
+     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.05);
+     height: 100%;
+     min-height: 240px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     transition: box-shadow 0.3s ease, transform 0.3s ease;
+   }
+
+   .testimonial-card:hover {
+     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.10);
+     transform: translateY(-2px);
+   }
+
+   /* Quote icon */
+   .quote-icon {
+     font-size: 52px;
+     line-height: 1;
+     color: #f4b8b8;
+     margin-bottom: 14px;
+     display: block;
+   }
+
+   /* Quote text */
+   .testimonial-text {
+     font-size: 14.5px;
+     color: #555e6d;
+     line-height: 1.75;
+     flex: 1;
+     margin-bottom: 24px;
+   }
+
+   /* Author */
+   .testimonial-author {
+     display: flex;
+     align-items: center;
+     gap: 14px;
+     padding-top: 18px;
+     border-top: 1px solid #f0f2f5;
+   }
+
+   .testimonial-author img {
+     width: 52px;
+     height: 52px;
+     border-radius: 50%;
+     object-fit: cover;
+     border: 2px solid #eaedf3;
+   }
+
+   .author-name {
+     font-weight: 700;
+     font-size: 15px;
+     color: #1a2340;
+     margin-bottom: 2px;
+   }
+
+   .author-role {
+     font-size: 12.5px;
+     color: #8a93a6;
+   }
+
+   /* Navigation Buttons */
+   .swiper-nav-btn {
+     width: 42px;
+     height: 42px;
+     border-radius: 50%;
+     border: 1.5px solid #d0d5df;
+     background: #fff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+     transition: all 0.2s ease;
+     flex-shrink: 0;
+     color: #1a2340;
+   }
+
+   .swiper-nav-btn:hover {
+     background: #1a2340;
+     border-color: #1a2340;
+     color: #fff;
+   }
+
+   .swiper-nav-btn svg {
+     width: 16px;
+     height: 16px;
+   }
+
+   /* Pagination */
+   .swiper-pagination {
+     position: static;
+     margin-bottom: 30px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 8px;
+   }
+
+   .swiper-pagination-bullet {
+     width: 10px;
+     height: 10px;
+     border-radius: 50%;
+     background: #c8cdd8;
+     opacity: 1;
+     transition: all 0.3s ease;
+     cursor: pointer;
+   }
+
+   .swiper-pagination-bullet-active {
+     background: #1a2340;
+     width: 28px;
+     border-radius: 999px;
+   }
+
+   /* Nav + pagination row */
+   .swiper-controls {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 14px;
+     margin-top: 32px;
+   }
+
+   .swiper-btn-prev {
+     left: 0px;
+   }
+
+   .swiper-btn-next {
+     right: 0px;
+   }
+ </style>
+
+ <section class="container py-5">
+
+   <div class="testimonial position-relative" style="z-index:1;">
+
+     <h2 class="section-heading-testimonial">What Our Clients Say</h2>
 
      <!-- Swiper -->
-     <div class="swiper testimonialSwiper">
-       <div class="swiper-wrapper">
-
-         <!-- Slide 1 -->
-         <div class="swiper-slide">
-           <div class="testimonial-card">
-             <div>
-               <span class="quote-icon">"</span>
-               <p class="testimonial-text">We appreciated the structured approach and ethical guidance provided by
-                 Euphoria Group. They helped us identify the right property aligned with our long-term goals.</p>
-             </div>
-             <div class="testimonial-author">
-               <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Karan Malhotra" />
-               <div>
-                 <div class="author-name">Karan Malhotra</div>
-                 <div class="author-role">Business Owner</div>
-               </div>
-             </div>
-           </div>
-         </div>
-
-         <!-- Slide 2 -->
-         <div class="swiper-slide">
-           <div class="testimonial-card">
-             <div>
-               <span class="quote-icon">"</span>
-               <p class="testimonial-text">Euphoria Group made the entire process seamless and stress-free. Their team
-                 was responsive, knowledgeable, and truly had our best interests at heart throughout.</p>
-             </div>
-             <div class="testimonial-author">
-               <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya Sharma" />
-               <div>
-                 <div class="author-name">Priya Sharma</div>
-                 <div class="author-role">IT Professional</div>
-               </div>
-             </div>
-           </div>
-         </div>
-
-         <!-- Slide 3 -->
-         <div class="swiper-slide">
-           <div class="testimonial-card">
-             <div>
-               <span class="quote-icon">"</span>
-               <p class="testimonial-text">From site visits to final paperwork, every step was handled professionally.
-                 I wouldn't trust anyone else for real estate guidance. Truly exceptional service.</p>
-             </div>
-             <div class="testimonial-author">
-               <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Arjun Mehta" />
-               <div>
-                 <div class="author-name">Arjun Mehta</div>
-                 <div class="author-role">Entrepreneur</div>
-               </div>
-             </div>
-           </div>
-         </div>
-
-         <!-- Slide 4 -->
-         <div class="swiper-slide">
-           <div class="testimonial-card">
-             <div>
-               <span class="quote-icon">"</span>
-               <p class="testimonial-text">Their market knowledge is unparalleled. They found us the perfect home
-                 within our budget and timeline. Highly recommend Euphoria Group to anyone searching for property.</p>
-             </div>
-             <div class="testimonial-author">
-               <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Neha Kapoor" />
-               <div>
-                 <div class="author-name">Neha Kapoor</div>
-                 <div class="author-role">Doctor</div>
-               </div>
-             </div>
-           </div>
-         </div>
-
-         <!-- Slide 5 -->
-         <div class="swiper-slide">
-           <div class="testimonial-card">
-             <div>
-               <span class="quote-icon">"</span>
-               <p class="testimonial-text">We were first-time buyers and Euphoria Group guided us with patience and
-                 clarity. Their transparent advice gave us confidence throughout the entire buying journey.</p>
-             </div>
-             <div class="testimonial-author">
-               <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Rohit Jain" />
-               <div>
-                 <div class="author-name">Rohit Jain</div>
-                 <div class="author-role">Software Engineer</div>
-               </div>
-             </div>
-           </div>
-         </div>
-
-       </div><!-- /swiper-wrapper -->
-     </div><!-- /swiper -->
-
-     <!-- Controls: Prev | Dots | Next -->
-     <div class="swiper-controls">
-       <button class="swiper-btn-prev" id="prevBtn" aria-label="Previous">
-         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-           stroke-linejoin="round">
-           <polyline points="15 18 9 12 15 6" />
+     <div class="swiper-outer">
+       <!-- Prev -->
+       <div class="swiper-btn-prev" id="prevBtn">
+         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <path d="M15 18L9 12L15 6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
          </svg>
-       </button>
+       </div>
 
-       <div class="swiper-pagination" id="testimonialPagination"></div>
+       <div class="swiper testimonialSwiper">
+         <div class="swiper-wrapper">
 
-       <button class="swiper-btn-next" id="nextBtn" aria-label="Next">
-         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-           stroke-linejoin="round">
-           <polyline points="9 18 15 12 9 6" />
+           <!-- Slide 1 -->
+           <div class="swiper-slide">
+             <div class="testimonial-card">
+               <div>
+                 <span class="quote-icon">"</span>
+                 <p class="testimonial-text">We appreciated the structured approach and ethical guidance provided by
+                   Euphoria Group. They helped us identify the right property aligned with our long-term goals.</p>
+               </div>
+               <div class="testimonial-author">
+                 <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Karan Malhotra" />
+                 <div>
+                   <div class="author-name">Karan Malhotra</div>
+                   <div class="author-role">Business Owner</div>
+                 </div>
+               </div>
+             </div>
+           </div>
+
+           <!-- Slide 2 -->
+           <div class="swiper-slide">
+             <div class="testimonial-card">
+               <div>
+                 <span class="quote-icon">"</span>
+                 <p class="testimonial-text">Euphoria Group made the entire process seamless and stress-free. Their team
+                   was responsive, knowledgeable, and truly had our best interests at heart throughout.</p>
+               </div>
+               <div class="testimonial-author">
+                 <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya Sharma" />
+                 <div>
+                   <div class="author-name">Priya Sharma</div>
+                   <div class="author-role">IT Professional</div>
+                 </div>
+               </div>
+             </div>
+           </div>
+
+           <!-- Slide 3 -->
+           <div class="swiper-slide">
+             <div class="testimonial-card">
+               <div>
+                 <span class="quote-icon">"</span>
+                 <p class="testimonial-text">From site visits to final paperwork, every step was handled professionally.
+                   I wouldn't trust anyone else for real estate guidance. Truly exceptional service.</p>
+               </div>
+               <div class="testimonial-author">
+                 <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Arjun Mehta" />
+                 <div>
+                   <div class="author-name">Arjun Mehta</div>
+                   <div class="author-role">Entrepreneur</div>
+                 </div>
+               </div>
+             </div>
+           </div>
+
+           <!-- Slide 4 -->
+           <div class="swiper-slide">
+             <div class="testimonial-card">
+               <div>
+                 <span class="quote-icon">"</span>
+                 <p class="testimonial-text">Their market knowledge is unparalleled. They found us the perfect home
+                   within our budget and timeline. Highly recommend Euphoria Group to anyone searching for property.</p>
+               </div>
+               <div class="testimonial-author">
+                 <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Neha Kapoor" />
+                 <div>
+                   <div class="author-name">Neha Kapoor</div>
+                   <div class="author-role">Doctor</div>
+                 </div>
+               </div>
+             </div>
+           </div>
+
+           <!-- Slide 5 -->
+           <div class="swiper-slide">
+             <div class="testimonial-card">
+               <div>
+                 <span class="quote-icon">"</span>
+                 <p class="testimonial-text">We were first-time buyers and Euphoria Group guided us with patience and
+                   clarity. Their transparent advice gave us confidence throughout the entire buying journey.</p>
+               </div>
+               <div class="testimonial-author">
+                 <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Rohit Jain" />
+                 <div>
+                   <div class="author-name">Rohit Jain</div>
+                   <div class="author-role">Software Engineer</div>
+                 </div>
+               </div>
+             </div>
+           </div>
+
+         </div><!-- /swiper-wrapper -->
+
+       </div>
+
+       <div class="swiper-btn-next" id="nextBtn">
+         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <path d="M9 18L15 12L9 6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
          </svg>
-       </button>
-     </div>
+       </div>
+     </div><!-- /.swiper-outer -->
+
+     <!-- Pagination outside the swiper-outer so it sits below -->
+     <div class="swiper-pagination" id="testimonialPagination"></div>
 
    </div>
 
