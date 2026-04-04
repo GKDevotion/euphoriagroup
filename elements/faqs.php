@@ -153,12 +153,7 @@
     transition: transform 0.3s;
   }
 
-  .accordion-button:not(.collapsed) .acc-chevron {
-    background: var(--euphoria-blue);
-  }
-
   .accordion-button:not(.collapsed) .acc-chevron i {
-    color: #fff;
     transform: rotate(180deg);
   }
 
