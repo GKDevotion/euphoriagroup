@@ -26,6 +26,7 @@ include_once ('elements/home-slider.php');
         }
     }
 </style>
+
 <section class="euphoria-section">
     <div class="container">
         <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 text-center">
@@ -69,7 +70,6 @@ include_once ('elements/home-slider.php');
     </div>
 </section>
 <!-- End Image Slider SHELL -->
-
 
 <style>
     p.text-muted{

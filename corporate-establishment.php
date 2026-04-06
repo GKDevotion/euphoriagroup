@@ -1,27 +1,17 @@
 <?php
 include_once('elements/header.php');
 ?>
+
+<!-- HERO -->
+ <section class="top-banner-background" style="background-image: url('assets/img/background/about-us-bg.png');">
+   <div>
+     <h1 class="mb-0 text-center">Corporate Establishment</h1>
+     <p class="text-black text-center mt-2">End-to-end support support for setting up legally compliant business entities.</p>
+   </div>
+ </section>
+
 <style>
-    /* ── HERO ── */
-    .corporate-establishment {
-        position: relative;
-        top: 88px;
-        min-height: 500px;
-        background: linear-gradient(rgba(13, 27, 62, 0.72), rgba(13, 27, 62, 0.72)),
-            url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1400&q=80') center/cover no-repeat;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: #fff;
-    }
-
-    .corporate-establishment h1 {
-        font-size: clamp(2rem, 5vw, 3.2rem);
-        letter-spacing: 1px;
-    }
-
-
+  
     /* ── Partnership Section ── */
     .corporate-tab-section {
         background: #ffffff;
@@ -154,9 +144,70 @@ include_once('elements/header.php');
             padding-left: 0;
             padding-top: 1.5rem;
         }
-    }
+    } 
 
-    /* Section */
+</style>
+ 
+<section class="corporate-tab-section india-section">
+
+    <div class="container position-relative" style="z-index:2">
+
+        <div class="formation-nav-wrapper">
+
+            <span class="nav-active-pill">Business Formation</span>
+
+            <div class="nav-sep"></div>
+            <a href="#" class="nav-link-item">Private Limited Company Setup</a>
+            <div class="nav-sep"></div>
+            <a href="#" class="nav-link-item">LLP</a>
+            <div class="nav-sep"></div>
+            <a href="#" class="nav-link-item">OPC</a>
+            <div class="nav-sep"></div>
+            <a href="#" class="nav-link-item">Partnership Firm</a>
+            <div class="nav-sep"></div>
+            <a href="#" class="nav-link-item">PAN, TAN, GST</a>
+            <div class="nav-sep"></div>
+            <a href="#" class="nav-link-item">NGO / Trust / Section 8 Company</a>
+            <div class="nav-sep"></div>
+            <a href="#" class="nav-link-item">Start-up India Registration</a>
+            <div class="nav-sep"></div>
+            <a href="#" class="nav-link-item">FAQ</a>
+
+
+        </div>
+
+    </div><!-- /container -->
+
+    <div class="container-xl pt-5">
+        <div class="row align-items-center">
+
+            <!-- Left: Image -->
+            <div class="col-12 col-md-4 img-col">
+                <img
+                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&q=80"
+                    alt="Business professionals with city skyline" />
+            </div>
+
+            <!-- Right: Text -->
+            <div class="col-12 col-md-8 text-col">
+                <p>
+                    Expanding into India represents a significant opportunity, but entering a new market necessitates the proper structure, regulatory clarity, and strategic execution.
+                </p>
+                <p>
+                    The Euphoria Group specialises in inbound corporate establishment services, assisting foreign investors, multinational corporations, and international entrepreneurs to establish a strong and compliant presence in India.
+                </p>
+                <p>
+                    Beyond incorporation, we provide comprehensive support across regulatory approvals, tax registrations, banking setup, and ongoing compliance management. Our team ensures a seamless entry into the Indian market by aligning your business structure with local laws, industry requirements, and long-term growth objectives—allowing you to focus on scaling your operations with confidence.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<style>
+      /* Section */
     .incorporation {
         position: relative;
         padding: 100px 0 0px;
@@ -192,10 +243,6 @@ include_once('elements/header.php');
         margin-bottom: 50px;
     }
 
-    /* ── Section ── */
-    .services-section {
-        padding: 60px 0;
-    }
 
     /* ── Card ── */
     .service-card-incorporation {
@@ -259,572 +306,7 @@ include_once('elements/header.php');
         row-gap: 24px;
     }
 
-    .section-title {
-        font-size: 2.4rem;
-        font-weight: 700;
-        color: #1a2456;
-        line-height: 1.2;
-        margin-bottom: 1.5rem;
-    }
-
-    .section-text {
-        font-size: 0.95rem;
-        line-height: 1.8;
-        margin-bottom: 1rem;
-    }
-
-    /* Feature Circles */
-    .feature-circle {
-        width: 160px;
-        height: 160px;
-        border-radius: 50%;
-        background: #1a2456;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 20px;
-        margin: 10px auto;
-        transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-        cursor: default;
-        position: relative;
-        box-shadow: 0 8px 30px rgba(26, 45, 107, 0.25);
-    }
-
-    .feature-circle:hover {
-        transform: translateY(-6px) scale(1.05);
-    }
-
-    .feature-circle .icon {
-        font-size: 2rem;
-        margin-bottom: 10px;
-        color: #fff;
-        opacity: 0.9;
-    }
-
-    .feature-circle .label {
-        font-size: 0.78rem;
-        font-weight: 600;
-        color: #fff;
-        line-height: 1.4;
-    }
-
-    /* Large circles */
-    .feature-circle.large {
-        width: 180px;
-        height: 180px;
-    }
-
-    /* SVG Icons */
-    .feature-circle svg {
-        width: 44px;
-        height: 44px;
-        margin-bottom: 10px;
-        stroke: rgba(255, 255, 255, 0.9);
-        fill: none;
-        stroke-width: 1.5;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-    }
-
-    .circles-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto auto;
-        align-items: center;
-    }
-
-    @media (max-width: 991px) {
-        .circles-grid {
-            grid-template-columns: repeat(3, 1fr);
-        }
-    }
-
-    @media (max-width: 576px) {
-        .circles-grid {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        .section-title {
-            font-size: 1.8rem;
-        }
-    }
-
-    /* Section */
-    .register {
-        position: relative;
-        padding: 100px 0 0px;
-        overflow: hidden;
-        background: #fff;
-    }
-
-    /* Watermark */
-    .register::before {
-        content: "Register";
-        position: absolute;
-        top: 25px;
-        left: 20%;
-        transform: translateX(-50%);
-        font-size: clamp(60px, 10vw, 115px);
-        font-weight: 700;
-        color: #f0c0c8;
-        white-space: nowrap;
-        pointer-events: none;
-        z-index: 0;
-        opacity: 0.2;
-        letter-spacing: 2px;
-    }
-
-    /* ── Heading ── */
-    .register-heading {
-        position: relative;
-        z-index: 1;
-        color: #1a2456;
-        font-size: clamp(1.6rem, 3vw, 2.2rem);
-        font-weight: 700;
-        text-align: start;
-        margin-bottom: 50px;
-    }
-
-
-    /* ── Section wrapper ── */
-    .benefits-section {
-        padding: 80px 0 90px;
-        background: linear-gradient(135deg, #f0f4fb 0%, #e8edf8 100%);
-    }
-
-    .section-eyebrow {
-        font-size: 0.78rem;
-        font-weight: 600;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-        color: #c9a84c;
-        margin-bottom: 10px;
-    }
-
-    .section-title {
-        font-size: clamp(1.9rem, 3.5vw, 2.7rem);
-        font-weight: 700;
-        color: #1a2456;
-        margin-bottom: 14px;
-        line-height: 1.2;
-    }
-
-    .section-subtitle {
-        font-size: 1rem;
-        color: #4a5568;
-        max-width: 560px;
-        margin: 0 auto 50px;
-        line-height: 1.65;
-    }
-
-    /* ── Card ── */
-    .benefit-card-alliance {
-        position: relative;
-        border-radius: 18px;
-        overflow: hidden;
-        height: 330px;
-        cursor: pointer;
-        box-shadow: 0 8px 32px rgba(13, 27, 62, 0.13);
-        transition: transform 0.38s cubic-bezier(.25, .8, .25, 1),
-            box-shadow 0.38s cubic-bezier(.25, .8, .25, 1);
-    }
-
-    .benefit-card-alliance:hover {
-        transform: translateY(-6px) scale(1.015);
-        box-shadow: 0 20px 48px rgba(13, 27, 62, 0.22);
-    }
-
-    /* Background image */
-    .card-bg {
-        position: absolute;
-        inset: 0;
-        background-size: cover;
-        background-position: center;
-        transition: transform 0.55s ease;
-    }
-
-    .benefit-card-alliance:hover .card-bg {
-        transform: scale(1.06);
-    }
-
-    /* Gradient overlay */
-    .card-overlay {
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(to bottom,
-                rgba(13, 27, 62, 0.08) 0%,
-                rgba(13, 27, 62, 0.35) 40%,
-                rgba(13, 27, 62, 0.88) 100%);
-        transition: background 0.38s ease;
-    }
-
-    .benefit-card-alliance:hover .card-overlay {
-        background: linear-gradient(to bottom,
-                rgba(13, 27, 62, 0.10) 0%,
-                rgba(13, 27, 62, 0.45) 40%,
-                rgba(13, 27, 62, 0.95) 100%);
-    }
-
-    /* Content inside card */
-    .card-content {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        text-align: center;
-        padding: 28px 24px 26px;
-    }
-
-    .card-icon {
-        width: 44px;
-        height: 44px;
-        background: linear-gradient(135deg, var(--gold), var(--gold-light));
-        border-radius: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 12px;
-        box-shadow: 0 4px 14px rgba(201, 168, 76, 0.4);
-        transition: transform 0.3s ease;
-    }
-
-    .benefit-card-alliance:hover .card-icon {
-        transform: scale(1.1) rotate(-4deg);
-    }
-
-    .card-icon svg {
-        width: 22px;
-        height: 22px;
-        color: #fff;
-    }
-
-    .card-title-alliance {
-        font-size: 1rem;
-        font-weight: 700;
-        color: #ffffff;
-        margin-bottom: 8px;
-        line-height: 1.3;
-    }
-
-    .card-desc-alliance {
-        font-size: 0.75rem;
-        color: #fff;
-        line-height: 1.6;
-        margin: 0;
-    }
-
-    /* ── Swiper overrides ── */
-    .swiper {
-        padding: 12px 6px 54px !important;
-    }
-
-    .swiper-slide {
-        height: auto;
-    }
-
-    /* Pagination bullets */
-    .swiper-pagination-bullet {
-        width: 10px;
-        height: 10px;
-        background: #b0bdd4;
-        opacity: 1;
-        transition: all 0.3s ease;
-    }
-
-    .swiper-pagination-bullet-active {
-        background: #1a2456;
-        width: 28px;
-        border-radius: 5px;
-    }
-
-    /* Nav buttons */
-    .swiper-nav-btn {
-        width: 46px;
-        height: 46px;
-        border-radius: 50%;
-        border: 2px solid #1a2456;
-        background: #ffffff;
-        color: #1a2456;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        transition: all 0.28s ease;
-        box-shadow: 0 4px 14px rgba(13, 27, 62, 0.12);
-    }
-
-    .swiper-nav-btn:hover {
-        background: #1a2456;
-        color: #ffffff;
-        transform: scale(1.08);
-    }
-
-    .swiper-nav-btn svg {
-        width: 18px;
-        height: 18px;
-    }
-
-    .swiper-nav-btn.swiper-button-disabled {
-        opacity: 0.35;
-        pointer-events: none;
-    }
-
-    /* Section */
-    .alliance {
-        position: relative;
-        padding: 100px 0 0px;
-        overflow: hidden;
-        background: #fff;
-    }
-
-    /* Watermark */
-    .alliance::before {
-        content: "Alliance";
-        position: absolute;
-        top: 76px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: clamp(60px, 10vw, 115px);
-        font-weight: 700;
-        color: #f0c0c8;
-        white-space: nowrap;
-        pointer-events: none;
-        z-index: 0;
-        opacity: 0.2;
-        letter-spacing: 2px;
-    }
-
-    /* ── Heading ── */
-    .alliance-heading {
-        position: relative;
-        z-index: 1;
-        color: #1a2456;
-        font-size: clamp(1.6rem, 3vw, 2.3rem);
-        font-weight: 700;
-        text-align: center;
-        margin-bottom: 50px;
-    }
-
-    .benefits-section {
-        padding: 70px 0;
-        background: #fff;
-    }
-
-    /* ── Left: accordion list ── */
-    .benefit-item {
-        border-bottom: 1.5px solid #ddd;
-        padding: 22px 10px;
-        cursor: pointer;
-        border-radius: 6px;
-        transition: background 0.22s;
-    }
- 
-
-    .benefit-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 12px;
-    }
-
-    .benefit-title {
-        font-size: 1.3rem;
-        font-weight: 600;
-        color: #333;
-        margin: 0;
-        transition: color 0.22s;
-    }
-
-    .benefit-item.active .benefit-title,
-    .benefit-item:hover .benefit-title {
-        color: #e73f3f;
-    }
-
-    /* Arrow icon */
-    .arrow-icon {
-        flex-shrink: 0;
-        width: 34px;
-        height: 34px;
-        border-radius: 50%;
-        border: 1.8px solid #ccc;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: border-color 0.22s, background 0.22s;
-    }
-
-    .arrow-icon svg {
-        width: 16px;
-        height: 16px;
-        color: #aaa;
-        transition: color 0.22s, transform 0.28s;
-    }
-
-    .benefit-item.active .arrow-icon,
-    .benefit-item:hover .arrow-icon {
-        border-color: #c0392b;
-        background: #c0392b;
-    }
-
-    .benefit-item.active .arrow-icon svg,
-    .benefit-item:hover .arrow-icon svg {
-        color: #fff;
-        transform: translateX(2px);
-    }
-
-    /* Description */
-    .benefit-desc {
-        font-size: 0.85rem; 
-        line-height: 1.7;
-        width: 90%;
-        overflow: hidden;
-        margin-bottom: 0px;
-        transition: max-height 0.38s ease, opacity 0.3s ease, margin 0.3s ease;
-    }
-
-    .benefit-item.active .benefit-desc {
-        max-height: 120px;
-        margin-bottom: 0px;
-        opacity: 1; 
-    }
-
-    /* ── Right: image ── */
-    .img-wrapper {
-        border-radius: 16px;
-        overflow: hidden;
-        height: 100%;
-        min-height: 420px;
-    }
-
-    .img-wrapper img {
-        width: 100%;
-        height: 700px;
-        object-fit: cover;
-        display: block;
-        transition: transform 0.6s ease;
-    }
-
-    .img-wrapper:hover img {
-        transform: scale(1.03);
-    }
-
-    @media (max-width: 991px) {
-        .img-wrapper {
-            min-height: 280px;
-            margin-top: 40px;
-        }
-    }
-
-    .remove-bottom-border {
-        border-bottom: 0px;
-    }
-
-    /* Section */
-    .individual {
-        position: relative;
-        padding: 100px 0 0px;
-        overflow: hidden;
-        background: #f9fafb;
-    }
-
-    /* Watermark */
-    .individual::before {
-        content: "Individual";
-        position: absolute;
-        top: 23px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: clamp(60px, 10vw, 115px);
-        font-weight: 700;
-        color: #f0c0c8;
-        white-space: nowrap;
-        pointer-events: none;
-        z-index: 0;
-        opacity: 0.2;
-        letter-spacing: 2px;
-    }
-
-    /* ── Heading ── */
-    .individual-heading {
-        position: relative;
-        z-index: 1;
-        color: #1a2456;
-        font-size: clamp(1.6rem, 3vw, 2.2rem);
-        font-weight: 700;
-        text-align: center;
-        margin-bottom: 50px;
-    }
-
 </style>
-
-<!-- HERO -->
-<section class="corporate-establishment">
-    <div>
-        <h1 class="mb-0">Corporate Establishment</h1>
-        <div class="gold-divider mx-auto mt-3"></div>
-        <p class="text-white-50 mt-2" style="font-size:.9rem;letter-spacing:2px;">End-to-end support support for setting up legally compliant business entities.</p>
-    </div>
-</section>
-
-<section class="corporate-tab-section india-section">
-
-    <div class="container position-relative" style="z-index:2">
-
-        <div class="formation-nav-wrapper">
-
-            <span class="nav-active-pill">Business Formation</span>
-
-            <div class="nav-sep"></div>
-            <a href="#" class="nav-link-item">Private Limited Company Setup</a>
-            <div class="nav-sep"></div>
-            <a href="#" class="nav-link-item">LLP</a>
-            <div class="nav-sep"></div>
-            <a href="#" class="nav-link-item">OPC</a>
-            <div class="nav-sep"></div>
-            <a href="#" class="nav-link-item">Partnership Firm</a>
-            <div class="nav-sep"></div>
-            <a href="#" class="nav-link-item">PAN, TAN, GST</a>
-            <div class="nav-sep"></div>
-            <a href="#" class="nav-link-item">NGO / Trust / Section 8 Company</a>
-            <div class="nav-sep"></div>
-            <a href="#" class="nav-link-item">Start-up India Registration</a>
-            <div class="nav-sep"></div>
-            <a href="#" class="nav-link-item">FAQ</a>
-
-
-        </div>
-
-    </div><!-- /container -->
-
-    <div class="container-xl pt-5">
-        <div class="row align-items-center">
-
-            <!-- Left: Image -->
-            <div class="col-12 col-md-4 img-col">
-                <img
-                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&q=80"
-                    alt="Business professionals with city skyline" />
-            </div>
-
-            <!-- Right: Text -->
-            <div class="col-12 col-md-8 text-col">
-                <p>
-                    Expanding into India represents a significant opportunity, but entering a new market necessitates the proper structure, regulatory clarity, and strategic execution.
-                </p>
-                <p>
-                    The Euphoria Group specialises in inbound corporate establishment services, assisting foreign investors, multinational corporations, and international entrepreneurs to establish a strong and compliant presence in India.
-                </p>
-                <p>
-                    Beyond incorporation, we provide comprehensive support across regulatory approvals, tax registrations, banking setup, and ongoing compliance management. Our team ensures a seamless entry into the Indian market by aligning your business structure with local laws, industry requirements, and long-term growth objectives—allowing you to focus on scaling your operations with confidence.
-                </p>
-            </div>
-
-        </div>
-    </div>
-
-</section>
 
 <section class="container">
 
@@ -999,6 +481,131 @@ include_once('elements/header.php');
 
 </section>
 
+<style>
+     /* Section */
+    .register {
+        position: relative;
+        padding: 100px 0 0px;
+        overflow: hidden;
+        background: #fff;
+    }
+
+    /* Watermark */
+    .register::before {
+        content: "Register";
+        position: absolute;
+        top: 25px;
+        left: 19%;
+        transform: translateX(-50%);
+        font-size: clamp(60px, 10vw, 115px);
+        font-weight: 700;
+        color: #f0c0c8;
+        white-space: nowrap;
+        pointer-events: none;
+        z-index: 0;
+        opacity: 0.2;
+        letter-spacing: 2px;
+    }
+
+    /* ── Heading ── */
+    .register-heading {
+        position: relative;
+        z-index: 1;
+        color: #1a2456;
+        font-size: clamp(1.6rem, 3vw, 2.2rem);
+        font-weight: 700;
+        text-align: start;
+        margin-bottom: 50px;
+    }
+
+ 
+ 
+
+    .section-text {
+        font-size: 0.95rem;
+        line-height: 1.8;
+        margin-bottom: 1rem;
+    }
+
+    /* Feature Circles */
+    .feature-circle {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        background: #1a2456;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        margin: 10px auto;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+        cursor: default;
+        position: relative;
+        box-shadow: 0 8px 30px rgba(26, 45, 107, 0.25);
+    }
+
+    .feature-circle:hover {
+        transform: translateY(-6px) scale(1.05);
+    }
+
+    .feature-circle .icon {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: #fff;
+        opacity: 0.9;
+    }
+
+    .feature-circle .label {
+        font-size: 0.78rem;
+        font-weight: 600;
+        color: #fff;
+        line-height: 1.4;
+    }
+
+    /* Large circles */
+    .feature-circle.large {
+        width: 180px;
+        height: 180px;
+    }
+
+    /* SVG Icons */
+    .feature-circle svg {
+        width: 44px;
+        height: 44px;
+        margin-bottom: 10px;
+        stroke: rgba(255, 255, 255, 0.9);
+        fill: none;
+        stroke-width: 1.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    .circles-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto;
+        align-items: center;
+    }
+
+    @media (max-width: 991px) {
+        .circles-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (max-width: 576px) {
+        .circles-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+ 
+    }
+
+   
+
+</style>
+
 <section class="container">
 
     <div class="register position-relative" style="z-index:1;">
@@ -1124,6 +731,224 @@ include_once('elements/header.php');
 
 </section>
 
+<style>
+       /* Section */
+    .alliance {
+        position: relative;
+        padding: 100px 0 0px;
+        overflow: hidden;
+        background: #fff;
+    }
+
+    /* Watermark */
+    .alliance::before {
+        content: "Alliance";
+        position: absolute;
+        top: 76px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: clamp(60px, 10vw, 115px);
+        font-weight: 700;
+        color: #f0c0c8;
+        white-space: nowrap;
+        pointer-events: none;
+        z-index: 0;
+        opacity: 0.2;
+        letter-spacing: 2px;
+    }
+
+    /* ── Heading ── */
+    .alliance-heading {
+        position: relative;
+        z-index: 1;
+        color: #1a2456;
+        font-size: clamp(1.6rem, 3vw, 2.3rem);
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    
+    /* ── Section wrapper ── */
+    .benefits-section {
+        padding: 80px 0 90px;
+        background: linear-gradient(135deg, #f0f4fb 0%, #e8edf8 100%);
+    }
+
+    .section-eyebrow {
+        font-size: 0.78rem;
+        font-weight: 600;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #c9a84c;
+        margin-bottom: 10px;
+    }
+
+ 
+
+    .section-subtitle {
+        font-size: 1rem;
+        color: #4a5568;
+        max-width: 560px;
+        margin: 0 auto 50px;
+        line-height: 1.65;
+    }
+
+    /* ── Card ── */
+    .benefit-card-alliance {
+        position: relative;
+        border-radius: 18px;
+        overflow: hidden;
+        height: 330px;
+        cursor: pointer;
+        box-shadow: 0 8px 32px rgba(13, 27, 62, 0.13);
+        transition: transform 0.38s cubic-bezier(.25, .8, .25, 1),
+            box-shadow 0.38s cubic-bezier(.25, .8, .25, 1);
+    }
+
+    .benefit-card-alliance:hover {
+        transform: translateY(-6px) scale(1.015);
+        box-shadow: 0 20px 48px rgba(13, 27, 62, 0.22);
+    }
+
+    /* Background image */
+    .card-bg {
+        position: absolute;
+        inset: 0;
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.55s ease;
+    }
+
+    .benefit-card-alliance:hover .card-bg {
+        transform: scale(1.06);
+    }
+
+    /* Gradient overlay */
+    .card-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to bottom,
+                rgba(13, 27, 62, 0.08) 0%,
+                rgba(13, 27, 62, 0.35) 40%,
+                rgba(13, 27, 62, 0.88) 100%);
+        transition: background 0.38s ease;
+    }
+
+    .benefit-card-alliance:hover .card-overlay {
+        background: linear-gradient(to bottom,
+                rgba(13, 27, 62, 0.10) 0%,
+                rgba(13, 27, 62, 0.45) 40%,
+                rgba(13, 27, 62, 0.95) 100%);
+    }
+
+    /* Content inside card */
+    .card-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: 28px 24px 26px;
+    }
+
+    .card-icon {
+        width: 44px;
+        height: 44px;
+        background: linear-gradient(135deg, var(--gold), var(--gold-light));
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 12px;
+        box-shadow: 0 4px 14px rgba(201, 168, 76, 0.4);
+        transition: transform 0.3s ease;
+    }
+
+    .benefit-card-alliance:hover .card-icon {
+        transform: scale(1.1) rotate(-4deg);
+    }
+
+    .card-icon svg {
+        width: 22px;
+        height: 22px;
+        color: #fff;
+    }
+
+    .card-title-alliance {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 8px;
+        line-height: 1.3;
+    }
+
+    .card-desc-alliance {
+        font-size: 0.75rem;
+        color: #fff;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    /* ── Swiper overrides ── */
+    .swiper {
+        padding: 12px 6px 54px !important;
+    }
+
+    .swiper-slide {
+        height: auto;
+    }
+
+    /* Pagination bullets */
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background: #b0bdd4;
+        opacity: 1;
+        transition: all 0.3s ease;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #1a2456;
+        width: 28px;
+        border-radius: 5px;
+    }
+
+    /* Nav buttons */
+    .swiper-nav-btn {
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        border: 2px solid #1a2456;
+        background: #ffffff;
+        color: #1a2456;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.28s ease;
+        box-shadow: 0 4px 14px rgba(13, 27, 62, 0.12);
+    }
+
+    .swiper-nav-btn:hover {
+        background: #1a2456;
+        color: #ffffff;
+        transform: scale(1.08);
+    }
+
+    .swiper-nav-btn svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .swiper-nav-btn.swiper-button-disabled {
+        opacity: 0.35;
+        pointer-events: none;
+    }
+
+
+</style>
+
 <section class="alliance">
 
     <div class="container position-relative py-5" style="z-index:1;">
@@ -1233,6 +1058,160 @@ include_once('elements/header.php');
 
 </section>
 
+<style>
+     /* Section */
+    .individual {
+        position: relative;
+        padding: 100px 0 0px;
+        overflow: hidden;
+        background: #f9fafb;
+    }
+
+    /* Watermark */
+    .individual::before {
+        content: "Individual";
+        position: absolute;
+        top: 23px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: clamp(60px, 10vw, 115px);
+        font-weight: 700;
+        color: #f0c0c8;
+        white-space: nowrap;
+        pointer-events: none;
+        z-index: 0;
+        opacity: 0.2;
+        letter-spacing: 2px;
+    }
+
+    /* ── Heading ── */
+    .individual-heading {
+        position: relative;
+        z-index: 1;
+        color: #1a2456;
+        font-size: clamp(1.6rem, 3vw, 2.2rem);
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    
+    .benefits-section {
+        padding: 70px 0;
+        background: #fff;
+    }
+
+    /* ── Left: accordion list ── */
+    .benefit-item {
+        border-bottom: 1.5px solid #ddd;
+        padding: 22px 10px;
+        cursor: pointer;
+        border-radius: 6px;
+        transition: background 0.22s;
+    }
+
+
+    .benefit-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    .benefit-title {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #333;
+        margin: 0;
+        transition: color 0.22s;
+    }
+
+    .benefit-item.active .benefit-title,
+    .benefit-item:hover .benefit-title {
+        color: #e73f3f;
+    }
+
+    /* Arrow icon */
+    .arrow-icon {
+        flex-shrink: 0;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        border: 1.8px solid #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: border-color 0.22s, background 0.22s;
+    }
+
+    .arrow-icon svg {
+        width: 16px;
+        height: 16px;
+        color: #aaa;
+        transition: color 0.22s, transform 0.28s;
+    }
+
+    .benefit-item.active .arrow-icon,
+    .benefit-item:hover .arrow-icon {
+        border-color: #c0392b;
+        background: #c0392b;
+    }
+
+    .benefit-item.active .arrow-icon svg,
+    .benefit-item:hover .arrow-icon svg {
+        color: #fff;
+        transform: translateX(2px);
+    }
+
+    /* Description */
+    .benefit-desc {
+        font-size: 0.85rem;
+        line-height: 1.7;
+        width: 90%;
+        overflow: hidden;
+        margin-bottom: 0px;
+        transition: max-height 0.38s ease, opacity 0.3s ease, margin 0.3s ease;
+    }
+
+    .benefit-item.active .benefit-desc {
+        max-height: 120px;
+        margin-bottom: 0px;
+        opacity: 1;
+    }
+
+    /* ── Right: image ── */
+    .img-wrapper {
+        border-radius: 16px;
+        overflow: hidden;
+        height: 100%;
+        min-height: 420px;
+    }
+
+    .img-wrapper img {
+        width: 100%;
+        height: 700px;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.6s ease;
+    }
+
+    .img-wrapper:hover img {
+        transform: scale(1.03);
+    }
+
+    @media (max-width: 991px) {
+        .img-wrapper {
+            min-height: 280px;
+            margin-top: 40px;
+        }
+    }
+
+    .remove-bottom-border {
+        border-bottom: 0px;
+    }
+
+</style>
+
 <section class="individual">
 
     <div class="container position-relative" style="z-index:1;">
@@ -1334,7 +1313,6 @@ include_once('elements/header.php');
 </section>
 
 <style>
-    
     /* Section */
     .setup {
         position: relative;
@@ -1425,7 +1403,7 @@ include_once('elements/header.php');
     .icon-wrap svg {
         width: 32px;
         height: 32px;
-        color: #ff0000;
+        color: #CC2831;
     }
 
     /* Text */
@@ -1441,7 +1419,7 @@ include_once('elements/header.php');
 
     .card-desc {
         font-size: 0.7rem;
-        color: #77889e;
+        color: #5c6a7c;
         line-height: 1.7;
         margin: 0;
         text-align: start;
@@ -1454,9 +1432,6 @@ include_once('elements/header.php');
             border-right: none;
         }
     }
-
-  
-  
 </style>
 
 <section class="setup">
@@ -1581,7 +1556,7 @@ include_once('elements/header.php');
 </section>
 
 <style>
-      /* Section */
+    /* Section */
     .ownership {
         position: relative;
         padding: 100px 0 0px;
@@ -1643,15 +1618,7 @@ include_once('elements/header.php');
     .content-side {
         position: relative;
     }
-
-    .section-title {
-        font-size: clamp(1.6rem, 2.8vw, 2.1rem);
-        font-weight: 800;
-        color: #1a2456;
-        margin-bottom: 22px;
-        position: relative;
-        z-index: 1;
-    }
+ 
 
     .section-desc {
         font-size: 0.78rem;
@@ -1710,8 +1677,6 @@ include_once('elements/header.php');
             font-size: 3rem;
         }
     }
-
-   
 </style>
 
 <section class="ownership">
@@ -1844,7 +1809,7 @@ include_once('elements/header.php');
 </section>
 
 <style>
-     /* Section */
+    /* Section */
     .compliance {
         position: relative;
         padding: 100px 0 0px;
@@ -1989,7 +1954,7 @@ include_once('elements/header.php');
     /* Pagination bullets */
     .swiper-pagination-bullet {
         width: 10px;
-        height: 10px; 
+        height: 10px;
         background: #cbd5e0;
         opacity: 1;
         transition: all .25s;
@@ -2039,23 +2004,16 @@ include_once('elements/header.php');
         display: none;
     }
 
+    .swiper-pagination-lock {
+        display: block;
+    }
 </style>
 
 <section class="container compliance ">
 
     <div class=" position-relative py-5 " style="z-index:1;">
-        <h2 class="compliance-heading">Pan, Tan, Gst Registration</h2>
-
-        <!-- Heading
-        <div class="text-center mb-5">
-            <span class="section-tag">Why It Matters</span>
-            <h2 class="mb-3">Key <span>Tax Registration</span> Benefits</h2>
-            <p class="lead">
-                PAN, TAN, and GST registrations form the foundation of every compliant
-                business operating in India.
-            </p>
-        </div> -->
-
+        <h2 class="compliance-heading">Pan, Tan, Gst Registration</h2> 
+        
         <!-- Swiper -->
         <div class="swiper taxSwiper">
             <div class="swiper-wrapper">
@@ -2161,7 +2119,7 @@ include_once('elements/header.php');
 </section>
 
 <style>
-      /* Section */
+    /* Section */
     .non-profit {
         position: relative;
         padding: 100px 0 0px;
@@ -2350,7 +2308,6 @@ include_once('elements/header.php');
 </section>
 
 <style>
-    
     /* ── Banner ── */
     .si-banner {
         position: relative;
@@ -2478,7 +2435,7 @@ include_once('elements/header.php');
 
     .si-banner__desc {
         font-size: clamp(0.9rem, 1.5vw, 1rem);
-        line-height: 1.85; 
+        line-height: 1.85;
         margin: 0 auto;
     }
 </style>

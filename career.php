@@ -1,35 +1,15 @@
 <?php
 include_once('elements/header.php');
 ?>
-
-<style>
-    .carrer-hero {
-        position: relative;
-        top: 88px;
-        min-height: 500px;
-        background: linear-gradient(rgba(13, 27, 62, 0.72), rgba(13, 27, 62, 0.72)),
-            url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1400&q=80') center/cover no-repeat;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: #fff;
-    }
-
-    .carrer-hero h1 {
-        font-size: clamp(2rem, 5vw, 3.2rem);
-        letter-spacing: 1px;
-    }
-
-</style>
+ 
+ 
 <!-- HERO -->
-<section class="carrer-hero">
-    <div>
-        <h1 class="mb-0">Careers at Euphoria Goup</h1>
-        <div class="gold-divider mx-auto mt-3"></div>
-        <p class="text-white-50 mt-2" style="font-size:.9rem;letter-spacing:2px;">Build a Carrer That Grows With Purpose And Global Opportunities.</p>
-    </div>
-</section>
+ <section class="top-banner-background" style="background-image: url('assets/img/background/about-us-bg.png');">
+   <div>
+     <h1 class="mb-0">Careers at Euphoria Goup</h1>
+     <p class="text-black text-center mt-2">Build a Carrer That Grows With Purpose And Global Opportunities.</p>
+   </div>
+ </section>
 
 <style>
     /* ── SECTION ── */
