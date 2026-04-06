@@ -1689,29 +1689,22 @@ include_once ('elements/header.php');
 
   /* watermark */
   .lt-watermark {
-    
-    font-size: clamp(56px, 10vw, 120px);
-    font-weight: 700;
-    color: var(--euphoria-blue);
-    opacity: .07;
-    letter-spacing: 4px;
-    white-space: nowrap;
-    pointer-events: none;
-    user-select: none;
-    line-height: 1;
+    font-size: clamp(56px, 10vw, 100px);
+    font-weight: 600;
+    color: var(--red-blur);
     margin-bottom: -24px;  /* pull title up over watermark */
     display: block;
   }
 
   .lt-title {
-    
     font-size: clamp(22px, 3vw, 36px);
-    font-weight: 700;
+    font-weight: 600;
     color: var(--euphoria-blue);
-    margin-bottom: 24px;
-    line-height: 1.2;
-    position: relative;
+    position: absolute;
     z-index: 1;
+    margin-top: -60px;
+    text-align: center;
+    left: 10%;
   }
 
   .lt-main-img {
@@ -1915,14 +1908,12 @@ include_once ('elements/header.php');
 
   .hp-watermark {
     position: absolute;
-    top: -10px; left: 50%;
+    top: -50px; 
+    left: 50%;
     transform: translateX(-50%);
-    
-    font-size: clamp(60px, 12vw, 140px);
+    font-size: clamp(60px, 12vw, 120px);
     font-weight: 700;
-    color: var(--euphoria-red);
-    opacity: .07;
-    letter-spacing: 5px;
+    color: var(--red-blur);
     white-space: nowrap;
     pointer-events: none;
     user-select: none;
@@ -1931,9 +1922,8 @@ include_once ('elements/header.php');
   }
 
   .hp-title {
-    
-    font-size: clamp(26px, 4vw, 44px);
-    font-weight: 700;
+    font-size: clamp(26px, 4vw, 38px);
+    font-weight: 600;
     color: var(--euphoria-blue);
     position: relative;
     z-index: 1;

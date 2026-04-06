@@ -2,103 +2,18 @@
 include_once ('elements/header.php');
 ?>
 
-<style>
-    .hero-section {
-        position: relative;
-        height: 70vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        overflow: hidden;
-        margin-top: 120px;
-    }
-
-    .hero-bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        filter: brightness(0.75);
-    }
-
-    img, svg {
-        vertical-align: middle;
-    }
-
-    .hero-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6));
-        backdrop-filter: blur(2px);
-    }
-
-    .hero-blur {
-        position: absolute;
-        width: 250px;
-        height: 250px;
-        background: var(--red-blur);
-        filter: blur(90px);
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1;
-    }
-
-    .hero-content {
-        position: relative;
-        z-index: 2;
-    }
-
-    .hero-title {
-        font-size: clamp(28px, 5vw, 48px);
-        font-weight: 700;
-        color: var(--euphoria-blue);
-    }
-
-    .hero-subtitle {
-        font-size: 16px;
-        color: var(--text-dark);
-        margin-top: 10px;
-    }
-
-    @media(max-width:768px){
-        .hero-section{
-            height:60vh;
-        }
-        .hero-subtitle{
-            font-size:14px;
-        }
-    }
-</style>
 <!-- Hero Section -->
-<section class="hero-section">
-
-    <!-- Background Image -->
-    <img src="https://picsum.photos/1920/800?business" class="hero-bg" alt="Corporate">
-
-    <!-- Overlay -->
-    <div class="hero-overlay"></div>
-
-    <!-- Blur effect -->
-    <div class="hero-blur"></div>
-
-    <!-- Content -->
-    <div class="hero-content container">
-        <h1 class="hero-title animate__animated animate__fadeInDown">
-            Wealth & Asset Solutions
-        </h1>
-        <p class="hero-subtitle animate__animated animate__fadeInUp">
-            Smart Strategies for growing and protecting your wealth
-        </p>
-    </div>
-
+<section class="top-banner-background text-center" style="background-image: url('assets/img/background/wealth-asset-bg.png');">
+  <div>
+    <h1 class="mb-0">
+      Wealth & Asset Solutions
+    </h1>
+    <p class="text-black mt-2">
+      Smart Strategies for growing and protecting your wealth
+    </p>
+  </div>
 </section>
+
 
 <style>
   .custom-tabs{
@@ -157,44 +72,19 @@ include_once ('elements/header.php');
 
     <!-- Tabs -->
     <div class="custom-tabs">
-        <button class="tab-btn active" data-tab="tab1">Stick market</button>
-        <button class="tab-btn" data-tab="tab2">Insuarance</button>
-        <button class="tab-btn" data-tab="tab1">Real Estate</button>
-        <button class="tab-btn" data-tab="tab2">FAQ</button>
+        <a href="#stock_market_section" class="tab-btn active" data-tab="tab1">Stick market</a>
+        <a href="#insuarance_section" class="tab-btn" data-tab="tab2">Insuarance</a>
+        <a href="#section" class="tab-btn" data-tab="tab1">Real Estate</a>
+        <a href="#section" class="tab-btn" data-tab="tab2">FAQ</a>
     </div>
 
     <!-- Tab Content -->
     <div id="tab1" class="corporate-content-box active">
         <div class="row align-items-center">
             <div class="col-md-5">
-                <img src="https://picsum.photos/500/400?city" class="illustration">
+                <img src="assets/img/stock-coin.png" class="illustration">
             </div>
             <div class="col-md-7 text-content">
-                <p>
-                    Entering the Indian market requires more than just registration—it demands strategic planning, regulatory clarity, and structured execution.
-                </p>
-                <p>
-                    Our inbound corporate services cover business setup, compliance, approvals, and legal structuring aligned with Indian laws.
-                </p>
-                <p>
-                    Entering the Indian market requires more than just registration—it demands strategic planning, regulatory clarity, and structured execution.
-                </p>
-                <p>
-                    Our inbound corporate services cover business setup, compliance, approvals, and legal structuring aligned with Indian laws.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div id="tab2" class="corporate-content-box">
-        <div class="row align-items-center">
-            <div class="col-md-5">
-                <img src="https://picsum.photos/500/400?tour" class="illustration">
-            </div>
-            <div class="col-md-7 text-content">
-                <p>
-                    We provide complete accounting, bookkeeping, GST compliance, and taxation services tailored for growing businesses.
-                </p>
                 <p>
                     Entering the Indian market requires more than just registration—it demands strategic planning, regulatory clarity, and structured execution.
                 </p>
@@ -215,258 +105,90 @@ include_once ('elements/header.php');
 
 <!-- ══ Stock Market Oppurtunities- ══ -->
 <style>
+  .stock-section {
+    padding: 80px 0;
+  }
 
-  .stock-market-section {
-    padding: 70px 0 80px;
-    position: relative;
+  .stock-img {
+    border-radius: 20px;
     overflow: hidden;
-    color: var(--text-dark);
   }
 
-  /* ── LEFT IMAGE ── */
-  .stock-market-img-col {
-    position: relative;
-  }
-
-  .stock-market-main-img {
+  .stock-img img {
     width: 100%;
     height: 100%;
-    min-height: 420px;
     object-fit: cover;
+  }
+
+  .stock-card {
+    background: #f5f6f8;
     border-radius: 20px;
-    display: block;
-    box-shadow: 0 20px 60px rgba(37,53,111,0.14);
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    height: 100%;
   }
 
-  /* ── RIGHT CONTENT ── */
-  .stock-market-content-col {
-    position: relative;
-    padding-left: 10px;
-  }
-
-  /* watermark */
-  .stock-market-watermark {
-    position: absolute;
-    top: -10px; right: -10px;
-    
-    font-size: clamp(60px, 10vw, 120px);
-    font-weight: 700;
-    color: var(--euphoria-red);
-    opacity: .07;
-    letter-spacing: 4px;
-    white-space: nowrap;
-    pointer-events: none;
-    user-select: none;
-    z-index: 0;
-    line-height: 1;
-  }
-
-  /* stock-market car image top-right */
-  .stock-market-car-img {
-    position: absolute;
-    top: -18px; right: 0;
-    width: clamp(120px, 16vw, 200px);
-    filter: drop-shadow(4px 8px 16px rgba(37,53,111,0.18));
-    animation: stock-marketFloat 4s ease-in-out infinite;
-    z-index: 2;
-  }
-  @keyframes stock-marketFloat {
-    0%,100% { transform: translateY(0); }
-    50%      { transform: translateY(-8px); }
-  }
-
-  .stock-market-inner {
-    position: relative;
-    z-index: 1;
-  }
-
-  /* title */
-  .stock-market-title {
-    
-    font-size: clamp(26px, 3.5vw, 40px);
-    font-weight: 700;
-    color: var(--euphoria-blue);
-    margin-bottom: 16px;
-    line-height: 1.15;
-  }
-
-  /* bold subtitle */
-  .stock-market-bold-sub {
-    font-size: clamp(14px, 1.5vw, 18px);
+  .stock-title {
+    font-size: 40px;
     font-weight: 600;
-    color: var(--text-dark);
-    margin-bottom: 14px;
-    line-height: 1.5;
+    color: #1e2a55;
   }
 
-  /* description paragraph */
-  .stock-market-desc {
-    font-size: clamp(12.5px, 1.15vw, 14px);
-    color: #666;
-    line-height: 1.8;
-    margin-bottom: 28px;
+  .stock-card p {
+    color: #6c757d;
+    font-size: 16px;
   }
 
-  /* ── FEATURES GRID ── */
-  .stock-market-features {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px 16px;
-  }
-
-  /* each feature row */
-  .stock-market-feat {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 14px;
-    border-radius: 10px;
-    cursor: default;
-    transition:
-      background   .28s ease,
-      box-shadow   .28s ease,
-      transform    .28s ease;
-    border: 1.5px solid transparent;
-  }
-
-  /* hover: highlight */
-  .stock-market-feat:hover {
-    background: #fff;
-    border-color: var(--card-border);
-    box-shadow:
-      0 6px 22px rgba(37,53,111,0.10),
-      0 1px 4px  rgba(37,53,111,0.06);
-    transform: translateX(4px);
-  }
-
-  /* checkmark icon */
-  .stock-market-check {
-    flex-shrink: 0;
-    width: 22px; height: 22px;
-    border-radius: 50%;
-    background: var(--red-blur);
-    display: flex; align-items: center; justify-content: center;
-    transition: background .28s ease, transform .28s ease;
-  }
-  .stock-market-feat:hover .stock-market-check {
-    background: var(--euphoria-red);
-    transform: scale(1.15);
-  }
-  .stock-market-check svg {
-    width: 12px; height: 12px;
-    stroke: var(--euphoria-red);
-    fill: none;
-    stroke-width: 2.5;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    transition: stroke .28s ease;
-  }
-  .stock-market-feat:hover .stock-market-check svg { stroke: #fff; }
-
-  /* feature label */
-  .stock-market-feat-label {
-    font-size: clamp(12px, 1.1vw, 14px);
+  .stock-list li {
+    margin-bottom: 10px;
     font-weight: 500;
-    color: var(--text-dark);
-    transition: color .28s ease;
-  }
-  .stock-market-feat:hover .stock-market-feat-label {
-    color: var(--euphoria-blue);
-    font-weight: 600;
   }
 
-  /* ── RESPONSIVE ── */
-  @media (max-width: 991px) {
-    .stock-market-main-img   { min-height: 300px; }
-    .stock-market-car-img    { width: 130px; top: -10px; }
-    .stock-market-content-col { padding-left: 0; margin-top: 32px; }
+  .check-icon {
+    color: #e63946;
+    margin-right: 8px;
   }
-  @media (max-width: 576px) {
-    .stock-market-features { grid-template-columns: 1fr; }
-    .stock-market-car-img  { width: 110px; }
+
+  @media (max-width: 991px) {
+    .stock-card {
+      margin-top: 30px;
+    }
   }
 </style>
 
-<section class="stock-market-section bg-white">
-  <div class="container">
+<section class="stock-section">
+  <div class="container-fluid">
     <div class="row align-items-center g-4">
- 
-      <!-- LEFT: Image -->
-      <div class="col-lg-5 stock-market-img-col">
-        <img
-          src="https://images.unsplash.com/photo-1590736969596-f6a8c1e40b37?w=700&q=80"
-          alt="stock-market Booking"
-          class="stock-market-main-img"
-        />
+      
+      <!-- Left Image -->
+      <div class="col-lg-6 py-5">
+        <div class="stock-img">
+          <img src="assets/img/stock-graph.png" alt="Stock Market">
+        </div>
       </div>
- 
-      <!-- RIGHT: Content -->
-      <div class="col-lg-7 stock-market-content-col">
- 
-        <!-- watermark -->
-        <div class="stock-market-watermark">Trading</div>
- 
-        <!-- floating stock-market car -->
-        <img
-          src="https://www.pngmart.com/files/7/Yellow-stock-market-PNG-Pic.png"
-          alt="stock-market Car"
-          class="stock-market-car-img d-none d-md-block"
-          onerror="this.style.display='none'"
-        />
- 
-        <div class="stock-market-inner">
-          <h2 class="stock-market-title">Stock Market Oppurtunities</h2>
- 
-          <p class="stock-market-bold-sub">
-            Professional stock-market booking services for local and outstation travel
-            with safe and timely transportation.
+
+      <!-- Right Content -->
+      <div class="col-lg-6 px-5">
+        <div class="stock-card">
+          <h3 class="stock-title mb-3">Stock Market Opportunities</h3>
+          <p>
+            India is one of the fastest-growing capital markets in the world, offering significant opportunities for wealth creation through equities, IPOs, derivatives, and diversified investment instruments. Our Indian Stock Broker Services provide seamless access to the  Indian Stock Market, enabling resident investors, NRIs, and global clients to participate confidently in India's dynamic financial ecosystem.
           </p>
- 
-          <p class="stock-market-desc">
-            We make it easy to book reliable stock-markets for local and outstation travel with a quick and simple
-            booking process. Customers can choose from a range of vehicles, including hatchbacks, sedans,
-            SUVs, and luxury cars, based on their needs and budget. Our verified drivers ensure safe, comfortable
-            journeys with punctual pickups and professional service. We offer transparent pricing with no hidden
-            charges and 24/7 stock-market booking for airport transfers, business trips, and personal travel.
+          <p>
+            We offer strategic stock market investment advisory in India, portfolio diversification strategies, and risk-managed trading solutions aligned with your financial goals. From account opening and regulatory compliance to market research and transaction support, we ensure a structured and transparent investment experience.
           </p>
- 
-          <!-- Feature points -->
-          <div class="stock-market-features">
- 
-            <div class="stock-market-feat">
-              <div class="stock-market-check">
-                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-              </div>
-              <span class="stock-market-feat-label">Easy Online stock market Booking</span>
-            </div>
- 
-            <div class="stock-market-feat">
-              <div class="stock-market-check">
-                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-              </div>
-              <span class="stock-market-feat-label">Affordable stock-market Fare Options</span>
-            </div>
- 
-            <div class="stock-market-feat">
-              <div class="stock-market-check">
-                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-              </div>
-              <span class="stock-market-feat-label">Local &amp; Outstation stock-market Services</span>
-            </div>
- 
-            <div class="stock-market-feat">
-              <div class="stock-market-check">
-                <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-              </div>
-              <span class="stock-market-feat-label">24/7 stock-market Availability</span>
-            </div>
- 
-          </div><!-- /stock-market-features -->
-        </div><!-- /stock-market-inner -->
-      </div><!-- /col -->
- 
-    </div><!-- /row -->
-  </div><!-- /container -->
+
+          <ul class="list-unstyled stock-list mt-4">
+            <li><span class="check-icon">✔</span>Expert Stock Market Advisory</li>
+            <li><span class="check-icon">✔</span>Real-Time Market Insights</li>
+            <li><span class="check-icon">✔</span>Diversified Investment Strategies</li>
+            <li><span class="check-icon">✔</span>Secure & Transparent Trading</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 <!-- Capital market Section -->
@@ -476,24 +198,6 @@ include_once ('elements/header.php');
     padding: 64px 0 80px;
     background: var(--bg-light);
     overflow: hidden;
-  }
-
-  /* Watermark */
-  .capital-market-section::before {
-    content: "Destinations";
-    position: absolute;
-    top: 0; left: 50%;
-    transform: translateX(-50%);
-    
-    font-size: clamp(60px, 12vw, 140px);
-    font-weight: 700;
-    color: rgba(37,53,111,0.06);
-    letter-spacing: 6px;
-    white-space: nowrap;
-    pointer-events: none;
-    user-select: none;
-    z-index: 0;
-    line-height: 1;
   }
 
   /* ── HEADER ── */
@@ -507,10 +211,22 @@ include_once ('elements/header.php');
 
   .plane-img {
     position: absolute;
-    left: -10px; top: -18px;
+    left: -10px;
+    top: -18px;
     width: clamp(110px, 16vw, 210px);
-    filter: drop-shadow(4px 8px 18px rgba(37,53,111,0.18));
+    filter: drop-shadow(4px 8px 18px rgba(37, 53, 111, 0.18));
     animation: floatPlane 4s ease-in-out infinite;
+    opacity: 0.4;
+  }
+
+  .plane-img-right {
+    position: absolute;
+    right: 50px;
+    bottom: -89px;
+    width: clamp(110px, 16vw, 600px);
+    filter: drop-shadow(4px 8px 18px rgba(37, 53, 111, 0.18));
+    animation: floatPlane 4s ease-in-out infinite;
+    opacity: 0.4;
   }
   @keyframes floatPlane {
     0%,100% { transform: translateY(0)    rotate(-2deg); }
@@ -576,11 +292,13 @@ include_once ('elements/header.php');
   }
 
   .capital-market-card img.card-bg {
-    width:100%; height:100%;
-    object-fit:cover;
+    width:100%;
     display:block;
-    opacity:.88;
     transition: transform .5s ease;
+    justify-content: center;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .capital-market-card:hover img.card-bg { transform:scale(1.07); }
 
@@ -604,13 +322,13 @@ include_once ('elements/header.php');
   .card-body-content h5 {
     
     font-size:clamp(14px,1.6vw,18px);
-    font-weight:700;
+    font-weight:600;
     margin-bottom:7px;
     line-height:1.25;
   }
   .card-body-content p {
-    font-size:clamp(11px,1.1vw,13px);
-    color:#000
+    font-size:clamp(11px,1.1vw,15px);
+    color:#000;
     line-height:1.5;
   }
 
@@ -677,21 +395,20 @@ include_once ('elements/header.php');
     transform:scale(1.35);
   }
   .dot:hover:not(.active) { background:var(--euphoria-red); }
+
+  .capital-market-section .about-title-bg{
+    top: -80px !important;
+    font-size: 10rem !important;
+  }
 </style>
 
-<section class="capital-market-section">
+<section id="capital_market_section" class="capital-market-section about-section">
   <div class="container position-relative">
- 
+    <div class="about-title-bg">Equities</div>
     <!-- HEADER -->
     <div class="section-header">
-      <img
-        src="https://png.pngtree.com/png-clipart/20230107/original/pngtree-blue-passenger-aircraft-png-image_8879803.png"
-        alt="Airplane" class="plane-img d-none d-md-block"
-      />
-      <h2 class="section-title">Flight Booking</h2>
-      <p class="section-subtitle">
-        Affordable domestic flight booking services with flexible options and competitive fares.
-      </p>
+      <img src="assets/img/equity-left-chart.png" alt="Airplane" class="plane-img d-none d-md-block" />
+      <h2 class="section-title">Capital Market</h2>
     </div>
  
     <!-- CAROUSEL -->
@@ -700,13 +417,12 @@ include_once ('elements/header.php');
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
       </button>
  
-      <div class="carousel-outer" id="carouselOuter">
+      <div class="carousel-outer py-5" id="carouselOuter">
         <div class="cards-track" id="cardsTrack">
  
           <!-- Card 1 -->
           <div class="capital-market-card">
-            <img class="card-bg" src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=700&q=80" alt="Domestic Flights"/>
-            <div class="card-overlay"></div>
+            <img class="card-bg" src="assets/img/capital-equity.png" alt="Domestic Flights"/>
             <div class="card-accent"><svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg></div>
             <div class="card-body-content">
               <h5>Domestic Flights</h5>
@@ -716,8 +432,7 @@ include_once ('elements/header.php');
  
           <!-- Card 2 -->
           <div class="capital-market-card">
-            <img class="card-bg" src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?w=700&q=80" alt="Competitive Airfare Deals"/>
-            <div class="card-overlay"></div>
+            <img class="card-bg" src="assets/img/capital-intraday.png" alt="Competitive Airfare Deals"/>
             <div class="card-accent"><svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg></div>
             <div class="card-body-content">
               <h5>Competitive Airfare Deals</h5>
@@ -727,8 +442,7 @@ include_once ('elements/header.php');
  
           <!-- Card 3 -->
           <div class="capital-market-card">
-            <img class="card-bg" src="https://images.unsplash.com/photo-1488085061387-422e29b40080?w=700&q=80" alt="Wide Airline Network"/>
-            <div class="card-overlay"></div>
+            <img class="card-bg" src="assets/img/capital-ipo.png" alt="Wide Airline Network"/>
             <div class="card-accent"><svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg></div>
             <div class="card-body-content">
               <h5>Wide Airline Network</h5>
@@ -738,8 +452,7 @@ include_once ('elements/header.php');
  
           <!-- Card 4 -->
           <div class="capital-market-card">
-            <img class="card-bg" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=700&q=80" alt="Corporate Travel Management"/>
-            <div class="card-overlay"></div>
+            <img class="card-bg" src="assets/img/capital-portfolio.png" alt="Corporate Travel Management"/>
             <div class="card-accent"><svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg></div>
             <div class="card-body-content">
               <h5>Corporate Travel Management</h5>
@@ -749,8 +462,7 @@ include_once ('elements/header.php');
  
           <!-- Card 5 -->
           <div class="capital-market-card">
-            <img class="card-bg" src="https://images.unsplash.com/photo-1548574505-5e239809ee19?w=700&q=80" alt="Easy Rescheduling"/>
-            <div class="card-overlay"></div>
+            <img class="card-bg" src="assets/img/capital-equity.png" alt="Easy Rescheduling"/>
             <div class="card-accent"><svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg></div>
             <div class="card-body-content">
               <h5>Easy Rescheduling</h5>
@@ -760,8 +472,7 @@ include_once ('elements/header.php');
  
           <!-- Card 6 -->
           <div class="capital-market-card">
-            <img class="card-bg" src="https://images.unsplash.com/photo-1540339832862-474599807836?w=700&q=80" alt="24/7 Support"/>
-            <div class="card-overlay"></div>
+            <img class="card-bg" src="assets/img/capital-intraday.png" alt="24/7 Support"/>
             <div class="card-accent"><svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg></div>
             <div class="card-body-content">
               <h5>24/7 Customer Support</h5>
@@ -776,6 +487,7 @@ include_once ('elements/header.php');
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
       </button>
     </div>
+      <img src="assets/img/equity-left-chart.png" alt="Airplane" class="plane-img-right d-none d-md-block" />
  
     <!-- DOTS -->
     <div class="carousel-dots" id="dotsContainer"></div>
@@ -892,7 +604,6 @@ include_once ('elements/header.php');
 <!-- Start Elite Insurance -->
 <style>
   .elite-insurance-section {
-      background: #f3f6fb;
       padding: 100px 0;
       position: relative;
       overflow: hidden;
@@ -914,8 +625,8 @@ include_once ('elements/header.php');
   /* Heading */
   .elite-insurance-title {
       text-align: center;
-      font-size: 34px;
-      font-weight: 700;
+      font-size: 40px;
+      font-weight: 600;
       color: var(--euphoria-blue);
       margin-bottom: 60px;
   }
@@ -944,8 +655,7 @@ include_once ('elements/header.php');
 
   /* Card Text */
   .elite-insurance-card p {
-      font-size: 15px;
-      line-height: 1.8;
+      font-size: 18px;
       margin-bottom: 15px;
       position: relative;
       z-index: 2;
@@ -1017,7 +727,7 @@ include_once ('elements/header.php');
             <!-- Center Image -->
             <div class="col-lg-4">
                 <div class="elite-insurance-image-card">
-                    <img src="https://picsum.photos/500/500?insurance" alt="">
+                    <img src="assets/img/elite-insurance.png" alt="">
                 </div>
             </div>
 
@@ -1048,8 +758,8 @@ include_once ('elements/header.php');
 <!-- Start insurance swipe section -->
 <style>
   .insurance-split-section {
-    padding: 90px 0;
-    background: #ffffff;
+    padding: 100px 0;
+    background: #f3f6fb;
   }
 
   /* Wrapper */
@@ -1167,20 +877,28 @@ include_once ('elements/header.php');
   }
 </style>
 
-<section class="insurance-split-section">
+<section class="insurance-split-section about-section">
+  <div class="about-title-bg">Security</div>
+
+  <div class="container">
+        <div class="row align-items-center">
+            <h2 class="about-title h1">Insurance Solution</h2>
+        </div>
+  </div>
+
   <div class="container">
 
       <div class="row g-0 insurance-split-wrapper">
 
           <!-- Image -->
-          <div class="col-lg-6">
+          <div class="col-lg-6 px-3">
               <div class="insurance-split-image">
-                  <img src="https://picsum.photos/800/600?insurance" alt="">
+                  <img src="assets/img/general-insurance.png" alt="">
               </div>
           </div>
 
           <!-- Content -->
-          <div class="col-lg-6">
+          <div class="col-lg-6 px-3">
               <div class="insurance-split-content">
 
                   <h2 class="insurance-split-title">
@@ -1188,19 +906,29 @@ include_once ('elements/header.php');
                   </h2>
 
                   <p class="insurance-split-text">
-                      Protect your health, vehicles, property, and business with our complete range of insurance solutions designed for total financial security.
+                      Protect your health, vehicles, property, and business with comprehensive general insurance solutions including health plans 
+                      (individual, family floater, senior citizen, critical illness, maternity, OPD, and top-up), motor insurance (private, commercial, and 
+                      third-party), and asset protection like fire and marine insurance. These plans are designed to cover medical expenses, 
+                      accidents, damages, and unforeseen risks, ensuring complete financial security in every aspect of life.
                   </p>
 
-                  <ul class="insurance-split-list">
-                      <li>Health Insurance (Individual & Family Floater)</li>
-                      <li>Senior Citizen & Critical Illness Plans</li>
-                      <li>Maternity & OPD Coverage Options</li>
-                      <li>Motor Insurance (Private & Commercial)</li>
-                      <li>Fire & Marine Asset Protection</li>
-                      <li>Business Risk & Property Insurance</li>
-                      <li>Flexible Coverage with Claim Support</li>
-                  </ul>
-
+                  <div class="row">
+                    <div class="col-6">
+                      <ul class="insurance-split-list">
+                        <li>Health Insurance (Individual & Family Floater)</li>
+                        <li>Senior Citizen & Critical Illness Plans</li>
+                        <li>Maternity & OPD Coverage Options</li>
+                        <li>Motor Insurance (Private & Commercial)</li>
+                      </ul>  
+                    </div>
+                    <div class="col-6">
+                      <ul class="insurance-split-list">
+                          <li>Fire & Marine Asset Protection</li>
+                          <li>Business Risk & Property Insurance</li>
+                          <li>Flexible Coverage with Claim Support</li>
+                      </ul>
+                    </div>
+                  </div>
               </div>
           </div>
 
@@ -1213,314 +941,90 @@ include_once ('elements/header.php');
      Start Real Estate Property
   ═══════════════════════════════ -->
 <style>
-  .re-section {
-    padding: 64px 0 80px;
-    background: var(--bg-light);
+  .realestate-section {
+    padding: 100px 0;
+  }
+
+  .image-wrapper {
+    position: relative;
+    border-radius: 25px;
     overflow: hidden;
   }
 
-  /* Inner container: constrained width with side padding */
-  .re-inner {
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 0 24px;
-  }
-
-  /* ═══════════════════════════════
-      LAYOUT GRID
-  ═══════════════════════════════ */
-  .re-grid {
-    display: grid;
-    grid-template-columns: 1.05fr 1fr;
-    align-items: center;
-    gap: 0;
-    position: relative;
-  }
-
-  @media (max-width: 991px) {
-    .re-grid {
-      grid-template-columns: 1fr;
-      gap: 0;
-    }
-  }
-
-  /* ═══════════════════════════════
-      LEFT — PHOTO
-  ═══════════════════════════════ */
-  .re-photo-wrap {
-    position: relative;
-    z-index: 1;
-    padding: 20px 0 20px 0;
-  }
-
-  .re-photo-frame {
-    border-radius: 22px;
-    overflow: hidden;
-    box-shadow:
-      0 24px 72px rgba(37,53,111,.13),
-      0 4px 16px rgba(37,53,111,.08);
-    position: relative;
-    aspect-ratio: 4 / 3;
-    background: #cdd5e8;
-    animation: re-slideLeft .75s cubic-bezier(.22,.68,0,1.2) both;
-  }
-
-  .re-photo-frame img {
+  .image-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
-    display: block;
-    transition: transform .6s ease;
-  }
-  .re-photo-frame:hover img {
-    transform: scale(1.03);
+    border-radius: 25px;
   }
 
-  /* Corner accent tag */
-  .re-photo-tag {
+  .content-card {
     position: absolute;
-    bottom: 22px;
-    left: 22px;
-    background: var(--euphoria-blue);
-    color: #fff;
-    font-size: .72rem;
-    font-weight: 600;
-    letter-spacing: .08em;
-    text-transform: uppercase;
-    padding: 6px 14px;
-    border-radius: 6px;
-    z-index: 3;
-    display: flex;
-    align-items: center;
-    gap: 7px;
-  }
-  .re-photo-tag::before {
-    content: '';
-    width: 7px; height: 7px;
-    border-radius: 50%;
-    background: #4ade80;
-    flex-shrink: 0;
-    animation: re-pulse 1.6s ease-in-out infinite;
-  }
-  @keyframes re-pulse {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50%       { opacity: .5; transform: scale(.7); }
-  }
-
-  /* Decorative shape behind photo */
-  .re-photo-bg-shape {
-    position: absolute;
-    inset: 0;
-    border-radius: 28px;
-    background: linear-gradient(135deg, rgba(37,53,111,.07) 0%, rgba(227,30,36,.05) 100%);
-    transform: translate(12px, 12px);
-    z-index: 0;
-  }
-
-  @media (max-width: 991px) {
-    .re-photo-wrap {
-      padding: 0;
-      margin-bottom: -30px; /* overlap with card below */
-    }
-    .re-photo-frame {
-      border-radius: 18px;
-      aspect-ratio: 16/9;
-    }
-  }
-  @media (max-width: 575px) {
-    .re-photo-frame { aspect-ratio: 4/3; border-radius: 14px; }
-  }
-
-  /* ═══════════════════════════════
-      RIGHT — CONTENT CARD
-  ═══════════════════════════════ */
-  .re-card {
-    position: relative;
-    z-index: 2;
-    background: var(--card-bg);
+    top: 50%;
+    right: -50px;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.95);
+    padding: 40px;
     border-radius: 20px;
-    padding: 52px 52px 52px 64px;
-    margin-left: -72px; /* overlap the photo */
-    box-shadow:
-      0 20px 60px rgba(37,53,111,.10),
-      0 2px 8px rgba(37,53,111,.06);
-    overflow: hidden;
-    animation: re-slideRight .75s .1s cubic-bezier(.22,.68,0,1.2) both;
+    max-width: 800px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
   }
 
-  /* Watermark word */
-  .re-card-watermark {
-    position: absolute;
-    top: 12px;
-    left: -10px;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(4rem, 8vw, 7.5rem);
-    font-weight: 700;
-    color: rgba(37,53,111,.06);
-    line-height: 1;
-    white-space: nowrap;
-    user-select: none;
-    pointer-events: none;
-    letter-spacing: -.02em;
-  }
-
-  /* Heading */
-  .re-card-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
-    font-weight: 700;
-    color: var(--euphoria-blue);
-    line-height: 1.15;
-    margin-bottom: 6px;
-    position: relative;
-    z-index: 1;
-  }
-
-  /* Red underline accent */
-  .re-card-accent {
-    width: 42px; height: 3px;
-    background: var(--euphoria-red);
-    border-radius: 2px;
-    margin-bottom: 22px;
-    position: relative;
-    z-index: 1;
-  }
-
-  /* Body paragraphs */
-  .re-card-body {
-    position: relative;
-    z-index: 1;
-  }
-  .re-card-body p {
-    font-size: clamp(.84rem, 1.5vw, .94rem);
-    color: var(--text-body);
-    line-height: 1.8;
-    margin-bottom: 16px;
-  }
-  .re-card-body p:last-child { margin-bottom: 0; }
-
-  /* CTA button */
-  .re-card-cta {
-    display: inline-flex;
-    align-items: center;
-    gap: 9px;
-    margin-top: 28px;
-    background: var(--euphoria-blue);
-    color: #fff;
-    font-size: .82rem;
+  .content-card h3 {
     font-weight: 600;
-    letter-spacing: .04em;
-    text-transform: uppercase;
-    padding: 12px 26px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background .25s ease, transform .2s ease, box-shadow .25s ease;
-    position: relative;
-    z-index: 1;
+    color: #1e2a55;
   }
-  .re-card-cta svg {
-    width: 16px; height: 16px;
-    stroke: currentColor; fill: none;
-    stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round;
-    transition: transform .25s ease;
-  }
-  .re-card-cta:hover {
-    background: var(--euphoria-red);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(227,30,36,.28);
-    color: #fff;
-  }
-  .re-card-cta:hover svg { transform: translateX(4px); }
 
-  /* Responsive card */
+  .content-card p {
+    font-size: 17px;
+    color: #6c757d;
+    line-height: 1.6;
+  }
+
   @media (max-width: 991px) {
-    .re-card {
-      margin-left: 0;
-      border-radius: 0 0 18px 18px;
-      padding: 40px 32px 40px;
-      box-shadow: 0 16px 48px rgba(37,53,111,.12);
+    .content-card {
+      position: static;
+      transform: none;
+      margin-top: 20px;
+      max-width: 100%;
     }
-    .re-card-watermark { font-size: 4.5rem; }
-  }
-  @media (max-width: 575px) {
-    .re-card {
-      padding: 32px 22px 36px;
-      border-radius: 0 0 14px 14px;
-    }
-    .re-card-watermark { font-size: 3.2rem; }
-  }
-
-  /* ═══════════════════════════════
-      ANIMATIONS
-  ═══════════════════════════════ */
-  @keyframes re-slideLeft {
-    from { opacity: 0; transform: translateX(-40px); }
-    to   { opacity: 1; transform: translateX(0); }
-  }
-  @keyframes re-slideRight {
-    from { opacity: 0; transform: translateX(40px); }
-    to   { opacity: 1; transform: translateX(0); }
   }
 </style>
 
-<section class="re-section">
-  <div class="re-inner">
-    <div class="re-grid">
- 
-      <!-- LEFT: Photo -->
-      <div class="re-photo-wrap">
-        <div class="re-photo-bg-shape"></div>
-        <div class="re-photo-frame">
-          <img
-            src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=85&fit=crop&crop=center"
-            alt="Real Estate Properties – city skyline"
-          />
-          <div class="re-photo-tag">
-            <span>Premium Properties</span>
-          </div>
+<section class="realestate-section about-section">
+
+  <div class="about-title-bg">Properties</div>
+
+  <div class="container">
+        <div class="row align-items-center">
+            <h2 class="about-title h1">Real Estate</h2>
         </div>
+  </div>
+
+  <div class="container">
+    <div class="image-wrapper">
+
+      <!-- Image -->
+      <img src="assets/img/real-estate.png" alt="Real Estate">
+
+      <!-- Content Card -->
+      <div class="content-card">
+    
+        <p>
+          Real Estate Investment Advisory focuses on helping individuals and investors build stable, high-value property portfolios through strategic planning and market-driven insights.
+        </p>
+        <p>
+          We provide expert guidance across residential, commercial, and investment properties, ensuring every acquisition aligns with your financial goals, risk appetite, and long-term strategy.
+        </p>
+        <p>
+          Whether you are looking for rental income, capital growth, or portfolio diversification, our solutions are designed to deliver sustainable and secure investment outcomes.
+        </p>
       </div>
- 
-      <!-- RIGHT: Content Card -->
-      <div class="re-card">
-        <div class="re-card-watermark">Properties</div>
- 
-        <h2 class="re-card-title">Real Estate</h2>
-        <div class="re-card-accent"></div>
- 
-        <div class="re-card-body">
-          <p>
-            Real Estate Investment Advisory focuses on helping individuals and investors build stable,
-            high-value property portfolios through strategic planning and market-driven insights. Real estate
-            remains one of the most reliable asset classes for long-term wealth creation, passive income
-            generation, and capital appreciation.
-          </p>
-          <p>
-            We provide expert guidance across residential, commercial, and investment properties, ensuring
-            every acquisition aligns with your financial goals, risk appetite, and long-term strategy. From
-            property evaluation and due diligence to investment structuring and portfolio diversification, our
-            approach is focused on maximising returns while minimising risk.
-          </p>
-          <p>
-            Whether you are looking for rental income, capital growth, or portfolio diversification,
-            our real estate solutions are designed to deliver sustainable and secure investment outcomes.
-          </p>
- 
-          <a href="#" class="re-card-cta">
-            Explore Properties
-            <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
-        </div>
-      </div>
- 
     </div>
   </div>
 </section>
 
-<!-- ══ Real Estate Services ══ -->
+<!-- ══ Holiday Package ══ -->
 <style>
 
   .re-serrvice-section {
@@ -1530,40 +1034,6 @@ include_once ('elements/header.php');
     position: relative;
     overflow: hidden;
     color: var(--text-dark);
-  }
-
-  /* ── HEADER ── */
-  .re-service-header {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    margin-bottom: 48px;
-  }
-
-  .re-service-watermark {
-    position: absolute;
-    top: -10px; left: 50%;
-    transform: translateX(-50%);
-    
-    font-size: clamp(60px, 12vw, 140px);
-    font-weight: 700;
-    color: var(--euphoria-red);
-    opacity: .07;
-    letter-spacing: 5px;
-    white-space: nowrap;
-    pointer-events: none;
-    user-select: none;
-    z-index: 0;
-    line-height: 1;
-  }
-
-  .re-service-title {
-    
-    font-size: clamp(26px, 4vw, 44px);
-    font-weight: 700;
-    color: var(--euphoria-blue);
-    position: relative;
-    z-index: 1;
   }
 
   /* ── BODY: left image + right grid ── */
@@ -1611,10 +1081,10 @@ include_once ('elements/header.php');
   }
 
   /* remove double borders */
-  .re-service-cell:nth-child(-n+3)          { border-top: none; }
-  .re-service-cell:nth-child(3n+1)          { border-left: none; }
+  /* .re-service-cell:nth-child(-n+3)          { border-top: none; } */
+  /* .re-service-cell:nth-child(3n+1)          { border-left: none; } */
   .re-service-cell:nth-child(3n)            { border-right: none; }
-  .re-service-cell:nth-child(n+4)           { border-bottom: none; }
+  /* .re-service-cell:nth-child(n+4)           { border-bottom: none; } */
 
   /* top accent on hover */
   .re-service-cell::before {
@@ -1682,16 +1152,23 @@ include_once ('elements/header.php');
     .re-service-cell:last-child { border-bottom: none; }
     .re-service-plane   { display: none; }
   }
+
+  .re-serrvice-section .about-title{
+    margin-top: 40px;
+  }
 </style>
 
-<section class="re-serrvice-section">
+<section class="re-serrvice-section about-section">
+  
+  <div class="about-title-bg">Gateway</div>
+
   <div class="container">
- 
-    <!-- HEADER -->
-    <div class="re-service-header">
-      <div class="re-service-watermark">Gateway</div>
-      <h2 class="re-service-title">Holiday Package</h2>
-    </div>
+        <div class="row align-items-center">
+            <h2 class="about-title h1">Holiday Package</h2>
+        </div>
+  </div>
+
+  <div class="container">
  
     <!-- BODY -->
     <div class="re-service-body">

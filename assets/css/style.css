@@ -117,6 +117,7 @@ h1, h2 {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1.5rem;
+    color: #fff;
 }
 
 .hero-content p {
@@ -181,29 +182,6 @@ h1, h2 {
     .hero-content { text-align: center; padding: 20px; }
     .hero-person { display: none; } /* Hide people on small phones for space */
     .country-tag { display: none; }
-}
-
-/**
- * Top side background image
- */
-.top-banner-background {
-    position: relative;
-    min-height: 55vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 120px;
-}
-
-.top-banner-background h1{
-    font-size: 65px !important;
-}
-
-.top-banner-background p{
-    font-size: 20px !important;
 }
 
 /* 2. About Us Section Styling */
