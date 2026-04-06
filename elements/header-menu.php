@@ -132,7 +132,7 @@
       border: 1px solid var(--card-border);
       border-radius: 14px;
       padding: 20px;
-      min-width: 680px;
+      min-width: 900px;
       opacity: 0;
       visibility: hidden;
       pointer-events: none;
@@ -153,8 +153,8 @@
   /* Mega grid layout */
   .eg-mega-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0;
+      grid-template-columns: repeat(3, 1fr); /* 3 columns */
+      gap: 20;
   }
 
   .eg-mega-item {
@@ -164,20 +164,23 @@
       display: block;
       transition: background .2s ease;
       position: relative;
+
+      border: 1px solid var(--card-border);
+      border-radius: 15px;
+      margin: 5px;
   }
   .eg-mega-item:hover {
       background: var(--bg-light);
   }
 
   /* Vertical divider between columns */
-  .eg-mega-item:nth-child(odd) {
+  /* .eg-mega-item:nth-child {
       border-right: 1px solid var(--card-border);
-  }
+  } */
   /* Horizontal divider between rows */
-  .eg-mega-item:nth-child(1),
-  .eg-mega-item:nth-child(2) {
+  /* .eg-mega-item:nth-child {
       border-bottom: 1px solid var(--card-border);
-  }
+  } */
 
   .eg-mega-num {
       font-size: 1rem;
@@ -379,6 +382,20 @@
       .eg-hamburger { display: flex; }
       .eg-mobile-menu { display: block; }
   }
+
+  /* Tablet */
+  @media (max-width: 991px) {
+    .eg-mega-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 576px) {
+    .eg-mega-grid {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>
 
 <!-- ═══════════════════ NAVBAR ═══════════════════ -->
@@ -434,6 +451,12 @@
               <span class="eg-mega-num">4.</span>
               <span class="eg-mega-title">Wealth & Asset Solutions</span>
               <span class="eg-mega-desc">Wealth management services include investment planning, insurance advisory, and asset protection solutions.</span>
+            </a>
+
+            <a href="visa-assitance" class="eg-mega-item" role="menuitem">
+              <span class="eg-mega-num">5.</span>
+              <span class="eg-mega-title">Get Visa Assistance</span>
+              <span class="eg-mega-desc">Visa Assistance services provide professional, end-to-end support to help individuals and businesses navigate complex visa application processes for travel, work or study.</span>
             </a>
 
           </div>

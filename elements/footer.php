@@ -361,6 +361,20 @@
                     l.classList.toggle('active', l.getAttribute('href') === '#' + current);
                 });
             });
+
+            if( $('.visa-section').length > 0 ){
+                const observerVisaSection = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            document.querySelector('.visa-img').classList.add('show');
+                            document.querySelector('.visa-content').classList.add('show');
+                            document.querySelector('.visa-box').classList.add('show');
+                        }
+                    });
+                });
+                observerVisaSection.observe(document.querySelector('.visa-section'));
+            }
+
         </script>
     </body>
 </html>
