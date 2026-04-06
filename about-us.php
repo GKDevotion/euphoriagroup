@@ -2,7 +2,7 @@
   include_once('elements/header.php');
   ?>
 
-<!-- HERO -->
+ <!-- HERO -->
  <section class="top-banner-background" style="background-image: url('assets/img/background/about-us-bg.png');">
    <div>
      <h1 class="mb-0">About The Euphoria Group</h1>
@@ -10,11 +10,11 @@
    </div>
  </section>
 
-<style>
-  /* ── Section wrapper ── */
-  .about-section {
-    padding: 80px 0 50px;
-  }
+ <style>
+   /* ── Section wrapper ── */
+   .about-section {
+     padding: 80px 0 50px;
+   }
 
    /* ── Corner-bracket card ── */
    .bracket-card {
@@ -2144,12 +2144,10 @@
 
  </section>
 
-
  <?php
   include_once('elements/faqs.php');
   include_once('elements/footer.php');
   ?>
-
 
  <script>
    const swiper = new Swiper('#teamSwiper', {
