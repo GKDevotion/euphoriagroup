@@ -3,7 +3,7 @@ include_once ('elements/header.php');
 ?>
 
 <!-- Hero Section -->
-<section class="top-banner-background text-center" style="background-image: url('assets/img/tour-travel/background/tour-travel.png');">
+<section class="top-banner-background text-center" style="background-image: url('assets/img/background/tour-travel.png');">
   <div>
     <h1 class="mb-0">
       Tours and Travels
