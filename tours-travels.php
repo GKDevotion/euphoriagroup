@@ -3,7 +3,7 @@ include_once ('elements/header.php');
 ?>
 
 <!-- Hero Section -->
-<section class="top-banner-background text-center" style="background-image: url('assets/img/background/tour-travel.png');">
+<section class="top-banner-background text-center" style="background-image: url('assets/img/tour-travel/background/tour-travel.png');">
   <div>
     <h1 class="mb-0">
       Tours and Travels
@@ -34,7 +34,7 @@ include_once ('elements/header.php');
     <div id="tab1" class="corporate-content-box active">
         <div class="row align-items-center">
             <div class="col-md-5">
-                <img src="assets/img/airplan-window.png" class="illustration">
+                <img src="assets/img/tour-travel/airplan-window.png" class="illustration">
             </div>
             <div class="col-md-7 text-content">
                 <p>
@@ -270,7 +270,7 @@ include_once ('elements/header.php');
  
     <!-- HEADER -->
     <div class="section-header">
-      <img src="assets/img/flight-fly.png" alt="Airplane" class="plane-img d-none d-md-block" />
+      <img src="assets/img/tour-travel/flight-fly.png" alt="Airplane" class="plane-img d-none d-md-block" />
       <h2 class="section-title">Flight Booking</h2>
       <p class="section-subtitle mt-5 w-100">
         Affordable domestic flight booking services with flexible options and competitive fares.
@@ -776,7 +776,7 @@ include_once ('elements/header.php');
  
     <!-- ── HEADER ── -->
     <div class="section-header">
-      <img src="assets/img/train-on.png" alt="Train" class="train-img d-none d-md-block" onerror="this.style.display='none'" />
+      <img src="assets/img/tour-travel/train-on.png" alt="Train" class="train-img d-none d-md-block" onerror="this.style.display='none'" />
       <h2 class="section-title">Train <span>Booking</span></h2>
       <p class="section-subtitle mt-5">
         Reliable train ticket booking assistance with confirmed reservations and smooth travel planning.
@@ -790,7 +790,7 @@ include_once ('elements/header.php');
       <div class="card-wrap">
         <div class="tcard" data-tilt>
           <div class="card-img-box">
-            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80" alt="Online Booking"/>
+            <img src="assets/img/tour-travel/easy-online.png" alt="Online Booking"/>
             <div class="card-badge"><svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg></div>
           </div>
           <div class="card-content">
@@ -807,7 +807,7 @@ include_once ('elements/header.php');
       <div class="card-wrap card-center">
         <div class="tcard" data-tilt>
           <div class="card-img-box">
-            <img src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=700&q=80" alt="Railway Network"/>
+            <img src="assets/img/tour-travel/pan-india.png" alt="Railway Network"/>
             <div class="card-badge"><svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg></div>
           </div>
           <div class="card-content">
@@ -824,7 +824,7 @@ include_once ('elements/header.php');
       <div class="card-wrap">
         <div class="tcard" data-tilt>
           <div class="card-img-box">
-            <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&q=80" alt="Flexible Travel"/>
+            <img src="assets/img/tour-travel/flaxible-transport.png" alt="Flexible Travel"/>
             <div class="card-badge"><svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg></div>
           </div>
           <div class="card-content">
@@ -841,7 +841,7 @@ include_once ('elements/header.php');
       <div class="card-wrap">
         <div class="tcard" data-tilt>
           <div class="card-img-box">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Tatkal Reservation"/>
+            <img src="assets/img/tour-travel/confirm-ticket.png" alt="Tatkal Reservation"/>
             <div class="card-badge"><svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg></div>
           </div>
           <div class="card-content">
@@ -858,7 +858,7 @@ include_once ('elements/header.php');
       <div class="card-wrap">
         <div class="tcard" data-tilt>
           <div class="card-img-box">
-            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&q=80" alt="Travel Assistance"/>
+            <img src="assets/img/tour-travel/complete-travel.png" alt="Travel Assistance"/>
             <div class="card-badge"><svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg></div>
           </div>
           <div class="card-content">
@@ -1200,7 +1200,7 @@ include_once ('elements/header.php');
  
     <!-- HEADER -->
     <div class="bus-header">
-      <img src="assets/img/bus-on.png" alt="Bus" class="bus-img d-none d-md-block" onerror="this.style.display='none'" />
+      <img src="assets/img/tour-travel/bus-on.png" alt="Bus" class="bus-img d-none d-md-block" onerror="this.style.display='none'" />
       <h2 class="bus-title">Bus Booking</h2>
       <p class="bus-subtitle">
         Convenient bus booking services for intercity and interstate travel with multiple operator options.
@@ -1575,7 +1575,7 @@ include_once ('elements/header.php');
  
       <!-- LEFT: Image -->
       <div class="col-lg-5 taxi-img-col">
-        <img src="assets/img/taxi-customer.png" alt="Taxi Booking" class="taxi-main-img" />
+        <img src="assets/img/tour-travel/taxi-customer.png" alt="Taxi Booking" class="taxi-main-img" />
       </div>
  
       <!-- RIGHT: Content -->
@@ -1585,7 +1585,7 @@ include_once ('elements/header.php');
         <div class="taxi-watermark">Cabs</div>
  
         <!-- floating taxi car -->
-        <img src="assets/img/taxi-on.png" alt="Taxi Car" class="taxi-car-img d-none d-md-block" onerror="this.style.display='none'" />
+        <img src="assets/img/tour-travel/taxi-on.png" alt="Taxi Car" class="taxi-car-img d-none d-md-block" onerror="this.style.display='none'" />
  
         <div class="taxi-inner p-4">
           <h2 class="taxi-title">Taxi Booking</h2>
@@ -2078,7 +2078,7 @@ include_once ('elements/header.php');
  
       <!-- LEFT: scene image -->
       <div class="hp-left">
-        <img class="hp-scene-img" src="assets/img/holiday-package.png" alt="Holiday Scene" onerror="this.src=''" />
+        <img class="hp-scene-img" src="assets/img/tour-travel/holiday-package.png" alt="Holiday Scene" onerror="this.src=''" />
       </div>
  
       <!-- RIGHT: 3×2 grid -->
@@ -2611,21 +2611,21 @@ include_once ('elements/header.php');
                   <!-- Top Left -->
                   <div class="col-6">
                       <div class="sightseeing-tour-card sightseeing-tour-small">
-                          <img src="https://picsum.photos/400/300?1" alt="">
+                          <img src="assets/img/tour-travel/sightseeing-1.png" alt="">
                       </div>
                   </div>
 
                   <!-- Right Large -->
                   <div class="col-6">
                       <div class="sightseeing-tour-card sightseeing-tour-large">
-                          <img src="https://picsum.photos/400/600?2" alt="">
+                          <img src="assets/img/tour-travel/sightseeing-2.png" alt="">
                       </div>
                   </div>
 
                   <!-- Bottom Left -->
-                  <div class="col-6">
+                  <div class="col-6" style="position: relative; margin-top: -215px;">
                       <div class="sightseeing-tour-card sightseeing-tour-small">
-                          <img src="https://picsum.photos/400/300?3" alt="">
+                          <img src="assets/img/tour-travel/sightseeing-3.png" alt="">
                       </div>
                   </div>
 
@@ -2639,34 +2639,15 @@ include_once ('elements/header.php');
 <!-- Tour Package Section -->
 <style>
   .tour-package-section {
+      padding: 80px 0;
       position: relative;
-      padding: 100px 0;
-      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
       overflow: hidden;
-  }
-
-  /* Background Image */
-  .tour-package-bg {
-      position: absolute;
-      inset: 0;
-      z-index: 1;
-  }
-
-  .tour-package-bg img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-  }
-
-  /* Overlay */
-  .tour-package-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-          rgba(37,53,111,0.75),
-          rgba(37,53,111,0.85)
-      );
-      z-index: 2;
+      background-size: cover;
+      background-image: url('assets/img/background/holiday-tour-package.png');
+      background-repeat: round;
   }
 
   /* Content */
@@ -2674,7 +2655,6 @@ include_once ('elements/header.php');
       position: relative;
       z-index: 3;
       text-align: center;
-      max-width: 900px;
       margin: auto;
   }
 
@@ -2693,17 +2673,16 @@ include_once ('elements/header.php');
 
   /* Heading */
   .tour-package-title {
-      font-size: 40px;
-      font-weight: 700;
-      margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
   }
 
   /* Text */
   .tour-package-text {
-      font-size: 16px;
-      line-height: 1.8;
-      margin-bottom: 15px;
-      color: #e5e5e5;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 15px;
   }
 
   /* Bottom Image Accent (Optional subtle fade) */
@@ -2744,14 +2723,6 @@ include_once ('elements/header.php');
 </style>
 
 <section id="guide-tour-section" class="tour-package-section">
-
-    <!-- Background -->
-    <div class="tour-package-bg">
-        <img src="https://picsum.photos/1600/700?travel" alt="">
-    </div>
-
-    <!-- Overlay -->
-    <div class="tour-package-overlay"></div>
 
     <!-- Content -->
     <div class="container">

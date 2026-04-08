@@ -4,12 +4,12 @@ include_once('elements/header.php');
  
  
 <!-- HERO -->
- <section class="top-banner-background" style="background-image: url('assets/img/background/about-us-bg.png');">
-   <div>
-     <h1 class="mb-0">Careers at Euphoria Goup</h1>
-     <p class="text-black text-center mt-2">Build a Carrer That Grows With Purpose And Global Opportunities.</p>
-   </div>
- </section>
+<section class="top-banner-background" style="background-image: url('assets/img/background/career.png');">
+<div>
+    <h1 class="mb-0">Careers at Euphoria Goup</h1>
+    <p class="text-black text-center mt-2">Build a Carrer That Grows With Purpose And Global Opportunities.</p>
+</div>
+</section>
 
 <style>
     /* ── SECTION ── */
@@ -143,7 +143,7 @@ include_once('elements/header.php');
             <div class="col-12 col-md-6">
                 <div class="video-wrap" data-bs-toggle="modal" data-bs-target="#videoModal">
                     <img
-                        src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=900&q=80"
+                        src="assets/img/career/career.png"
                         alt="Euphoria Group team walking in a modern corridor" />
                     <div class="play-btn">
                         <svg width="26" height="26" viewBox="0 0 24 24" fill="var(--navy)">

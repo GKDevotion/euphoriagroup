@@ -19,7 +19,6 @@ include_once('elements/header.php');
     .back-link:hover {
         gap: 10px;
         color:  #e03131;
-;
     }
 
     /* ── HERO CARD ── */
@@ -261,7 +260,7 @@ include_once('elements/header.php');
             <!-- Hero Card -->
             <div class="hero-card">
                 <div class="hero-img-wrap">
-                    <img src="https://picsum.photos/600/400" alt="Turtle illustration" />
+                    <img src="assets/img/blog/blog-detail.png" alt="Turtle illustration" />
                 </div>
             </div>
 

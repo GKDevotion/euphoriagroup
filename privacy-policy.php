@@ -2,102 +2,16 @@
 include_once ('elements/header.php');
 ?>
 
-<style>
-    .hero-section {
-        position: relative;
-        height: 50vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        overflow: hidden;
-        margin-top: 120px;
-    }
-
-    .hero-bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        filter: brightness(0.75);
-    }
-
-    img, svg {
-        vertical-align: middle;
-    }
-
-    .hero-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6));
-        backdrop-filter: blur(2px);
-    }
-
-    .hero-blur {
-        position: absolute;
-        width: 250px;
-        height: 250px;
-        background: var(--red-blur);
-        filter: blur(90px);
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1;
-    }
-
-    .hero-content {
-        position: relative;
-        z-index: 2;
-    }
-
-    .hero-title {
-        font-size: clamp(28px, 5vw, 48px);
-        font-weight: 700;
-        color: var(--euphoria-blue);
-    }
-
-    .hero-subtitle {
-        font-size: 16px;
-        color: var(--text-dark);
-        margin-top: 10px;
-    }
-
-    @media(max-width:768px){
-        .hero-section{
-            height:60vh;
-        }
-        .hero-subtitle{
-            font-size:14px;
-        }
-    }
-</style>
-<!-- Hero Section -->
-<section class="hero-section">
-
-    <!-- Background Image -->
-    <img src="https://picsum.photos/1920/800?business" class="hero-bg" alt="Corporate">
-
-    <!-- Overlay -->
-    <div class="hero-overlay"></div>
-
-    <!-- Blur effect -->
-    <div class="hero-blur"></div>
-
-    <!-- Content -->
-    <div class="hero-content container">
-        <h1 class="hero-title animate__animated animate__fadeInDown">
-            Privacy Policy
+<!-- HERO -->
+<section class="top-banner-background" style="background-image: url('assets/img/background/building.png');">
+    <div>
+        <h1 class="mb-0">
+             Privacy Policy
         </h1>
-        <p class="d-none hero-subtitle animate__animated animate__fadeInUp">
+        <p class="text-black text-center mt-2">
             Welcome to the Euphoria Group
         </p>
     </div>
-
 </section>
 
 <style>

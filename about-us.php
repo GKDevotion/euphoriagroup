@@ -239,13 +239,7 @@
        <!-- Left: Image -->
        <div class="col-md-5">
          <div class="vision-img-wrap">
-           <!--
-            Replace the src below with your actual image path.
-            The image should show the businessman on a red paper plane
-            over a cityscape (as in the original design).
-          -->
-           <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
-             alt="Vision – man looking through telescope over city skyline" />
+           <img src="assets/img/about-us/shaping-future.png" alt="Vision – man looking through telescope over city skyline" />
          </div>
        </div>
 
@@ -308,13 +302,7 @@
        <!-- Left: Image -->
        <div class="col-md-5">
          <div class="vision-img-wrap">
-           <!--
-            Replace the src below with your actual image path.
-            The image should show the businessman on a red paper plane
-            over a cityscape (as in the original design).
-          -->
-           <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
-             alt="Vision – man looking through telescope over city skyline" />
+           <img src="assets/img/about-us/strategic-purpose.png" alt="Vision – man looking through telescope over city skyline" />
          </div>
        </div>
 
@@ -738,8 +726,7 @@
        <!-- Left: Image -->
        <div class="col-lg-6">
          <div class="img-wrapper">
-           <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80"
-             alt="Euphoria Group team meeting" />
+           <img src="assets/img/about-us/indian-business.png" alt="Euphoria Group team meeting" />
          </div>
        </div>
 
@@ -1022,7 +1009,7 @@
        <div class="col-lg-5">
          <h2 class="section-title mb-4">The Euphoria Mindset</h2>
          <div class="image-box">
-           <img src="https://picsum.photos/id/1015/600/500" alt="Euphoria Mindset">
+           <img src="assets/img/about-us/mind-set.png" alt="Euphoria Mindset">
          </div>
        </div>
 
@@ -1276,7 +1263,7 @@
        <div class="col-lg-4 col-md-6">
          <div class="team-card">
            <div class="card-img-wrapper">
-             <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Milan Jasoliya" />
+             <img src="assets/img/team/person-1.png" alt="Milan Jasoliya" />
              <div class="social-overlay">
                <a href="#" class="social-btn linkedin" title="LinkedIn">
                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
@@ -1306,7 +1293,7 @@
        <div class="col-lg-4 col-md-6">
          <div class="team-card">
            <div class="card-img-wrapper">
-             <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Archit Dhola" />
+             <img src="assets/img/team/person-1.png" alt="Archit Dhola" />
              <div class="social-overlay">
                <a href="#" class="social-btn linkedin" title="LinkedIn">
                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
@@ -1336,7 +1323,7 @@
        <div class="col-lg-4 col-md-6">
          <div class="team-card">
            <div class="card-img-wrapper">
-             <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Romit Lathiya" />
+             <img src="assets/img/team/person-1.png" alt="Romit Lathiya" />
              <div class="social-overlay">
                <a href="#" class="social-btn linkedin" title="LinkedIn">
                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
@@ -1560,7 +1547,7 @@
            <div class="swiper-slide">
              <div class="member-card">
                <div class="photo-wrap">
-                 <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Rajvi Anghan" />
+                 <img src="assets/img/team/person-2.png" alt="Rajvi Anghan" />
                </div>
                <p class="name">Rajvi Anghan</p>
                <p class="role">Visa Applicant</p>
@@ -1571,7 +1558,7 @@
            <div class="swiper-slide">
              <div class="member-card">
                <div class="photo-wrap">
-                 <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Krupali Maru" />
+                 <img src="assets/img/team/person-2.png" alt="Krupali Maru" />
                </div>
                <p class="name">Krupali Maru</p>
                <p class="role">BDE</p>
@@ -1582,7 +1569,7 @@
            <div class="swiper-slide">
              <div class="member-card">
                <div class="photo-wrap">
-                 <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Dharti Mangukiya" />
+                 <img src="assets/img/team/person-2.png" alt="Dharti Mangukiya" />
                </div>
                <p class="name">Dharti Mangukiya</p>
                <p class="role">Creative Designer</p>
@@ -1593,7 +1580,7 @@
            <div class="swiper-slide">
              <div class="member-card">
                <div class="photo-wrap">
-                 <img src="https://randomuser.me/api/portraits/women/72.jpg" alt="Yana Samniwala" />
+                 <img src="assets/img/team/person-2.png" alt="Yana Samniwala" />
                </div>
                <p class="name">Yana Samniwala</p>
                <p class="role">Tourism Consultant</p>
@@ -1604,7 +1591,7 @@
            <div class="swiper-slide">
              <div class="member-card">
                <div class="photo-wrap">
-                 <img src="https://randomuser.me/api/portraits/women/57.jpg" alt="Janvi Goyani" />
+                 <img src="assets/img/team/person-2.png" alt="Janvi Goyani" />
                </div>
                <p class="name">Janvi Goyani</p>
                <p class="role">BDE</p>
@@ -1615,7 +1602,7 @@
            <div class="swiper-slide">
              <div class="member-card">
                <div class="photo-wrap">
-                 <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Priya Shah" />
+                 <img src="assets/img/team/person-2.png" alt="Priya Shah" />
                </div>
                <p class="name">Priya Shah</p>
                <p class="role">Marketing Lead</p>
@@ -1626,7 +1613,7 @@
            <div class="swiper-slide">
              <div class="member-card">
                <div class="photo-wrap">
-                 <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="Minal Desai" />
+                 <img src="assets/img/team/person-2.png" alt="Minal Desai" />
                </div>
                <p class="name">Minal Desai</p>
                <p class="role">HR Manager</p>
@@ -2045,7 +2032,7 @@
                    Euphoria Group. They helped us identify the right property aligned with our long-term goals.</p>
                </div>
                <div class="testimonial-author">
-                 <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Karan Malhotra" />
+                 <img src="assets/img/team/person-1.png" alt="Karan Malhotra" />
                  <div>
                    <div class="author-name">Karan Malhotra</div>
                    <div class="author-role">Business Owner</div>
@@ -2063,7 +2050,7 @@
                    was responsive, knowledgeable, and truly had our best interests at heart throughout.</p>
                </div>
                <div class="testimonial-author">
-                 <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya Sharma" />
+                 <img src="assets/img/team/person-2.png" alt="Priya Sharma" />
                  <div>
                    <div class="author-name">Priya Sharma</div>
                    <div class="author-role">IT Professional</div>
@@ -2081,7 +2068,7 @@
                    I wouldn't trust anyone else for real estate guidance. Truly exceptional service.</p>
                </div>
                <div class="testimonial-author">
-                 <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Arjun Mehta" />
+                 <img src="assets/img/team/person-1.png" alt="Arjun Mehta" />
                  <div>
                    <div class="author-name">Arjun Mehta</div>
                    <div class="author-role">Entrepreneur</div>
@@ -2099,7 +2086,7 @@
                    within our budget and timeline. Highly recommend Euphoria Group to anyone searching for property.</p>
                </div>
                <div class="testimonial-author">
-                 <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Neha Kapoor" />
+                 <img src="assets/img/team/person-2.png" alt="Neha Kapoor" />
                  <div>
                    <div class="author-name">Neha Kapoor</div>
                    <div class="author-role">Doctor</div>
@@ -2117,7 +2104,7 @@
                    clarity. Their transparent advice gave us confidence throughout the entire buying journey.</p>
                </div>
                <div class="testimonial-author">
-                 <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Rohit Jain" />
+                 <img src="assets/img/team/person-1.png" alt="Rohit Jain" />
                  <div>
                    <div class="author-name">Rohit Jain</div>
                    <div class="author-role">Software Engineer</div>

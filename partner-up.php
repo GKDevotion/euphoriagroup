@@ -3,7 +3,7 @@ include_once('elements/header.php');
 ?>
   
 <!-- HERO -->
- <section class="top-banner-background" style="background-image: url('assets/img/background/about-us-bg.png');">
+ <section class="top-banner-background" style="background-image: url('assets/img/background/become-partner.png');">
    <div>
      <h1 class="mb-0 text-center">Become A Partner</h1>
      <p class="text-black text-center mt-2">Join Hands With us to unlock new business opportunities and mutual growth.</p>
@@ -120,7 +120,7 @@ include_once('elements/header.php');
             <div class="col-lg-6">
                 <div class="illustration-wrap">
                     <img
-                        src="https://picsum.photos/520/400"
+                        src="assets/img/become-partner/become-partner.png"
                         alt="Two business professionals shaking hands"
                         class="img-fluid" />
                 </div>
@@ -242,7 +242,7 @@ include_once('elements/header.php');
                 <!-- Card 1: Transparent Business Model -->
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="feature-card h-100">
-                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&q=80"
+                        <img src="assets/img/become-partner/business-model.png"
                             class="card-img-top" alt="Transparent Business Model">
                         <div class="card-body">
                             <h5 class="card-title">Transparent business model</h5>
@@ -258,7 +258,7 @@ include_once('elements/header.php');
                 <!-- Card 2: High-growth Prospects -->
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="feature-card h-100">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80"
+                        <img src="assets/img/become-partner/hight-risk.png"
                             class="card-img-top" alt="High-growth Prospects">
                         <div class="card-body">
                             <h5 class="card-title">High-growth prospects</h5>
@@ -274,7 +274,7 @@ include_once('elements/header.php');
                 <!-- Card 3: Dedicated Partner Support -->
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="feature-card h-100">
-                        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&q=80"
+                        <img src="assets/img/become-partner/support.png"
                             class="card-img-top" alt="Dedicated Partner Support">
                         <div class="card-body">
                             <h5 class="card-title">Dedicated Partner Support</h5>
@@ -290,7 +290,7 @@ include_once('elements/header.php');
                 <!-- Card 4: Advantages -->
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="feature-card h-100">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80"
+                        <img src="assets/img/become-partner/advantage.png"
                             class="card-img-top" alt="Advantages">
                         <div class="card-body">
                             <h5 class="card-title">Advantages</h5>
@@ -512,7 +512,7 @@ include_once('elements/header.php');
 
                         <div class="col-md-3">
                             <div class="tab-img-col">
-                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&q=80" alt="Corporate Consultants" />
+                                <img src="assets/img/become-partner/real-estate.png" alt="Corporate Consultants" />
                             </div>
                         </div>
 
@@ -549,7 +549,7 @@ include_once('elements/header.php');
                     <div class="tab-inner-grid">
                         <div class="col-md-3">
                             <div class="tab-img-col">
-                                <img src="https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=400&q=80" alt="Travel and Tourism" />
+                                <img src="assets/img/become-partner/real-estate.png" alt="Travel and Tourism" />
                             </div>
                         </div>
                         <div class="tab-text-col">
@@ -585,7 +585,7 @@ include_once('elements/header.php');
                     <div class="tab-inner-grid">
                         <div class="col-md-3">
                             <div class="tab-img-col">
-                                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&q=80" alt="Real Estate Professionals" />
+                                <img src="assets/img/become-partner/real-estate.png" alt="Real Estate Professionals" />
                             </div>
                         </div>
                         <div class="tab-text-col">
@@ -621,7 +621,7 @@ include_once('elements/header.php');
                     <div class="tab-inner-grid">
                         <div class="col-md-3">
                             <div class="tab-img-col">
-                                <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&q=80" alt="Investment Advisors" />
+                                <img src="assets/img/become-partner/real-estate.png" alt="Investment Advisors" />
                             </div>
                         </div>
                         <div class="tab-text-col">

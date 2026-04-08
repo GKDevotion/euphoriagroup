@@ -100,9 +100,9 @@ include_once ('elements/header.php');
 <!-- Visa Submit Form -->
 <style>
   /* SECTION */
-  .visa-form-section{
-      padding: 50px 0 80px 0;
-  }
+    .visa-form-section{
+        padding: 50px 0 80px 0;
+    }
 
   /* BOX */
   .visa-box{

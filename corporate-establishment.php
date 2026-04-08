@@ -184,8 +184,7 @@ include_once('elements/header.php');
             <!-- Left: Image -->
             <div class="col-12 col-md-4 img-col">
                 <img
-                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&q=80"
-                    alt="Business professionals with city skyline" />
+                    src="assets/img/corporate-establishment/img-2.png" alt="Business professionals with city skyline" />
             </div>
 
             <!-- Right: Text -->
@@ -961,7 +960,7 @@ include_once('elements/header.php');
                 <!-- Slide 1 -->
                 <div class="swiper-slide">
                     <div class="benefit-card-alliance">
-                        <div class="card-bg" style="background-image:url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80');"></div>
+                        <div class="card-bg" style="background-image:url('assets/img/corporate-establishment/llp-reg-1.png');"></div>
                         <div class="card-overlay"></div>
                         <div class="card-content">
                             <h3 class="card-title-alliance">Limited Liability Protection</h3>
@@ -973,7 +972,7 @@ include_once('elements/header.php');
                 <!-- Slide 2 -->
                 <div class="swiper-slide">
                     <div class="benefit-card-alliance">
-                        <div class="card-bg" style="background-image:url('https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=800&q=80');"></div>
+                        <div class="card-bg" style="background-image:url('assets/img/corporate-establishment/llp-reg-2.png');"></div>
                         <div class="card-overlay"></div>
                         <div class="card-content">
 
@@ -986,7 +985,7 @@ include_once('elements/header.php');
                 <!-- Slide 3 -->
                 <div class="swiper-slide">
                     <div class="benefit-card-alliance">
-                        <div class="card-bg" style="background-image:url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80');"></div>
+                        <div class="card-bg" style="background-image:url('assets/img/corporate-establishment/llp-reg-3.png');"></div>
                         <div class="card-overlay"></div>
                         <div class="card-content">
 
@@ -999,7 +998,7 @@ include_once('elements/header.php');
                 <!-- Slide 4 -->
                 <div class="swiper-slide">
                     <div class="benefit-card-alliance">
-                        <div class="card-bg" style="background-image:url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80');"></div>
+                        <div class="card-bg" style="background-image:url('assets/img/corporate-establishment/llp-reg-4.png');"></div>
                         <div class="card-overlay"></div>
                         <div class="card-content">
 
@@ -1012,7 +1011,7 @@ include_once('elements/header.php');
                 <!-- Slide 5 -->
                 <div class="swiper-slide">
                     <div class="benefit-card-alliance">
-                        <div class="card-bg" style="background-image:url('https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&q=80');"></div>
+                        <div class="card-bg" style="background-image:url('assets/img/corporate-establishment/llp-reg-5.png');"></div>
                         <div class="card-overlay"></div>
                         <div class="card-content">
 
@@ -1022,18 +1021,6 @@ include_once('elements/header.php');
                     </div>
                 </div>
 
-                <!-- Slide 6 -->
-                <div class="swiper-slide">
-                    <div class="benefit-card-alliance">
-                        <div class="card-bg" style="background-image:url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80');"></div>
-                        <div class="card-overlay"></div>
-                        <div class="card-content">
-
-                            <h3 class="card-title-alliance">Perpetual Succession</h3>
-                            <p class="card-desc-alliance">The LLP continues to exist even if partners change, ensuring business continuity and stability.</p>
-                        </div>
-                    </div>
-                </div>
 
             </div><!-- /.swiper-wrapper -->
 
@@ -1301,8 +1288,7 @@ include_once('elements/header.php');
             <div class="col-lg-4">
                 <div class="img-wrapper">
                     <img
-                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80"
-                        alt="Solo Entrepreneur" />
+                        src="assets/img/corporate-establishment/opc.png" alt="Solo Entrepreneur" />
                 </div>
             </div>
 
@@ -1688,7 +1674,7 @@ include_once('elements/header.php');
             <div class="col-lg-6">
                 <div class="img-wrapper-ownership">
                     <img
-                        src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80"
+                        src="assets/img/corporate-establishment/pro-setup.png"
                         alt="Proprietorship Setup" />
                 </div>
             </div>
@@ -2266,7 +2252,7 @@ include_once('elements/header.php');
             <div class="col-lg-4 d-none d-lg-flex">
                 <div class="np-img-wrap w-100">
                     <img
-                        src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=800&q=80"
+                        src="assets/img/corporate-establishment/ngo-trust.png"
                         alt="Hands holding a seedling — symbol of non-profit growth" />
                 </div>
             </div><!-- /CENTER -->
@@ -2311,88 +2297,11 @@ include_once('elements/header.php');
     /* ── Banner ── */
     .si-banner {
         position: relative;
-        background: #f7f8fc;
         overflow: hidden;
-        padding: 72px 0 80px;
-    }
-
-    /* ────── Background decorations ────── */
-
-    /* Faded "startup" watermark text */
-    .si-banner__watermark {
-        position: absolute;
-        left: 300px;
-        top: 70%;
-        transform: translateY(-50%);
-        font-size: clamp(4rem, 10vw, 5rem);
-        font-weight: 800;
-        color: rgba(192, 57, 43, 0.07);
-        white-space: nowrap;
-        pointer-events: none;
-        user-select: none;
-        letter-spacing: -2px;
-        line-height: 1;
-    }
-
-    /* India flag colour stripe — top right */
-    .si-banner__stripe {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 340px;
-        height: 100%;
-        pointer-events: none;
-        overflow: hidden;
-    }
-
-    .si-banner__stripe::before,
-    .si-banner__stripe::after,
-    .si-banner__stripe span {
-        content: '';
-        position: absolute;
-        right: -60px;
-        width: 400px;
-        height: 14px;
-        border-radius: 8px;
-        opacity: 0.18;
-        transform: rotate(-38deg);
-    }
-
-    .si-banner__stripe::before {
-        background: #ff9933;
-        top: 28%;
-    }
-
-    .si-banner__stripe::after {
-        background: #138808;
-        top: calc(28% + 22px);
-    }
-
-    .si-banner__stripe span {
-        display: block;
-        background: #3498db;
-        top: calc(28% + 44px);
-    }
-
-    /* Ashoka Chakra faint circle — right side */
-    .si-banner__chakra {
-        position: absolute;
-        right: 60px;
-        top: 50%;
-        transform: translateY(-50%);
-        width: clamp(120px, 18vw, 220px);
-        height: clamp(120px, 18vw, 220px);
-        border-radius: 50%;
-        border: 2px solid rgba(0, 0, 128, 0.08);
-        pointer-events: none;
-    }
-
-    .si-banner__chakra::before {
-        content: '';
-        position: absolute;
-        inset: 10px;
-        border-radius: 50%;
-        border: 1.5px dashed rgba(0, 0, 128, 0.07);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 80px 0;
+        background-image: url('assets/img/background/startup-india.png');
     }
 
     /* Bracket / L-shape decorative marks */
@@ -2441,11 +2350,6 @@ include_once('elements/header.php');
 </style>
 
 <section class="si-banner mb-5">
-
-    <!-- Decorative bg elements -->
-    <span class="si-banner__watermark">startupindia</span>
-    <div class="si-banner__stripe"><span></span></div>
-    <div class="si-banner__chakra"></div>
 
     <div class="container">
         <div class="row justify-content-center">
