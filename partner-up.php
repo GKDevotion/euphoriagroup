@@ -3,7 +3,7 @@ include_once('elements/header.php');
 ?>
   
 <!-- HERO -->
- <section class="top-banner-background" style="background-image: url('assets/img/background/about-us-bg.png');">
+ <section class="top-banner-background" style="background-image: url('assets/img/background/Become-a-partner.png');">
    <div>
      <h1 class="mb-0 text-center">Become A Partner</h1>
      <p class="text-black text-center mt-2">Join Hands With us to unlock new business opportunities and mutual growth.</p>
