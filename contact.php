@@ -127,7 +127,10 @@ include_once('elements/header.php');
         overflow: hidden;
         position: relative;
         min-height: 590px;
-        background: url('../euphoriagroup/assets/img//background/Contact-us.png') center/cover no-repeat;
+        background: url('assets/img//background/Contact-us.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .image-overlay {
