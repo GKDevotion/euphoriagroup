@@ -4,7 +4,7 @@ include_once('elements/header.php');
  
  
 <!-- HERO -->
- <section class="top-banner-background" style="background-image: url('assets/img/background/about-us-bg.png');">
+ <section class="top-banner-background" style="background-image: url('assets/img/background/Career.png');">
    <div>
      <h1 class="mb-0">Careers at Euphoria Goup</h1>
      <p class="text-black text-center mt-2">Build a Carrer That Grows With Purpose And Global Opportunities.</p>

@@ -127,7 +127,7 @@ include_once('elements/header.php');
         overflow: hidden;
         position: relative;
         min-height: 590px;
-        background: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80') center/cover no-repeat;
+        background: url('../euphoriagroup/assets/img//background/Contact-us.png') center/cover no-repeat;
     }
 
     .image-overlay {
