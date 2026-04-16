@@ -3,7 +3,7 @@ include_once('elements/header.php');
 ?>
 
 <!-- HERO -->
- <section class="top-banner-background" style="background-image: url('assets/img/background/about-us-bg.png');">
+ <section class="top-banner-background" style="background-image: url('assets/img/background/Corporate-establishment.png');">
    <div>
      <h1 class="mb-0 text-center">Corporate Establishment</h1>
      <p class="text-black text-center mt-2">End-to-end support support for setting up legally compliant business entities.</p>

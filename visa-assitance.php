@@ -3,7 +3,7 @@ include_once ('elements/header.php');
 ?>
 
 <!-- Hero Section -->
-<section class="top-banner-background" style="background-image: url('assets/img/background/visa-assistance.png');">
+<section class="top-banner-background" style="background-image: url('assets/img/background/Get-visa-assistance.png');">
   <div>
     <h1 class="mb-0">Get Visa Assistance</h1>
     <p class="text-black text-center mt-2">

@@ -3,7 +3,7 @@ include_once('elements/header.php');
 ?>
  
 <!-- HERO -->
- <section class="top-banner-background" style="background-image: url('assets/img/background/blog.png');">
+ <section class="top-banner-background" style="background-image: url('assets/img/background/Blog.png');">
    <div>
      <h1 class="mb-0 text-center">Our Latest Blog</h1>
      <p class="text-black text-center mt-2">Stay updated with the latest insight, trends, and Blogs to grow your business</p>
