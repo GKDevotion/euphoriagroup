@@ -1,17 +1,17 @@
 <?php
 include_once('elements/header.php');
 ?>
-  
+
 <!-- HERO -->
- <section class="top-banner-background" style="background-image: url('assets/img/background/Become-a-partner.png');">
-   <div>
-     <h1 class="mb-0 text-center">Become A Partner</h1>
-     <p class="text-black text-center mt-2">Join Hands With us to unlock new business opportunities and mutual growth.</p>
-   </div>
- </section>
+<section class="top-banner-background" style="background-image: url('assets/img/background/Become-a-partner.png');">
+    <div>
+        <h1 class="mb-0 text-center">Become A Partner</h1>
+        <p class="text-black text-center mt-2">Join Hands With us to unlock new business opportunities and mutual growth.</p>
+    </div>
+</section>
 
 <style>
-      /* ── HERO ── */
+    /* ── HERO ── */
     .become-partner {
         position: relative;
         top: 88px;
@@ -89,26 +89,41 @@ include_once('elements/header.php');
     }
 
     /* ── Responsive tweaks ── */
-    @media (max-width: 991.98px) {
-        .map-bg {
-            width: 100%;
+    @media (max-width: 576px) {
+
+        .partnership-section {
+            padding: 50px 0;
         }
 
+        /* Stack properly */
+        .partnership-section .row {
+            flex-direction: column;
+        }
+
+        /* Image fix */
+        .illustration-wrap {
+            min-height: auto;
+        }
+
+        .illustration-wrap img {
+            height: auto;
+            max-height: 260px;
+            object-fit: contain;
+            /* IMPORTANT */
+        }
+
+        /* Text section */
         .content-col {
-            padding-left: 1rem;
-            padding-top: 2rem;
-        }
-
-        .content-col::before {
-            margin: 0 auto 1.4rem;
-        }
-
-        .content-col {
-            align-items: center;
+            padding: 25px 15px 0;
             text-align: center;
         }
-    }
 
+        .content-col p {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+    }
 </style>
 
 <section class="partnership-section">
@@ -154,7 +169,7 @@ include_once('elements/header.php');
 </section>
 
 <style>
-   /* Section */
+    /* Section */
     .revenue-strategy {
         position: relative;
         padding: 100px 0 0px;
@@ -228,6 +243,60 @@ include_once('elements/header.php');
         text-align: center;
     }
 
+    /* Mobile (≤576px) */
+    @media (max-width: 576px) {
+
+        .revenue-strategy {
+            padding: 60px 0 20px;
+        }
+
+        /* Watermark fix */
+        .revenue-strategy::before {
+            font-size: 40px;
+            top: 34px;
+            opacity: 0.2;
+        }
+
+        /* Heading */
+        .revenue-heading {
+            font-size: 1rem;
+            margin-bottom: 30px;
+            padding: 0 10px;
+        }
+
+        /* Card spacing */
+        .row.g-4 {
+            gap: 16px;
+        }
+
+        /* Card */
+        .feature-card {
+            border-radius: 12px;
+        }
+
+        /* Image fix */
+        .feature-card .card-img-top {
+            height: 160px;
+            /* smaller */
+            object-fit: cover;
+        }
+
+        /* Body */
+        .card-body {
+            padding: 18px 16px 20px;
+        }
+
+        .card-title {
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+
+        .card-text {
+            font-size: 0.85rem;
+            /* FIX (was too small) */
+            line-height: 1.6;
+        }
+    }
 </style>
 
 <section class="revenue-strategy">
@@ -311,7 +380,6 @@ include_once('elements/header.php');
 </section>
 
 <style>
-
     /* Section */
     .our-partner {
         position: relative;
@@ -492,6 +560,104 @@ include_once('elements/header.php');
         text-decoration: none;
         width: 22%;
         /* PUSH TO BOTTOM */
+    }
+
+    /* Mobile (≤576px) */
+    @media (max-width: 576px) {
+
+        .our-partner {
+            padding: 60px 0 20px;
+        }
+
+        /* Watermark */
+        .our-partner::before {
+            font-size: 55px;
+            top: 27px;
+            opacity: 0.2;
+        }
+
+        .partner-heading {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+        }
+
+        /* Force ALL tabs open */
+        .partner-tab {
+            flex: 1 1 100% !important;
+        }
+
+        .partner-tab .tab-content-inner {
+            opacity: 1 !important;
+            pointer-events: auto !important;
+            display: block !important;
+        }
+
+        /* Remove active dependency */
+        .partner-tab.active {
+            flex: 1 1 100% !important;
+        }
+
+        /* Wrapper becomes vertical */
+        .partners-wrapper {
+            flex-direction: column;
+            gap: 16px;
+            min-height: auto;
+        }
+
+        /* Tabs become full cards */
+        .partner-tab {
+            flex: 1 1 100%;
+            height: auto;
+            border-radius: 14px;
+            padding: 15px;
+        }
+
+        /* REMOVE vertical label */
+        .tab-label {
+            display: none;
+        }
+
+        /* Always show content */
+        .tab-content-inner {
+            opacity: 1 !important;
+            pointer-events: auto;
+            padding: 0;
+        }
+
+        /* Inner layout becomes vertical */
+        .tab-inner-grid {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Image fix */
+        .tab-img-col {
+            flex: 100%;
+        }
+
+        .tab-img-col img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* Text */
+        .tab-text-col h4 {
+            font-size: 1rem;
+        }
+
+        .tab-text-col p {
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+
+        /* Button full width */
+        .btn-meeting {
+            width: 100%;
+            justify-content: center;
+            margin-top: 10px;
+        }
     }
 </style>
 

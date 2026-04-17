@@ -5,23 +5,39 @@ include_once ('elements/home-slider.php');
 
 <!-- Start Image Slider SHELL -->
 <style>
-    .euphoria-section {
-        padding: 80px 0 50px;
+   .euphoria-section {
+    padding: 40px 0;
+    }
+
+    /* Make horizontal scroll on mobile */
+    .euphoria-row {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        overflow-x: auto;
+        flex-wrap: nowrap; /* KEY FIX */
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Hide scrollbar (optional clean look) */
+    .euphoria-row::-webkit-scrollbar {
+        display: none;
     }
 
     .logo-img {
-        max-height: 60px;
+        max-height: 50px;
+        min-width: 120px; /* keeps proper spacing */
     }
 
     .star-img {
-        width: 20px;
-        height: 20px;
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
     }
 
-    /* Hide first & last star on mobile */
-    @media (max-width: 767px) {
-        .star-first,
-        .star-last {
+    /* Optional: hide stars on very small screens */
+    @media (max-width: 576px) {
+        .star-img {
             display: none;
         }
     }
@@ -211,7 +227,7 @@ include_once ('elements/home-slider.php');
 </section>
 
 <!-- Start Our Success Section-->
-<section class="our-success-banner about-section">
+<section class="our-success-banner ">
   <h2 class="about-title h1">The Euphoria Timeline</h2>
   <div class="stats-row">
 
