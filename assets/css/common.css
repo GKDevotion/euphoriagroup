@@ -2,73 +2,112 @@
  * Top side background image
  */
 .top-banner-background {
-    position: relative;
-    min-height: 55vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 120px;
+  position: relative;
+  min-height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 120px;
 }
 
-.top-banner-background h1{
-    font-size: 65px !important;
+.top-banner-background h1 {
+  font-size: 65px !important;
 }
 
-.top-banner-background p{
-    font-size: 20px !important;
+.top-banner-background p {
+  font-size: 20px !important;
+}
+/* ── TABLET (max 991px) ── */
+@media (max-width: 991.98px) {
+  .top-banner-background {
+    min-height: 45vh;
+    margin-top: 90px;
+  }
+
+  .top-banner-background h1 {
+    font-size: 48px !important;
+    line-height: 1.2;
+  }
+
+  .top-banner-background p {
+    font-size: 18px !important;
+  }
 }
 
-.custom-tabs{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      justify-content:center;
-      margin-bottom:40px;
+/* ── MOBILE (max 575px) ── */
+@media (max-width: 575.98px) {
+  .top-banner-background {
+    min-height: 40vh;
+    margin-top: 75px;
+    background-position: center center;
+    padding: 30px 20px;
   }
 
-  .custom-tabs a{
-      border:none;
-      padding:10px 10px;
-      border-radius:5px;
-      background:#eee;
-      color:#333;
-      font-size:14px;
-      transition:0.3s;
-      text-decoration: none;
+  .top-banner-background h1 {
+    font-size: 2.2rem !important; /* ~35px — fits in 1–2 lines max */
+    line-height: 1.25;
+    text-align: center;
+    margin-bottom: 12px;
   }
 
-  .custom-tabs a.active{
-      background:var(--euphoria-blue);
-      color:#fff;
+  .top-banner-background p {
+    font-size: 15px !important;
+    text-align: center;
+    line-height: 1.5;
+    padding: 0 10px;
   }
+}
+.custom-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
 
-  .custom-tabs a:hover{
-      background:var(--euphoria-blue);
-      color:#fff;
-  }
+.custom-tabs a {
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  background: #eee;
+  color: #333;
+  font-size: 14px;
+  transition: 0.3s;
+  text-decoration: none;
+}
 
-  /* Content Section */
-  .content-section{
-      padding:40px 0;
-  }
+.custom-tabs a.active {
+  background: var(--euphoria-blue);
+  color: #fff;
+}
 
-  .corporate-content-box{
-      display:none;
-  }
+.custom-tabs a:hover {
+  background: var(--euphoria-blue);
+  color: #fff;
+}
 
-  .corporate-content-box.active{
-      display:block;
-  }
+/* Content Section */
+.content-section {
+  padding: 40px 0;
+}
 
-  .illustration{
-      max-width:100%;
-  }
+.corporate-content-box {
+  display: none;
+}
 
-  .text-content{
-      color:var(--text-dark);
-      font-size:17px;
-      line-height:1.5;
-  }
+.corporate-content-box.active {
+  display: block;
+}
+
+.illustration {
+  max-width: 100%;
+}
+
+.text-content {
+  color: var(--text-dark);
+  font-size: 17px;
+  line-height: 1.5;
+}

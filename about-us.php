@@ -202,32 +202,145 @@
    }
 
    /* ── Responsive ── */
+   /* ── TABLET (max 767px) ── */
    @media (max-width: 767.98px) {
-     .bracket-card {
-       padding: 36px 28px;
-     }
-
-     .about-text {
-       font-size: 14.5px;
-       text-align: left;
-     }
-
      .vision-section {
-       padding: 48px 0;
+       padding: 36px 0 48px;
      }
 
      .vision-img-wrap {
-       height: 280px;
-       margin-bottom: 40px;
+       height: 260px;
+       margin-bottom: 0;
+       border-radius: 14px;
      }
 
      .vision-content {
        padding-left: 0;
+       padding-top: 20px;
      }
 
+     /* Fix ghost text overflow on mobile */
      .ghost-text {
-       font-size: 48px;
+       font-size: 3.2rem;
+       top: -35px;
+       left: 0;
+       white-space: nowrap;
+       overflow: hidden;
+       width: 100%;
        opacity: 0.06;
+     }
+
+     .mission-text {
+       font-size: 3.2rem;
+       top: -35px;
+       right: 0;
+       white-space: nowrap;
+       overflow: hidden;
+       width: 100%;
+       opacity: 0.06;
+     }
+
+     .vision-section .row {
+       --bs-gutter-y: 1.5rem;
+       /* reduce gap between image and content */
+     }
+
+     .vision-body {
+       margin-top: 30px;
+     }
+
+     .vision-body p {
+       font-size: 14.5px;
+       line-height: 1.75;
+       margin-bottom: 16px;
+     }
+
+     .vision-tagline {
+       font-size: 14px;
+       margin-bottom: 20px;
+       text-align: left;
+     }
+
+     .vision-highlight {
+       padding: 14px 16px;
+       font-size: 14px;
+       margin-top: 20px;
+     }
+
+     .vision-section h2 {
+       font-size: 1.6rem;
+       text-align: center;
+       margin-bottom: 0;
+     }
+   }
+
+   /* ── MOBILE (max 575px) ── */
+   @media (max-width: 575.98px) {
+     .vision-section {
+       padding: 28px 0 40px;
+     }
+
+     .vision-img-wrap {
+       height: 220px;
+       border-radius: 12px;
+     }
+
+     /* Contain ghost text fully — no overflow scroll */
+     .ghost-text,
+     .mission-text {
+       font-size: 3.6rem;
+       top: 0px;
+       left: 0;
+       text-align: center;
+       right: auto;
+       width: 100%;
+       overflow: hidden;
+       white-space: nowrap;
+       opacity: 0.05;
+       letter-spacing: 1px;
+     }
+
+     .vision-content {
+       padding-top: 16px;
+     }
+
+     .vision-section h2 {
+       font-size: 1.45rem;
+       text-align: center;
+       line-height: 1.3;
+       margin-top: 0px;
+     }
+
+     .vision-body {
+       margin-top: 20px;
+     }
+
+     .vision-tagline {
+       font-size: 13.5px;
+       text-align: left;
+       margin-bottom: 16px;
+       line-height: 1.6;
+     }
+
+     .vision-body p {
+       font-size: 14px;
+       line-height: 1.7;
+       margin-bottom: 14px;
+       text-align: left;
+     }
+
+     .vision-highlight {
+       padding: 12px 14px;
+       font-size: 13.5px;
+       margin-top: 16px;
+       border-radius: 6px;
+       line-height: 1.65;
+     }
+
+     /* Tighten Bootstrap row gap */
+     .vision-section .row.g-5 {
+       --bs-gutter-x: 1rem;
+       --bs-gutter-y: 1rem;
      }
    }
  </style>
@@ -342,7 +455,7 @@
      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
    }
 
-   .section-heading {
+   .section-heading-trust {
      text-align: center;
      font-size: 1.7rem;
      font-weight: 700;
@@ -456,27 +569,116 @@
      height: 100%;
    }
 
+   /* ── TABLET (max 992px) ── */
    @media (max-width: 992px) {
      .cards-grid {
        grid-template-columns: repeat(2, 1fr);
+       gap: 24px 50px;
+     }
+
+     .trust-section {
+       padding: 50px 30px 70px;
+     }
+
+     .trust-section::before {
+       font-size: clamp(36px, 7vw, 72px);
+       top: -10px;
+       white-space: nowrap;
+       overflow: hidden;
+       width: 100%;
      }
    }
 
+   /* ── MOBILE (max 600px) ── */
    @media (max-width: 600px) {
-     .cards-grid {
-       grid-template-columns: 1fr;
+     .trust-section {
+       padding: 40px 16px 60px;
+       overflow: hidden;
      }
 
+     /* Fix watermark overflow — most important fix */
+     .trust-section::before {
+       font-size: 2.2rem;
+       text-align: center;
+       top: 22px;
+       letter-spacing: 1px;
+       white-space: nowrap;
+       overflow: hidden;
+       width: 100%;
+       opacity: 0.15;
+     }
+
+     .section-heading-trust {
+       font-size: 1.45rem;
+       margin-bottom: 40px;
+     }
+
+     /* Single column grid */
+     .cards-grid {
+       grid-template-columns: 1fr;
+       gap: 20px;
+       padding: 0 8px;
+     }
+
+     /* Card: reduce left margin so icon fits inside viewport */
      .trust-card {
-       margin-left: 45px;
-       padding-left: 60px;
+       margin-left: 40px;
+       padding: 16px 16px 16px 55px;
+       min-height: 90px;
+       border-radius: 12px;
+     }
+
+     /* Smaller icon circle */
+     .trust-icon-wrap {
+       width: 75px;
+       height: 75px;
+       left: -38px;
+       border-width: 4px;
+     }
+
+     .trust-icon-wrap::before {
+       inset: -6px;
+     }
+
+     .trust-icon-wrap svg {
+       width: 28px;
+       height: 28px;
+     }
+
+     .trust-card-text {
+       font-size: 0.85rem;
+       line-height: 1.6;
+     }
+
+     /* Hide decorative plus signs on mobile — they misplace */
+     .plus {
+       display: none;
+     }
+   }
+
+   /* ── SMALL MOBILE (max 400px) ── */
+   @media (max-width: 400px) {
+     .trust-card {
+       margin-left: 35px;
+       padding: 14px 12px 14px 48px;
      }
 
      .trust-icon-wrap {
-       width: 85px;
-       height: 85px;
-       left: -42px;
+       width: 65px;
+       height: 65px;
+       left: -33px;
      }
+
+     .trust-icon-wrap svg {
+       width: 24px;
+       height: 24px;
+     }
+
+     .trust-card-text {
+       font-size: 0.82rem;
+     }
+
+
    }
  </style>
 
@@ -492,7 +694,7 @@
      <span class="plus" style="top:62%; left:65%">+</span>
      <span class="plus" style="top:62%; right:5%">+</span>
 
-     <h2 class="section-heading">Built on Trust</h2>
+     <h2 class="section-heading-trust">Built on Trust</h2>
 
      <div class="cards-grid">
 
@@ -697,6 +899,117 @@
      position: relative;
      overflow: hidden;
      padding: 80px 0 90px;
+   }
+
+   /* ── TABLET: 768px – 991px ── */
+   @media (max-width: 991px) and (min-width: 768px) {
+     .why-section {
+       padding: 60px 0 70px;
+     }
+
+     .section-heading {
+       margin-bottom: 36px;
+       font-size: 1.7rem;
+     }
+
+     .img-wrapper {
+       height: 340px;
+       border-radius: 14px;
+     }
+
+     .skyline-watermark {
+       width: 220px;
+     }
+   }
+
+   /* ── MOBILE: up to 767px ── */
+   @media (max-width: 767px) {
+     .why-section {
+       padding: 48px 0 56px;
+     }
+
+     /* clip watermark so it doesn't overflow on narrow screens */
+     .why-section::before {
+       font-size: clamp(32px, 12vw, 60px);
+       top: 4px;
+       opacity: 0.15;
+     }
+
+     .section-heading {
+       margin-bottom: 28px;
+       font-size: 1.4rem;
+       padding: 0 8px;
+     }
+
+     /* Stack columns: image on top, content below */
+     .row.align-items-center {
+       flex-direction: column;
+     }
+
+     .img-wrapper {
+       height: 260px;
+       border-radius: 14px;
+       margin-bottom: 28px;
+     }
+
+     .intro-text {
+       font-size: 0.95rem;
+       margin-bottom: 20px;
+     }
+
+     .advantage-list li {
+       font-size: 0.9rem;
+       gap: 12px;
+       padding: 8px 0;
+     }
+
+     .bullet-icon {
+       width: 24px;
+       height: 24px;
+     }
+
+     .bullet-icon svg {
+       width: 12px;
+       height: 12px;
+     }
+
+     .skyline-watermark {
+       width: 160px;
+     }
+   }
+
+   /* ── SMALL MOBILE: up to 480px ── */
+   @media (max-width: 480px) {
+     .why-section {
+       padding: 36px 0 44px;
+     }
+
+     .why-section::before {
+       font-size: clamp(26px, 10vw, 44px);
+       opacity: 0.12;
+     }
+
+     .section-heading {
+       font-size: 1.25rem;
+       margin-bottom: 22px;
+     }
+
+     .img-wrapper {
+       height: 220px;
+       border-radius: 12px;
+     }
+
+     .intro-text {
+       font-size: 0.9rem;
+     }
+
+     .advantage-list li {
+       font-size: 0.87rem;
+     }
+
+     .skyline-watermark {
+       width: 120px;
+     }
    }
  </style>
 
@@ -992,11 +1305,165 @@
      animation-delay: 0.4s;
    }
 
-   /* Responsive tweaks */
-   @media (max-width: 991px) {
-     .illustration-area {
-       min-height: 260px;
-       margin-bottom: 40px;
+   /* ══════════════════════════════════════
+     TABLET  768px – 991px
+  ══════════════════════════════════════ */
+   @media (max-width: 991px) and (min-width: 768px) {
+     .section-wrapper {
+       padding: 50px 0 60px;
+     }
+
+     .section-wrapper::before {
+       font-size: clamp(50px, 9vw, 80px);
+       left: 40%;
+     }
+
+     .section-title {
+       text-align: center;
+     }
+
+     /* Left col: center the image */
+     .col-lg-5 {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+     }
+
+     .image-box {
+       max-width: 420px;
+       margin: 0 auto;
+     }
+
+     .image-box img {
+       height: 460px;
+     }
+
+     .icon-circle {
+       width: 80px;
+       height: 80px;
+       min-width: 80px;
+     }
+
+     .icon-circle svg {
+       width: 60px;
+       height: 60px;
+     }
+   }
+
+   /* ══════════════════════════════════════
+     MOBILE  ≤ 767px
+  ══════════════════════════════════════ */
+   @media (max-width: 767px) {
+     .section-wrapper {
+       padding: 40px 0 50px;
+     }
+
+     /* Tame watermark on small screens */
+     .section-wrapper::before {
+       font-size: clamp(36px, 11vw, 60px);
+       left: 50%;
+       top: 0;
+       opacity: 0.2;
+     }
+
+     .section-title {
+       font-size: 1.4rem;
+       left: 0px;
+       margin-bottom: 20px;
+     }
+
+     /* Stack left col: title then image, both centered */
+     .col-lg-5 {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin-bottom: 36px;
+     }
+
+     .image-box {
+       max-width: 100%;
+       width: 50%;
+       left: 0px;
+       border-radius: 16px;
+     }
+
+     .image-box img {
+       height: 280px;
+       border-radius: 16px;
+     }
+
+     /* Reduce icon circle size */
+     .icon-circle {
+       width: 64px;
+       height: 64px;
+       min-width: 64px;
+     }
+
+     .icon-circle svg {
+       width: 46px;
+       height: 46px;
+     }
+
+     .mindset-item {
+       gap: 14px !important;
+       padding-bottom: 24px;
+       margin-bottom: 24px;
+     }
+
+     .item-title {
+       font-size: 15px;
+     }
+
+     .item-body {
+       font-size: 13px;
+     }
+   }
+
+   /* ══════════════════════════════════════
+     SMALL MOBILE  ≤ 480px
+  ══════════════════════════════════════ */
+   @media (max-width: 480px) {
+     .section-wrapper {
+       padding: 32px 0 40px;
+     }
+
+     .section-wrapper::before {
+       /* font-size: clamp(28px, 10vw, 44px); */
+       opacity: 0.2;
+       font-size: 80px;
+     }
+
+     .section-title {
+       font-size: 1.2rem;
+     }
+
+     .image-box img {
+       height: 230px;
+     }
+
+     .icon-circle {
+       width: 54px;
+       height: 54px;
+       min-width: 54px;
+     }
+
+     .icon-circle svg {
+       width: 38px;
+       height: 38px;
+     }
+
+     .item-title {
+       font-size: 14px;
+     }
+
+     .item-body {
+       font-size: 12.5px;
+     }
+
+     .mindset-item {
+       gap: 12px !important;
+       padding-bottom: 20px;
+       margin-bottom: 20px;
      }
    }
  </style>
@@ -1248,6 +1715,57 @@
      font-weight: 500;
      text-transform: uppercase;
      letter-spacing: 0.08em;
+   }
+
+   /* Tablet (≤ 992px) */
+   @media (max-width: 992px) {
+     .team-section {
+       padding: 50px 0;
+     }
+
+     .team-section::before {
+       font-size: clamp(40px, 12vw, 80px);
+       top: 10px;
+     }
+
+     .card-body {
+       padding: 18px 15px 20px;
+     }
+
+     .member-name {
+       font-size: 1.1rem;
+     }
+
+     .member-role {
+       font-size: 0.75rem;
+     }
+   }
+
+
+   /* Mobile (≤ 768px) */
+   @media (max-width: 768px) {
+
+     .team-section {
+       padding: 40px 0;
+     }
+
+     .team-section::before {
+       font-size: clamp(30px, 14vw, 60px);
+       opacity: 0.2;
+     }
+
+
+   }
+
+
+   /* Small Mobile (≤ 480px) */
+   @media (max-width: 480px) {
+
+     .team-section::before {
+       font-size: 39px;
+       top: 20px;
+     }
+
    }
  </style>
 
@@ -1524,6 +2042,62 @@
      padding-bottom: 4px;
      /* slight shadow room */
    }
+
+   /* ───────── Tablet (≤ 992px) ───────── */
+  @media (max-width: 992px) {
+
+    .our-team {
+      padding: 60px 20px 0;
+    }
+
+    .our-team::before {
+      font-size: clamp(50px, 12vw, 90px);
+      top: 10px;
+      opacity: 0.15;
+    }
+
+
+  }
+
+
+  /* ───────── Mobile (≤ 768px) ───────── */
+  @media (max-width: 768px) {
+
+    .our-team {
+      padding: 50px 15px 0;
+    }
+
+    /* Watermark fix */
+    .our-team::before {
+      font-size: clamp(35px, 14vw, 60px);
+      opacity: 0.2;
+      top: 5px;
+    }
+
+    /* Heading spacing */
+    .section-heading-our-team {
+      font-size: 1.4rem;
+      margin-bottom: 50px;
+    }
+
+  
+  }
+
+
+  /* ───────── Small Mobile (≤ 480px) ───────── */
+  @media (max-width: 480px) {
+
+    .our-team::before {
+      font-size: 67px;
+      opacity: 0.2;
+
+    }
+
+    .section-heading-our-team {
+      font-size: 1.2rem;
+    }
+
+  }
  </style>
 
  <section class=" our-team">
@@ -1732,6 +2306,48 @@
      fill: none;
      stroke-width: 1.5;
    }
+
+   /* Mobile devices (up to 576px) */
+  @media (max-width: 576px) {
+
+    .focus-area {
+      padding: 60px 0 20px;
+    }
+
+    .focus-area::before {
+      font-size: 60px;
+      top: 20px;
+      opacity: 0.2;
+    }
+
+    .section-heading-focus {
+      font-size: 1.4rem;
+      margin-bottom: 25px;
+    }
+
+    .tagline-focus {
+      font-size: 0.95rem;
+      margin-bottom: 25px;
+      padding: 0 10px;
+    }
+
+    .card-option {
+      padding: 16px 18px;
+      font-size: 0.9rem;
+      border-radius: 10px;
+      gap: 12px;
+    }
+
+    .icon-svg {
+      width: 28px;
+      height: 28px;
+    }
+
+    .bottom-tagline {
+      font-size: 0.9rem;
+      padding: 0 10px;
+    }
+  }
  </style>
 
  <section class="focus-area">
@@ -2003,6 +2619,71 @@
    .swiper-btn-next {
      right: 0px;
    }
+
+   /* Mobile (≤576px) */
+  @media (max-width: 576px) {
+
+    .testimonial {
+      padding: 50px 0 10px;
+    }
+
+    /* Watermark fix */
+    .testimonial::before {
+      font-size: 55px;
+      top: 16px;
+      opacity: 0.2;
+    }
+
+    /* Heading */
+    .section-heading-testimonial {
+      font-size: 1.4rem;
+      margin-bottom: 40px;
+      padding: 0 10px;
+    }
+
+    /* Card */
+    .testimonial-card {
+      padding: 22px 16px;
+      border-radius: 12px;
+      min-height: auto;
+    }
+
+    .quote-icon {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .testimonial-text {
+      font-size: 13.5px;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    /* Author */
+    .testimonial-author {
+      gap: 10px;
+      padding-top: 12px;
+    }
+
+    .testimonial-author img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .author-name {
+      font-size: 13.5px;
+    }
+
+    .author-role {
+      font-size: 11px;
+    }
+
+    /* Pagination */
+    .swiper-pagination {
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  }
  </style>
 
  <section class="container py-5">

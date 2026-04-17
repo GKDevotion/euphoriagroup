@@ -59,6 +59,45 @@ include_once('elements/header.php');
         color: #374151;
         line-height: 1.9;
     }
+    /* Mobile devices (up to 576px) */
+    @media (max-width: 576px) {
+
+        .content-section {
+            padding: 40px 10px 0;
+        }
+
+        .contact-card {
+            padding: 1.5rem 1rem;
+            border-radius: 12px;
+        }
+
+        .icon-circle {
+            width: 70px;
+            height: 70px;
+            margin-bottom: 1rem;
+        }
+
+        .icon-circle i {
+            font-size: 1.4rem;
+        }
+
+        .contact-card h5 {
+            font-size: 1.3rem;
+        }
+
+        .contact-card .subtitle {
+            font-size: 0.7rem;
+        }
+
+        .contact-card .info {
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+
+        .col-md-4 {
+            margin-bottom: 15px;
+        }
+    }
 </style>
 
 <section class="container py-5">
@@ -260,6 +299,82 @@ include_once('elements/header.php');
     .btn-submit:hover {
         background-color: #142049;
         color: #fff;
+    }
+
+    /* Mobile devices (up to 576px) */
+    @media (max-width: 576px) {
+
+        .lets-talk {
+            padding: 1.5rem 1rem;
+            border-radius: 12px;
+        }
+
+        /* Image panel adjustments */
+        .image-panel {
+            min-height: 220px;
+            background-size: contain;
+            background-position: center;
+            margin-bottom: 10px;
+        }
+
+        /* Stack spacing fix */
+        .row.g-4 {
+            gap: 1rem !important;
+        }
+
+        /* Form panel */
+        .form-panel {
+            padding: 1rem;
+        }
+
+        /* Background text FIX */
+        .bg-text {
+            font-size: 4.5rem;
+            top: -14px;
+            right: 0;
+            left: 0;
+            text-align: center;
+            opacity: 0.2;
+        }
+
+        /* Heading */
+        .form-panel h2 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Inputs */
+        .form-control,
+        .form-select {
+            font-size: 0.85rem;
+            padding: 0.55rem 0.6rem;
+        }
+
+        .form-label {
+            font-size: 0.7rem;
+        }
+
+        textarea.form-control {
+            min-height: 80px;
+        }
+
+        /* reCAPTCHA box */
+        .recaptcha-box {
+            max-width: 100%;
+            padding: 10px;
+            gap: 8px;
+        }
+
+        .recaptcha-logo {
+            font-size: 0.55rem;
+        }
+
+        /* Button full width */
+        .btn-submit {
+            width: 100%;
+            padding: 0.6rem;
+            font-size: 0.9rem;
+        }
     }
 
 </style>
