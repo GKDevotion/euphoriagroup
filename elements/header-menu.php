@@ -361,6 +361,7 @@
       font-size: .86rem;
       font-weight: 700;
       color: var(--euphoria-blue);
+      text-decoration: none;
       margin-bottom: 2px;
   }
   .eg-mob-sub-card-desc {
@@ -523,20 +524,24 @@
   </button>
   <div class="eg-mob-sub" id="mob-inbound-sub">
     <div class="eg-mob-sub-card">
-      <div class="eg-mob-sub-card-title">1. Corporate Establishment</div>
+      <div><a href="corporate-establishment" class="eg-mob-sub-card-title">1. Corporate Establishment</a></div>
       <div class="eg-mob-sub-card-desc">Company registration and business setup with legal and compliance support.</div>
     </div>
     <div class="eg-mob-sub-card">
-      <div class="eg-mob-sub-card-title">2. Corporate Service</div>
+      <div><a href="corporate-service" class="eg-mob-sub-card-title">2. Corporate Service</a></div>
       <div class="eg-mob-sub-card-desc">ROC filings, regulatory compliance, and secretarial support.</div>
     </div>
     <div class="eg-mob-sub-card">
-      <div class="eg-mob-sub-card-title">3. Tours and Travel</div>
+      <div><a href="tours-travels"  class="eg-mob-sub-card-title">3. Tours and Travel</a></div>
       <div class="eg-mob-sub-card-desc">Visa assistance, international travel planning, and customised solutions.</div>
     </div>
     <div class="eg-mob-sub-card">
-      <div class="eg-mob-sub-card-title">4. Wealth & Asset Solutions</div>
+      <div><a href="wealth-asset-solution" class="eg-mob-sub-card-title">4. Wealth & Asset Solutions</a></div>
       <div class="eg-mob-sub-card-desc">Investment planning, insurance advisory, and asset protection solutions.</div>
+    </div>
+    <div class="eg-mob-sub-card">
+      <div><a href="visa-assitance" class="eg-mob-sub-card-title">5. Get Visa Assistance</a></div>
+      <div class="eg-mob-sub-card-desc">Visa Assistance services provide professional, end-to-end support to help individuals and businesses navigate complex visa application processes for travel, work or study.</div>
     </div>
   </div>
 
