@@ -1,14 +1,14 @@
 <?php
 include_once('elements/header.php');
 ?>
- 
+
 <!-- HERO -->
- <section class="top-banner-background" style="background-image: url('assets/img/background/Blog.png');">
-   <div>
-     <h1 class="mb-0 text-center">Our Latest Blog</h1>
-     <p class="text-black text-center mt-2">Stay updated with the latest insight, trends, and Blogs to grow your business</p>
-   </div>
- </section>
+<section class="top-banner-background" style="background-image: url('assets/img/background/Blog.png');">
+    <div>
+        <h1 class="mb-0 text-center">Our Latest Blog</h1>
+        <p class="text-black text-center mt-2">Stay updated with the latest insight, trends, and Blogs to grow your business</p>
+    </div>
+</section>
 
 <style>
     /* ── Partnership Section ── */
@@ -206,6 +206,94 @@ include_once('elements/header.php');
     /* ── SECTION WRAPPER ── */
     .blog-section {
         padding: 60px 0 80px;
+    }
+
+    /* ── MOBILE OPTIMIZATION ── */
+    @media (max-width: 768px) {
+
+        .corporate-tab-section {
+            padding: 40px 0;
+        }
+
+        .blog-section {
+            padding: 30px 0 50px;
+        }
+
+        /* Card spacing */
+        .row.g-4 {
+            gap: 20px 0;
+            padding: 30px;
+        }
+
+        .blog-card {
+            border-radius: 10px;
+        }
+
+        /* Image height smaller */
+        .card-img-wrap {
+            height: 180px;
+        }
+
+        /* Logo smaller */
+        .logo-badge img {
+            width: 45px;
+        }
+
+        /* Body padding tighter */
+        .card-body {
+            padding: 14px 15px 16px;
+        }
+
+        /* Title smaller for mobile */
+        .card-title {
+            font-size: 0.95rem;
+            line-height: 1.3;
+        }
+
+        /* Meta row stacking */
+        .meta-row {
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .meta-row .author {
+            font-size: 0.78rem;
+        }
+
+        .meta-row .date {
+            font-size: 0.72rem;
+        }
+
+        .meta-row .avatar {
+            width: 28px;
+            height: 28px;
+        }
+
+        /* Excerpt shorter feel */
+        .excerpt {
+            font-size: 0.8rem;
+            line-height: 1.5;
+        }
+
+        /* Optional: clamp text (clean look) */
+        .excerpt {
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        /* Read more alignment */
+        .read-more-blog {
+            font-size: 0.8rem;
+            margin-top: 10px;
+        }
+
+        /* Pagination spacing */
+        .pagination .page-link {
+            padding: 6px 10px;
+            font-size: 0.8rem;
+        }
     }
 </style>
 

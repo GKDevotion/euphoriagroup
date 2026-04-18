@@ -120,7 +120,7 @@
     font-weight: 600;
     color: var(--euphoria-blue);
     background: #fff !important;
-    padding: 10px 0 0 25px;
+    padding: 10px 0 10px 25px;
     box-shadow: none !important;
     border-radius: 10px !important;
   }

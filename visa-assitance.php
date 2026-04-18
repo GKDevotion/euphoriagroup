@@ -5,7 +5,7 @@ include_once ('elements/header.php');
 <!-- Hero Section -->
 <section class="top-banner-background" style="background-image: url('assets/img/background/Get-visa-assistance.png');">
   <div>
-    <h1 class="mb-0">Get Visa Assistance</h1>
+    <h1 class="mb-0 text-center">Get Visa Assistance</h1>
     <p class="text-black text-center mt-2">
       Expert guidance for a smooth and hassle-free visa application process.
     </p>
@@ -194,27 +194,79 @@ include_once ('elements/header.php');
   }
 
   /* RESPONSIVE */
-  @media(max-width:768px){
+ /* --- Visa Form Mobile Styles --- */
 
-      .visa-box{
-          padding:40px 20px;
-      }
+    @media (max-width: 991px) {
+        .visa-box {
+            padding: 50px 30px;
+        }
+        
+        /* Scale down the massive watermark for tablets */
+        .visa-box::before {
+            font-size: 80px;
+            top: 0;
+        }
+    }
 
-      .visa-box::before{
-          font-size:40px;
-          top:30px;
-      }
+    @media (max-width: 767px) {
+        .visa-form-section {
+            padding: 40px 0 60px 0;
+        }
 
-      .phone-group{
-          flex-direction:column;
-      }
+        .visa-box {
+            padding: 40px 20px;
+            border-radius: 15px; /* Softer corners for mobile */
+        }
 
-      .flag-box{
-          width:100%;
-          height:50px;
-      }
-  }
+        /* Adjust watermark positioning for mobile */
+        .visa-box::before {
+            font-size: 60px;
+            top: 20px;
+        }
+
+        .about-title.h1 {
+            font-size: 1.1rem; /* Smaller heading for mobile */
+            margin-bottom: 30px;
+        }
+
+        /* Stack phone input and flag vertically or adjust gaps */
+        .phone-group {
+            flex-direction: row; /* Keep them side-by-side but reduce gap */
+            gap: 5px;
+        }
+
+        .flag-box {
+            width: 60px; /* Slimmer flag box */
+            flex-shrink: 0;
+        }
+
+        /* Center the captcha on mobile */
+        .col-12 > div[style*="width:280px"] {
+            width: 100% !important;
+            max-width: 280px;
+            margin: 0 auto;
+        }
+
+        /* Make button full width for easier tapping */
+        .btn-submit {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .visa-box::before {
+            font-size: 35px;
+            letter-spacing: 1px;
+        }
+        
+        .flag-box {
+            font-size: 12px;
+        }
+    }
 </style>
+
 <section class="visa-form-section about-section">
   
   <div class="container">

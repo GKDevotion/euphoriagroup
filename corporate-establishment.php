@@ -3,15 +3,14 @@ include_once('elements/header.php');
 ?>
 
 <!-- HERO -->
- <section class="top-banner-background" style="background-image: url('assets/img/background/Corporate-establishment.png');">
-   <div>
-     <h1 class="mb-0 text-center">Corporate Establishment</h1>
-     <p class="text-black text-center mt-2">End-to-end support support for setting up legally compliant business entities.</p>
-   </div>
- </section>
+<section class="top-banner-background" style="background-image: url('assets/img/background/Corporate-establishment.png');">
+    <div>
+        <h1 class="mb-0 text-center">Corporate Establishment</h1>
+        <p class="text-black text-center mt-2">End-to-end support support for setting up legally compliant business entities.</p>
+    </div>
+</section>
 
 <style>
-  
     /* ── Partnership Section ── */
     .corporate-tab-section {
         background: #ffffff;
@@ -134,20 +133,80 @@ include_once('elements/header.php');
 
     /* ── Responsive ── */
     @media (max-width: 768px) {
+
+        /* 1. Adjust main section padding */
+        .corporate-tab-section {
+            padding: 40px 0;
+        }
+
+        /* 2. Force the nav wrapper to allow horizontal scrolling */
+        .formation-nav-wrapper {
+            width: 100%;
+            /* Take full width of screen */
+            border-radius: 25px;
+            /* Slightly tighter radius for mobile */
+            padding: 4px;
+            -webkit-overflow-scrolling: touch;
+            /* Smooth scrolling for iOS */
+        }
+
+        /* 3. Scale down navigation elements */
+        .nav-active-pill {
+            font-size: 0.75rem;
+            padding: 0.45rem 1rem;
+        }
+
+        .nav-link-item {
+            font-size: 0.72rem;
+            padding: 0.4rem 0.7rem;
+        }
+
+        .nav-sep {
+            height: 14px;
+            margin: 0 1px;
+        }
+
+        /* 4. Fix Image Column for Mobile */
+        .img-col {
+            margin-bottom: 20px;
+        }
+
         .img-col img {
-            -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
-            mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
-            max-width: 100%;
+            /* Change mask from right-side fade to bottom-side fade for vertical layout */
+            -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+            mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+            max-width: 80%;
+            /* Don't let the corporate image overwhelm the text */
         }
 
+        /* 5. Adjust Text Column for Readability */
         .text-col {
-            padding-left: 0;
-            padding-top: 1.5rem;
+            text-align: center;
+            /* Center text for better mobile balance */
         }
-    } 
 
+        .text-col p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+    }
+
+    /* Extra small screens fix for the nav bar */
+    @media (max-width: 480px) {
+        .formation-nav-wrapper {
+            /* Ensure the "swipe to see more" feel by showing a peek of the next item */
+            margin-left: -10px;
+            margin-right: -10px;
+            width: calc(100% + 20px);
+            border-radius: 0;
+            /* Full bleed looks cleaner on tiny screens */
+            border-left: none;
+            border-right: none;
+        }
+    }
 </style>
- 
+
 <section class="corporate-tab-section india-section">
 
     <div class="container position-relative" style="z-index:2">
@@ -206,7 +265,7 @@ include_once('elements/header.php');
 </section>
 
 <style>
-      /* Section */
+    /* Section */
     .incorporation {
         position: relative;
         padding: 100px 0 0px;
@@ -305,6 +364,74 @@ include_once('elements/header.php');
         row-gap: 24px;
     }
 
+    /* ── Responsive Adjustments ── */
+
+    @media (max-width: 991px) {
+        .incorporation {
+            padding: 60px 0 20px;
+        }
+
+        /* Adjust watermark size for tablets */
+        .incorporation::before {
+            top: 8px;
+            font-size: 80px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .incorporation-heading {
+            margin-bottom: 30px;
+            font-size: 12px;
+        }
+
+        /* Reduce card padding to save vertical space */
+        .service-card-incorporation {
+            padding: 1.5rem 1rem;
+        }
+
+        .icon-wrap-incorporation {
+            width: 55px;
+            height: 55px;
+            margin-bottom: 15px;
+        }
+
+        .icon-wrap-incorporation svg {
+            width: 38px;
+            height: 38px;
+        }
+
+        .service-card-incorporation h5 {
+            font-size: 15px;
+        }
+
+        /* Adjust watermark size for mobile */
+        .incorporation::before {
+            top: 25px;
+            font-size: 50px;
+            letter-spacing: 1px;
+        }
+    }
+
+    @media (max-width: 480px) {
+
+        /* On very small screens, use a single column to prevent cramped text */
+        .row-cols-2 {
+            row-gap: 15px;
+        }
+
+        /* Optional: If 2 columns feel too tight for the long titles, 
+        uncomment the line below to switch to 1 column */
+        /* .services-grid > .col { width: 100%; } */
+
+        .service-card-incorporation h5 {
+            font-size: 14px;
+        }
+
+        .service-card-incorporation p {
+            font-size: 11px;
+            line-height: 1.5;
+        }
+    }
 </style>
 
 <section class="container">
@@ -481,7 +608,7 @@ include_once('elements/header.php');
 </section>
 
 <style>
-     /* Section */
+    /* Section */
     .register {
         position: relative;
         padding: 100px 0 0px;
@@ -516,9 +643,6 @@ include_once('elements/header.php');
         text-align: start;
         margin-bottom: 50px;
     }
-
- 
- 
 
     .section-text {
         font-size: 0.95rem;
@@ -588,21 +712,71 @@ include_once('elements/header.php');
         align-items: center;
     }
 
+    /* --- Add/Update these rules in your <style> block --- */
+
     @media (max-width: 991px) {
+        .register {
+            padding: 60px 0;
+            /* Reduce padding for tablet/mobile */
+        }
+
+        .register::before {
+            left: 50%;
+            /* Center the watermark on smaller screens */
+            top: 10px;
+            font-size: 80px;
+        }
+
+        .register-heading {
+            text-align: center;
+            /* Center heading for better mobile flow */
+            margin-bottom: 30px;
+        }
+
         .circles-grid {
             grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
         }
     }
 
-    @media (max-width: 576px) {
+    @media (max-width: 768px) {
+
+        /* Make circles smaller so they fit side-by-side on mobile */
+        .feature-circle.large {
+            width: 140px;
+            height: 140px;
+            padding: 15px;
+        }
+
+        .feature-circle .icon,
+        .feature-circle svg {
+            width: 32px;
+            height: 32px;
+        }
+
+        .feature-circle .label {
+            font-size: 0.7rem;
+        }
+
         .circles-grid {
             grid-template-columns: repeat(2, 1fr);
+            /* 2 columns on small mobile */
         }
- 
     }
 
-   
+    @media (max-width: 480px) {
 
+        /* Extra small screens adjustment */
+        .feature-circle.large {
+            width: 130px;
+            height: 130px;
+        }
+
+        .section-text {
+            text-align: center;
+            /* Optional: centers text for single-column mobile view */
+        }
+    }
 </style>
 
 <section class="container">
@@ -731,7 +905,7 @@ include_once('elements/header.php');
 </section>
 
 <style>
-       /* Section */
+    /* Section */
     .alliance {
         position: relative;
         padding: 100px 0 0px;
@@ -767,7 +941,7 @@ include_once('elements/header.php');
         margin-bottom: 50px;
     }
 
-    
+
     /* ── Section wrapper ── */
     .benefits-section {
         padding: 80px 0 90px;
@@ -783,7 +957,7 @@ include_once('elements/header.php');
         margin-bottom: 10px;
     }
 
- 
+
 
     .section-subtitle {
         font-size: 1rem;
@@ -945,7 +1119,70 @@ include_once('elements/header.php');
         pointer-events: none;
     }
 
+    /* --- Mobile Responsive Adjustments --- */
 
+    @media (max-width: 991px) {
+        .alliance {
+            padding: 0px 0 40px;
+            /* Tighter padding for tablets */
+        }
+
+        .alliance::before {
+            top: 40px;
+            font-size: 80px;
+            /* Smaller watermark */
+        }
+    }
+
+    @media (max-width: 767px) {
+        .alliance-heading {
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+            /* Scale down heading */
+        }
+
+        /* Reduce card height so it doesn't take up the whole screen */
+        .benefit-card-alliance {
+            height: 280px;
+        }
+
+        /* Adjust padding inside cards for small screens */
+        .card-content {
+            padding: 20px 15px;
+        }
+
+        .card-title-alliance {
+            font-size: 0.95rem;
+        }
+
+        .card-desc-alliance {
+            font-size: 0.7rem;
+            line-height: 1.5;
+        }
+
+        /* Shrink the watermark further */
+        .alliance::before {
+            top: 5px;
+            font-size: 70px;
+        }
+
+        /* Adjust Navigation buttons size for thumbs */
+        .swiper-nav-btn {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .benefit-card-alliance {
+            height: 260px;
+            /* Even shorter for very small phones */
+        }
+
+        .alliance-heading {
+            font-size: 1.5rem;
+        }
+    }
 </style>
 
 <section class="alliance">
@@ -1046,7 +1283,7 @@ include_once('elements/header.php');
 </section>
 
 <style>
-     /* Section */
+    /* Section */
     .individual {
         position: relative;
         padding: 100px 0 0px;
@@ -1082,7 +1319,7 @@ include_once('elements/header.php');
         margin-bottom: 50px;
     }
 
-    
+
     .benefits-section {
         padding: 70px 0;
         background: #fff;
@@ -1186,17 +1423,79 @@ include_once('elements/header.php');
         transform: scale(1.03);
     }
 
+    /* --- Mobile Responsive Adjustments --- */
+
     @media (max-width: 991px) {
+        .individual {
+            padding: 60px 0 20px;
+        }
+
+        .individual::before {
+            top: 15px;
+            font-size: 70px; /* Shrink watermark */
+        }
+
+        .individual-heading {
+            margin-bottom: 20px;
+            font-size: 17px;
+        }
+
+        /* Adjust the grid spacing for the rows */
+        .row.py-5 {
+            padding-top: 1rem !important;
+            padding-bottom: 2rem !important;
+        }
+
+        /* Make the image height reasonable for mobile */
+        .img-wrapper img {
+            height: 350px; 
+            margin-top: 10px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .benefit-title {
+            font-size: 1.1rem; /* Smaller titles so they don't wrap too much */
+        }
+
+        .benefit-item {
+            padding: 15px 5px; /* Tighter padding */
+        }
+
+        .arrow-icon {
+            width: 28px;
+            height: 28px;
+        }
+
+        .arrow-icon svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        .benefit-desc {
+            width: 100%; /* Use full width on small screens */
+            font-size: 0.8rem;
+        }
+
+        /* Ensure the image doesn't look squashed */
         .img-wrapper {
-            min-height: 280px;
-            margin-top: 40px;
+            min-height: auto;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .individual-heading {
+            font-size: 1.4rem;
+        }
+
+        .img-wrapper img {
+            height: 280px;
         }
     }
 
     .remove-bottom-border {
         border-bottom: 0px;
     }
-
 </style>
 
 <section class="individual">
@@ -1412,10 +1711,71 @@ include_once('elements/header.php');
     }
 
     /* Vertical divider between cols on desktop */
-    @media (min-width: 992px) {
+    /* --- Mobile & Tablet Responsive Adjustments --- */
 
-        .col-divider:last-child {
-            border-right: none;
+    @media (max-width: 991px) {
+        .setup {
+            padding: 60px 0 30px;
+        }
+
+        .setup::before {
+            top: 15px;
+            font-size: 75px; /* Smaller watermark for tablets */
+        }
+
+        /* Remove the left border on tablets/mobile and use a subtle bottom border instead */
+        .benefit-card {
+            border-left: none;
+            border-bottom: 1px solid #eee;
+            padding: 25px 15px;
+        }
+
+        /* Hide the red hover line on mobile to keep it clean */
+        .benefit-card::before {
+            display: none;
+        }
+
+        .card-title {
+            width: 100%; /* Title takes full width of the card */
+            font-size: 1.1rem;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .setup-heading {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+        }
+
+        .icon-wrap {
+            width: 55px;
+            height: 55px;
+            margin-bottom: 15px;
+        }
+
+        .icon-wrap svg {
+            width: 26px;
+            height: 26px;
+        }
+
+        /* Remove border from the very last card to keep the bottom of the section clean */
+        .col-divider:last-child .benefit-card {
+            border-bottom: none;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .setup-heading {
+            font-size: 1.5rem;
+        }
+
+        .card-title {
+            font-size: 1rem;
+        }
+
+        .card-desc {
+            font-size: 0.75rem;
+            line-height: 1.6;
         }
     }
 </style>
@@ -1604,7 +1964,7 @@ include_once('elements/header.php');
     .content-side {
         position: relative;
     }
- 
+
 
     .section-desc {
         font-size: 0.78rem;
@@ -1653,14 +2013,72 @@ include_once('elements/header.php');
         padding-top: 3px;
     }
 
+    /* --- Proprietorship Setup Mobile Styles --- */
+
     @media (max-width: 991px) {
-        .img-wrapper {
-            min-height: 300px;
-            margin-bottom: 40px;
+        .ownership {
+            padding: 60px 0 40px;
         }
 
-        .watermark {
-            font-size: 3rem;
+        /* Fix watermark positioning for mobile to prevent overflow */
+        .ownership::before {
+            top: -15px;
+            left: 50%;
+            font-size: 52px;
+            opacity: 0.2;
+        }
+
+        .ownership-heading {
+            text-align: center; /* Better for mobile balance */
+            margin-bottom: 25px;
+        }
+
+        /* Adjust image height so it doesn't dominate the screen */
+        .img-wrapper-ownership {
+            min-height: auto;
+            margin-bottom: 30px;
+        }
+
+        .img-wrapper-ownership img {
+            height: 300px; /* Reduced from 560px */
+            border-radius: 15px;
+        }
+
+        .section-desc {
+            text-align: center;
+            font-size: 0.85rem;
+            margin-bottom: 25px;
+        }
+
+        .checklist {
+            gap: 15px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        /* Stack the checklist into a single column earlier for readability */
+        .checklist {
+            grid-template-columns: 1fr;
+            max-width: 320px; 
+        }
+
+        .check-label {
+            font-size: 0.88rem;
+        }
+
+        .check-icon, .check-icon svg {
+            width: 22px;
+            height: 22px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .ownership-heading {
+            font-size: 1.5rem;
+        }
+        
+        .img-wrapper-ownership img {
+            height: 250px;
         }
     }
 </style>
@@ -1993,13 +2411,89 @@ include_once('elements/header.php');
     .swiper-pagination-lock {
         display: block;
     }
+
+     /* ── Responsive: stack on mobile ── */
+    /* --- Compliance Swiper Mobile Styles --- */
+
+    @media (max-width: 991px) {
+        .compliance {
+            padding: 60px 0 30px;
+        }
+
+        /* Adjust watermark positioning for mobile */
+        .compliance::before {
+            top: 68px;
+            font-size: 63px; /* Scaled down for tablet/mobile */
+            opacity: 0.2;
+        }
+
+        .compliance-heading {
+            margin-bottom: 40px; /* Reduced gap for smaller screens */
+        }
+
+        .tax-card {
+            padding: 30px 20px; /* Slimmer padding */
+        }
+
+        .tax-card .icon-wrap {
+            width: 65px;
+            height: 65px;
+            margin-bottom: 15px;
+        }
+
+        .tax-card .icon-wrap svg {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .compliance-heading {
+            font-size: 1.2rem;
+            padding: 0 15px;
+        }
+
+        .tax-card h5 {
+            font-size: 0.95rem;
+        }
+
+        .tax-card p {
+            font-size: 0.75rem; /* Slightly larger text for mobile readability */
+            line-height: 1.6;
+        }
+
+        /* Ensure navigation buttons are easy to tap */
+        .swiper-btn {
+            width: 45px;
+            height: 45px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .compliance-heading {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+        }
+
+        /* Pagination bullets adjustment */
+        .swiper-pagination-bullet {
+            width: 8px;
+            height: 8px;
+        }
+
+        .swiper-pagination-bullet-active {
+            outline-width: 1.5px;
+            outline-offset: 2px;
+        }
+    }
+
 </style>
 
 <section class="container compliance ">
 
     <div class=" position-relative py-5 " style="z-index:1;">
-        <h2 class="compliance-heading">Pan, Tan, Gst Registration</h2> 
-        
+        <h2 class="compliance-heading">Pan, Tan, Gst Registration</h2>
+
         <!-- Swiper -->
         <div class="swiper taxSwiper">
             <div class="swiper-wrapper">
@@ -2195,17 +2689,81 @@ include_once('elements/header.php');
         display: block;
     }
 
-    /* ── Responsive: stack on mobile ── */
-    @media (max-width: 991.98px) {
+    /* --- Non-Profit Setup Mobile Styles --- */
 
-        .np-col-right .np-feature__title,
-        .np-col-right .np-feature__desc {
-            text-align: left;
+    @media (max-width: 991px) {
+        .non-profit {
+            padding: 60px 0 40px;
         }
 
+        /* Adjust watermark for smaller screens */
+        .non-profit::before {
+            top: 20px;
+            font-size: clamp(40px, 10vw, 60px);
+            opacity: 0.2;
+        }
+
+        .non-profit-heading {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            padding: 0 15px;
+        }
+
+        /* Remove the 'justify-content-between' height on mobile to prevent huge gaps */
+        .np-col-left, .np-col-right {
+            display: block !important; 
+        }
+
+        .np-feature {
+            margin-bottom: 20px;
+            text-align: center; /* Center align for better mobile flow */
+        }
+
+        .np-feature__title, 
+        .np-col-right .np-feature__title {
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        .np-feature__desc, 
+        .np-col-right .np-feature__desc {
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        /* Show image on mobile but smaller and centered if desired */
+        /* If you want to keep the image, uncomment the lines below: */
+        /*
+        .d-none.d-lg-flex {
+            display: block !important;
+            margin-bottom: 30px;
+        }
         .np-img-wrap {
-            min-height: 280px;
-            margin-bottom: 36px;
+            min-height: 250px;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        */
+    }
+
+    @media (max-width: 767px) {
+        .non-profit-heading {
+            font-size: 1rem;
+        }
+
+        .np-feature {
+            border-bottom: 1px solid #edf2f7;
+            padding-bottom: 20px;
+        }
+
+        .np-feature:last-child {
+            border-bottom: none;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .non-profit {
+            padding: 50px 10px 30px;
         }
     }
 </style>
@@ -2249,7 +2807,7 @@ include_once('elements/header.php');
             </div><!-- /LEFT -->
 
             <!-- CENTER image -->
-            <div class="col-lg-4 d-none d-lg-flex">
+            <div class="col-lg-4 d-lg-flex">
                 <div class="np-img-wrap w-100">
                     <img
                         src="assets/img/corporate-establishment/ngo-trust.png"
@@ -2347,6 +2905,62 @@ include_once('elements/header.php');
         line-height: 1.85;
         margin: 0 auto;
     }
+
+    /* --- Start-up India Banner Mobile Styles --- */
+
+    @media (max-width: 991px) {
+        .si-banner {
+            padding: 60px 0;
+            background-position: center; /* Keeps the main part of the image visible */
+        }
+
+        /* Adjust brackets to be relative to the viewport edges */
+        .si-banner__bracket--tl {
+            left: 5%; 
+            top: 20px;
+        }
+
+        .si-banner__bracket--br {
+            left: auto;
+            right: 5%;
+            bottom: 20px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .si-banner {
+            padding: 45px 15px;
+            /* Optional: Add a light tint if the image makes text hard to read on phones */
+            background-color: rgba(255, 255, 255, 0.75);
+            background-blend-mode: overlay;
+        }
+
+        .si-banner__title {
+            font-size: 1.6rem; /* Slightly smaller for mobile */
+            margin-bottom: 15px;
+        }
+
+        .si-banner__desc {
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+
+        /* Hide brackets on very small screens to keep the layout clean */
+        .si-banner__bracket {
+            display: none;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .si-banner {
+            padding: 40px 10px;
+        }
+        
+        .si-banner__title {
+            font-size: 1.4rem;
+        }
+    }
+    
 </style>
 
 <section class="si-banner mb-5">

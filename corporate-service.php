@@ -11,7 +11,9 @@ include_once ('elements/header.php');
     </p>
   </div>
 </section>
-
+<style>
+  
+</style>
 <div class="container content-section">
 
     <!-- Tabs -->

@@ -392,15 +392,49 @@ include_once('elements/header.php');
         padding-top: 8px;
     }
 
-    @media (max-width: 576px) {
-        .meta-cell+.meta-cell {
-            border-left: none;
-            padding-left: 0;
-        }
+    @media (max-width: 600px) {
+    /* 1. Adjust the watermark for smaller screens */
+    .carrier-benefits::before {
+        top: 62px;
+        letter-spacing: 1px;
+    }
 
-        .job-meta {
-            gap: 8px;
-        }
+    /* 2. Add more breathing room to the header */
+    .job-header {
+        padding: 16px;
+        gap: 10px;
+    }
+
+    /* 3. Stack meta-cells vertically */
+    .job-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    /* 4. Remove the vertical dividers (border-left) on mobile */
+    .meta-cell, 
+    .meta-cell + .meta-cell {
+        border-left: none;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 0.8rem; /* Slightly smaller text for mobile */
+    }
+
+    /* 5. Adjust the body padding and button layout */
+    .job-body {
+        padding: 0 16px 20px;
+    }
+
+    .apply-row {
+        justify-content: stretch; /* Make button full width if desired */
+    }
+
+    .btn-apply {
+        width: 100%; /* Full width button is easier to tap on mobile */
+        justify-content: center;
+        float: none;
+    }
     }
 </style>
 
@@ -658,14 +692,48 @@ include_once('elements/header.php');
         line-height: 1.45;
     }
 
-    @media (max-width: 575px) {
-        .culture-card {
-            padding: 32px 20px;
-        }
+   @media (max-width: 767px) {
+    /* 1. Reduce outer card padding for more text space */
+    .culture-card {
+        padding: 30px 15px;
+        border-radius: 30px; /* Slightly smaller radius looks better on mobile */
+    }
 
-        .intro-text {
-            font-size: 0.88rem;
-        }
+    /* 2. Adjust watermark size for smaller screens */
+    .why-euphoria::before {
+        font-size: 50px;
+        top: 40px;
+    }
+
+    /* 3. Fix the feature items */
+    .feature-item {
+        padding: 12px 10px; /* Crucial: Remove the large 60px side padding */
+        gap: 15px;
+        border-bottom: 1px solid #f3f4f6; /* Optional: adds separation on mobile */
+    }
+
+    /* Remove border from the very last item */
+    .col-12:last-child .feature-item:last-child {
+        border-bottom: none;
+    }
+
+    /* 4. Ensure icons don't shrink */
+    .feat-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* 5. Adjust text sizes */
+    .why-euphoria-heading {
+        margin-bottom: 30px;
+        top: -30px;
+    }
+
+    .intro-text {
+        line-height: 1.6;
+        margin-bottom: 25px;
+        text-align: left; /* Often easier to read long text on mobile */
+    }
     }
 </style>
 
@@ -906,16 +974,90 @@ include_once('elements/header.php');
     }
 
     @media (max-width: 767px) {
-        .growth-section {
-            min-height: auto;
-        }
+    /* 1. Reset section height and layout */
+    .growth-section {
+        min-height: auto;
+        display: block; /* Stack vertically */
+    }
 
-        .watermark {
-            font-size: 48px;
-        }
+    /* 2. Adjust Background for Mobile */
+    .bg-left::before {
+        /* Change from horizontal gradient to vertical/solid for mobile readability */
+        background: linear-gradient(to bottom, 
+            #2a3e81 0%, 
+            rgba(37, 59, 124, 0.9) 100%);
+    }
 
+    /* 3. Adjust Watermark for Mobile */
+    .watermark-growth {
+     
+        font-size: 62px;
+        top: 14px;
+        left: 20px;
+        width: auto;
+    }
+
+    /* 4. Content Spacing */
+    .growth-content {
+        padding: 40px 0;
+    }
+
+    .section-heading {
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 30px;
+        padding: 0 10px;
+    }
+
+    /* 5. Feature Cards - Reset width and offsets */
+    .feature-card {
+        max-width: 100%;
+        margin-right: 0 !important; /* Remove the growth-card-2/4 offsets */
+        right: auto !important;
+        flex-direction: row; /* Keep icon side-by-side */
+        gap: 15px;
+        padding: 15px;
+        background: rgba(255, 255, 255, 1); /* Solid white for better contrast */
+    }
+
+    /* 6. Adjust Icon and Text sizes for small screens */
+    .fc-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .fc-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .fc-body {
+        padding-left: 12px;
+    }
+
+    .fc-body h6 {
+        font-size: 0.9rem;
+    }
+
+    .fc-body p {
+        font-size: 0.75rem;
+        line-height: 1.5;
+    }
+    }
+
+/* Extra small screens fix */
+    @media (max-width: 480px) {
         .feature-card {
-            max-width: 100%;
+            /* On very small phones, icon on top looks cleaner */
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        .fc-body {
+            border-left: none;
+            border-top: 2px solid #1a2a5e;
+            padding-left: 0;
+            padding-top: 10px;
         }
     }
 
@@ -1155,6 +1297,65 @@ include_once('elements/header.php');
     #file-input {
         display: none;
     }
+
+    @media (max-width: 767px) {
+    /* 1. Remove the vertical divider on mobile */
+    .left-panel::after {
+        display: none;
+    }
+
+    /* 2. Adjust panel padding for smaller screens */
+    .left-panel, .right-panel {
+        padding: 2rem 1.5rem;
+    }
+
+    /* 3. Adjust Heading size for mobile */
+    .left-panel h2 {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+
+    .left-panel p {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    /* 4. Center contact items on mobile for better balance */
+    .contact-item {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    /* 5. Fix the Upload Area overflow */
+    .upload-area {
+        flex-direction: column; /* Stack button and label */
+        align-items: flex-start;
+        padding-bottom: 10px;
+    }
+
+    .btn-upload {
+        width: 100%; /* Full width button */
+        border-radius: 0;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .upload-label {
+        padding: 0 1rem;
+        margin-bottom: 5px;
+    }
+
+    .upload-hint {
+        display: block;
+        padding: 0 1rem;
+        font-size: 0.7rem; /* Make it slightly more readable than 0.5rem */
+    }
+
+    /* 6. Make Submit button full width on mobile */
+    .btn-submit {
+        width: 100%;
+    }
+    }
 </style>
 
 <section class="container py-5">
@@ -1232,7 +1433,6 @@ include_once('elements/header.php');
     </div>
 </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
     function toggleJob(id) {
