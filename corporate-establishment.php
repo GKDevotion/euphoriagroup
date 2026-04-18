@@ -667,8 +667,8 @@ include_once('elements/header.php');
         cursor: default;
         position: relative;
         box-shadow: 0 8px 30px rgba(26, 45, 107, 0.25);
-        animation: dropTop 1s ease forwards;
         opacity: 0;
+        transform: translateY(-80px) scale(0.9);
     }
 
     /* .feature-circle:hover {
@@ -714,31 +714,36 @@ include_once('elements/header.php');
         align-items: center;
     }
 
-    /* Stagger delay for rain effect */
-    .circles-grid > div:nth-child(1) .feature-circle { animation-delay: 0.1s; }
-    .circles-grid > div:nth-child(2) .feature-circle { animation-delay: 0.2s; }
-    .circles-grid > div:nth-child(3) .feature-circle { animation-delay: 0.3s; }
-    .circles-grid > div:nth-child(4) .feature-circle { animation-delay: 0.4s; }
-    .circles-grid > div:nth-child(5) .feature-circle { animation-delay: 0.5s; }
-    .circles-grid > div:nth-child(6) .feature-circle { animation-delay: 0.6s; }
-    .circles-grid > div:nth-child(7) .feature-circle { animation-delay: 0.7s; }
-    .circles-grid > div:nth-child(8) .feature-circle { animation-delay: 0.8s; }
+    /* When visible */
+    .register.animate .feature-circle {
+        animation: dropTop 1s ease forwards;
+    }
 
-    /* Top → Bottom effect */
+    /* Stagger delays */
+    .register.animate .circles-grid > div:nth-child(1) .feature-circle { animation-delay: 0.1s; }
+    .register.animate .circles-grid > div:nth-child(2) .feature-circle { animation-delay: 0.2s; }
+    .register.animate .circles-grid > div:nth-child(3) .feature-circle { animation-delay: 0.3s; }
+    .register.animate .circles-grid > div:nth-child(4) .feature-circle { animation-delay: 0.4s; }
+    .register.animate .circles-grid > div:nth-child(5) .feature-circle { animation-delay: 0.5s; }
+    .register.animate .circles-grid > div:nth-child(6) .feature-circle { animation-delay: 0.6s; }
+    .register.animate .circles-grid > div:nth-child(7) .feature-circle { animation-delay: 0.7s; }
+    .register.animate .circles-grid > div:nth-child(8) .feature-circle { animation-delay: 0.8s; }
+
+    /* Animation */
     @keyframes dropTop {
         0% {
-            transform: translateY(-80px) scale(0.9);
-            opacity: 0;
-        }
-        60% {
-            transform: translateY(10px) scale(1.02);
-            opacity: 1;
-        }
-        100% {
-            transform: translateY(0) scale(1);
-            opacity: 1;
-        }
+        transform: translateY(-80px) scale(0.9);
+        opacity: 0;
     }
+    60% {
+        transform: translateY(10px) scale(1.02);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
 
     /* --- Add/Update these rules in your <style> block --- */
 
@@ -931,6 +936,27 @@ include_once('elements/header.php');
 
 
 </section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const sectionDropAnimation = document.querySelector(".register");
+
+        const observerDropAnimation = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    sectionDropAnimation.classList.add("animate");
+
+                    // OPTIONAL: run only once
+                    observerDropAnimation.unobserve(sectionDropAnimation);
+                }
+            });
+        }, {
+            threshold: 0.3 // trigger when 30% visible
+        });
+
+        observerDropAnimation.observe(sectionDropAnimation);
+    });
+</script>
 
 <style>
     /* Section */
