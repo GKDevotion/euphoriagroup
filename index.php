@@ -372,12 +372,12 @@ include_once ('elements/home-slider.php');
           <div class="right-col">
             <img
               class="img-office"
-              src="https://img.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&q=80"
+              src="https://picsum.photos/300/200?2"
               alt="Professionals at work"
             />
             <div class="img-world-card">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/1280px-World_map_-_low_resolution.svg.png"
+                src="https://picsum.photos/300/200?3"
                 alt="World map global network"
               />
             </div>
@@ -398,7 +398,7 @@ include_once ('elements/home-slider.php');
                 
                 <h2 class="about-title h1 pb-5">Latest Announcement</h2>
             
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 px-2 mx-auto">
                     <div class="card blog-card" style="transition-delay: 0.1s;">
                         <div class="card-img-wrapper">
                             <img src="assets/img/blog-image-2.png" class="card-img-top" alt="Penguin">
@@ -417,7 +417,7 @@ include_once ('elements/home-slider.php');
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 px-2 mx-auto">
                     <div class="card blog-card" style="transition-delay: 0.3s;">
                         <div class="card-img-wrapper">
                             <img src="assets/img/blog-image-2.png" class="card-img-top" alt="Crow">
@@ -436,7 +436,7 @@ include_once ('elements/home-slider.php');
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 px-2 mx-auto">
                     <div class="card blog-card" style="transition-delay: 0.5s;">
                         <div class="card-img-wrapper">
                             <img src="assets/img/blog-image-2.png" class="card-img-top" alt="Cityscape">

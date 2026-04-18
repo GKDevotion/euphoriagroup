@@ -726,8 +726,9 @@ h1, h2 {
 
 .img-world-card img {
     width: 100%;
-    max-height: 140px;
+    /* max-height: 140px; */
     object-fit: contain;
+    border-radius: 10px;
 }
 
 /* ── TABLET (max 991px) ── */
