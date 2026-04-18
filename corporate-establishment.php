@@ -663,15 +663,17 @@ include_once('elements/header.php');
         text-align: center;
         padding: 20px;
         margin: 10px auto;
-        transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+        /* transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; */
         cursor: default;
         position: relative;
         box-shadow: 0 8px 30px rgba(26, 45, 107, 0.25);
+        animation: dropTop 1s ease forwards;
+        opacity: 0;
     }
 
-    .feature-circle:hover {
+    /* .feature-circle:hover {
         transform: translateY(-6px) scale(1.05);
-    }
+    } */
 
     .feature-circle .icon {
         font-size: 2rem;
@@ -689,8 +691,8 @@ include_once('elements/header.php');
 
     /* Large circles */
     .feature-circle.large {
-        width: 180px;
-        height: 180px;
+        width: 160px;
+        height: 160px;
     }
 
     /* SVG Icons */
@@ -710,6 +712,32 @@ include_once('elements/header.php');
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto auto;
         align-items: center;
+    }
+
+    /* Stagger delay for rain effect */
+    .circles-grid > div:nth-child(1) .feature-circle { animation-delay: 0.1s; }
+    .circles-grid > div:nth-child(2) .feature-circle { animation-delay: 0.2s; }
+    .circles-grid > div:nth-child(3) .feature-circle { animation-delay: 0.3s; }
+    .circles-grid > div:nth-child(4) .feature-circle { animation-delay: 0.4s; }
+    .circles-grid > div:nth-child(5) .feature-circle { animation-delay: 0.5s; }
+    .circles-grid > div:nth-child(6) .feature-circle { animation-delay: 0.6s; }
+    .circles-grid > div:nth-child(7) .feature-circle { animation-delay: 0.7s; }
+    .circles-grid > div:nth-child(8) .feature-circle { animation-delay: 0.8s; }
+
+    /* Top → Bottom effect */
+    @keyframes dropTop {
+        0% {
+            transform: translateY(-80px) scale(0.9);
+            opacity: 0;
+        }
+        60% {
+            transform: translateY(10px) scale(1.02);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(0) scale(1);
+            opacity: 1;
+        }
     }
 
     /* --- Add/Update these rules in your <style> block --- */
