@@ -1192,11 +1192,109 @@ h1, h2 {
     }
 
     /* Mobile Adjustments */
-    @media (max-width: 768px) {
-        .footer-curve-wrapper { height: 50px; border-bottom-left-radius: 50% 50px; border-bottom-right-radius: 50% 50px; }
-        .social-icons { margin-top: 20px; text-align: left !important; }
-        .newsletter-card { margin-top: 30px; }
-    } 
+   /* --- Footer Mobile Styles --- */
+
+@media (max-width: 991px) {
+    .main-footer {
+        padding-top: 80px;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin: 0 auto 20px;
+    }
+
+    .social-icons {
+        text-align: center !important;
+        margin-top: 30px;
+    }
+
+    .footer-link-background {
+        background-color: transparent; /* Remove box on mobile for cleaner look */
+        padding: 0;
+    }
+
+    .newsletter-card {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-curve-wrapper {
+        height: 60px;
+        border-bottom-left-radius: 50% 60px;
+        border-bottom-right-radius: 50% 60px;
+    }
+
+    .main-footer {
+        margin-top: -60px; /* Adjust for smaller curve */
+    }
+
+    .footer-heading {
+        font-size: 1.1rem;
+        margin-top: 25px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        padding-bottom: 8px;
+    }
+
+    /* Stack link columns */
+    .footer-links li {
+        margin-bottom: 10px;
+    }
+
+    .footer-links a {
+        justify-content: center; /* Center links on mobile */
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        background: transparent;
+        padding: 0;
+    }
+
+    .newsletter-form input {
+        background: #f1f3f9;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .btn-signup {
+        width: 100%;
+        padding: 12px;
+    }
+
+    /* Contact Bar Stacking */
+    .contact-info-bar .contact-item {
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .contact-item i {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+
+    .copyright-bar {
+        font-size: 0.85rem;
+    }
+
+    .copyright-bar a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+}
 /**
  * End Footer Section
  */
