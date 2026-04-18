@@ -2546,7 +2546,7 @@ include_once('elements/header.php');
 <section class="container compliance ">
 
     <div class=" position-relative py-5 " style="z-index:1;">
-        <h2 class="compliance-heading">Pan, Tan, Gst Registration</h2>
+        <h2 class="compliance-heading">PAN, TAN, GST Registration</h2>
 
         <!-- Swiper -->
         <div class="swiper taxSwiper">

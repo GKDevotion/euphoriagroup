@@ -354,7 +354,7 @@ include_once('elements/header.php');
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 20px 18px 22px;
+    padding: 15px 15px 15px;
     color: #000;
     background-color: #fff;
   }
