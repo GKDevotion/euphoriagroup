@@ -1266,13 +1266,13 @@ include_once('elements/header.php');
         </div><!-- /.swiper -->
 
         <!-- Custom Navigation -->
-        <div class="d-flex justify-content-center align-items-center gap-3 mt-3">
+        <div class="d-flex d-none justify-content-center align-items-center gap-3 mt-3">
             <button class="swiper-nav-btn" id="prevBtn" aria-label="Previous">
                 <svg fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
                 </svg>
             </button>
-            <button class="swiper-nav-btn" id="nextBtn" aria-label="Next">
+            <button class="swiper-nav-btn d-none" id="nextBtn" aria-label="Next">
                 <svg fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                 </svg>
@@ -2589,7 +2589,7 @@ include_once('elements/header.php');
         </div><!-- /.swiper -->
 
         <!-- Custom nav -->
-        <div class="swiper-nav">
+        <div class="swiper-nav d-none">
             <button class="swiper-btn" id="taxPrev" aria-label="Previous">&#8592;</button>
             <button class="swiper-btn" id="taxNext" aria-label="Next">&#8594;</button>
         </div>
@@ -2993,6 +2993,10 @@ include_once('elements/header.php');
         spaceBetween: 24,
         loop: true,
         grabCursor: true,
+        autoplay: {
+            delay: 2500, // time in ms (2.5 sec)
+            disableOnInteraction: false, // keep autoplay after user swipe
+        },
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -3036,6 +3040,10 @@ include_once('elements/header.php');
         centeredSlides: false,
         grabCursor: true,
         loop: false,
+        autoplay: {
+        delay: 2500, // time in ms (2.5 sec)
+        disableOnInteraction: false, // keep autoplay after user swipe
+        },
         pagination: {
             el: '.swiper-pagination',
             clickable: true,

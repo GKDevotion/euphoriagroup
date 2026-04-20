@@ -196,7 +196,7 @@
      padding: 16px 20px;
      margin-top: 28px;
      font-size: 15px;
-     color: #1a2855;
+     color: #25356f;
      font-weight: 500;
      line-height: 1.7;
    }
@@ -395,7 +395,7 @@
            <!-- Ghost watermark -->
            <span class="mission-text" aria-hidden="true">Our Mission</span>
 
-           <h2 class="text-center">Shaping the Future</h2>
+           <h2 class="text-center">Strategic Purpose</h2>
 
 
            <div class="vision-body">
@@ -459,7 +459,7 @@
      text-align: center;
      font-size: 1.7rem;
      font-weight: 700;
-     color: #1a2855;
+     color: #25356f;
      margin-bottom: 60px;
      position: relative;
      z-index: 2;
@@ -499,7 +499,7 @@
      width: 105px;
      height: 105px;
      border-radius: 50%;
-     background: #1a2855;
+     background: #25356f;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -511,6 +511,11 @@
      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
      z-index: 3;
    }
+
+   .trust-icon-wrap img{
+    width: 50px;
+    height: 50px;
+  }
 
    /* Back-side outline ring using a pseudo-element */
    .trust-icon-wrap::before {
@@ -684,15 +689,6 @@
 
  <section class="container ">
    <div class="trust-section ">
-     <!-- Plus signs -->
-     <span class="plus" style="top:32%; left:8%">+</span>
-     <span class="plus" style="top:32%; left:36%">+</span>
-     <span class="plus" style="top:32%; left:65%">+</span>
-     <span class="plus" style="top:32%; right:5%">+</span>
-     <span class="plus" style="top:62%; left:8%">+</span>
-     <span class="plus" style="top:62%; left:36%">+</span>
-     <span class="plus" style="top:62%; left:65%">+</span>
-     <span class="plus" style="top:62%; right:5%">+</span>
 
      <h2 class="section-heading-trust">Built on Trust</h2>
 
@@ -701,9 +697,7 @@
        <!-- Card 1 -->
        <div class="trust-card ">
          <div class="trust-icon-wrap ">
-           <svg viewBox="0 0 24 24">
-             <path d="M20.42 4.58a5.4 5.4 0 00-7.65 0l-.77.78-.77-.78a5.4 5.4 0 00-7.65 7.65l8.42 8.42 8.42-8.42a5.4 5.4 0 000-7.65z" />
-           </svg>
+             <img src="assets/img/icon/commitment.png" alt="Trust Icon" class="trust-icon-img">
          </div>
          <div class="trust-card-text">Building long-term relationships based on trust and transparency</div>
        </div>
@@ -711,13 +705,7 @@
        <!-- Card 2 -->
        <div class="trust-card">
          <div class="trust-icon-wrap">
-           <svg viewBox="0 0 24 24">
-             <circle cx="9" cy="7" r="2.5" />
-             <path d="M14 7h2a2 2 0 012 2v1" />
-             <path d="M3 19v-1a5 5 0 015-5h3" />
-             <path d="M14 14l2.5 2.5L21 12" />
-             <circle cx="17" cy="17" r="4" />
-           </svg>
+           <img src="assets/img/icon/commitment-1.png" alt="Trust Icon" class="trust-icon-img">
          </div>
          <div class="trust-card-text">Safeguarding client interests at every stage</div>
        </div>
@@ -725,10 +713,7 @@
        <!-- Card 3 -->
        <div class="trust-card">
          <div class="trust-icon-wrap">
-           <svg viewBox="0 0 24 24">
-             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-             <polyline points="9 12 11 14 15 10" />
-           </svg>
+           <img src="assets/img/icon/commitment-2.png" alt="Trust Icon" class="trust-icon-img">
          </div>
          <div class="trust-card-text">Delivering value that goes beyond transactions</div>
        </div>
@@ -736,10 +721,7 @@
        <!-- Card 4 -->
        <div class="trust-card">
          <div class="trust-icon-wrap">
-           <svg viewBox="0 0 24 24">
-             <circle cx="12" cy="12" r="3" />
-             <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z" />
-           </svg>
+           <img src="assets/img/icon/commitment-3.png" alt="Trust Icon" class="trust-icon-img">
          </div>
          <div class="trust-card-text">Providing recommendations guided by integrity and responsibility</div>
        </div>
@@ -747,13 +729,7 @@
        <!-- Card 5 -->
        <div class="trust-card">
          <div class="trust-icon-wrap">
-           <svg viewBox="0 0 24 24">
-             <line x1="6" y1="20" x2="6" y2="14" />
-             <line x1="12" y1="20" x2="12" y2="8" />
-             <line x1="18" y1="20" x2="18" y2="4" />
-             <circle cx="18" cy="4" r="1.5" />
-             <path d="M6 10l3-4 4 3 3-5" />
-           </svg>
+           <img src="assets/img/icon/commitment-4.png" alt="Trust Icon" class="trust-icon-img">
          </div>
          <div class="trust-card-text">Understanding client goals through a personalized approach</div>
        </div>
@@ -761,10 +737,7 @@
        <!-- Card 6 -->
        <div class="trust-card">
          <div class="trust-icon-wrap">
-           <svg viewBox="0 0 24 24">
-             <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
-             <polyline points="17 6 23 6 23 12" />
-           </svg>
+           <img src="assets/img/icon/commitment-5.png" alt="Trust Icon" class="trust-icon-img">
          </div>
          <div class="trust-card-text">Measuring success by lasting trust and sustainable outcomes, not quick wins</div>
        </div>
@@ -796,7 +769,7 @@
    .section-heading {
      position: relative;
      z-index: 1;
-     color: #1a2855;
+     color: #25356f;
      font-size: clamp(1.6rem, 3vw, 2.2rem);
      font-weight: 700;
      text-align: center;
@@ -856,7 +829,7 @@
      flex-shrink: 0;
      width: 28px;
      height: 28px;
-     background: #1a2756;
+     background: #25356f;
      border-radius: 50%;
      display: flex;
      align-items: center;
@@ -1144,7 +1117,7 @@
    .section-title {
      font-size: clamp(28px, 3.5vw, 25px);
      font-weight: 700;
-     color: #1a2855;
+     color: #25356f;
      line-height: 1.2;
      position: relative;
      z-index: 2;
@@ -1248,15 +1221,15 @@
    }
 
    .icon-circle {
-     width: 100px;
-     height: 100px;
-     min-width: 72px;
-     background: white;
-     border-radius: 50%;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     border: 1.5px solid #e2e5f0;
+    width: 100px;
+    height: 100px;
+    /* min-width: 72px; */
+    /* background: white; */
+    border-radius: 50%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    border: 1px solid #e2e5f0;
    }
 
    .icon-circle svg {
@@ -1267,7 +1240,7 @@
    .item-title {
      font-weight: 700;
      font-size: 17px;
-     color: #1a2855;
+     color: #25356f;
      margin-bottom: 8px;
    }
 
@@ -1486,16 +1459,7 @@
          <!-- Item 1 -->
          <div class="mindset-item d-flex gap-4">
            <div class="icon-circle flex-shrink-0">
-             <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <!-- Target/bullseye -->
-               <circle cx="20" cy="21" r="12" stroke="#c0392b" stroke-width="1.8" />
-               <circle cx="20" cy="21" r="7" stroke="#c0392b" stroke-width="1.8" />
-               <circle cx="20" cy="21" r="3" fill="#c0392b" />
-               <!-- Arrow -->
-               <line x1="27" y1="10" x2="23" y2="18" stroke="#c0392b" stroke-width="2" stroke-linecap="round" />
-               <polyline points="24,10 27,10 27,13" stroke="#c0392b" stroke-width="2" stroke-linecap="round"
-                 stroke-linejoin="round" fill="none" />
-             </svg>
+             <img src="assets/img/icon/mindset-1.png" alt="We See the Bigger Picture">
            </div>
            <div>
              <h5 class="item-title">We See the Bigger Picture</h5>
@@ -1512,14 +1476,7 @@
          <!-- Item 2 -->
          <div class="mindset-item d-flex gap-4">
            <div class="icon-circle flex-shrink-0">
-             <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <!-- Handshake -->
-               <path d="M8 22 C10 18 14 16 18 18 L22 18 C26 16 30 18 32 22" stroke="#c0392b" stroke-width="1.8"
-                 stroke-linecap="round" />
-               <path d="M8 22 L12 28 L20 24 L28 28 L32 22" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round"
-                 stroke-linejoin="round" />
-               <circle cx="20" cy="14" r="3" stroke="#c0392b" stroke-width="1.6" />
-             </svg>
+             <img src="assets/img/icon/mindset-2.png" alt="Precision Over Promises">
            </div>
            <div>
              <h5 class="item-title">Precision Over Promises</h5>
@@ -1536,15 +1493,7 @@
          <!-- Item 3 -->
          <div class="mindset-item d-flex gap-4">
            <div class="icon-circle flex-shrink-0">
-             <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <!-- Sliders / gears -->
-               <circle cx="16" cy="16" r="4" stroke="#c0392b" stroke-width="1.8" />
-               <line x1="16" y1="8" x2="16" y2="12" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round" />
-               <line x1="16" y1="20" x2="16" y2="32" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round" />
-               <circle cx="26" cy="26" r="4" stroke="#c0392b" stroke-width="1.8" />
-               <line x1="26" y1="8" x2="26" y2="22" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round" />
-               <line x1="26" y1="30" x2="26" y2="32" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round" />
-             </svg>
+             <img src="assets/img/icon/mindset-3.png" alt="Precision Over Promises">
            </div>
            <div>
              <h5 class="item-title">Tailored, Not Standardised</h5>
@@ -1562,19 +1511,7 @@
          <!-- Item 4 -->
          <div class="mindset-item d-flex gap-4">
            <div class="icon-circle flex-shrink-0">
-             <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <!-- Trophy -->
-               <path d="M14 8 H26 V20 C26 25 22 28 20 28 C18 28 14 25 14 20 Z" stroke="#c0392b" stroke-width="1.8"
-                 stroke-linejoin="round" />
-               <path d="M14 12 H10 C10 18 13 20 15 20" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round" />
-               <path d="M26 12 H30 C30 18 27 20 25 20" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round" />
-               <line x1="20" y1="28" x2="20" y2="33" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round" />
-               <line x1="14" y1="33" x2="26" y2="33" stroke="#c0392b" stroke-width="2" stroke-linecap="round" />
-               <!-- Star -->
-               <path
-                 d="M20 14 L21.2 17.2 L24.5 17.2 L21.9 19.3 L22.9 22.5 L20 20.5 L17.1 22.5 L18.1 19.3 L15.5 17.2 L18.8 17.2 Z"
-                 fill="#c0392b" />
-             </svg>
+             <img src="assets/img/icon/mindset-4.png" alt="Precision Over Promises">
            </div>
            <div>
              <h5 class="item-title">Confidence as the Outcome</h5>
@@ -1902,7 +1839,7 @@
    .section-heading-our-team {
      position: relative;
      z-index: 1;
-     color: #1a2855;
+     color: #25356f;
      font-size: clamp(1.6rem, 3vw, 2.2rem);
      font-weight: 700;
      text-align: center;
@@ -1914,7 +1851,6 @@
      background: #ffffff;
      border: 1.5px solid #e8eaf6;
      border-radius: 18px;
-     padding: 0 0 28px;
      text-align: center;
      transition: box-shadow .3s ease, transform .3s ease;
      overflow: hidden;
@@ -1922,7 +1858,7 @@
    }
 
    .member-card:hover {
-     box-shadow: 0 12px 40px rgba(43, 57, 144, .12);
+     /* box-shadow: 0 12px 40px rgba(43, 57, 144, .12); */
      transform: translateY(-4px);
    }
 
@@ -2108,7 +2044,7 @@
 
      <div class="swiper-outer">
        <!-- Prev -->
-       <div class="swiper-btn-prev" id="teamPrev">
+       <div class="swiper-btn-prev d-none" id="teamPrev">
          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
            <path d="M15 18L9 12L15 6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
          </svg>
@@ -2198,7 +2134,7 @@
        </div><!-- /.mySwiper -->
 
        <!-- Next -->
-       <div class="swiper-btn-next" id="teamNext">
+       <div class="swiper-btn-next d-none" id="teamNext">
          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
            <path d="M9 18L15 12L9 6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
          </svg>
@@ -2241,7 +2177,7 @@
    .section-heading-focus {
      position: relative;
      z-index: 1;
-     color: #1a2855;
+     color: #25356f;
      font-size: clamp(1.6rem, 3vw, 2.2rem);
      font-weight: 700;
      text-align: center;
@@ -2476,7 +2412,7 @@
    .section-heading-testimonial {
      position: relative;
      z-index: 1;
-     color: #1a2855;
+     color: #25356f;
      font-size: clamp(1.6rem, 3vw, 35.6px);
      font-weight: 700;
      text-align: center;
@@ -2489,7 +2425,6 @@
      border-radius: 16px;
      padding: 36px 28px 28px;
      border: 1px solid #eaedf3;
-     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.05);
      height: 100%;
      min-height: 240px;
      display: flex;
@@ -2685,7 +2620,24 @@
     }
   }
  </style>
+<style>
+  .testimonialSwiper .swiper-slide {
+  transition: transform 0.4s ease;
+}
 
+/* 1st, 3rd, 5th → slightly up */
+.testimonialSwiper .swiper-slide:nth-child(odd) {
+  transform: translateY(-20px);
+}
+
+/* 2nd, 4th, 6th → slightly down */
+.testimonialSwiper .swiper-slide:nth-child(even) {
+  transform: translateY(20px);
+}
+.swiper-wrapper{
+  padding: 30px;
+}
+</style>
  <section class="container py-5">
 
    <div class="testimonial position-relative" style="z-index:1;">
@@ -2826,6 +2778,10 @@
        prevEl: '#teamPrev',
        nextEl: '#teamNext',
      },
+    autoplay: {
+     delay: 2500, // time in ms (2.5 sec)
+     disableOnInteraction: false, // keep autoplay after user swipe
+     },
      pagination: {
        el: '#teamPagination',
        clickable: true,
@@ -2860,6 +2816,10 @@
      pagination: {
        el: '#testimonialPagination',
        clickable: true,
+     },
+     autoplay: {
+     delay: 2500, // time in ms (2.5 sec)
+     disableOnInteraction: false, // keep autoplay after user swipe
      },
      navigation: {
        nextEl: '#nextBtn',
