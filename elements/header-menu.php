@@ -412,17 +412,17 @@
     <ul class="eg-menu" id="eg-desktop-menu">
 
       <!-- Home -->
-      <li>
+      <li class="<?= isActive('index') ?>">
         <a href="index">Home</a>
       </li>
 
       <!-- About -->
-      <li>
+      <li class="<?= isActive('about-us') ?>">
         <a href="about-us">About Euphoria</a>
       </li>
 
       <!-- Inbound Services — MEGA MENU -->
-      <li class="eg-active">
+      <li class="<?= isActive('corporate-establishment') ?> <?= isActive('corporate-service') ?> <?= isActive('tour-travels') ?> <?= isActive('wealth-asset-solution') ?> <?= isActive('visa-assistance') ?>">
         <button aria-haspopup="true" aria-expanded="false">
           Inbound Services
           <svg class="eg-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
@@ -454,7 +454,7 @@
               <span class="eg-mega-desc">Wealth management services include investment planning, insurance advisory, and asset protection solutions.</span>
             </a>
 
-            <a href="visa-assitance" class="eg-mega-item" role="menuitem">
+            <a href="visa-assistance" class="eg-mega-item" role="menuitem">
               <span class="eg-mega-num">5.</span>
               <span class="eg-mega-title">Get Visa Assistance</span>
               <span class="eg-mega-desc">Visa Assistance services provide professional, end-to-end support to help individuals and businesses navigate complex visa application processes for travel, work or study.</span>
@@ -465,7 +465,7 @@
       </li>
 
       <!-- Outbound Services — simple dropdown -->
-      <li>
+      <li class="">
         <button aria-haspopup="true" aria-expanded="false">
           Outbound Services
           <svg class="eg-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
@@ -480,22 +480,22 @@
       </li>
 
       <!-- Partner Up -->
-      <li>
+      <li class="<?= isActive('partner-up') ?>">
         <a href="partner-up">Partner Up</a>
       </li>
 
       <!-- Career -->
-      <li>
+      <li class="<?= isActive('career') ?>">
         <a href="career">Career</a>
       </li>
 
       <!-- Blog -->
-      <li>
+      <li class="<?= isActive('blog') ?>">
         <a href="blog">Blog</a>
       </li>
 
       <!-- Contact -->
-       <li>
+      <li class="<?= isActive('contact') ?>">
         <a href="contact">Contact</a>
       </li>
 
