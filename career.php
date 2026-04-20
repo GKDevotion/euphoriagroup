@@ -259,7 +259,7 @@ include_once('elements/header.php');
     .job-title {
         font-size: 1.1rem;
         font-weight: 700;
-        color: #1a2a5e;
+        color: #25356f;
         margin: 0;
     }
 
@@ -278,7 +278,7 @@ include_once('elements/header.php');
 
     .job-item:has(.collapse.show) .chevron {
         transform: rotate(180deg);
-        background: #1a2a5e;
+        background: #25356f;
     }
 
     .job-item:has(.collapse.show) .chevron svg {
@@ -354,7 +354,7 @@ include_once('elements/header.php');
         width: 8px;
         height: 8px;
         border-radius: 50%;
-        background: #1a2a5e;
+        background: #25356f;
         flex-shrink: 0;
         margin-top: 6px;
     }
@@ -364,7 +364,7 @@ include_once('elements/header.php');
         display: inline-flex;
         align-items: center;
         gap: 8px;
-        background: #1a2a5e;
+        background: #25356f;
         color: #fff;
         border: none;
         border-radius: 8px;
@@ -688,7 +688,7 @@ include_once('elements/header.php');
     .feat-label {
         font-size: 0.92rem;
         font-weight: 600;
-        color: #1a2a5e;
+        color: #25356f;
         line-height: 1.45;
     }
 
@@ -764,9 +764,9 @@ include_once('elements/header.php');
                     <div class="feature-item">
                         <div class="feat-icon"><!-- diamond-arrow SVG -->
                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="5.5" y="5.5" width="25" height="25" rx="5" transform="rotate(45 18 18)" fill="#1a2a5e" fill-opacity="0.12" />
+                                <rect x="5.5" y="5.5" width="25" height="25" rx="5" transform="rotate(45 18 18)" fill="#25356f" fill-opacity="0.12" />
                                 <polygon points="13,18 23,18 23,18" fill="none" />
-                                <path d="M14 18h9m0 0-4-4m4 4-4 4" stroke="#1a2a5e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M14 18h9m0 0-4-4m4 4-4 4" stroke="#25356f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </div>
                         <span class="feat-label">Inbound &amp; Outbound</span>
@@ -775,8 +775,8 @@ include_once('elements/header.php');
                     <div class="feature-item">
                         <div class="feat-icon">
                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                                <rect x="5.5" y="5.5" width="25" height="25" rx="5" transform="rotate(45 18 18)" fill="#1a2a5e" fill-opacity="0.12" />
-                                <path d="M14 18h9m0 0-4-4m4 4-4 4" stroke="#1a2a5e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <rect x="5.5" y="5.5" width="25" height="25" rx="5" transform="rotate(45 18 18)" fill="#25356f" fill-opacity="0.12" />
+                                <path d="M14 18h9m0 0-4-4m4 4-4 4" stroke="#25356f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </div>
                         <span class="feat-label">Transparent, ethical, and professional culture</span>
@@ -785,8 +785,8 @@ include_once('elements/header.php');
                     <div class="feature-item">
                         <div class="feat-icon">
                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                                <rect x="5.5" y="5.5" width="25" height="25" rx="5" transform="rotate(45 18 18)" fill="#1a2a5e" fill-opacity="0.12" />
-                                <path d="M14 18h9m0 0-4-4m4 4-4 4" stroke="#1a2a5e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <rect x="5.5" y="5.5" width="25" height="25" rx="5" transform="rotate(45 18 18)" fill="#25356f" fill-opacity="0.12" />
+                                <path d="M14 18h9m0 0-4-4m4 4-4 4" stroke="#25356f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </div>
                         <span class="feat-label">Inclusive workplace that values diverse perspectives</span>
@@ -800,8 +800,8 @@ include_once('elements/header.php');
                     <div class="feature-item">
                         <div class="feat-icon">
                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                                <rect x="5.5" y="5.5" width="25" height="25" rx="5" transform="rotate(45 18 18)" fill="#1a2a5e" fill-opacity="0.12" />
-                                <path d="M14 18h9m0 0-4-4m4 4-4 4" stroke="#1a2a5e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <rect x="5.5" y="5.5" width="25" height="25" rx="5" transform="rotate(45 18 18)" fill="#25356f" fill-opacity="0.12" />
+                                <path d="M14 18h9m0 0-4-4m4 4-4 4" stroke="#25356f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </div>
                         <span class="feat-label">Multi-industry learning and career growth</span>
@@ -810,8 +810,8 @@ include_once('elements/header.php');
                     <div class="feature-item">
                         <div class="feat-icon">
                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                                <rect x="5.5" y="5.5" width="25" height="25" rx="5" transform="rotate(45 18 18)" fill="#1a2a5e" fill-opacity="0.12" />
-                                <path d="M14 18h9m0 0-4-4m4 4-4 4" stroke="#1a2a5e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <rect x="5.5" y="5.5" width="25" height="25" rx="5" transform="rotate(45 18 18)" fill="#25356f" fill-opacity="0.12" />
+                                <path d="M14 18h9m0 0-4-4m4 4-4 4" stroke="#25356f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </div>
                         <span class="feat-label">Performance-driven rewards and recognition</span>
@@ -820,8 +820,8 @@ include_once('elements/header.php');
                     <div class="feature-item">
                         <div class="feat-icon">
                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                                <rect x="5.5" y="5.5" width="25" height="25" rx="5" transform="rotate(45 18 18)" fill="#1a2a5e" fill-opacity="0.12" />
-                                <path d="M14 18h9m0 0-4-4m4 4-4 4" stroke="#1a2a5e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <rect x="5.5" y="5.5" width="25" height="25" rx="5" transform="rotate(45 18 18)" fill="#25356f" fill-opacity="0.12" />
+                                <path d="M14 18h9m0 0-4-4m4 4-4 4" stroke="#25356f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </div>
                         <span class="feat-label">Recognition and rewards based purely on performance</span>
@@ -954,7 +954,7 @@ include_once('elements/header.php');
 
     /* left accent border */
     .fc-body {
-        border-left: 2.5px solid #1a2a5e;
+        border-left: 2.5px solid #25356f;
         padding-left: 18px;
         flex: 1;
     }
@@ -1055,7 +1055,7 @@ include_once('elements/header.php');
         
         .fc-body {
             border-left: none;
-            border-top: 2px solid #1a2a5e;
+            border-top: 2px solid #25356f;
             padding-left: 0;
             padding-top: 10px;
         }
@@ -1088,7 +1088,7 @@ include_once('elements/header.php');
             <div class="feature-card growth-card-1">
                 <div class="fc-icon">
                     <!-- Graduation cap -->
-                    <svg viewBox="0 0 24 24" fill="none" stroke="#1a2a5e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#25356f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M22 10L12 5 2 10l10 5 10-5z" />
                         <path d="M6 12v5c0 2 2.7 3 6 3s6-1 6-3v-5" />
                         <line x1="22" y1="10" x2="22" y2="15" />
@@ -1104,7 +1104,7 @@ include_once('elements/header.php');
             <div class="feature-card growth-card-2">
                 <div class="fc-icon">
                     <!-- Handshake / mentorship -->
-                    <svg viewBox="0 0 24 24" fill="none" stroke="#1a2a5e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#25356f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M9 11l3 3L22 4" />
                         <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" />
                         <path d="M3 9c2-1 4-1 6 1s4 2 6 1" />
@@ -1120,7 +1120,7 @@ include_once('elements/header.php');
             <div class="feature-card growth-card-3">
                 <div class="fc-icon">
                     <!-- Career / person climbing -->
-                    <svg viewBox="0 0 24 24" fill="none" stroke="#1a2a5e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#25356f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="12" cy="5" r="2" />
                         <path d="M12 7v5l-3 3" />
                         <path d="M12 12l3 3" />
@@ -1137,7 +1137,7 @@ include_once('elements/header.php');
             <div class="feature-card growth-card-4">
                 <div class="fc-icon">
                     <!-- Globe -->
-                    <svg viewBox="0 0 24 24" fill="none" stroke="#1a2a5e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#25356f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="12" cy="12" r="10" />
                         <line x1="2" y1="12" x2="22" y2="12" />
                         <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />

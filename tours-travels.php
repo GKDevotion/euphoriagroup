@@ -228,7 +228,6 @@ include_once('elements/header.php');
     border-radius: 16px;
     overflow: hidden;
     cursor: pointer;
-    border: 1.5px solid var(--card-border);
     box-shadow: 0 4px 20px rgba(37, 53, 111, 0.08);
     background: #111;
     transition: transform .35s ease, box-shadow .35s ease;
@@ -532,7 +531,7 @@ include_once('elements/header.php');
 
     <!-- CAROUSEL -->
     <div class="position-relative px-3">
-      <button class="carousel-btn prev" id="prevBtn" aria-label="Previous">
+      <button class="carousel-btn prev d-none" id="prevBtn" aria-label="Previous">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="15 18 9 12 15 6" />
         </svg>
@@ -545,7 +544,7 @@ include_once('elements/header.php');
           <div class="flight-card">
             <img class="card-bg" src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=700&q=80" alt="Domestic Flights" />
             <div class="card-overlay"></div>
-            <div class="card-accent"><svg viewBox="0 0 24 24">
+            <div class="card-accent d-none"><svg viewBox="0 0 24 24">
                 <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
               </svg></div>
             <div class="card-body-content">
@@ -558,7 +557,7 @@ include_once('elements/header.php');
           <div class="flight-card">
             <img class="card-bg" src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?w=700&q=80" alt="Competitive Airfare Deals" />
             <div class="card-overlay"></div>
-            <div class="card-accent"><svg viewBox="0 0 24 24">
+            <div class="card-accent d-none"><svg viewBox="0 0 24 24">
                 <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
               </svg></div>
             <div class="card-body-content">
@@ -571,7 +570,7 @@ include_once('elements/header.php');
           <div class="flight-card">
             <img class="card-bg" src="https://images.unsplash.com/photo-1488085061387-422e29b40080?w=700&q=80" alt="Wide Airline Network" />
             <div class="card-overlay"></div>
-            <div class="card-accent"><svg viewBox="0 0 24 24">
+            <div class="card-accent d-none"><svg viewBox="0 0 24 24">
                 <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
               </svg></div>
             <div class="card-body-content">
@@ -584,7 +583,7 @@ include_once('elements/header.php');
           <div class="flight-card">
             <img class="card-bg" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=700&q=80" alt="Corporate Travel Management" />
             <div class="card-overlay"></div>
-            <div class="card-accent"><svg viewBox="0 0 24 24">
+            <div class="card-accent d-none"><svg viewBox="0 0 24 24">
                 <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
               </svg></div>
             <div class="card-body-content">
@@ -597,7 +596,7 @@ include_once('elements/header.php');
           <div class="flight-card">
             <img class="card-bg" src="https://images.unsplash.com/photo-1548574505-5e239809ee19?w=700&q=80" alt="Easy Rescheduling" />
             <div class="card-overlay"></div>
-            <div class="card-accent"><svg viewBox="0 0 24 24">
+            <div class="card-accent d-none"><svg viewBox="0 0 24 24">
                 <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
               </svg></div>
             <div class="card-body-content">
@@ -610,7 +609,7 @@ include_once('elements/header.php');
           <div class="flight-card">
             <img class="card-bg" src="https://images.unsplash.com/photo-1540339832862-474599807836?w=700&q=80" alt="24/7 Support" />
             <div class="card-overlay"></div>
-            <div class="card-accent"><svg viewBox="0 0 24 24">
+            <div class="card-accent d-none"><svg viewBox="0 0 24 24">
                 <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
               </svg></div>
             <div class="card-body-content">
@@ -622,7 +621,7 @@ include_once('elements/header.php');
         </div><!-- /cards-track -->
       </div><!-- /carousel-outer -->
 
-      <button class="carousel-btn next" id="nextBtn" aria-label="Next">
+      <button class="carousel-btn next d-none" id="nextBtn" aria-label="Next">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="9 18 15 12 9 6" />
         </svg>
@@ -662,6 +661,12 @@ include_once('elements/header.php');
     /* last valid index */
     function maxIdx() {
       return Math.max(0, total - perView);
+    }
+
+    function startAuto() {
+      autoTimer = setInterval(() => {
+        goTo(currentIdx < maxIdx() ? currentIdx + 1 : 0);
+      }, 3500);
     }
 
     /* set each card's pixel width so they fill the outer div exactly */
@@ -1277,7 +1282,7 @@ include_once('elements/header.php');
     <!-- ── HEADER ── -->
     <div class="section-header">
       <img src="assets/img/tour-travel/train-on.png" alt="Train" class="train-img d-none d-md-block" onerror="this.style.display='none'" />
-      <h2 class="section-title">Train <span>Booking</span></h2>
+      <h2 class="section-title">Train Booking</h2>
       <p class="section-subtitle mt-5">
         Reliable train ticket booking assistance with confirmed reservations and smooth travel planning.
       </p>
@@ -1903,7 +1908,7 @@ include_once('elements/header.php');
     <!-- CAROUSEL -->
     <div class="position-relative px-3">
 
-      <button class="bus-btn bus-btn-prev" id="busPrev" aria-label="Previous">
+      <button class="bus-btn bus-btn-prev d-none" id="busPrev" aria-label="Previous">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="15 18 9 12 15 6" />
         </svg>
@@ -1992,7 +1997,7 @@ include_once('elements/header.php');
         </div><!-- /bus-track -->
       </div><!-- /bus-carousel-outer -->
 
-      <button class="bus-btn bus-btn-next" id="busNext" aria-label="Next">
+      <button class="bus-btn bus-btn-next d-none" id="busNext" aria-label="Next">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="9 18 15 12 9 6" />
         </svg>
@@ -2031,6 +2036,28 @@ include_once('elements/header.php');
 
     function busMaxIdx() {
       return Math.max(0, busTotal - busPerView);
+    }
+
+    function busStartAuto() {
+      let position = 0;
+
+      // duplicate cards for infinite loop
+      busTrack.innerHTML += busTrack.innerHTML;
+
+      function animate() {
+        position += 0.3; // speed control (0.2 slow, 0.5 fast)
+        busTrack.style.transform = `translateX(-${position}px)`;
+
+        const totalWidth = busTrack.scrollWidth / 2;
+
+        if (position >= totalWidth) {
+          position = 0;
+        }
+
+        requestAnimationFrame(animate);
+      }
+
+      animate();
     }
 
     function busApplyWidths() {
@@ -3038,7 +3065,7 @@ include_once('elements/header.php');
   }
 
   /* ── RESPONSIVE ── */
- /* --- Holiday Package Mobile Styles --- */
+  /* --- Holiday Package Mobile Styles --- */
 
   @media (max-width: 991px) {
     .hp-section {
@@ -3054,7 +3081,8 @@ include_once('elements/header.php');
     .hp-body {
       flex-direction: column;
       align-items: center;
-      gap: 40px; /* Space between image and grid */
+      gap: 40px;
+      /* Space between image and grid */
     }
 
     .hp-left {
@@ -3069,6 +3097,7 @@ include_once('elements/header.php');
   }
 
   @media (max-width: 767px) {
+
     /* Title sizing */
     .hp-title {
       font-size: 1.8rem;
@@ -3082,18 +3111,31 @@ include_once('elements/header.php');
     /* Reset all previous 'nth-child' border logic from desktop */
     .hp-cell {
       border: 1px solid var(--card-border) !important;
-      margin: -0.5px; /* Prevent double borders when stacked */
+      margin: -0.5px;
+      /* Prevent double borders when stacked */
     }
 
     /* Apply clean 2-column borders */
-    .hp-cell:nth-child(odd) { border-left: none !important; }
-    .hp-cell:nth-child(even) { border-right: none !important; }
-    .hp-cell:nth-child(-n+2) { border-top: none !important; }
+    .hp-cell:nth-child(odd) {
+      border-left: none !important;
+    }
+
+    .hp-cell:nth-child(even) {
+      border-right: none !important;
+    }
+
+    .hp-cell:nth-child(-n+2) {
+      border-top: none !important;
+    }
+
     /* Last row logic (assuming 6 items) */
-    .hp-cell:nth-child(n+5) { border-bottom: none !important; }
+    .hp-cell:nth-child(n+5) {
+      border-bottom: none !important;
+    }
   }
 
   @media (max-width: 575px) {
+
     /* Grid: 1 column */
     .hp-grid {
       grid-template-columns: 1fr;
@@ -3110,7 +3152,8 @@ include_once('elements/header.php');
     }
 
     /* Center everything for a clean mobile stack */
-    .hp-cell-title, .hp-cell-text {
+    .hp-cell-title,
+    .hp-cell-text {
       text-align: center;
     }
 

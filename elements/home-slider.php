@@ -3,9 +3,8 @@
         <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
         <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
         <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button> 
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
     </div>
-
     <div class="carousel-inner">
         <div class="carousel-item active" style="background-image: url('assets/img/slider/img-4.png');">
             <div class="country-tag d-none d-lg-block" style="top: 15%; right: 40%;">UAE</div>
@@ -36,7 +35,7 @@
         </div>
 
         <div class="carousel-item" style="background-image: url('assets/img/slider/img-2.png');">
-         
+
             <div class="container h-100 d-flex align-items-center">
                 <div class="hero-content">
                     <h1>Start Your Business with Confidence in the Global Marketplace</h1>
@@ -49,7 +48,7 @@
         </div>
 
         <div class="carousel-item" style="background-image: url('assets/img/slider/img-3.png');">
-         
+
             <div class="container h-100 d-flex align-items-center">
                 <div class="hero-content">
                     <h1>Start Your Business with Confidence in the Global Marketplace</h1>
