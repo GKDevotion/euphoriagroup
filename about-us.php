@@ -5,8 +5,8 @@
  <!-- HERO -->
  <section class="top-banner-background" style="background-image: url('assets/img/background/about-us-bg.png');">
    <div>
-     <h1 class="mb-0">About The Euphoria Group</h1>
-     <p class="text-black text-center mt-2">Your Integrated Partner for Business and Global Opportunities</p>
+     <h1 class="mb-0" data-aos="fade-up" data-aos-duration="400">About The Euphoria Group</h1>
+     <p class="text-black text-center mt-2" data-aos="fade-up" data-aos-duration="600">Your Integrated Partner for Business and Global Opportunities</p>
    </div>
  </section>
 
@@ -70,7 +70,7 @@
          <div class="bracket-card">
 
            <!-- Paragraph 1 -->
-           <p class="about-text">
+           <p class="about-text" data-aos="fade-up" data-aos-duration="800">
              Founded in 2025, <strong>The Euphoria Group</strong> was established with a clear belief: every
              individual and business deserves clarity, confidence, and trusted guidance when making important
              financial and life decisions. For us, relationships come before transactions. We take the time to
@@ -82,7 +82,7 @@
            </p>
 
            <!-- Paragraph 2 -->
-           <p class="about-text para-gap">
+           <p class="about-text para-gap" data-aos="fade-up" data-aos-duration="1000">
              What began as a vision for The Euphoria Group has grown into a multi-service global consultancy
              that provides integrated solutions to individuals and businesses all over the world. Our main
              services include Inbound And overseas business setup, real estate investment, inbound and outbound
@@ -351,8 +351,8 @@
 
        <!-- Left: Image -->
        <div class="col-md-5">
-         <div class="vision-img-wrap">
-           <img src="assets/img/about-us/shaping-future.png" alt="Vision – man looking through telescope over city skyline" />
+         <div class="vision-img-wrap" data-aos="fade-up" data-aos-duration="1200">
+           <img src="assets/img/about-us/shaping-future.png" alt="Vision - man looking through telescope over city skyline" />
          </div>
        </div>
 
@@ -363,19 +363,17 @@
            <!-- Ghost watermark -->
            <span class="ghost-text" aria-hidden="true">Our Vision</span>
 
-           <h2 class="text-center">Shaping the Future</h2>
+           <h2 class="text-center" data-aos="fade-up" data-aos-duration="800">Shaping the Future</h2>
 
 
            <div class="vision-body">
-             <p class="vision-tagline">Creating Global Confidence. Building Enduring Legacies.</p>
-             <p>
-               Our vision is to become a globally trusted partner for wealth creation,
-               asset protection, and international expansion. We aspire to empower
-               individuals and businesses with the clarity, structure, and confidence
-               needed to grow beyond borders—financially, professionally, and personally.
+             <p class="vision-tagline" data-aos="fade-up" data-aos-duration="900">Creating Global Confidence. Building Enduring Legacies.</p>
+             <p data-aos="fade-up" data-aos-duration="1000"> 
+              Our vision is to become a globally trusted partner for wealth creation, asset protection, and international expansion. We aspire to empower individuals and businesses with the clarity, structure, and confidence needed to grow beyond borders—financially, professionally, and personally.
              </p>
-             <p>At Euphoria Group, we envision a future where wealth is not just accumulated
-               but protected, sustained, and passed forward with purpose.</p>
+             <p data-aos="fade-up" data-aos-duration="1200">
+              At Euphoria Group, we envision a future where wealth is not just accumulated but protected, sustained, and passed forward with purpose.
+            </p>
            </div>
 
          </div>
@@ -395,18 +393,16 @@
            <!-- Ghost watermark -->
            <span class="mission-text" aria-hidden="true">Our Mission</span>
 
-           <h2 class="text-center">Strategic Purpose</h2>
+           <h2 class="text-center" data-aos="fade-up" data-aos-duration="800">Strategic Purpose</h2>
 
 
            <div class="vision-body">
-             <p>
-               The Euphoria Group's mission is to provide strategic, transparent, and fully compliant solutions that
-               transform complex financial and global opportunities into clear, actionable paths. We are dedicated to
-               assisting our clients throughout their journey, empowering them to confidently grow, protect, and
-               diversify their assets.
+             <p data-aos="fade-up" data-aos-duration="-00">
+               The Euphoria Group's mission is to provide strategic, transparent, and fully compliant solutions that transform complex financial and global opportunities into clear, actionable paths. We are dedicated to assisting our clients throughout their journey, empowering them to confidently grow, protect, and diversify their assets.
              </p>
-             <p>Through disciplined execution, ethical governance, and forward-thinking strategies, we aim to build
-               resilient, long-term prosperity that will last across changing markets and generations.</p>
+             <p data-aos="fade-up" data-aos-duration="1000">
+              Through disciplined execution, ethical governance, and forward-thinking strategies, we aim to build resilient, long-term prosperity that will last across changing markets and generations.
+            </p>
            </div>
 
          </div>
@@ -414,8 +410,8 @@
 
        <!-- Left: Image -->
        <div class="col-md-5">
-         <div class="vision-img-wrap">
-           <img src="assets/img/about-us/strategic-purpose.png" alt="Vision – man looking through telescope over city skyline" />
+         <div class="vision-img-wrap" data-aos="fade-up" data-aos-duration="1200">
+           <img src="assets/img/about-us/strategic-purpose.png" alt="Vision - man looking through telescope over city skyline" />
          </div>
        </div>
 
@@ -695,7 +691,7 @@
      <div class="cards-grid">
 
        <!-- Card 1 -->
-       <div class="trust-card ">
+       <div class="trust-card" data-aos="fade-left" data-aos-duration="1000">
          <div class="trust-icon-wrap ">
              <img src="assets/img/icon/commitment.png" alt="Trust Icon" class="trust-icon-img">
          </div>
@@ -703,7 +699,7 @@
        </div>
 
        <!-- Card 2 -->
-       <div class="trust-card">
+       <div class="trust-card" data-aos="fade-in" data-aos-duration="1300">
          <div class="trust-icon-wrap">
            <img src="assets/img/icon/commitment-1.png" alt="Trust Icon" class="trust-icon-img">
          </div>
@@ -711,7 +707,7 @@
        </div>
 
        <!-- Card 3 -->
-       <div class="trust-card">
+       <div class="trust-card" data-aos="fade-right" data-aos-duration="1000">
          <div class="trust-icon-wrap">
            <img src="assets/img/icon/commitment-2.png" alt="Trust Icon" class="trust-icon-img">
          </div>
@@ -719,7 +715,7 @@
        </div>
 
        <!-- Card 4 -->
-       <div class="trust-card">
+       <div class="trust-card" data-aos="fade-left" data-aos-duration="1000">
          <div class="trust-icon-wrap">
            <img src="assets/img/icon/commitment-3.png" alt="Trust Icon" class="trust-icon-img">
          </div>
@@ -727,7 +723,7 @@
        </div>
 
        <!-- Card 5 -->
-       <div class="trust-card">
+       <div class="trust-card" data-aos="fade-in" data-aos-duration="1300">
          <div class="trust-icon-wrap">
            <img src="assets/img/icon/commitment-4.png" alt="Trust Icon" class="trust-icon-img">
          </div>
@@ -735,7 +731,7 @@
        </div>
 
        <!-- Card 6 -->
-       <div class="trust-card">
+       <div class="trust-card" data-aos="fade-right" data-aos-duration="1000">
          <div class="trust-icon-wrap">
            <img src="assets/img/icon/commitment-5.png" alt="Trust Icon" class="trust-icon-img">
          </div>
@@ -1005,13 +1001,13 @@
        <rect x="370" y="120" width="30" height="80" fill="#1a2a5e" />
      </svg>
 
-     <h2 class="section-heading">Why Choose Euphoria Group</h2>
+     <h2 class="section-heading" data-aos="fade-up" data-aos-duration="800">Why Choose Euphoria Group</h2>
 
      <div class="row align-items-center g-5">
 
        <!-- Left: Image -->
        <div class="col-lg-6">
-         <div class="img-wrapper">
+         <div class="img-wrapper" data-aos="fade-up" data-aos-duration="1000">
            <img src="assets/img/about-us/indian-business.png" alt="Euphoria Group team meeting" />
          </div>
        </div>
@@ -1019,14 +1015,14 @@
        <!-- Right: Content -->
        <div class="col-lg-6 content-side">
 
-         <p class="intro-text">
+         <p class="intro-text" data-aos="fade-up" data-aos-duration="1100">
            Euphoria Group brings together wealth advisory, business services, insurance
            solutions, and global mobility support under one integrated platform—ensuring
            seamless coordination and consistent outcomes. <span style="font-weight:700;">What sets us apart</span>
          </p>
 
          <ul class="advantage-list">
-           <li>
+           <li data-aos="fade-up" data-aos-duration="1200">
              <span class="bullet-icon">
                <svg viewBox="0 0 24 24">
                  <polyline points="5 12 10 17 20 7" />
@@ -1034,7 +1030,7 @@
              </span>
              <span>Comprehensive wealth, business, and mobility solutions under one group</span>
            </li>
-           <li>
+           <li data-aos="fade-up" data-aos-duration="1200">
              <span class="bullet-icon">
                <svg viewBox="0 0 24 24">
                  <polyline points="5 12 10 17 20 7" />
@@ -1042,7 +1038,7 @@
              </span>
              <span>Strong operational presence in India and international markets.</span>
            </li>
-           <li>
+           <li data-aos="fade-up" data-aos-duration="1200">
              <span class="bullet-icon">
                <svg viewBox="0 0 24 24">
                  <polyline points="5 12 10 17 20 7" />
@@ -1050,7 +1046,7 @@
              </span>
              <span>Global reach supported by deep local market expertise</span>
            </li>
-           <li>
+           <li data-aos="fade-up" data-aos-duration="1200">
              <span class="bullet-icon">
                <svg viewBox="0 0 24 24">
                  <polyline points="5 12 10 17 20 7" />
@@ -1058,7 +1054,7 @@
              </span>
              <span>Ethical practices backed by professional and compliant guidance</span>
            </li>
-           <li>
+           <li data-aos="fade-up" data-aos-duration="1200">
              <span class="bullet-icon">
                <svg viewBox="0 0 24 24">
                  <polyline points="5 12 10 17 20 7" />
@@ -1448,7 +1444,7 @@
        <!-- LEFT COLUMN -->
        <div class="col-lg-5">
          <h2 class="section-title mb-4">The Euphoria Mindset</h2>
-         <div class="image-box">
+         <div class="image-box" data-aos="fade-up" data-aos-duration="500">
            <img src="assets/img/about-us/mind-set.png" alt="Euphoria Mindset">
          </div>
        </div>
@@ -1458,10 +1454,10 @@
 
          <!-- Item 1 -->
          <div class="mindset-item d-flex gap-4">
-           <div class="icon-circle flex-shrink-0">
+           <div class="icon-circle flex-shrink-0" data-aos="fade-up" data-aos-duration="800">
              <img src="assets/img/icon/mindset-1.png" alt="We See the Bigger Picture">
            </div>
-           <div>
+           <div data-aos="fade-up" data-aos-duration="1000">
              <h5 class="item-title">We See the Bigger Picture</h5>
              <p class="item-body">
                Wealth, moving around the world, and investment opportunities are never just about money. They stand for
@@ -1475,10 +1471,10 @@
 
          <!-- Item 2 -->
          <div class="mindset-item d-flex gap-4">
-           <div class="icon-circle flex-shrink-0">
+           <div class="icon-circle flex-shrink-0" data-aos="fade-up" data-aos-duration="800">
              <img src="assets/img/icon/mindset-2.png" alt="Precision Over Promises">
            </div>
-           <div>
+           <div data-aos="fade-up" data-aos-duration="1000">
              <h5 class="item-title">Precision Over Promises</h5>
              <p class="item-body">
                We don't rely on big promises.
@@ -1492,10 +1488,10 @@
 
          <!-- Item 3 -->
          <div class="mindset-item d-flex gap-4">
-           <div class="icon-circle flex-shrink-0">
+           <div class="icon-circle flex-shrink-0" data-aos="fade-up" data-aos-duration="800">
              <img src="assets/img/icon/mindset-3.png" alt="Precision Over Promises">
            </div>
-           <div>
+           <div data-aos="fade-up" data-aos-duration="1000">
              <h5 class="item-title">Tailored, Not Standardised</h5>
              <p class="item-body">
                There are no two goals that are alike.
@@ -1510,10 +1506,10 @@
 
          <!-- Item 4 -->
          <div class="mindset-item d-flex gap-4">
-           <div class="icon-circle flex-shrink-0">
+           <div class="icon-circle flex-shrink-0" data-aos="fade-up" data-aos-duration="800">
              <img src="assets/img/icon/mindset-4.png" alt="Precision Over Promises">
            </div>
-           <div>
+           <div data-aos="fade-up" data-aos-duration="1000">
              <h5 class="item-title">Confidence as the Outcome</h5>
              <p class="item-body">
                Success is more than just growth.
@@ -1710,12 +1706,12 @@
 
    <div class="team-section position-relative" style="z-index:1;">
 
-     <h2 class="section-heading">Executive Leadership</h2>
+     <h2 class="section-heading" data-aos="fade-up" data-aos-duration="500">Executive Leadership</h2>
 
      <div class="row g-4 justify-content-center">
 
        <!-- Member 1 -->
-       <div class="col-lg-4 col-md-6">
+       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="200">
          <div class="team-card">
            <div class="card-img-wrapper">
              <img src="assets/img/team/person-1.png" alt="Milan Jasoliya" />
@@ -1745,7 +1741,7 @@
        </div>
 
        <!-- Member 2 -->
-       <div class="col-lg-4 col-md-6">
+       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="600">
          <div class="team-card">
            <div class="card-img-wrapper">
              <img src="assets/img/team/person-1.png" alt="Archit Dhola" />
@@ -1775,7 +1771,7 @@
        </div>
 
        <!-- Member 3 -->
-       <div class="col-lg-4 col-md-6">
+       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000">
          <div class="team-card">
            <div class="card-img-wrapper">
              <img src="assets/img/team/person-1.png" alt="Romit Lathiya" />
@@ -2040,9 +2036,9 @@
 
    <div class="container position-relative" style="z-index:1;">
 
-     <h2 class="section-heading-our-team">The Euphoria Team</h2>
+     <h2 class="section-heading-our-team" data-aos="fade-up" data-aos-duration="500">The Euphoria Team</h2>
 
-     <div class="swiper-outer">
+     <div class="swiper-outer" data-aos="fade-up" data-aos-duration="1200">
        <!-- Prev -->
        <div class="swiper-btn-prev d-none" id="teamPrev">
          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2142,7 +2138,7 @@
      </div><!-- /.swiper-outer -->
 
      <!-- Pagination outside the swiper-outer so it sits below -->
-     <div class="swiper-pagination" id="teamPagination"></div>
+     <div class="swiper-pagination" id="teamPagination" data-aos="fade-down" data-aos-duration="800"></div>
 
 
    </div>
@@ -2290,17 +2286,17 @@
 
    <div class="container position-relative" style="z-index:1;">
 
-     <h2 class="section-heading-focus">Who We Serve</h2>
+     <h2 class="section-heading-focus" data-aos="fade-up" data-aos-duration="600">Who We Serve</h2>
 
      <!-- Top tagline -->
-     <div class="text-center tagline-focus">
+     <div class="text-center tagline-focus" data-aos="fade-up" data-aos-duration="800">
        <em>Serving Aspirations Across Borders and Life Stages.</em>
      </div>
 
      <!-- Grid of cards -->
      <div class="row">
        <!-- Row 1 -->
-       <div class="col-12 col-md-6">
+       <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="800">
          <a href="#" class="card-option active">
            <svg class="icon-svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
              <circle cx="24" cy="16" r="7" stroke-linecap="round" stroke-linejoin="round" />
@@ -2311,7 +2307,7 @@
            Individual investors and families
          </a>
        </div>
-       <div class="col-12 col-md-6">
+       <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="800">
          <a href="#" class="card-option">
            <svg class="icon-svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
              <circle cx="24" cy="24" r="14" stroke-linecap="round" stroke-linejoin="round" />
@@ -2325,7 +2321,7 @@
        </div>
 
        <!-- Row 2 -->
-       <div class="col-12 col-md-6">
+       <div class="col-12 col-md-6" data-aos="fade-out" data-aos-duration="1000">
          <a href="#" class="card-option">
            <svg class="icon-svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
              <path d="M24 8 L28 18 L38 20 L30 28 L32 38 L24 34 L16 38 L18 28 L10 20 L20 18 Z" stroke-linecap="round"
@@ -2335,7 +2331,7 @@
            Entrepreneurs and startups
          </a>
        </div>
-       <div class="col-12 col-md-6">
+       <div class="col-12 col-md-6" data-aos="fade-out" data-aos-duration="1000">
          <a href="#" class="card-option">
            <svg class="icon-svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
              <rect x="10" y="18" width="28" height="22" rx="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -2347,7 +2343,7 @@
        </div>
 
        <!-- Row 3 -->
-       <div class="col-12 col-md-6">
+       <div class="col-12 col-md-6" data-aos="fade-down" data-aos-duration="800">
          <a href="#" class="card-option">
            <svg class="icon-svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
              <circle cx="24" cy="24" r="14" stroke-linecap="round" stroke-linejoin="round" />
@@ -2360,7 +2356,7 @@
            Global travellers and working professionals
          </a>
        </div>
-       <div class="col-12 col-md-6">
+       <div class="col-12 col-md-6" data-aos="fade-down" data-aos-duration="800">
          <a href="#" class="card-option">
            <svg class="icon-svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
              <circle cx="24" cy="24" r="14" stroke-linecap="round" stroke-linejoin="round" />
@@ -2375,7 +2371,7 @@
      </div>
 
      <!-- Bottom tagline -->
-     <div class="text-center bottom-tagline mt-2">
+     <div class="text-center bottom-tagline mt-2" data-aos="fade-up" data-aos-duration="800">
        <em>No matter where you are today, we help you move forward with purpose and protection.</em>
      </div>
 
@@ -2619,30 +2615,30 @@
       margin-bottom: 10px;
     }
   }
- </style>
-<style>
+
   .testimonialSwiper .swiper-slide {
-  transition: transform 0.4s ease;
-}
+    transition: transform 0.4s ease;
+  }
 
-/* 1st, 3rd, 5th → slightly up */
-.testimonialSwiper .swiper-slide:nth-child(odd) {
-  transform: translateY(-20px);
-}
+  /* 1st, 3rd, 5th → slightly up */
+  .testimonialSwiper .swiper-slide:nth-child(odd) {
+    transform: translateY(-20px);
+  }
 
-/* 2nd, 4th, 6th → slightly down */
-.testimonialSwiper .swiper-slide:nth-child(even) {
-  transform: translateY(20px);
-}
-.swiper-wrapper{
-  padding: 30px;
-}
+  /* 2nd, 4th, 6th → slightly down */
+  .testimonialSwiper .swiper-slide:nth-child(even) {
+    transform: translateY(20px);
+  }
+  .swiper-wrapper{
+    padding: 30px;
+  }
 </style>
+
  <section class="container py-5">
 
    <div class="testimonial position-relative" style="z-index:1;">
 
-     <h2 class="section-heading-testimonial">What Our Clients Say</h2>
+     <h2 class="section-heading-testimonial" data-aos="fade-up" data-aos-duration="600">What Our Clients Say</h2>
 
      <!-- Swiper -->
      <div class="swiper-outer">
@@ -2758,86 +2754,13 @@
      </div><!-- /.swiper-outer -->
 
      <!-- Pagination outside the swiper-outer so it sits below -->
-     <div class="swiper-pagination" id="testimonialPagination"></div>
+     <div class="swiper-pagination" id="testimonialPagination" data-aos="fade-down" data-aos-duration="800"></div>
 
    </div>
 
  </section>
 
  <?php
-  include_once('elements/faqs.php');
-  include_once('elements/footer.php');
-  ?>
-
- <script>
-   const swiper = new Swiper('#teamSwiper', {
-     slidesPerView: 1,
-     spaceBetween: 20,
-     loop: true,
-     navigation: {
-       prevEl: '#teamPrev',
-       nextEl: '#teamNext',
-     },
-    autoplay: {
-     delay: 2500, // time in ms (2.5 sec)
-     disableOnInteraction: false, // keep autoplay after user swipe
-     },
-     pagination: {
-       el: '#teamPagination',
-       clickable: true,
-     },
-     breakpoints: {
-       480: {
-         slidesPerView: 2,
-         spaceBetween: 16
-       },
-       768: {
-         slidesPerView: 3,
-         spaceBetween: 20
-       },
-       1024: {
-         slidesPerView: 4,
-         spaceBetween: 24
-       },
-       1280: {
-         slidesPerView: 5,
-         spaceBetween: 24
-       },
-     }
-   });
- </script>
-
-
- <script>
-   const tetimonial = new Swiper('.testimonialSwiper', {
-     slidesPerView: 1,
-     spaceBetween: 24,
-     loop: true,
-     pagination: {
-       el: '#testimonialPagination',
-       clickable: true,
-     },
-     autoplay: {
-     delay: 2500, // time in ms (2.5 sec)
-     disableOnInteraction: false, // keep autoplay after user swipe
-     },
-     navigation: {
-       nextEl: '#nextBtn',
-       prevEl: '#prevBtn',
-     },
-     breakpoints: {
-       576: {
-         slidesPerView: 1
-       },
-       768: {
-         slidesPerView: 2
-       },
-       992: {
-         slidesPerView: 3
-       },
-       1200: {
-         slidesPerView: 4
-       },
-     },
-   });
- </script>
+include_once('elements/faqs.php');
+include_once('elements/footer.php');
+?>

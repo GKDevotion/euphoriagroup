@@ -11,45 +11,65 @@ include_once ('elements/header.php');
     </p>
   </div>
 </section>
-<style>
-  
-</style>
-<div class="container content-section">
 
-    <!-- Tabs -->
-    <div class="custom-tabs">
-        <a class="tab-btn active" href="#legal">Legal & Compliance Services</a>
-        <a class="tab-btn" href="#">Accounting & Taxation</a>
-        <a class="tab-btn" href="#">Licensing & Regulatory</a>
-        <a class="tab-btn" href="#">Corporate Restructuring</a>
-        <a class="tab-btn" href="#">Advisory & Consultancy</a>
-        <a class="tab-btn" href="#">Additional Services</a>
-        <a class="tab-btn" href="#">FAQ</a>
-    </div>
+<section class="corporate-tab-section india-section">
 
-    <!-- Tab Content -->
-    <div id="tab1" class="corporate-content-box active">
+    <div class="container position-relative" style="z-index:2">
+
+        <div class="formation-nav-wrapper" data-aos="fade-up" data-aos-duration="800">
+
+            <a href="#legal-compliance" class="nav-link-pill nav-link-item nav-active-pill">Legal & Compliance Services</a>
+            <div class="nav-sep"></div>
+
+            <a href="#account-taxation" class="nav-link-pill nav-link-item">Accounting & Taxation</a>
+            <div class="nav-sep"></div>
+            
+            <a href="#licensing-regulatory" class="nav-link-pill nav-link-item">Licensing & Regulatory</a>
+            <div class="nav-sep"></div>
+            
+            <a href="#corporate-restructuring" class="nav-link-pill nav-link-item">Corporate Restructuring</a>
+            <div class="nav-sep"></div>
+            
+            <a href="#advisory-consultancy" class="nav-link-pill nav-link-item">Advisory & Consultancy</a>
+            <div class="nav-sep"></div>
+            
+            <a href="#additional-service" class="nav-link-pill nav-link-item">Additional Services</a>
+            <div class="nav-sep"></div>
+            
+            <a href="#faqs" class="nav-link-pill nav-link-item">FAQ</a>
+
+        </div>
+
+    </div><!-- /container -->
+
+    <div class="container-xl pt-5">
         <div class="row align-items-center">
-            <div class="col-md-4">
-                <img src="assets/img/corporate-market.png" class="illustration">
+
+            <!-- Left: Image -->
+            <div class="col-12 col-md-4 img-col" data-aos="fade-up" data-aos-duration="1000">
+                <img src="assets/img/corporate-market.png" alt="Business professionals with city skyline" />
             </div>
-            <div class="col-md-8 text-content">
-                <p>
+
+            <!-- Right: Text -->
+            <div class="col-12 col-md-8 text-col">
+                <p data-aos="fade-up" data-aos-duration="1200">
                     Entering the Indian market requires more than just registration—it demands strategic planning, regulatory clarity, and structured execution.
                 </p>
-                <p>
+                <p data-aos="fade-up" data-aos-duration="1200">
                     Our inbound corporate services cover business setup, compliance, approvals, and legal structuring aligned with Indian laws.
                 </p>
-                <p>
+                <p data-aos="fade-up" data-aos-duration="1200">
                     Entering the Indian market requires more than just registration—it demands strategic planning, regulatory clarity, and structured execution.
                 </p>
-                <p>
+                <p data-aos="fade-up" data-aos-duration="1200">
                     Our inbound corporate services cover business setup, compliance, approvals, and legal structuring aligned with Indian laws.
                 </p>
             </div>
+
         </div>
     </div>
-</div>
+
+</section>
 
 <style>
     
@@ -303,91 +323,99 @@ include_once ('elements/header.php');
 </style>
 
 <!-- LEGAL & COMPLIANCE -->
-<section id="legal" class="about-section legal-section py-5">
+<section id="legal-compliance" class="about-section legal-section py-5">
     
-    <div class="about-title-bg">Reliable Support</div>
+    <div class="about-title-bg" data-aos="fade-up" data-aos-duration="500">Reliable Support</div>
     
     <div class="container">
       <div class="row align-items-center">
           
-        <h2 class="about-title h1">Legal & Compliance Services</h2>
-        <p class="text-muted mx-auto text-center">We provide end-to-end legal and regulatory compliance solutions to protect and grow your business efficiently.</p>
+        <h2 class="about-title h1" data-aos="fade-up" data-aos-duration="800">Legal & Compliance Services</h2>
+        <p class="text-muted mx-auto text-center mb-5" data-aos="fade-up" data-aos-duration="800">We provide end-to-end legal and regulatory compliance solutions to protect and grow your business efficiently.</p>
 
         <!-- Service Swiper Slider -->
         <div class="swiper service-swiper reveal">
             <div class="swiper-wrapper pb-2">
-            <div class="swiper-slide">
-                <div class="service-card">
-                <div class="icon-wrap">
-                  <img src="assets/img/legal-annual-filling.png">
-                </div>
-                <h6>Company Registration</h6>
-                <p>Pvt Ltd, LLP, OPC and all types of company formation with complete documentation.</p>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="service-card">
-                <div class="icon-wrap">
-                  <img src="assets/img/legal-moa-drafting.png">
-                </div>
-                <h6>Regulatory Schema</h6>
-                <p>Comprehensive guidance on applicable regulatory frameworks for your industry.</p>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="service-card">
-                <div class="icon-wrap">
-                  <img src="assets/img/legal-mca.png">
-                </div>
-                <h6>Drafting & Vetting</h6>
-                <p>Professional contract drafting, review and legal documentation services.</p>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="service-card">
-                <div class="icon-wrap">
-                  <img src="assets/img/legal-moa-drafting.png">
-                </div>
-                <h6>Shareholder Advisory</h6>
-                <p>Shareholder agreements, rights management, and governance advisory.</p>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="service-card">
-                <div class="icon-wrap">
-                  <img src="assets/img/legal-roc-service.png">
-                </div>
-                <h6>Director of Corporate Affairs</h6>
-                <p>ROC filings, board compliance, and statutory secretarial services.</p>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="service-card">
-                <div class="icon-wrap">
-                  <img src="assets/img/legal-shareholder.png">
-                </div>
-                <h6>Compliance Audit</h6>
-                <p>Thorough compliance audits across legal, HR, statutory, and operational domains.</p>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="service-card">
-                <div class="icon-wrap">
-                  <img src="assets/img/legal-annual-filling.png">
-                </div>
-                <h6>FSSAI Licensing</h6>
-                <p>Food business operator registration and renewal under FSSAI regulations.</p>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="service-card">
-                <div class="icon-wrap">
-                  <img src="assets/img/legal-mca.png">
-                </div>
-                <h6>Labour Law Compliance</h6>
-                <p>PF, ESI, gratuity and all statutory labour law compliance management.</p>
-                </div>
-            </div>
+              <div class="swiper-slide" data-aos="fade-up" data-aos-duration="500">
+                  <div class="service-card">
+                  <div class="icon-wrap">
+                    <img src="assets/img/legal-annual-filling.png">
+                  </div>
+                  <h6>Company Registration</h6>
+                  <p>Pvt Ltd, LLP, OPC and all types of company formation with complete documentation.</p>
+                  </div>
+              </div>
+
+              <div class="swiper-slide" data-aos="fade-down" data-aos-duration="800">
+                  <div class="service-card">
+                  <div class="icon-wrap">
+                    <img src="assets/img/legal-moa-drafting.png">
+                  </div>
+                  <h6>Regulatory Schema</h6>
+                  <p>Comprehensive guidance on applicable regulatory frameworks for your industry.</p>
+                  </div>
+              </div>
+
+              <div class="swiper-slide" data-aos="fade-left" data-aos-duration="1100">
+                  <div class="service-card">
+                  <div class="icon-wrap">
+                    <img src="assets/img/legal-mca.png">
+                  </div>
+                  <h6>Drafting & Vetting</h6>
+                  <p>Professional contract drafting, review and legal documentation services.</p>
+                  </div>
+              </div>
+
+              <div class="swiper-slide" data-aos="fade-right" data-aos-duration="1400">
+                  <div class="service-card">
+                  <div class="icon-wrap">
+                    <img src="assets/img/legal-moa-drafting.png">
+                  </div>
+                  <h6>Shareholder Advisory</h6>
+                  <p>Shareholder agreements, rights management, and governance advisory.</p>
+                  </div>
+              </div>
+              
+              <div class="swiper-slide" data-aos="fade-in" data-aos-duration="1700">
+                  <div class="service-card">
+                  <div class="icon-wrap">
+                    <img src="assets/img/legal-roc-service.png">
+                  </div>
+                  <h6>Director of Corporate Affairs</h6>
+                  <p>ROC filings, board compliance, and statutory secretarial services.</p>
+                  </div>
+              </div>
+
+              <div class="swiper-slide" data-aos="fade-out" data-aos-duration="2000">
+                  <div class="service-card">
+                  <div class="icon-wrap">
+                    <img src="assets/img/legal-shareholder.png">
+                  </div>
+                  <h6>Compliance Audit</h6>
+                  <p>Thorough compliance audits across legal, HR, statutory, and operational domains.</p>
+                  </div>
+              </div>
+
+              <div class="swiper-slide" data-aos="fade-up" data-aos-duration="800">
+                  <div class="service-card">
+                  <div class="icon-wrap">
+                    <img src="assets/img/legal-annual-filling.png">
+                  </div>
+                  <h6>FSSAI Licensing</h6>
+                  <p>Food business operator registration and renewal under FSSAI regulations.</p>
+                  </div>
+              </div>
+
+              <div class="swiper-slide" data-aos="fade-up" data-aos-duration="800">
+                  <div class="service-card">
+                  <div class="icon-wrap">
+                    <img src="assets/img/legal-mca.png">
+                  </div>
+                  <h6>Labour Law Compliance</h6>
+                  <p>PF, ESI, gratuity and all statutory labour law compliance management.</p>
+                  </div>
+              </div>
+              
             </div>
             <div class="swiper-pagination"></div>
         </div>
@@ -604,19 +632,20 @@ include_once ('elements/header.php');
     .card-white, .card-dashed { min-height: auto !important; }
   }
 </style>
-<section class="acc-section" id="accounting">
+
+<section class="acc-section" id="account-taxation">
   <div class="container">
     <div class="row g-5 align-items-start">
  
       <!-- ── LEFT COLUMN ── -->
       <div class="col-lg-5 col-xl-6 reveal">
-        <h2 class="acc-heading">Accounting &amp; Taxation</h2>
-        <p class="acc-desc">
+        <h2 class="acc-heading" data-aos="fade-up" data-aos-duration="500">Accounting & Taxation</h2>
+        <p class="acc-desc" data-aos="fade-up" data-aos-duration="800">
           Strong financial management is the foundation of any successful business.
           Our accounting and taxation services are intended to ensure accuracy, compliance,
           and financial clarity, allowing you to confidently focus on growth.
         </p>
-        <p class="acc-desc mb-0">
+        <p class="acc-desc mb-0" data-aos="fade-up" data-aos-duration="800">
           The Euphoria Corporate Service combines regulatory expertise and strategic
           insight to ensure your company's financial stability and legal compliance.
         </p>
@@ -631,7 +660,7 @@ include_once ('elements/header.php');
           <!-- White highlight card -->
           <div class="col-sm-4 reveal delay-3">
             <div class="card-dashed">
-              <div class="icon-circle">
+              <div class="icon-circle" data-aos="fade-up" data-aos-duration="800">
                 <span style="position:relative;display:inline-flex;align-items:center;justify-content:center;width:100%;height:100%;">
                   <i class="bi bi-circle" style="font-size:2rem;position:absolute;opacity:0.4;"></i>
                   <span style="font-size:0.62rem;font-weight:800;color:#fff;letter-spacing:0.5px;z-index:1;text-align:center;">TAX<br><span style="font-size:1rem;">₹</span></span>
@@ -669,50 +698,51 @@ include_once ('elements/header.php');
           </div>
         </div><!-- /top row -->
       </div><!-- /right grid -->
+
       <!-- BOTTOM ROW: 4 equal dashed cards -->
-        <div class="row acc-bottom-row g-3">
- 
-          <!-- Payroll Processing -->
-          <div class="col-6 col-sm-3 reveal delay-4">
-            <div class="card-dashed">
-              <div class="icon-circle">
-                <i class="bi bi-people-fill"></i>
-              </div>
-              <h6>Payroll Processing</h6>
+      <div class="row acc-bottom-row g-3">
+
+        <!-- Payroll Processing -->
+        <div class="col-6 col-sm-3 reveal delay-4">
+          <div class="card-dashed">
+            <div class="icon-circle">
+              <i class="bi bi-people-fill"></i>
             </div>
+            <h6>Payroll Processing</h6>
           </div>
- 
-          <!-- TDS Filing -->
-          <div class="col-6 col-sm-3 reveal delay-5">
-            <div class="card-dashed">
-              <div class="icon-circle">
-                <i class="bi bi-file-earmark-text-fill"></i>
-              </div>
-              <h6>TDS Filing</h6>
+        </div>
+
+        <!-- TDS Filing -->
+        <div class="col-6 col-sm-3 reveal delay-5">
+          <div class="card-dashed">
+            <div class="icon-circle">
+              <i class="bi bi-file-earmark-text-fill"></i>
             </div>
+            <h6>TDS Filing</h6>
           </div>
- 
-          <!-- Audit Coordination -->
-          <div class="col-6 col-sm-3 reveal delay-6">
-            <div class="card-dashed">
-              <div class="icon-circle">
-                <i class="bi bi-patch-check-fill"></i>
-              </div>
-              <h6>Audit Coordination</h6>
+        </div>
+
+        <!-- Audit Coordination -->
+        <div class="col-6 col-sm-3 reveal delay-6">
+          <div class="card-dashed">
+            <div class="icon-circle">
+              <i class="bi bi-patch-check-fill"></i>
             </div>
+            <h6>Audit Coordination</h6>
           </div>
- 
-          <!-- Financial Reporting -->
-          <div class="col-6 col-sm-3 reveal delay-7">
-            <div class="card-dashed">
-              <div class="icon-circle">
-                <i class="bi bi-bar-chart-line-fill"></i>
-              </div>
-              <h6>Financial Reporting</h6>
+        </div>
+
+        <!-- Financial Reporting -->
+        <div class="col-6 col-sm-3 reveal delay-7">
+          <div class="card-dashed">
+            <div class="icon-circle">
+              <i class="bi bi-bar-chart-line-fill"></i>
             </div>
+            <h6>Financial Reporting</h6>
           </div>
- 
-        </div><!-- /bottom row -->
+        </div>
+
+      </div><!-- /bottom row -->
     </div><!-- /main row -->
   </div><!-- /container -->
 </section>
@@ -724,8 +754,6 @@ include_once ('elements/header.php');
       padding:28px;
       margin-bottom:40px;
       border-left:2px solid var(--euphoria-red);
-      /* box-shadow:0 2px 18px rgba(37,53,111,.07); */
-      /* display:flex; */
       align-items:flex-start;
       gap:20px;
       transition:box-shadow .3s, transform .3s;
@@ -764,7 +792,7 @@ include_once ('elements/header.php');
   }
 </style>
 
-<section id="restructuring" class="about-section restructure-section py-5 mt-5">
+<section id="corporate-restructuring" class="about-section restructure-section py-5 mt-5">
  
     <div class="about-title-bg">Transformation</div>
     <div class="container">
@@ -909,7 +937,7 @@ include_once ('elements/header.php');
   .lic-sidebar .lic-item i { color:#ffc107; }
 </style>
 
-<section id="licensing" class="account-section licensing-section py-5">
+<section id="licensing-regulatory" class="account-section licensing-section py-5">
   <div class="container position-relative">
     
     <div class="about-title-bg">Permits</div>
@@ -1029,7 +1057,7 @@ include_once ('elements/header.php');
   }
 </style>
 
-<section id="advisory" class="about-section advisory-section py-5">
+<section id="advisory-consultancy" class="about-section advisory-section py-5" style="overflow: unset;">
   
   <div class="">
     <div class="advisory-border container position-relative">
@@ -1048,50 +1076,50 @@ include_once ('elements/header.php');
 
       <div class="row align-items-center g-5">
         <div class="col-lg-8 reveal-left">
-          <div class="adv-list-item">
+          <div class="adv-list-item" data-aos="fade-up" data-aos-duration="800">
             <div class="adv-icon"><i class="bi bi-briefcase"></i></div>
             <div>
-              <h6>Business Strategy Solutions</h6>
-              <p>Market entry, expansion strategies and business model optimization for sustainable growth.</p>
+              <h6 data-aos="fade-up" data-aos-duration="800">Business Strategy Solutions</h6>
+              <p data-aos="fade-up" data-aos-duration="800">Market entry, expansion strategies and business model optimization for sustainable growth.</p>
             </div>
           </div>
 
-          <div class="adv-list-item">
+          <div class="adv-list-item" data-aos="fade-up" data-aos-duration="800">
             <div class="adv-icon"><i class="bi bi-globe"></i></div>
             <div>
-              <h6>Foreign Investment (FDI) Advisory</h6>
-              <p>FDI structuring, RBI compliance, FIPB approvals and cross-border investment advisory.</p>
+              <h6 data-aos="fade-up" data-aos-duration="800">Foreign Investment (FDI) Advisory</h6>
+              <p data-aos="fade-up" data-aos-duration="800">FDI structuring, RBI compliance, FIPB approvals and cross-border investment advisory.</p>
             </div>
           </div>
 
-          <div class="adv-list-item">
+          <div class="adv-list-item" data-aos="fade-up" data-aos-duration="800">
             <div class="adv-icon"><i class="bi bi-currency-exchange"></i></div>
             <div>
-              <h6>FEMA Compliance (Foreign Exchange Management Act)</h6>
-              <p>End-to-end FEMA compliance management for inbound and outbound foreign investments.</p>
+              <h6 data-aos="fade-up" data-aos-duration="800">FEMA Compliance (Foreign Exchange Management Act)</h6>
+              <p data-aos="fade-up" data-aos-duration="800">End-to-end FEMA compliance management for inbound and outbound foreign investments.</p>
             </div>
           </div>
 
-          <div class="adv-list-item">
+          <div class="adv-list-item" data-aos="fade-up" data-aos-duration="800">
             <div class="adv-icon"><i class="bi bi-house-gear"></i></div>
             <div>
-              <h6>Virtual Office Solutions</h6>
-              <p>Professional virtual office addresses for company registration and business correspondence.</p>
+              <h6 data-aos="fade-up" data-aos-duration="800">Virtual Office Solutions</h6>
+              <p data-aos="fade-up" data-aos-duration="800">Professional virtual office addresses for company registration and business correspondence.</p>
             </div>
           </div>
 
-          <div class="adv-list-item">
+          <div class="adv-list-item" data-aos="fade-up" data-aos-duration="800">
             <div class="adv-icon"><i class="bi bi-file-earmark-medical"></i></div>
             <div>
-              <h6>Corporate Document Solutions</h6>
-              <p>Comprehensive document drafting, apostille, notarization and legalization services.</p>
+              <h6 data-aos="fade-up" data-aos-duration="800">Corporate Document Solutions</h6>
+              <p data-aos="fade-up" data-aos-duration="800">Comprehensive document drafting, apostille, notarization and legalization services.</p>
             </div>
           </div>
 
         </div>
 
         <div class="col-lg-4 reveal-right">
-          <div class="adv-img-wrap">
+          <div class="adv-img-wrap" data-aos="fade-left" data-aos-duration="800">
             <img src="assets/img/corporate-service/advisory-service.png" alt="Advisory" />
           </div>
         </div>
@@ -1140,7 +1168,7 @@ include_once ('elements/header.php');
   }
 </style>
 
-<section id="additional" class="additional-section py-5">
+<section id="additional-service" class="additional-section py-5">
   
   <div class="container position-relative">
     
@@ -1149,12 +1177,12 @@ include_once ('elements/header.php');
 
       <div class="row align-items-center">
           
-        <h2 class="about-title h1" style="margin-top: 80px;">Additional Services</h2>
-        <p class="text-muted mx-auto text-center">
+        <h2 class="about-title h1" style="margin-top: 80px;" data-aos="fade-up" data-aos-duration="500">Additional Services</h2>
+        <p class="text-muted mx-auto text-center" data-aos="fade-up" data-aos-duration="800">
           In addition to our core compliance and advisory offerings, we provide a range of additional business support services designed to simplify operations and ensure complete regulatory compliance. Our value-added services help startups, SMEs, and established companies efficiently manage essential registrations, certifications, and corporate requirements.
         </p>
 
-        <p class="text-muted mx-auto text-center">
+        <p class="text-muted mx-auto text-center" data-aos="fade-up" data-aos-duration="800">
           From business licenses and statutory registrations to certification support and documentation assistance, we ensure your business complies with all legal and operational requirements under Indian law. Our team delivers reliable, timely, and professional support to help your business operate smoothly and grow with confidence.
         </p>
       </div>
@@ -1163,28 +1191,28 @@ include_once ('elements/header.php');
     <div class="row g-4 pt-4">
       <div class="col-sm-6 col-lg-4 reveal">
         <div class="add-card">
-          <div class="add-card-body text-center">
-            <h6>Trade Mark Registration</h6>
-            <p>Complete trademark search, filing, opposition handling, and brand protection services.</p>
-            <img src="assets/img/trademark-registration.png" alt="Trademark" class="mt-4">
+          <div class="add-card-body text-center" data-aos="fade-up" data-aos-duration="800">
+            <h6 data-aos="fade-left" data-aos-duration="1000">Trade Mark Registration</h6>
+            <p data-aos="fade-right" data-aos-duration="1200">Complete trademark search, filing, opposition handling, and brand protection services.</p>
+            <img data-aos="fade-down" data-aos-duration="1400" src="assets/img/trademark-registration.png" alt="Trademark" class="mt-4">
           </div>
         </div>
       </div>
       <div class="col-sm-6 col-lg-4 reveal">
         <div class="add-card">
-          <div class="add-card-body text-center">
-            <h6>ISO Certification</h6>
-            <p>ISO 9001, 14001, 45001 and industry-specific certifications with full documentation support.</p>
-            <img src="assets/img/iso-certificate.png" alt="ISO" class="mt-4">
+          <div class="add-card-body text-center" data-aos="fade-up" data-aos-duration="800">
+            <h6 data-aos="fade-left" data-aos-duration="1000">ISO Certification</h6>
+            <p data-aos="fade-right" data-aos-duration="1200">ISO 9001, 14001, 45001 and industry-specific certifications with full documentation support.</p>
+            <img data-aos="fade-down" data-aos-duration="1400" src="assets/img/iso-certificate.png" alt="ISO" class="mt-4">
           </div>
         </div>
       </div>
       <div class="col-sm-6 col-lg-4 reveal">
         <div class="add-card">
-          <div class="add-card-body text-center">
-            <h6>Business Consulting Services</h6>
-            <p>Strategic planning, process optimization and management consulting for growth-focused businesses.</p>
-            <img src="assets/img/business-volume.png" alt="Business Consulting" class="mt-4">
+          <div class="add-card-body text-center" data-aos="fade-up" data-aos-duration="800">
+            <h6 data-aos="fade-left" data-aos-duration="1000">Business Consulting Services</h6>
+            <p data-aos="fade-right" data-aos-duration="1200">Strategic planning, process optimization and management consulting for growth-focused businesses.</p>
+            <img data-aos="fade-down" data-aos-duration="1400" src="assets/img/business-volume.png" alt="Business Consulting" class="mt-4">
           </div>
         </div>
       </div>
