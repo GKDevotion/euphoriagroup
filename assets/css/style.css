@@ -174,6 +174,8 @@ h2 {
 .country-tag {
   position: absolute;
   animation: smoothFloat 3s ease-in-out infinite;
+  color: transparent; /* important */
+  -webkit-text-stroke: 2px white; /* stroke width + color */
 }
 
 @keyframes smoothFloat {

@@ -41,7 +41,7 @@ include_once('elements/header.php');
     .nav-active-pill {
         display: inline-flex;
         align-items: center;
-        background: #1a2456;
+        background: #25356F;
         color: #fff;
         font-weight: 700;
         font-size: 0.88rem;
@@ -78,12 +78,12 @@ include_once('elements/header.php');
     }
 
     .nav-link-item:hover {
-        color: #1a2456;
+        color: #25356F;
         background: #f0f2fa;
     }
 
     .nav-link-item.active-link {
-        color: #1a2456;
+        color: #25356F;
         font-weight: 700;
     }
 
@@ -294,7 +294,7 @@ include_once('elements/header.php');
     .incorporation-heading {
         position: relative;
         z-index: 1;
-        color: #1a2456;
+        color: #25356F;
         font-size: clamp(1.6rem, 3vw, 2.2rem);
         font-weight: 700;
         text-align: center;
@@ -346,7 +346,7 @@ include_once('elements/header.php');
     .service-card-incorporation h5 {
         font-size: 17.5px;
         font-weight: 700;
-        color: #1a2456;
+        color: #25356F;
         margin-bottom: 0.75rem;
         line-height: 1.35;
     }
@@ -637,7 +637,7 @@ include_once('elements/header.php');
     .register-heading {
         position: relative;
         z-index: 1;
-        color: #1a2456;
+        color: #25356F;
         font-size: clamp(1.6rem, 3vw, 2.2rem);
         font-weight: 700;
         text-align: start;
@@ -655,7 +655,7 @@ include_once('elements/header.php');
         width: 160px;
         height: 160px;
         border-radius: 50%;
-        background: #1a2456;
+        background: #25356F;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -685,12 +685,6 @@ include_once('elements/header.php');
         font-weight: 600;
         color: #fff;
         line-height: 1.4;
-    }
-
-    /* Large circles */
-    .feature-circle.large {
-        width: 180px;
-        height: 180px;
     }
 
     /* SVG Icons */
@@ -814,42 +808,33 @@ include_once('elements/header.php');
 
                     <!-- Row 1 -->
                     <div class="d-flex justify-content-center">
+                        <style>
+                            .feature-icon {
+                                width: 50px;
+                                height: 50px;
+                                margin-bottom: 10px;
+                            }
+                        </style>
                         <div class="feature-circle large">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                                <path d="M2 17l10 5 10-5" />
-                                <path d="M2 12l10 5 10-5" />
-                            </svg>
+                            <img src="assets/img/icon/register-1.png" alt="Startup-Friendly Structure" class="feature-icon">
                             <span class="label">Startup-Friendly Structure</span>
                         </div>
                     </div>
                     <div class="d-flex justify-content-center">
                         <div class="feature-circle large">
-                            <svg viewBox="0 0 24 24">
-                                <rect x="3" y="11" width="18" height="11" rx="2" />
-                                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-                            </svg>
+                            <img src="assets/img/icon/register-2.png" alt="Limited Liability Protection" class="feature-icon">
                             <span class="label">Limited Liability Protection</span>
                         </div>
                     </div>
                     <div class="d-flex justify-content-center">
                         <div class="feature-circle large">
-                            <svg viewBox="0 0 24 24">
-                                <circle cx="12" cy="8" r="4" />
-                                <path d="M6 20v-2a6 6 0 0 1 12 0v2" />
-                                <path d="M19 8l2 2-2 2" />
-                            </svg>
+                            <img src="assets/img/icon/register-3.png" alt="Strong Investor Credibility" class="feature-icon">
                             <span class="label">Strong Investor Credibility</span>
                         </div>
                     </div>
                     <div class="d-flex justify-content-center">
                         <div class="feature-circle large">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                                <polyline points="14 2 14 8 20 8" />
-                                <line x1="9" y1="13" x2="15" y2="13" />
-                                <line x1="9" y1="17" x2="13" y2="17" />
-                            </svg>
+                            <img src="assets/img/icon/register-4.png" alt="MCA Regulatory Compliance" class="feature-icon">
                             <span class="label">MCA Regulatory Compliance</span>
                         </div>
                     </div>
@@ -857,37 +842,25 @@ include_once('elements/header.php');
                     <!-- Row 2 -->
                     <div class="d-flex justify-content-center">
                         <div class="feature-circle large">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-                                <polyline points="9 22 9 12 15 12 15 22" />
-                            </svg>
+                            <img src="assets/img/icon/register-5.png" alt="Strong Investor Credibility" class="feature-icon">
                             <span class="label">Corporate Governance</span>
                         </div>
                     </div>
                     <div class="d-flex justify-content-center">
                         <div class="feature-circle large">
-                            <svg viewBox="0 0 24 24">
-                                <line x1="12" y1="1" x2="12" y2="23" />
-                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                            </svg>
+                            <img src="assets/img/icon/register-6.png" alt="Strong Investor Credibility" class="feature-icon">
                             <span class="label">Better Funding Opportunities</span>
                         </div>
                     </div>
                     <div class="d-flex justify-content-center">
                         <div class="feature-circle large">
-                            <svg viewBox="0 0 24 24">
-                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
-                            </svg>
+                            <img src="assets/img/icon/register-7.png" alt="Strong Investor Credibility" class="feature-icon">
                             <span class="label">Scalable Business Model</span>
                         </div>
                     </div>
                     <div class="d-flex justify-content-center">
                         <div class="feature-circle large">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M18 20V10" />
-                                <path d="M12 20V4" />
-                                <path d="M6 20v-6" />
-                            </svg>
+                            <img src="assets/img/icon/register-8.png" alt="Strong Investor Credibility" class="feature-icon">
                             <span class="label">Enhanced Business Credibility</span>
                         </div>
                     </div>
@@ -934,7 +907,7 @@ include_once('elements/header.php');
     .alliance-heading {
         position: relative;
         z-index: 1;
-        color: #1a2456;
+        color: #25356F;
         font-size: clamp(1.6rem, 3vw, 2.3rem);
         font-weight: 700;
         text-align: center;
@@ -956,8 +929,6 @@ include_once('elements/header.php');
         color: #c9a84c;
         margin-bottom: 10px;
     }
-
-
 
     .section-subtitle {
         font-size: 1rem;
@@ -1049,17 +1020,19 @@ include_once('elements/header.php');
     }
 
     .card-title-alliance {
-        font-size: 1rem;
-        font-weight: 700;
+        font-size: 17px;
+        font-family: "Anek Kannada", "Poppins", sans-serif;
+        font-weight: 400;
         color: #ffffff;
         margin-bottom: 8px;
         line-height: 1.3;
     }
 
     .card-desc-alliance {
-        font-size: 0.75rem;
+        font-size: 11px;
         color: #fff;
-        line-height: 1.6;
+        font-family: "Anek Kannada", "Poppins", sans-serif;
+        line-height: 1.4;
         margin: 0;
     }
 
@@ -1082,7 +1055,7 @@ include_once('elements/header.php');
     }
 
     .swiper-pagination-bullet-active {
-        background: #1a2456;
+        background: #25356F;
         width: 28px;
         border-radius: 5px;
     }
@@ -1092,9 +1065,9 @@ include_once('elements/header.php');
         width: 46px;
         height: 46px;
         border-radius: 50%;
-        border: 2px solid #1a2456;
+        border: 2px solid #25356F;
         background: #ffffff;
-        color: #1a2456;
+        color: #25356F;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1104,7 +1077,7 @@ include_once('elements/header.php');
     }
 
     .swiper-nav-btn:hover {
-        background: #1a2456;
+        background: #25356F;
         color: #ffffff;
         transform: scale(1.08);
     }
@@ -1312,7 +1285,7 @@ include_once('elements/header.php');
     .individual-heading {
         position: relative;
         z-index: 1;
-        color: #1a2456;
+        color: #25356F;
         font-size: clamp(1.6rem, 3vw, 2.2rem);
         font-weight: 700;
         text-align: center;
@@ -1432,7 +1405,8 @@ include_once('elements/header.php');
 
         .individual::before {
             top: 15px;
-            font-size: 70px; /* Shrink watermark */
+            font-size: 70px;
+            /* Shrink watermark */
         }
 
         .individual-heading {
@@ -1448,18 +1422,20 @@ include_once('elements/header.php');
 
         /* Make the image height reasonable for mobile */
         .img-wrapper img {
-            height: 350px; 
+            height: 350px;
             margin-top: 10px;
         }
     }
 
     @media (max-width: 767px) {
         .benefit-title {
-            font-size: 1.1rem; /* Smaller titles so they don't wrap too much */
+            font-size: 1.1rem;
+            /* Smaller titles so they don't wrap too much */
         }
 
         .benefit-item {
-            padding: 15px 5px; /* Tighter padding */
+            padding: 15px 5px;
+            /* Tighter padding */
         }
 
         .arrow-icon {
@@ -1473,7 +1449,8 @@ include_once('elements/header.php');
         }
 
         .benefit-desc {
-            width: 100%; /* Use full width on small screens */
+            width: 100%;
+            /* Use full width on small screens */
             font-size: 0.8rem;
         }
 
@@ -1627,7 +1604,7 @@ include_once('elements/header.php');
     .setup-heading {
         position: relative;
         z-index: 1;
-        color: #1a2456;
+        color: #25356F;
         font-size: clamp(1.6rem, 3vw, 2.2rem);
         font-weight: 700;
         text-align: center;
@@ -1669,7 +1646,7 @@ include_once('elements/header.php');
     }
 
     /* Icon circle */
-    .icon-wrap {
+    /* .icon-wrap {
         width: 68px;
         height: 68px;
         background: #fbf0f1;
@@ -1679,32 +1656,31 @@ include_once('elements/header.php');
         justify-content: center;
         margin-bottom: 20px;
         transition: background 0.28s ease, transform 0.28s ease;
-    }
+    } */
 
-    .benefit-card:hover .icon-wrap {
-        transform: scale(1.07) rotate(-4deg);
-    }
 
-    .icon-wrap svg {
-        width: 32px;
-        height: 32px;
-        color: #CC2831;
+    .setup-icon {
+        width: 76px;
+        height: 76px;
     }
 
     /* Text */
     .card-title {
-        font-size: 1rem;
+        font-size: 19px;
+        font-family: "Anek Kannada", "Poppins", sans-serif;
         font-weight: 600;
-        color: #333;
+        color: #000;
         width: 260px;
         margin-bottom: 10px;
+        letter-spacing: 0%;
         text-align: start;
-        line-height: 1.35;
+        line-height: 100%;
     }
 
     .card-desc {
-        font-size: 0.7rem;
-        color: #5c6a7c;
+        font-size: 14px; 
+        font-family: "Anek Kannada", "Poppins", sans-serif;
+        color: #666666;
         line-height: 1.7;
         margin: 0;
         text-align: start;
@@ -1720,7 +1696,8 @@ include_once('elements/header.php');
 
         .setup::before {
             top: 15px;
-            font-size: 75px; /* Smaller watermark for tablets */
+            font-size: 75px;
+            /* Smaller watermark for tablets */
         }
 
         /* Remove the left border on tablets/mobile and use a subtle bottom border instead */
@@ -1736,7 +1713,8 @@ include_once('elements/header.php');
         }
 
         .card-title {
-            width: 100%; /* Title takes full width of the card */
+            width: 100%;
+            /* Title takes full width of the card */
             font-size: 1.1rem;
         }
     }
@@ -1791,11 +1769,9 @@ include_once('elements/header.php');
             <!-- Row 1 -->
             <div class="col-12 col-sm-6 col-lg-3 col-divider">
                 <div class="benefit-card">
-                    <div class="icon-wrap">
+                    <div class="mb-3">
                         <!-- Partners icon -->
-                        <svg fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
-                        </svg>
+                        <img src="assets/img/icon/setup-1.png" alt="Ideal for Two or More Partners" class="setup-icon">
                     </div>
                     <h3 class="card-title">Ideal for Two or More Partners</h3>
                     <p class="card-desc">A suitable business structure for entrepreneurs who want to start and manage a business together with shared responsibilities.</p>
@@ -1804,12 +1780,9 @@ include_once('elements/header.php');
 
             <div class="col-12 col-sm-6 col-lg-3 col-divider">
                 <div class="benefit-card">
-                    <div class="icon-wrap">
+                    <div class="mb-3">
                         <!-- Setup / gear icon -->
-                        <svg fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 011.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 01-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.397.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 01-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204-.165-.397-.505-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.108-1.204l-.526-.738a1.125 1.125 0 01.12-1.45l.773-.773a1.125 1.125 0 011.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>
+                        <img src="assets/img/icon/setup-2.png" alt="Simple Business Setup" class="setup-icon">
                     </div>
                     <h3 class="card-title">Simple Business Setup</h3>
                     <p class="card-desc">Partnership firm registration involves a straightforward formation process with minimal legal formalities.</p>
@@ -1818,11 +1791,9 @@ include_once('elements/header.php');
 
             <div class="col-12 col-sm-6 col-lg-3 col-divider">
                 <div class="benefit-card">
-                    <div class="icon-wrap">
+                    <div class="mb-3">
                         <!-- Cost / money icon -->
-                        <svg fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
-                        </svg>
+                        <img src="assets/img/icon/setup-3.png" alt="Cost-Effective Structure" class="setup-icon">
                     </div>
                     <h3 class="card-title">Cost-Effective Structure</h3>
                     <p class="card-desc">Compared to corporate entities, partnership firms generally involve lower setup and operational costs.</p>
@@ -1831,11 +1802,9 @@ include_once('elements/header.php');
 
             <div class="col-12 col-sm-6 col-lg-3 col-divider">
                 <div class="benefit-card">
-                    <div class="icon-wrap">
+                    <div class="mb-3">
                         <!-- Flexible / arrows icon -->
-                        <svg fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
-                        </svg>
+                        <img src="assets/img/icon/setup-4.png" alt="Flexible Business Operations" class="setup-icon">
                     </div>
                     <h3 class="card-title">Flexible Business Operations</h3>
                     <p class="card-desc">The partnership agreement allows partners to define roles, responsibilities, and profit-sharing arrangements.</p>
@@ -1845,11 +1814,9 @@ include_once('elements/header.php');
             <!-- Row 2 -->
             <div class="col-12 col-sm-6 col-lg-3 col-divider">
                 <div class="benefit-card">
-                    <div class="icon-wrap">
+                    <div class="mb-3">
                         <!-- Distribution / pie icon -->
-                        <svg fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
-                        </svg>
+                        <img src="assets/img/icon/setup-5.png" alt="Profit Distribution Among Partners" class="setup-icon">
                     </div>
                     <h3 class="card-title">Profit Distribution Among Partners</h3>
                     <p class="card-desc">Business profits are distributed among partners based on mutually agreed terms in the partnership deed.</p>
@@ -1858,11 +1825,9 @@ include_once('elements/header.php');
 
             <div class="col-12 col-sm-6 col-lg-3 col-divider">
                 <div class="benefit-card">
-                    <div class="icon-wrap">
+                    <div class="mb-3">
                         <!-- SMB / briefcase icon -->
-                        <svg fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" />
-                        </svg>
+                        <img src="assets/img/icon/setup-6.png" alt="Strong Investor Credibility" class="setup-icon">
                     </div>
                     <h3 class="card-title">Ideal for Small & Medium Businesses</h3>
                     <p class="card-desc">Ideal for family businesses, professional firms, and small enterprises seeking a flexible operational structure.</p>
@@ -1871,11 +1836,10 @@ include_once('elements/header.php');
 
             <div class="col-12 col-sm-6 col-lg-3 col-divider">
                 <div class="benefit-card">
-                    <div class="icon-wrap">
+                    <div class="mb-3">
                         <!-- Quick / clock icon -->
-                        <svg fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
+                        <!-- Partners icon -->
+                        <img src="assets/img/icon/setup-7.png" alt="Strong Investor Credibility" class="setup-icon">
                     </div>
                     <h3 class="card-title">Quick Registration Process</h3>
                     <p class="card-desc">The formation process is relatively faster, allowing businesses to begin operations quickly.</p>
@@ -1884,11 +1848,10 @@ include_once('elements/header.php');
 
             <div class="col-12 col-sm-6 col-lg-3 col-divider">
                 <div class="benefit-card">
-                    <div class="icon-wrap">
+                    <div class="mb-3">
                         <!-- Credibility / badge icon -->
-                        <svg fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-.44 3.899 3.745 3.745 0 01-3.896.44A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.899-.44 3.745 3.745 0 01-.44-3.896A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 01.44-3.899 3.746 3.746 0 013.896-.44A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.899.44 3.746 3.746 0 01.44 3.896A3.745 3.745 0 0121 12z" />
-                        </svg>
+                        <!-- Partners icon -->
+                        <img src="assets/img/icon/setup-8.png" alt="Strong Investor Credibility" class="setup-icon">
                     </div>
                     <h3 class="card-title">Improved Business Credibility</h3>
                     <p class="card-desc">A registered partnership firm enhances trust with clients, vendors, and financial institutions.</p>
@@ -1931,7 +1894,7 @@ include_once('elements/header.php');
     .ownership-heading {
         position: relative;
         z-index: 1;
-        color: #1a2456;
+        color: #25356F;
         font-size: clamp(1.6rem, 3vw, 2.2rem);
         font-weight: 700;
         text-align: center;
@@ -1967,8 +1930,9 @@ include_once('elements/header.php');
 
 
     .section-desc {
-        font-size: 0.78rem;
-        color: #77889e;
+        font-size: 14px;
+        font-family: "Anek Kannada", "Poppins", sans-serif;
+        color: #333333;
         line-height: 1.8;
         margin-bottom: 32px;
     }
@@ -2008,11 +1972,15 @@ include_once('elements/header.php');
     .check-label {
         font-size: 0.92rem;
         font-weight: 600;
-        color: #1a2456;
+        color: #25356F;
         line-height: 1.4;
         padding-top: 3px;
     }
 
+    .checklist-icon{
+        width: 27px;
+        height: 24px;
+    }
     /* --- Proprietorship Setup Mobile Styles --- */
 
     @media (max-width: 991px) {
@@ -2029,7 +1997,8 @@ include_once('elements/header.php');
         }
 
         .ownership-heading {
-            text-align: center; /* Better for mobile balance */
+            text-align: center;
+            /* Better for mobile balance */
             margin-bottom: 25px;
         }
 
@@ -2040,7 +2009,8 @@ include_once('elements/header.php');
         }
 
         .img-wrapper-ownership img {
-            height: 300px; /* Reduced from 560px */
+            height: 300px;
+            /* Reduced from 560px */
             border-radius: 15px;
         }
 
@@ -2056,17 +2026,19 @@ include_once('elements/header.php');
     }
 
     @media (max-width: 767px) {
+
         /* Stack the checklist into a single column earlier for readability */
         .checklist {
             grid-template-columns: 1fr;
-            max-width: 320px; 
+            max-width: 320px;
         }
 
         .check-label {
             font-size: 0.88rem;
         }
 
-        .check-icon, .check-icon svg {
+        .check-icon,
+        .check-icon svg {
             width: 22px;
             height: 22px;
         }
@@ -2076,7 +2048,7 @@ include_once('elements/header.php');
         .ownership-heading {
             font-size: 1.5rem;
         }
-        
+
         .img-wrapper-ownership img {
             height: 250px;
         }
@@ -2112,92 +2084,70 @@ include_once('elements/header.php');
 
                         <div class="check-item">
                             <span class="check-icon">
-                                <svg viewBox="0 0 24 24" fill="none">
-                                    <path d="M9 12.5L6 9.5" stroke="#d0021b" stroke-width="0" />
-                                    <path d="M5 13l4 4L19 7" stroke="#d0021b" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M5 13l4 4" stroke="#d0021b" stroke-width="2.8" stroke-linecap="round" />
-                                </svg>
+                                <img src="assets/img/icon/Checke.png" alt="Checklist Icon" class="checklist-icon">
                             </span>
                             <span class="check-label">Ideal for Individual Entrepreneurs</span>
                         </div>
 
                         <div class="check-item">
                             <span class="check-icon">
-                                <svg viewBox="0 0 24 24" fill="none">
-                                    <path d="M5 13l4 4L19 7" stroke="#d0021b" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                                <img src="assets/img/icon/Checke.png" alt="Checklist Icon" class="checklist-icon">
                             </span>
                             <span class="check-label">Quick &amp; Simple Business Setup</span>
                         </div>
 
                         <div class="check-item">
                             <span class="check-icon">
-                                <svg viewBox="0 0 24 24" fill="none">
-                                    <path d="M5 13l4 4L19 7" stroke="#d0021b" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                                <img src="assets/img/icon/Checke.png" alt="Checklist Icon" class="checklist-icon">
                             </span>
                             <span class="check-label">Complete Operational Control</span>
                         </div>
 
                         <div class="check-item">
                             <span class="check-icon">
-                                <svg viewBox="0 0 24 24" fill="none">
-                                    <path d="M5 13l4 4L19 7" stroke="#d0021b" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                                <img src="assets/img/icon/Checke.png" alt="Checklist Icon" class="checklist-icon">
                             </span>
                             <span class="check-label">Minimal Compliance Requirements</span>
                         </div>
 
                         <div class="check-item">
                             <span class="check-icon">
-                                <svg viewBox="0 0 24 24" fill="none">
-                                    <path d="M5 13l4 4L19 7" stroke="#d0021b" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                                <img src="assets/img/icon/Checke.png" alt="Checklist Icon" class="checklist-icon">
                             </span>
                             <span class="check-label">Easy Taxation Process</span>
                         </div>
 
                         <div class="check-item">
                             <span class="check-icon">
-                                <svg viewBox="0 0 24 24" fill="none">
-                                    <path d="M5 13l4 4L19 7" stroke="#d0021b" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                                <img src="assets/img/icon/Checke.png" alt="Checklist Icon" class="checklist-icon">
                             </span>
                             <span class="check-label">Cost-Effective Business Structure</span>
                         </div>
 
                         <div class="check-item">
                             <span class="check-icon">
-                                <svg viewBox="0 0 24 24" fill="none">
-                                    <path d="M5 13l4 4L19 7" stroke="#d0021b" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                                <img src="assets/img/icon/Checke.png" alt="Checklist Icon" class="checklist-icon">
                             </span>
                             <span class="check-label">Flexible Business Operations</span>
                         </div>
 
                         <div class="check-item">
                             <span class="check-icon">
-                                <svg viewBox="0 0 24 24" fill="none">
-                                    <path d="M5 13l4 4L19 7" stroke="#d0021b" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                                <img src="assets/img/icon/Checke.png" alt="Checklist Icon" class="checklist-icon">
                             </span>
                             <span class="check-label">Ideal for Small Businesses &amp; Freelancers</span>
                         </div>
 
                         <div class="check-item">
                             <span class="check-icon">
-                                <svg viewBox="0 0 24 24" fill="none">
-                                    <path d="M5 13l4 4L19 7" stroke="#d0021b" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                                <img src="assets/img/icon/Checke.png" alt="Checklist Icon" class="checklist-icon">
                             </span>
                             <span class="check-label">Full Profit Ownership</span>
                         </div>
 
                         <div class="check-item">
                             <span class="check-icon">
-                                <svg viewBox="0 0 24 24" fill="none">
-                                    <path d="M5 13l4 4L19 7" stroke="#d0021b" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
+                                <img src="assets/img/icon/Checke.png" alt="Checklist Icon" class="checklist-icon">
                             </span>
                             <span class="check-label">Foundation for Future Expansion</span>
                         </div>
@@ -2242,7 +2192,7 @@ include_once('elements/header.php');
     .compliance-heading {
         position: relative;
         z-index: 1;
-        color: #1a2456;
+        color: #25356F;
         font-size: clamp(1.6rem, 3vw, 2.5rem);
         font-weight: 700;
         margin-bottom: 100px;
@@ -2271,7 +2221,7 @@ include_once('elements/header.php');
     .tax-section h2 {
         font-size: clamp(1.6rem, 3vw, 2.2rem);
         font-weight: 800;
-        color: #1a2456;
+        color: #25356F;
         line-height: 1.25;
     }
 
@@ -2305,7 +2255,7 @@ include_once('elements/header.php');
     }
 
     /* Icon circle */
-    .tax-card .icon-wrap {
+    .tax-card .mb-2 {
         width: 80px;
         height: 80px;
         background: #fbf0f1;
@@ -2315,35 +2265,23 @@ include_once('elements/header.php');
         justify-content: center;
         margin: 0 auto 22px;
         transition: background .28s;
-    }
-
-    .tax-card:hover .icon-wrap {
-        background: #f5c6c2;
-    }
-
-    .tax-card .icon-wrap svg {
-        width: 38px;
-        height: 38px;
-        stroke: #c0392b;
-        fill: none;
-        stroke-width: 1.6;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-    }
+    } 
 
     .tax-card h5 {
-        font-size: 1rem;
-        font-weight: 800;
-        color: #1a2456;
+        font-size: 14px;
+         font-family: "Anek Kannada", "Poppins", sans-serif;
+        font-weight: 700;
+        color: #25356F;
         margin-bottom: 12px;
         line-height: 1.3;
     }
 
     .tax-card p {
-        font-size: 0.7rem;
+        font-size: 13px;
+        font-family: "Anek Kannada", "Poppins", sans-serif;
         line-height: 1.7;
         margin: 0;
-        color: #a0aec0;
+        color: #666666;
     }
 
     /* ── Swiper overrides ── */
@@ -2365,10 +2303,10 @@ include_once('elements/header.php');
     }
 
     .swiper-pagination-bullet-active {
-        background: #1a2456;
+        background: #25356F;
         width: 10px;
         height: 10px;
-        outline: 2px solid #1a2456;
+        outline: 2px solid #25356F;
         outline-offset: 3px;
         border-radius: 100%;
     }
@@ -2387,7 +2325,7 @@ include_once('elements/header.php');
         border-radius: 50%;
         border: 1.5px solid #cbd5e0;
         background: #fff;
-        color: #1a2456;
+        color: #25356F;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -2412,7 +2350,12 @@ include_once('elements/header.php');
         display: block;
     }
 
-     /* ── Responsive: stack on mobile ── */
+    .compliance-icon{
+        width: 70px;
+        height: 70px;
+    }
+
+    /* ── Responsive: stack on mobile ── */
     /* --- Compliance Swiper Mobile Styles --- */
 
     @media (max-width: 991px) {
@@ -2423,16 +2366,19 @@ include_once('elements/header.php');
         /* Adjust watermark positioning for mobile */
         .compliance::before {
             top: 68px;
-            font-size: 63px; /* Scaled down for tablet/mobile */
+            font-size: 63px;
+            /* Scaled down for tablet/mobile */
             opacity: 0.2;
         }
 
         .compliance-heading {
-            margin-bottom: 40px; /* Reduced gap for smaller screens */
+            margin-bottom: 40px;
+            /* Reduced gap for smaller screens */
         }
 
         .tax-card {
-            padding: 30px 20px; /* Slimmer padding */
+            padding: 30px 20px;
+            /* Slimmer padding */
         }
 
         .tax-card .icon-wrap {
@@ -2441,7 +2387,7 @@ include_once('elements/header.php');
             margin-bottom: 15px;
         }
 
-        .tax-card .icon-wrap svg {
+        .tax-card .icon-wrap img {
             width: 30px;
             height: 30px;
         }
@@ -2458,7 +2404,8 @@ include_once('elements/header.php');
         }
 
         .tax-card p {
-            font-size: 0.75rem; /* Slightly larger text for mobile readability */
+            font-size: 0.75rem;
+            /* Slightly larger text for mobile readability */
             line-height: 1.6;
         }
 
@@ -2486,7 +2433,6 @@ include_once('elements/header.php');
             outline-offset: 2px;
         }
     }
-
 </style>
 
 <section class="container compliance ">
@@ -2501,14 +2447,10 @@ include_once('elements/header.php');
                 <!-- Card 1 -->
                 <div class="swiper-slide">
                     <div class="tax-card">
-                        <div class="icon-wrap">
+                        <div class="mb-3">
                             <!-- clipboard / legal icon -->
-                            <svg viewBox="0 0 24 24">
-                                <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2" />
-                                <rect x="9" y="3" width="6" height="4" rx="1" />
-                                <line x1="9" y1="12" x2="15" y2="12" />
-                                <line x1="9" y1="16" x2="12" y2="16" />
-                            </svg>
+                           <!-- Partners icon -->
+                        <img src="assets/img/icon/compliance-1.png" alt="Essential for Legal Business Operations" class="compliance-icon">
                         </div>
                         <h5>Essential for Legal Business Operations</h5>
                         <p>PAN, TAN, and GST registrations are fundamental tax registrations required for legally operating and managing financial transactions in India.</p>
@@ -2518,14 +2460,9 @@ include_once('elements/header.php');
                 <!-- Card 2 -->
                 <div class="swiper-slide">
                     <div class="tax-card">
-                        <div class="icon-wrap">
+                        <div class="mb-3">
                             <!-- ID / PAN card icon -->
-                            <svg viewBox="0 0 24 24">
-                                <rect x="2" y="5" width="20" height="14" rx="2" />
-                                <circle cx="8" cy="12" r="2" />
-                                <line x1="13" y1="10" x2="19" y2="10" />
-                                <line x1="13" y1="14" x2="17" y2="14" />
-                            </svg>
+                           <img src="assets/img/icon/compliance-1.png" alt="Permanent Account Number" class="compliance-icon">
                         </div>
                         <h5>Permanent Account Number (PAN) for Tax Identity</h5>
                         <p>PAN acts as a unique financial identification number for businesses, enabling them to file taxes and conduct official financial activities.</p>
@@ -2535,15 +2472,9 @@ include_once('elements/header.php');
                 <!-- Card 3 -->
                 <div class="swiper-slide">
                     <div class="tax-card">
-                        <div class="icon-wrap">
+                        <div class="mb-3">
                             <!-- Receipt / TAN icon -->
-                            <svg viewBox="0 0 24 24">
-                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                                <polyline points="14 2 14 8 20 8" />
-                                <line x1="9" y1="13" x2="15" y2="13" />
-                                <line x1="9" y1="17" x2="13" y2="17" />
-                                <path d="M9 9h1" />
-                            </svg>
+                            <img src="assets/img/icon/compliance-3.png" alt="Tax Deduction" class="compliance-icon">
                         </div>
                         <h5>Tax Deduction &amp; Collection Compliance (TAN)</h5>
                         <p>TAN registration is required for businesses responsible for deducting or collecting tax at source under Indian tax regulations.</p>
@@ -2553,16 +2484,9 @@ include_once('elements/header.php');
                 <!-- Card 4 -->
                 <div class="swiper-slide">
                     <div class="tax-card">
-                        <div class="icon-wrap">
+                        <div class="mb-3">
                             <!-- GST % icon -->
-                            <svg viewBox="0 0 24 24">
-                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                                <polyline points="14 2 14 8 20 8" />
-                                <line x1="9" y1="15" x2="15" y2="15" />
-                                <circle cx="9.5" cy="12.5" r=".5" fill="currentColor" stroke="none" />
-                                <circle cx="14.5" cy="17.5" r=".5" fill="currentColor" stroke="none" />
-                                <line x1="9" y1="18" x2="15" y2="12" />
-                            </svg>
+                            <img src="assets/img/icon/compliance-4.png" alt="GST Registration" class="compliance-icon">
                         </div>
                         <h5>GST Registration for Goods &amp; Services Tax Compliance</h5>
                         <p>GST registration allows businesses to legally collect and remit Goods and Services Tax on the supply of goods and services.</p>
@@ -2572,11 +2496,9 @@ include_once('elements/header.php');
                 <!-- Card 5 -->
                 <div class="swiper-slide">
                     <div class="tax-card">
-                        <div class="icon-wrap">
+                        <div class="mb-3">
                             <!-- Handshake / transaction icon -->
-                            <svg viewBox="0 0 24 24">
-                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-                            </svg>
+                            <img src="assets/img/icon/compliance-5.png" alt="Strong Investor Credibility" class="compliance-icon">
                         </div>
                         <h5>Smooth Business Transactions</h5>
                         <p>Proper tax registrations enable seamless invoicing, billing, and financial transactions with clients, vendors, and government authorities.</p>
@@ -2628,7 +2550,7 @@ include_once('elements/header.php');
     .non-profit-heading {
         position: relative;
         z-index: 1;
-        color: #1a2456;
+        color: #25356F;
         font-size: clamp(1.6rem, 3vw, 2.1rem);
         font-weight: 700;
         text-align: center;
@@ -2649,23 +2571,20 @@ include_once('elements/header.php');
     }
 
     .np-feature__title {
-        font-size: 1rem;
+        font-size: 20px;
+        font-family: "Anek Kannada", "Poppins", sans-serif;
         font-weight: 700;
-        color: #1a2456;
+        color: #25356F;
         margin-bottom: 7px;
         line-height: 1.35;
     }
 
-    .np-feature__title em {
-        font-style: normal;
-        color: #c0392b;
-    }
-
     .np-feature__desc {
-        font-size: 0.875rem;
+        font-size: 18px;
+        font-family: "Anek Kannada", "Poppins", sans-serif;
         line-height: 1.75;
         margin: 0;
-        color: #6f767e;
+        color: #666666;
     }
 
     /* right-side titles align right on desktop */
@@ -2710,22 +2629,24 @@ include_once('elements/header.php');
         }
 
         /* Remove the 'justify-content-between' height on mobile to prevent huge gaps */
-        .np-col-left, .np-col-right {
-            display: block !important; 
+        .np-col-left,
+        .np-col-right {
+            display: block !important;
         }
 
         .np-feature {
             margin-bottom: 20px;
-            text-align: center; /* Center align for better mobile flow */
+            text-align: center;
+            /* Center align for better mobile flow */
         }
 
-        .np-feature__title, 
+        .np-feature__title,
         .np-col-right .np-feature__title {
             text-align: center;
             font-size: 1.1rem;
         }
 
-        .np-feature__desc, 
+        .np-feature__desc,
         .np-col-right .np-feature__desc {
             text-align: center;
             font-size: 0.85rem;
@@ -2780,27 +2701,27 @@ include_once('elements/header.php');
             <div class="col-lg-4 np-col-left d-flex flex-column justify-content-between">
 
                 <div class="np-feature">
-                    <h5 class="np-feature__title">Legal Recognition for <em>Non-profit Activities</em></h5>
+                    <h5 class="np-feature__title">Legal Recognition for Non-profit Activities</h5>
                     <p class="np-feature__desc">Provides official legal status for organisations working in social, charitable, educational, and community development sectors.</p>
                 </div>
 
                 <div class="np-feature">
-                    <h5 class="np-feature__title">Structured <em>Non-profit Governance</em></h5>
+                    <h5 class="np-feature__title">Structured Non-profit Governance</h5>
                     <p class="np-feature__desc">Establishes a transparent management framework for trustees, members, or directors to manage the organisation responsibly.</p>
                 </div>
 
                 <div class="np-feature">
-                    <h5 class="np-feature__title">Eligibility for <em>Grants &amp; Funding</em></h5>
+                    <h5 class="np-feature__title">Eligibility for Grants &amp; Funding</h5>
                     <p class="np-feature__desc">Registered nonprofit organisations can apply for government grants, CSR funding, and donations from institutions and individuals.</p>
                 </div>
 
                 <div class="np-feature">
-                    <h5 class="np-feature__title">Enhanced <em>Public Trust &amp; Credibility</em></h5>
+                    <h5 class="np-feature__title">Enhanced Public Trust &amp; Credibility</h5>
                     <p class="np-feature__desc">Legal registration builds confidence among donors, volunteers, partners, and beneficiaries.</p>
                 </div>
 
                 <div class="np-feature">
-                    <h5 class="np-feature__title">Regulatory <em>Compliance &amp; Transparency</em></h5>
+                    <h5 class="np-feature__title">Regulatory Compliance &amp; Transparency</h5>
                     <p class="np-feature__desc">Ensures the organisation operates in accordance with applicable laws and regulatory guidelines.</p>
                 </div>
 
@@ -2819,27 +2740,27 @@ include_once('elements/header.php');
             <div class="col-lg-4 np-col-right d-flex flex-column justify-content-between">
 
                 <div class="np-feature">
-                    <h5 class="np-feature__title"><em>Tax Benefits</em> &amp; Exemptions</h5>
+                    <h5 class="np-feature__title">Tax Benefits &amp; Exemptions</h5>
                     <p class="np-feature__desc">Registered NGOs and charitable organisations may qualify for tax exemptions and donor benefits under applicable tax provisions.</p>
                 </div>
 
                 <div class="np-feature">
-                    <h5 class="np-feature__title">Strong Foundation for <em>Social Change</em></h5>
+                    <h5 class="np-feature__title">Strong Foundation for Social Change</h5>
                     <p class="np-feature__desc">Establishes a reliable and legally compliant framework to drive meaningful impact, expand charitable initiatives, and support community development.</p>
                 </div>
 
                 <div class="np-feature">
-                    <h5 class="np-feature__title">Long-Term <em>Social Impact</em></h5>
+                    <h5 class="np-feature__title">Long-Term Social Impact</h5>
                     <p class="np-feature__desc">Provides a structured platform to create sustainable programs that support education, healthcare, social welfare, and community empowerment.</p>
                 </div>
 
                 <div class="np-feature">
-                    <h5 class="np-feature__title">Legal Recognition for <em>Non-profit Activities</em></h5>
+                    <h5 class="np-feature__title">Legal Recognition for Non-profit Activities</h5>
                     <p class="np-feature__desc">Corporate Social Responsibility (CSR) collaborations become easier with a registered nonprofit entity.</p>
                 </div>
 
                 <div class="np-feature">
-                    <h5 class="np-feature__title">Separate <em>Legal Identity</em></h5>
+                    <h5 class="np-feature__title">Separate Legal Identity</h5>
                     <p class="np-feature__desc">Enables the organisation to hold property, open bank accounts, and enter into agreements in its own name.</p>
                 </div>
 
@@ -2856,6 +2777,7 @@ include_once('elements/header.php');
     .si-banner {
         position: relative;
         overflow: hidden;
+        height: 450px;
         background-size: cover;
         background-repeat: no-repeat;
         padding: 80px 0;
@@ -2893,16 +2815,18 @@ include_once('elements/header.php');
     }
 
     .si-banner__title {
-        font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+        font-size: 48px;
+        font-family: "Anek Kannada", "Poppins", sans-serif;
         font-weight: 800;
-        color: #1a2456;
+        color: #25356F;
         margin-bottom: 20px;
         line-height: 1.2;
     }
 
     .si-banner__desc {
-        font-size: clamp(0.9rem, 1.5vw, 1rem);
+        font-size: 18px;
         line-height: 1.85;
+        font-family: "Anek Kannada", "Poppins", sans-serif;
         margin: 0 auto;
     }
 
@@ -2911,12 +2835,13 @@ include_once('elements/header.php');
     @media (max-width: 991px) {
         .si-banner {
             padding: 60px 0;
-            background-position: center; /* Keeps the main part of the image visible */
+            background-position: center;
+            /* Keeps the main part of the image visible */
         }
 
         /* Adjust brackets to be relative to the viewport edges */
         .si-banner__bracket--tl {
-            left: 5%; 
+            left: 5%;
             top: 20px;
         }
 
@@ -2936,7 +2861,8 @@ include_once('elements/header.php');
         }
 
         .si-banner__title {
-            font-size: 1.6rem; /* Slightly smaller for mobile */
+            font-size: 1.6rem;
+            /* Slightly smaller for mobile */
             margin-bottom: 15px;
         }
 
@@ -2955,19 +2881,18 @@ include_once('elements/header.php');
         .si-banner {
             padding: 40px 10px;
         }
-        
+
         .si-banner__title {
             font-size: 1.4rem;
         }
     }
-    
 </style>
 
 <section class="si-banner mb-5">
 
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-10 col-xl-8 si-banner__inner">
+        <div class="row justify-content-center align-items-center" style="min-height: 30vh;">
+            <div class="col-lg-12 col-xl-10 si-banner__inner">
 
                 <h1 class="si-banner__title">Start-up India Registration</h1>
 
@@ -3041,8 +2966,8 @@ include_once('elements/header.php');
         grabCursor: true,
         loop: false,
         autoplay: {
-        delay: 2500, // time in ms (2.5 sec)
-        disableOnInteraction: false, // keep autoplay after user swipe
+            delay: 2500, // time in ms (2.5 sec)
+            disableOnInteraction: false, // keep autoplay after user swipe
         },
         pagination: {
             el: '.swiper-pagination',
