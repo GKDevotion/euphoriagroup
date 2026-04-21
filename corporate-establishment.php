@@ -5,11 +5,12 @@ include_once('elements/header.php');
 <!-- HERO -->
 <section class="top-banner-background" style="background-image: url('assets/img/background/Corporate-establishment.png');">
     <div>
-        <h1 class="mb-0 text-center">Corporate Establishment</h1>
-        <p class="text-black text-center mt-2">End-to-end support support for setting up legally compliant business entities.</p>
+        <h1 class="mb-0 text-center" data-aos="fade-up" data-aos-duration="600">Corporate Establishment</h1>
+        <p class="text-black text-center mt-2" data-aos="fade-up" data-aos-duration="800">End-to-end support support for setting up legally compliant business entities.</p>
     </div>
 </section>
 
+<<<<<<< HEAD
 <style>
     /* ── Partnership Section ── */
     .corporate-tab-section {
@@ -208,31 +209,39 @@ include_once('elements/header.php');
     }
 </style>
 
+=======
+>>>>>>> ccfe3a3c6444930024c69de05132c7f7918ccb78
 <section class="corporate-tab-section india-section">
 
     <div class="container position-relative" style="z-index:2">
 
-        <div class="formation-nav-wrapper">
+        <div class="formation-nav-wrapper" data-aos="fade-up" data-aos-duration="800">
 
-            <span class="nav-active-pill">Business Formation</span>
+            <a href="#business-formation" class="nav-link-pill nav-link-item nav-active-pill">Business Formation</a>
+            <div class="nav-sep"></div>
 
+            <a href="#private-company-setup" class="nav-link-pill nav-link-item">Private Limited Company Setup</a>
             <div class="nav-sep"></div>
-            <a href="#" class="nav-link-item">Private Limited Company Setup</a>
+            
+            <a href="#llp-registration" class="nav-link-pill nav-link-item">LLP</a>
             <div class="nav-sep"></div>
-            <a href="#" class="nav-link-item">LLP</a>
+            
+            <a href="#opc" class="nav-link-pill nav-link-item">OPC</a>
             <div class="nav-sep"></div>
-            <a href="#" class="nav-link-item">OPC</a>
+            
+            <a href="#partnership-firm" class="nav-link-pill nav-link-item">Partnership Firm</a>
             <div class="nav-sep"></div>
-            <a href="#" class="nav-link-item">Partnership Firm</a>
+            
+            <a href="#pan-tan-gst" class="nav-link-pill nav-link-item">PAN, TAN, GST</a>
             <div class="nav-sep"></div>
-            <a href="#" class="nav-link-item">PAN, TAN, GST</a>
+            
+            <a href="#ngo-trust-registration" class="nav-link-pill nav-link-item">NGO / Trust / Section 8 Company</a>
             <div class="nav-sep"></div>
-            <a href="#" class="nav-link-item">NGO / Trust / Section 8 Company</a>
+            
+            <a href="#startup-india-registration" class="nav-link-pill nav-link-item">Start-up India Registration</a>
             <div class="nav-sep"></div>
-            <a href="#" class="nav-link-item">Start-up India Registration</a>
-            <div class="nav-sep"></div>
-            <a href="#" class="nav-link-item">FAQ</a>
-
+            
+            <a href="#faqs" class="nav-link-pill nav-link-item">FAQ</a>
 
         </div>
 
@@ -242,20 +251,19 @@ include_once('elements/header.php');
         <div class="row align-items-center">
 
             <!-- Left: Image -->
-            <div class="col-12 col-md-4 img-col">
-                <img
-                    src="assets/img/corporate-establishment/img-2.png" alt="Business professionals with city skyline" />
+            <div class="col-12 col-md-4 img-col" data-aos="fade-up" data-aos-duration="1000">
+                <img src="assets/img/corporate-establishment/img-2.png" alt="Business professionals with city skyline" />
             </div>
 
             <!-- Right: Text -->
             <div class="col-12 col-md-8 text-col">
-                <p>
+                <p data-aos="fade-up" data-aos-duration="1200">
                     Expanding into India represents a significant opportunity, but entering a new market necessitates the proper structure, regulatory clarity, and strategic execution.
                 </p>
-                <p>
+                <p data-aos="fade-up" data-aos-duration="1200">
                     The Euphoria Group specialises in inbound corporate establishment services, assisting foreign investors, multinational corporations, and international entrepreneurs to establish a strong and compliant presence in India.
                 </p>
-                <p>
+                <p data-aos="fade-up" data-aos-duration="1200">
                     Beyond incorporation, we provide comprehensive support across regulatory approvals, tax registrations, banking setup, and ongoing compliance management. Our team ensures a seamless entry into the Indian market by aligning your business structure with local laws, industry requirements, and long-term growth objectives—allowing you to focus on scaling your operations with confidence.
                 </p>
             </div>
@@ -423,16 +431,16 @@ include_once('elements/header.php');
     }
 </style>
 
-<section class="container">
+<section class="container" id="business-formation">
 
     <div class="incorporation position-relative" style="z-index:1;">
 
-        <h2 class="incorporation-heading">Bussiness Formation & Registration</h2>
+        <h2 class="incorporation-heading" data-aos="fade-up" data-aos-duration="800">Bussiness Formation & Registration</h2>
 
         <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3 services-grid py-5">
 
             <!-- 1. Business Structure Advisory -->
-            <div class="col">
+            <div class="col" data-aos="fade-left" data-aos-duration="1200">
                 <div class="service-card-incorporation ">
                     <div class="mb-3">
                         <img src="assets/img/icon/incorporation-1.png" alt="Business Structure Advisory" class="incorporation-icon">
@@ -443,7 +451,7 @@ include_once('elements/header.php');
             </div>
 
             <!-- 2. Company Name Reservation -->
-            <div class="col">
+            <div class="col" data-aos="fade-left" data-aos-duration="900">
                 <div class="service-card-incorporation">
                     <div class="mb-3">
                         <img src="assets/img/icon/incorporation-2.png" alt="Company Name Reservation" class="incorporation-icon">
@@ -454,7 +462,7 @@ include_once('elements/header.php');
             </div>
 
             <!-- 3. Incorporation Documentation -->
-            <div class="col">
+            <div class="col" data-aos="flip-left" data-aos-duration="1000">
                 <div class="service-card-incorporation">
                     <div class="mb-3">
                         <img src="assets/img/icon/incorporation-3.png" alt="Incorporation Documentation" class="incorporation-icon">
@@ -465,7 +473,7 @@ include_once('elements/header.php');
             </div>
 
             <!-- 4. Government Registration Process -->
-            <div class="col">
+            <div class="col" data-aos="fade-right" data-aos-duration="900">
                 <div class="service-card-incorporation">
                     <div class="mb-3">
                         <img src="assets/img/icon/incorporation-4.png" alt="Government Registration Process" class="incorporation-icon">
@@ -476,7 +484,7 @@ include_once('elements/header.php');
             </div>
 
             <!-- 5. Digital Signature and DIN -->
-            <div class="col">
+            <div class="col" data-aos="fade-right" data-aos-duration="1200">
                 <div class="service-card-incorporation">
                     <div class="mb-3">
                         <img src="assets/img/icon/incorporation-5.png" alt="Digital Signature" class="incorporation-icon">
@@ -487,7 +495,7 @@ include_once('elements/header.php');
             </div>
 
             <!-- 6. PAN & TAN Registration -->
-            <div class="col">
+            <div class="col" data-aos="fade-left" data-aos-duration="1200">
                 <div class="service-card-incorporation">
                     <div class="mb-3">
                         <img src="assets/img/icon/incorporation-6.png" alt="Ideal for Two or More Partners" class="incorporation-icon">
@@ -498,7 +506,7 @@ include_once('elements/header.php');
             </div>
 
             <!-- 7. Regulatory Compliance Setup -->
-            <div class="col">
+            <div class="col" data-aos="fade-left" data-aos-duration="900">
                 <div class="service-card-incorporation">
                     <div class="mb-3">
                         <img src="assets/img/icon/incorporation-7.png" alt="Regulatory Compliance Setup" class="incorporation-icon">
@@ -509,7 +517,7 @@ include_once('elements/header.php');
             </div>
 
             <!-- 8. Startup & Entrepreneur Support -->
-            <div class="col">
+            <div class="col" data-aos="flip-right" data-aos-duration="1000">
                 <div class="service-card-incorporation">
                     <div class="mb-3">
                         <img src="assets/img/icon/incorporation-8.png" alt="Startup & Entrepreneur Support" class="incorporation-icon">
@@ -520,7 +528,7 @@ include_once('elements/header.php');
             </div>
 
             <!-- 9. Business Legitimacy & Credibility -->
-            <div class="col">
+            <div class="col" data-aos="fade-right" data-aos-duration="900">
                 <div class="service-card-incorporation">
                     <div class="mb-3">
                         <img src="assets/img/icon/incorporation-9.png" alt="Business Legitimacy & Credibility " class="incorporation-icon">
@@ -531,7 +539,7 @@ include_once('elements/header.php');
             </div>
 
             <!-- 10. Seamless End-to-End Incorporation -->
-            <div class="col">
+            <div class="col" data-aos="fade-right" data-aos-duration="1200">
                 <div class="service-card-incorporation">
                     <div class="mb-3">
                         <img src="assets/img/icon/incorporation-10.png" alt="Seamless End-to-End Incorporation" class="incorporation-icon">
@@ -611,10 +619,6 @@ include_once('elements/header.php');
         opacity: 0;
         transform: translateY(-80px) scale(0.9);
     }
-
-    /* .feature-circle:hover {
-        transform: translateY(-6px) scale(1.05);
-    } */
 
     .feature-circle .icon {
         font-size: 2rem;
@@ -746,7 +750,7 @@ include_once('elements/header.php');
     }
 </style>
 
-<section class="container">
+<section class="container" id="private-company-setup">
 
     <div class="register position-relative" style="z-index:1;">
 
@@ -754,20 +758,20 @@ include_once('elements/header.php');
 
             <!-- Left: Text Content -->
             <div class="col-lg-5">
-                <h2 class="register-heading">Private Limited Company Setup</h2>
-                <p class="section-text">
+                <h2 class="register-heading" data-aos="fade-up" data-aos-duration="600">Private Limited Company Setup</h2>
+                <p class="section-text" data-aos="fade-up" data-aos-duration="800">
                     A Private Limited Company is one of the most preferred business structures in India
                     for startups, entrepreneurs, and growing businesses. It offers a strong legal identity,
                     limited liability protection for shareholders, and greater credibility with investors,
                     clients, and financial institutions.
                 </p>
-                <p class="section-text">
+                <p class="section-text" data-aos="fade-up" data-aos-duration="1000">
                     Registering a Private Limited Company under the Companies Act, 2013 ensures a
                     structured framework for ownership, management, and compliance. It also
                     provides better opportunities for funding, business expansion, and long-term
                     scalability.
                 </p>
-                <p class="section-text">
+                <p class="section-text" data-aos="fade-up" data-aos-duration="1200">
                     At The Euphoria Group, we provide complete support for Private Limited Company
                     Registration, including name approval, DSC & DIN application, incorporation filing with
                     the Ministry of Corporate Affairs (MCA), and post-registration compliance—ensuring a
@@ -849,27 +853,6 @@ include_once('elements/header.php');
 
 
 </section>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const sectionDropAnimation = document.querySelector(".register");
-
-        const observerDropAnimation = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    sectionDropAnimation.classList.add("animate");
-
-                    // OPTIONAL: run only once
-                    observerDropAnimation.unobserve(sectionDropAnimation);
-                }
-            });
-        }, {
-            threshold: 0.3 // trigger when 30% visible
-        });
-
-        observerDropAnimation.observe(sectionDropAnimation);
-    });
-</script>
 
 <style>
     /* Section */
@@ -1152,17 +1135,17 @@ include_once('elements/header.php');
     }
 </style>
 
-<section class="alliance">
+<section class="alliance" id="llp-registration">
 
     <div class="container position-relative py-5" style="z-index:1;">
-        <h2 class="alliance-heading">LLP Registration</h2>
+        <h2 class="alliance-heading" data-aos="fade-up" data-aos-duration="600">LLP Registration</h2>
 
         <!-- Swiper -->
         <div class="swiper benefitsSwiper">
             <div class="swiper-wrapper">
 
                 <!-- Slide 1 -->
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-aos="fade-right" data-aos-duration="900">
                     <div class="benefit-card-alliance">
                         <div class="card-bg" style="background-image:url('assets/img/corporate-establishment/llp-reg-1.png');"></div>
                         <div class="card-overlay"></div>
@@ -1174,7 +1157,7 @@ include_once('elements/header.php');
                 </div>
 
                 <!-- Slide 2 -->
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-aos="fade-left" data-aos-duration="900">
                     <div class="benefit-card-alliance">
                         <div class="card-bg" style="background-image:url('assets/img/corporate-establishment/llp-reg-2.png');"></div>
                         <div class="card-overlay"></div>
@@ -1187,7 +1170,7 @@ include_once('elements/header.php');
                 </div>
 
                 <!-- Slide 3 -->
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-aos="fade-out" data-aos-duration="900">
                     <div class="benefit-card-alliance">
                         <div class="card-bg" style="background-image:url('assets/img/corporate-establishment/llp-reg-3.png');"></div>
                         <div class="card-overlay"></div>
@@ -1200,7 +1183,7 @@ include_once('elements/header.php');
                 </div>
 
                 <!-- Slide 4 -->
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-aos="fade-right" data-aos-duration="900">
                     <div class="benefit-card-alliance">
                         <div class="card-bg" style="background-image:url('assets/img/corporate-establishment/llp-reg-4.png');"></div>
                         <div class="card-overlay"></div>
@@ -1213,7 +1196,7 @@ include_once('elements/header.php');
                 </div>
 
                 <!-- Slide 5 -->
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-aos="fade-left" data-aos-duration="900">
                     <div class="benefit-card-alliance">
                         <div class="card-bg" style="background-image:url('assets/img/corporate-establishment/llp-reg-5.png');"></div>
                         <div class="card-overlay"></div>
@@ -1229,7 +1212,7 @@ include_once('elements/header.php');
             </div><!-- /.swiper-wrapper -->
 
             <!-- Pagination -->
-            <div class="swiper-pagination mt-3"></div>
+            <div class="swiper-pagination mt-3" data-aos="fade-down" data-aos-duration="800"></div>
         </div><!-- /.swiper -->
 
         <!-- Custom Navigation -->
@@ -1469,18 +1452,18 @@ include_once('elements/header.php');
     }
 </style>
 
-<section class="individual">
+<section class="individual" id="opc">
 
     <div class="container position-relative" style="z-index:1;">
 
-        <h2 class="individual-heading">OPC ( One Person Company )</h2>
+        <h2 class="individual-heading" data-aos="fade-up" data-aos-duration="600">OPC ( One Person Company )</h2>
 
         <div class="row align-items-center g-5 py-5">
 
             <!-- LEFT: Benefit Items -->
             <div class="col-lg-8">
 
-                <div class="benefit-item active" onclick="toggleItem(this)">
+                <div data-aos="fade-up" data-aos-duration="600" data-img="assets/img/corporate-establishment/opc-1.png" class="benefit-item active" onclick="toggleItem(this)">
                     <div class="benefit-header">
                         <h3 class="benefit-title">Ideal for Solo Entrepreneurs</h3>
                         <span class="arrow-icon">
@@ -1492,7 +1475,7 @@ include_once('elements/header.php');
                     <p class="benefit-desc">Designed specifically for individual founders who want to start and operate a business independently with full ownership.</p>
                 </div>
 
-                <div class="benefit-item" onclick="toggleItem(this)">
+                <div data-aos="fade-up" data-aos-duration="800" data-img="assets/img/corporate-establishment/opc-2.png" class="benefit-item" onclick="toggleItem(this)">
                     <div class="benefit-header">
                         <h3 class="benefit-title">Complete Business Control</h3>
                         <span class="arrow-icon">
@@ -1504,7 +1487,7 @@ include_once('elements/header.php');
                     <p class="benefit-desc">Allows a single entrepreneur to manage decision-making, strategy, and operations without the need for partners.</p>
                 </div>
 
-                <div class="benefit-item" onclick="toggleItem(this)">
+                <div data-aos="fade-up" data-aos-duration="1000" data-img="assets/img/corporate-establishment/opc-3.png" class="benefit-item" onclick="toggleItem(this)">
                     <div class="benefit-header">
                         <h3 class="benefit-title">Limited Liability Protection</h3>
                         <span class="arrow-icon">
@@ -1516,7 +1499,7 @@ include_once('elements/header.php');
                     <p class="benefit-desc">Protects the personal assets of the owner by limiting liability to the company's financial obligations.</p>
                 </div>
 
-                <div class="benefit-item" onclick="toggleItem(this)">
+                <div data-aos="fade-up" data-aos-duration="1200" data-img="assets/img/corporate-establishment/opc-4.png" class="benefit-item" onclick="toggleItem(this)">
                     <div class="benefit-header">
                         <h3 class="benefit-title">Separate Legal Identity</h3>
                         <span class="arrow-icon">
@@ -1528,7 +1511,7 @@ include_once('elements/header.php');
                     <p class="benefit-desc">The business operates as a separate legal entity, enabling it to own assets, sign contracts, and conduct business independently.</p>
                 </div>
 
-                <div class="benefit-item" onclick="toggleItem(this)">
+                <div data-aos="fade-up" data-aos-duration="1400" data-img="assets/img/corporate-establishment/opc-3.png" class="benefit-item" onclick="toggleItem(this)">
                     <div class="benefit-header">
                         <h3 class="benefit-title">Corporate Recognition & Credibility</h3>
                         <span class="arrow-icon">
@@ -1540,7 +1523,7 @@ include_once('elements/header.php');
                     <p class="benefit-desc">Registration under the Companies Act enhances professional credibility with clients, vendors, and financial institutions.</p>
                 </div>
 
-                <div class="benefit-item remove-bottom-border" onclick="toggleItem(this)">
+                <div data-aos="fade-up" data-aos-duration="1600" data-img="assets/img/corporate-establishment/opc-2.png" class="benefit-item remove-bottom-border" onclick="toggleItem(this)">
                     <div class="benefit-header">
                         <h3 class="benefit-title">Simplified Compliance Structure</h3>
                         <span class="arrow-icon">
@@ -1556,9 +1539,8 @@ include_once('elements/header.php');
 
             <!-- RIGHT: Image -->
             <div class="col-lg-4">
-                <div class="img-wrapper">
-                    <img
-                        src="assets/img/corporate-establishment/opc.png" alt="Solo Entrepreneur" />
+                <div class="img-wrapper preview">
+                    <img src="assets/img/corporate-establishment/opc-1.png" alt="Solo Entrepreneur" id="previewImg">
                 </div>
             </div>
 
@@ -1638,20 +1620,6 @@ include_once('elements/header.php');
         opacity: 1;
         transform: scaleY(1);
     }
-
-    /* Icon circle */
-    /* .icon-wrap {
-        width: 68px;
-        height: 68px;
-        background: #fbf0f1;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 20px;
-        transition: background 0.28s ease, transform 0.28s ease;
-    } */
-
 
     .setup-icon {
         width: 76px;
@@ -1752,17 +1720,17 @@ include_once('elements/header.php');
     }
 </style>
 
-<section class="setup">
+<section class="setup" id="partnership-firm">
 
     <div class="container position-relative" style="z-index:1;">
 
-        <h2 class="setup-heading">Partnership Firm Registration</h2>
+        <h2 class="setup-heading" data-aos="fade-up" data-aos-duration="600">Partnership Firm Registration</h2>
 
         <div class="row g-4 py-5">
 
             <!-- Row 1 -->
             <div class="col-12 col-sm-6 col-lg-3 col-divider">
-                <div class="benefit-card">
+                <div class="benefit-card" data-aos="fade-up" data-aos-duration="1000">
                     <div class="mb-3">
                         <!-- Partners icon -->
                         <img src="assets/img/icon/setup-1.png" alt="Ideal for Two or More Partners" class="setup-icon">
@@ -1773,7 +1741,7 @@ include_once('elements/header.php');
             </div>
 
             <div class="col-12 col-sm-6 col-lg-3 col-divider">
-                <div class="benefit-card">
+                <div class="benefit-card" data-aos="fade-up" data-aos-duration="1000">
                     <div class="mb-3">
                         <!-- Setup / gear icon -->
                         <img src="assets/img/icon/setup-2.png" alt="Simple Business Setup" class="setup-icon">
@@ -1784,7 +1752,7 @@ include_once('elements/header.php');
             </div>
 
             <div class="col-12 col-sm-6 col-lg-3 col-divider">
-                <div class="benefit-card">
+                <div class="benefit-card" data-aos="fade-up" data-aos-duration="1000">
                     <div class="mb-3">
                         <!-- Cost / money icon -->
                         <img src="assets/img/icon/setup-3.png" alt="Cost-Effective Structure" class="setup-icon">
@@ -1795,7 +1763,7 @@ include_once('elements/header.php');
             </div>
 
             <div class="col-12 col-sm-6 col-lg-3 col-divider">
-                <div class="benefit-card">
+                <div class="benefit-card" data-aos="fade-up" data-aos-duration="1000">
                     <div class="mb-3">
                         <!-- Flexible / arrows icon -->
                         <img src="assets/img/icon/setup-4.png" alt="Flexible Business Operations" class="setup-icon">
@@ -1807,7 +1775,7 @@ include_once('elements/header.php');
 
             <!-- Row 2 -->
             <div class="col-12 col-sm-6 col-lg-3 col-divider">
-                <div class="benefit-card">
+                <div class="benefit-card" data-aos="fade-down" data-aos-duration="1000">
                     <div class="mb-3">
                         <!-- Distribution / pie icon -->
                         <img src="assets/img/icon/setup-5.png" alt="Profit Distribution Among Partners" class="setup-icon">
@@ -1818,7 +1786,7 @@ include_once('elements/header.php');
             </div>
 
             <div class="col-12 col-sm-6 col-lg-3 col-divider">
-                <div class="benefit-card">
+                <div class="benefit-card" data-aos="fade-down" data-aos-duration="1000">
                     <div class="mb-3">
                         <!-- SMB / briefcase icon -->
                         <img src="assets/img/icon/setup-6.png" alt="Strong Investor Credibility" class="setup-icon">
@@ -1829,7 +1797,7 @@ include_once('elements/header.php');
             </div>
 
             <div class="col-12 col-sm-6 col-lg-3 col-divider">
-                <div class="benefit-card">
+                <div class="benefit-card" data-aos="fade-down" data-aos-duration="1000">
                     <div class="mb-3">
                         <!-- Quick / clock icon -->
                         <!-- Partners icon -->
@@ -1841,7 +1809,7 @@ include_once('elements/header.php');
             </div>
 
             <div class="col-12 col-sm-6 col-lg-3 col-divider">
-                <div class="benefit-card">
+                <div class="benefit-card" data-aos="fade-down" data-aos-duration="1000">
                     <div class="mb-3">
                         <!-- Credibility / badge icon -->
                         <!-- Partners icon -->
@@ -2056,10 +2024,8 @@ include_once('elements/header.php');
 
             <!-- LEFT: Image -->
             <div class="col-lg-6">
-                <div class="img-wrapper-ownership">
-                    <img
-                        src="assets/img/corporate-establishment/pro-setup.png"
-                        alt="Proprietorship Setup" />
+                <div class="img-wrapper-ownership" data-aos="fade-up" data-aos-duration="800">
+                    <img src="assets/img/corporate-establishment/pro-setup.png" alt="Proprietorship Setup" />
                 </div>
             </div>
 
@@ -2067,79 +2033,79 @@ include_once('elements/header.php');
             <div class="col-lg-6">
                 <div class="content-side">
 
-                    <h2 class="ownership-heading">Proprietorship Setup</h2>
+                    <h2 class="ownership-heading" data-aos="fade-up" data-aos-duration="900">Proprietorship Setup</h2>
                     <!-- Description -->
-                    <p class="section-desc">
+                    <p class="section-desc" data-aos="fade-up" data-aos-duration="1000">
                         A Partnership Firm is an ideal business structure for entrepreneurs who want to manage a business together with shared responsibilities and flexibility. It offers a simple and quick registration process with minimal legal formalities and lower setup costs compared to corporate entities. Partners can define their roles, responsibilities, and profit-sharing terms through a partnership deed, ensuring smooth operations and mutual understanding. With collective decision-making, shared expertise, and combined resources, it supports better growth and teamwork. This structure is especially suitable for family businesses, professional firms, and small enterprises looking for an easy-to-manage and cost-effective setup.
                     </p>
 
                     <!-- Checklist -->
                     <div class="checklist">
 
-                        <div class="check-item">
+                        <div class="check-item" data-aos="fade-up" data-aos-duration="500">
                             <span class="check-icon">
                                 <img src="assets/img/icon/Checke.png" alt="Checklist Icon" class="checklist-icon">
                             </span>
                             <span class="check-label">Ideal for Individual Entrepreneurs</span>
                         </div>
 
-                        <div class="check-item">
+                        <div class="check-item" data-aos="fade-up" data-aos-duration="600">
                             <span class="check-icon">
                                 <img src="assets/img/icon/Checke.png" alt="Checklist Icon" class="checklist-icon">
                             </span>
                             <span class="check-label">Quick &amp; Simple Business Setup</span>
                         </div>
 
-                        <div class="check-item">
+                        <div class="check-item" data-aos="fade-up" data-aos-duration="700">
                             <span class="check-icon">
                                 <img src="assets/img/icon/Checke.png" alt="Checklist Icon" class="checklist-icon">
                             </span>
                             <span class="check-label">Complete Operational Control</span>
                         </div>
 
-                        <div class="check-item">
+                        <div class="check-item" data-aos="fade-up" data-aos-duration="800">
                             <span class="check-icon">
                                 <img src="assets/img/icon/Checke.png" alt="Checklist Icon" class="checklist-icon">
                             </span>
                             <span class="check-label">Minimal Compliance Requirements</span>
                         </div>
 
-                        <div class="check-item">
+                        <div class="check-item" data-aos="fade-up" data-aos-duration="900">
                             <span class="check-icon">
                                 <img src="assets/img/icon/Checke.png" alt="Checklist Icon" class="checklist-icon">
                             </span>
                             <span class="check-label">Easy Taxation Process</span>
                         </div>
 
-                        <div class="check-item">
+                        <div class="check-item" data-aos="fade-up" data-aos-duration="1000">
                             <span class="check-icon">
                                 <img src="assets/img/icon/Checke.png" alt="Checklist Icon" class="checklist-icon">
                             </span>
                             <span class="check-label">Cost-Effective Business Structure</span>
                         </div>
 
-                        <div class="check-item">
+                        <div class="check-item" data-aos="fade-up" data-aos-duration="1100">
                             <span class="check-icon">
                                 <img src="assets/img/icon/Checke.png" alt="Checklist Icon" class="checklist-icon">
                             </span>
                             <span class="check-label">Flexible Business Operations</span>
                         </div>
 
-                        <div class="check-item">
+                        <div class="check-item" data-aos="fade-up" data-aos-duration="1200">
                             <span class="check-icon">
                                 <img src="assets/img/icon/Checke.png" alt="Checklist Icon" class="checklist-icon">
                             </span>
                             <span class="check-label">Ideal for Small Businesses &amp; Freelancers</span>
                         </div>
 
-                        <div class="check-item">
+                        <div class="check-item" data-aos="fade-up" data-aos-duration="1300">
                             <span class="check-icon">
                                 <img src="assets/img/icon/Checke.png" alt="Checklist Icon" class="checklist-icon">
                             </span>
                             <span class="check-label">Full Profit Ownership</span>
                         </div>
 
-                        <div class="check-item">
+                        <div class="check-item" data-aos="fade-up" data-aos-duration="1400">
                             <span class="check-icon">
                                 <img src="assets/img/icon/Checke.png" alt="Checklist Icon" class="checklist-icon">
                             </span>
@@ -2429,17 +2395,19 @@ include_once('elements/header.php');
     }
 </style>
 
-<section class="container compliance ">
+<section class="container compliance" id="pan-tan-gst">
 
     <div class=" position-relative py-5 " style="z-index:1;">
-        <h2 class="compliance-heading">PAN, TAN, GST Registration</h2>
+        <h2 class="compliance-heading">
+            <span data-aos="fade-up" data-aos-duration="800">PAN,</spa> <span data-aos="fade-up" data-aos-duration="1000">TAN,</span> <span data-aos="fade-up" data-aos-duration="1200">GST Registration</span>
+        </h2>
 
         <!-- Swiper -->
         <div class="swiper taxSwiper">
             <div class="swiper-wrapper">
 
                 <!-- Card 1 -->
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-aos="fade-down" data-aos-duration="600">
                     <div class="tax-card">
                         <div class="mb-3">
                             <!-- clipboard / legal icon -->
@@ -2452,7 +2420,7 @@ include_once('elements/header.php');
                 </div>
 
                 <!-- Card 2 -->
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-aos="fade-up" data-aos-duration="800">
                     <div class="tax-card">
                         <div class="mb-3">
                             <!-- ID / PAN card icon -->
@@ -2464,7 +2432,7 @@ include_once('elements/header.php');
                 </div>
 
                 <!-- Card 3 -->
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-aos="flip-right" data-aos-duration="1000">
                     <div class="tax-card">
                         <div class="mb-3">
                             <!-- Receipt / TAN icon -->
@@ -2476,7 +2444,7 @@ include_once('elements/header.php');
                 </div>
 
                 <!-- Card 4 -->
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1200">
                     <div class="tax-card">
                         <div class="mb-3">
                             <!-- GST % icon -->
@@ -2488,7 +2456,7 @@ include_once('elements/header.php');
                 </div>
 
                 <!-- Card 5 -->
-                <div class="swiper-slide">
+                <div class="swiper-slide" data-aos="fade-down" data-aos-duration="1400">
                     <div class="tax-card">
                         <div class="mb-3">
                             <!-- Handshake / transaction icon -->
@@ -2645,20 +2613,6 @@ include_once('elements/header.php');
             text-align: center;
             font-size: 0.85rem;
         }
-
-        /* Show image on mobile but smaller and centered if desired */
-        /* If you want to keep the image, uncomment the lines below: */
-        /*
-        .d-none.d-lg-flex {
-            display: block !important;
-            margin-bottom: 30px;
-        }
-        .np-img-wrap {
-            min-height: 250px;
-            max-width: 300px;
-            margin: 0 auto;
-        }
-        */
     }
 
     @media (max-width: 767px) {
@@ -2683,11 +2637,11 @@ include_once('elements/header.php');
     }
 </style>
 
-<section class="non-profit">
+<section class="non-profit" id="ngo-trust-registration">
 
     <div class="container position-relative" style="z-index:1;">
 
-        <h2 class="non-profit-heading">NGO / Trust / Section 8 Company Registration</h2>
+        <h2 class="non-profit-heading" data-aos="fade-up" data-aos-duration="600">NGO / Trust / Section 8 Company Registration</h2>
 
         <div class="row g-4 align-items-stretch py-5">
 
@@ -2695,28 +2649,28 @@ include_once('elements/header.php');
             <div class="col-lg-4 np-col-left d-flex flex-column justify-content-between">
 
                 <div class="np-feature">
-                    <h5 class="np-feature__title">Legal Recognition for Non-profit Activities</h5>
-                    <p class="np-feature__desc">Provides official legal status for organisations working in social, charitable, educational, and community development sectors.</p>
+                    <h5 class="np-feature__title" data-aos="fade-up" data-aos-duration="800">Legal Recognition for Non-profit Activities</h5>
+                    <p class="np-feature__desc" data-aos="fade-down" data-aos-duration="1000">Provides official legal status for organisations working in social, charitable, educational, and community development sectors.</p>
                 </div>
 
                 <div class="np-feature">
-                    <h5 class="np-feature__title">Structured Non-profit Governance</h5>
-                    <p class="np-feature__desc">Establishes a transparent management framework for trustees, members, or directors to manage the organisation responsibly.</p>
+                    <h5 class="np-feature__title" data-aos="fade-up" data-aos-duration="800">Structured Non-profit Governance</h5>
+                    <p class="np-feature__desc" data-aos="fade-down" data-aos-duration="1000">Establishes a transparent management framework for trustees, members, or directors to manage the organisation responsibly.</p>
                 </div>
 
                 <div class="np-feature">
-                    <h5 class="np-feature__title">Eligibility for Grants &amp; Funding</h5>
-                    <p class="np-feature__desc">Registered nonprofit organisations can apply for government grants, CSR funding, and donations from institutions and individuals.</p>
+                    <h5 class="np-feature__title" data-aos="fade-up" data-aos-duration="800">Eligibility for Grants &amp; Funding</h5>
+                    <p class="np-feature__desc" data-aos="fade-down" data-aos-duration="1000">Registered nonprofit organisations can apply for government grants, CSR funding, and donations from institutions and individuals.</p>
                 </div>
 
                 <div class="np-feature">
-                    <h5 class="np-feature__title">Enhanced Public Trust &amp; Credibility</h5>
-                    <p class="np-feature__desc">Legal registration builds confidence among donors, volunteers, partners, and beneficiaries.</p>
+                    <h5 class="np-feature__title" data-aos="fade-up" data-aos-duration="800">Enhanced Public Trust &amp; Credibility</h5>
+                    <p class="np-feature__desc" data-aos="fade-down" data-aos-duration="1000">Legal registration builds confidence among donors, volunteers, partners, and beneficiaries.</p>
                 </div>
 
                 <div class="np-feature">
-                    <h5 class="np-feature__title">Regulatory Compliance &amp; Transparency</h5>
-                    <p class="np-feature__desc">Ensures the organisation operates in accordance with applicable laws and regulatory guidelines.</p>
+                    <h5 class="np-feature__title" data-aos="fade-up" data-aos-duration="800">Regulatory Compliance &amp; Transparency</h5>
+                    <p class="np-feature__desc" data-aos="fade-down" data-aos-duration="1000">Ensures the organisation operates in accordance with applicable laws and regulatory guidelines.</p>
                 </div>
 
             </div><!-- /LEFT -->
@@ -2734,28 +2688,28 @@ include_once('elements/header.php');
             <div class="col-lg-4 np-col-right d-flex flex-column justify-content-between">
 
                 <div class="np-feature">
-                    <h5 class="np-feature__title">Tax Benefits &amp; Exemptions</h5>
-                    <p class="np-feature__desc">Registered NGOs and charitable organisations may qualify for tax exemptions and donor benefits under applicable tax provisions.</p>
+                    <h5 class="np-feature__title" data-aos="fade-up" data-aos-duration="800">Tax Benefits &amp; Exemptions</h5>
+                    <p class="np-feature__desc" data-aos="fade-down" data-aos-duration="1000">Registered NGOs and charitable organisations may qualify for tax exemptions and donor benefits under applicable tax provisions.</p>
                 </div>
 
                 <div class="np-feature">
-                    <h5 class="np-feature__title">Strong Foundation for Social Change</h5>
-                    <p class="np-feature__desc">Establishes a reliable and legally compliant framework to drive meaningful impact, expand charitable initiatives, and support community development.</p>
+                    <h5 class="np-feature__title" data-aos="fade-up" data-aos-duration="800">Strong Foundation for Social Change</h5>
+                    <p class="np-feature__desc" data-aos="fade-down" data-aos-duration="1000">Establishes a reliable and legally compliant framework to drive meaningful impact, expand charitable initiatives, and support community development.</p>
                 </div>
 
                 <div class="np-feature">
-                    <h5 class="np-feature__title">Long-Term Social Impact</h5>
-                    <p class="np-feature__desc">Provides a structured platform to create sustainable programs that support education, healthcare, social welfare, and community empowerment.</p>
+                    <h5 class="np-feature__title" data-aos="fade-up" data-aos-duration="800">Long-Term Social Impact</h5>
+                    <p class="np-feature__desc" data-aos="fade-down" data-aos-duration="1000">Provides a structured platform to create sustainable programs that support education, healthcare, social welfare, and community empowerment.</p>
                 </div>
 
                 <div class="np-feature">
-                    <h5 class="np-feature__title">Legal Recognition for Non-profit Activities</h5>
-                    <p class="np-feature__desc">Corporate Social Responsibility (CSR) collaborations become easier with a registered nonprofit entity.</p>
+                    <h5 class="np-feature__title" data-aos="fade-up" data-aos-duration="800">Legal Recognition for Non-profit Activities</h5>
+                    <p class="np-feature__desc" data-aos="fade-down" data-aos-duration="1000">Corporate Social Responsibility (CSR) collaborations become easier with a registered nonprofit entity.</p>
                 </div>
 
                 <div class="np-feature">
-                    <h5 class="np-feature__title">Separate Legal Identity</h5>
-                    <p class="np-feature__desc">Enables the organisation to hold property, open bank accounts, and enter into agreements in its own name.</p>
+                    <h5 class="np-feature__title" data-aos="fade-up" data-aos-duration="800">Separate Legal Identity</h5>
+                    <p class="np-feature__desc" data-aos="fade-down" data-aos-duration="1000">Enables the organisation to hold property, open bank accounts, and enter into agreements in its own name.</p>
                 </div>
 
             </div><!-- /RIGHT -->
@@ -2882,19 +2836,16 @@ include_once('elements/header.php');
     }
 </style>
 
-<section class="si-banner mb-5">
+<section class="si-banner mb-5" id="startup-india-registration">
 
     <div class="container">
         <div class="row justify-content-center align-items-center" style="min-height: 30vh;">
             <div class="col-lg-12 col-xl-10 si-banner__inner">
 
-                <h1 class="si-banner__title">Start-up India Registration</h1>
+                <h1 class="si-banner__title" data-aos="fade-up" data-aos-duration="600">Start-up India Registration</h1>
 
-                <p class="si-banner__desc">
-                    Kickstart your entrepreneurial journey with hassle-free Start-up India
-                    registration. We provide end-to-end support—from documentation to
-                    approval—ensuring your business is recognised and ready to grow with
-                    government benefits and compliance ease.
+                <p class="si-banner__desc" data-aos="fade-up" data-aos-duration="800">
+                    Kickstart your entrepreneurial journey with hassle-free Start-up India registration. We provide end-to-end support—from documentation to approval—ensuring your business is recognised and ready to grow with government benefits and compliance ease.
                 </p>
 
             </div>
@@ -2903,95 +2854,6 @@ include_once('elements/header.php');
 
 </section>
 
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-<script>
-    const tax_swiper = new Swiper('.taxSwiper', {
-        slidesPerView: 1,
-        spaceBetween: 24,
-        loop: true,
-        grabCursor: true,
-        autoplay: {
-            delay: 2500, // time in ms (2.5 sec)
-            disableOnInteraction: false, // keep autoplay after user swipe
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        breakpoints: {
-            576: {
-                slidesPerView: 2
-            },
-            768: {
-                slidesPerView: 3
-            },
-            992: {
-                slidesPerView: 4
-            },
-            1200: {
-                slidesPerView: 5
-            },
-        },
-        navigation: {
-            nextEl: '#taxNext',
-            prevEl: '#taxPrev',
-        },
-    });
-
-    document.getElementById('taxNext').addEventListener('click', () => swiper.slideNext());
-    document.getElementById('taxPrev').addEventListener('click', () => swiper.slidePrev());
-</script>
-<script>
-    function toggleItem(el) {
-        const items = document.querySelectorAll('.benefit-item');
-        items.forEach(item => {
-            if (item !== el) item.classList.remove('active');
-        });
-        el.classList.toggle('active');
-    }
-</script>
-<script>
-    const swiper = new Swiper('.benefitsSwiper', {
-        slidesPerView: 1.2,
-        spaceBetween: 20,
-        centeredSlides: false,
-        grabCursor: true,
-        loop: false,
-        autoplay: {
-            delay: 2500, // time in ms (2.5 sec)
-            disableOnInteraction: false, // keep autoplay after user swipe
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '#nextBtn',
-            prevEl: '#prevBtn',
-            disabledClass: 'swiper-button-disabled',
-        },
-        breakpoints: {
-            576: {
-                slidesPerView: 1.8,
-                spaceBetween: 22
-            },
-            768: {
-                slidesPerView: 2.5,
-                spaceBetween: 24
-            },
-            992: {
-                slidesPerView: 3.3,
-                spaceBetween: 26
-            },
-            1200: {
-                slidesPerView: 4.1,
-                spaceBetween: 28
-            },
-        },
-    });
-</script>
 <?php
 include_once('elements/faqs.php');
 include_once('elements/footer.php');

@@ -4,16 +4,19 @@
       NAVBAR SHELL
   ══════════════════════════════════════════ */
   .eg-nav {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      width: 100%;
+      /* position: sticky; */
       background: #fff;
       border-bottom: 1px solid var(--card-border);
       box-shadow: 0 2px 16px rgba(37,53,111,.07);
       height: var(--nav-h);
       display: flex;
       align-items: center;
+      position: fixed;
+      top: 40px; /* default below top-navbar */
+      left: 0;
+      width: 100%;
+      z-index: 999;
+      transition: all 0.3s ease;
   }
 
   .eg-nav-inner {
@@ -25,6 +28,16 @@
       align-items: center;
       justify-content: space-between;
       height: 100%;
+  }
+
+  /* When scrolled */
+  .eg-nav.sticky {
+      top: 0;
+  }
+
+  /* Hide top navbar */
+  .top-navbar.hide {
+      transform: translateY(-100%);
   }
 
   /* ══════════════════════════════════════════
@@ -172,15 +185,6 @@
   .eg-mega-item:hover {
       background: var(--bg-light);
   }
-
-  /* Vertical divider between columns */
-  /* .eg-mega-item:nth-child {
-      border-right: 1px solid var(--card-border);
-  } */
-  /* Horizontal divider between rows */
-  /* .eg-mega-item:nth-child {
-      border-bottom: 1px solid var(--card-border);
-  } */
 
   .eg-mega-num {
       font-size: 1rem;

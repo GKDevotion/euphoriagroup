@@ -94,38 +94,54 @@ include_once('elements/home-slider.php');
         font-size: 1.2rem;
     }
 </style>
+
 <section class="about-section">
-    <div class="about-title-bg">About</div>
+    <div class="about-title-bg" >About</div>
 
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center" data-aos="fade-up" data-aos-duration="200">
 
-            <h2 class="about-title h1">About Euphoria Group</h2>
+            <h2 class="about-title h1" data-aos="fade-down" data-aos-duration="1000">About Euphoria Group</h2>
 
             <div class="col-lg-5">
                 <div class="image-overlap-container">
-                    <img src="assets/img/img-7.png" class="oval-img img-large" alt="Our Team">
-                    <img src="assets/img/img-6.png" class="oval-img img-small" alt="Business Meeting">
+                    <img src="assets/img/img-7.png" class="oval-img img-large" alt="Our Team" data-aos="fade-left" data-aos-duration="800">
+                    <img src="assets/img/img-6.png" class="oval-img img-small" alt="Business Meeting" data-aos="fade-right" data-aos-duration="800">
                 </div>
             </div>
 
             <div class="col-lg-7">
-                <p class="text-muted mb-4">
+                <p class="text-muted mb-4" data-aos="fade-up" data-aos-duration="600">
                     Euphoria Group is a reputable multi-service consultancy that provides international business setup,
                     global travel and visa services, real estate brokerage, insurance solutions, and stock market
                     opportunities on a single integrated platform.
                 </p>
-                <p class="text-muted mb-4">
+                <p class="text-muted mb-4" data-aos="fade-up" data-aos-duration="600">
                     We offer strategic guidance, transparent solutions, and long-term value through strong market
                     expertise and a client-first approach.
                 </p>
 
                 <ul class="about-list">
-                    <li><i class="fa-solid fa-check"></i> Expert overseas business setup & corporate services</li>
-                    <li><i class="fa-solid fa-check"></i> Trusted real estate brokers in India & Dubai</li>
-                    <li><i class="fa-solid fa-check"></i> Comprehensive global travel & Immigration</li>
-                    <li><i class="fa-solid fa-check"></i> Comprehensive life, health, travel & business insurance</li>
-                    <li><i class="fa-solid fa-check"></i> One-stop solution for wealth, business & lifestyle planning</li>
+                    <li data-aos="fade-up" data-aos-duration="600">
+                        <i class="fa-solid fa-check"></i> 
+                        Expert overseas business setup & corporate services
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="600">
+                        <i class="fa-solid fa-check"></i> 
+                        Trusted real estate brokers in India & Dubai
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="600">
+                        <i class="fa-solid fa-check"></i> 
+                        Comprehensive global travel & Immigration
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="600">
+                        <i class="fa-solid fa-check"></i> 
+                        Comprehensive life, health, travel & business insurance
+                    </li>
+                    <li data-aos="fade-up" data-aos-duration="600">
+                        <i class="fa-solid fa-check"></i> 
+                        One-stop solution for wealth, business & lifestyle planning
+                    </li>
                 </ul>
             </div>
 
@@ -140,6 +156,7 @@ include_once('elements/home-slider.php');
         <div class="row align-items-center">
 
             <h2 class="about-title h1" style="margin-top: -18px;">What We Offer You</h2>
+            
             <style>
                 /* bullets */
                 /* ─── Swiper overrides ────────────────────────────────── */
@@ -194,8 +211,9 @@ include_once('elements/home-slider.php');
                     z-index: 0;
                 }
             </style>
+
             <!-- Draggable Slider -->
-            <div class="swiper servicesSwiper">
+            <div class="swiper servicesSwiper" data-aos="fade-up" data-aos-duration="300">
                 <div class="swiper-wrapper">
 
                     <!-- Card 1 -->
@@ -296,39 +314,20 @@ include_once('elements/home-slider.php');
                     </div>
 
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination" data-aos="fade-down" data-aos-duration="500"></div>
             </div>
 
         </div>
     </div>
 </section>
-<!-- Swiper 11 JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-    const swiper = new Swiper('.servicesSwiper', {
-        slidesPerView: 4,
-        slidesPerGroup: 1,
-        spaceBetween: 20,
-        loop: true,
-        loopedSlides: 6,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        speed: 600,
-    });
-</script>
+
+
 <!-- Start Our Success Section-->
 <section class="our-success-banner ">
     <h2 class="about-title h1">The Euphoria Timeline</h2>
-    <div class="stats-row">
+    <div class="stats-row" data-aos="fade-up" data-aos-duration="200">
 
-        <div class="stat-item">
+        <div class="stat-item" data-aos="fade-up" data-aos-duration="500">
             <span class="stat-number">108+</span>
             <span class="stat-label">
                 <!-- <i class="bi bi-people stat-icon"></i> -->
@@ -337,7 +336,7 @@ include_once('elements/home-slider.php');
             </span>
         </div>
 
-        <div class="stat-item">
+        <div class="stat-item" data-aos="fade-up" data-aos-duration="600">
             <span class="stat-number">25+</span>
             <span class="stat-label">
                 <!-- <i class="bi bi-globe stat-icon"></i> -->
@@ -346,7 +345,7 @@ include_once('elements/home-slider.php');
             </span>
         </div>
 
-        <div class="stat-item">
+        <div class="stat-item" data-aos="fade-up" data-aos-duration="700">
             <span class="stat-number">12+</span>
             <span class="stat-label">
                 <!-- <i class="bi bi-gear stat-icon"></i> -->
@@ -355,7 +354,7 @@ include_once('elements/home-slider.php');
             </span>
         </div>
 
-        <div class="stat-item">
+        <div class="stat-item" data-aos="fade-up" data-aos-duration="800">
             <span class="stat-number">1,000+</span>
             <span class="stat-label">
                 <!-- <i class="bi bi-emoji-smile stat-icon"></i> -->
@@ -372,16 +371,16 @@ include_once('elements/home-slider.php');
     <div class="opportunities-content-card">
         <span class="card-watermark">Unrestricted</span>
         <div class="opportunities-content-card-inner">
-            <div class="row">
+            <div class="row" data-aos="fade-up" data-aos-duration="900">
 
                 <!-- Left: Title + Accordion -->
-                <div class="col-lg-8">
+                <div class="col-lg-8" data-aos="fade-down" data-aos-duration="1000">
                     <h3 class="section-title">Architecting Tomorrow's Opportunities</h3>
 
                     <div class="mt-5">
                         <div class="accordion euphoria-accordion" id="euphoriaAccordion">
 
-                            <div class="accordion-item">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-duration="1100">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#acc1">
                                         Future-Ready Business Architecture
@@ -395,7 +394,7 @@ include_once('elements/home-slider.php');
                                 </div>
                             </div>
 
-                            <div class="accordion-item">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-duration="1100">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc2">
                                         Global Expansion Intelligence
@@ -408,7 +407,7 @@ include_once('elements/home-slider.php');
                                 </div>
                             </div>
 
-                            <div class="accordion-item">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-duration="1100">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc3">
                                         Sustainable Wealth Frameworks
@@ -421,7 +420,7 @@ include_once('elements/home-slider.php');
                                 </div>
                             </div>
 
-                            <div class="accordion-item">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-duration="1100">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc4">
                                         Smart Investment Positioning
@@ -434,7 +433,7 @@ include_once('elements/home-slider.php');
                                 </div>
                             </div>
 
-                            <div class="accordion-item">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-duration="1100">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc5">
                                         Seamless Global Mobility Solutions
@@ -447,7 +446,7 @@ include_once('elements/home-slider.php');
                                 </div>
                             </div>
 
-                            <div class="accordion-item">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-duration="1100">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc6">
                                         Strategic Partnership Approach
@@ -468,14 +467,10 @@ include_once('elements/home-slider.php');
                 <div class="col-lg-4">
                     <div class="right-col">
                       
-                        <img
-                            class="img-office"
-                            src="https://picsum.photos/300/200?2"
-                            alt="Professionals at work" />
+                        <img class="img-office" src="https://picsum.photos/300/200?2" alt="Professionals at work" data-aos="fade-left" data-aos-duration="1200">
+
                         <div class="img-world-card">
-                            <img
-                                src="https://picsum.photos/200/200?1"
-                                alt="World map global network" />
+                            <img src="https://picsum.photos/200/200?1" alt="World map global network" data-aos="fade-right" data-aos-duration="1200">
                         </div>
                     </div>
                 </div>
@@ -490,15 +485,16 @@ include_once('elements/home-slider.php');
         padding: 300px 0 60px;
     }
 </style>
+
 <section class="about-section blog-sec pb-0 mt-5">
     <div class="blog-title-bg">Blog</div>
 
     <div class="container timeline-content text-center">
         <div class="row align-items-center">
 
-            <h2 class="about-title h1 pb-5">Latest Announcement</h2>
+            <h2 class="about-title h1 pb-5" data-aos="fade-up" data-aos-duration="400">Latest Announcement</h2>
 
-            <div class="col-lg-4 col-md-6 px-2 mx-auto">
+            <div class="col-lg-4 col-md-6 px-2 mx-auto" data-aos="fade-up" data-aos-duration="500">
                 <div class="card blog-card" style="transition-delay: 0.1s;">
                     <div class="card-img-wrapper">
                         <img src="assets/img/blog-image-2.png" class="card-img-top" alt="Penguin">
@@ -517,7 +513,7 @@ include_once('elements/home-slider.php');
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 px-2 mx-auto">
+            <div class="col-lg-4 col-md-6 px-2 mx-auto" data-aos="fade-up" data-aos-duration="600">
                 <div class="card blog-card" style="transition-delay: 0.3s;">
                     <div class="card-img-wrapper">
                         <img src="assets/img/blog-image-2.png" class="card-img-top" alt="Crow">
@@ -536,7 +532,7 @@ include_once('elements/home-slider.php');
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 px-2 mx-auto">
+            <div class="col-lg-4 col-md-6 px-2 mx-auto" data-aos="fade-up" data-aos-duration="700">
                 <div class="card blog-card" style="transition-delay: 0.5s;">
                     <div class="card-img-wrapper">
                         <img src="assets/img/blog-image-2.png" class="card-img-top" alt="Cityscape">
@@ -558,7 +554,7 @@ include_once('elements/home-slider.php');
         </div>
     </div>
 
-    <div class="text-center mt-5">
+    <div class="text-center mt-5" data-aos="fade-down" data-aos-duration="800">
         <button class="btn btn-view-all">View All Post <i class="fas fa-arrow-right ms-2"></i></button>
     </div>
     </div>
