@@ -11,165 +11,6 @@ include_once('elements/header.php');
     </p>
   </div>
 </section>
-<<<<<<< HEAD
- 
-<div class="container content-section">
-
-  <!-- Tabs -->
-  <div class="custom-tabs d-none">
-    <a class="tab-btn active" href="#legal">Legal & Compliance Services</a>
-    <a class="tab-btn" href="#">Accounting & Taxation</a>
-    <a class="tab-btn" href="#">Licensing & Regulatory</a>
-    <a class="tab-btn" href="#">Corporate Restructuring</a>
-    <a class="tab-btn" href="#">Advisory & Consultancy</a>
-    <a class="tab-btn" href="#">Additional Services</a>
-    <a class="tab-btn" href="#">FAQ</a>
-  </div>
-
-  <style>
-    /* ── Nav Wrapper ── */
-    .service-nav-wrapper {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      border: 1.5px solid #e2e5f0;
-      border-radius: 50px;
-      padding: 5px;
-      background: #fff;
-      width: fit-content;
-      overflow-x: auto;
-      white-space: nowrap;
-      scrollbar-width: none;
-      margin-bottom: 20px;
-    }
-
-    .service-nav-wrapper::-webkit-scrollbar {
-      display: none;
-    }
-
-    .btn-explore {
-      background-color: #25356F;
-      color: #ffffff;
-      font-family: "Anek Kannada", "Poppins", sans-serif;
-      font-weight: 600;
-      font-size: 20px;
-      padding: 12px 24px;
-      border-radius: 6px;
-      border: none;
-      letter-spacing: 0.3px;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: background-color 0.2s ease;
-    }
-
-    .btn-explore:hover {
-      background-color: #16234a;
-      color: #ffffff;
-    }
-
-    /* ── Active Label Pill ── */
-    .nav-active-pill {
-      display: inline-flex;
-      align-items: center;
-      background: #25356F;
-      color: #fff;
-      font-weight: 700;
-      font-size: 0.88rem;
-      border-radius: 50px;
-      padding: 0.55rem 1.35rem;
-      white-space: nowrap;
-      flex-shrink: 0;
-      user-select: none;
-    }
-
-    /* ── Divider ── */
-    .nav-service {
-      width: 1.5px;
-      min-width: 1.5px;
-      height: 18px;
-      background: #CC2831;
-      flex-shrink: 0;
-      opacity: 40%;
-      margin: 0 2px;
-    }
-
-    /* ── Nav Links ── */
-    .nav-link-item {
-      display: inline-flex;
-      align-items: center;
-      color: #2c2f4a;
-      font-size: 0.84rem;
-      font-weight: 500;
-      padding: 0.45rem 0.9rem;
-      white-space: nowrap;
-      text-decoration: none;
-      border-radius: 50px;
-      flex-shrink: 0;
-      cursor: pointer;
-    }
-
-    .nav-link-item:hover {
-      color: #25356F;
-      background: #f0f2fa;
-    }
-
-    .nav-link-item.active-link {
-      color: #25356F;
-      font-weight: 700;
-    }
-  </style>
-
-  <div class="service-nav-wrapper">
-
-    <span class="nav-active-pill">Legal & Compliance Services</span>
-
-    <div class="nav-service"></div>
-    <a href="#" class="nav-link-item">Accounting & Taxation</a>
-    <div class="nav-service"></div>
-    <a href="#" class="nav-link-item">Licensing & Regulatory</a>
-    <div class="nav-service"></div>
-    <a href="#" class="nav-link-item">Corporate Restructuring</a>
-    <div class="nav-service"></div>
-    <a href="#" class="nav-link-item">Advisory & Consultancy</a>
-    <div class="nav-service"></div>
-    <a href="#" class="nav-link-item">Additional Services</a>
-    <div class="nav-service"></div>
-    <a href="#" class="nav-link-item">FAQ</a>
-
-
-  </div>
-
-
-
-  <!-- Tab Content -->
-  <div id="tab1" class="corporate-content-box active">
-    <div class="row align-items-center">
-      <div class="col-md-4">
-        <img src="assets/img/corporate-market.png" class="illustration">
-      </div>
-      <div class="col-md-8 text-content">
-        <p>
-          Entering the Indian market requires more than just registration—it demands strategic planning, regulatory clarity, and structured execution.
-        </p>
-        <p>
-          Our inbound corporate services cover business setup, compliance, approvals, and legal structuring aligned with Indian laws.
-        </p>
-        <p>
-          Entering the Indian market requires more than just registration—it demands strategic planning, regulatory clarity, and structured execution.
-        </p>
-        <p>
-          Our inbound corporate services cover business setup, compliance, approvals, and legal structuring aligned with Indian laws.
-        </p>
-        <a href="#" class="btn btn-explore">
-          Explore Services
-          <img src="assets/img/icon/explore-icon.png" alt="" width="17px;" height="17px;">
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-=======
 
 <section class="corporate-tab-section india-section">
 
@@ -229,7 +70,6 @@ include_once('elements/header.php');
     </div>
 
 </section>
->>>>>>> ccfe3a3c6444930024c69de05132c7f7918ccb78
 
 <style>
   /* ─── SCROLL ANIMATIONS ─── */
@@ -549,7 +389,6 @@ include_once('elements/header.php');
 </style>
 
 <!-- LEGAL & COMPLIANCE -->
-<<<<<<< HEAD
 <section id="legal" class="about-section legal-section py-5">
 
   <div class="about-title-bg">Reliable Support</div>
@@ -639,103 +478,6 @@ include_once('elements/header.php');
           </div>
 
 
-=======
-<section id="legal-compliance" class="about-section legal-section py-5">
-    
-    <div class="about-title-bg" data-aos="fade-up" data-aos-duration="500">Reliable Support</div>
-    
-    <div class="container">
-      <div class="row align-items-center">
-          
-        <h2 class="about-title h1" data-aos="fade-up" data-aos-duration="800">Legal & Compliance Services</h2>
-        <p class="text-muted mx-auto text-center mb-5" data-aos="fade-up" data-aos-duration="800">We provide end-to-end legal and regulatory compliance solutions to protect and grow your business efficiently.</p>
-
-        <!-- Service Swiper Slider -->
-        <div class="swiper service-swiper reveal">
-            <div class="swiper-wrapper pb-2">
-              <div class="swiper-slide" data-aos="fade-up" data-aos-duration="500">
-                  <div class="service-card">
-                  <div class="icon-wrap">
-                    <img src="assets/img/legal-annual-filling.png">
-                  </div>
-                  <h6>Company Registration</h6>
-                  <p>Pvt Ltd, LLP, OPC and all types of company formation with complete documentation.</p>
-                  </div>
-              </div>
-
-              <div class="swiper-slide" data-aos="fade-down" data-aos-duration="800">
-                  <div class="service-card">
-                  <div class="icon-wrap">
-                    <img src="assets/img/legal-moa-drafting.png">
-                  </div>
-                  <h6>Regulatory Schema</h6>
-                  <p>Comprehensive guidance on applicable regulatory frameworks for your industry.</p>
-                  </div>
-              </div>
-
-              <div class="swiper-slide" data-aos="fade-left" data-aos-duration="1100">
-                  <div class="service-card">
-                  <div class="icon-wrap">
-                    <img src="assets/img/legal-mca.png">
-                  </div>
-                  <h6>Drafting & Vetting</h6>
-                  <p>Professional contract drafting, review and legal documentation services.</p>
-                  </div>
-              </div>
-
-              <div class="swiper-slide" data-aos="fade-right" data-aos-duration="1400">
-                  <div class="service-card">
-                  <div class="icon-wrap">
-                    <img src="assets/img/legal-moa-drafting.png">
-                  </div>
-                  <h6>Shareholder Advisory</h6>
-                  <p>Shareholder agreements, rights management, and governance advisory.</p>
-                  </div>
-              </div>
-              
-              <div class="swiper-slide" data-aos="fade-in" data-aos-duration="1700">
-                  <div class="service-card">
-                  <div class="icon-wrap">
-                    <img src="assets/img/legal-roc-service.png">
-                  </div>
-                  <h6>Director of Corporate Affairs</h6>
-                  <p>ROC filings, board compliance, and statutory secretarial services.</p>
-                  </div>
-              </div>
-
-              <div class="swiper-slide" data-aos="fade-out" data-aos-duration="2000">
-                  <div class="service-card">
-                  <div class="icon-wrap">
-                    <img src="assets/img/legal-shareholder.png">
-                  </div>
-                  <h6>Compliance Audit</h6>
-                  <p>Thorough compliance audits across legal, HR, statutory, and operational domains.</p>
-                  </div>
-              </div>
-
-              <div class="swiper-slide" data-aos="fade-up" data-aos-duration="800">
-                  <div class="service-card">
-                  <div class="icon-wrap">
-                    <img src="assets/img/legal-annual-filling.png">
-                  </div>
-                  <h6>FSSAI Licensing</h6>
-                  <p>Food business operator registration and renewal under FSSAI regulations.</p>
-                  </div>
-              </div>
-
-              <div class="swiper-slide" data-aos="fade-up" data-aos-duration="800">
-                  <div class="service-card">
-                  <div class="icon-wrap">
-                    <img src="assets/img/legal-mca.png">
-                  </div>
-                  <h6>Labour Law Compliance</h6>
-                  <p>PF, ESI, gratuity and all statutory labour law compliance management.</p>
-                  </div>
-              </div>
-              
-            </div>
-            <div class="swiper-pagination"></div>
->>>>>>> ccfe3a3c6444930024c69de05132c7f7918ccb78
         </div>
         <div class="swiper-pagination"></div>
       </div>
@@ -1038,19 +780,11 @@ include_once('elements/header.php');
           <!-- White highlight card -->
           <div class="col-sm-4 reveal delay-3">
             <div class="card-dashed">
-<<<<<<< HEAD
               <div class="card-front text-center">
                 <div class=" mb-3">
                   <img src="assets/img/icon/prosper-1.png" alt="Accounting Service" class="prosper-icon">
                 </div>
                 <h6>Accounting Service</h6>
-=======
-              <div class="icon-circle" data-aos="fade-up" data-aos-duration="800">
-                <span style="position:relative;display:inline-flex;align-items:center;justify-content:center;width:100%;height:100%;">
-                  <i class="bi bi-circle" style="font-size:2rem;position:absolute;opacity:0.4;"></i>
-                  <span style="font-size:0.62rem;font-weight:800;color:#fff;letter-spacing:0.5px;z-index:1;text-align:center;">TAX<br><span style="font-size:1rem;">₹</span></span>
-                </span>
->>>>>>> ccfe3a3c6444930024c69de05132c7f7918ccb78
               </div>
 
               <!-- Hover: title + description (visible on hover) -->
@@ -1113,7 +847,6 @@ include_once('elements/header.php');
         <!-- Payroll Processing -->
         <div class="col-6 col-sm-3 reveal delay-4">
           <div class="card-dashed">
-<<<<<<< HEAD
 
           <div class="card-front text-center">
             <div class="mb-3">
@@ -1128,19 +861,11 @@ include_once('elements/header.php');
             </div>
 
           </div>
-=======
-            <div class="icon-circle">
-              <i class="bi bi-people-fill"></i>
-            </div>
-            <h6>Payroll Processing</h6>
-          </div>
->>>>>>> ccfe3a3c6444930024c69de05132c7f7918ccb78
         </div>
 
         <!-- TDS Filing -->
         <div class="col-6 col-sm-3 reveal delay-5">
           <div class="card-dashed">
-<<<<<<< HEAD
             <div class="card-front text-center">
               <div class="mb-3">
                 <img src="assets/img/icon/prosper-4.png" alt="TDS Filing" class="prosper-icon">
@@ -1153,19 +878,12 @@ include_once('elements/header.php');
               <p>Deducting tax at the source and filing TDS returns as required.</p>
             </div>
 
-=======
-            <div class="icon-circle">
-              <i class="bi bi-file-earmark-text-fill"></i>
-            </div>
-            <h6>TDS Filing</h6>
->>>>>>> ccfe3a3c6444930024c69de05132c7f7918ccb78
           </div>
         </div>
 
         <!-- Audit Coordination -->
         <div class="col-6 col-sm-3 reveal delay-6">
           <div class="card-dashed">
-<<<<<<< HEAD
           <div class="card-front text-center">
             <div class="mb-3">
               <img src="assets/img/icon/prosper-5.png" alt="Audit Coordination" class="prosper-icon">
@@ -1180,19 +898,11 @@ include_once('elements/header.php');
 
 
           </div>
-=======
-            <div class="icon-circle">
-              <i class="bi bi-patch-check-fill"></i>
-            </div>
-            <h6>Audit Coordination</h6>
-          </div>
->>>>>>> ccfe3a3c6444930024c69de05132c7f7918ccb78
         </div>
 
         <!-- Financial Reporting -->
         <div class="col-6 col-sm-3 reveal delay-7">
           <div class="card-dashed">
-<<<<<<< HEAD
               <div class="card-front text-center">
                 <div class="mb-3">
                   <img src="assets/img/icon/prosper-6.png" alt="Financial Reporting" class="prosper-icon">
@@ -1204,12 +914,6 @@ include_once('elements/header.php');
                 <h6>Financial Reporting</h6>
                 <p> Creating profit and loss, balance sheet, and cash flow statements.</p>
               </div>
-=======
-            <div class="icon-circle">
-              <i class="bi bi-bar-chart-line-fill"></i>
-            </div>
-            <h6>Financial Reporting</h6>
->>>>>>> ccfe3a3c6444930024c69de05132c7f7918ccb78
           </div>
         </div>
 
@@ -1221,16 +925,6 @@ include_once('elements/header.php');
 <!-- CORPORATE RESTRUCTURING -->
 <style>
   .step-card {
-<<<<<<< HEAD
-    padding: 28px;
-    margin-bottom: 40px;
-    border-left: 2px solid var(--euphoria-red);
-    /* box-shadow:0 2px 18px rgba(37,53,111,.07); */
-    /* display:flex; */
-    align-items: flex-start;
-    gap: 20px;
-    transition: box-shadow .3s, transform .3s;
-=======
       padding:28px;
       margin-bottom:40px;
       border-left:2px solid var(--euphoria-red);
@@ -1265,7 +959,6 @@ include_once('elements/header.php');
       width:100%; 
       height:240px; 
       object-fit:cover; 
->>>>>>> ccfe3a3c6444930024c69de05132c7f7918ccb78
   }
 
   .step-card:hover {
@@ -1306,14 +999,7 @@ include_once('elements/header.php');
   }
 </style>
 
-<<<<<<< HEAD
 <section id="restructuring" class="about-section restructure-section py-5 mt-5">
-=======
-<section id="corporate-restructuring" class="about-section restructure-section py-5 mt-5">
- 
-    <div class="about-title-bg">Transformation</div>
-    <div class="container">
->>>>>>> ccfe3a3c6444930024c69de05132c7f7918ccb78
 
   <div class="about-title-bg">Transformation</div>
   <div class="container">
@@ -1630,13 +1316,8 @@ include_once('elements/header.php');
   }
 </style>
 
-<<<<<<< HEAD
-<section id="advisory" class="guidance-section advisory-section py-5">
-
-=======
 <section id="advisory-consultancy" class="about-section advisory-section py-5" style="overflow: unset;">
   
->>>>>>> ccfe3a3c6444930024c69de05132c7f7918ccb78
   <div class="">
     <div class="advisory-border container position-relative">
 
@@ -1762,28 +1443,17 @@ include_once('elements/header.php');
   }
 </style>
 
-<<<<<<< HEAD
-<section id="additional" class="additional-section py-5">
-
-=======
 <section id="additional-service" class="additional-section py-5">
   
->>>>>>> ccfe3a3c6444930024c69de05132c7f7918ccb78
   <div class="container position-relative">
 
     <div class="about-title-bg">Extensions</div>
     <div class="container ">
 
       <div class="row align-items-center">
-<<<<<<< HEAD
-
-        <h2 class="about-title h1" style="margin-top: 80px;">Additional Services</h2>
-        <p class="text-muted mx-auto text-center">
-=======
           
         <h2 class="about-title h1" style="margin-top: 80px;" data-aos="fade-up" data-aos-duration="500">Additional Services</h2>
         <p class="text-muted mx-auto text-center" data-aos="fade-up" data-aos-duration="800">
->>>>>>> ccfe3a3c6444930024c69de05132c7f7918ccb78
           In addition to our core compliance and advisory offerings, we provide a range of additional business support services designed to simplify operations and ensure complete regulatory compliance. Our value-added services help startups, SMEs, and established companies efficiently manage essential registrations, certifications, and corporate requirements.
         </p>
 
