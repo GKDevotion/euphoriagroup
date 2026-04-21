@@ -181,7 +181,7 @@ include_once('elements/header.php');
             <div class="modal-body">
                 <!-- Replace src with your actual video URL -->
                 <video controls autoplay style="max-height:480px; border-radius:14px;">
-                    <source src="your-video.mp4" type="video/mp4" />
+                    <source src="https://www.youtube.com/watch?v=V1luf7Bfjj0" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -637,7 +637,6 @@ include_once('elements/header.php');
         padding: 48px 56px;
         border-radius: 50px;
         background: #fff;
-
         background-image:
             linear-gradient(#fff, #fff),
             linear-gradient(to bottom,
@@ -647,7 +646,7 @@ include_once('elements/header.php');
 
         background-origin: border-box;
         background-clip: padding-box, border-box;
-        border: 2px solid transparent;
+        border: 1px solid transparent;
     }
 
     /* ── INTRO ── */
@@ -1085,7 +1084,7 @@ include_once('elements/header.php');
             <h2 class="section-heading">Your Growth Is Our Shared Success</h2>
 
             <!-- Card 1 -->
-            <div class="feature-card growth-card-1">
+            <div class="feature-card growth-card-1" data-aos="fade-up" data-aos-duration="200">
                 <div class="fc-icon">
                     <!-- Graduation cap -->
                     <svg viewBox="0 0 24 24" fill="none" stroke="#25356f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
@@ -1101,7 +1100,7 @@ include_once('elements/header.php');
             </div>
 
             <!-- Card 2 -->
-            <div class="feature-card growth-card-2">
+            <div class="feature-card growth-card-2" data-aos="fade-left" data-aos-duration="400">
                 <div class="fc-icon">
                     <!-- Handshake / mentorship -->
                     <svg viewBox="0 0 24 24" fill="none" stroke="#25356f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
@@ -1117,7 +1116,7 @@ include_once('elements/header.php');
             </div>
 
             <!-- Card 3 -->
-            <div class="feature-card growth-card-3">
+            <div class="feature-card growth-card-3" data-aos="fade-right" data-aos-duration="600">
                 <div class="fc-icon">
                     <!-- Career / person climbing -->
                     <svg viewBox="0 0 24 24" fill="none" stroke="#25356f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
@@ -1134,7 +1133,7 @@ include_once('elements/header.php');
             </div>
 
             <!-- Card 4 -->
-            <div class="feature-card growth-card-4">
+            <div class="feature-card growth-card-4" data-aos="fade-down" data-aos-duration="800">
                 <div class="fc-icon">
                     <!-- Globe -->
                     <svg viewBox="0 0 24 24" fill="none" stroke="#25356f" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">

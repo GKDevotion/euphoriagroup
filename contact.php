@@ -113,8 +113,17 @@ include_once('elements/header.php');
                 <h5>Phone</h5>
                 <p class="subtitle">Reach out to us for immediate assistance.</p>
                 <div class="info">
-                    +91 XXXXX XXXXX<br />
-                    +91 XXXXX XXXXX
+                    <p class="p-0 m-0">
+                        <a href="tel:+91XXXXXXXXXX" class="text-decoration-none text-blue fw-bold">
+                            +91 XXXXX XXXXX
+                        </a>
+                    </p>
+                    <p class="p-0 m-0">
+                        <a href="tel:+91XXXXXXXXXX" class="text-decoration-none text-blue fw-bold">
+                            +91 XXXXX XXXXX
+                        </a>
+                    </p>
+                    
                 </div>
             </div>
         </div>
@@ -128,8 +137,11 @@ include_once('elements/header.php');
                 <h5>Email</h5>
                 <p class="subtitle">We're here to help you with any inquiries.</p>
                 <div class="info">
-                    info@euphoriagroup.com<br />
-                    info@euphoriagroup.com
+                    <p class="p-0 m-0">
+                        <a href="mail:info@euphoriagroup.com" class="text-decoration-none text-blue fw-bold">
+                            info@euphoriagroup.com
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -143,8 +155,10 @@ include_once('elements/header.php');
                 <h5>Office Address</h5>
                 <p class="subtitle">Reach out to us for immediate assistance.</p>
                 <div class="info">
-                    B-907/908, Pragati IT Park, Near AR mall,<br />
-                    Mota Varachha, Surat – 394101
+                    <a href="https://maps.app.goo.gl/V4vLAKLZDhNMJqmV9" class="text-decoration-none text-blue fw-bold">
+                        B-907/908, Pragati IT Park, Near AR mall,<br />
+                        Mota Varachha, Surat - 394101
+                    </a>
                 </div>
             </div>
         </div>
@@ -475,19 +489,6 @@ include_once('elements/header.php');
         display: block;
     }
 </style>
-
-<!-- Map Section -->
-<section class="w-100">
-    <div class="map-wrapper">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19869.42883864564!2d-0.13600!3d51.46500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760545d90f2a4b%3A0x2a8f6c6a5a8f6c6a!2sBrixton%2C%20London%2C%20UK!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </div>
-</section>
-
 
 <?php
 include_once('elements/faqs.php');
