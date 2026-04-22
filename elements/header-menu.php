@@ -12,11 +12,17 @@
       display: flex;
       align-items: center;
       position: fixed;
-      top: 40px; /* default below top-navbar */
+      top: 0; /* default below top-navbar */
       left: 0;
       width: 100%;
       z-index: 999;
       transition: all 0.3s ease;
+  }
+
+  @media (min-width: 768px) {
+      .eg-nav {
+          top: 40px;
+      }
   }
 
   .eg-nav-inner {
