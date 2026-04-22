@@ -1310,7 +1310,7 @@ include_once('elements/header.php');
 
       <!-- TOP-LEFT: Easy Online Booking -->
       <div class="card-wrap">
-        <div class="tcard" data-tilt>
+        <div class="tcard">
           <div class="card-img-box">
             <img src="assets/img/tour-travel/easy-online.png" alt="Online Booking" />
             <div class="card-badge"><svg viewBox="0 0 24 24">
@@ -1331,7 +1331,7 @@ include_once('elements/header.php');
 
       <!-- CENTRE TALL: Pan-India Network -->
       <div class="card-wrap card-center">
-        <div class="tcard" data-tilt>
+        <div class="tcard" >
           <div class="card-img-box">
             <img src="assets/img/tour-travel/pan-india.png" alt="Railway Network" />
             <div class="card-badge"><svg viewBox="0 0 24 24">
@@ -1352,7 +1352,7 @@ include_once('elements/header.php');
 
       <!-- TOP-RIGHT: Flexible Travel Options -->
       <div class="card-wrap">
-        <div class="tcard" data-tilt>
+        <div class="tcard" >
           <div class="card-img-box">
             <img src="assets/img/tour-travel/flaxible-transport.png" alt="Flexible Travel" />
             <div class="card-badge"><svg viewBox="0 0 24 24">
@@ -1373,7 +1373,7 @@ include_once('elements/header.php');
 
       <!-- BOTTOM-LEFT: Tatkal Reservation -->
       <div class="card-wrap">
-        <div class="tcard" data-tilt>
+        <div class="tcard" >
           <div class="card-img-box">
             <img src="assets/img/tour-travel/confirm-ticket.png" alt="Tatkal Reservation" />
             <div class="card-badge"><svg viewBox="0 0 24 24">
@@ -1394,7 +1394,7 @@ include_once('elements/header.php');
 
       <!-- BOTTOM-RIGHT: Complete Travel Assistance -->
       <div class="card-wrap">
-        <div class="tcard" data-tilt>
+        <div class="tcard" >
           <div class="card-img-box">
             <img src="assets/img/tour-travel/complete-travel.png" alt="Travel Assistance" />
             <div class="card-badge"><svg viewBox="0 0 24 24">
