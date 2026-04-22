@@ -1389,25 +1389,26 @@ include_once('elements/header.php');
 
     /* ── Card ── */
     .benefit-card {
-
         padding: 32px 28px 28px;
         height: 100%;
         position: relative;
         overflow: hidden;
         border-left: 1px solid lightgrey;
+        position: relative;
     }
 
     .benefit-card::before {
         content: '';
         position: absolute;
         left: 0;
-        top: 40px;
+        top: 0px;
         bottom: 160px;
-        width: 1.5px;
+        width: 1px;
         background: #ff0000;
-        opacity: 0;
-        transform: scaleY(0.4);
-        transition: opacity 0.28s ease, transform 0.28s ease;
+        transform: scaleY(0);          /* start hidden */
+        transform-origin: top;         /* grow from top */
+        transition: transform 0.8s ease, opacity 0.8s ease;
+        opacity: 1;
     }
 
     .benefit-card:hover {
@@ -1416,8 +1417,9 @@ include_once('elements/header.php');
     }
 
     .benefit-card:hover::before {
-        opacity: 1;
+        /* opacity: 1; */
         transform: scaleY(1);
+        height: 100%;
     }
 
     .setup-icon {
@@ -2635,7 +2637,7 @@ include_once('elements/header.php');
     }
 </style>
 
-<section class="si-banner mb-5" id="startup-india-registration">
+<section class="si-banner" id="startup-india-registration">
 
     <div class="container">
         <div class="row justify-content-center align-items-center" style="min-height: 30vh;">

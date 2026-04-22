@@ -436,7 +436,7 @@ include_once('elements/header.php');
         cursor: pointer;
         color: #25356F;
         background: #f9fafb;
-        transition: flex 0.55s cubic-bezier(.77, 0, .175, 1),
+        transition: flex 0.15s cubic-bezier(.77, 0, .175, 1),
             background 0.3s,
             border-color 0.3s,
             box-shadow 0.3s;

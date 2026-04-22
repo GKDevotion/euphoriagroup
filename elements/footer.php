@@ -5,7 +5,7 @@
                 <div class="row align-items-center mb-5">
                     <div class="col-md-9">
                         <img src="assets/img/logo-512-white.png" alt="Euphoria Group" class="footer-logo">
-                        <p class="tagline">Providing Global Businesses with Comprehensive Strategic Solutions.</p>
+                        <p class="text-white">Providing Global Businesses with Comprehensive Strategic Solutions.</p>
                         <p class="description ps-0">Euphoria Group is a global advisory firm offering company formation, corporate services, visas, real estate, and tourism solutions with expert support and seamless execution.</p>
                     </div>
                     <div class="col-md-3 text-md-end social-icons">

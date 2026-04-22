@@ -490,7 +490,7 @@
 
    .trust-card:hover {
      transform: translateY(-5px);
-     box-shadow: 0 14px 35px rgba(26, 40, 85, 0.13);
+     box-shadow: 0 4px rgba(26, 40, 85, 0.1);
    }
 
    .trust-icon-wrap {
@@ -705,7 +705,7 @@
          <div class="trust-icon-wrap">
            <img src="assets/img/icon/commitment-1.png" alt="Trust Icon" class="trust-icon-img">
          </div>
-         <div class="trust-card-text">Safeguarding client interests at every stage</div>
+         <div class="trust-card-text">Safeguarding client interests at every stage of the journey</div>
        </div>
 
        <!-- Card 3 -->
@@ -721,7 +721,7 @@
          <div class="trust-icon-wrap">
            <img src="assets/img/icon/commitment-3.png" alt="Trust Icon" class="trust-icon-img">
          </div>
-         <div class="trust-card-text">Providing recommendations guided by integrity and responsibility</div>
+         <div class="trust-card-text">Providing recommendations guided by integrity</div>
        </div>
 
        <!-- Card 5 -->
@@ -737,7 +737,7 @@
          <div class="trust-icon-wrap">
            <img src="assets/img/icon/commitment-5.png" alt="Trust Icon" class="trust-icon-img">
          </div>
-         <div class="trust-card-text">Measuring success by lasting trust and sustainable outcomes, not quick wins</div>
+         <div class="trust-card-text">Measuring success by lasting trust and sustainable outcomes</div>
        </div>
 
      </div>

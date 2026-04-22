@@ -678,7 +678,7 @@ h2 {
 .stat-icon-footer {
   margin-right: 5px;
   color: rgba(255, 255, 255, 0.75);
-  width: 18px;
+  width: 16px;
 }
 
 .stat-label {
@@ -1331,7 +1331,7 @@ h2 {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .contact-item i {
   color: #fff;
