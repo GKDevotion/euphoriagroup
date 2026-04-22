@@ -44,7 +44,7 @@ include_once('elements/header.php');
 
         </div>
 
-    </div><!-- /container -->
+    </div> 
 
     <div class="container-xl pt-5">
         <div class="row align-items-center">
@@ -132,38 +132,26 @@ include_once('elements/header.php');
     }
 
     /* ── Icon Circle ── */
-    .icon-wrap-incorporation {
+   
 
-        width: 68px;
-        height: 68px;
-        background: #fbf0f1;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 20px;
-        transition: background 0.28s ease, transform 0.28s ease;
-    }
-
-    .icon-wrap-incorporation svg {
-        width: 48px;
-        height: 48px;
-    }
-
+ 
     /* ── Title ── */
     .service-card-incorporation h5 {
-        font-size: 17.5px;
-        font-weight: 700;
+        font-size: 20px;
+        font-weight: 600;
         color: #25356F;
-        margin-bottom: 0.75rem;
+        font-family: "Anek Kannada", "Poppins", sans-serif;
+        /* margin-bottom: 0.75rem; */
         line-height: 1.35;
     }
 
     /* ── Description ── */
     .service-card-incorporation p {
-        font-size: 12px;
-        color: #5a5e78;
-        line-height: 1.7;
+        font-size: 14px;
+        font-family: "Anek Kannada", "Poppins", sans-serif;
+        color: #666666;
+        line-height: 1.4;
+        font-weight: 400;
         margin: 0;
     }
 
@@ -253,15 +241,8 @@ include_once('elements/header.php');
             <!-- 1. Business Structure Advisory -->
             <div class="col" data-aos="fade-left" data-aos-duration="1200">
                 <div class="service-card-incorporation ">
-                    <div class="icon-wrap-incorporation ">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="24" cy="10" r="5" stroke="#c0392b" stroke-width="2" />
-                            <circle cx="10" cy="36" r="5" stroke="#c0392b" stroke-width="2" />
-                            <circle cx="38" cy="36" r="5" stroke="#c0392b" stroke-width="2" />
-                            <line x1="24" y1="15" x2="24" y2="24" stroke="#c0392b" stroke-width="2" />
-                            <line x1="24" y1="24" x2="10" y2="31" stroke="#c0392b" stroke-width="2" />
-                            <line x1="24" y1="24" x2="38" y2="31" stroke="#c0392b" stroke-width="2" />
-                        </svg>
+                    <div class="mb-3">
+                        <img src="assets/img/icon/incorporation-1.png" alt="Business Structure Advisory" class="incorporation-icon">
                     </div>
                     <h5>Business Structure Advisory</h5>
                     <p>Expert guidance to choose the right business structure based on your goals and tax planning.</p>
@@ -271,14 +252,8 @@ include_once('elements/header.php');
             <!-- 2. Company Name Reservation -->
             <div class="col" data-aos="fade-left" data-aos-duration="900">
                 <div class="service-card-incorporation">
-                    <div class="icon-wrap-incorporation">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="10" y="14" width="28" height="20" rx="4" stroke="#c0392b" stroke-width="2" />
-                            <path d="M16 22h6M16 27h10" stroke="#c0392b" stroke-width="2" stroke-linecap="round" />
-                            <path d="M30 18v-4a2 2 0 0 0-2-2H20a2 2 0 0 0-2 2v4" stroke="#c0392b" stroke-width="2" />
-                            <circle cx="34" cy="34" r="7" fill="#fdf0f0" stroke="#c0392b" stroke-width="2" />
-                            <path d="M31 34l2 2 4-4" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
+                    <div class="mb-3">
+                        <img src="assets/img/icon/incorporation-2.png" alt="Company Name Reservation" class="incorporation-icon">
                     </div>
                     <h5>Company Name Reservation</h5>
                     <p>Support in selecting and reserving a unique company name with MCA as per Indian naming guidelines.</p>
@@ -288,13 +263,8 @@ include_once('elements/header.php');
             <!-- 3. Incorporation Documentation -->
             <div class="col" data-aos="flip-left" data-aos-duration="1000">
                 <div class="service-card-incorporation">
-                    <div class="icon-wrap-incorporation">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="12" y="8" width="24" height="32" rx="3" stroke="#c0392b" stroke-width="2" />
-                            <path d="M18 16h12M18 21h12M18 26h8" stroke="#c0392b" stroke-width="2" stroke-linecap="round" />
-                            <path d="M30 30l3 3-3 3" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M28 34h5" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round" />
-                        </svg>
+                    <div class="mb-3">
+                        <img src="assets/img/icon/incorporation-3.png" alt="Incorporation Documentation" class="incorporation-icon">
                     </div>
                     <h5>Incorporation Documentation</h5>
                     <p>Preparation of essential incorporation documents, including MOA and AOA for company registration.</p>
@@ -304,13 +274,8 @@ include_once('elements/header.php');
             <!-- 4. Government Registration Process -->
             <div class="col" data-aos="fade-right" data-aos-duration="900">
                 <div class="service-card-incorporation">
-                    <div class="icon-wrap-incorporation">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8 38h32M12 38V22M36 38V22" stroke="#c0392b" stroke-width="2" stroke-linecap="round" />
-                            <path d="M18 38V30h12v8" stroke="#c0392b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M8 22l16-12 16 12" stroke="#c0392b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M28 16l3 3-6 6" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
+                    <div class="mb-3">
+                        <img src="assets/img/icon/incorporation-4.png" alt="Government Registration Process" class="incorporation-icon">
                     </div>
                     <h5>Government Registration Process</h5>
                     <p>Complete handling of company registration with MCA to legally establish your business.</p>
@@ -320,13 +285,8 @@ include_once('elements/header.php');
             <!-- 5. Digital Signature and DIN -->
             <div class="col" data-aos="fade-right" data-aos-duration="1200">
                 <div class="service-card-incorporation">
-                    <div class="icon-wrap-incorporation">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="10" y="10" width="20" height="28" rx="3" stroke="#c0392b" stroke-width="2" />
-                            <path d="M14 18h12M14 23h8" stroke="#c0392b" stroke-width="2" stroke-linecap="round" />
-                            <path d="M26 32c0 0 4-2 8-1" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round" />
-                            <path d="M28 28l6 2-2 6" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
+                    <div class="mb-3">
+                        <img src="assets/img/icon/incorporation-5.png" alt="Digital Signature" class="incorporation-icon">
                     </div>
                     <h5>Digital Signature and DIN Registration Assistance</h5>
                     <p>Assistance in obtaining DSC and DIN required for directors during company incorporation.</p>
@@ -336,13 +296,8 @@ include_once('elements/header.php');
             <!-- 6. PAN & TAN Registration -->
             <div class="col" data-aos="fade-left" data-aos-duration="1200">
                 <div class="service-card-incorporation">
-                    <div class="icon-wrap-incorporation">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="8" y="14" width="32" height="22" rx="4" stroke="#c0392b" stroke-width="2" />
-                            <circle cx="18" cy="22" r="4" stroke="#c0392b" stroke-width="2" />
-                            <path d="M26 20h8M26 25h6" stroke="#c0392b" stroke-width="2" stroke-linecap="round" />
-                            <path d="M12 30h6" stroke="#c0392b" stroke-width="2" stroke-linecap="round" />
-                        </svg>
+                    <div class="mb-3">
+                        <img src="assets/img/icon/incorporation-6.png" alt="Ideal for Two or More Partners" class="incorporation-icon">
                     </div>
                     <h5>PAN &amp; TAN Registration</h5>
                     <p>Assistance in obtaining PAN and TAN for smooth financial and tax operations.</p>
@@ -352,11 +307,8 @@ include_once('elements/header.php');
             <!-- 7. Regulatory Compliance Setup -->
             <div class="col" data-aos="fade-left" data-aos-duration="900">
                 <div class="service-card-incorporation">
-                    <div class="icon-wrap-incorporation">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M24 6L10 12v10c0 9 6 17 14 20 8-3 14-11 14-20V12L24 6z" stroke="#c0392b" stroke-width="2" stroke-linejoin="round" />
-                            <path d="M17 24l4 4 10-10" stroke="#c0392b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
+                    <div class="mb-3">
+                        <img src="assets/img/icon/incorporation-7.png" alt="Regulatory Compliance Setup" class="incorporation-icon">
                     </div>
                     <h5>Regulatory Compliance Setup</h5>
                     <p>Ensuring full compliance with legal and regulatory requirements under the Companies Act, 2013.</p>
@@ -366,12 +318,8 @@ include_once('elements/header.php');
             <!-- 8. Startup & Entrepreneur Support -->
             <div class="col" data-aos="flip-right" data-aos-duration="1000">
                 <div class="service-card-incorporation">
-                    <div class="icon-wrap-incorporation">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M24 8C24 8 14 14 14 26c0 5.5 4.5 10 10 10s10-4.5 10-10c0-12-10-18-10-18z" stroke="#c0392b" stroke-width="2" stroke-linejoin="round" />
-                            <path d="M24 36v4M20 40h8" stroke="#c0392b" stroke-width="2" stroke-linecap="round" />
-                            <circle cx="24" cy="25" r="3" stroke="#c0392b" stroke-width="2" />
-                        </svg>
+                    <div class="mb-3">
+                        <img src="assets/img/icon/incorporation-8.png" alt="Startup & Entrepreneur Support" class="incorporation-icon">
                     </div>
                     <h5>Startup &amp; Entrepreneur Support</h5>
                     <p>Tailored solutions for startups and businesses to build a strong legal foundation.</p>
@@ -381,12 +329,8 @@ include_once('elements/header.php');
             <!-- 9. Business Legitimacy & Credibility -->
             <div class="col" data-aos="fade-right" data-aos-duration="900">
                 <div class="service-card-incorporation">
-                    <div class="icon-wrap-incorporation">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="10" y="10" width="28" height="28" rx="4" stroke="#c0392b" stroke-width="2" />
-                            <circle cx="24" cy="20" r="5" stroke="#c0392b" stroke-width="2" />
-                            <path d="M14 36c0-5.5 4.5-10 10-10s10 4.5 10 10" stroke="#c0392b" stroke-width="2" stroke-linecap="round" />
-                        </svg>
+                    <div class="mb-3">
+                        <img src="assets/img/icon/incorporation-9.png" alt="Business Legitimacy & Credibility " class="incorporation-icon">
                     </div>
                     <h5>Business Legitimacy &amp; Credibility</h5>
                     <p>Company registration enhances credibility, investor trust, and long-term business stability.</p>
@@ -396,13 +340,8 @@ include_once('elements/header.php');
             <!-- 10. Seamless End-to-End Incorporation -->
             <div class="col" data-aos="fade-right" data-aos-duration="1200">
                 <div class="service-card-incorporation">
-                    <div class="icon-wrap-incorporation">
-                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="24" cy="24" r="14" stroke="#c0392b" stroke-width="2" />
-                            <path d="M24 10v4M24 34v4M10 24h4M34 24h4" stroke="#c0392b" stroke-width="2" stroke-linecap="round" />
-                            <path d="M17 17l3 3M28 28l3 3M17 31l3-3M28 20l3-3" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round" />
-                            <circle cx="24" cy="24" r="4" stroke="#c0392b" stroke-width="2" />
-                        </svg>
+                    <div class="mb-3">
+                        <img src="assets/img/icon/incorporation-10.png" alt="Seamless End-to-End Incorporation" class="incorporation-icon">
                     </div>
                     <h5>Seamless End-to-End Incorporation</h5>
                     <p>A streamlined incorporation process ensuring smooth and legally compliant business setup.</p>
@@ -453,8 +392,9 @@ include_once('elements/header.php');
     }
 
     .section-text {
-        font-size: 0.95rem;
-        line-height: 1.8;
+        font-size: 14px;
+        line-height: 1.5;
+        font-family: "Anek Kannada", "Poppins", sans-serif;
         margin-bottom: 1rem;
     }
 
@@ -544,7 +484,6 @@ include_once('elements/header.php');
     }
 
     /* --- Add/Update these rules in your <style> block --- */
-
     @media (max-width: 991px) {
         .register {
             padding: 60px 0;
@@ -866,7 +805,7 @@ include_once('elements/header.php');
     }
 
     .card-desc-alliance {
-        font-size: 11px;
+        font-size: 13px;
         color: #fff;
         font-family: "Anek Kannada", "Poppins", sans-serif;
         line-height: 1.4;

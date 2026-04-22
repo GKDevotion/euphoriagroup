@@ -40,6 +40,7 @@ include_once ('elements/header.php');
 
   .visa-content p {
       color: #666;
+      font-family: "Anek Kannada", "Poppins";
       line-height: 1.8;
       font-size: 17px;
   }
@@ -71,25 +72,13 @@ include_once ('elements/header.php');
             <div class="col-lg-7">
                 <div class="visa-content px-5">
                     <p>
-                        The Global Visa Assistance services offered by the Euphoria Group are intended to provide thorough,
-                        end-to-end support throughout the entire visa application process. We take the time to learn about
-                        your travel goals, destination, and needs from the very first individual consultation.
+                       The Global Visa Assistance services offered by the Euphoria Group are intended to provide thorough, end-to-end support throughout the entire visa application process. We take the time to learn about your travel goals, destination, and needs from the very first individual consultation. Our staff ensures that every stage is managed with clarity, precision, and total transparency by helping with precise documentation preparation, meticulous application filing, and timely submission.
                     </p>
 
                     <p>
-                        Our staff ensures that every stage is managed with clarity, precision, and total transparency by
-                        helping with precise documentation preparation, meticulous application filing, and timely submission.
+                       The Euphoria Group helps people and businesses confidently navigate complicated visa procedures by having a strong global perspective and extensive knowledge of international visa regulations. We help minimise delays and uncertainties while transforming international travel and mobility plans into a seamless, stress-free experience by concentrating on compliance, accuracy, and strategic guidance.
                     </p>
-
-                    <p>
-                        The Euphoria Group helps people and businesses confidently navigate complicated visa procedures by
-                        having a strong global perspective and extensive knowledge of international visa regulations.
-                    </p>
-
-                    <p>
-                        We help minimise delays and uncertainties while transforming international travel and mobility plans
-                        into a seamless, stress-free experience by concentrating on compliance, accuracy, and strategic guidance.
-                    </p>
+ 
                 </div>
             </div>
 
@@ -118,7 +107,8 @@ include_once ('elements/header.php');
   .visa-box::before{
       content:"Let's Connect";
       position:absolute;
-      top:-30px;
+      font-family: "Anek Kannada", "Poppins";
+      top:0px;
       left:50%;
       transform:translateX(-50%);
       font-size:150px;
@@ -141,6 +131,7 @@ include_once ('elements/header.php');
   .form-select{
       height:50px;
       border-radius:8px;
+      font-family: "Anek Kannada", "Poppins";
       border:1px solid #cfd6e4;
       font-size:14px;
   }
@@ -192,6 +183,16 @@ include_once ('elements/header.php');
       opacity:1;
       transform:translateY(0);
   }
+  .about-visa-title {
+    color: var(--euphoria-blue);
+    font-weight: 600;
+    margin-bottom: 50px;
+    font-size: 2.5rem !important;
+    margin-top: 15px;
+    position: relative;
+    z-index: 1; 
+    width: 100%;
+}
 
   /* RESPONSIVE */
  /* --- Visa Form Mobile Styles --- */
@@ -227,6 +228,7 @@ include_once ('elements/header.php');
         .about-title.h1 {
             font-size: 1.1rem; /* Smaller heading for mobile */
             margin-bottom: 30px;
+            font-family: "Anek Kannada", "Poppins";
         }
 
         /* Stack phone input and flag vertically or adjust gaps */
@@ -273,7 +275,7 @@ include_once ('elements/header.php');
 
       <div class="visa-box fade-up">
 
-          <h2 class="text-center about-title h1">
+          <h2 class="text-center about-visa-title">
               Discuss Your Visa Needs With Us
           </h2>
 

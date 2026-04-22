@@ -29,8 +29,8 @@
      left: 0;
      width: 70px;
      height: 70px;
-     border-top: 3px solid #c0392b;
-     border-left: 3px solid #c0392b;
+     border-top: 4px solid #CC2831;
+     border-left: 4px solid #CC2831;
    }
 
    .bracket-card::after {
@@ -40,15 +40,17 @@
      right: 0;
      width: 56px;
      height: 56px;
-     border-bottom: 3px solid #c0392b;
-     border-right: 3px solid #c0392b;
+     border-bottom: 4px solid #CC2831;
+     border-right: 4px solid #CC2831;
    }
 
    /* ── Typography ── */
    .about-text {
-     font-size: 16px;
+     font-size: 18px;
+     font-family: "Anek Kannada", "Poppins", sans-serif;
      line-height: 1.5;
-     text-align: justify;
+     font-weight: 400;
+     text-align: center;
      margin-bottom: 0;
    }
 
@@ -795,9 +797,10 @@
    }
 
    .intro-text {
-     font-size: 1rem;
-     font-weight: 600;
-     color: #111827;
+     font-size: 18px;
+     font-weight: 400;
+     color: #666666;
+     font-family: "Anek Kannada", "Poppins", sans-serif;
      line-height: 1.7;
      margin-bottom: 28px;
    }
@@ -812,10 +815,11 @@
    .advantage-list li {
      display: flex;
      align-items: flex-start;
+     font-family: "Anek Kannada", "Poppins", sans-serif;
      gap: 14px;
      padding: 10px 0;
      color: #374151;
-     font-size: 0.96rem;
+     font-size: 18px;
      line-height: 1.55;
    }
 
@@ -823,24 +827,12 @@
    /* custom arrow icon */
    .bullet-icon {
      flex-shrink: 0;
-     width: 28px;
-     height: 28px;
-     background: #25356f;
+     width: 27px;
+     height: 21px;
      border-radius: 50%;
      display: flex;
      align-items: center;
-     justify-content: center;
-     margin-top: 1px;
-   }
-
-   .bullet-icon svg {
-     width: 14px;
-     height: 14px;
-     fill: none;
-     stroke: #fff;
-     stroke-width: 2.5;
-     stroke-linecap: round;
-     stroke-linejoin: round;
+     justify-content: center; 
    }
 
    /* tagline */
@@ -1018,47 +1010,37 @@
          <p class="intro-text" data-aos="fade-up" data-aos-duration="1100">
            Euphoria Group brings together wealth advisory, business services, insurance
            solutions, and global mobility support under one integrated platform—ensuring
-           seamless coordination and consistent outcomes. <span style="font-weight:700;">What sets us apart</span>
+           seamless coordination and consistent outcomes. What sets us apart 
          </p>
 
          <ul class="advantage-list">
            <li data-aos="fade-up" data-aos-duration="1200">
              <span class="bullet-icon">
-               <svg viewBox="0 0 24 24">
-                 <polyline points="5 12 10 17 20 7" />
-               </svg>
+               <img src="assets/img/icon/Group.png" alt="arrow-icon">
              </span>
              <span>Comprehensive wealth, business, and mobility solutions under one group</span>
            </li>
            <li data-aos="fade-up" data-aos-duration="1200">
              <span class="bullet-icon">
-               <svg viewBox="0 0 24 24">
-                 <polyline points="5 12 10 17 20 7" />
-               </svg>
+               <img src="assets/img/icon/Group.png" alt="arrow-icon">
              </span>
              <span>Strong operational presence in India and international markets.</span>
            </li>
            <li data-aos="fade-up" data-aos-duration="1200">
              <span class="bullet-icon">
-               <svg viewBox="0 0 24 24">
-                 <polyline points="5 12 10 17 20 7" />
-               </svg>
+               <img src="assets/img/icon/Group.png" alt="arrow-icon">
              </span>
              <span>Global reach supported by deep local market expertise</span>
            </li>
            <li data-aos="fade-up" data-aos-duration="1200">
              <span class="bullet-icon">
-               <svg viewBox="0 0 24 24">
-                 <polyline points="5 12 10 17 20 7" />
-               </svg>
+               <img src="assets/img/icon/Group.png" alt="arrow-icon">
              </span>
              <span>Ethical practices backed by professional and compliant guidance</span>
            </li>
            <li data-aos="fade-up" data-aos-duration="1200">
              <span class="bullet-icon">
-               <svg viewBox="0 0 24 24">
-                 <polyline points="5 12 10 17 20 7" />
-               </svg>
+               <img src="assets/img/icon/Group.png" alt="arrow-icon">
              </span>
              <span>Customised solutions for individuals, families, and businesses <br>We don't offer shortcuts—we offer
                clarity, structure, and confidence.</span>
@@ -1241,9 +1223,12 @@
    }
 
    .item-body {
-     font-size: 14px;
-     line-height: 1.7;
-     margin: 0;
+      font-size: 17px;
+      font-family: "Anek Kannada", "Poppins", sans-serif;
+      line-height: 30px;
+      margin: 0;
+      letter-spacing: 0%;
+      font-weight: 400;
    }
 
    @keyframes fadeInUp {
@@ -1462,7 +1447,7 @@
              <p class="item-body">
                Wealth, moving around the world, and investment opportunities are never just about money. They stand for
                safety, freedom, duty, and the past.
-               <br /><br />
+               <br />
                That's why we look at every engagement from different angles, weighing opportunity against safety and
                ambition against stability.
              </p>
@@ -2191,6 +2176,7 @@
      display: flex;
      align-items: center;
      gap: 16px;
+     font-family: "Anek Kannada", "Poppins", sans-serif;
      padding: 22px 28px;
      background: #ffffff;
      border: 1.5px solid #d6dce8;
@@ -2199,18 +2185,22 @@
      transition: all 0.25s ease;
      text-decoration: none;
      color: #000;
-     font-size: 1rem;
-     font-weight: 600;
-     ;
+     font-size: 26px;
+     font-weight: 400;
      margin-bottom: 20px;
    }
 
    .card-option:hover {
-     border-color: #fff;
-     background: #1a3a6b;
-     color: #fff;
-     box-shadow: 0 4px 16px rgba(26, 58, 107, 0.1);
+    border-color: #fff;
+    background: #1a3a6b;
+    color: #fff;
+    font-weight: 400;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
+    box-shadow: 0 4px 16px rgba(26, 58, 107, 0.1);
    }
+   .card-option:hover .focus-area-icon{
+      filter: brightness(0) invert(1);
+    }
 
    .card-option.active .card-icon {
      filter: brightness(0) invert(1);
@@ -2226,18 +2216,10 @@
      color: #1a3a6b;
      font-style: italic;
      font-size: 1.05rem;
+
      margin-top: 20px;
    }
-
-   /* SVG icons inline */
-   .icon-svg {
-     width: 40px;
-     height: 40px;
-     flex-shrink: 0;
-     stroke: currentColor;
-     fill: none;
-     stroke-width: 1.5;
-   }
+ 
 
    /* Mobile devices (up to 576px) */
   @media (max-width: 576px) {
@@ -2289,7 +2271,7 @@
      <h2 class="section-heading-focus" data-aos="fade-up" data-aos-duration="600">Who We Serve</h2>
 
      <!-- Top tagline -->
-     <div class="text-center tagline-focus" data-aos="fade-up" data-aos-duration="800">
+     <div class="text-center tagline-focus" data-aos="fade-up" data-aos-duration="800" style="font-size: 23px; font-family: 'Anek Kannada', 'Poppins', sans-serif;">
        <em>Serving Aspirations Across Borders and Life Stages.</em>
      </div>
 
@@ -2298,24 +2280,14 @@
        <!-- Row 1 -->
        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="800">
          <a href="#" class="card-option active">
-           <svg class="icon-svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-             <circle cx="24" cy="16" r="7" stroke-linecap="round" stroke-linejoin="round" />
-             <path d="M8 40c0-8.837 7.163-16 16-16s16 7.163 16 16" stroke-linecap="round" stroke-linejoin="round" />
-             <path d="M30 10c2-1 4.5-1 6 1s1.5 5 0 7" stroke-linecap="round" />
-             <path d="M18 10c-2-1-4.5-1-6 1s-1.5 5 0 7" stroke-linecap="round" />
-           </svg>
+           <img src="assets/img/icon/focus-area-icon-1.png" alt="Individual investors and families" class="focus-area-icon">
            Individual investors and families
          </a>
        </div>
+
        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="800">
          <a href="#" class="card-option">
-           <svg class="icon-svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-             <circle cx="24" cy="24" r="14" stroke-linecap="round" stroke-linejoin="round" />
-             <ellipse cx="24" cy="24" rx="6" ry="14" stroke-linecap="round" stroke-linejoin="round" />
-             <line x1="10" y1="24" x2="38" y2="24" stroke-linecap="round" />
-             <line x1="11" y1="17" x2="37" y2="17" stroke-linecap="round" />
-             <line x1="11" y1="31" x2="37" y2="31" stroke-linecap="round" />
-           </svg>
+           <img src="assets/img/icon/focus-area-icon-2.png" alt="High-Net-Worth Individuals" class="focus-area-icon">
            NRIs and High-Net-Worth Individuals (HNIs)
          </a>
        </div>
@@ -2323,21 +2295,14 @@
        <!-- Row 2 -->
        <div class="col-12 col-md-6" data-aos="fade-out" data-aos-duration="1000">
          <a href="#" class="card-option">
-           <svg class="icon-svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-             <path d="M24 8 L28 18 L38 20 L30 28 L32 38 L24 34 L16 38 L18 28 L10 20 L20 18 Z" stroke-linecap="round"
-               stroke-linejoin="round" />
-             <path d="M34 14 C36 8 42 6 42 6 C42 6 40 12 34 14Z" stroke-linecap="round" stroke-linejoin="round" />
-           </svg>
+           <img src="assets/img/icon/focus-area-icon-3.png" alt="Entrepreneurs and startups" class="focus-area-icon">
            Entrepreneurs and startups
          </a>
        </div>
+
        <div class="col-12 col-md-6" data-aos="fade-out" data-aos-duration="1000">
          <a href="#" class="card-option">
-           <svg class="icon-svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-             <rect x="10" y="18" width="28" height="22" rx="2" stroke-linecap="round" stroke-linejoin="round" />
-             <path d="M16 18V14a8 8 0 0116 0v4" stroke-linecap="round" stroke-linejoin="round" />
-             <rect x="18" y="26" width="12" height="8" rx="1" stroke-linecap="round" stroke-linejoin="round" />
-           </svg>
+           <img src="assets/img/icon/focus-area-icon-4.png" alt="SMEs and corporate organisations" class="focus-area-icon">
            SMEs and corporate organisations
          </a>
        </div>
@@ -2345,33 +2310,21 @@
        <!-- Row 3 -->
        <div class="col-12 col-md-6" data-aos="fade-down" data-aos-duration="800">
          <a href="#" class="card-option">
-           <svg class="icon-svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-             <circle cx="24" cy="24" r="14" stroke-linecap="round" stroke-linejoin="round" />
-             <path d="M24 10 C18 16 18 32 24 38" stroke-linecap="round" stroke-linejoin="round" />
-             <path d="M24 10 C30 16 30 32 24 38" stroke-linecap="round" stroke-linejoin="round" />
-             <line x1="10" y1="24" x2="38" y2="24" stroke-linecap="round" />
-             <circle cx="36" cy="14" r="5" fill="currentColor" stroke="none" opacity="0.15" />
-             <path d="M34 14 L36 12 L38 14 L36 16 Z" fill="currentColor" />
-           </svg>
+           <img src="assets/img/icon/focus-area-icon-5.png" alt="Global travellers and working professionals" class="focus-area-icon">
            Global travellers and working professionals
          </a>
        </div>
+
        <div class="col-12 col-md-6" data-aos="fade-down" data-aos-duration="800">
          <a href="#" class="card-option">
-           <svg class="icon-svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-             <circle cx="24" cy="24" r="14" stroke-linecap="round" stroke-linejoin="round" />
-             <path d="M17 18 C19 14 28 13 32 17" stroke-linecap="round" />
-             <path d="M16 28 C17 34 31 34 32 28" stroke-linecap="round" />
-             <path d="M20 18 L18 30" stroke-linecap="round" />
-             <path d="M28 18 L30 30" stroke-linecap="round" />
-           </svg>
+           <img src="assets/img/icon/focus-area-icon-6.png" alt="Clients Seeking Global Advisory Solutions" class="focus-area-icon">
            Clients Seeking Global Advisory Solutions
          </a>
        </div>
      </div>
 
      <!-- Bottom tagline -->
-     <div class="text-center bottom-tagline mt-2" data-aos="fade-up" data-aos-duration="800">
+     <div class="text-center bottom-tagline mt-2" data-aos="fade-up" data-aos-duration="800" style="font-size: 23px; font-family: 'Anek Kannada', 'Poppins', sans-serif;">
        <em>No matter where you are today, we help you move forward with purpose and protection.</em>
      </div>
 
@@ -2445,8 +2398,9 @@
 
    /* Quote text */
    .testimonial-text {
-     font-size: 14.5px;
-     color: #555e6d;
+     font-size: 18px;
+     color: #666666;
+     font-family: "Anek Kannada", "Poppins", sans-serif;
      line-height: 1.75;
      flex: 1;
      margin-bottom: 24px;
@@ -2656,7 +2610,7 @@
            <div class="swiper-slide">
              <div class="testimonial-card">
                <div>
-                 <span class="quote-icon">"</span>
+                 <span class="quote-icon"><img src="assets/img/icon/quote-icon.png" alt=""></span>
                  <p class="testimonial-text">We appreciated the structured approach and ethical guidance provided by
                    Euphoria Group. They helped us identify the right property aligned with our long-term goals.</p>
                </div>
@@ -2674,7 +2628,7 @@
            <div class="swiper-slide">
              <div class="testimonial-card">
                <div>
-                 <span class="quote-icon">"</span>
+                 <span class="quote-icon"><img src="assets/img/icon/quote-icon.png" alt=""></span>
                  <p class="testimonial-text">Euphoria Group made the entire process seamless and stress-free. Their team
                    was responsive, knowledgeable, and truly had our best interests at heart throughout.</p>
                </div>
@@ -2692,7 +2646,7 @@
            <div class="swiper-slide">
              <div class="testimonial-card">
                <div>
-                 <span class="quote-icon">"</span>
+                 <span class="quote-icon"><img src="assets/img/icon/quote-icon.png" alt=""></span>
                  <p class="testimonial-text">From site visits to final paperwork, every step was handled professionally.
                    I wouldn't trust anyone else for real estate guidance. Truly exceptional service.</p>
                </div>
@@ -2710,7 +2664,7 @@
            <div class="swiper-slide">
              <div class="testimonial-card">
                <div>
-                 <span class="quote-icon">"</span>
+                 <span class="quote-icon"><img src="assets/img/icon/quote-icon.png" alt=""></span>
                  <p class="testimonial-text">Their market knowledge is unparalleled. They found us the perfect home
                    within our budget and timeline. Highly recommend Euphoria Group to anyone searching for property.</p>
                </div>
@@ -2728,7 +2682,7 @@
            <div class="swiper-slide">
              <div class="testimonial-card">
                <div>
-                 <span class="quote-icon">"</span>
+                 <span class="quote-icon"><img src="assets/img/icon/quote-icon.png" alt=""></span>
                  <p class="testimonial-text">We were first-time buyers and Euphoria Group guided us with patience and
                    clarity. Their transparent advice gave us confidence throughout the entire buying journey.</p>
                </div>

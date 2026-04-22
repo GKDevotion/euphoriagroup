@@ -109,25 +109,24 @@ include_once('elements/header.php');
     <a href="#faqs" class="tab-btn" data-tab="tab2">FAQ</a>
   </div>
 
+  
+
   <!-- Tab Content -->
   <div id="tab1" class="corporate-content-box active">
     <div class="row align-items-center">
       <div class="col-md-5">
         <img src="assets/img/tour-travel/airplan-window.png" class="illustration">
       </div>
-      <div class="col-md-7 text-content">
-        <p>
-          Entering the Indian market requires more than just registration—it demands strategic planning, regulatory clarity, and structured execution.
+      <div class="col-md-7 text-content ">
+        <p style="font-size: 18px; font-family: 'Anek Kannada', 'Poppins', sans-serif;" >
+          Our inbound tour and travel services in India are designed to offer international travellers a seamless, comfortable, and memorable experience. We specialise in customised travel packages, guided tours, hotel bookings, transportation arrangements, and comprehensive travel assistance for individuals, families, and corporate groups visiting India.
         </p>
-        <p>
-          Our inbound corporate services cover business setup, compliance, approvals, and legal structuring aligned with Indian laws.
+        <p style="font-size: 18px; font-family: 'Anek Kannada', 'Poppins', sans-serif;">
+          With in-depth local expertise and a strong network of hospitality partners, we curate personalised itineraries covering cultural heritage tours, business travel, spiritual journeys, luxury vacations, and adventure tourism. From airport pickup to accommodation, sightseeing, and on-ground coordination, we ensure hassle-free travel planning and professional service.
         </p>
-        <p>
-          Entering the Indian market requires more than just registration—it demands strategic planning, regulatory clarity, and structured execution.
-        </p>
-        <p>
-          Our inbound corporate services cover business setup, compliance, approvals, and legal structuring aligned with Indian laws.
-        </p>
+        <p style="font-size: 18px; font-family: 'Anek Kannada', 'Poppins', sans-serif;">
+          Whether you are visiting India for leisure, business, medical tourism, or cultural exploration, our inbound travel solutions provide reliable support, competitive pricing, and exceptional customer service to make your journey smooth and unforgettable.
+        </p> 
       </div>
     </div>
   </div>
@@ -199,10 +198,11 @@ include_once('elements/header.php');
   }
 
   .section-subtitle {
-    font-size: clamp(13px, 1.4vw, 16px);
     color: #666;
     margin: 0 auto;
+    font-size: 22px;
     line-height: 1.6;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
   }
 
   /* ── CAROUSEL OUTER clips overflow ── */
@@ -307,18 +307,19 @@ include_once('elements/header.php');
   }
 
   .card-body-content h5 {
-    font-size: clamp(14px, 1.6vw, 18px);
-    font-weight: 600;
-    margin-bottom: 7px;
+    font-size: 20px;
+    font-weight: 400; 
     line-height: 1.25;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
     text-align: center;
     color: #fff;
   }
 
   .card-body-content p {
-    font-size: clamp(11px, 1.1vw, 15px);
+    font-size: 16px;
     color: #fff;
     line-height: 1.5;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
     text-align: center;
   }
 
@@ -1582,6 +1583,10 @@ include_once('elements/header.php');
     will-change: transform;
   }
 
+  .busline-icon{
+    width: 70px;
+    height: 70px;
+  }
   /* ── CARD ── */
   .bus-card {
     flex-shrink: 0;
@@ -1715,7 +1720,9 @@ include_once('elements/header.php');
 
   .bus-card-text {
     font-size: clamp(11.5px, 1.05vw, 13.5px);
-    color: #777;
+    color: #666666;
+    font-weight: 400;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
     line-height: 1.7;
   }
 
@@ -1900,7 +1907,8 @@ include_once('elements/header.php');
     <div class="bus-header">
       <img src="assets/img/tour-travel/bus-on.png" alt="Bus" class="bus-img d-none d-md-block" onerror="this.style.display='none'" />
       <h2 class="bus-title">Bus Booking</h2>
-      <p class="bus-subtitle">
+       
+      <p class="section-subtitle mt-5 w-100">
         Convenient bus booking services for intercity and interstate travel with multiple operator options.
       </p>
     </div>
@@ -1919,12 +1927,9 @@ include_once('elements/header.php');
 
           <!-- Card 1 -->
           <div class="bus-card">
-            <div class="bus-icon-wrap">
+            <div class="mb-3">
               <!-- ticket icon -->
-              <svg viewBox="0 0 24 24">
-                <rect x="2" y="6" width="20" height="12" rx="2" />
-                <path d="M2 12h2M20 12h2M8 6v12M16 6v12" />
-              </svg>
+              <img src="assets/img/icon/busline-1.png" alt="Easy Online Bus Ticket Booking" class="busline-icon">
             </div>
             <h3 class="bus-card-title">Easy Online Bus Ticket Booking</h3>
             <p class="bus-card-text">We offer convenient online bus ticket booking services for intercity and interstate travel across India. Our simple and efficient booking process allows travellers to quickly reserve seats and plan their journeys without any hassle.</p>
@@ -1932,13 +1937,9 @@ include_once('elements/header.php');
 
           <!-- Card 2 -->
           <div class="bus-card">
-            <div class="bus-icon-wrap">
+            <div class="mb-3">
               <!-- route/map icon -->
-              <svg viewBox="0 0 24 24">
-                <circle cx="7" cy="17" r="2" />
-                <circle cx="17" cy="7" r="2" />
-                <path d="M7 15V9a2 2 0 0 1 2-2h2M17 9v6a2 2 0 0 1-2 2h-2" />
-              </svg>
+              <img src="assets/img/icon/busline-2.png" alt="Multiple Bus Operators & Route Options" class="busline-icon">
             </div>
             <h3 class="bus-card-title">Multiple Bus Operators &amp; Route Options</h3>
             <p class="bus-card-text">Choose from a wide network of trusted bus operators and multiple travel routes, giving you the flexibility to select the best schedule, price, and comfort level for your journey.</p>
@@ -1946,12 +1947,9 @@ include_once('elements/header.php');
 
           <!-- Card 3 -->
           <div class="bus-card">
-            <div class="bus-icon-wrap">
+            <div class="mb-3">
               <!-- bus icon -->
-              <svg viewBox="0 0 24 24">
-                <rect x="2" y="5" width="20" height="14" rx="2" />
-                <path d="M2 10h20M7 19v2M17 19v2M6 14h.01M18 14h.01" />
-              </svg>
+              <img src="assets/img/icon/busline-3.png" alt="Various Bus Types for Comfortable Travel" class="busline-icon">
             </div>
             <h3 class="bus-card-title">Various Bus Types for Comfortable Travel</h3>
             <p class="bus-card-text">Book tickets for different bus categories, including AC, Non-AC, Sleeper, Semi-Sleeper, and Luxury Coaches, to ensure a comfortable, budget-friendly travel experience for every passenger.</p>
@@ -1959,11 +1957,9 @@ include_once('elements/header.php');
 
           <!-- Card 4 -->
           <div class="bus-card">
-            <div class="bus-icon-wrap">
+            <div class="mb-3">
               <!-- price/tag icon -->
-              <svg viewBox="0 0 24 24">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-              </svg>
+              <img src="assets/img/icon/busline-4.png" alt="Affordable Fares & Instant Confirmation" class="busline-icon">
             </div>
             <h3 class="bus-card-title">Affordable Fares & Instant Confirmation</h3>
             <p class="bus-card-text">We offer competitive bus ticket prices and instant booking confirmation, helping travellers easily secure their seats while enjoying affordable, reliable transportation.</p>
@@ -1971,11 +1967,9 @@ include_once('elements/header.php');
 
           <!-- Card 5 -->
           <div class="bus-card">
-            <div class="bus-icon-wrap">
+            <div class="mb-3">
               <!-- shield/safety icon -->
-              <svg viewBox="0 0 24 24">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-              </svg>
+              <img src="assets/img/icon/busline-1.png" alt="Easy Online Bus Ticket Booking" class="busline-icon">
             </div>
             <h3 class="bus-card-title">Safe &amp; Reliable Bus Travel</h3>
             <p class="bus-card-text">We partner only with verified and trusted bus operators to ensure safe, timely, and reliable journeys for all passengers, giving you complete peace of mind on every trip.</p>
@@ -1983,12 +1977,9 @@ include_once('elements/header.php');
 
           <!-- Card 6 -->
           <div class="bus-card">
-            <div class="bus-icon-wrap">
+            <div class="mb-3">
               <!-- support/headset icon -->
-              <svg viewBox="0 0 24 24">
-                <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
-                <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
-              </svg>
+              <img src="assets/img/icon/busline-2.png" alt="Round-the-Clock Customer Support" class="busline-icon">
             </div>
             <h3 class="bus-card-title">Round-the-Clock Customer Support</h3>
             <p class="bus-card-text">Our dedicated support team is available 24/7 to assist with bus bookings, cancellations, rescheduling, and any travel queries, ensuring a smooth experience at every step.</p>
@@ -2275,7 +2266,7 @@ include_once('elements/header.php');
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 10px 14px;
+    padding: 10px 0px;
     border-radius: 10px;
     cursor: default;
     transition:
@@ -2286,14 +2277,7 @@ include_once('elements/header.php');
   }
 
   /* hover: highlight */
-  .taxi-feat:hover {
-    background: #fff;
-    border-color: var(--card-border);
-    box-shadow:
-      0 6px 22px rgba(37, 53, 111, 0.10),
-      0 1px 4px rgba(37, 53, 111, 0.06);
-    transform: translateX(4px);
-  }
+   
 
   /* checkmark icon */
   .taxi-check {
@@ -2308,8 +2292,7 @@ include_once('elements/header.php');
     transition: background .28s ease, transform .28s ease;
   }
 
-  .taxi-feat:hover .taxi-check {
-    background: var(--euphoria-red);
+  .taxi-feat:hover .taxi-check { 
     transform: scale(1.15);
   }
 
@@ -2323,11 +2306,7 @@ include_once('elements/header.php');
     stroke-linejoin: round;
     transition: stroke .28s ease;
   }
-
-  .taxi-feat:hover .taxi-check svg {
-    stroke: #fff;
-  }
-
+ 
   /* feature label */
   .taxi-feat-label {
     font-size: clamp(12px, 1.1vw, 14px);
@@ -2339,6 +2318,11 @@ include_once('elements/header.php');
   .taxi-feat:hover .taxi-feat-label {
     color: var(--euphoria-blue);
     font-weight: 600;
+  }
+
+  .taxi-check-icon{
+    width: 25px;
+    height: 25px;
   }
 
   /* ── RESPONSIVE ── */
@@ -2470,72 +2454,56 @@ include_once('elements/header.php');
 
             <div class="taxi-feat">
               <div class="taxi-check">
-                <svg viewBox="0 0 24 24">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
+                <img src="assets/img/icon/Checke.png" alt="Easy Online Taxi Booking" class="taxi-check-icon">
               </div>
               <span class="taxi-feat-label">Easy Online Taxi Booking</span>
             </div>
 
             <div class="taxi-feat">
               <div class="taxi-check">
-                <svg viewBox="0 0 24 24">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
+                  <img src="assets/img/icon/Checke.png" alt="Affordable Taxi Fare Options" class="taxi-check-icon">
               </div>
               <span class="taxi-feat-label">Affordable Taxi Fare Options</span>
             </div>
 
             <div class="taxi-feat">
               <div class="taxi-check">
-                <svg viewBox="0 0 24 24">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
+                  <img src="assets/img/icon/Checke.png" alt="Taxi Services" class="taxi-check-icon"> 
               </div>
               <span class="taxi-feat-label">Local &amp; Outstation Taxi Services</span>
             </div>
 
             <div class="taxi-feat">
               <div class="taxi-check">
-                <svg viewBox="0 0 24 24">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
+                  <img src="assets/img/icon/Checke.png" alt="24/7 Taxi Availability" class="taxi-check-icon"> 
               </div>
               <span class="taxi-feat-label">24/7 Taxi Availability</span>
             </div>
 
             <div class="taxi-feat">
               <div class="taxi-check">
-                <svg viewBox="0 0 24 24">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
+                  <img src="assets/img/icon/Checke.png" alt="Wide Range of Vehicles" class="taxi-check-icon"> 
               </div>
               <span class="taxi-feat-label">Wide Range of Vehicles</span>
             </div>
 
             <div class="taxi-feat">
               <div class="taxi-check">
-                <svg viewBox="0 0 24 24">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
+                  <img src="assets/img/icon/Checke.png" alt="Airport Transfer Services" class="taxi-check-icon"> 
               </div>
               <span class="taxi-feat-label">Airport Transfer Services</span>
             </div>
 
             <div class="taxi-feat">
               <div class="taxi-check">
-                <svg viewBox="0 0 24 24">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
+                <img src="assets/img/icon/Checke.png" alt="Verified Drivers" class="taxi-check-icon">
               </div>
               <span class="taxi-feat-label">Professional &amp; Verified Drivers</span>
             </div>
 
             <div class="taxi-feat">
               <div class="taxi-check">
-                <svg viewBox="0 0 24 24">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
+                <img src="assets/img/icon/Checke.png" alt="Safe and Timely Transportation" class="taxi-check-icon">
               </div>
               <span class="taxi-feat-label">Safe and Timely Transportation</span>
             </div>
@@ -2575,24 +2543,34 @@ include_once('elements/header.php');
   }
 
   .lt-title {
-    font-size: clamp(22px, 3vw, 36px);
+    font-size: clamp(22px, 3vw, 32px);
     font-weight: 600;
     color: var(--euphoria-blue);
     position: absolute;
     z-index: 1;
     margin-top: -60px;
     text-align: center;
-    left: 10%;
+    left: 15%;
   }
 
-  .lt-main-img {
+ .lt-main-img {
+    width: 100%;
+    height: 350px;  
+    margin-top: 50px;            /* fixed height */
+    object-fit: cover;          /* crop nicely */
+    object-position: center;    /* vertical + horizontal center */
+    border-radius: 18px;
+    display: block;
+    box-shadow: 0 16px 50px rgba(37, 53, 111, 0.13);
+  }
+  /* .lt-main-img {
     width: 100%;
     border-radius: 18px;
     object-fit: cover;
     height: clamp(240px, 38vw, 420px);
     display: block;
     box-shadow: 0 16px 50px rgba(37, 53, 111, 0.13);
-  }
+  } */
 
   /* ── RIGHT COLUMN: 2×2 GRID ── */
   .lt-grid {
@@ -2685,7 +2663,7 @@ include_once('elements/header.php');
   /* card title */
   .lt-card-title {
 
-    font-size: clamp(14px, 1.4vw, 17px);
+    font-size: 22px;
     font-weight: 700;
     color: var(--euphoria-blue);
     margin-bottom: 10px;
@@ -2699,8 +2677,9 @@ include_once('elements/header.php');
 
   /* card text */
   .lt-card-text {
-    font-size: clamp(11.5px, 1vw, 13.5px);
-    color: #777;
+    font-size: 16px;
+    color: #666666;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
     line-height: 1.75;
   }
 
@@ -2816,11 +2795,9 @@ include_once('elements/header.php');
 
           <!-- Card 1 -->
           <div class="lt-card">
-            <div class="lt-icon-wrap">
+            <div class="mb-3">
               <!-- location pin -->
-              <svg viewBox="0 0 24 24">
-                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
-              </svg>
+              <img src="assets/img/icon/mobility-1.png" alt="Reliable Local Transportation Solutions" class="mobility-icon">
             </div>
             <h3 class="lt-card-title">Reliable Local Transportation Solutions</h3>
             <p class="lt-card-text">We provide efficient local transportation services to help individuals and businesses travel comfortably within the city. Our services ensure safe, convenient, and timely travel for daily commutes, meetings, and personal trips.</p>
@@ -2828,14 +2805,9 @@ include_once('elements/header.php');
 
           <!-- Card 2 -->
           <div class="lt-card">
-            <div class="lt-icon-wrap">
+            <div class="mb-3">
               <!-- bike/car key -->
-              <svg viewBox="0 0 24 24">
-                <circle cx="5.5" cy="17.5" r="3.5" />
-                <circle cx="18.5" cy="17.5" r="3.5" />
-                <path d="M15 6h-2l-3 7H5.5M15 6l3 5h-5.5" />
-                <path d="M11 3h4" />
-              </svg>
+              <img src="assets/img/icon/mobility-2.png" alt="Private Car & Rental Vehicle Options" class="mobility-icon">
             </div>
             <h3 class="lt-card-title">Private Car & Rental Vehicle Options</h3>
             <p class="lt-card-text">Choose from a wide range of private cars and rental vehicles based on your travel needs and budget. Our well-maintained vehicles offer flexibility and comfort for short city trips or extended local travel.</p>
@@ -2843,11 +2815,9 @@ include_once('elements/header.php');
 
           <!-- Card 3 -->
           <div class="lt-card">
-            <div class="lt-icon-wrap">
+            <div class="mb-3">
               <!-- city building -->
-              <svg viewBox="0 0 24 24">
-                <path d="M3 21h18M3 7v14M21 7v14M9 21V7M15 21V7M3 7l9-4 9 4M9 11h.01M9 15h.01M15 11h.01M15 15h.01" />
-              </svg>
+              <img src="assets/img/icon/mobility-3.png" alt="Flexible & Affordable City Travel" class="mobility-icon">
             </div>
             <h3 class="lt-card-title">Flexible & Affordable City Travel</h3>
             <p class="lt-card-text">Our cost-effective local transport services offer flexible booking options for hourly, daily, or customised travel needs, making city transportation simple, comfortable, and convenient.</p>
@@ -2855,13 +2825,9 @@ include_once('elements/header.php');
 
           <!-- Card 4 -->
           <div class="lt-card">
-            <div class="lt-icon-wrap">
+            <div class="mb-3">
               <!-- driver/chauffeur -->
-              <svg viewBox="0 0 24 24">
-                <circle cx="12" cy="7" r="4" />
-                <path d="M5.5 20a7 7 0 0 1 13 0" />
-                <path d="M12 11v2l1.5 1.5" />
-              </svg>
+             <img src="assets/img/icon/mobility-4.png" alt="Professional Chauffeur" class="mobility-icon">
             </div>
             <h3 class="lt-card-title">Professional Chauffeur</h3>
             <p class="lt-card-text">Our trained and professional chauffeurs ensure a smooth and safe travel experience. With experienced drivers and well-maintained vehicles, we provide reliable transportation for corporate clients, tourists, and local travellers.</p>
@@ -3043,7 +3009,8 @@ include_once('elements/header.php');
   /* cell title */
   .hp-cell-title {
 
-    font-size: clamp(13px, 1.3vw, 16px);
+    font-size: 20px;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
     font-weight: 700;
     color: var(--euphoria-blue);
     margin-bottom: 12px;
@@ -3058,8 +3025,9 @@ include_once('elements/header.php');
 
   /* cell text */
   .hp-cell-text {
-    font-size: clamp(11px, 1vw, 13px);
-    color: #777;
+    font-size: 16px;
+    color: #666666;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
     line-height: 1.75;
     text-align: center;
   }
@@ -3175,57 +3143,61 @@ include_once('elements/header.php');
 
     <!-- BODY -->
     <div class="hp-body">
+      <div class="row align-items-center">
+          <div class="col-lg-5">
+            <div class="hp-left">
+              <img class="hp-scene-img" src="assets/img/tour-travel/holiday-package.png" alt="Holiday Scene" onerror="this.src=''" />
+            </div>
+          </div>
 
-      <!-- LEFT: scene image -->
-      <div class="hp-left">
-        <img class="hp-scene-img" src="assets/img/tour-travel/holiday-package.png" alt="Holiday Scene" onerror="this.src=''" />
+          <div class="col-lg-7">
+            <div class="hp-right">
+              <div class="hp-grid">
+
+                <!-- R1C1 -->
+                <div class="hp-cell">
+                  <h3 class="hp-cell-title">Customised Inbound Holiday Packages</h3>
+                  <p class="hp-cell-text">We offer customised holiday packages for domestic destinations, designed to provide memorable travel experiences for families, couples, and leisure travellers.</p>
+                </div>
+
+                <!-- R1C2 -->
+                <div class="hp-cell">
+                  <h3 class="hp-cell-title">Personalised Travel Itineraries</h3>
+                  <p class="hp-cell-text">Our experts create tailor-made travel itineraries based on your preferences, budget, and travel goals, ensuring a well-planned and enjoyable vacation.</p>
+                </div>
+
+                <!-- R1C3 -->
+                <div class="hp-cell">
+                  <h3 class="hp-cell-title">Complete Travel Planning Solutions</h3>
+                  <p class="hp-cell-text">Our holiday packages include flights, hotel accommodations, local transportation, sightseeing tours, and travel assistance, providing a complete and hassle-free travel experience.</p>
+                </div>
+
+                <!-- R2C1 -->
+                <div class="hp-cell">
+                  <h3 class="hp-cell-title">Popular Tourist Destinations</h3>
+                  <p class="hp-cell-text">Explore top domestic and international tourist destinations with carefully curated travel packages that cover famous attractions, cultural experiences, and local highlights.</p>
+                </div>
+
+                <!-- R2C2 -->
+                <div class="hp-cell">
+                  <h3 class="hp-cell-title">Family, Couple &amp; Group Holiday Packages</h3>
+                  <p class="hp-cell-text">We design special holiday packages for families, honeymoon couples, and group travellers, ensuring comfortable stays, exciting activities, and unforgettable memories.</p>
+                </div>
+
+                <!-- R2C3 -->
+                <div class="hp-cell">
+                  <h3 class="hp-cell-title">Expert Travel Support &amp; Assistance</h3>
+                  <p class="hp-cell-text">Our travel specialists provide end-to-end support, helping with itinerary planning, travel bookings, and on-trip assistance to ensure a smooth and enjoyable holiday.</p>
+                </div>
+
+              </div><!-- /hp-grid -->
+            </div> 
+          </div>
+
       </div>
+    </div> 
 
-      <!-- RIGHT: 3×2 grid -->
-      <div class="hp-right">
-        <div class="hp-grid">
-
-          <!-- R1C1 -->
-          <div class="hp-cell">
-            <h3 class="hp-cell-title">Customised Inbound Holiday Packages</h3>
-            <p class="hp-cell-text">We offer customised holiday packages for domestic destinations, designed to provide memorable travel experiences for families, couples, and leisure travellers.</p>
-          </div>
-
-          <!-- R1C2 -->
-          <div class="hp-cell">
-            <h3 class="hp-cell-title">Personalised Travel Itineraries</h3>
-            <p class="hp-cell-text">Our experts create tailor-made travel itineraries based on your preferences, budget, and travel goals, ensuring a well-planned and enjoyable vacation.</p>
-          </div>
-
-          <!-- R1C3 -->
-          <div class="hp-cell">
-            <h3 class="hp-cell-title">Complete Travel Planning Solutions</h3>
-            <p class="hp-cell-text">Our holiday packages include flights, hotel accommodations, local transportation, sightseeing tours, and travel assistance, providing a complete and hassle-free travel experience.</p>
-          </div>
-
-          <!-- R2C1 -->
-          <div class="hp-cell">
-            <h3 class="hp-cell-title">Popular Tourist Destinations</h3>
-            <p class="hp-cell-text">Explore top domestic and international tourist destinations with carefully curated travel packages that cover famous attractions, cultural experiences, and local highlights.</p>
-          </div>
-
-          <!-- R2C2 -->
-          <div class="hp-cell">
-            <h3 class="hp-cell-title">Family, Couple &amp; Group Holiday Packages</h3>
-            <p class="hp-cell-text">We design special holiday packages for families, honeymoon couples, and group travellers, ensuring comfortable stays, exciting activities, and unforgettable memories.</p>
-          </div>
-
-          <!-- R2C3 -->
-          <div class="hp-cell">
-            <h3 class="hp-cell-title">Expert Travel Support &amp; Assistance</h3>
-            <p class="hp-cell-text">Our travel specialists provide end-to-end support, helping with itinerary planning, travel bookings, and on-trip assistance to ensure a smooth and enjoyable holiday.</p>
-          </div>
-
-        </div><!-- /hp-grid -->
-      </div><!-- /hp-right -->
-
-    </div><!-- /hp-body -->
-  </div><!-- /container -->
+  </div> 
 </section>
 
 <!-- ══════════════════════════════════════
@@ -3264,18 +3236,13 @@ include_once('elements/header.php');
     color: #f9c74f;
   }
 
-  .hotel-reserve-divider {
-    width: 46px;
-    height: 3px;
-    background: linear-gradient(90deg, var(--euphoria-red), #f9c74f);
-    border-radius: 2px;
-    margin: 0 auto 14px;
-  }
 
   .hotel-reserve-subtitle {
-    font-size: clamp(.85rem, 1.7vw, .98rem);
-    color: rgba(255, 255, 255, .75);
-    max-width: 500px;
+    font-size: 24px;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
+    color:  #fff;
+    max-width: 851px;
+    font-weight: 600;
     margin: 0 auto;
     line-height: 1.75;
   }
@@ -3305,8 +3272,8 @@ include_once('elements/header.php');
 
   /* The dashed circle */
   .hotel-reserve-circle {
-    width: 96px;
-    height: 96px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     border: 2px dashed rgba(255, 255, 255, .45);
     background: rgba(255, 255, 255, .08);
@@ -3336,15 +3303,8 @@ include_once('elements/header.php');
     pointer-events: none;
   }
 
-  .hotel-reserve-node:hover .hotel-reserve-circle {
-    border-style: solid;
-    border-color: #fff;
-    background: var(--euphoria-blue);
-    transform: scale(1.10);
-    box-shadow:
-      0 8px 32px rgba(37, 53, 111, .55),
-      0 0 0 8px rgba(255, 255, 255, .08),
-      0 0 0 16px rgba(255, 255, 255, .03);
+  .hotel-reserve-node:hover .hotel-reserve-circle { 
+    transform: scale(1.10); 
   }
 
   .hotel-reserve-node:hover .hotel-reserve-circle::after {
@@ -3355,47 +3315,27 @@ include_once('elements/header.php');
   .hotel-reserve-icon {
     width: 44px;
     height: 44px;
+    flex-direction: column;
     border-radius: 50%;
-    background: rgba(249, 199, 79, .15);
     display: flex;
     align-items: center;
     justify-content: center;
     transition: background .3s ease;
   }
 
-  .hotel-reserve-node:hover .hotel-reserve-icon {
-    background: rgba(255, 255, 255, .18);
-  }
-
-  .hotel-reserve-icon svg {
-    width: 22px;
-    height: 22px;
-    stroke: #f9c74f;
-    fill: none;
-    stroke-width: 1.6;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    transition: stroke .3s ease;
-  }
-
-  .hotel-reserve-node:hover .hotel-reserve-icon svg {
-    stroke: #fff;
-  }
-
+ 
   /* Label below circle */
   .hotel-reserve-label {
-    font-size: .72rem;
+    font-size: 16px;
     font-weight: 600;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
     color: rgba(255, 255, 255, .90);
     line-height: 1.35;
     letter-spacing: .01em;
     transition: color .3s ease;
     white-space: nowrap;
   }
-
-  .hotel-reserve-node:hover .hotel-reserve-label {
-    color: #f9c74f;
-  }
+ 
 
   /* ── Node positions — LEFT 5 ── */
   /* Scattered naturally across left half */
@@ -3586,162 +3526,236 @@ include_once('elements/header.php');
 
 <section id="hotel-section" class="hotel-reserve-section">
 
-  <!-- Heading -->
-  <div class="hotel-reserve-heading container">
-    <h2 class="hotel-reserve-title">Hotel <em>Reservation</em></h2>
-    <div class="hotel-reserve-divider"></div>
-    <p class="hotel-reserve-subtitle">
-      Book verified hotels worldwide with the best prices, secure payments,
-      and instant confirmation.
-    </p>
-  </div>
+    <div class="hotel-reserve">
+        <div class="hr-watermark">Stay</div>
+        <h2 class="hr-title">Hotel Reservation</h2>
+        <p class="hotel-reserve-subtitle mb-3">
+        Book verified hotels worldwide with the best prices, secure payments,
+        and instant confirmation.
+        </p>
+
+         <a href="#" class="btn btn-explore-hotel">
+          Find Your Stay
+          <img src="assets/img/icon/hotel-btn-arrow.png" alt="" width="12px;" height="12px;">
+        </a>
+    </div>
+
+  <style>
+    
+  /* ── HEADER ── */
+  .hotel-reserve {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .hr-watermark {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: clamp(60px, 12vw, 120px);
+    font-weight: 700;
+    color: #FFFFFF;
+    opacity: 0.2;
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+    line-height: 1;
+  }
+
+  .hr-title {
+    font-size: clamp(26px, 4vw, 38px);
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
+  }
+
+   .btn-explore-hotel {
+      background-color: #FFF;
+      color: #25356F;
+      font-family: "Anek Kannada", "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      padding: 12px 24px;
+      border-radius: 6px;
+      border: none;
+      letter-spacing: 0.3px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: background-color 0.2s ease;
+    }
+ .btn:hover {
+    color: #25356F;
+    background-color: #fff;
+    border-color: #fff;
+}
+  </style>
 
   <!-- Absolute-positioned canvas -->
   <div class="hotel-reserve-canvas">
-
-    <!-- SVG dashed connector lines -->
-    <svg class="hotel-reserve-lines" viewBox="0 0 1000 480" preserveAspectRatio="none">
-      <!-- Left connectors to center (~500,240) -->
-      <line x1="80" y1="86" x2="500" y2="240" stroke="rgba(255,255,255,.12)" stroke-width="1" stroke-dasharray="5 5" />
-      <line x1="190" y1="250" x2="500" y2="240" stroke="rgba(255,255,255,.12)" stroke-width="1" stroke-dasharray="5 5" />
-      <line x1="60" y1="384" x2="500" y2="240" stroke="rgba(255,255,255,.12)" stroke-width="1" stroke-dasharray="5 5" />
-      <line x1="300" y1="134" x2="500" y2="240" stroke="rgba(255,255,255,.12)" stroke-width="1" stroke-dasharray="5 5" />
-      <line x1="280" y1="360" x2="500" y2="240" stroke="rgba(255,255,255,.12)" stroke-width="1" stroke-dasharray="5 5" />
-      <!-- Right connectors to center -->
-      <line x1="720" y1="86" x2="500" y2="240" stroke="rgba(255,255,255,.12)" stroke-width="1" stroke-dasharray="5 5" />
-      <line x1="850" y1="216" x2="500" y2="240" stroke="rgba(255,255,255,.12)" stroke-width="1" stroke-dasharray="5 5" />
-      <line x1="940" y1="86" x2="500" y2="240" stroke="rgba(255,255,255,.12)" stroke-width="1" stroke-dasharray="5 5" />
-      <line x1="700" y1="346" x2="500" y2="240" stroke="rgba(255,255,255,.12)" stroke-width="1" stroke-dasharray="5 5" />
-      <line x1="880" y1="374" x2="500" y2="240" stroke="rgba(255,255,255,.12)" stroke-width="1" stroke-dasharray="5 5" />
-    </svg>
-
+ 
     <!-- ══ LEFT 5 NODES ══ -->
     <div class="hotel-reserve-node hotel-reserve-node--n1">
       <div class="hotel-reserve-circle">
         <div class="hotel-reserve-icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M9 11l3 3L22 4" />
-            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
-          </svg>
+          <img src="assets/img/icon/hotel-1.png" alt="" class="hotel-image-icon">
+          <span class="hotel-reserve-label">Verified &amp;<br>Trusted Hotels</span>
         </div>
       </div>
-      <span class="hotel-reserve-label">Verified &amp;<br>Trusted Hotels</span>
     </div>
 
     <div class="hotel-reserve-node hotel-reserve-node--n2">
       <div class="hotel-reserve-circle">
         <div class="hotel-reserve-icon">
-          <svg viewBox="0 0 24 24">
-            <circle cx="12" cy="12" r="10" />
-            <polyline points="12 6 12 12 16 14" />
-          </svg>
+          <img src="assets/img/icon/hotel-2.png" alt="24/7 Booking" class="hotel-image-icon">
+          <span class="hotel-reserve-label">24/7 Booking<br>Support</span>
         </div>
       </div>
-      <span class="hotel-reserve-label">24/7 Booking<br>Support</span>
     </div>
 
     <div class="hotel-reserve-node hotel-reserve-node--n3">
       <div class="hotel-reserve-circle">
         <div class="hotel-reserve-icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-            <circle cx="9" cy="7" r="4" />
-            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-          </svg>
+          <img src="assets/img/icon/hotel-3.png" alt="orporate Bookings" class="hotel-image-icon">
+          <span class="hotel-reserve-label">Group &amp; Corporate<br>Bookings</span>
         </div>
       </div>
-      <span class="hotel-reserve-label">Group &amp; Corporate<br>Bookings</span>
     </div>
 
     <div class="hotel-reserve-node hotel-reserve-node--n4">
       <div class="hotel-reserve-circle">
         <div class="hotel-reserve-icon">
-          <svg viewBox="0 0 24 24">
-            <rect x="3" y="11" width="18" height="11" rx="2" />
-            <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-          </svg>
+          <img src="assets/img/icon/hotel-4.png" alt="Secure Booking" class="hotel-image-icon">
+          <span class="hotel-reserve-label">Fast &amp; Secure<br>Booking</span>
         </div>
       </div>
-      <span class="hotel-reserve-label">Fast &amp; Secure<br>Booking</span>
     </div>
 
     <div class="hotel-reserve-node hotel-reserve-node--n5">
       <div class="hotel-reserve-circle">
         <div class="hotel-reserve-icon">
-          <svg viewBox="0 0 24 24">
-            <circle cx="11" cy="11" r="8" />
-            <line x1="21" y1="21" x2="16.65" y2="16.65" />
-            <line x1="11" y1="8" x2="11" y2="14" />
-            <line x1="8" y1="11" x2="14" y2="11" />
-          </svg>
+          <img src="assets/img/icon/hotel-5.png" alt="Booking Help" class="hotel-image-icon">
+          <span class="hotel-reserve-label">Personalised<br>Booking Help</span>
         </div>
       </div>
-      <span class="hotel-reserve-label">Personalised<br>Booking Help</span>
     </div>
+    <style>
+      /* ── CENTER IMAGE ── */
+    .hotel-center-image {
+        position: absolute;
+        left: 48%;
+        top: 57%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+        width: 240px;
+        height: 600px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+ 
+    .hotel-center-image img {
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 10px 40px rgba(0,0,0,.55));
+      animation: floatUp .8s ease both;
+    }
+ 
+    /* Glowing circle behind girl */
+    .hotel-center-glow {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(249,199,79,.12) 0%, rgba(30,80,200,.08) 60%, transparent 80%);
+      border: 1.5px dashed rgba(249,199,79,.3);
+      z-index: 4;
+      animation: pulseGlow 3s ease-in-out infinite;
+    }
+ 
+    .hotel-center-glow::after {
+      content: '';
+      position: absolute;
+      inset: -18px;
+      border-radius: 50%;
+      border: 1px dashed rgba(255,255,255,.12);
+    }
 
+    .hotel-image-icon{
+      width: 35px;
+      height: 35px;
+      margin-bottom: 10px;
+
+    }
+ 
+    @keyframes pulseGlow {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(249,199,79,.0); }
+      50% { box-shadow: 0 0 40px 10px rgba(249,199,79,.08); }
+    }
+ 
+    @keyframes floatUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    </style>
+  <!-- ★ CENTER GIRL IMAGE ★ -->
+    <div class="hotel-center-image">
+      <img src="assets/img/hotel-girl.png" alt="Hotel Receptionist">
+    </div>
     <!-- ══ RIGHT 5 NODES ══ -->
     <div class="hotel-reserve-node hotel-reserve-node--n6">
       <div class="hotel-reserve-circle">
         <div class="hotel-reserve-icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-            <polyline points="9 22 9 12 15 12 15 22" />
-          </svg>
+          <img src="assets/img/icon/hotel-6.png" alt="Hotels" class="hotel-image-icon">
+          <span class="hotel-reserve-label">Variety of<br>Hotels</span>
         </div>
       </div>
-      <span class="hotel-reserve-label">Variety of<br>Hotels</span>
     </div>
 
     <div class="hotel-reserve-node hotel-reserve-node--n7">
       <div class="hotel-reserve-circle">
         <div class="hotel-reserve-icon">
-          <svg viewBox="0 0 24 24">
-            <rect x="2" y="3" width="20" height="14" rx="2" />
-            <line x1="8" y1="21" x2="16" y2="21" />
-            <line x1="12" y1="17" x2="12" y2="21" />
-          </svg>
+          <img src="assets/img/icon/hotel-7.png" alt="Easy Online Hotel Booking" class="hotel-image-icon">
+          <span class="hotel-reserve-label">Easy Online<br>Hotel Booking</span>
         </div>
       </div>
-      <span class="hotel-reserve-label">Easy Online<br>Hotel Booking</span>
     </div>
 
     <div class="hotel-reserve-node hotel-reserve-node--n8">
       <div class="hotel-reserve-circle">
         <div class="hotel-reserve-icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-          </svg>
+         <img src="assets/img/icon/hotel-8.png" alt="Best Hotel Deals" class="hotel-image-icon">
+         <span class="hotel-reserve-label">Best Hotel<br>Deals</span>
         </div>
       </div>
-      <span class="hotel-reserve-label">Best Hotel<br>Deals</span>
     </div>
 
     <div class="hotel-reserve-node hotel-reserve-node--n9">
       <div class="hotel-reserve-circle">
         <div class="hotel-reserve-icon">
-          <svg viewBox="0 0 24 24">
-            <rect x="2" y="7" width="20" height="14" rx="2" />
-            <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
-            <line x1="12" y1="12" x2="12" y2="16" />
-            <line x1="10" y1="14" x2="14" y2="14" />
-          </svg>
+          <img src="assets/img/icon/hotel-9.png" alt="Flexible Rooms & Amenities" class="hotel-image-icon">
+          <span class="hotel-reserve-label">Flexible Rooms &amp;<br>Amenities</span>
         </div>
       </div>
-      <span class="hotel-reserve-label">Flexible Rooms &amp;<br>Amenities</span>
     </div>
 
     <div class="hotel-reserve-node hotel-reserve-node--n10">
       <div class="hotel-reserve-circle">
         <div class="hotel-reserve-icon">
-          <svg viewBox="0 0 24 24">
-            <circle cx="12" cy="12" r="10" />
-            <line x1="2" y1="12" x2="22" y2="12" />
-            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-          </svg>
+          <img src="assets/img/icon/hotel-10.png" alt="Worldwide Hotel & Booking" class="hotel-image-icon">
+          <span class="hotel-reserve-label">Worldwide Hotel<br>Booking</span>
         </div>
       </div>
-      <span class="hotel-reserve-label">Worldwide Hotel<br>Booking</span>
     </div>
 
   </div><!-- /canvas -->
@@ -3767,7 +3781,8 @@ include_once('elements/header.php');
   /* Paragraph */
   .sightseeing-tour-text {
     color: var(--text-dark);
-    font-size: 15px;
+    font-size: 16px;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
     line-height: 1.7;
     margin-bottom: 20px;
   }
@@ -3780,14 +3795,15 @@ include_once('elements/header.php');
 
   .sightseeing-tour-list li {
     margin-bottom: 12px;
-    font-size: 15px;
+    font-size: 15px; 
+    font-family: "Anek Kannada", "Poppins", sans-serif; 
     color: var(--text-dark);
     display: flex;
     align-items: center;
   }
 
   .sightseeing-tour-list li::before {
-    content: "✔";
+  content: url("assets/img/icon/Checke.png");
     color: var(--euphoria-red);
     font-weight: bold;
     margin-right: 10px;
@@ -3844,8 +3860,7 @@ include_once('elements/header.php');
         <h2 class="sightseeing-tour-title">Sightseeing Tours</h2>
 
         <p class="sightseeing-tour-text">
-          We offer professional guided sightseeing tours that help travellers explore major attractions with ease.
-          Our tours are designed for comfort, discovery, and unforgettable experiences.
+          We offer professional guided sightseeing tours that help travellers explore major attractions with the support of experienced tour guides. Our tours make it easy to discover famous landmarks and popular destinations in a comfortable and organised way.
         </p>
 
         <p class="sightseeing-tour-text">
@@ -3936,8 +3951,9 @@ include_once('elements/header.php');
 
   /* Text */
   .tour-package-text {
-    font-size: 18px;
-    line-height: 1.5;
+    font-size: 20px;
+    line-height: 1.5; 
+    font-family: "Anek Kannada", "Poppins", sans-serif; 
     margin-bottom: 15px;
   }
 
@@ -3989,15 +4005,11 @@ include_once('elements/header.php');
       <h2 class="tour-package-title">Tour Package</h2>
 
       <p class="tour-package-text">
-        We offer a variety of tour packages, including city tours, cultural tours, and adventure trips designed to suit different travel preferences.
+        We offer a variety of tour packages, including city tours, cultural tours, and adventure trips designed to suit different travel preferences. Our customised packages are planned according to your travel goals, budget, and schedule, helping you explore popular destinations, heritage sites, and natural attractions.
       </p>
 
       <p class="tour-package-text">
-        Our customised packages are planned according to your travel goals, budget, and schedule, helping you explore popular destinations, heritage sites, and natural attractions.
-      </p>
-
-      <p class="tour-package-text">
-        To make your journey easy and stress-free, we provide complete travel arrangements, including transportation, hotel accommodations, sightseeing, and guided tours.
+        We offer a variety of tour packages, including city tours, cultural tours, and adventure trips designed to suit different travel preferences. Our customised packages are planned according to your travel goals, budget, and schedule, helping you explore popular destinations, heritage sites, and natural attractions.s.
       </p>
 
     </div>
