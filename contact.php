@@ -185,14 +185,16 @@ include_once('elements/header.php');
 
     /* ── Left image panel ── */
     .image-panel {
-        border-radius: 16px;
+        border-radius: 25px;
         overflow: hidden;
         position: relative;
-        min-height: 590px;
+        min-height: 700px;
         background: url('assets/img//background/Contact-us.png');
-        background-size: contain;
+        background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        background-color: #fff;
+        border: 1px solid #ccc;
     }
 
     .image-overlay {

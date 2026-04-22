@@ -816,9 +816,9 @@ include_once('elements/header.php');
     content: '';
     position: absolute;
     inset: 0;
-    background-image:
+    /* background-image:
       linear-gradient(rgba(37, 53, 111, .03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(37, 53, 111, .03) 1px, transparent 1px);
+      linear-gradient(90deg, rgba(37, 53, 111, .03) 1px, transparent 1px); */
     background-size: 48px 48px;
     pointer-events: none;
     z-index: 0;
@@ -2621,7 +2621,7 @@ include_once('elements/header.php');
     top: 0;
     left: 0;
     right: 0;
-    height: 3px;
+    height: 2px;
     background: linear-gradient(90deg, var(--euphoria-blue), var(--euphoria-red));
     transform: scaleX(0);
     transform-origin: left;
@@ -3830,7 +3830,7 @@ include_once('elements/header.php');
     border-radius: 20px;
     overflow: hidden;
     border: 1px solid var(--card-border);
-    box-shadow: 0 10px 25px var(--black-blur);
+    box-shadow: 0 5px 5px var(--black-blur);
     transition: 0.4s;
   }
 
