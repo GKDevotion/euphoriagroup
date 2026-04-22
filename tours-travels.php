@@ -117,19 +117,16 @@ include_once('elements/header.php');
       <div class="col-md-5">
         <img src="assets/img/tour-travel/airplan-window.png" class="illustration">
       </div>
-      <div class="col-md-7 text-content">
-        <p>
-          Entering the Indian market requires more than just registration—it demands strategic planning, regulatory clarity, and structured execution.
+      <div class="col-md-7 text-content ">
+        <p style="font-size: 18px; font-family: 'Anek Kannada', 'Poppins', sans-serif;" >
+          Our inbound tour and travel services in India are designed to offer international travellers a seamless, comfortable, and memorable experience. We specialise in customised travel packages, guided tours, hotel bookings, transportation arrangements, and comprehensive travel assistance for individuals, families, and corporate groups visiting India.
         </p>
-        <p>
-          Our inbound corporate services cover business setup, compliance, approvals, and legal structuring aligned with Indian laws.
+        <p style="font-size: 18px; font-family: 'Anek Kannada', 'Poppins', sans-serif;">
+          With in-depth local expertise and a strong network of hospitality partners, we curate personalised itineraries covering cultural heritage tours, business travel, spiritual journeys, luxury vacations, and adventure tourism. From airport pickup to accommodation, sightseeing, and on-ground coordination, we ensure hassle-free travel planning and professional service.
         </p>
-        <p>
-          Entering the Indian market requires more than just registration—it demands strategic planning, regulatory clarity, and structured execution.
-        </p>
-        <p>
-          Our inbound corporate services cover business setup, compliance, approvals, and legal structuring aligned with Indian laws.
-        </p>
+        <p style="font-size: 18px; font-family: 'Anek Kannada', 'Poppins', sans-serif;">
+          Whether you are visiting India for leisure, business, medical tourism, or cultural exploration, our inbound travel solutions provide reliable support, competitive pricing, and exceptional customer service to make your journey smooth and unforgettable.
+        </p> 
       </div>
     </div>
   </div>
@@ -201,10 +198,11 @@ include_once('elements/header.php');
   }
 
   .section-subtitle {
-    font-size: clamp(13px, 1.4vw, 16px);
     color: #666;
     margin: 0 auto;
+    font-size: 22px;
     line-height: 1.6;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
   }
 
   /* ── CAROUSEL OUTER clips overflow ── */
@@ -309,16 +307,16 @@ include_once('elements/header.php');
   }
 
   .card-body-content h5 {
-    font-size: clamp(14px, 1.6vw, 18px);
-    font-weight: 600;
-    margin-bottom: 7px;
+    font-size: 20px;
+    font-weight: 400; 
     line-height: 1.25;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
     text-align: center;
     color: #fff;
   }
 
   .card-body-content p {
-    font-size: clamp(11px, 1.1vw, 15px);
+    font-size: 16px;
     color: #fff;
     line-height: 1.5;
     font-family: "Anek Kannada", "Poppins", sans-serif;
@@ -1722,7 +1720,9 @@ include_once('elements/header.php');
 
   .bus-card-text {
     font-size: clamp(11.5px, 1.05vw, 13.5px);
-    color: #777;
+    color: #666666;
+    font-weight: 400;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
     line-height: 1.7;
   }
 
@@ -1907,7 +1907,8 @@ include_once('elements/header.php');
     <div class="bus-header">
       <img src="assets/img/tour-travel/bus-on.png" alt="Bus" class="bus-img d-none d-md-block" onerror="this.style.display='none'" />
       <h2 class="bus-title">Bus Booking</h2>
-      <p class="bus-subtitle">
+       
+      <p class="section-subtitle mt-5 w-100">
         Convenient bus booking services for intercity and interstate travel with multiple operator options.
       </p>
     </div>
@@ -2662,7 +2663,7 @@ include_once('elements/header.php');
   /* card title */
   .lt-card-title {
 
-    font-size: clamp(14px, 1.4vw, 17px);
+    font-size: 22px;
     font-weight: 700;
     color: var(--euphoria-blue);
     margin-bottom: 10px;
@@ -2676,8 +2677,9 @@ include_once('elements/header.php');
 
   /* card text */
   .lt-card-text {
-    font-size: clamp(11.5px, 1vw, 13.5px);
-    color: #777;
+    font-size: 16px;
+    color: #666666;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
     line-height: 1.75;
   }
 
@@ -3007,7 +3009,8 @@ include_once('elements/header.php');
   /* cell title */
   .hp-cell-title {
 
-    font-size: clamp(13px, 1.3vw, 16px);
+    font-size: 20px;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
     font-weight: 700;
     color: var(--euphoria-blue);
     margin-bottom: 12px;
@@ -3235,10 +3238,10 @@ include_once('elements/header.php');
 
 
   .hotel-reserve-subtitle {
-    font-size: clamp(.85rem, 1.7vw, .98rem);
+    font-size: 24px;
     font-family: "Anek Kannada", "Poppins", sans-serif;
-    color: rgba(255, 255, 255, .75);
-    max-width: 500px;
+    color:  #fff;
+    max-width: 851px;
     font-weight: 600;
     margin: 0 auto;
     line-height: 1.75;
@@ -3269,8 +3272,8 @@ include_once('elements/header.php');
 
   /* The dashed circle */
   .hotel-reserve-circle {
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     border: 2px dashed rgba(255, 255, 255, .45);
     background: rgba(255, 255, 255, .08);
@@ -3323,8 +3326,9 @@ include_once('elements/header.php');
  
   /* Label below circle */
   .hotel-reserve-label {
-    font-size: .72rem;
+    font-size: 16px;
     font-weight: 600;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
     color: rgba(255, 255, 255, .90);
     line-height: 1.35;
     letter-spacing: .01em;

@@ -805,7 +805,7 @@ include_once('elements/header.php');
     }
 
     .card-desc-alliance {
-        font-size: 11px;
+        font-size: 13px;
         color: #fff;
         font-family: "Anek Kannada", "Poppins", sans-serif;
         line-height: 1.4;

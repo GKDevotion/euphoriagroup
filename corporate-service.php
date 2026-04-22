@@ -14,60 +14,60 @@ include_once('elements/header.php');
 
 <section class="corporate-tab-section india-section">
 
-    <div class="container position-relative" style="z-index:2">
+  <div class="container position-relative" style="z-index:2">
 
-        <div class="formation-nav-wrapper" data-aos="fade-up" data-aos-duration="800">
+    <div class="formation-nav-wrapper" data-aos="fade-up" data-aos-duration="800">
 
-            <a href="#legal-compliance" class="nav-link-pill nav-link-item nav-active-pill">Legal & Compliance Services</a>
-            <div class="nav-sep"></div>
+      <a href="#legal-compliance" class="nav-link-pill nav-link-item nav-active-pill">Legal & Compliance Services</a>
+      <div class="nav-sep"></div>
 
-            <a href="#account-taxation" class="nav-link-pill nav-link-item">Accounting & Taxation</a>
-            <div class="nav-sep"></div>
-            
-            <a href="#licensing-regulatory" class="nav-link-pill nav-link-item">Licensing & Regulatory</a>
-            <div class="nav-sep"></div>
-            
-            <a href="#corporate-restructuring" class="nav-link-pill nav-link-item">Corporate Restructuring</a>
-            <div class="nav-sep"></div>
-            
-            <a href="#advisory-consultancy" class="nav-link-pill nav-link-item">Advisory & Consultancy</a>
-            <div class="nav-sep"></div>
-            
-            <a href="#additional-service" class="nav-link-pill nav-link-item">Additional Services</a>
-            <div class="nav-sep"></div>
-            
-            <a href="#faqs" class="nav-link-pill nav-link-item">FAQ</a>
+      <a href="#account-taxation" class="nav-link-pill nav-link-item">Accounting & Taxation</a>
+      <div class="nav-sep"></div>
 
-        </div>
+      <a href="#licensing-regulatory" class="nav-link-pill nav-link-item">Licensing & Regulatory</a>
+      <div class="nav-sep"></div>
 
-    </div><!-- /container -->
+      <a href="#corporate-restructuring" class="nav-link-pill nav-link-item">Corporate Restructuring</a>
+      <div class="nav-sep"></div>
 
-    <div class="container-xl pt-5">
-        <div class="row align-items-center">
+      <a href="#advisory-consultancy" class="nav-link-pill nav-link-item">Advisory & Consultancy</a>
+      <div class="nav-sep"></div>
 
-            <!-- Left: Image -->
-            <div class="col-12 col-md-4 img-col" data-aos="fade-up" data-aos-duration="1000">
-                <img src="assets/img/corporate-market.png" alt="Business professionals with city skyline" />
-            </div>
+      <a href="#additional-service" class="nav-link-pill nav-link-item">Additional Services</a>
+      <div class="nav-sep"></div>
 
-            <!-- Right: Text -->
-            <div class="col-12 col-md-8 text-col">
-                <p data-aos="fade-up" data-aos-duration="1200">
-                    Entering the Indian market requires more than just registration—it demands strategic planning, regulatory clarity, and structured execution.
-                </p>
-                <p data-aos="fade-up" data-aos-duration="1200">
-                    Our inbound corporate services cover business setup, compliance, approvals, and legal structuring aligned with Indian laws.
-                </p>
-                <p data-aos="fade-up" data-aos-duration="1200">
-                    Entering the Indian market requires more than just registration—it demands strategic planning, regulatory clarity, and structured execution.
-                </p>
-                <p data-aos="fade-up" data-aos-duration="1200">
-                    Our inbound corporate services cover business setup, compliance, approvals, and legal structuring aligned with Indian laws.
-                </p>
-            </div>
+      <a href="#faqs" class="nav-link-pill nav-link-item">FAQ</a>
 
-        </div>
     </div>
+
+  </div><!-- /container -->
+
+  <div class="container-xl pt-5">
+    <div class="row align-items-center">
+
+      <!-- Left: Image -->
+      <div class="col-12 col-md-4 img-col" data-aos="fade-up" data-aos-duration="1000">
+        <img src="assets/img/corporate-market.png" alt="Business professionals with city skyline" />
+      </div>
+
+      <!-- Right: Text -->
+      <div class="col-12 col-md-8 text-col">
+        <p data-aos="fade-up" data-aos-duration="1200">
+          Entering the Indian market requires more than just registration—it demands strategic planning, regulatory clarity, and structured execution.
+        </p>
+        <p data-aos="fade-up" data-aos-duration="1200">
+          Our inbound corporate services cover business setup, compliance, approvals, and legal structuring aligned with Indian laws.
+        </p>
+        <p data-aos="fade-up" data-aos-duration="1200">
+          Entering the Indian market requires more than just registration—it demands strategic planning, regulatory clarity, and structured execution.
+        </p>
+        <p data-aos="fade-up" data-aos-duration="1200">
+          Our inbound corporate services cover business setup, compliance, approvals, and legal structuring aligned with Indian laws.
+        </p>
+      </div>
+
+    </div>
+  </div>
 
 </section>
 
@@ -623,7 +623,7 @@ include_once('elements/header.php');
     transform: translateY(-5px);
   }
 
- 
+
   .card-dashed h6 {
     font-size: 0.92rem;
     font-weight: 700;
@@ -727,7 +727,7 @@ include_once('elements/header.php');
           width: 90px;
           height: 90px;
         }
- 
+
         .card-dashed .card-front {
           transition: all 0.3s ease;
           opacity: 1;
@@ -810,7 +810,7 @@ include_once('elements/header.php');
                 <h6>GST Filing</h6>
               </div>
 
-               <!-- Hover: title + description (visible on hover) -->
+              <!-- Hover: title + description (visible on hover) -->
               <div class="card-hover-text text-center">
                 <h6>GST Filing</h6>
                 <p> Prepare and file GST returns on time, in accordance with government regulations.</p>
@@ -848,14 +848,14 @@ include_once('elements/header.php');
         <div class="col-6 col-sm-3 reveal delay-4">
           <div class="card-dashed">
 
-          <div class="card-front text-center">
-            <div class="mb-3">
-              <img src="assets/img/icon/prosper-3.png" alt="Payroll Processing" class="prosper-icon">
+            <div class="card-front text-center">
+              <div class="mb-3">
+                <img src="assets/img/icon/prosper-3.png" alt="Payroll Processing" class="prosper-icon">
+              </div>
+              <h6>Payroll Processing</h6>
             </div>
-            <h6>Payroll Processing</h6>
-          </div>
 
-          <div class="card-hover-text text-center">
+            <div class="card-hover-text text-center">
               <h6>Payroll Processing</h6>
               <p>Maintaining accurate business accounts by recording daily financial transactions.</p>
             </div>
@@ -884,17 +884,17 @@ include_once('elements/header.php');
         <!-- Audit Coordination -->
         <div class="col-6 col-sm-3 reveal delay-6">
           <div class="card-dashed">
-          <div class="card-front text-center">
-            <div class="mb-3">
-              <img src="assets/img/icon/prosper-5.png" alt="Audit Coordination" class="prosper-icon">
+            <div class="card-front text-center">
+              <div class="mb-3">
+                <img src="assets/img/icon/prosper-5.png" alt="Audit Coordination" class="prosper-icon">
+              </div>
+              <h6>Audit Coordination</h6>
             </div>
-            <h6>Audit Coordination</h6>
-          </div>
 
-          <div class="card-hover-text text-center">
+            <div class="card-hover-text text-center">
               <h6>Audit Coordination</h6>
               <p>Supporting and coordinating with auditors to ensure a smooth audit completion.</p>
-          </div>
+            </div>
 
 
           </div>
@@ -903,17 +903,17 @@ include_once('elements/header.php');
         <!-- Financial Reporting -->
         <div class="col-6 col-sm-3 reveal delay-7">
           <div class="card-dashed">
-              <div class="card-front text-center">
-                <div class="mb-3">
-                  <img src="assets/img/icon/prosper-6.png" alt="Financial Reporting" class="prosper-icon">
-                </div>
-                <h6>Financial Reporting</h6>
+            <div class="card-front text-center">
+              <div class="mb-3">
+                <img src="assets/img/icon/prosper-6.png" alt="Financial Reporting" class="prosper-icon">
               </div>
+              <h6>Financial Reporting</h6>
+            </div>
 
-              <div class="card-hover-text text-center">
-                <h6>Financial Reporting</h6>
-                <p> Creating profit and loss, balance sheet, and cash flow statements.</p>
-              </div>
+            <div class="card-hover-text text-center">
+              <h6>Financial Reporting</h6>
+              <p> Creating profit and loss, balance sheet, and cash flow statements.</p>
+            </div>
           </div>
         </div>
 
@@ -925,40 +925,45 @@ include_once('elements/header.php');
 <!-- CORPORATE RESTRUCTURING -->
 <style>
   .step-card {
-      padding:28px;
-      margin-bottom:40px;
-      border-left:2px solid var(--euphoria-red);
-      align-items:flex-start;
-      gap:20px;
-      transition:box-shadow .3s, transform .3s;
+    padding: 28px;
+    margin-bottom: 40px;
+    border-left: 2px solid var(--euphoria-red);
+    align-items: flex-start;
+    gap: 20px;
+    transition: box-shadow .3s, transform .3s;
   }
-  .step-card:hover { 
-      box-shadow:0 8px 30px rgba(37,53,111,.14); 
-      transform:translateX(6px); 
+
+  .step-card:hover {
+    box-shadow: 0 8px 30px rgba(37, 53, 111, .14);
+    transform: translateX(6px);
   }
+
   .step-num {
-      font-size:6rem;
-      font-weight:700;
-      color:var(--euphoria-blue);
-      line-height:1;
-      min-width:60px;
+    font-size: 6rem;
+    font-weight: 700;
+    color: var(--euphoria-blue);
+    line-height: 1;
+    min-width: 60px;
   }
-  .step-card h5 { 
-      font-size:1.05rem; 
-      color:var(--euphoria-blue); 
-      font-weight:700; 
-      margin-bottom:8px; 
+
+  .step-card h5 {
+    font-size: 1.05rem;
+    color: var(--euphoria-blue);
+    font-weight: 700;
+    margin-bottom: 8px;
   }
-  .step-card p { 
-      font-size:.86rem; 
-      color:#666; 
-      margin:0; 
+
+  .step-card p {
+    font-size: .86rem;
+    color: #666;
+    margin: 0;
   }
-  .step-img { 
-      border-radius:15px; 
-      width:100%; 
-      height:240px; 
-      object-fit:cover; 
+
+  .step-img {
+    border-radius: 15px;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
   }
 
   .step-card:hover {
@@ -1118,17 +1123,23 @@ include_once('elements/header.php');
   }
 
   .lic-card h6 {
-    font-size: .95rem;
+    font-size: 22px;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
     font-weight: 700;
     color: var(--euphoria-blue);
     transition: color .3s;
   }
 
   .lic-card p {
-    font-size: .82rem;
-    color: #666;
+    font-size: 16px;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
+    color: #666666;
     margin: 0;
     transition: color .3s;
+  }
+
+  .lic-card:hover .permit-icon {
+    filter: brightness(0) invert(1);
   }
 
   .lic-sidebar {
@@ -1139,16 +1150,16 @@ include_once('elements/header.php');
   }
 
   .lic-sidebar h5 {
-    color: #ffc107;
+    color: #fff;
     margin-bottom: 16px;
   }
 
   .lic-sidebar .lic-item {
     border-bottom: 1px solid rgba(255, 255, 255, .12);
     padding: 10px 0;
-    font-size: .88rem;
+    font-size: 20px;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
     display: flex;
-    align-items: center;
     gap: 10px;
   }
 
@@ -1156,8 +1167,8 @@ include_once('elements/header.php');
     border: none;
   }
 
-  .lic-sidebar .lic-item i {
-    color: #ffc107;
+  .lic-item img {
+      filter: brightness(0) invert(1);
   }
 </style>
 
@@ -1181,42 +1192,42 @@ include_once('elements/header.php');
         <div class="row g-3">
           <div class="col-sm-6 reveal">
             <div class="lic-card">
-              <i class="bi bi-building-gear"></i>
+              <img src="assets/img/icon/permit-icon1.png" class="mb-3 permit-icon" alt="Shop & Establishment License">
               <h6>Shop & Establishment License</h6>
-              <p>Registration and renewal of Shop Act license for all types of businesses and establishments.</p>
+              <p>We assist businesses in obtaining a Shop and Establishment License, which allows them to operate legally while adhering to local worker and business regulations.</p>
             </div>
           </div>
           <div class="col-sm-6 reveal">
             <div class="lic-card">
-              <i class="bi bi-geo-alt"></i>
-              <h6>MSME / Udyam Registration</h6>
-              <p>Quick Udyam registration to access government schemes and benefits for MSMEs.</p>
+              <img src="assets/img/icon/permit-icon2.png" class="mb-3 permit-icon" alt="Professional Tax Registration">
+              <h6>Professional Tax Registration</h6>
+              <p>Our team handles professional tax registration, which helps employers and professionals comply with state tax laws and avoid penalties by registering and filing on time.</p>
             </div>
           </div>
           <div class="col-sm-6 reveal">
             <div class="lic-card">
-              <i class="bi bi-truck"></i>
+              <img src="assets/img/icon/permit-icon3.png" class="mb-3 permit-icon" alt="Trade License">
+              <h6>Trade License</h6>
+              <p>We assist individuals in obtaining trade licenses, which are required to legally operate a business. We ensure that all paperwork is in order, approvals are in place, and rules are followed.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 reveal">
+            <div class="lic-card">
+              <img src="assets/img/icon/permit-icon4.png" class="mb-3 permit-icon" alt="Import Export Code (IEC)">
               <h6>Import Export Code (IEC)</h6>
-              <p>IEC registration for businesses engaged in international trade and commerce.</p>
+              <p>We help businesses obtain the Import Export Code (IEC), which allows them to legally trade with other countries and expand into new markets around the world.</p>
             </div>
           </div>
-          <div class="col-sm-6 reveal">
+          <div class="col-sm-6 reveal d-none">
             <div class="lic-card">
-              <i class="bi bi-bank2"></i>
-              <h6>Legal Asset Fund (LAS)</h6>
-              <p>Advisory and documentation support for loan against shares and securities.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 reveal">
-            <div class="lic-card">
-              <i class="bi bi-recycle"></i>
+              <img src="assets/img/icon/permit-icon4.png" class="mb-3 permit-icon" alt="Import Export Code (IEC)">
               <h6>Pollution Control Certificate</h6>
               <p>Obtaining NOC and consent from State Pollution Control Boards for industrial units.</p>
             </div>
           </div>
-          <div class="col-sm-6 reveal">
+          <div class="col-sm-6 reveal d-none">
             <div class="lic-card">
-              <i class="bi bi-shield-lock"></i>
+              <img src="assets/img/icon/permit-icon4.png" class="mb-3 permit-icon" alt="Import Export Code (IEC)">
               <h6>Trade Mark Registration</h6>
               <p>Brand protection through trademark search, filing, and registration services.</p>
             </div>
@@ -1225,15 +1236,16 @@ include_once('elements/header.php');
       </div>
       <div class="col-lg-4 reveal-right">
         <div class="lic-sidebar">
+         
           <h5><i class="bi bi-list-check me-2"></i>Quick Checklist</h5>
-          <div class="lic-item"><i class="bi bi-check-circle-fill"></i> GST Registration</div>
-          <div class="lic-item"><i class="bi bi-check-circle-fill"></i> PAN / TAN Registration</div>
-          <div class="lic-item"><i class="bi bi-check-circle-fill"></i> Professional Tax</div>
-          <div class="lic-item"><i class="bi bi-check-circle-fill"></i> PF / ESI Registration</div>
-          <div class="lic-item"><i class="bi bi-check-circle-fill"></i> FSSAI License</div>
-          <div class="lic-item"><i class="bi bi-check-circle-fill"></i> ISO Certification</div>
-          <div class="lic-item"><i class="bi bi-check-circle-fill"></i> Drug License</div>
-          <div class="lic-item"><i class="bi bi-check-circle-fill"></i> Environmental Clearance</div>
+          <div class="lic-item"><img src="assets/img/icon/Group.png" alt=""><span>GST Registration</span></div>
+          <div class="lic-item"><img src="assets/img/icon/Group.png" alt=""> PAN / TAN Registration</div>
+          <div class="lic-item"><img src="assets/img/icon/Group.png" alt=""> Professional Tax</div>
+          <div class="lic-item"><img src="assets/img/icon/Group.png" alt=""> PF / ESI Registration</div>
+          <div class="lic-item"><img src="assets/img/icon/Group.png" alt=""> FSSAI License</div>
+          <div class="lic-item"><img src="assets/img/icon/Group.png" alt=""> ISO Certification</div>
+          <div class="lic-item"><img src="assets/img/icon/Group.png" alt=""> Drug License</div>
+          <div class="lic-item"><img src="assets/img/icon/Group.png" alt=""> Environmental Clearance</div>
           <div class="mt-4 text-center">
             <a href="#" class="hero-btn" style="font-size:.85rem;padding:10px 22px;">Get Started <i class="bi bi-arrow-right ms-1"></i></a>
           </div>
@@ -1256,12 +1268,13 @@ include_once('elements/header.php');
   .adv-list-item:last-child {
     border: none;
   }
+
   .guidance-section {
     padding: 80px 0 60px;
     position: relative;
     background-color: #fff;
     /* overflow: hidden; */
-}
+  }
 
   .adv-icon {
     min-width: 42px;
@@ -1317,7 +1330,7 @@ include_once('elements/header.php');
 </style>
 
 <section id="advisory-consultancy" class="about-section advisory-section py-5" style="overflow: unset;">
-  
+
   <div class="">
     <div class="advisory-border container position-relative">
 
@@ -1444,14 +1457,14 @@ include_once('elements/header.php');
 </style>
 
 <section id="additional-service" class="additional-section py-5">
-  
+
   <div class="container position-relative">
 
     <div class="about-title-bg">Extensions</div>
     <div class="container ">
 
       <div class="row align-items-center">
-          
+
         <h2 class="about-title h1" style="margin-top: 80px;" data-aos="fade-up" data-aos-duration="500">Additional Services</h2>
         <p class="text-muted mx-auto text-center" data-aos="fade-up" data-aos-duration="800">
           In addition to our core compliance and advisory offerings, we provide a range of additional business support services designed to simplify operations and ensure complete regulatory compliance. Our value-added services help startups, SMEs, and established companies efficiently manage essential registrations, certifications, and corporate requirements.

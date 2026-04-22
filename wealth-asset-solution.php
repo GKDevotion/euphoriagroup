@@ -84,18 +84,12 @@ include_once('elements/header.php');
         <img src="assets/img/stock-coin.png" class="illustration">
       </div>
       <div class="col-md-7 text-content">
-        <p>
-          Entering the Indian market requires more than just registration—it demands strategic planning, regulatory clarity, and structured execution.
+        <p style="font-size: 18px; font-family: 'Anek Kannada', 'Poppins', sans-serif;">
+          Wealth & Asset Solutions are designed to help individuals, families, and business owners grow, protect, and strategically manage their financial assets. Our comprehensive advisory approach focuses on wealth creation, capital preservation, risk management, and long-term financial security.
         </p>
-        <p>
-          Our inbound corporate services cover business setup, compliance, approvals, and legal structuring aligned with Indian laws.
-        </p>
-        <p>
-          Entering the Indian market requires more than just registration—it demands strategic planning, regulatory clarity, and structured execution.
-        </p>
-        <p>
-          Our inbound corporate services cover business setup, compliance, approvals, and legal structuring aligned with Indian laws.
-        </p>
+        <p style="font-size: 18px; font-family: 'Anek Kannada', 'Poppins', sans-serif;">
+          We provide tailored strategies across multiple asset classes and financial instruments to ensure diversified growth and structured wealth planning aligned with your financial goals.
+        </p> 
       </div>
     </div>
   </div>
@@ -135,6 +129,7 @@ include_once('elements/header.php');
 
   .stock-card p {
     color: #6c757d;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
     font-size: 16px;
   }
 
@@ -165,11 +160,108 @@ include_once('elements/header.php');
           <img src="assets/img/stock-graph.png" alt="Stock Market">
         </div>
       </div>
+<style>
+    /* Watermark ghost text */
+       /* ── Card ── */
+    .stock-card {
+      position: relative;
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 61px 48px 48px;
+      box-shadow: 0 6px 40px rgba(13, 34, 73, 0.08);
+      overflow: hidden;
+    }
+ 
+ 
+    /* Watermark ghost text */
+    .stock-card::before {
+    content: "Trading";
+    position: absolute;
+    top: 20px;
+    left: 35px;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
+    font-size: 156px;
+    font-weight: 700;
+    color: #CC2831;
+    opacity: 0.2;
+    letter-spacing: -2px;
+    pointer-events: none;
+    user-select: none;
+    line-height: 1;
+    }
+ 
+    /* ── Title ── */
+    .stock-title {
+    font-family: "Anek Kannada", "Poppins", sans-serif;
+    font-size: clamp(1.6rem, 3vw, 2.6rem);
+    font-weight: 700; 
+    line-height: 1.25;
+    margin-bottom: 5.25rem;
+    position: relative; 
+    color: #25356F;
+    }
 
+    .stock-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px 24px;
+    }
+ 
+  
+ 
+     .btn-invest {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #25356F;
+      color: #fff;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 14px 28px;
+      border-radius: 8px;
+      border: none;
+      text-decoration: none;
+      transition: background 0.25s, transform 0.2s;
+      margin-top: 36px;
+    }
+ 
+    .btn-invest:hover {
+      background: #25356F;
+      transform: translateY(-2px);
+      color: #fff;
+    }
+ 
+    .btn-invest svg {
+      width: 16px;
+      height: 16px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+ 
+    /* ── Responsive tweaks ── */
+    @media (max-width: 575px) {
+      .stock-card {
+        padding: 36px 24px 32px;
+      }
+      .stock-card::before {
+        font-size: 72px;
+      }
+      .stock-list {
+        grid-template-columns: 1fr;
+      }
+    }
+</style>
       <!-- Right Content -->
       <div class="col-lg-6 px-5">
         <div class="stock-card">
-          <h3 class="stock-title mb-3">Stock Market Opportunities</h3>
+          <h3 class="stock-title">Stock Market Opportunities</h3>
           <p>
             India is one of the fastest-growing capital markets in the world, offering significant opportunities for wealth creation through equities, IPOs, derivatives, and diversified investment instruments. Our Indian Stock Broker Services provide seamless access to the Indian Stock Market, enabling resident investors, NRIs, and global clients to participate confidently in India's dynamic financial ecosystem.
           </p>
@@ -177,12 +269,35 @@ include_once('elements/header.php');
             We offer strategic stock market investment advisory in India, portfolio diversification strategies, and risk-managed trading solutions aligned with your financial goals. From account opening and regulatory compliance to market research and transaction support, we ensure a structured and transparent investment experience.
           </p>
 
-          <ul class="list-unstyled stock-list mt-4">
-            <li><span class="check-icon">✔</span>Expert Stock Market Advisory</li>
-            <li><span class="check-icon">✔</span>Real-Time Market Insights</li>
-            <li><span class="check-icon">✔</span>Diversified Investment Strategies</li>
-            <li><span class="check-icon">✔</span>Secure & Transparent Trading</li>
+          <ul class="stock-list mt-4">
+            <li>
+              <img src="assets/img/icon/Checke.png" alt="">
+              Expert Stock Market Advisory
+            </li>
+            <li>
+              <img src="assets/img/icon/Checke.png" alt="">
+              Real-Time Market Insights
+            </li>
+            <li>
+              <img src="assets/img/icon/Checke.png" alt="">
+              Diversified Investment Strategies
+            </li>
+            <li>
+              <img src="assets/img/icon/Checke.png" alt="">
+              Secure &amp; Transparent Trading
+            </li>
           </ul>
+
+            <!-- CTA -->
+          <a href="#" class="btn-invest">
+            Start Investing
+            <!-- Arrow-up-right icon -->
+            <svg viewBox="0 0 24 24">
+              <line x1="7" y1="17" x2="17" y2="7"/>
+              <polyline points="7 7 17 7 17 17"/>
+            </svg>
+          </a>
+ 
         </div>
       </div>
 
@@ -349,45 +464,92 @@ include_once('elements/header.php');
         rgba(37, 53, 111, .93) 100%);
   }
 
+  /* ── CARD ── */
+  .capital-market-card {
+    position: relative;
+    flex-shrink: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1.5px solid var(--card-border);
+    box-shadow: 0 4px 20px rgba(37, 53, 111, 0.08);
+    background: #fff;
+    transition: transform .35s ease, box-shadow .35s ease;
+    animation: cardReveal .6s ease both;
+    display: flex;
+    flex-direction: column;
+    height: auto; /* Remove fixed height */
+  }
+
+  .capital-market-card img.card-bg {
+    width: 100%;
+    height: 200px;        /* Fixed image height */
+    object-fit: cover;
+    display: block;
+    transition: transform .5s ease;
+    flex-shrink: 0;
+  }
+
+  .capital-market-card:hover img.card-bg {
+    transform: scale(1.07);
+  }
+
+  /* Remove the overlay since we no longer need gradient over image */
+  .card-overlay {
+    display: none;
+  }
+
   .card-body-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 15px 15px 15px;
-    color: #000;
-    background-color: #fff;
+    padding: 16px;
+    background: #fff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .card-body-content h5 {
-
-    font-size: clamp(14px, 1.6vw, 18px);
-    font-weight: 600;
-    margin-bottom: 7px;
+    font-size: clamp(14px, 1.6vw, 17px);
+    font-family: "Anek Kannada", "Poppins", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 8px;
     line-height: 1.25;
+    color: var(--euphoria-blue);
   }
 
   .card-body-content p {
-    font-size: clamp(11px, 1.1vw, 15px);
-    color: #000;
-    line-height: 1.5;
+    font-size: 12.5px;
+    text-align: center;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
+    color: #444;
+    line-height: 1.55;
+    margin: 0;
   }
 
-  /* hover badge */
-  .card-accent {
-    position: absolute;
-    top: 14px;
-    right: 14px;
-    width: 34px;
-    height: 34px;
-    background: var(--euphoria-red);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transform: scale(.6);
-    transition: opacity .3s, transform .3s;
+  /* ── RESPONSIVE CARD WIDTHS ── */
+  @media (max-width: 991px) {
+    .capital-market-card {
+      flex: 0 0 280px;
+    }
+    .capital-market-card img.card-bg {
+      height: 170px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .capital-market-card {
+      flex: 0 0 85vw;
+    }
+    .capital-market-card img.card-bg {
+      height: 180px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .capital-market-card {
+      flex: 0 0 90vw;
+    }
   }
 
   .capital-market-card:hover .card-accent {
@@ -586,72 +748,70 @@ include_once('elements/header.php');
           <!-- Card 1 -->
           <div class="capital-market-card">
             <img class="card-bg" src="assets/img/capital-equity.png" alt="Domestic Flights" />
-            <div class="card-accent"><svg viewBox="0 0 24 24">
-                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
-              </svg></div>
+             
             <div class="card-body-content">
-              <h5>Domestic Flights</h5>
-              <p>We provide seamless booking for domestic flights, connecting you to major destinations in India with trusted airline partners.</p>
+              <h5>Equity (Share) Investment</h5>
+              <p>Strategic equity investment services in the Indian stock market are designed for long-term wealth creation and capital appreciation. We provide research-backed stock selection, market insights, and disciplined investment strategies aligned with your financial objectives.</p>
             </div>
           </div>
 
           <!-- Card 2 -->
           <div class="capital-market-card">
             <img class="card-bg" src="assets/img/capital-intraday.png" alt="Competitive Airfare Deals" />
-            <div class="card-accent"><svg viewBox="0 0 24 24">
-                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
-              </svg></div>
+             
             <div class="card-body-content">
-              <h5>Competitive Airfare Deals</h5>
-              <p>Our platform helps you access competitive flight fares and special travel deals, ensuring low-cost travel planning for all.</p>
+              <h5>Portfolio Management (PMS)</h5>
+              <p>Customised Portfolio Management Services (PMS) offering professionally managed, diversified investment portfolios tailored to your risk profile and return expectations. Our PMS solutions focus on structured asset allocation and consistent performance monitoring.</p>
             </div>
           </div>
 
           <!-- Card 3 -->
           <div class="capital-market-card">
             <img class="card-bg" src="assets/img/capital-ipo.png" alt="Wide Airline Network" />
-            <div class="card-accent"><svg viewBox="0 0 24 24">
-                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
-              </svg></div>
+             
             <div class="card-body-content">
-              <h5>Wide Airline Network</h5>
-              <p>We collaborate with leading global airlines to offer a wide selection of flight options, schedules, and routes for convenient planning.</p>
+              <h5>Intraday & Swing Trading Support</h5>
+              <p>Expert intraday and swing trading support with technical analysis, market trend insights, and risk-controlled trading strategies. We help traders capitalise on short-term price movements in the Indian equity markets.</p>
             </div>
           </div>
 
           <!-- Card 4 -->
           <div class="capital-market-card">
             <img class="card-bg" src="assets/img/capital-portfolio.png" alt="Corporate Travel Management" />
-            <div class="card-accent"><svg viewBox="0 0 24 24">
-                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
-              </svg></div>
+             
             <div class="card-body-content">
-              <h5>Corporate Travel Management</h5>
-              <p>Our services support corporate travel needs with efficient booking management, travel policy compliance, and cost control.</p>
+              <h5>IPO & OFS Investment Guidance</h5>
+              <p>Comprehensive guidance for investing in IPOs (Initial Public Offerings) and OFS (Offer for Sale) opportunities in India. We assist in identifying high-potential listings and managing subscription processes efficiently.</p>
             </div>
           </div>
 
           <!-- Card 5 -->
           <div class="capital-market-card">
             <img class="card-bg" src="assets/img/capital-equity.png" alt="Easy Rescheduling" />
-            <div class="card-accent"><svg viewBox="0 0 24 24">
-                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
-              </svg></div>
+             
             <div class="card-body-content">
-              <h5>Easy Rescheduling</h5>
-              <p>We offer hassle-free flight rescheduling and cancellation options to ensure a smooth travel experience whenever plans change.</p>
+              <h5>Mutual Fund Advisory</h5>
+              <p>Professional mutual fund advisory services focused on diversified investment planning, fund selection, and long-term portfolio growth across equity, debt, and hybrid schemes.</p>
             </div>
           </div>
 
           <!-- Card 6 -->
           <div class="capital-market-card">
             <img class="card-bg" src="assets/img/capital-intraday.png" alt="24/7 Support" />
-            <div class="card-accent"><svg viewBox="0 0 24 24">
-                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
-              </svg></div>
+            
             <div class="card-body-content">
-              <h5>24/7 Customer Support</h5>
-              <p>Our dedicated support team is available round the clock to assist with bookings, queries, and any travel emergencies.</p>
+              <h5>SIP (Systematic Investment Plan)</h5>
+              <p>Structured SIP investment planning to build wealth consistently through disciplined, periodic investments in mutual funds. Ideal for long-term financial planning and goal-based investment strategies.</p>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="capital-market-card">
+            <img class="card-bg" src="assets/img/capital-intraday.png" alt="24/7 Support" />
+            
+            <div class="card-body-content">
+              <h5>Derivatives Trading (F&O)</h5>
+              <p>Specialised advisory in Futures & Options (F&O) trading with structured strategies designed for hedging, speculation, and portfolio risk management in volatile market conditions.</p>
             </div>
           </div>
 
@@ -845,7 +1005,7 @@ include_once('elements/header.php');
 
   /* Cards */
   .elite-insurance-card {
-    background: #2f3f7f;
+    background: #25356F;
     color: #fff;
     border-radius: 20px;
     padding: 35px 30px;
@@ -868,6 +1028,8 @@ include_once('elements/header.php');
   /* Card Text */
   .elite-insurance-card p {
     font-size: 18px;
+    font-family: "Anek Kannada", "Poppins";
+    text-align: center;
     margin-bottom: 15px;
     position: relative;
     z-index: 2;
@@ -990,17 +1152,11 @@ include_once('elements/header.php');
       <div class="col-lg-4">
         <div class="elite-insurance-card">
           <p>
-            We provide access to premium life and general insurance products from IRDAI-approved insurers,
-            ensuring regulatory compliance, transparency, and reliability.
+            We provide access to premium life and general insurance products from IRDAI-approved insurers, ensuring regulatory compliance, transparency, and reliability. From high-value life insurance coverage and estate planning solutions to asset protection, health coverage, and business risk management, our elite insurance advisory focuses on safeguarding both personal and corporate wealth.
           </p>
           <p>
-            From high-value life insurance coverage and estate planning solutions to asset protection,
-            health coverage, and business risk management, our elite insurance advisory focuses on safeguarding
-            both personal and corporate wealth.
-          </p>
-          <p>
-            Enhance your financial security with tailored insurance solutions designed to protect what matters most.
-          </p>
+            Enhance your financial security with tailored insurance solutions designed to protect what matters most. From life and health coverage to asset and business protection, we ensure comprehensive risk management with trusted advisory and reliable support. 
+          </p> 
         </div>
       </div>
 
@@ -1015,17 +1171,11 @@ include_once('elements/header.php');
       <div class="col-lg-4">
         <div class="elite-insurance-card">
           <p>
-            Elite Insurance Solutions in India are designed for high-net-worth individuals, business owners,
-            and families seeking comprehensive financial protection and wealth preservation.
+            Elite Insurance Solutions in India are designed for high-net-worth individuals, business owners, and families seeking comprehensive financial protection and wealth preservation. Our approach goes beyond basic coverage by offering customised insurance planning strategies aligned with your lifestyle, assets, liabilities, and long-term financial objectives.
           </p>
           <p>
-            Our approach goes beyond basic coverage by offering customised insurance planning strategies aligned
-            with your lifestyle, assets, liabilities, and long-term financial objectives.
-          </p>
-          <p>
-            We help you safeguard your wealth, protect your family, and ensure long-term peace of mind
-            with strategic insurance planning.
-          </p>
+            Our elite insurance services go beyond basic coverage by offering personalized plans aligned with your financial goals. We help you safeguard your wealth, protect your family, and ensure long-term peace of mind with strategic insurance planning.
+          </p> 
         </div>
       </div>
 
@@ -1133,6 +1283,48 @@ include_once('elements/header.php');
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   }
 
+  .security-title {
+    color: var(--euphoria-blue);
+    font-weight: 600;
+    margin-bottom: 50px; 
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+  }
+
+    .btn-real-estate {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #25356F;
+      color: #fff;
+      font-family: "Anek Kannada", "Poppins";
+      font-weight: 400;
+      font-size: 1rem; 
+      padding: 14px 28px;
+      border-radius: 8px;
+      border: none;
+      text-decoration: none;
+      transition: background 0.25s, transform 0.2s; 
+    }
+ 
+    .btn-real-estate:hover {
+      background: #25356F;
+      transform: translateY(-2px);
+      color: #fff;
+    }
+ 
+    .btn-real-estate svg {
+      width: 16px;
+      height: 16px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
   /* Responsive */
   /* --- Insurance Solutions Mobile Styles --- */
 
@@ -1216,7 +1408,7 @@ include_once('elements/header.php');
 
   <div class="container">
     <div class="row align-items-center">
-      <h2 class="about-title h1">Insurance Solution</h2>
+      <h2 class="security-title h1">Insurance Solution</h2>
     </div>
   </div>
 
@@ -1279,6 +1471,32 @@ include_once('elements/header.php');
     padding: 100px 0;
   }
 
+  .section-title-bg {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 9rem;
+    font-weight: 600;
+    color: var(--red-blur);
+    z-index: 0;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .section-title {
+    color: var(--euphoria-blue);
+    font-weight: 600;
+    margin-bottom: 50px;
+    margin-top: 15px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+  }
+
   .image-wrapper {
     position: relative;
     border-radius: 25px;
@@ -1298,7 +1516,7 @@ include_once('elements/header.php');
     right: -50px;
     transform: translateY(-50%);
     background: rgba(255, 255, 255, 0.95);
-    padding: 40px;
+    padding: 65px;
     border-radius: 20px;
     max-width: 800px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
@@ -1311,7 +1529,8 @@ include_once('elements/header.php');
 
   .content-card p {
     font-size: 17px;
-    color: #6c757d;
+    font-family: "Anek Kannada", "Poppins";
+    color: #666666;
     line-height: 1.6;
   }
 
@@ -1390,14 +1609,6 @@ include_once('elements/header.php');
 
 <section class="realestate-section about-section">
 
-  <div class="about-title-bg">Properties</div>
-
-  <div class="container">
-    <div class="row align-items-center">
-      <h2 class="about-title h1">Real Estate</h2>
-    </div>
-  </div>
-
   <div class="container">
     <div class="image-wrapper">
 
@@ -1406,7 +1617,13 @@ include_once('elements/header.php');
 
       <!-- Content Card -->
       <div class="content-card">
+        <div class="section-title-bg">Properties</div>
 
+        <div class="container">
+          <div class="row align-items-center">
+            <h2 class="section-title">Real Estate</h2>
+          </div>
+        </div>
         <p>
           Real Estate Investment Advisory focuses on helping individuals and investors build stable, high-value property portfolios through strategic planning and market-driven insights.
         </p>
@@ -1416,7 +1633,19 @@ include_once('elements/header.php');
         <p>
           Whether you are looking for rental income, capital growth, or portfolio diversification, our solutions are designed to deliver sustainable and secure investment outcomes.
         </p>
+
+           <!-- CTA -->
+          <a href="#" class="btn-real-estate">
+            Explore Properties
+            <!-- Arrow-up-right icon -->
+            <svg viewBox="0 0 24 24">
+              <line x1="7" y1="17" x2="17" y2="7"/>
+              <polyline points="7 7 17 7 17 17"/>
+            </svg>
+          </a>
       </div>
+
+
     </div>
   </div>
 </section>
