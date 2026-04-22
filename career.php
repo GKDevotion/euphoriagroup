@@ -93,6 +93,7 @@ include_once('elements/header.php');
     .about-text p {
         font-size: 1rem;
         line-height: 1.8;
+        font-family: "Anek Kannada", "Poppins";
         color: #4b5563;
         margin-bottom: 20px;
     }
@@ -200,8 +201,9 @@ include_once('elements/header.php');
     /* Watermark */
     .carrier-benefits::before {
         content: "Let's Discuss";
+        font-family: "Anek Kannada", "Poppins";
         position: absolute;
-        top: 21px;
+        top: 40px;
         left: 51%;
         transform: translateX(-50%);
         font-size: clamp(60px, 10vw, 115px);
@@ -218,7 +220,7 @@ include_once('elements/header.php');
     .carrier-heading {
         position: relative;
         z-index: 1;
-        color: #1a2456;
+        color: #25356F;
         font-size: clamp(1.6rem, 3vw, 2.2rem);
         font-weight: 600;
         text-align: center;
@@ -251,13 +253,14 @@ include_once('elements/header.php');
 
     .job-title-row {
         display: flex;
+        font-family: "Anek Kannada", "Poppins";
         align-items: center;
         justify-content: space-between;
         gap: 12px;
     }
 
     .job-title {
-        font-size: 1.1rem;
+        font-size: 20px;
         font-weight: 700;
         color: #25356f;
         margin: 0;
@@ -298,19 +301,25 @@ include_once('elements/header.php');
         gap: 8px;
         padding-right: 24px;
         margin-right: 0;
-        font-size: 0.85rem;
+        font-family: "Anek Kannada", "Poppins";
+        font-size: 16px;
         color: #4b5563;
         font-weight: 400;
     }
 
+    .meta-cell span{
+        color: #25356F;
+        font-weight: 600; 
+    }
+
     .meta-cell+.meta-cell {
         border-left: 1.5px solid #c8d0e0;
-        padding-left: 24px;
+        padding-left: 24px; 
     }
 
     .meta-cell strong {
-        color: #1e1e2e;
-        font-weight: 600;
+        color: #000;
+        font-weight: 300; 
     }
 
     /* ── BODY ── */
@@ -320,16 +329,18 @@ include_once('elements/header.php');
     }
 
     .job-body .intro {
-        font-size: 0.92rem;
+        font-size: 18px;
         line-height: 1.75;
+        font-family: "Anek Kannada", "Poppins";
         color: #4b5563;
         margin: 20px 0 22px;
     }
 
     .job-body h6 {
-        font-size: 0.95rem;
-        font-weight: 700;
-        color: #1e1e2e;
+        font-size:  20px;
+        font-weight: 600;
+        font-family: "Anek Kannada", "Poppins";
+        color: #000000;
         margin-bottom: 12px;
     }
 
@@ -343,8 +354,9 @@ include_once('elements/header.php');
         display: flex;
         align-items: flex-start;
         gap: 10px;
-        font-size: 0.88rem;
-        color: #4b5563;
+        font-family: "Anek Kannada", "Poppins";
+        font-size: 18px;
+        color: #666666;
         line-height: 1.65;
         padding: 4px 0;
     }
@@ -352,6 +364,7 @@ include_once('elements/header.php');
     .job-body ul li::before {
         content: '';
         width: 8px;
+        font-family: "Anek Kannada", "Poppins";
         height: 8px;
         border-radius: 50%;
         background: #25356f;
@@ -624,7 +637,7 @@ include_once('elements/header.php');
     .why-euphoria-heading {
         position: relative;
         z-index: 1;
-        color: #1a2456;
+        color: #25356F;
         font-size: clamp(1.6rem, 3vw, 2.2rem);
         font-weight: 700;
         text-align: center;
@@ -652,9 +665,10 @@ include_once('elements/header.php');
     /* ── INTRO ── */
     .intro-text {
         text-align: center;
-        font-size: 0.9rem;
+        font-size: 18px;
         line-height: 1.9;
-        color: #4b5563;
+        font-family: "Anek Kannada", "Poppins";
+        color: #666666;
         max-width: 888px;
         margin: 0 auto 36px;
     }
@@ -686,8 +700,8 @@ include_once('elements/header.php');
 
     .feat-label {
         font-size: 0.92rem;
-        font-weight: 600;
-        color: #25356f;
+        font-weight: 500;
+        color: #000;
         line-height: 1.45;
     }
 
@@ -762,31 +776,21 @@ include_once('elements/header.php');
 
                     <div class="feature-item">
                         <div class="feat-icon"><!-- diamond-arrow SVG -->
-                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="5.5" y="5.5" width="25" height="25" rx="5" transform="rotate(45 18 18)" fill="#25356f" fill-opacity="0.12" />
-                                <polygon points="13,18 23,18 23,18" fill="none" />
-                                <path d="M14 18h9m0 0-4-4m4 4-4 4" stroke="#25356f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
+                            <img src="assets/img/icon/Group.png" alt="">
                         </div>
                         <span class="feat-label">Inbound &amp; Outbound</span>
                     </div>
 
                     <div class="feature-item">
                         <div class="feat-icon">
-                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                                <rect x="5.5" y="5.5" width="25" height="25" rx="5" transform="rotate(45 18 18)" fill="#25356f" fill-opacity="0.12" />
-                                <path d="M14 18h9m0 0-4-4m4 4-4 4" stroke="#25356f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
+                            <img src="assets/img/icon/Group.png" alt="">
                         </div>
                         <span class="feat-label">Transparent, ethical, and professional culture</span>
                     </div>
 
                     <div class="feature-item">
                         <div class="feat-icon">
-                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                                <rect x="5.5" y="5.5" width="25" height="25" rx="5" transform="rotate(45 18 18)" fill="#25356f" fill-opacity="0.12" />
-                                <path d="M14 18h9m0 0-4-4m4 4-4 4" stroke="#25356f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
+                            <img src="assets/img/icon/Group.png" alt="">
                         </div>
                         <span class="feat-label">Inclusive workplace that values diverse perspectives</span>
                     </div>
@@ -798,30 +802,21 @@ include_once('elements/header.php');
 
                     <div class="feature-item">
                         <div class="feat-icon">
-                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                                <rect x="5.5" y="5.5" width="25" height="25" rx="5" transform="rotate(45 18 18)" fill="#25356f" fill-opacity="0.12" />
-                                <path d="M14 18h9m0 0-4-4m4 4-4 4" stroke="#25356f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
+                            <img src="assets/img/icon/Group.png" alt="">
                         </div>
                         <span class="feat-label">Multi-industry learning and career growth</span>
                     </div>
 
                     <div class="feature-item">
                         <div class="feat-icon">
-                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                                <rect x="5.5" y="5.5" width="25" height="25" rx="5" transform="rotate(45 18 18)" fill="#25356f" fill-opacity="0.12" />
-                                <path d="M14 18h9m0 0-4-4m4 4-4 4" stroke="#25356f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
+                            <img src="assets/img/icon/Group.png" alt="">
                         </div>
                         <span class="feat-label">Performance-driven rewards and recognition</span>
                     </div>
 
                     <div class="feature-item">
                         <div class="feat-icon">
-                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                                <rect x="5.5" y="5.5" width="25" height="25" rx="5" transform="rotate(45 18 18)" fill="#25356f" fill-opacity="0.12" />
-                                <path d="M14 18h9m0 0-4-4m4 4-4 4" stroke="#25356f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
+                            <img src="assets/img/icon/Group.png" alt="">
                         </div>
                         <span class="feat-label">Recognition and rewards based purely on performance</span>
                     </div>
@@ -1180,21 +1175,24 @@ include_once('elements/header.php');
     .left-panel h2 {
         color: #1a2b5e;
         font-weight: 700;
+        font-family: "Anek Kannada", "Poppins";
         font-size: 2.19rem;
         margin-bottom: 0.75rem;
     }
 
     .left-panel p {
         color: #6b7280;
-        font-size: 0.8rem;
+        font-size: 15px;
+        font-family: "Anek Kannada", "Poppins";
         line-height: 1.6;
     }
 
     .contact-item {
         display: flex;
         align-items: center;
+        font-family: "Anek Kannada", "Poppins";
         gap: 10px;
-        font-size: 0.95rem;
+        font-size: 20px;
         font-weight: 600;
         margin-top: 1.2rem;
     }
@@ -1374,7 +1372,7 @@ include_once('elements/header.php');
 
                     <div class="contact-item">
                         <i class="bi bi-envelope"></i>
-                        <span>hr@theeuphoriagroupl.com</span>
+                        <span>hr@theeuphoriagroup.com</span>
                     </div>
                 </div>
 

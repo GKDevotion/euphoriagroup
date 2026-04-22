@@ -79,7 +79,7 @@ h2 {
   background-color: var(--euphoria-blue);
   color: white;
   font-size: 0.85rem;
-  padding: 8px 0;
+  padding: 4px 0;
   transition: all 0.3s ease;
   position: relative;
   z-index: 1000;
@@ -676,9 +676,9 @@ h2 {
 }
 
 .stat-icon-footer {
-  margin-right: 5px;
-  color: rgba(255, 255, 255, 0.75);
-  width: 18px;
+    margin-right: 5px;
+    color: rgba(255, 255, 255, 0.75);
+    width: 14px;
 }
 
 .stat-label {
@@ -1098,6 +1098,7 @@ h2 {
   font-size: 1.15rem;
   font-weight: 700;
   line-height: 1.4;
+  font-family: "Anek Kannada", "Poppins";
   margin-bottom: 15px;
   text-align: center;
 }
@@ -1333,7 +1334,7 @@ h2 {
   margin-bottom: 10px;
   font-size: 0.9rem;
 }
-.contact-item i {
+.contact-item img {
   color: #fff;
   margin-right: 10px;
   font-size: 1.1rem;

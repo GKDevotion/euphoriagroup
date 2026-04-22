@@ -94,20 +94,44 @@ include_once('elements/header.php');
 </style>
 
 <div class="container content-section">
+  
+     <div class="d-flex justify-content-center mb-3 container position-relative" style="z-index:2">
 
-  <!-- Tabs -->
-  <div class="custom-tabs">
-    <a href="#flight-section" class="tab-btn active" data-tab="tab1">Flight</a>
-    <a href="#train-section" class="tab-btn" data-tab="tab2">Train</a>
-    <a href="#bus-section" class="tab-btn" data-tab="tab1">Bus</a>
-    <a href="#taxi-section" class="tab-btn" data-tab="tab2">Taxi</a>
-    <a href="#local-section" class="tab-btn" data-tab="tab1">Local Transporatation</a>
-    <a href="#hotel-section" class="tab-btn" data-tab="tab2">Hotel</a>
-    <a href="#holiday-package-section" class="tab-btn" data-tab="tab1">Holiday Package</a>
-    <a href="#tour-package-section" class="tab-btn" data-tab="tab2">Tour Package</a>
-    <a href="#guide-tour-section" class="tab-btn" data-tab="tab1">Guided Tour</a>
-    <a href="#faqs" class="tab-btn" data-tab="tab2">FAQ</a>
-  </div>
+        <div class="formation-nav-wrapper" data-aos="fade-up" data-aos-duration="800">
+
+            <a href="#flight-section" class="nav-link-pill nav-link-item nav-active-pill">Flight</a>
+            <div class="nav-sep"></div>
+
+            <a href="#train-section" class="nav-link-pill nav-link-item">Train</a>
+            <div class="nav-sep"></div>
+
+            <a href="#bus-section" class="nav-link-pill nav-link-item">Bus</a>  
+            <div class="nav-sep"></div>
+            
+            <a href="#taxi-section" class="nav-link-pill nav-link-item">Taxi</a>
+            <div class="nav-sep"></div>
+            
+            <a href="#local-section" class="nav-link-pill nav-link-item">Local Transporatation</a>  
+            <div class="nav-sep"></div>
+
+            <a href="#hotel-section" class="nav-link-pill nav-link-item">Hotel</a>  
+            <div class="nav-sep"></div>
+
+            <a href="#holiday-package-section" class="nav-link-pill nav-link-item">Holiday Package</a>  
+            <div class="nav-sep"></div>
+
+            <a href="#tour-package-section" class="nav-link-pill nav-link-item">Tour Package</a>  
+            <div class="nav-sep"></div>
+
+            <a href="#guide-tour-section" class="nav-link-pill nav-link-item">Guided Tour</a>  
+            <div class="nav-sep"></div>
+
+            <a href="#faqs" class="nav-link-pill nav-link-item">FAQ</a>   
+
+
+        </div>
+
+    </div> 
 
   
 
@@ -1058,7 +1082,7 @@ include_once('elements/header.php');
 
   .tcard:hover .card-badge {
     transform: translateY(0) scale(1);
-    opacity: 1;
+    /* opacity: 1; */
   }
 
   .card-badge svg {
@@ -1086,22 +1110,14 @@ include_once('elements/header.php');
     transition: background .3s, transform .3s;
   }
 
-  .tcard:hover .card-icon {
-    background: var(--euphoria-red);
-    transform: rotate(-6deg) scale(1.1);
-  }
-
+ 
   .card-icon svg {
     width: 22px;
     height: 22px;
     fill: var(--euphoria-red);
     transition: fill .3s;
   }
-
-  .tcard:hover .card-icon svg {
-    fill: #fff;
-  }
-
+ 
   .card-title {
 
     font-size: clamp(16px, 1.8vw, 20px);
@@ -1658,7 +1674,7 @@ include_once('elements/header.php');
     top: 0;
     left: 0;
     right: 0;
-    height: 3px;
+    height: 2px;
     background: linear-gradient(90deg, var(--euphoria-blue), var(--euphoria-red));
     transform: scaleX(0);
     transform-origin: left;
@@ -1914,7 +1930,7 @@ include_once('elements/header.php');
     </div>
 
     <!-- CAROUSEL -->
-    <div class="position-relative px-3">
+    <div class="position-relative px-3 mb-3">
 
       <button class="bus-btn bus-btn-prev d-none" id="busPrev" aria-label="Previous">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">

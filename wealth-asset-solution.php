@@ -67,15 +67,26 @@ include_once('elements/header.php');
   }
 </style>
 
-<div class="container content-section">
+<div class="container content-section"> 
 
-  <!-- Tabs -->
-  <div class="custom-tabs">
-    <a href="#stock_market_section" class="tab-btn active" data-tab="tab1">Stick market</a>
-    <a href="#insuarance_section" class="tab-btn" data-tab="tab2">Insuarance</a>
-    <a href="#section" class="tab-btn" data-tab="tab1">Real Estate</a>
-    <a href="#section" class="tab-btn" data-tab="tab2">FAQ</a>
-  </div>
+     <div class="d-flex justify-content-center mb-3 container position-relative" style="z-index:2">
+
+        <div class="formation-nav-wrapper" data-aos="fade-up" data-aos-duration="800">
+
+            <a href="#stock_market_section" class="nav-link-pill nav-link-item nav-active-pill">Stick market</a>
+            <div class="nav-sep"></div>
+
+            <a href="#insuarance_section" class="nav-link-pill nav-link-item">Insuarance</a>
+            <div class="nav-sep"></div>
+            
+            <a href="#section" class="nav-link-pill nav-link-item">Real Estate</a>
+            <div class="nav-sep"></div>
+            
+            <a href="#section" class="nav-link-pill nav-link-item">FAQ</a>  
+
+        </div>
+
+    </div> 
 
   <!-- Tab Content -->
   <div id="tab1" class="corporate-content-box active">
@@ -160,104 +171,104 @@ include_once('elements/header.php');
           <img src="assets/img/stock-graph.png" alt="Stock Market">
         </div>
       </div>
-<style>
-    /* Watermark ghost text */
-       /* ── Card ── */
-    .stock-card {
-      position: relative;
-      background: #ffffff;
-      border-radius: 18px;
-      padding: 61px 48px 48px;
-      box-shadow: 0 6px 40px rgba(13, 34, 73, 0.08);
-      overflow: hidden;
-    }
- 
- 
-    /* Watermark ghost text */
-    .stock-card::before {
-    content: "Trading";
-    position: absolute;
-    top: 20px;
-    left: 35px;
-    font-family: "Anek Kannada", "Poppins", sans-serif;
-    font-size: 156px;
-    font-weight: 700;
-    color: #CC2831;
-    opacity: 0.2;
-    letter-spacing: -2px;
-    pointer-events: none;
-    user-select: none;
-    line-height: 1;
-    }
- 
-    /* ── Title ── */
-    .stock-title {
-    font-family: "Anek Kannada", "Poppins", sans-serif;
-    font-size: clamp(1.6rem, 3vw, 2.6rem);
-    font-weight: 700; 
-    line-height: 1.25;
-    margin-bottom: 5.25rem;
-    position: relative; 
-    color: #25356F;
-    }
-
-    .stock-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px 24px;
-    }
- 
-  
- 
-     .btn-invest {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: #25356F;
-      color: #fff;
-      font-family: 'DM Sans', sans-serif;
-      font-weight: 600;
-      font-size: 0.95rem;
-      padding: 14px 28px;
-      border-radius: 8px;
-      border: none;
-      text-decoration: none;
-      transition: background 0.25s, transform 0.2s;
-      margin-top: 36px;
-    }
- 
-    .btn-invest:hover {
-      background: #25356F;
-      transform: translateY(-2px);
-      color: #fff;
-    }
- 
-    .btn-invest svg {
-      width: 16px;
-      height: 16px;
-      stroke: currentColor;
-      fill: none;
-      stroke-width: 2.5;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
- 
-    /* ── Responsive tweaks ── */
-    @media (max-width: 575px) {
+  <style>
+      /* Watermark ghost text */
+        /* ── Card ── */
       .stock-card {
-        padding: 36px 24px 32px;
+        position: relative;
+        background: #ffffff;
+        border-radius: 18px;
+        padding: 61px 48px 48px;
+        box-shadow: 0 6px 40px rgba(13, 34, 73, 0.08);
+        overflow: hidden;
       }
+  
+  
+      /* Watermark ghost text */
       .stock-card::before {
-        font-size: 72px;
+      content: "Trading";
+      position: absolute;
+      top: 20px;
+      left: 35px;
+      font-family: "Anek Kannada", "Poppins", sans-serif;
+      font-size: 156px;
+      font-weight: 700;
+      color: #CC2831;
+      opacity: 0.2;
+      letter-spacing: -2px;
+      pointer-events: none;
+      user-select: none;
+      line-height: 1;
       }
+  
+      /* ── Title ── */
+      .stock-title {
+      font-family: "Anek Kannada", "Poppins", sans-serif;
+      font-size: clamp(1.6rem, 3vw, 2.6rem);
+      font-weight: 700; 
+      line-height: 1.25;
+      margin-bottom: 5.25rem;
+      position: relative; 
+      color: #25356F;
+      }
+
       .stock-list {
-        grid-template-columns: 1fr;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px 24px;
       }
-    }
-</style>
+  
+    
+  
+      .btn-invest {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: #25356F;
+        color: #fff;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 600;
+        font-size: 0.95rem;
+        padding: 14px 28px;
+        border-radius: 8px;
+        border: none;
+        text-decoration: none;
+        transition: background 0.25s, transform 0.2s;
+        margin-top: 36px;
+      }
+  
+      .btn-invest:hover {
+        background: #25356F;
+        transform: translateY(-2px);
+        color: #fff;
+      }
+  
+      .btn-invest svg {
+        width: 16px;
+        height: 16px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 2.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+  
+      /* ── Responsive tweaks ── */
+      @media (max-width: 575px) {
+        .stock-card {
+          padding: 36px 24px 32px;
+        }
+        .stock-card::before {
+          font-size: 72px;
+        }
+        .stock-list {
+          grid-template-columns: 1fr;
+        }
+      }
+  </style>
       <!-- Right Content -->
       <div class="col-lg-6 px-5">
         <div class="stock-card">
@@ -1648,6 +1659,202 @@ include_once('elements/header.php');
 
     </div>
   </div>
+</section>
+
+<section class="infrastructure-section">
+<style>
+ 
+      /* ── Section Heading ── */
+    .section-heading {
+      position: relative;
+      text-align: center;
+      padding: 60px 0 50px;
+      overflow: hidden;
+    }
+    .section-heading .bg-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: clamp(48px, 8vw, 96px);
+      font-family: "Anek Kannada", "Poppins", sans-serif;
+      font-weight: 800;
+      color: rgba(230, 57, 70, 0.07);
+      white-space: nowrap;
+      pointer-events: none;
+      letter-spacing: 2px;
+      z-index: 0;
+    }
+    .section-heading h2 {
+      position: relative;
+      z-index: 1;
+      font-family: "Anek Kannada", "Poppins", sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+      color: #25356F;
+    }
+
+    /* ── Grid Wrapper ── */
+    .services-grid-wrapper {
+      padding: 0 40px 60px;
+    }
+
+    /* ── The 5-column grid with cross borders ── */
+    .services-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .services-table td {
+      width: 20%;
+      padding: 36px 24px 36px;
+      text-align: center;
+      vertical-align: top;
+      /* right border for columns 2, 3, 4 (between cells) */
+    }
+
+    /* Vertical dividers: after col 1, 2, 3, 4 */
+    .services-table td:not(:last-child) {
+      border-right: 1px solid #d0d0d0;
+    }
+
+    /* Horizontal divider between row 1 and row 2 */
+    .services-table tr:first-child td {
+      border-bottom: 1px solid #d0d0d0;
+    }
+
+    /* ── Card Content ── */
+    
+
+    .service-title {
+      font-family: "Anek Kannada", "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 19px;
+      color:  #25356F;
+      margin-bottom: 10px;
+    }
+
+    .service-desc {
+      font-size: 12px;
+      color: #666666;
+      font-family: "Anek Kannada", "Poppins", sans-serif;
+      line-height: 1.65;
+      margin: 0;
+    }
+</style>
+<div class="container">
+
+<div class="section-heading">
+  <span class="bg-text">Infrastructure</span>
+  <h2>Real Estate Services</h2>
+</div>
+
+<div class="services-grid-wrapper">
+    <table class="services-table">
+        <tbody>
+
+          <!-- ROW 1 -->
+          <tr>
+            <!-- Property Buying -->
+            <td>
+              <div class="mb-3">
+                <img src="assets/img/icon/infrastructure-1.png" alt="">
+              </div>
+              <div class="service-title">Property Buying</div>
+              <p class="service-desc">Complete assistance in identifying, evaluating, negotiating, and acquiring residential, commercial, and investment properties with complete due diligence support.</p>
+            </td>
+
+            <!-- Property Selling -->
+            <td>
+              <div class="mb-3">
+                <img src="assets/img/icon/infrastructure-2.png" alt="">
+              </div>
+              <div class="service-title">Property Selling</div>
+              <p class="service-desc">Strategic marketing, buyer sourcing, pricing advisory, and negotiation support to ensure maximum value and smooth property transactions.</p>
+            </td>
+
+            <!-- Property Rental -->
+            <td>
+              <div class="mb-3">
+                <img src="assets/img/icon/infrastructure-3.png" alt="">
+              </div>
+              <div class="service-title">Property Rental</div>
+              <p class="service-desc">Comprehensive rental solutions connecting property owners with verified tenants while ensuring secure agreements and timely occupancy.</p>
+            </td>
+
+            <!-- Residential Leasing -->
+            <td>
+              <div class="mb-3">
+                <img src="assets/img/icon/infrastructure-4.png" alt="">
+              </div>
+              <div class="service-title">Residential Leasing</div>
+              <p class="service-desc">Expert leasing solutions for apartments, villas, and residential properties with structured agreements and tenant screening support.</p>
+            </td>
+
+            <!-- Commercial Leasing -->
+            <td>
+              <div class="mb-3">
+                <img src="assets/img/icon/infrastructure-5.png" alt="">
+              </div>
+              <div class="service-title">Commercial Leasing</div>
+              <p class="service-desc">Professional leasing services for offices, retail spaces, and commercial properties with market-driven pricing and contract management.</p>
+            </td>
+          </tr>
+
+          <!-- ROW 2 -->
+          <tr>
+            <!-- Property Management -->
+            <td>
+              <div class="mb-3">
+                <img src="assets/img/icon/infrastructure-6.png" alt="">
+              </div>
+              <div class="service-title">Property Management</div>
+              <p class="service-desc">Complete property management, including tenant coordination, rent collection, maintenance supervision, and asset performance monitoring.</p>
+            </td>
+
+            <!-- Property Marketing -->
+            <td>
+              <div class="mb-3">
+                <img src="assets/img/icon/infrastructure-7.png" alt="">
+              </div>
+              <div class="service-title">Property Marketing</div>
+              <p class="service-desc">Targeted marketing strategies using digital platforms, listings, and network outreach to attract qualified buyers and tenants.</p>
+            </td>
+
+            <!-- Property Valuation -->
+            <td>
+              <div class="mb-3">
+                <img src="assets/img/icon/infrastructure-8.png" alt="">
+              </div>
+              <div class="service-title">Property Valuation</div>
+              <p class="service-desc">Accurate property assessment and valuation reports based on market trends, location analysis, and asset condition.</p>
+            </td>
+
+            <!-- Real Estate Advisory -->
+            <td>
+              <div class="mb-3">
+                <img src="assets/img/icon/infrastructure-9.png" alt="">
+              </div>
+              <div class="service-title">Real Estate Advisory</div>
+              <p class="service-desc">Strategic real estate guidance to help clients make informed decisions based on market insights and investment objectives.</p>
+            </td>
+
+            <!-- Investment Consulting -->
+            <td>
+              <div class="mb-3">
+                <img src="assets/img/icon/infrastructure-10.png" alt="">
+              </div>
+              <div class="service-title">Investment Consulting</div>
+              <p class="service-desc">Customised investment strategies focused on maximising returns, capital appreciation, and portfolio diversification.</p>
+            </td>
+          </tr>
+
+        </tbody>
+    </table>
+</div>
+
+</div>
+
 </section>
 
 <?php

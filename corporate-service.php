@@ -498,10 +498,10 @@ include_once('elements/header.php');
   .acc-section::before {
     content: 'Prosper';
     position: absolute;
-    top: -10px;
-    left: -8px;
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(80px, 14vw, 160px);
+    top: 25px;
+    left: 300px;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
+    font-size: clamp(80px, 14vw, 170px);
     font-weight: 700;
     color: rgba(255, 255, 255, 0.042);
     letter-spacing: -4px;
@@ -711,7 +711,7 @@ include_once('elements/header.php');
 
       <!-- ── LEFT COLUMN ── -->
       <div class="col-lg-5 col-xl-6 reveal">
-        <h2 class="acc-heading" data-aos="fade-up" data-aos-duration="500">Accounting & Taxation</h2>
+        <h2 class="acc-heading" data-aos="fade-up" data-aos-duration="500" style="font-family: 'Anek Kannada', 'Poppins', sans-serif; margin-bottom: 60px; text-align: center; font-size: 50px;">Accounting & Taxation</h2>
         <p class="acc-desc" data-aos="fade-up" data-aos-duration="800">
           Strong financial management is the foundation of any successful business.
           Our accounting and taxation services are intended to ensure accuracy, compliance,
@@ -839,87 +839,90 @@ include_once('elements/header.php');
             </div>
           </div>
         </div><!-- /top row -->
+        
+        <!-- BOTTOM ROW: 4 equal dashed cards -->
+        <div class="row acc-bottom-row d-flex justify-content-end g-3">
+  
+          <!-- Payroll Processing -->
+          <div class="col-6 col-sm-3 reveal delay-4">
+            <div class="card-dashed">
+  
+              <div class="card-front text-center">
+                <div class="mb-3">
+                  <img src="assets/img/icon/prosper-3.png" alt="Payroll Processing" class="prosper-icon">
+                </div>
+                <h6>Payroll Processing</h6>
+              </div>
+  
+              <div class="card-hover-text text-center">
+                <h6>Payroll Processing</h6>
+                <p>Maintaining accurate business accounts by recording daily financial transactions.</p>
+              </div>
+  
+            </div>
+          </div>
+  
+          <!-- TDS Filing -->
+          <div class="col-6 col-sm-3 reveal delay-5">
+            <div class="card-dashed">
+              <div class="card-front text-center">
+                <div class="mb-3">
+                  <img src="assets/img/icon/prosper-4.png" alt="TDS Filing" class="prosper-icon">
+                </div>
+                <h6>TDS Filing</h6>
+              </div>
+  
+              <div class="card-hover-text text-center">
+                <h6>TDS Filing</h6>
+                <p>Deducting tax at the source and filing TDS returns as required.</p>
+              </div>
+  
+            </div>
+          </div>
+  
+          <!-- Audit Coordination -->
+          <div class="col-6 col-sm-3 reveal delay-6">
+            <div class="card-dashed">
+              <div class="card-front text-center">
+                <div class="mb-3">
+                  <img src="assets/img/icon/prosper-5.png" alt="Audit Coordination" class="prosper-icon">
+                </div>
+                <h6>Audit Coordination</h6>
+              </div>
+  
+              <div class="card-hover-text text-center">
+                <h6>Audit Coordination</h6>
+                <p>Supporting and coordinating with auditors to ensure a smooth audit completion.</p>
+              </div>
+  
+  
+            </div>
+          </div>
+  
+          <!-- Financial Reporting -->
+          <div class="col-6 col-sm-3 reveal delay-7">
+            <div class="card-dashed">
+              <div class="card-front text-center">
+                <div class="mb-3">
+                  <img src="assets/img/icon/prosper-6.png" alt="Financial Reporting" class="prosper-icon">
+                </div>
+                <h6>Financial Reporting</h6>
+              </div>
+  
+              <div class="card-hover-text text-center">
+                <h6>Financial Reporting</h6>
+                <p> Creating profit and loss, balance sheet, and cash flow statements.</p>
+              </div>
+            </div>
+          </div>
+  
+        </div> 
+
       </div><!-- /right grid -->
 
-      <!-- BOTTOM ROW: 4 equal dashed cards -->
-      <div class="row acc-bottom-row g-3">
 
-        <!-- Payroll Processing -->
-        <div class="col-6 col-sm-3 reveal delay-4">
-          <div class="card-dashed">
-
-            <div class="card-front text-center">
-              <div class="mb-3">
-                <img src="assets/img/icon/prosper-3.png" alt="Payroll Processing" class="prosper-icon">
-              </div>
-              <h6>Payroll Processing</h6>
-            </div>
-
-            <div class="card-hover-text text-center">
-              <h6>Payroll Processing</h6>
-              <p>Maintaining accurate business accounts by recording daily financial transactions.</p>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- TDS Filing -->
-        <div class="col-6 col-sm-3 reveal delay-5">
-          <div class="card-dashed">
-            <div class="card-front text-center">
-              <div class="mb-3">
-                <img src="assets/img/icon/prosper-4.png" alt="TDS Filing" class="prosper-icon">
-              </div>
-              <h6>TDS Filing</h6>
-            </div>
-
-            <div class="card-hover-text text-center">
-              <h6>TDS Filing</h6>
-              <p>Deducting tax at the source and filing TDS returns as required.</p>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- Audit Coordination -->
-        <div class="col-6 col-sm-3 reveal delay-6">
-          <div class="card-dashed">
-            <div class="card-front text-center">
-              <div class="mb-3">
-                <img src="assets/img/icon/prosper-5.png" alt="Audit Coordination" class="prosper-icon">
-              </div>
-              <h6>Audit Coordination</h6>
-            </div>
-
-            <div class="card-hover-text text-center">
-              <h6>Audit Coordination</h6>
-              <p>Supporting and coordinating with auditors to ensure a smooth audit completion.</p>
-            </div>
-
-
-          </div>
-        </div>
-
-        <!-- Financial Reporting -->
-        <div class="col-6 col-sm-3 reveal delay-7">
-          <div class="card-dashed">
-            <div class="card-front text-center">
-              <div class="mb-3">
-                <img src="assets/img/icon/prosper-6.png" alt="Financial Reporting" class="prosper-icon">
-              </div>
-              <h6>Financial Reporting</h6>
-            </div>
-
-            <div class="card-hover-text text-center">
-              <h6>Financial Reporting</h6>
-              <p> Creating profit and loss, balance sheet, and cash flow statements.</p>
-            </div>
-          </div>
-        </div>
-
-      </div><!-- /bottom row -->
-    </div><!-- /main row -->
-  </div><!-- /container -->
+    </div> 
+  </div> 
 </section>
 
 <!-- CORPORATE RESTRUCTURING -->

@@ -1,5 +1,10 @@
         <div class="footer-curve-wrapper"></div>
-
+<style>
+    .social-circle-icons{
+        width: 30px;
+        height: 30px;
+    }
+</style>
         <footer class="main-footer">
             <div class="container">
                 <div class="row align-items-center mb-5">
@@ -10,11 +15,23 @@
                     </div>
                     <div class="col-md-3 text-md-end social-icons">
                         <p class="mb-2 fw-bold">Follow #Euphoria</p>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <div class="d-flex justify-content-end">
+                        <a href="#">
+                            <img src="assets/img/icon/Facebook.png" alt="" class="social-circle-icons">
+                        </a>
+                        <a href="#">
+                            <img src="assets/img/icon/Instagram.png" alt="" class="social-circle-icons">
+                        </a>
+                        <a href="#">
+                            <img src="assets/img/icon/Linkedin.png" alt="" class="social-circle-icons">
+                        </a>
+                        <a href="#"> 
+                            <img src="assets/img/icon/Youtube.png" alt="" class="social-circle-icons">
+                        </a>
+                        <a href="#">
+                        <img src="assets/img/icon/Twitter.png" alt="" class="social-circle-icons">
+                        </a>
+                        </div>
                     </div>
                 </div>
 
@@ -113,13 +130,16 @@
 
                 <div class="row contact-info-bar justify-content-center text-center">
                     <div class="col-md-auto px-4 contact-item">
-                        <i class="fas fa-phone-volume"></i> +91 261 3686846
+                        <img src="assets/img/icon/footer-call-icon.png" alt=""> 
+                        +91 261 3686846
                     </div>
                     <div class="col-md-auto px-4 contact-item">
-                        <i class="fas fa-envelope"></i> info@theeuphoriagroup.com
+                        <img src="assets/img/icon/footer-email-icon.png" alt="">
+                         info@theeuphoriagroup.com
                     </div>
                     <div class="col-md-auto px-4 contact-item">
-                        <i class="fas fa-map-marker-alt"></i> B-907/908, Pragati IT Park, Near AR mall, Mota Varachha, Surat - 394101
+                         <img src="assets/img/icon/footer-location-icon.png" alt="">
+                        B-907/908, Pragati IT Park, Near AR mall, Mota Varachha, Surat - 394101
                     </div>
                 </div>
 

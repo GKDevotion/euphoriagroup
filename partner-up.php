@@ -52,22 +52,18 @@ include_once('elements/header.php');
         padding-left: 3rem;
     }
 
-    .content-col .brand-name {
-        font-weight: 600;
-        color: #1a2340;
-    }
-
     .content-col p {
-        color: #4a4a5a;
-        font-size: 0.97rem;
+        color: #666666;
+        font-size: 17px;
+        font-family: "Anek Kannada", "Poppins";
         line-height: 1.85;
         font-weight: 300;
         margin-bottom: 1.4rem;
     }
 
     .content-col p strong {
-        font-weight: 700;
-        color: #1a2340;
+        font-weight: 500;
+        color: #666666;
     }
 
     .illustration-wrap {
@@ -229,14 +225,9 @@ include_once('elements/header.php');
         text-align: center;
     }
 
-    .card-title {
-        font-size: 1.05rem;
-        font-weight: 700;
-        color: #25356F;
-        margin-bottom: 12px;
-    }
+ 
 
-    .card-text {
+    .partner-card-text {
         font-size: 0.75rem;
         color: #4b5563;
         line-height: 1.7;
@@ -315,7 +306,7 @@ include_once('elements/header.php');
                             class="card-img-top" alt="Transparent Business Model">
                         <div class="card-body">
                             <h5 class="card-title">Transparent business model</h5>
-                            <p class="card-text">
+                            <p class="partner-card-text">
                                 We are completely clear about our processes, pricing structure, and strategic approach.
                                 Each partnership is built on open communication, clear expectations, and ethical business
                                 practices to ensure long-term trust and accountability.
@@ -331,7 +322,7 @@ include_once('elements/header.php');
                             class="card-img-top" alt="High-growth Prospects">
                         <div class="card-body">
                             <h5 class="card-title">High-growth prospects</h5>
-                            <p class="card-text">
+                            <p class="partner-card-text">
                                 Our strategies aim to create scalable opportunities across markets. By identifying
                                 emerging trends and structured expansion pathways, we help partners capitalize on
                                 long term growth opportunities.
@@ -347,7 +338,7 @@ include_once('elements/header.php');
                             class="card-img-top" alt="Dedicated Partner Support">
                         <div class="card-body">
                             <h5 class="card-title">Dedicated Partner Support</h5>
-                            <p class="card-text">
+                            <p class="partner-card-text">
                                 Each partner is given personalised attention and ongoing advisory support. From
                                 operational guidance to strategic decision-making, our team plays an active role in
                                 ensuring smooth execution and consistent performance.
@@ -363,7 +354,7 @@ include_once('elements/header.php');
                             class="card-img-top" alt="Advantages">
                         <div class="card-body">
                             <h5 class="card-title">Advantages</h5>
-                            <p class="card-text">
+                            <p class="partner-card-text">
                                 Our revenue model is intended to create mutual value. We prioritise win-win scenarios,
                                 ensuring profitability, fairness, and long-term financial stability for all stakeholders
                                 in the partnership ecosystem.

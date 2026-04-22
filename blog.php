@@ -112,15 +112,15 @@ include_once('elements/header.php');
     }
 
     .meta-row .avatar {
-        width: 32px;
-        height: 32px;
+        width: 45px;
+        height: 45px;
         border-radius: 50%;
         object-fit: cover;
         border: 2px solid #e5e7eb;
     }
 
     .meta-row .author {
-        font-size: 0.82rem;
+        font-size: 16px;
         font-weight: 600;
         color: #1a1a2e;
     }
@@ -129,27 +129,25 @@ include_once('elements/header.php');
         display: flex;
         align-items: center;
         gap: 5px;
-        font-size: 0.78rem;
-        color: #6b7280;
+        font-size: 16px;
+        color: #AAAAAA;
     }
 
-    .meta-row .date svg {
-        flex-shrink: 0;
-    }
+ 
 
     /* ── EXCERPT ── */
     .excerpt {
-        font-size: 0.84rem;
+        font-size: 17px;
         color: #6b7280;
+        font-family: "Anek Kannada", "Poppins";
         line-height: 1.6;
         flex: 1;
     }
 
     .excerpt .highlight {
-        font-weight: 600;
+        font-weight: 500;
         color: #1a1a2e;
-        display: block;
-        margin-bottom: 4px;
+        display: block; 
     }
 
     /* ── READ MORE ── */
@@ -320,12 +318,7 @@ include_once('elements/header.php');
                                 <div class="author">Ayushi Davda</div>
                             </div>
                             <div class="date">
-                                <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-                                    <rect x="3" y="4" width="18" height="18" rx="2" />
-                                    <line x1="16" y1="2" x2="16" y2="6" />
-                                    <line x1="8" y1="2" x2="8" y2="6" />
-                                    <line x1="3" y1="10" x2="21" y2="10" />
-                                </svg>
+                                <img src="assets/img/icon/calender-icon.png" alt="">
                                 March 18, 2026
                             </div>
                         </div>
@@ -354,12 +347,7 @@ include_once('elements/header.php');
                                 <div class="author">Ayushi Davda</div>
                             </div>
                             <div class="date">
-                                <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-                                    <rect x="3" y="4" width="18" height="18" rx="2" />
-                                    <line x1="16" y1="2" x2="16" y2="6" />
-                                    <line x1="8" y1="2" x2="8" y2="6" />
-                                    <line x1="3" y1="10" x2="21" y2="10" />
-                                </svg>
+                                <img src="assets/img/icon/calender-icon.png" alt="">
                                 March 18, 2026
                             </div>
                         </div>
@@ -388,19 +376,16 @@ include_once('elements/header.php');
                                 <div class="author">Ayushi Davda</div>
                             </div>
                             <div class="date">
-                                <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-                                    <rect x="3" y="4" width="18" height="18" rx="2" />
-                                    <line x1="16" y1="2" x2="16" y2="6" />
-                                    <line x1="8" y1="2" x2="8" y2="6" />
-                                    <line x1="3" y1="10" x2="21" y2="10" />
-                                </svg>
+                                <img src="assets/img/icon/calender-icon.png" alt="">
                                 March 19, 2026
                             </div>
                         </div>
                         <p class="excerpt">Sometimes, life doesn't change in a day… It changes in a single night.<br><br>A night full of questions.<br>A night full of doubts.<br>A night where everything feels uncertain.<br><br>But also… A night where everything begins.</p>
                         <a href="blog-detail.php" class="read-more-blog">Read More <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
                                 <polyline points="9 18 15 12 9 6" />
-                            </svg></a>
+                            </svg>
+                             
+                        </a>
                     </div>
                 </div>
             </div>
@@ -422,12 +407,7 @@ include_once('elements/header.php');
                                 <div class="author">Ayushi Davda</div>
                             </div>
                             <div class="date">
-                                <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-                                    <rect x="3" y="4" width="18" height="18" rx="2" />
-                                    <line x1="16" y1="2" x2="16" y2="6" />
-                                    <line x1="8" y1="2" x2="8" y2="6" />
-                                    <line x1="3" y1="10" x2="21" y2="10" />
-                                </svg>
+                                <img src="assets/img/icon/calender-icon.png" alt="">
                                 March 18, 2026
                             </div>
                         </div>
@@ -456,12 +436,7 @@ include_once('elements/header.php');
                                 <div class="author">Ayushi Davda</div>
                             </div>
                             <div class="date">
-                                <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-                                    <rect x="3" y="4" width="18" height="18" rx="2" />
-                                    <line x1="16" y1="2" x2="16" y2="6" />
-                                    <line x1="8" y1="2" x2="8" y2="6" />
-                                    <line x1="3" y1="10" x2="21" y2="10" />
-                                </svg>
+                                <img src="assets/img/icon/calender-icon.png" alt="">
                                 March 18, 2026
                             </div>
                         </div>
@@ -490,12 +465,7 @@ include_once('elements/header.php');
                                 <div class="author">Ayushi Davda</div>
                             </div>
                             <div class="date">
-                                <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-                                    <rect x="3" y="4" width="18" height="18" rx="2" />
-                                    <line x1="16" y1="2" x2="16" y2="6" />
-                                    <line x1="8" y1="2" x2="8" y2="6" />
-                                    <line x1="3" y1="10" x2="21" y2="10" />
-                                </svg>
+                                <img src="assets/img/icon/calender-icon.png" alt="">
                                 March 18, 2026
                             </div>
                         </div>

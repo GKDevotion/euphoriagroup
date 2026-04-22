@@ -35,17 +35,17 @@
                 <div class="container d-flex justify-content-between align-items-center">
                     <div class="contact-info">
                         <a href="tel:+912613686846" class="me-4">
-                            <i class="bi bi-telephone-fill me-2"></i> +91 261 3686846
+                            <img src="assets/img/icon/footer-call-icon.png" alt=""> +91 261 3686846
                         </a>
                         <a href="mailto:info@theeuphoriagroup.com">
-                            <i class="bi bi-envelope-fill me-2"></i> info@theeuphoriagroup.com
+                            <img src="assets/img/icon/footer-email-icon.png" alt=""> info@theeuphoriagroup.com
                         </a>
                     </div>
                     <div class="social-icons">
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><img src="assets/img/icon/header-linkedin-icon.png" alt=""></a>
+                        <a href="#"><img src="assets/img/icon/header-facebook-icon.png" alt=""></a>
+                        <a href="#"><img src="assets/img/icon/header-instagram-icon.png" alt=""></a>
+                        <a href="#"><img src="assets/img/icon/header-twitter-icon.png" alt=""></a>
                     </div>
                 </div>
             </section>

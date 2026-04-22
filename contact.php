@@ -38,19 +38,21 @@ include_once('elements/header.php');
 
     .icon-circle i {
         font-size: 1.8rem;
-        color: #1a2b5e;
+        color: #25356F;
     }
 
     .contact-card h5 {
         font-size: 1.75rem;
-        font-weight: 600;
+        font-weight: 500;
+        font-family: "Anek Kannada", "Poppins";
         color: #000;
         margin-bottom: 0.5rem;
     }
 
     .contact-card .subtitle {
-        font-size: 0.75rem;
-        color: #5e646d;
+        font-size: 16px;
+        color: #666666;
+        font-family: "Anek Kannada", "Poppins";
         margin-bottom: 1rem;
     }
 
@@ -58,6 +60,13 @@ include_once('elements/header.php');
         font-size: 0.9rem;
         color: #374151;
         line-height: 1.9;
+    }
+    .contact-us-card{
+        text-decoration: none;
+        font-family: "Anek Kannada", "Poppins";
+        font-size: 18px;
+        font-weight: 400;
+        color: #000;
     }
     /* Mobile devices (up to 576px) */
     @media (max-width: 576px) {
@@ -114,12 +123,12 @@ include_once('elements/header.php');
                 <p class="subtitle">Reach out to us for immediate assistance.</p>
                 <div class="info">
                     <p class="p-0 m-0">
-                        <a href="tel:+91XXXXXXXXXX" class="text-decoration-none text-blue fw-bold">
+                        <a href="tel:+91XXXXXXXXXX" class="contact-us-card">
                             +91 XXXXX XXXXX
                         </a>
                     </p>
                     <p class="p-0 m-0">
-                        <a href="tel:+91XXXXXXXXXX" class="text-decoration-none text-blue fw-bold">
+                        <a href="tel:+91XXXXXXXXXX" class="contact-us-card">
                             +91 XXXXX XXXXX
                         </a>
                     </p>
@@ -138,7 +147,7 @@ include_once('elements/header.php');
                 <p class="subtitle">We're here to help you with any inquiries.</p>
                 <div class="info">
                     <p class="p-0 m-0">
-                        <a href="mail:info@euphoriagroup.com" class="text-decoration-none text-blue fw-bold">
+                        <a href="mail:info@euphoriagroup.com" class="contact-us-card">
                             info@euphoriagroup.com
                         </a>
                     </p>
@@ -155,7 +164,7 @@ include_once('elements/header.php');
                 <h5>Office Address</h5>
                 <p class="subtitle">Reach out to us for immediate assistance.</p>
                 <div class="info">
-                    <a href="https://maps.app.goo.gl/V4vLAKLZDhNMJqmV9" class="text-decoration-none text-blue fw-bold">
+                    <a href="https://maps.app.goo.gl/V4vLAKLZDhNMJqmV9" class="contact-us-card">
                         B-907/908, Pragati IT Park, Near AR mall,<br />
                         Mota Varachha, Surat - 394101
                     </a>
@@ -204,8 +213,9 @@ include_once('elements/header.php');
 
     .bg-text {
         position: absolute;
-        top: -4px;
+        top: 0px;
         right: 150px;
+        font-family: "Anek Kannada", "Poppins";
         font-size: 6rem;
         font-weight: 900;
         color: #f0c0c8;
@@ -220,7 +230,7 @@ include_once('elements/header.php');
         font-size: 1.6rem;
         font-weight: 700;
         text-align: center;
-        color: #1a2b5e;
+        color: #25356F;
         margin-bottom: 1.5rem;
         position: relative;
         z-index: 1;
@@ -233,14 +243,15 @@ include_once('elements/header.php');
         border: 1.5px solid #d1d5db;
         border-radius: 8px;
         font-size: 0.88rem;
-        color: #374151;
+        color: #666666;
+        font-family: "Anek Kannada", "Poppins";
         background-color: #fff;
         box-shadow: none;
     }
 
     .form-control:focus,
     .form-select:focus {
-        border-color: #1a2b5e;
+        border-color: #25356F;
     }
 
     .form-control::placeholder {
@@ -249,7 +260,7 @@ include_once('elements/header.php');
 
     .form-label {
         font-size: 0.78rem;
-        color: #9ca3af;
+        color: #25356F;
         margin-bottom: 2px;
     }
 
@@ -274,7 +285,7 @@ include_once('elements/header.php');
         width: 18px;
         height: 18px;
         cursor: pointer;
-        accent-color: #1a2b5e;
+        accent-color: #25356F;
         flex-shrink: 0;
     }
 
@@ -300,7 +311,7 @@ include_once('elements/header.php');
     }
 
     .btn-submit {
-        background-color: #1a2b5e;
+        background-color: #25356F;
         color: #fff;
         border: none;
         border-radius: 8px;
@@ -413,7 +424,7 @@ include_once('elements/header.php');
                         <!-- Full Name & Email -->
                         <div class="col-md-6">
                             <label class="form-label">Full Name*</label>
-                            <input type="text" class="form-control" placeholder="Jason Russell" value="Jason Russell" />
+                            <input type="text" class="form-control" placeholder="Jason Russell" />
                         </div>
                         <div class="col-md-6">
                             <label class="form-label">Email Address*</label>
