@@ -110,6 +110,14 @@ include_once('elements/home-slider.php');
 
                     <!-- Last Star -->
                     <img src="assets/img/icon/star-blue.png" class="star-img star-last d-none d-md-block" alt="star">
+
+                    <!-- Logo 5 -->
+                    <div class="flex-fill">
+                        <img src="assets/img/logo/hr-consultancy.png" class="logo-img img-fluid" alt="HR Consultancy">
+                    </div>
+
+                    <!-- Last Star -->
+                    <img src="assets/img/icon/star-blue.png" class="star-img star-last d-none d-md-block" alt="star">
                 <?php
                 }
                 ?>
