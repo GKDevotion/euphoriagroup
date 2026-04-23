@@ -3885,6 +3885,7 @@ include_once('elements/header.php');
     }
   }
 </style>
+
 <section id="tour-package-section" class="sightseeing-tour-section bg-white">
   <div class="container">
     <div class="row align-items-center">
@@ -4091,91 +4092,61 @@ include_once('elements/header.php');
 
 </section>
 
-  <!-- Start Sticky Nav -->
-  <div class="sticky-social d-none d-md-block">
-    <a href="#flight-section"><i class="bi bi-airplane-fill"></i> Flight</a>
-    <a href="#train-section"><i class="bi bi-train-front-fill"></i> Train</a>
-    <a href="#bus-section"><i class="bi bi-bus-front-fill"></i> Bus</a>
-    <a href="#taxi-section"><i class="bi bi-taxi-front-fill"></i> Taxi</a>
-    <a href="#local-section"><i class="bi bi-geo-alt-fill"></i> Local Transport</a>
-    <a href="#hotel-section"><i class="bi bi-building-fill"></i> Hotel</a>
-    <a href="#holiday-package-section"><i class="bi bi-sun-fill"></i> Holiday Package</a>
-    <a href="#tour-package-section"><i class="bi bi-map-fill"></i> Tour Package</a>
-    <a href="#guide-tour-section"><i class="bi bi-person-walking"></i> Guided Tour</a>
-    <a href="#faqs"><i class="bi bi-question-circle-fill"></i> FAQ</a>
-  </div>
-
-  <style>
-      .sticky-social {
-        position: fixed;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
-        display: flex;
-        flex-direction: column;
-        gap: 1px;
-        z-index: 9999;
-      }
-
-      .sticky-social a {
-        position: relative;
-        display: flex;
-        align-items: center;
-        gap: 14px;
-        width: 162px;
-        padding: 10px 14px;
-        font-size: 13px;
-        font-weight: 600;
-        color: #fff;
-        text-decoration: none;
-        background: var(--euphoria-blue);
-        white-space: nowrap;
-        letter-spacing: 0.3px;
-        transform: translateX(118px);
-        transition: transform 0.35s ease-in-out, background 0.2s ease;
-      }
-
-      /* Red left-edge peek strip */
-      .sticky-social a::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 4px;
-        background: var(--euphoria-red);
-        flex-shrink: 0;
-      }
-
-      .sticky-social a:first-child {
-        border-radius: 6px 0 0 0;
-      }
-
-      .sticky-social a:last-child {
-        border-radius: 0 0 0 6px;
-      }
-
-      .sticky-social a i {
-        font-size: 14px;
-        flex-shrink: 0;
-        width: 16px;
-        text-align: center;
-      }
-
-      /* Hover: slide fully in */
-      .sticky-social a:hover {
-        transform: translateX(0);
-        background: var(--euphoria-red);
-      }
-
-      @media (max-width: 767px) {
-        .sticky-social {
-          display: none !important;
-        }
-      }
-  </style>
-
 <?php
+$sideStickyMenu = [
+  [
+    'url' => 'flight-section',
+    'img' => '',
+    'title' => 'Flight'
+  ],
+  [
+    'url' => 'train-section',
+    'img' => '',
+    'title' => 'Train'
+  ],
+  [
+    'url' => 'bus-section',
+    'img' => '',
+    'title' => 'Bus'
+  ],
+  [
+    'url' => 'taxi-section',
+    'img' => '',
+    'title' => 'Taxi'
+  ],
+  [
+    'url' => 'local-section',
+    'img' => '',
+    'title' => 'Local Transport'
+  ],
+  [
+    'url' => 'hotel-section',
+    'img' => '',
+    'title' => 'Hotel'
+  ],
+  [
+    'url' => 'holiday-package-section',
+    'img' => '',
+    'title' => 'Holiday Package'
+  ],
+
+  [
+    'url' => 'tour-package-section',
+    'img' => '',
+    'title' => 'Tour Package'
+  ],
+  [
+    'url' => 'guide-tour-section',
+    'img' => '',
+    'title' => 'Guide Tour'
+  ],
+  [
+    'url' => 'faqs',
+    'img' => '',
+    'title' => 'FAQs'
+  ],
+];
+include_once('elements/side-sticky-menu.php');
 include_once('elements/faqs.php');
 include_once('elements/footer.php');
 ?>

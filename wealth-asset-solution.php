@@ -1661,7 +1661,6 @@ include_once('elements/header.php');
   </div>
 </section>
 
-<section class="infrastructure-section">
 <style>
  
       /* ── Section Heading ── */
@@ -1742,118 +1741,120 @@ include_once('elements/header.php');
       margin: 0;
     }
 </style>
-<div class="container">
 
-<div class="section-heading">
-  <span class="bg-text">Infrastructure</span>
-  <h2>Real Estate Services</h2>
-</div>
+<section class="infrastructure-section">
+  <div class="container">
 
-<div class="services-grid-wrapper">
-    <table class="services-table">
-        <tbody>
+    <div class="section-heading">
+      <span class="bg-text">Infrastructure</span>
+      <h2>Real Estate Services</h2>
+    </div>
 
-          <!-- ROW 1 -->
-          <tr>
-            <!-- Property Buying -->
-            <td>
-              <div class="mb-3">
-                <img src="assets/img/icon/infrastructure-1.png" alt="">
-              </div>
-              <div class="service-title">Property Buying</div>
-              <p class="service-desc">Complete assistance in identifying, evaluating, negotiating, and acquiring residential, commercial, and investment properties with complete due diligence support.</p>
-            </td>
+    <div class="services-grid-wrapper">
+        <table class="services-table">
+            <tbody>
 
-            <!-- Property Selling -->
-            <td>
-              <div class="mb-3">
-                <img src="assets/img/icon/infrastructure-2.png" alt="">
-              </div>
-              <div class="service-title">Property Selling</div>
-              <p class="service-desc">Strategic marketing, buyer sourcing, pricing advisory, and negotiation support to ensure maximum value and smooth property transactions.</p>
-            </td>
+              <!-- ROW 1 -->
+              <tr>
+                <!-- Property Buying -->
+                <td>
+                  <div class="mb-3">
+                    <img src="assets/img/icon/infrastructure-1.png" alt="">
+                  </div>
+                  <div class="service-title">Property Buying</div>
+                  <p class="service-desc">Complete assistance in identifying, evaluating, negotiating, and acquiring residential, commercial, and investment properties with complete due diligence support.</p>
+                </td>
 
-            <!-- Property Rental -->
-            <td>
-              <div class="mb-3">
-                <img src="assets/img/icon/infrastructure-3.png" alt="">
-              </div>
-              <div class="service-title">Property Rental</div>
-              <p class="service-desc">Comprehensive rental solutions connecting property owners with verified tenants while ensuring secure agreements and timely occupancy.</p>
-            </td>
+                <!-- Property Selling -->
+                <td>
+                  <div class="mb-3">
+                    <img src="assets/img/icon/infrastructure-2.png" alt="">
+                  </div>
+                  <div class="service-title">Property Selling</div>
+                  <p class="service-desc">Strategic marketing, buyer sourcing, pricing advisory, and negotiation support to ensure maximum value and smooth property transactions.</p>
+                </td>
 
-            <!-- Residential Leasing -->
-            <td>
-              <div class="mb-3">
-                <img src="assets/img/icon/infrastructure-4.png" alt="">
-              </div>
-              <div class="service-title">Residential Leasing</div>
-              <p class="service-desc">Expert leasing solutions for apartments, villas, and residential properties with structured agreements and tenant screening support.</p>
-            </td>
+                <!-- Property Rental -->
+                <td>
+                  <div class="mb-3">
+                    <img src="assets/img/icon/infrastructure-3.png" alt="">
+                  </div>
+                  <div class="service-title">Property Rental</div>
+                  <p class="service-desc">Comprehensive rental solutions connecting property owners with verified tenants while ensuring secure agreements and timely occupancy.</p>
+                </td>
 
-            <!-- Commercial Leasing -->
-            <td>
-              <div class="mb-3">
-                <img src="assets/img/icon/infrastructure-5.png" alt="">
-              </div>
-              <div class="service-title">Commercial Leasing</div>
-              <p class="service-desc">Professional leasing services for offices, retail spaces, and commercial properties with market-driven pricing and contract management.</p>
-            </td>
-          </tr>
+                <!-- Residential Leasing -->
+                <td>
+                  <div class="mb-3">
+                    <img src="assets/img/icon/infrastructure-4.png" alt="">
+                  </div>
+                  <div class="service-title">Residential Leasing</div>
+                  <p class="service-desc">Expert leasing solutions for apartments, villas, and residential properties with structured agreements and tenant screening support.</p>
+                </td>
 
-          <!-- ROW 2 -->
-          <tr>
-            <!-- Property Management -->
-            <td>
-              <div class="mb-3">
-                <img src="assets/img/icon/infrastructure-6.png" alt="">
-              </div>
-              <div class="service-title">Property Management</div>
-              <p class="service-desc">Complete property management, including tenant coordination, rent collection, maintenance supervision, and asset performance monitoring.</p>
-            </td>
+                <!-- Commercial Leasing -->
+                <td>
+                  <div class="mb-3">
+                    <img src="assets/img/icon/infrastructure-5.png" alt="">
+                  </div>
+                  <div class="service-title">Commercial Leasing</div>
+                  <p class="service-desc">Professional leasing services for offices, retail spaces, and commercial properties with market-driven pricing and contract management.</p>
+                </td>
+              </tr>
 
-            <!-- Property Marketing -->
-            <td>
-              <div class="mb-3">
-                <img src="assets/img/icon/infrastructure-7.png" alt="">
-              </div>
-              <div class="service-title">Property Marketing</div>
-              <p class="service-desc">Targeted marketing strategies using digital platforms, listings, and network outreach to attract qualified buyers and tenants.</p>
-            </td>
+              <!-- ROW 2 -->
+              <tr>
+                <!-- Property Management -->
+                <td>
+                  <div class="mb-3">
+                    <img src="assets/img/icon/infrastructure-6.png" alt="">
+                  </div>
+                  <div class="service-title">Property Management</div>
+                  <p class="service-desc">Complete property management, including tenant coordination, rent collection, maintenance supervision, and asset performance monitoring.</p>
+                </td>
 
-            <!-- Property Valuation -->
-            <td>
-              <div class="mb-3">
-                <img src="assets/img/icon/infrastructure-8.png" alt="">
-              </div>
-              <div class="service-title">Property Valuation</div>
-              <p class="service-desc">Accurate property assessment and valuation reports based on market trends, location analysis, and asset condition.</p>
-            </td>
+                <!-- Property Marketing -->
+                <td>
+                  <div class="mb-3">
+                    <img src="assets/img/icon/infrastructure-7.png" alt="">
+                  </div>
+                  <div class="service-title">Property Marketing</div>
+                  <p class="service-desc">Targeted marketing strategies using digital platforms, listings, and network outreach to attract qualified buyers and tenants.</p>
+                </td>
 
-            <!-- Real Estate Advisory -->
-            <td>
-              <div class="mb-3">
-                <img src="assets/img/icon/infrastructure-9.png" alt="">
-              </div>
-              <div class="service-title">Real Estate Advisory</div>
-              <p class="service-desc">Strategic real estate guidance to help clients make informed decisions based on market insights and investment objectives.</p>
-            </td>
+                <!-- Property Valuation -->
+                <td>
+                  <div class="mb-3">
+                    <img src="assets/img/icon/infrastructure-8.png" alt="">
+                  </div>
+                  <div class="service-title">Property Valuation</div>
+                  <p class="service-desc">Accurate property assessment and valuation reports based on market trends, location analysis, and asset condition.</p>
+                </td>
 
-            <!-- Investment Consulting -->
-            <td>
-              <div class="mb-3">
-                <img src="assets/img/icon/infrastructure-10.png" alt="">
-              </div>
-              <div class="service-title">Investment Consulting</div>
-              <p class="service-desc">Customised investment strategies focused on maximising returns, capital appreciation, and portfolio diversification.</p>
-            </td>
-          </tr>
+                <!-- Real Estate Advisory -->
+                <td>
+                  <div class="mb-3">
+                    <img src="assets/img/icon/infrastructure-9.png" alt="">
+                  </div>
+                  <div class="service-title">Real Estate Advisory</div>
+                  <p class="service-desc">Strategic real estate guidance to help clients make informed decisions based on market insights and investment objectives.</p>
+                </td>
 
-        </tbody>
-    </table>
-</div>
+                <!-- Investment Consulting -->
+                <td>
+                  <div class="mb-3">
+                    <img src="assets/img/icon/infrastructure-10.png" alt="">
+                  </div>
+                  <div class="service-title">Investment Consulting</div>
+                  <p class="service-desc">Customised investment strategies focused on maximising returns, capital appreciation, and portfolio diversification.</p>
+                </td>
+              </tr>
 
-</div>
+            </tbody>
+        </table>
+    </div>
+
+  </div>
 
 </section>
 
