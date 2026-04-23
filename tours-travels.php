@@ -95,44 +95,48 @@ include_once('elements/header.php');
 
 <div class="container content-section">
 
-  <div class="d-flex d-none justify-content-center mb-3 container position-relative" style="z-index:2">
+  <?php
+  if( false ){
+    ?>
+    <div class="d-flex justify-content-center mb-3 container position-relative" style="z-index:2">
 
-    <div class="formation-nav-wrapper" data-aos="fade-up" data-aos-duration="800">
+      <div class="formation-nav-wrapper" data-aos="fade-up" data-aos-duration="800">
 
-      <a href="#flight-section" class="nav-link-pill nav-link-item nav-active-pill">Flight</a>
-      <div class="nav-sep"></div>
+        <a href="#flight-section" class="nav-link-pill nav-link-item nav-active-pill">Flight</a>
+        <div class="nav-sep"></div>
 
-      <a href="#train-section" class="nav-link-pill nav-link-item">Train</a>
-      <div class="nav-sep"></div>
+        <a href="#train-section" class="nav-link-pill nav-link-item">Train</a>
+        <div class="nav-sep"></div>
 
-      <a href="#bus-section" class="nav-link-pill nav-link-item">Bus</a>
-      <div class="nav-sep"></div>
+        <a href="#bus-section" class="nav-link-pill nav-link-item">Bus</a>
+        <div class="nav-sep"></div>
 
-      <a href="#taxi-section" class="nav-link-pill nav-link-item">Taxi</a>
-      <div class="nav-sep"></div>
+        <a href="#taxi-section" class="nav-link-pill nav-link-item">Taxi</a>
+        <div class="nav-sep"></div>
 
-      <a href="#local-section" class="nav-link-pill nav-link-item">Local Transporatation</a>
-      <div class="nav-sep"></div>
+        <a href="#local-section" class="nav-link-pill nav-link-item">Local Transporatation</a>
+        <div class="nav-sep"></div>
 
-      <a href="#hotel-section" class="nav-link-pill nav-link-item">Hotel</a>
-      <div class="nav-sep"></div>
+        <a href="#hotel-section" class="nav-link-pill nav-link-item">Hotel</a>
+        <div class="nav-sep"></div>
 
-      <a href="#holiday-package-section" class="nav-link-pill nav-link-item">Holiday Package</a>
-      <div class="nav-sep"></div>
+        <a href="#holiday-package-section" class="nav-link-pill nav-link-item">Holiday Package</a>
+        <div class="nav-sep"></div>
 
-      <a href="#tour-package-section" class="nav-link-pill nav-link-item">Tour Package</a>
-      <div class="nav-sep"></div>
+        <a href="#tour-package-section" class="nav-link-pill nav-link-item">Tour Package</a>
+        <div class="nav-sep"></div>
 
-      <a href="#guide-tour-section" class="nav-link-pill nav-link-item">Guided Tour</a>
-      <div class="nav-sep"></div>
+        <a href="#guide-tour-section" class="nav-link-pill nav-link-item">Guided Tour</a>
+        <div class="nav-sep"></div>
 
-      <a href="#faqs" class="nav-link-pill nav-link-item">FAQ</a>
+        <a href="#faqs" class="nav-link-pill nav-link-item">FAQ</a>
 
+
+      </div>
 
     </div>
-
-  </div>
-
+    <?php
+  } ?>
 
 
   <!-- Tab Content -->

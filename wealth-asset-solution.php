@@ -69,24 +69,29 @@ include_once('elements/header.php');
 
 <div class="container content-section"> 
 
-     <div class="d-flex justify-content-center mb-3 container position-relative" style="z-index:2">
+  <?php
+  if( false ){
+    ?>
+    <div class="d-flex justify-content-center mb-3 container position-relative" style="z-index:2">
 
-        <div class="formation-nav-wrapper" data-aos="fade-up" data-aos-duration="800">
+      <div class="formation-nav-wrapper" data-aos="fade-up" data-aos-duration="800">
 
-            <a href="#stock_market_section" class="nav-link-pill nav-link-item nav-active-pill">Stick market</a>
-            <div class="nav-sep"></div>
+          <a href="#stock-market-section" class="nav-link-pill nav-link-item nav-active-pill">Stick market</a>
+          <div class="nav-sep"></div>
 
-            <a href="#insuarance_section" class="nav-link-pill nav-link-item">Insuarance</a>
-            <div class="nav-sep"></div>
-            
-            <a href="#section" class="nav-link-pill nav-link-item">Real Estate</a>
-            <div class="nav-sep"></div>
-            
-            <a href="#section" class="nav-link-pill nav-link-item">FAQ</a>  
+          <a href="#insuarance-section" class="nav-link-pill nav-link-item">Insuarance</a>
+          <div class="nav-sep"></div>
+          
+          <a href="#real-estate-section" class="nav-link-pill nav-link-item">Real Estate</a>
+          <div class="nav-sep"></div>
+          
+          <a href="#section" class="nav-link-pill nav-link-item">FAQ</a>  
 
-        </div>
+      </div>
+      <?php
+  } ?>
 
-    </div> 
+  </div> 
 
   <!-- Tab Content -->
   <div id="tab1" class="corporate-content-box active">
@@ -161,7 +166,7 @@ include_once('elements/header.php');
   }
 </style>
 
-<section class="stock-section">
+<section class="stock-section" id="stock-market-section">
   <div class="container-fluid">
     <div class="row align-items-center g-4">
 
@@ -1147,7 +1152,7 @@ include_once('elements/header.php');
   }
 </style>
 
-<section class="elite-insurance-section">
+<section class="elite-insurance-section" id="insuarance-section">
 
   <!-- Background Text -->
   <div class="elite-insurance-bg-text">Protection</div>
@@ -1618,7 +1623,7 @@ include_once('elements/header.php');
   }
 </style>
 
-<section class="realestate-section about-section">
+<section class="realestate-section about-section" id="real-estate-section">
 
   <div class="container">
     <div class="image-wrapper">
@@ -1859,6 +1864,29 @@ include_once('elements/header.php');
 </section>
 
 <?php
+$sideStickyMenu = [
+  [
+    'url' => 'stock-market-section',
+    'img' => '',
+    'title' => 'Stock Market'
+  ],
+  [
+    'url' => 'insuarance-section',
+    'img' => '',
+    'title' => 'Insuarance'
+  ],
+  [
+    'url' => 'real-estate-section',
+    'img' => '',
+    'title' => 'Real Estate'
+  ],
+  [
+    'url' => 'faqs',
+    'img' => '',
+    'title' => 'FAQs'
+  ],
+];
+include_once('elements/side-sticky-menu.php');
 include_once('elements/faqs.php');
 include_once('elements/footer.php');
 ?>

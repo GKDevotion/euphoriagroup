@@ -14,33 +14,38 @@ include_once('elements/header.php');
 
 <section class="corporate-tab-section india-section">
 
-  <div class="container position-relative" style="z-index:2">
+  <?php
+  if( false ){
+    ?>
+    <div class="container position-relative" style="z-index:2">
 
-    <div class="formation-nav-wrapper" data-aos="fade-up" data-aos-duration="800">
+      <div class="formation-nav-wrapper" data-aos="fade-up" data-aos-duration="800">
 
-      <a href="#legal-compliance" class="nav-link-pill nav-link-item nav-active-pill">Legal & Compliance Services</a>
-      <div class="nav-sep"></div>
+        <a href="#legal-compliance" class="nav-link-pill nav-link-item nav-active-pill">Legal & Compliance Services</a>
+        <div class="nav-sep"></div>
 
-      <a href="#account-taxation" class="nav-link-pill nav-link-item">Accounting & Taxation</a>
-      <div class="nav-sep"></div>
+        <a href="#account-taxation" class="nav-link-pill nav-link-item">Accounting & Taxation</a>
+        <div class="nav-sep"></div>
 
-      <a href="#licensing-regulatory" class="nav-link-pill nav-link-item">Licensing & Regulatory</a>
-      <div class="nav-sep"></div>
+        <a href="#licensing-regulatory" class="nav-link-pill nav-link-item">Licensing & Regulatory</a>
+        <div class="nav-sep"></div>
 
-      <a href="#corporate-restructuring" class="nav-link-pill nav-link-item">Corporate Restructuring</a>
-      <div class="nav-sep"></div>
+        <a href="#corporate-restructuring" class="nav-link-pill nav-link-item">Corporate Restructuring</a>
+        <div class="nav-sep"></div>
 
-      <a href="#advisory-consultancy" class="nav-link-pill nav-link-item">Advisory & Consultancy</a>
-      <div class="nav-sep"></div>
+        <a href="#advisory-consultancy" class="nav-link-pill nav-link-item">Advisory & Consultancy</a>
+        <div class="nav-sep"></div>
 
-      <a href="#additional-service" class="nav-link-pill nav-link-item">Additional Services</a>
-      <div class="nav-sep"></div>
+        <a href="#additional-service" class="nav-link-pill nav-link-item">Additional Services</a>
+        <div class="nav-sep"></div>
 
-      <a href="#faqs" class="nav-link-pill nav-link-item">FAQ</a>
+        <a href="#faqs" class="nav-link-pill nav-link-item">FAQ</a>
 
-    </div>
+      </div>
 
-  </div><!-- /container -->
+    </div><!-- /container -->
+    <?php
+  }?>
 
   <div class="container-xl pt-5">
     <div class="row align-items-center">
@@ -1513,6 +1518,44 @@ include_once('elements/header.php');
 </section>
 
 <?php
+$sideStickyMenu = [
+  [
+    'url' => 'legal-compliance',
+    'img' => '',
+    'title' => 'Legal & Compliance Services'
+  ],
+  [
+    'url' => 'account-taxation',
+    'img' => '',
+    'title' => 'Accounting & Taxation'
+  ],
+  [
+    'url' => 'licensing-regulatory',
+    'img' => '',
+    'title' => 'Licensing Regulatory'
+  ],
+  [
+    'url' => 'corporate-restructuring',
+    'img' => '',
+    'title' => 'Corporate Restructuring'
+  ],
+  [
+    'url' => 'advisory-consultancy',
+    'img' => '',
+    'title' => 'Advisory Consultancy'
+  ],
+  [
+    'url' => 'additional-service',
+    'img' => '',
+    'title' => 'Additional Service'
+  ],
+  [
+    'url' => 'faqs',
+    'img' => '',
+    'title' => 'FAQs'
+  ],
+];
+include_once('elements/side-sticky-menu.php');
 include_once('elements/faqs.php');
 include_once('elements/footer.php');
 ?>
