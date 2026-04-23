@@ -133,6 +133,7 @@ include_once('elements/home-slider.php');
     p.text-muted {
         font-size: 1.2rem;
     }
+    
 </style>
 
 <section class="about-section">
@@ -162,24 +163,24 @@ include_once('elements/home-slider.php');
                 </p>
 
                 <ul class="about-list">
-                    <li data-aos="fade-up" data-aos-duration="600">
-                        <i class="fa-solid fa-check"></i> 
+                    <li data-aos="fade-up" data-aos-duration="600" class="gap-2">
+                        <img src="assets/img/icon/Checke.png" alt="Check Icon"> 
                         Expert overseas business setup & corporate services
                     </li>
-                    <li data-aos="fade-up" data-aos-duration="600">
-                        <i class="fa-solid fa-check"></i> 
+                    <li data-aos="fade-up" data-aos-duration="600" class="gap-2">
+                        <img src="assets/img/icon/Checke.png" alt="Check Icon"> 
                         Trusted real estate brokers in India & Dubai
                     </li>
-                    <li data-aos="fade-up" data-aos-duration="600">
-                        <i class="fa-solid fa-check"></i> 
+                    <li data-aos="fade-up" data-aos-duration="600" class="gap-2">
+                        <img src="assets/img/icon/Checke.png" alt="Check Icon"> 
                         Comprehensive global travel & Immigration
                     </li>
-                    <li data-aos="fade-up" data-aos-duration="600">
-                        <i class="fa-solid fa-check"></i> 
+                    <li data-aos="fade-up" data-aos-duration="600" class="gap-2">
+                        <img src="assets/img/icon/Checke.png" alt="Check Icon"> 
                         Comprehensive life, health, travel & business insurance
                     </li>
-                    <li data-aos="fade-up" data-aos-duration="600">
-                        <i class="fa-solid fa-check"></i> 
+                    <li data-aos="fade-up" data-aos-duration="600" class="gap-2">
+                        <img src="assets/img/icon/Checke.png" alt="Check Icon"> 
                         One-stop solution for wealth, business & lifestyle planning
                     </li>
                 </ul>
