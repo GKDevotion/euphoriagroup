@@ -22,7 +22,7 @@
         color: #fff;
         text-decoration: none;
         background: var(--euphoria-blue);
-        white-space: nowrap;
+        white-space: normal;
         letter-spacing: 0.3px;
         transform: translateX(118px);
         transition: transform 0.35s ease-in-out, background 0.2s ease;
@@ -76,7 +76,7 @@
             ?>
             <a href="#<?= $val['url']; ?>">
                 <i class="bi bi-airplane-fill"></i>
-                <?= $val['title']; ?>
+                <?= $val['title']; ?> 
             </a>
             <?php
         }

@@ -11,10 +11,10 @@ include_once('elements/header.php');
 </section>
 
 <section class="corporate-tab-section india-section">
-
+    <?php if(false) { ?>
     <div class="container position-relative" style="z-index:2">
 
-        <div class="formation-nav-wrapper" data-aos="fade-up" data-aos-duration="800">
+        <div class="formation-nav-wrapper " data-aos="fade-up" data-aos-duration="800">
 
             <a href="#business-formation" class="nav-link-pill nav-link-item nav-active-pill">Business Formation</a>
             <div class="nav-sep"></div>
@@ -45,7 +45,7 @@ include_once('elements/header.php');
         </div>
 
     </div> 
-
+    <?php } ?>
     <div class="container-xl pt-5">
         <div class="row align-items-center">
 
@@ -2656,6 +2656,56 @@ include_once('elements/header.php');
 </section>
 
 <?php
+$sideStickyMenu = [
+  [
+    'url' => 'business-formation',
+    'img' => '',
+    'title' => 'Business Formation'
+  ],
+  [
+    'url' => 'private-company-setup',
+    'img' => '',
+    'title' => 'Private Limited Company Setup'
+  ],
+  [
+    'url' => 'llp-registration',
+    'img' => '',
+    'title' => 'LLP'
+  ],
+  [
+    'url' => 'opc',
+    'img' => '',
+    'title' => 'OPC'
+  ],
+  [
+    'url' => 'partnership-firm',
+    'img' => '',
+    'title' => 'Partnership Firm'
+  ],
+  [
+    'url' => 'pan-tan-gst',
+    'img' => '',
+    'title' => 'PAN, TAN, GST'
+  ],
+  [
+    'url' => 'ngo-trust-registration',
+    'img' => '',
+    'title' => 'NGO / Trust / Section 8 Company'
+  ],
+
+  [
+    'url' => 'startup-india-registration',
+    'img' => '',
+    'title' => 'Start-up India Registration'
+  ], 
+  [
+    'url' => 'faqs',
+    'img' => '',
+    'title' => 'FAQs'
+  ],
+];
+
+include_once('elements/side-sticky-menu.php');
 include_once('elements/faqs.php');
 include_once('elements/footer.php');
 ?>
