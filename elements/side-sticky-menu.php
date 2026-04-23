@@ -16,9 +16,10 @@
         align-items: center;
         gap: 14px;
         width: 162px;
-        padding: 10px 14px;
+        padding: 5px 14px;
         font-size: 13px;
         font-weight: 600;
+        border-bottom: 1px solid #666666;
         color: #fff;
         text-decoration: none;
         background: var(--euphoria-blue);

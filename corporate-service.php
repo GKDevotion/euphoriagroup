@@ -1520,7 +1520,7 @@ include_once('elements/header.php');
 <?php
 $sideStickyMenu = [
   [
-    'url' => 'legal-compliance',
+    'url' => 'legal',
     'img' => '',
     'title' => 'Legal & Compliance Services'
   ],
@@ -1528,16 +1528,16 @@ $sideStickyMenu = [
     'url' => 'account-taxation',
     'img' => '',
     'title' => 'Accounting & Taxation'
+    ],
+  [
+    'url' => 'restructuring',
+    'img' => '',
+    'title' => 'Corporate Restructuring'
   ],
   [
     'url' => 'licensing-regulatory',
     'img' => '',
     'title' => 'Licensing Regulatory'
-  ],
-  [
-    'url' => 'corporate-restructuring',
-    'img' => '',
-    'title' => 'Corporate Restructuring'
   ],
   [
     'url' => 'advisory-consultancy',
