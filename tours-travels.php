@@ -94,46 +94,46 @@ include_once('elements/header.php');
 </style>
 
 <div class="container content-section">
-  
-     <div class="d-flex justify-content-center mb-3 container position-relative" style="z-index:2">
 
-        <div class="formation-nav-wrapper" data-aos="fade-up" data-aos-duration="800">
+  <div class="d-flex d-none justify-content-center mb-3 container position-relative" style="z-index:2">
 
-            <a href="#flight-section" class="nav-link-pill nav-link-item nav-active-pill">Flight</a>
-            <div class="nav-sep"></div>
+    <div class="formation-nav-wrapper" data-aos="fade-up" data-aos-duration="800">
 
-            <a href="#train-section" class="nav-link-pill nav-link-item">Train</a>
-            <div class="nav-sep"></div>
+      <a href="#flight-section" class="nav-link-pill nav-link-item nav-active-pill">Flight</a>
+      <div class="nav-sep"></div>
 
-            <a href="#bus-section" class="nav-link-pill nav-link-item">Bus</a>  
-            <div class="nav-sep"></div>
-            
-            <a href="#taxi-section" class="nav-link-pill nav-link-item">Taxi</a>
-            <div class="nav-sep"></div>
-            
-            <a href="#local-section" class="nav-link-pill nav-link-item">Local Transporatation</a>  
-            <div class="nav-sep"></div>
+      <a href="#train-section" class="nav-link-pill nav-link-item">Train</a>
+      <div class="nav-sep"></div>
 
-            <a href="#hotel-section" class="nav-link-pill nav-link-item">Hotel</a>  
-            <div class="nav-sep"></div>
+      <a href="#bus-section" class="nav-link-pill nav-link-item">Bus</a>
+      <div class="nav-sep"></div>
 
-            <a href="#holiday-package-section" class="nav-link-pill nav-link-item">Holiday Package</a>  
-            <div class="nav-sep"></div>
+      <a href="#taxi-section" class="nav-link-pill nav-link-item">Taxi</a>
+      <div class="nav-sep"></div>
 
-            <a href="#tour-package-section" class="nav-link-pill nav-link-item">Tour Package</a>  
-            <div class="nav-sep"></div>
+      <a href="#local-section" class="nav-link-pill nav-link-item">Local Transporatation</a>
+      <div class="nav-sep"></div>
 
-            <a href="#guide-tour-section" class="nav-link-pill nav-link-item">Guided Tour</a>  
-            <div class="nav-sep"></div>
+      <a href="#hotel-section" class="nav-link-pill nav-link-item">Hotel</a>
+      <div class="nav-sep"></div>
 
-            <a href="#faqs" class="nav-link-pill nav-link-item">FAQ</a>   
+      <a href="#holiday-package-section" class="nav-link-pill nav-link-item">Holiday Package</a>
+      <div class="nav-sep"></div>
+
+      <a href="#tour-package-section" class="nav-link-pill nav-link-item">Tour Package</a>
+      <div class="nav-sep"></div>
+
+      <a href="#guide-tour-section" class="nav-link-pill nav-link-item">Guided Tour</a>
+      <div class="nav-sep"></div>
+
+      <a href="#faqs" class="nav-link-pill nav-link-item">FAQ</a>
 
 
-        </div>
+    </div>
 
-    </div> 
+  </div>
 
-  
+
 
   <!-- Tab Content -->
   <div id="tab1" class="corporate-content-box active">
@@ -142,7 +142,7 @@ include_once('elements/header.php');
         <img src="assets/img/tour-travel/airplan-window.png" class="illustration">
       </div>
       <div class="col-md-7 text-content ">
-        <p style="font-size: 18px; font-family: 'Anek Kannada', 'Poppins', sans-serif;" >
+        <p style="font-size: 18px; font-family: 'Anek Kannada', 'Poppins', sans-serif;">
           Our inbound tour and travel services in India are designed to offer international travellers a seamless, comfortable, and memorable experience. We specialise in customised travel packages, guided tours, hotel bookings, transportation arrangements, and comprehensive travel assistance for individuals, families, and corporate groups visiting India.
         </p>
         <p style="font-size: 18px; font-family: 'Anek Kannada', 'Poppins', sans-serif;">
@@ -150,7 +150,7 @@ include_once('elements/header.php');
         </p>
         <p style="font-size: 18px; font-family: 'Anek Kannada', 'Poppins', sans-serif;">
           Whether you are visiting India for leisure, business, medical tourism, or cultural exploration, our inbound travel solutions provide reliable support, competitive pricing, and exceptional customer service to make your journey smooth and unforgettable.
-        </p> 
+        </p>
       </div>
     </div>
   </div>
@@ -332,7 +332,7 @@ include_once('elements/header.php');
 
   .card-body-content h5 {
     font-size: 20px;
-    font-weight: 400; 
+    font-weight: 400;
     line-height: 1.25;
     font-family: "Anek Kannada", "Poppins", sans-serif;
     text-align: center;
@@ -1110,14 +1110,14 @@ include_once('elements/header.php');
     transition: background .3s, transform .3s;
   }
 
- 
+
   .card-icon svg {
     width: 22px;
     height: 22px;
     fill: var(--euphoria-red);
     transition: fill .3s;
   }
- 
+
   .card-title {
 
     font-size: clamp(16px, 1.8vw, 20px);
@@ -1331,7 +1331,7 @@ include_once('elements/header.php');
 
       <!-- CENTRE TALL: Pan-India Network -->
       <div class="card-wrap card-center">
-        <div class="tcard" >
+        <div class="tcard">
           <div class="card-img-box">
             <img src="assets/img/tour-travel/pan-india.png" alt="Railway Network" />
             <div class="card-badge"><svg viewBox="0 0 24 24">
@@ -1352,7 +1352,7 @@ include_once('elements/header.php');
 
       <!-- TOP-RIGHT: Flexible Travel Options -->
       <div class="card-wrap">
-        <div class="tcard" >
+        <div class="tcard">
           <div class="card-img-box">
             <img src="assets/img/tour-travel/flaxible-transport.png" alt="Flexible Travel" />
             <div class="card-badge"><svg viewBox="0 0 24 24">
@@ -1373,7 +1373,7 @@ include_once('elements/header.php');
 
       <!-- BOTTOM-LEFT: Tatkal Reservation -->
       <div class="card-wrap">
-        <div class="tcard" >
+        <div class="tcard">
           <div class="card-img-box">
             <img src="assets/img/tour-travel/confirm-ticket.png" alt="Tatkal Reservation" />
             <div class="card-badge"><svg viewBox="0 0 24 24">
@@ -1394,7 +1394,7 @@ include_once('elements/header.php');
 
       <!-- BOTTOM-RIGHT: Complete Travel Assistance -->
       <div class="card-wrap">
-        <div class="tcard" >
+        <div class="tcard">
           <div class="card-img-box">
             <img src="assets/img/tour-travel/complete-travel.png" alt="Travel Assistance" />
             <div class="card-badge"><svg viewBox="0 0 24 24">
@@ -1599,10 +1599,11 @@ include_once('elements/header.php');
     will-change: transform;
   }
 
-  .busline-icon{
+  .busline-icon {
     width: 70px;
     height: 70px;
   }
+
   /* ── CARD ── */
   .bus-card {
     flex-shrink: 0;
@@ -1923,7 +1924,7 @@ include_once('elements/header.php');
     <div class="bus-header">
       <img src="assets/img/tour-travel/bus-on.png" alt="Bus" class="bus-img d-none d-md-block" onerror="this.style.display='none'" />
       <h2 class="bus-title">Bus Booking</h2>
-       
+
       <p class="section-subtitle mt-5 w-100">
         Convenient bus booking services for intercity and interstate travel with multiple operator options.
       </p>
@@ -2293,7 +2294,7 @@ include_once('elements/header.php');
   }
 
   /* hover: highlight */
-   
+
 
   /* checkmark icon */
   .taxi-check {
@@ -2308,7 +2309,7 @@ include_once('elements/header.php');
     transition: background .28s ease, transform .28s ease;
   }
 
-  .taxi-feat:hover .taxi-check { 
+  .taxi-feat:hover .taxi-check {
     transform: scale(1.15);
   }
 
@@ -2322,7 +2323,7 @@ include_once('elements/header.php');
     stroke-linejoin: round;
     transition: stroke .28s ease;
   }
- 
+
   /* feature label */
   .taxi-feat-label {
     font-size: clamp(12px, 1.1vw, 14px);
@@ -2336,7 +2337,7 @@ include_once('elements/header.php');
     font-weight: 600;
   }
 
-  .taxi-check-icon{
+  .taxi-check-icon {
     width: 25px;
     height: 25px;
   }
@@ -2477,35 +2478,35 @@ include_once('elements/header.php');
 
             <div class="taxi-feat">
               <div class="taxi-check">
-                  <img src="assets/img/icon/Checke.png" alt="Affordable Taxi Fare Options" class="taxi-check-icon">
+                <img src="assets/img/icon/Checke.png" alt="Affordable Taxi Fare Options" class="taxi-check-icon">
               </div>
               <span class="taxi-feat-label">Affordable Taxi Fare Options</span>
             </div>
 
             <div class="taxi-feat">
               <div class="taxi-check">
-                  <img src="assets/img/icon/Checke.png" alt="Taxi Services" class="taxi-check-icon"> 
+                <img src="assets/img/icon/Checke.png" alt="Taxi Services" class="taxi-check-icon">
               </div>
               <span class="taxi-feat-label">Local &amp; Outstation Taxi Services</span>
             </div>
 
             <div class="taxi-feat">
               <div class="taxi-check">
-                  <img src="assets/img/icon/Checke.png" alt="24/7 Taxi Availability" class="taxi-check-icon"> 
+                <img src="assets/img/icon/Checke.png" alt="24/7 Taxi Availability" class="taxi-check-icon">
               </div>
               <span class="taxi-feat-label">24/7 Taxi Availability</span>
             </div>
 
             <div class="taxi-feat">
               <div class="taxi-check">
-                  <img src="assets/img/icon/Checke.png" alt="Wide Range of Vehicles" class="taxi-check-icon"> 
+                <img src="assets/img/icon/Checke.png" alt="Wide Range of Vehicles" class="taxi-check-icon">
               </div>
               <span class="taxi-feat-label">Wide Range of Vehicles</span>
             </div>
 
             <div class="taxi-feat">
               <div class="taxi-check">
-                  <img src="assets/img/icon/Checke.png" alt="Airport Transfer Services" class="taxi-check-icon"> 
+                <img src="assets/img/icon/Checke.png" alt="Airport Transfer Services" class="taxi-check-icon">
               </div>
               <span class="taxi-feat-label">Airport Transfer Services</span>
             </div>
@@ -2569,16 +2570,20 @@ include_once('elements/header.php');
     left: 15%;
   }
 
- .lt-main-img {
+  .lt-main-img {
     width: 100%;
-    height: 350px;  
-    margin-top: 50px;            /* fixed height */
-    object-fit: cover;          /* crop nicely */
-    object-position: center;    /* vertical + horizontal center */
+    height: 350px;
+    margin-top: 50px;
+    /* fixed height */
+    object-fit: cover;
+    /* crop nicely */
+    object-position: center;
+    /* vertical + horizontal center */
     border-radius: 18px;
     display: block;
     box-shadow: 0 16px 50px rgba(37, 53, 111, 0.13);
   }
+
   /* .lt-main-img {
     width: 100%;
     border-radius: 18px;
@@ -2843,7 +2848,7 @@ include_once('elements/header.php');
           <div class="lt-card">
             <div class="mb-3">
               <!-- driver/chauffeur -->
-             <img src="assets/img/icon/mobility-4.png" alt="Professional Chauffeur" class="mobility-icon">
+              <img src="assets/img/icon/mobility-4.png" alt="Professional Chauffeur" class="mobility-icon">
             </div>
             <h3 class="lt-card-title">Professional Chauffeur</h3>
             <p class="lt-card-text">Our trained and professional chauffeurs ensure a smooth and safe travel experience. With experienced drivers and well-maintained vehicles, we provide reliable transportation for corporate clients, tourists, and local travellers.</p>
@@ -3160,60 +3165,60 @@ include_once('elements/header.php');
     <!-- BODY -->
     <div class="hp-body">
       <div class="row align-items-center">
-          <div class="col-lg-5">
-            <div class="hp-left">
-              <img class="hp-scene-img" src="assets/img/tour-travel/holiday-package.png" alt="Holiday Scene" onerror="this.src=''" />
-            </div>
+        <div class="col-lg-5">
+          <div class="hp-left">
+            <img class="hp-scene-img" src="assets/img/tour-travel/holiday-package.png" alt="Holiday Scene" onerror="this.src=''" />
           </div>
+        </div>
 
-          <div class="col-lg-7">
-            <div class="hp-right">
-              <div class="hp-grid">
+        <div class="col-lg-7">
+          <div class="hp-right">
+            <div class="hp-grid">
 
-                <!-- R1C1 -->
-                <div class="hp-cell">
-                  <h3 class="hp-cell-title">Customised Inbound Holiday Packages</h3>
-                  <p class="hp-cell-text">We offer customised holiday packages for domestic destinations, designed to provide memorable travel experiences for families, couples, and leisure travellers.</p>
-                </div>
+              <!-- R1C1 -->
+              <div class="hp-cell">
+                <h3 class="hp-cell-title">Customised Inbound Holiday Packages</h3>
+                <p class="hp-cell-text">We offer customised holiday packages for domestic destinations, designed to provide memorable travel experiences for families, couples, and leisure travellers.</p>
+              </div>
 
-                <!-- R1C2 -->
-                <div class="hp-cell">
-                  <h3 class="hp-cell-title">Personalised Travel Itineraries</h3>
-                  <p class="hp-cell-text">Our experts create tailor-made travel itineraries based on your preferences, budget, and travel goals, ensuring a well-planned and enjoyable vacation.</p>
-                </div>
+              <!-- R1C2 -->
+              <div class="hp-cell">
+                <h3 class="hp-cell-title">Personalised Travel Itineraries</h3>
+                <p class="hp-cell-text">Our experts create tailor-made travel itineraries based on your preferences, budget, and travel goals, ensuring a well-planned and enjoyable vacation.</p>
+              </div>
 
-                <!-- R1C3 -->
-                <div class="hp-cell">
-                  <h3 class="hp-cell-title">Complete Travel Planning Solutions</h3>
-                  <p class="hp-cell-text">Our holiday packages include flights, hotel accommodations, local transportation, sightseeing tours, and travel assistance, providing a complete and hassle-free travel experience.</p>
-                </div>
+              <!-- R1C3 -->
+              <div class="hp-cell">
+                <h3 class="hp-cell-title">Complete Travel Planning Solutions</h3>
+                <p class="hp-cell-text">Our holiday packages include flights, hotel accommodations, local transportation, sightseeing tours, and travel assistance, providing a complete and hassle-free travel experience.</p>
+              </div>
 
-                <!-- R2C1 -->
-                <div class="hp-cell">
-                  <h3 class="hp-cell-title">Popular Tourist Destinations</h3>
-                  <p class="hp-cell-text">Explore top domestic and international tourist destinations with carefully curated travel packages that cover famous attractions, cultural experiences, and local highlights.</p>
-                </div>
+              <!-- R2C1 -->
+              <div class="hp-cell">
+                <h3 class="hp-cell-title">Popular Tourist Destinations</h3>
+                <p class="hp-cell-text">Explore top domestic and international tourist destinations with carefully curated travel packages that cover famous attractions, cultural experiences, and local highlights.</p>
+              </div>
 
-                <!-- R2C2 -->
-                <div class="hp-cell">
-                  <h3 class="hp-cell-title">Family, Couple &amp; Group Holiday Packages</h3>
-                  <p class="hp-cell-text">We design special holiday packages for families, honeymoon couples, and group travellers, ensuring comfortable stays, exciting activities, and unforgettable memories.</p>
-                </div>
+              <!-- R2C2 -->
+              <div class="hp-cell">
+                <h3 class="hp-cell-title">Family, Couple &amp; Group Holiday Packages</h3>
+                <p class="hp-cell-text">We design special holiday packages for families, honeymoon couples, and group travellers, ensuring comfortable stays, exciting activities, and unforgettable memories.</p>
+              </div>
 
-                <!-- R2C3 -->
-                <div class="hp-cell">
-                  <h3 class="hp-cell-title">Expert Travel Support &amp; Assistance</h3>
-                  <p class="hp-cell-text">Our travel specialists provide end-to-end support, helping with itinerary planning, travel bookings, and on-trip assistance to ensure a smooth and enjoyable holiday.</p>
-                </div>
+              <!-- R2C3 -->
+              <div class="hp-cell">
+                <h3 class="hp-cell-title">Expert Travel Support &amp; Assistance</h3>
+                <p class="hp-cell-text">Our travel specialists provide end-to-end support, helping with itinerary planning, travel bookings, and on-trip assistance to ensure a smooth and enjoyable holiday.</p>
+              </div>
 
-              </div><!-- /hp-grid -->
-            </div> 
+            </div><!-- /hp-grid -->
           </div>
+        </div>
 
       </div>
-    </div> 
+    </div>
 
-  </div> 
+  </div>
 </section>
 
 <!-- ══════════════════════════════════════
@@ -3256,7 +3261,7 @@ include_once('elements/header.php');
   .hotel-reserve-subtitle {
     font-size: 24px;
     font-family: "Anek Kannada", "Poppins", sans-serif;
-    color:  #fff;
+    color: #fff;
     max-width: 851px;
     font-weight: 600;
     margin: 0 auto;
@@ -3319,8 +3324,8 @@ include_once('elements/header.php');
     pointer-events: none;
   }
 
-  .hotel-reserve-node:hover .hotel-reserve-circle { 
-    transform: scale(1.10); 
+  .hotel-reserve-node:hover .hotel-reserve-circle {
+    transform: scale(1.10);
   }
 
   .hotel-reserve-node:hover .hotel-reserve-circle::after {
@@ -3339,7 +3344,7 @@ include_once('elements/header.php');
     transition: background .3s ease;
   }
 
- 
+
   /* Label below circle */
   .hotel-reserve-label {
     font-size: 16px;
@@ -3351,7 +3356,7 @@ include_once('elements/header.php');
     transition: color .3s ease;
     white-space: nowrap;
   }
- 
+
 
   /* ── Node positions — LEFT 5 ── */
   /* Scattered naturally across left half */
@@ -3542,56 +3547,55 @@ include_once('elements/header.php');
 
 <section id="hotel-section" class="hotel-reserve-section">
 
-    <div class="hotel-reserve">
-        <div class="hr-watermark">Stay</div>
-        <h2 class="hr-title">Hotel Reservation</h2>
-        <p class="hotel-reserve-subtitle mb-3">
-        Book verified hotels worldwide with the best prices, secure payments,
-        and instant confirmation.
-        </p>
+  <div class="hotel-reserve">
+    <div class="hr-watermark">Stay</div>
+    <h2 class="hr-title">Hotel Reservation</h2>
+    <p class="hotel-reserve-subtitle mb-3">
+      Book verified hotels worldwide with the best prices, secure payments,
+      and instant confirmation.
+    </p>
 
-         <a href="#" class="btn btn-explore-hotel">
-          Find Your Stay
-          <img src="assets/img/icon/hotel-btn-arrow.png" alt="" width="12px;" height="12px;">
-        </a>
-    </div>
+    <a href="#" class="btn btn-explore-hotel">
+      Find Your Stay
+      <img src="assets/img/icon/hotel-btn-arrow.png" alt="" width="12px;" height="12px;">
+    </a>
+  </div>
 
   <style>
-    
-  /* ── HEADER ── */
-  .hotel-reserve {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    margin-bottom: 48px;
-  }
+    /* ── HEADER ── */
+    .hotel-reserve {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      margin-bottom: 48px;
+    }
 
-  .hr-watermark {
-    position: absolute;
-    top: -50px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: clamp(60px, 12vw, 120px);
-    font-weight: 700;
-    color: #FFFFFF;
-    opacity: 0.2;
-    white-space: nowrap;
-    pointer-events: none;
-    user-select: none;
-    z-index: 0;
-    line-height: 1;
-  }
+    .hr-watermark {
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: clamp(60px, 12vw, 120px);
+      font-weight: 700;
+      color: #FFFFFF;
+      opacity: 0.2;
+      white-space: nowrap;
+      pointer-events: none;
+      user-select: none;
+      z-index: 0;
+      line-height: 1;
+    }
 
-  .hr-title {
-    font-size: clamp(26px, 4vw, 38px);
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 50px;
-    position: relative;
-    z-index: 1;
-  }
+    .hr-title {
+      font-size: clamp(26px, 4vw, 38px);
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 50px;
+      position: relative;
+      z-index: 1;
+    }
 
-   .btn-explore-hotel {
+    .btn-explore-hotel {
       background-color: #FFF;
       color: #25356F;
       font-family: "Anek Kannada", "Poppins", sans-serif;
@@ -3606,16 +3610,17 @@ include_once('elements/header.php');
       gap: 8px;
       transition: background-color 0.2s ease;
     }
- .btn:hover {
-    color: #25356F;
-    background-color: #fff;
-    border-color: #fff;
-}
+
+    .btn:hover {
+      color: #25356F;
+      background-color: #fff;
+      border-color: #fff;
+    }
   </style>
 
   <!-- Absolute-positioned canvas -->
   <div class="hotel-reserve-canvas">
- 
+
     <!-- ══ LEFT 5 NODES ══ -->
     <div class="hotel-reserve-node hotel-reserve-node--n1">
       <div class="hotel-reserve-circle">
@@ -3663,7 +3668,7 @@ include_once('elements/header.php');
     </div>
     <style>
       /* ── CENTER IMAGE ── */
-    .hotel-center-image {
+      .hotel-center-image {
         position: absolute;
         left: 48%;
         top: 57%;
@@ -3674,57 +3679,71 @@ include_once('elements/header.php');
         display: flex;
         align-items: flex-end;
         justify-content: center;
-    }
- 
-    .hotel-center-image img {
-      height: 100%;
-      width: auto;
-      object-fit: contain;
-      filter: drop-shadow(0 10px 40px rgba(0,0,0,.55));
-      animation: floatUp .8s ease both;
-    }
- 
-    /* Glowing circle behind girl */
-    .hotel-center-glow {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 280px;
-      height: 280px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(249,199,79,.12) 0%, rgba(30,80,200,.08) 60%, transparent 80%);
-      border: 1.5px dashed rgba(249,199,79,.3);
-      z-index: 4;
-      animation: pulseGlow 3s ease-in-out infinite;
-    }
- 
-    .hotel-center-glow::after {
-      content: '';
-      position: absolute;
-      inset: -18px;
-      border-radius: 50%;
-      border: 1px dashed rgba(255,255,255,.12);
-    }
+      }
 
-    .hotel-image-icon{
-      width: 35px;
-      height: 35px;
-      margin-bottom: 10px;
+      .hotel-center-image img {
+        height: 100%;
+        width: auto;
+        object-fit: contain;
+        filter: drop-shadow(0 10px 40px rgba(0, 0, 0, .55));
+        animation: floatUp .8s ease both;
+      }
 
-    }
- 
-    @keyframes pulseGlow {
-      0%, 100% { box-shadow: 0 0 0 0 rgba(249,199,79,.0); }
-      50% { box-shadow: 0 0 40px 10px rgba(249,199,79,.08); }
-    }
- 
-    @keyframes floatUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
+      /* Glowing circle behind girl */
+      .hotel-center-glow {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(249, 199, 79, .12) 0%, rgba(30, 80, 200, .08) 60%, transparent 80%);
+        border: 1.5px dashed rgba(249, 199, 79, .3);
+        z-index: 4;
+        animation: pulseGlow 3s ease-in-out infinite;
+      }
+
+      .hotel-center-glow::after {
+        content: '';
+        position: absolute;
+        inset: -18px;
+        border-radius: 50%;
+        border: 1px dashed rgba(255, 255, 255, .12);
+      }
+
+      .hotel-image-icon {
+        width: 35px;
+        height: 35px;
+        margin-bottom: 10px;
+
+      }
+
+      @keyframes pulseGlow {
+
+        0%,
+        100% {
+          box-shadow: 0 0 0 0 rgba(249, 199, 79, .0);
+        }
+
+        50% {
+          box-shadow: 0 0 40px 10px rgba(249, 199, 79, .08);
+        }
+      }
+
+      @keyframes floatUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
     </style>
-  <!-- ★ CENTER GIRL IMAGE ★ -->
+    <!-- ★ CENTER GIRL IMAGE ★ -->
     <div class="hotel-center-image">
       <img src="assets/img/hotel-girl.png" alt="Hotel Receptionist">
     </div>
@@ -3750,8 +3769,8 @@ include_once('elements/header.php');
     <div class="hotel-reserve-node hotel-reserve-node--n8">
       <div class="hotel-reserve-circle">
         <div class="hotel-reserve-icon">
-         <img src="assets/img/icon/hotel-8.png" alt="Best Hotel Deals" class="hotel-image-icon">
-         <span class="hotel-reserve-label">Best Hotel<br>Deals</span>
+          <img src="assets/img/icon/hotel-8.png" alt="Best Hotel Deals" class="hotel-image-icon">
+          <span class="hotel-reserve-label">Best Hotel<br>Deals</span>
         </div>
       </div>
     </div>
@@ -3811,15 +3830,15 @@ include_once('elements/header.php');
 
   .sightseeing-tour-list li {
     margin-bottom: 12px;
-    font-size: 15px; 
-    font-family: "Anek Kannada", "Poppins", sans-serif; 
+    font-size: 15px;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
     color: var(--text-dark);
     display: flex;
     align-items: center;
   }
 
   .sightseeing-tour-list li::before {
-  content: url("assets/img/icon/Checke.png");
+    content: url("assets/img/icon/Checke.png");
     color: var(--euphoria-red);
     font-weight: bold;
     margin-right: 10px;
@@ -3830,7 +3849,6 @@ include_once('elements/header.php');
     border-radius: 20px;
     overflow: hidden;
     border: 1px solid var(--card-border);
-    box-shadow: 0 5px 5px var(--black-blur);
     transition: 0.4s;
   }
 
@@ -3871,9 +3889,47 @@ include_once('elements/header.php');
   <div class="container">
     <div class="row align-items-center">
 
+      <style>
+        .sight-seeing {
+          position: relative;
+          z-index: 2;
+          text-align: center;
+          margin-bottom: 48px;
+        }
+
+        .sight-watermark {
+          position: absolute;
+          top: -50px;
+          left: 50%;
+          transform: translateX(-50%);
+          font-size: clamp(60px, 12vw, 120px);
+          font-weight: 700;
+          color: var(--euphoria-red);
+          opacity: 0.1;
+          white-space: nowrap;
+          pointer-events: none;
+          user-select: none;
+          z-index: 0;
+          line-height: 1;
+        }
+
+        .sight-title {
+          font-size: clamp(26px, 4vw, 38px);
+          font-weight: 600;
+          color: #25356F;
+          margin-bottom: 50px;
+          position: relative;
+          z-index: 1;
+        }
+      </style>
       <!-- Left Content -->
       <div class="col-lg-6 mb-4 mb-lg-0">
-        <h2 class="sightseeing-tour-title">Sightseeing Tours</h2>
+        <div class="sight-seeing">
+          <div class="sight-watermark">Guided</div>
+          <h2 class="sight-title">Seightseeing Tours</h2>
+
+        </div>
+        <!-- <h2 class="sightseeing-tour-title">Sightseeing Tours</h2> -->
 
         <p class="sightseeing-tour-text">
           We offer professional guided sightseeing tours that help travellers explore major attractions with the support of experienced tour guides. Our tours make it easy to discover famous landmarks and popular destinations in a comfortable and organised way.
@@ -3968,8 +4024,8 @@ include_once('elements/header.php');
   /* Text */
   .tour-package-text {
     font-size: 20px;
-    line-height: 1.5; 
-    font-family: "Anek Kannada", "Poppins", sans-serif; 
+    line-height: 1.5;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
     margin-bottom: 15px;
   }
 
@@ -4035,6 +4091,89 @@ include_once('elements/header.php');
 
 </section>
 
+  <!-- Start Sticky Nav -->
+  <div class="sticky-social d-none d-md-block">
+    <a href="#flight-section"><i class="bi bi-airplane-fill"></i> Flight</a>
+    <a href="#train-section"><i class="bi bi-train-front-fill"></i> Train</a>
+    <a href="#bus-section"><i class="bi bi-bus-front-fill"></i> Bus</a>
+    <a href="#taxi-section"><i class="bi bi-taxi-front-fill"></i> Taxi</a>
+    <a href="#local-section"><i class="bi bi-geo-alt-fill"></i> Local Transport</a>
+    <a href="#hotel-section"><i class="bi bi-building-fill"></i> Hotel</a>
+    <a href="#holiday-package-section"><i class="bi bi-sun-fill"></i> Holiday Package</a>
+    <a href="#tour-package-section"><i class="bi bi-map-fill"></i> Tour Package</a>
+    <a href="#guide-tour-section"><i class="bi bi-person-walking"></i> Guided Tour</a>
+    <a href="#faqs"><i class="bi bi-question-circle-fill"></i> FAQ</a>
+  </div>
+
+  <style>
+      .sticky-social {
+        position: fixed;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        z-index: 9999;
+      }
+
+      .sticky-social a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        width: 162px;
+        padding: 10px 14px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #fff;
+        text-decoration: none;
+        background: var(--euphoria-blue);
+        white-space: nowrap;
+        letter-spacing: 0.3px;
+        transform: translateX(118px);
+        transition: transform 0.35s ease-in-out, background 0.2s ease;
+      }
+
+      /* Red left-edge peek strip */
+      .sticky-social a::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 4px;
+        background: var(--euphoria-red);
+        flex-shrink: 0;
+      }
+
+      .sticky-social a:first-child {
+        border-radius: 6px 0 0 0;
+      }
+
+      .sticky-social a:last-child {
+        border-radius: 0 0 0 6px;
+      }
+
+      .sticky-social a i {
+        font-size: 14px;
+        flex-shrink: 0;
+        width: 16px;
+        text-align: center;
+      }
+
+      /* Hover: slide fully in */
+      .sticky-social a:hover {
+        transform: translateX(0);
+        background: var(--euphoria-red);
+      }
+
+      @media (max-width: 767px) {
+        .sticky-social {
+          display: none !important;
+        }
+      }
+  </style>
 
 <?php
 include_once('elements/faqs.php');
