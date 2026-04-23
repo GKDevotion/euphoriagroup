@@ -850,7 +850,6 @@
      bottom: 0;
      right: 0;
      width: 320px;
-     opacity: 0.07;
      pointer-events: none;
      z-index: 0;
    }
@@ -977,21 +976,7 @@
  <section class="container">
    <div class="why-section position-relative" style="z-index:1;">
      <!-- city skyline watermark SVG (decorative) -->
-     <svg class="skyline-watermark" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-       <rect x="10" y="120" width="30" height="80" fill="#1a2a5e" />
-       <rect x="20" y="100" width="10" height="20" fill="#1a2a5e" />
-       <rect x="50" y="90" width="40" height="110" fill="#1a2a5e" />
-       <rect x="65" y="70" width="10" height="20" fill="#1a2a5e" />
-       <rect x="100" y="110" width="25" height="90" fill="#1a2a5e" />
-       <rect x="135" y="80" width="50" height="120" fill="#1a2a5e" />
-       <rect x="155" y="60" width="10" height="20" fill="#1a2a5e" />
-       <rect x="195" y="95" width="35" height="105" fill="#1a2a5e" />
-       <rect x="240" y="115" width="28" height="85" fill="#1a2a5e" />
-       <rect x="278" y="85" width="45" height="115" fill="#1a2a5e" />
-       <rect x="295" y="65" width="10" height="20" fill="#1a2a5e" />
-       <rect x="333" y="100" width="30" height="100" fill="#1a2a5e" />
-       <rect x="370" y="120" width="30" height="80" fill="#1a2a5e" />
-     </svg>
+     <img src="assets/img/why-choose-bg.png" alt="" class="skyline-watermark">
 
      <h2 class="section-heading" data-aos="fade-up" data-aos-duration="800">Why Choose Euphoria Group</h2>
 
