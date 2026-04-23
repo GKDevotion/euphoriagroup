@@ -7,6 +7,7 @@ include_once('elements/home-slider.php');
 <style>
     .euphoria-section {
         padding: 40px 0;
+        overflow: hidden;
     }
 
     /* Make horizontal scroll on mobile */
@@ -37,6 +38,28 @@ include_once('elements/home-slider.php');
         flex-shrink: 0;
     }
 
+    /* Slider wrapper */
+    .euphoria-slider {
+        display: flex;
+        width: max-content;
+        animation: scrollSlider 80s linear infinite;
+    }
+
+    /* Pause on hover (premium feel) */
+    .euphoria-section:hover .euphoria-slider {
+        animation-play-state: paused;
+    }
+
+    /* Animation */
+    @keyframes scrollSlider {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
     /* Optional: hide stars on very small screens */
     @media (max-width: 576px) {
         .star-img {
@@ -47,43 +70,52 @@ include_once('elements/home-slider.php');
 
 <section class="euphoria-section">
     <div class="container">
-        <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 text-center">
+        <div class="euphoria-slider">
+            <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 text-center">
 
-            <!-- First Star -->
-            <img src="assets/img/icon/star-blue.png" class="star-img star-first d-none d-md-block" alt="star">
+                <!-- First Star -->
+                <img src="assets/img/icon/star-blue.png" class="star-img star-first d-none d-md-block" alt="star">
 
-            <!-- Logo 1 -->
-            <div class="flex-fill">
-                <img src="assets/img/logo/corporate-service.png" class="logo-img img-fluid" alt="Corporate Service">
+                <?php
+                for( $i=0; $i<=8; $i++ ){
+                ?>
+                    <!-- Logo 1 -->
+                    <div class="flex-fill">
+                        <img src="assets/img/logo/corporate-service.png" class="logo-img img-fluid" alt="Corporate Service">
+                    </div>
+
+                    <!-- Star -->
+                    <img src="assets/img/icon/star-blue.png" class="star-img" alt="star">
+
+                    <!-- Logo 2 -->
+                    <div class="flex-fill">
+                        <img src="assets/img/logo/private-wealth.png" class="logo-img img-fluid" alt="Real Estate">
+                    </div>
+
+                    <!-- Star -->
+                    <img src="assets/img/icon/star-blue.png" class="star-img" alt="star">
+
+                    <!-- Logo 3 -->
+                    <div class="flex-fill">
+                        <img src="assets/img/logo/real-state.png" class="logo-img img-fluid" alt="Travel & Tourism">
+                    </div>
+
+                    <!-- Star -->
+                    <img src="assets/img/icon/star-blue.png" class="star-img" alt="star">
+
+                    <!-- Logo 4 -->
+                    <div class="flex-fill">
+                        <img src="assets/img/logo/travel-tourism.png" class="logo-img img-fluid" alt="Private Wealth">
+                    </div>
+
+                    <!-- Last Star -->
+                    <img src="assets/img/icon/star-blue.png" class="star-img star-last d-none d-md-block" alt="star">
+                <?php
+                }
+                ?>
+
+
             </div>
-
-            <!-- Star -->
-            <img src="assets/img/icon/star-blue.png" class="star-img" alt="star">
-
-            <!-- Logo 2 -->
-            <div class="flex-fill">
-                <img src="assets/img/logo/private-wealth.png" class="logo-img img-fluid" alt="Real Estate">
-            </div>
-
-            <!-- Star -->
-            <img src="assets/img/icon/star-blue.png" class="star-img" alt="star">
-
-            <!-- Logo 3 -->
-            <div class="flex-fill">
-                <img src="assets/img/logo/real-state.png" class="logo-img img-fluid" alt="Travel & Tourism">
-            </div>
-
-            <!-- Star -->
-            <img src="assets/img/icon/star-blue.png" class="star-img" alt="star">
-
-            <!-- Logo 4 -->
-            <div class="flex-fill">
-                <img src="assets/img/logo/travel-tourism.png" class="logo-img img-fluid" alt="Private Wealth">
-            </div>
-
-            <!-- Last Star -->
-            <img src="assets/img/icon/star-blue.png" class="star-img star-last d-none d-md-block" alt="star">
-
         </div>
     </div>
 </section>
@@ -213,7 +245,7 @@ include_once('elements/home-slider.php');
             </style>
 
             <!-- Draggable Slider -->
-            <div class="swiper servicesSwiper" data-aos="fade-up" data-aos-duration="300">
+            <div class="swiper servicesSwiper">
                 <div class="swiper-wrapper">
 
                     <!-- Card 1 -->

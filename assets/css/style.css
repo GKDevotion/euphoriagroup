@@ -183,7 +183,7 @@ h2 {
   position: absolute;
   animation: smoothFloat 3s ease-in-out infinite;
   color: transparent; /* important */
-  -webkit-text-stroke: 2px #c3bfbfad; /* stroke width + color */
+  -webkit-text-stroke: 0.8px #fff; /* stroke width + color */
 }
 
 @keyframes smoothFloat {
