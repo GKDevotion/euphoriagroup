@@ -94,7 +94,7 @@ include_once('elements/header.php');
   </div> 
 
   <!-- Tab Content -->
-  <div id="tab1" class="corporate-content-box active">
+  <div id="tab1" class="corporate-content-box container-fluid active">
     <div class="row align-items-center">
       <div class="col-md-5">
         <img src="assets/img/stock-coin.png" class="illustration">
@@ -1419,7 +1419,7 @@ include_once('elements/header.php');
   }
 </style>
 
-<section class="insurance-split-section about-section">
+<section class="insurance-split-section d-none about-section">
   <div class="about-title-bg">Security</div>
 
   <div class="container">
@@ -1430,7 +1430,7 @@ include_once('elements/header.php');
 
   <div class="container">
 
-    <div class="row g-0 insurance-split-wrapper">
+    <div class="row g-0   insurance-split-wrapper">
 
       <!-- Image -->
       <div class="col-lg-6 px-3">
@@ -1474,10 +1474,449 @@ include_once('elements/header.php');
         </div>
       </div>
 
-    </div>
+    </div> 
 
   </div>
 </section>
+
+      <style>
+    
+        /* ── FADE-UP ─────────────────────────────────── */
+        .fade-up {
+          opacity   : 0;
+          transform : translateY(24px);
+          transition: opacity .7s ease, transform .7s ease;
+        }
+        .fade-up.visible { opacity: 1; transform: none; }
+
+        /* ── SCROLL SECTION ──────────────────────────── */
+        .scroll-section {
+          position: relative;
+          height  : 200vh;
+        }
+
+        .sticky-stage {
+          position       : sticky;
+          top            : 0;
+          height         : 100vh;
+          display        : flex;
+          align-items    : center;
+          justify-content: center;
+          overflow       : hidden;
+          padding        : 1.5rem 3rem;
+        }
+ 
+
+        /* ── CARD STACK ──────────────────────────────── */
+        .card-stack {
+          position : relative;
+          width    : 100%;
+          max-width: 1320px;
+          height   : min(600px, 80vh);
+        }
+
+        /* ── SINGLE STACK CARD ───────────────────────── */
+        .stack-card {
+          position     : absolute;
+          inset        : 0;
+          border-radius: 32px;
+          padding      : clamp(1.5rem, 5vw, 1rem); 
+          border       : 1px solid #666666;
+          display      : flex;
+          align-items  : center;
+          overflow     : hidden;
+          will-change  : transform, opacity;
+        }
+
+        /* colour themes */
+        .card-white  { background: #ffffff; color: #000000; }
+        .card-dark   { background: #1a1a2e; color: #ffffff; }
+        .card-light  { background: #f0f4ff; color: #000000; }
+        .card-deeper { background: #0f172a; color: #ffffff; } 
+
+        /* ── card-inner: just a full-size flex wrapper now ── */
+        .stack-card .card-inner {
+          display    : flex;
+          align-items: center;
+          width      : 100%;
+          height     : 100%;
+        }
+
+        /* ── row fills full width ────────────────────── */
+        .stack-card .row {
+          width: 100%;
+        }
+
+        /* ── IMAGE WRAP ──────────────────────────────── */
+        .card-img-wrap {
+          width        : 100%;
+          height       : 100%;
+          border-radius: 24px; 
+          overflow     : hidden;
+        }
+
+        .card-img-wrap img {
+          width     : 100%;
+          height    : 100%;
+          object-fit: cover;
+          display   : block;
+        }
+
+        /* ── CONTENT COL ─────────────────────────────── */
+        .card-content-col,
+        .col-md-8 {
+          min-width: 0;
+        }
+
+        .card-headline {
+          font-size     : 55px;
+          font-family: "Anek Kannada", "Poppins", sans-serif;
+          font-weight   : 700;
+          letter-spacing: 0%;
+          line-height   : 1.2;
+          margin        : 0 0 .75rem;
+        }
+
+        .card-desc {
+          font-size : 16px; 
+          font-weight: 400;
+          color: #666666;
+          font-family: "Anek Kannada", "Poppins", sans-serif;
+          line-height: 1.6;
+          margin    : 0 0 .4rem;
+        }
+
+        /* ── 3-COL FEATURE GRID ──────────────────────── */
+        .card-features-grid {
+          list-style           : none;
+          padding              : 0;
+          margin               : .75rem 0 1rem;
+          display              : grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap                  : 5px 10px;
+        }
+
+        .card-features-grid li {
+          display      : flex;
+          align-items  : center;
+          font-family: "Anek Kannada", "Poppins", sans-serif;
+          gap          : 5px;
+          font-size    : 18px;
+          font-weight  : 500;
+          white-space  : nowrap;
+          overflow     : hidden;
+          text-overflow: ellipsis;
+        }
+
+        .card-features-grid li i {
+          color      : #e879a0;
+          flex-shrink: 0;
+        }
+
+        /* ── CTA BUTTON ──────────────────────────────── */
+        .card-cta-solid {
+          display      : inline-flex;
+          align-items  : center;
+          gap          : 6px;
+          padding      : .65rem 1.4rem;
+          border-radius: 6px;
+          background   : #25356F;
+          color        : #fff;
+          font-weight  : 700;
+          font-size    : .875rem;
+          border       : none;
+          cursor       : pointer;
+          transition   : opacity .2s;
+          white-space  : nowrap;
+        }
+        .card-cta-solid:hover { opacity: .85; }
+        @media (min-width: 768px) {
+          .card-icon-col {
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+          }
+        }
+        .icon-box {
+          width          : 280px;
+          height         : 280px;
+          border-radius  : 48px;
+          background     : rgba(0,0,0,.07);
+          display        : flex;
+          align-items    : center;
+          justify-content: center;
+          font-size      : 5rem;
+        }
+        .icon-box i { opacity: .8; }
+ 
+      </style>
+
+      <section class="scroll-section security-insurance" id="cardSection">
+
+          <div class="security-insurance-heading">
+            <span class="bg-text">Security</span>
+            <h2>Insurance Solution</h2>
+          </div>
+          <style>
+                .security-insurance-heading {
+                    position: relative;
+                    text-align: center;
+                    padding: 60px 0 0px;
+                    overflow: hidden;
+                  }
+                  .security-insurance-heading .bg-text {
+                    position: absolute;
+                    top: 70%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: clamp(48px, 8vw, 100px);
+                    font-family: "Anek Kannada", "Poppins", sans-serif;
+                    font-weight: 800;
+                    color: rgba(230, 57, 70, 0.07);
+                    white-space: nowrap;
+                    pointer-events: none;
+                    letter-spacing: 2px;
+                    z-index: 0;
+                  }
+                  .security-insurance-heading h2 {
+                    position: relative;
+                    z-index: 1;
+                    font-family: "Anek Kannada", "Poppins", sans-serif;
+                    font-weight: 700;
+                    font-size: 2rem;
+                    color: #25356F;
+                  }
+
+          </style>
+          <div class="sticky-stage">
+             
+            <!-- ── CARD STACK ────────────────────────── -->
+            <div class="card-stack" id="cardStack">
+     
+              <!-- CARD 1 — Insurance -->
+              <div class="stack-card card-white">
+                
+                <div class="card-inner">
+                  <div class="row g-4 w-100 m-0">
+
+                    <!-- LEFT: Image col-4 -->
+                    <div class="col-md-4 p-0">
+                      <div class="card-img-wrap">
+                        <img src="assets/img/life-insurance-bg.jpeg" alt="Life Insurance" />
+                      </div>
+                    </div>
+
+                   
+                    <div class="col-md-8">
+                        <h2 class="card-headline">Life Insurance</h2>
+                        <p class="card-desc">
+                              Secure your family’s future with a wide range of life insurance solutions including term plans, whole life policies, endowment plans, money-back plans, child plans, retirement plans, and ULIPs. These plans offer comprehensive protection, long-term savings, and wealth creation with flexible options tailored to your financial goals.
+                        </p>
+                        <p class="card-desc mt-2">
+                              Choose from IRDAI-approved insurers and benefit from high coverage at competitive premiums along with tax advantages under Sections 80C and 10(10D) of the Income Tax Act. Ensure financial stability, future security, and peace of mind with smart and reliable life insurance planning.
+                        </p>
+                        <ul class="card-features-grid">
+                              <li>
+                                <img src="assets/img/icon/Checke.png" alt="">
+                                 Term Life Insurance
+                              </li>
+                              <li>
+                                <img src="assets/img/icon/Checke.png" alt="">
+                                 Whole Life Insurance Plans
+                              </li>
+                              <li>
+                                <img src="assets/img/icon/Checke.png" alt="">
+                                 Endowment Plans
+                              </li>
+                              <li>
+                                <img src="assets/img/icon/Checke.png" alt="">
+                                 Money-Back Policy
+                              </li>
+                              <li>
+                                <img src="assets/img/icon/Checke.png" alt="">
+                                 Retirement &amp; Pension Plans
+                              </li>
+                              <li>
+                                <img src="assets/img/icon/Checke.png" alt="">
+                                 Child Education Insurance Plans
+                              </li>
+                              <li>
+                                <img src="assets/img/icon/Checke.png" alt="">
+                                 Unit Linked Insurance Plan
+                              </li>
+                        </ul>
+                        <button class="card-cta-solid">
+                              Secure Your Future <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 2 — Transfer Funds -->
+              <div class="stack-card card-white">
+                <div class="card-inner">
+                  <div class="row g-4 w-100 m-0">
+
+                    <!-- LEFT: Image col-4 -->
+                    <div class="col-md-4 p-0">
+                      <div class="card-img-wrap">
+                        <img src="assets/img/general-insurance-bg.png" alt="Life Insurance" />
+                      </div>
+                    </div>
+
+                   
+                    <div class="col-md-8">
+                        <h2 class="card-headline">General Insurance</h2>
+                        <p class="card-desc">
+                              Protect your health, vehicles, property, and business with comprehensive general insurance solutions including health plans (individual, family floater, senior citizen, critical illness, maternity, OPD, and top-up), motor insurance (private, commercial, and third-party), and asset protection like fire and marine insurance. These plans are designed to cover medical expenses, accidents, damages, and unforeseen risks, ensuring complete financial security in every aspect of life.
+                        </p>
+                        <p class="card-desc mt-2">
+                              Choose from trusted insurers offering wide coverage, flexible options, and efficient claim support at competitive premiums. From safeguarding your family’s health to protecting business operations and digital risks like cyber threats, general insurance provides reliable and essential protection for a secure future.
+                        </p>
+                        <ul class="card-features-grid">
+                              <li>
+                                <img src="assets/img/icon/Checke.png" alt="">
+                                 Individual Health Insurance
+                              </li>
+                              <li>
+                                <img src="assets/img/icon/Checke.png" alt="">
+                                 Family Floater Health Insurance
+                              </li>
+                              <li>
+                                <img src="assets/img/icon/Checke.png" alt="">
+                                 Senior Citizen Health Insurance
+                              </li>
+                              <li>
+                                <img src="assets/img/icon/Checke.png" alt="">
+                                 Critical Illness Insurance
+                              </li>
+                              <li>
+                                <img src="assets/img/icon/Checke.png" alt="">
+                                 Top-Up & Super Top-Up Plans
+                              </li>
+                              <li>
+                                <img src="assets/img/icon/Checke.png" alt="">
+                                 Maternity Insurance
+                              </li>
+                              <li>
+                                <img src="assets/img/icon/Checke.png" alt="">
+                                 OPD Coverage Plans
+                              </li>
+                              <li>
+                                <img src="assets/img/icon/Checke.png" alt="">
+                                 Vehicle Insurance
+                              </li>
+                              <li>
+                                <img src="assets/img/icon/Checke.png" alt="">
+                                 Commercial Vehicle Insurance
+                              </li>
+                              <li>
+                                <img src="assets/img/icon/Checke.png" alt="">
+                                 Third-Party Insurance
+                              </li>
+                              <li>
+                                <img src="assets/img/icon/Checke.png" alt="">
+                                 Fire Insurance
+                              </li>
+                              <li>
+                                <img src="assets/img/icon/Checke.png" alt="">
+                                 Marine Insurance
+                              </li> 
+                        </ul>
+                        <button class="card-cta-solid">
+                              View Policies <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+      
+            </div><!-- /card-stack -->
+            
+          </div><!-- /sticky-stage -->
+          
+      </section>
+
+      <script>
+                /* ── References ──────────────────────────────────────── */
+                const section = document.getElementById('cardSection');
+                const cardEls = [...document.querySelectorAll('.stack-card')];
+                const dotEls  = [...document.querySelectorAll('.nav-dot')];
+                const total   = cardEls.length;
+
+                /* ── Helpers ─────────────────────────────────────────── */
+                const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
+                const lerp  = (a, b, t)   => a + (b - a) * t;
+                const remap = (v, inLo, inHi, outLo, outHi) => {
+                  if (inHi === inLo) return outLo;
+                  return lerp(outLo, outHi, clamp((v - inLo) / (inHi - inLo), 0, 1));
+                };
+
+                /* ── Scroll handler ──────────────────────────────────── */
+                function onScroll() {
+                  const rect     = section.getBoundingClientRect();
+                  const progress = clamp(-rect.top / (section.offsetHeight - window.innerHeight), 0, 1);
+
+                  cardEls.forEach((el, i) => {
+
+                    const start = i / total;
+                    const end   = (i + 1) / total;
+                    const prev  = (i - 1) / total;
+
+                    let opacity, translateY, scale;
+
+                    if (progress < prev) {
+                      /* hidden below — not yet reached */
+                      opacity = 0; translateY = 0; scale = 0;
+
+                    } else if (progress < start) {
+                      /* entering — rising from bottom */
+                      opacity    = remap(progress, prev, start, 0, 1);
+                      translateY = remap(progress, prev, start, 50, 0);
+                      scale      = remap(progress, prev, start, 1, 1);
+
+                    } else if (i === total - 1 || progress < end) {
+                      /* active — fully visible */
+                      opacity = 1; translateY = 0; scale = 1;
+
+                    } else {
+                      /* exiting — shrink and lift */
+                      opacity    = remap(progress, start, end, 1, 0);
+                      translateY = remap(progress, start, end, 0, -12);
+                      scale      = remap(progress, start, end, 1, 0.1);
+                    }
+
+                    el.style.transform = `translateY(${translateY}%) scale(${scale})`;
+                    el.style.opacity   = opacity;
+                    el.style.zIndex    = (progress >= prev && progress < end) ? total + 1 : total - i;
+                  });
+
+                  /* update active dot */
+                  const active = Math.min(Math.floor(progress * total), total - 1);
+                  dotEls.forEach((d, i) => d.classList.toggle('active', i === active));
+                }
+
+                window.addEventListener('scroll', onScroll, { passive: true });
+                onScroll();
+
+                /* ── Dot click → scroll to card ──────────────────────── */
+                dotEls.forEach((dot, i) => {
+                  dot.addEventListener('click', () => {
+                    const target = section.offsetTop + (i / total) * (section.offsetHeight - window.innerHeight);
+                    window.scrollTo({ top: target, behavior: 'smooth' });
+                  });
+                });
+
+                /* ── Intro fade-up ───────────────────────────────────── */
+                const io = new IntersectionObserver(
+                  entries => entries.forEach(e => e.isIntersecting && e.target.classList.add('visible')),
+                  { threshold: 0.2 }
+                );
+                document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+      </script>
 
 <!-- ═══════════════════════════════
      Start Real Estate Property
