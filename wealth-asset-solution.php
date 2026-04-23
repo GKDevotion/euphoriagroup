@@ -2184,6 +2184,60 @@ include_once('elements/header.php');
       line-height: 1.65;
       margin: 0;
     }
+
+    /* 📱 Mobile & Tablet Fix */
+@media (max-width: 992px) {
+
+  .services-table,
+  .services-table tbody,
+  .services-table tr,
+  .services-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .services-table tr {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .services-table td {
+    width: 50%; /* 2 columns on tablet */
+    padding: 24px 16px;
+    border: none !important;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+/* 📱 Small Mobile */
+@media (max-width: 576px) {
+
+  .services-table td {
+    width: 100%; /* 1 column on mobile */
+    text-align: center;
+  }
+
+  .service-title {
+    font-size: 16px;
+  }
+
+  .service-desc {
+    font-size: 13px;
+  }
+
+  .services-grid-wrapper {
+    padding: 0 15px 40px;
+  }
+
+  .section-heading {
+    padding: 40px 0 30px;
+  }
+
+  .section-heading .bg-text {
+    font-size: 40px;
+  }
+}
 </style>
 
 <section class="infrastructure-section">
