@@ -29,6 +29,24 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--euphoria-blue);
+    border-radius: 50px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: var(--euphoria-red);
+}
+
+/* Horizontal scrollbar height */
+body::-webkit-scrollbar {
+    height: 8px;
+}
+
 h1,
 h2,
 h3,
