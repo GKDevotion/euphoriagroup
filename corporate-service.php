@@ -712,6 +712,7 @@ include_once('elements/header.php');
 </style>
 
 <section class="acc-section" id="account-taxation">
+
   <div class="container">
     <div class="row g-5 align-items-start">
 
@@ -926,9 +927,9 @@ include_once('elements/header.php');
 
       </div><!-- /right grid -->
 
-
     </div> 
   </div> 
+  
 </section>
 
 <!-- CORPORATE RESTRUCTURING -->
@@ -1013,19 +1014,35 @@ include_once('elements/header.php');
     top: 0 !important;
   }
 
-  @media (max-width: 576px) {
-   
-  .about-title-bg {
-      font-size: 3.3rem !important;
-      top: 35px !important;
-      letter-spacing: 2px;
+    
+  .about-title-bg-transformation {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12.5rem;
+    font-weight: 600;
+    color: var(--red-blur);
+    z-index: 0;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
   }
-}
+
+    @media (max-width: 576px) {
+    
+    .about-title-bg-transformation {
+          font-size: 3.5rem !important;
+          top: 74px !important;
+          letter-spacing: 2px;
+      }
+    }
 </style>
 
 <section id="restructuring" class="about-section restructure-section py-5 mt-5">
 
-  <div class="about-title-bg">Transformation</div>
+  <div class="about-title-bg-transformation">Transformation</div>
   <div class="container">
 
     <div class="row align-items-center">
@@ -1189,12 +1206,62 @@ include_once('elements/header.php');
   .lic-item img {
       filter: brightness(0) invert(1);
   }
+    
+  .about-title-bg-permit {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12.5rem;
+    font-weight: 600;
+    color: var(--red-blur);
+    z-index: 0;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+    @media (max-width: 576px) {
+    .about-title-bg-permit {
+      font-size: 5.5rem !important;
+      top: 5px !important;
+      letter-spacing: 2px;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    /* Fix the right-side white gap on mobile */
+    .licensing-section {
+      overflow: hidden !important;
+      padding-bottom: 60px !important;  /* Remove excessive 250px bottom padding */
+    }
+
+    .licensing-section .container {
+      padding-left: 12px !important;
+      padding-right: 12px !important;
+      overflow: hidden;
+    }
+
+    /* Sidebar checklist stacks below cards on mobile */
+    .lic-sidebar {
+      margin-top: 8px;
+    }
+
+    .lic-card h6 {
+      font-size: 18px;
+    }
+
+    .lic-card p {
+      font-size: 14px;
+    }
+  }
 </style>
 
 <section id="licensing-regulatory" class="account-section licensing-section py-5">
   <div class="container position-relative">
 
-    <div class="about-title-bg">Permits</div>
+    <div class="about-title-bg-permit">Permits</div>
     <div class="container">
 
       <div class="row align-items-center">
@@ -1347,6 +1414,61 @@ include_once('elements/header.php');
   .advisory-border .about-title-bg {
     top: 5px;
   }
+  .about-title-bg-guidance {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12.5rem;
+    font-weight: 600;
+    color: var(--red-blur);
+    z-index: 0;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+    @media (max-width: 576px) {
+      .about-title-bg-guidance {
+        font-size: 5.5rem !important;
+        top: 55px !important;
+        letter-spacing: 2px;
+      }
+
+      /* Fix mobile gap/overflow issues */
+      .advisory-section {
+        overflow: hidden !important;
+      }
+
+      .advisory-border {
+        margin-top: 0 !important;        /* Remove negative margin causing layout shift */
+        border-radius: 16px;
+        padding: 16px;
+        margin-left: 12px !important;
+        margin-right: 12px !important;
+      }
+
+      .advisory-border .container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+
+      .about-title-bg-guidance {
+        overflow: hidden;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+      }
+
+      .adv-img-wrap {
+        display: none;                   /* Hide image on mobile to save space */
+      }
+
+      .adv-list-item h6 {
+        font-size: 18px;
+      }
+    }
 </style>
 
 <section id="advisory-consultancy" class="about-section advisory-section py-5" style="overflow: unset;">
@@ -1354,7 +1476,7 @@ include_once('elements/header.php');
   <div class="">
     <div class="advisory-border container position-relative">
 
-      <div class="about-title-bg">Guidance</div>
+      <div class="about-title-bg-guidance">Guidance</div>
       <div class="container ">
 
         <div class="row align-items-center">
@@ -1474,13 +1596,38 @@ include_once('elements/header.php');
   #additional p {
     font-size: 15px;
   }
+
+    
+  .about-title-bg-extension {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12.5rem;
+    font-weight: 600;
+    color: var(--red-blur);
+    z-index: 0;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 576px) {
+    
+    .about-title-bg-extension {
+          font-size: 4.5rem !important;
+          top: 43px !important;
+          letter-spacing: 2px;
+      }
+  }
 </style>
 
 <section id="additional-service" class="additional-section py-5">
 
   <div class="container position-relative">
 
-    <div class="about-title-bg">Extensions</div>
+    <div class="about-title-bg-extension">Extensions</div>
     <div class="container ">
 
       <div class="row align-items-center">
