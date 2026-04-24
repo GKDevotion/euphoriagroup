@@ -27,8 +27,8 @@ include_once('elements/home-slider.php');
     }
 
     .logo-img {
-        max-height: 50px;
-        min-width: 120px;
+        max-height: 75px;
+        min-width: 100px;
         /* keeps proper spacing */
     }
 
@@ -68,10 +68,10 @@ include_once('elements/home-slider.php');
     }
 </style>
 
-<section class="euphoria-section">
-    <div class="container">
+<section class="container">
+    <div class="euphoria-section">
         <div class="euphoria-slider">
-            <div class="d-flex align-items-center justify-content-between flex-wrap gap-3 text-center">
+            <div class="d-flex align-items-center justify-content-between flex-wrap gap-4 text-center">
 
                 <!-- First Star -->
                 <img src="assets/img/icon/star-blue.png" class="star-img star-first d-none d-md-block" alt="star">
