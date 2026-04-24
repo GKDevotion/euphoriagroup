@@ -251,6 +251,24 @@ include_once('elements/home-slider.php');
                     pointer-events: none;
                     z-index: 0;
                 }
+                /* Mobile: 1 card, full width */
+                @media (max-width: 575px) {
+                .service-card {
+                    flex: 0 0 100%;
+                    width: 100%;
+                }
+
+                .swiper-slide {
+                    width: 100% !important;
+                }
+                }
+
+                /* Tablet: 2 cards */
+                @media (min-width: 576px) and (max-width: 991px) {
+                .service-card {
+                    flex: 0 0 300px;
+                }
+                }
             </style>
 
             <!-- Draggable Slider -->

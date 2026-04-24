@@ -15,6 +15,33 @@ if( $(".servicesSwiper").length ){
             el: '.swiper-pagination',
             clickable: true,
         },
+         breakpoints: {
+        // Mobile: 0–575px → 1 card
+        0: {
+        slidesPerView: 1,
+        spaceBetween: 16,
+        },
+        // Tablet: 576–767px → 1.2 cards (peek effect)
+        576: {
+        slidesPerView: 1.2,
+        spaceBetween: 20,
+        },
+        // Large tablet: 768–991px → 2 cards
+        768: {
+        slidesPerView: 2,
+        spaceBetween: 22,
+        },
+        // Small desktop: 992–1199px → 3 cards
+        992: {
+        slidesPerView: 3,
+        spaceBetween: 25,
+        },
+        // Desktop: 1200px+ → 4 cards
+        1200: {
+        slidesPerView: 4,
+        spaceBetween: 25,
+        },
+    },
         speed: 600,
     });
 }

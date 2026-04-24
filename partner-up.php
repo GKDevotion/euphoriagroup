@@ -416,6 +416,10 @@ include_once('elements/header.php');
         min-height: 380px;
     }
 
+    .tab-divider{
+        color: #CC2831;
+    }
+
     /* ── Side Tab Cards ── */
     .partner-tab {
         flex: 0 0 62px;
@@ -514,10 +518,17 @@ include_once('elements/header.php');
     }
 
     .tab-text-col h4 {
-        color: #1a2456;
-        font-size: 1.25rem;
-        font-weight: 700;
-        margin-bottom: 0.4rem;
+        color: #25356F;
+        font-size: 30px;
+        font-family: "Anek Kannada", "Poppins";
+        font-weight: 600; 
+        margin-bottom: 0px;
+    }
+
+    .tab-text-col p{
+         font-family: "Anek Kannada", "Poppins";
+         font-size: 16px;
+         font-weight: 400;
     }
 
     /* BADGES */
@@ -532,9 +543,17 @@ include_once('elements/header.php');
         display: flex;
         align-items: center;
         gap: 6px;
-        font-size: 0.77rem;
-        font-weight: 600;
+        font-size: 18px;
+         font-family: "Anek Kannada", "Poppins";
+        font-weight: 500;
         color: #1a2456;
+    }
+
+    .tab-cta-text p{
+         font-family: "Anek Kannada", "Poppins";
+         font-size: 20px;
+         font-weight: 600;
+         color: #25356F;
     }
 
     /* CTA */
@@ -542,14 +561,15 @@ include_once('elements/header.php');
         display: inline-flex;
         align-items: center;
         gap: 8px;
-        background: #1a2456;
+        background: #25356F;
         color: #fff !important;
         border-radius: 8px;
-        font-size: 0.82rem;
+        font-size: 20px;
+        font-family: "Anek Kannada", "Poppins";
         font-weight: 600;
-        padding: 8px 14px;
+        padding: 10px 14px;
         text-decoration: none;
-        width: 22%;
+        width: 27%;
         /* PUSH TO BOTTOM */
     }
 
@@ -681,18 +701,20 @@ include_once('elements/header.php');
                             <div class="tab-badges">
                                 <span class="tab-badge">
                                     <span class="chk">
-                                        <i class="bi bi-check-circle-fill"></i>
+                                        <img src="assets/img/icon/Checke.png" alt="check Icon">
                                     </span>
                                     Business structuring support
                                 </span>
                                 <span class="tab-badge">
                                     <span class="chk">
-                                        <i class="bi bi-check-circle-fill"></i>
+                                        <img src="assets/img/icon/Checke.png" alt="check Icon">
                                     </span>
                                     Compliance advisory
                                 </span>
                             </div>
-                            <p class="tab-cta-text">Let us grow together. Join our network of successful partners and discover</p>
+                            <div class="tab-cta-text">
+                                <p>Let us grow together. Join our network of successful partners and discover</p>
+                            </div>
                             <a href="#" class="btn-meeting">Set Up a Meeting →</a>
                         </div>
                     </div>
@@ -717,18 +739,20 @@ include_once('elements/header.php');
                             <div class="tab-badges">
                                 <span class="tab-badge">
                                     <span class="chk">
-                                        <i class="bi bi-check-circle-fill"></i>
+                                        <img src="assets/img/icon/Checke.png" alt="check Icon">
                                     </span>
                                     Residency program support
                                 </span>
                                 <span class="tab-badge">
                                     <span class="chk">
-                                        <i class="bi bi-check-circle-fill"></i>
+                                        <img src="assets/img/icon/Checke.png" alt="check Icon">
                                     </span>
                                     Global mobility solutions
                                 </span>
                             </div>
-                            <p class="tab-cta-text">Let us grow together. Join our network of successful partners and discover</p>
+                            <div class="tab-cta-text">
+                                    <p>Let us grow together. Join our network of successful partners and discover</p>
+                            </div>
                             <a href="#" class="btn-meeting">Set Up a Meeting →</a>
                         </div>
                     </div>
@@ -753,18 +777,20 @@ include_once('elements/header.php');
                             <div class="tab-badges">
                                 <span class="tab-badge">
                                     <span class="chk">
-                                        <i class="bi bi-check-circle-fill"></i>
+                                        <img src="assets/img/icon/Checke.png" alt="check Icon">
                                     </span>
                                     Global setup for real estate partners
                                 </span>
                                 <span class="tab-badge">
                                     <span class="chk">
-                                        <i class="bi bi-check-circle-fill"></i>
+                                        <img src="assets/img/icon/Checke.png" alt="check Icon">
                                     </span>
                                     Property investment support
                                 </span>
                             </div>
-                            <p class="tab-cta-text">Let us grow together. Join our network of successful partners and discover</p>
+                            <div class="tab-cta-text">
+                                    <p>Let us grow together. Join our network of successful partners and discover</p>
+                            </div>
                             <a href="#" class="btn-meeting">Set Up a Meeting →</a>
                         </div>
                     </div>
@@ -789,18 +815,20 @@ include_once('elements/header.php');
                             <div class="tab-badges">
                                 <span class="tab-badge">
                                     <span class="chk">
-                                        <i class="bi bi-check-circle-fill"></i>
+                                        <img src="assets/img/icon/Checke.png" alt="check Icon">
                                     </span>
                                     Portfolio structuring
                                 </span>
                                 <span class="tab-badge">
                                     <span class="chk">
-                                        <i class="bi bi-check-circle-fill"></i>
+                                        <img src="assets/img/icon/Checke.png" alt="check Icon">
                                     </span>
                                     Wealth protection solutions
                                 </span>
                             </div>
-                            <p class="tab-cta-text">Let us grow together. Join our network of successful partners and discover</p>
+                            <div class="tab-cta-text">
+                                    <p>Let us grow together. Join our network of successful partners and discover</p>
+                            </div>
                             <a href="#" class="btn-meeting">Set Up a Meeting →</a>
                         </div>
                     </div>
