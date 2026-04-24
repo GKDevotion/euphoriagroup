@@ -405,10 +405,18 @@ h2 {
     padding: 50px 0 40px;
   }
 
+  .blog-sec {
+    padding: 100px 0 60px !important;
+  }
+
+  .blog-title-bg {
+    top: 0px;
+  }
+
   .about-title-bg {
-    font-size: 4.5rem;
-    top: 28px;
-    letter-spacing: 2px;
+      font-size: 1rem !important;
+      top: 35px !important;
+      letter-spacing: 2px;
   }
 
   .about-title {
@@ -1433,10 +1441,6 @@ h2 {
     margin-bottom: 10px;
   }
 
-  .footer-links a {
-    justify-content: center; /* Center links on mobile */
-  }
-
   .newsletter-form {
     flex-direction: column;
     background: transparent;
@@ -1496,3 +1500,19 @@ h2 {
     font-size: 3rem !important;
   }
 }
+
+
+
+  @media (max-width: 575.98px) {
+  
+  /* Fix watermark overflow */
+  .acc-section::before {
+    font-size: 6.2rem !important;
+    top: 47px !important;
+    left: 57px !important;
+    letter-spacing: 2px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+  }
+  }

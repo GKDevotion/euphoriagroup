@@ -327,9 +327,9 @@ include_once('elements/header.php');
   }
 
   .service-card p {
-    font-size: 16px;
+    font-size: 15px;
     color: #666;
-    font-family: "Anek Kannada", "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0;
   }
 
@@ -389,8 +389,9 @@ include_once('elements/header.php');
 
   .about-title-bg {
     top: -40px;
-    font-size: 11.4rem !important;
+    font-size: 11.4rem;
   }
+
 </style>
 
 <!-- LEGAL & COMPLIANCE -->
@@ -547,8 +548,8 @@ include_once('elements/header.php');
 
   .acc-desc {
     font-size: 16px;
-    font-family: "Anek Kannada", "Poppins", sans-serif;
-    color: rgba(255, 255, 255, 0.72);
+    font-family: "Poppins", sans-serif;
+    color: #fff;
     line-height: 1.8;
     margin-bottom: 14px;
   }
@@ -590,7 +591,7 @@ include_once('elements/header.php');
   }
 
   .card-white h5 {
-    font-family: 'Playfair Display', serif;
+    font-family: "Anek Kannada", "Poppins", sans-serif;
     font-size: 1.05rem;
     font-weight: 700;
     color: var(--euphoria-blue);
@@ -962,7 +963,8 @@ include_once('elements/header.php');
   }
 
   .step-card p {
-    font-size: .86rem;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
     color: #666;
     margin: 0;
   }
@@ -1010,6 +1012,15 @@ include_once('elements/header.php');
   #restructuring .about-title-bg {
     top: 0 !important;
   }
+
+  @media (max-width: 576px) {
+   
+  .about-title-bg {
+      font-size: 3.3rem !important;
+      top: 35px !important;
+      letter-spacing: 2px;
+  }
+}
 </style>
 
 <section id="restructuring" class="about-section restructure-section py-5 mt-5">
@@ -1035,14 +1046,14 @@ include_once('elements/header.php');
         </div>
       </div>
 
-      <div class="col-lg-8 reveal-right">
+      <div class="col-lg-8 reveal-right d-none d-md-block">
         <img src="assets/img/corporate-service/company-conversion.png" alt="Company Conversion" class="step-img reveal">
       </div>
     </div>
 
     <div class="row">
       <!-- Step 01 -->
-      <div class="col-lg-8 reveal-left">
+      <div class="col-lg-8 reveal-left d-none d-md-block">
         <img src="assets/img/corporate-service/marger-support.png" alt="Company Conversion" class="step-img reveal">
       </div>
 
@@ -1069,14 +1080,14 @@ include_once('elements/header.php');
         </div>
       </div>
 
-      <div class="col-lg-8 reveal-right">
+      <div class="col-lg-8 reveal-right d-none d-md-block">
         <img src="assets/img/corporate-service/share-transfer.png" alt="Company Conversion" class="step-img reveal">
       </div>
     </div>
 
     <div class="row">
       <!-- Step 04 -->
-      <div class="col-lg-8 reveal-left">
+      <div class="col-lg-8 reveal-left d-none d-md-block">
         <img src="assets/img/corporate-service/capital-increase.png" alt="Company Conversion" class="step-img reveal">
       </div>
 
@@ -1140,7 +1151,7 @@ include_once('elements/header.php');
 
   .lic-card p {
     font-size: 16px;
-    font-family: "Anek Kannada", "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #666666;
     margin: 0;
     transition: color .3s;
@@ -1309,6 +1320,7 @@ include_once('elements/header.php');
   .adv-list-item p {
     font-size: 16px;
     color: #666;
+    font-family: "Poppins", sans-serif;
     margin: 0;
   }
 

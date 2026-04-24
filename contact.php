@@ -52,7 +52,7 @@ include_once('elements/header.php');
     .contact-card .subtitle {
         font-size: 16px;
         color: #666666;
-        font-family: "Anek Kannada", "Poppins";
+        font-family: "Poppins";
         margin-bottom: 1rem;
     }
 
@@ -63,8 +63,8 @@ include_once('elements/header.php');
     }
     .contact-us-card{
         text-decoration: none;
-        font-family: "Anek Kannada", "Poppins";
-        font-size: 18px;
+        font-family: "Poppins";
+        font-size: 16px;
         font-weight: 400;
         color: #000;
     }
@@ -246,7 +246,7 @@ include_once('elements/header.php');
         border-radius: 8px;
         font-size: 0.88rem;
         color: #666666;
-        font-family: "Anek Kannada", "Poppins";
+        font-family: "Poppins";
         background-color: #fff;
         box-shadow: none;
     }

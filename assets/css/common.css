@@ -231,9 +231,10 @@
   }
 
   .text-col p {
-      font-size: 0.97rem;
+      font-size: 18px;
       color: #3a3d52;
       line-height: 1.8;
+      font-family: "Poppins", sans-serif;
       margin-bottom: 1.2rem;
       font-weight: 400;
   }

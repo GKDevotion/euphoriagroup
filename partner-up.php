@@ -55,7 +55,7 @@ include_once('elements/header.php');
     .content-col p {
         color: #666666;
         font-size: 17px;
-        font-family: "Anek Kannada", "Poppins";
+        font-family:  "Poppins";
         line-height: 1.85;
         font-weight: 300;
         margin-bottom: 1.4rem;
@@ -228,9 +228,10 @@ include_once('elements/header.php');
  
 
     .partner-card-text {
-        font-size: 0.75rem;
-        color: #4b5563;
+        font-size: 12px;
+        color: #666666;
         line-height: 1.7;
+        font-family: "Poppins", sans-serif;
         text-align: center;
     }
 
@@ -526,7 +527,7 @@ include_once('elements/header.php');
     }
 
     .tab-text-col p{
-         font-family: "Anek Kannada", "Poppins";
+         font-family: "Poppins";
          font-size: 16px;
          font-weight: 400;
     }

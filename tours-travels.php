@@ -146,13 +146,13 @@ include_once('elements/header.php');
         <img src="assets/img/tour-travel/airplan-window.png" class="illustration">
       </div>
       <div class="col-md-7 text-content ">
-        <p style="font-size: 18px; font-family: 'Anek Kannada', 'Poppins', sans-serif;">
+        <p style="font-size: 18px; font-family: 'Poppins', sans-serif;">
           Our inbound tour and travel services in India are designed to offer international travellers a seamless, comfortable, and memorable experience. We specialise in customised travel packages, guided tours, hotel bookings, transportation arrangements, and comprehensive travel assistance for individuals, families, and corporate groups visiting India.
         </p>
-        <p style="font-size: 18px; font-family: 'Anek Kannada', 'Poppins', sans-serif;">
+        <p style="font-size: 18px; font-family: 'Poppins', sans-serif;">
           With in-depth local expertise and a strong network of hospitality partners, we curate personalised itineraries covering cultural heritage tours, business travel, spiritual journeys, luxury vacations, and adventure tourism. From airport pickup to accommodation, sightseeing, and on-ground coordination, we ensure hassle-free travel planning and professional service.
         </p>
-        <p style="font-size: 18px; font-family: 'Anek Kannada', 'Poppins', sans-serif;">
+        <p style="font-size: 18px; font-family: 'Poppins', sans-serif;">
           Whether you are visiting India for leisure, business, medical tourism, or cultural exploration, our inbound travel solutions provide reliable support, competitive pricing, and exceptional customer service to make your journey smooth and unforgettable.
         </p>
       </div>
@@ -344,10 +344,10 @@ include_once('elements/header.php');
   }
 
   .card-body-content p {
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
     line-height: 1.5;
-    font-family: "Anek Kannada", "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     text-align: center;
   }
 
@@ -1137,8 +1137,9 @@ include_once('elements/header.php');
   }
 
   .card-text {
-    font-size: clamp(12px, 1.1vw, 13.5px);
+    font-size: 16px;
     color: #666;
+    font-family:"Poppins", sans-serif;
     line-height: 1.7;
     font-weight: 400;
   }
@@ -1743,7 +1744,7 @@ include_once('elements/header.php');
     font-size: clamp(11.5px, 1.05vw, 13.5px);
     color: #666666;
     font-weight: 400;
-    font-family: "Anek Kannada", "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     line-height: 1.7;
   }
 
@@ -2269,8 +2270,9 @@ include_once('elements/header.php');
 
   /* description paragraph */
   .taxi-desc {
-    font-size: clamp(12.5px, 1.15vw, 14px);
+    font-size: 16px;
     color: #666;
+    font-family: "Poppins", sans-serif;
     line-height: 1.8;
     margin-bottom: 28px;
   }
@@ -2330,9 +2332,10 @@ include_once('elements/header.php');
 
   /* feature label */
   .taxi-feat-label {
-    font-size: clamp(12px, 1.1vw, 14px);
+    font-size: 18px;
     font-weight: 500;
     color: var(--text-dark);
+    font-family: "Poppins", sans-serif;
     transition: color .28s ease;
   }
 
@@ -2704,7 +2707,7 @@ include_once('elements/header.php');
   .lt-card-text {
     font-size: 16px;
     color: #666666;
-    font-family: "Anek Kannada", "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     line-height: 1.75;
   }
 
@@ -3052,7 +3055,7 @@ include_once('elements/header.php');
   .hp-cell-text {
     font-size: 16px;
     color: #666666;
-    font-family: "Anek Kannada", "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     line-height: 1.75;
     text-align: center;
   }
@@ -3264,7 +3267,7 @@ include_once('elements/header.php');
 
   .hotel-reserve-subtitle {
     font-size: 24px;
-    font-family: "Anek Kannada", "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #fff;
     max-width: 851px;
     font-weight: 600;
@@ -3351,9 +3354,9 @@ include_once('elements/header.php');
 
   /* Label below circle */
   .hotel-reserve-label {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 600;
-    font-family: "Anek Kannada", "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: rgba(255, 255, 255, .90);
     line-height: 1.35;
     letter-spacing: .01em;
@@ -3821,7 +3824,7 @@ include_once('elements/header.php');
   .sightseeing-tour-text {
     color: var(--text-dark);
     font-size: 16px;
-    font-family: "Anek Kannada", "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     line-height: 1.7;
     margin-bottom: 20px;
   }
@@ -3834,8 +3837,8 @@ include_once('elements/header.php');
 
   .sightseeing-tour-list li {
     margin-bottom: 12px;
-    font-size: 15px;
-    font-family: "Anek Kannada", "Poppins", sans-serif;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
     color: var(--text-dark);
     display: flex;
     align-items: center;
@@ -4030,7 +4033,7 @@ include_once('elements/header.php');
   .tour-package-text {
     font-size: 20px;
     line-height: 1.5;
-    font-family: "Anek Kannada", "Poppins", sans-serif;
+    font-family:"Poppins", sans-serif;
     margin-bottom: 15px;
   }
 

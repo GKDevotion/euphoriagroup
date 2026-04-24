@@ -148,7 +148,7 @@ include_once('elements/header.php');
     /* ── Description ── */
     .service-card-incorporation p {
         font-size: 14px;
-        font-family: "Anek Kannada", "Poppins", sans-serif;
+        font-family: "Poppins", sans-serif;
         color: #666666;
         line-height: 1.4;
         font-weight: 400;
@@ -392,9 +392,10 @@ include_once('elements/header.php');
     }
 
     .section-text {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.5;
-        font-family: "Anek Kannada", "Poppins", sans-serif;
+        font-weight: 400;
+        font-family: "Poppins", sans-serif;
         margin-bottom: 1rem;
     }
 
@@ -805,9 +806,9 @@ include_once('elements/header.php');
     }
 
     .card-desc-alliance {
-        font-size: 13px;
+        font-size: 14px;
         color: #fff;
-        font-family: "Anek Kannada", "Poppins", sans-serif;
+        font-family:"Poppins", sans-serif;
         line-height: 1.4;
         margin: 0;
     }
@@ -1149,6 +1150,8 @@ include_once('elements/header.php');
     .benefit-item.active .benefit-desc {
         max-height: 120px;
         margin-bottom: 0px;
+        font-size: 14px;
+        font-weight: "Poppins", sans-serif;
         opacity: 1;
     }
 
@@ -1442,7 +1445,7 @@ include_once('elements/header.php');
 
     .card-desc {
         font-size: 14px; 
-        font-family: "Anek Kannada", "Poppins", sans-serif;
+        font-family:"Poppins", sans-serif;
         color: #666666;
         line-height: 1.7;
         margin: 0;
@@ -1693,8 +1696,8 @@ include_once('elements/header.php');
 
 
     .section-desc {
-        font-size: 14px;
-        font-family: "Anek Kannada", "Poppins", sans-serif;
+        font-size: 16px;
+        font-family: "Poppins", sans-serif;
         color: #333333;
         line-height: 1.8;
         margin-bottom: 32px;
@@ -2039,7 +2042,7 @@ include_once('elements/header.php');
 
     .tax-card p {
         font-size: 13px;
-        font-family: "Anek Kannada", "Poppins", sans-serif;
+        font-family: "Poppins", sans-serif;
         line-height: 1.7;
         margin: 0;
         color: #666666;
@@ -2344,7 +2347,7 @@ include_once('elements/header.php');
 
     .np-feature__desc {
         font-size: 18px;
-        font-family: "Anek Kannada", "Poppins", sans-serif;
+        font-family: "Poppins", sans-serif;
         line-height: 1.75;
         margin: 0;
         color: #666666;
@@ -2575,7 +2578,7 @@ include_once('elements/header.php');
     .si-banner__desc {
         font-size: 18px;
         line-height: 1.85;
-        font-family: "Anek Kannada", "Poppins", sans-serif;
+        font-family: "Poppins", sans-serif;
         margin: 0 auto;
     }
 

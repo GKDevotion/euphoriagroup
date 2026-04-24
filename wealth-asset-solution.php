@@ -100,10 +100,10 @@ include_once('elements/header.php');
         <img src="assets/img/stock-coin.png" class="illustration">
       </div>
       <div class="col-md-7 text-content">
-        <p style="font-size: 18px; font-family: 'Anek Kannada', 'Poppins', sans-serif;">
+        <p style="font-size: 18px; font-family: 'Poppins', sans-serif;">
           Wealth & Asset Solutions are designed to help individuals, families, and business owners grow, protect, and strategically manage their financial assets. Our comprehensive advisory approach focuses on wealth creation, capital preservation, risk management, and long-term financial security.
         </p>
-        <p style="font-size: 18px; font-family: 'Anek Kannada', 'Poppins', sans-serif;">
+        <p style="font-size: 18px; font-family: 'Poppins', sans-serif;">
           We provide tailored strategies across multiple asset classes and financial instruments to ensure diversified growth and structured wealth planning aligned with your financial goals.
         </p> 
       </div>
@@ -145,12 +145,13 @@ include_once('elements/header.php');
 
   .stock-card p {
     color: #6c757d;
-    font-family: "Anek Kannada", "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 16px;
   }
 
   .stock-list li {
     margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
   }
 
@@ -537,7 +538,7 @@ include_once('elements/header.php');
   .card-body-content p {
     font-size: 12.5px;
     text-align: center;
-    font-family: "Anek Kannada", "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #444;
     line-height: 1.55;
     margin: 0;
@@ -1043,8 +1044,8 @@ include_once('elements/header.php');
 
   /* Card Text */
   .elite-insurance-card p {
-    font-size: 18px;
-    font-family: "Anek Kannada", "Poppins";
+    font-size: 16px;
+    font-family:  "Poppins";
     text-align: center;
     margin-bottom: 15px;
     position: relative;
@@ -1529,10 +1530,7 @@ include_once('elements/header.php');
         }
 
         /* colour themes */
-        .card-white  { background: #ffffff; color: #000000; }
-        .card-dark   { background: #1a1a2e; color: #ffffff; }
-        .card-light  { background: #f0f4ff; color: #000000; }
-        .card-deeper { background: #0f172a; color: #ffffff; } 
+        .card-white  { background: #ffffff; color: #000000; } 
 
         /* ── card-inner: just a full-size flex wrapper now ── */
         .stack-card .card-inner {
@@ -1581,7 +1579,7 @@ include_once('elements/header.php');
           font-size : 16px; 
           font-weight: 400;
           color: #666666;
-          font-family: "Anek Kannada", "Poppins", sans-serif;
+          font-family: "Poppins", sans-serif;
           line-height: 1.6;
           margin    : 0 0 .4rem;
         }
@@ -1599,9 +1597,9 @@ include_once('elements/header.php');
         .card-features-grid li {
           display      : flex;
           align-items  : center;
-          font-family: "Anek Kannada", "Poppins", sans-serif;
+          font-family:  "Poppins", sans-serif;
           gap          : 5px;
-          font-size    : 18px;
+          font-size    : 16px;
           font-weight  : 500;
           white-space  : nowrap;
           overflow     : hidden;
@@ -1984,7 +1982,7 @@ include_once('elements/header.php');
 
   .content-card p {
     font-size: 17px;
-    font-family: "Anek Kannada", "Poppins";
+    font-family: "Poppins";
     color: #666666;
     line-height: 1.6;
   }
@@ -2178,9 +2176,9 @@ include_once('elements/header.php');
     }
 
     .service-desc {
-      font-size: 12px;
+      font-size: 14px;
       color: #666666;
-      font-family: "Anek Kannada", "Poppins", sans-serif;
+      font-family: "Poppins", sans-serif;
       line-height: 1.65;
       margin: 0;
     }

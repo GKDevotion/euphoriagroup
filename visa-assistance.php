@@ -40,7 +40,7 @@ include_once ('elements/header.php');
 
   .visa-content p {
       color: #666;
-      font-family: "Anek Kannada", "Poppins";
+      font-family:  "Poppins";
       line-height: 1.8;
       font-size: 17px;
   }
@@ -131,7 +131,7 @@ include_once ('elements/header.php');
   .form-select{
       height:50px;
       border-radius:8px;
-      font-family: "Anek Kannada", "Poppins";
+      font-family: "Poppins";
       border:1px solid #cfd6e4;
       font-size:14px;
   }

@@ -47,7 +47,7 @@
    /* ── Typography ── */
    .about-text {
      font-size: 18px;
-     font-family: "Anek Kannada", "Poppins", sans-serif;
+     font-family: "Poppins", sans-serif;
      line-height: 1.5;
      font-weight: 400;
      text-align: center;
@@ -180,9 +180,10 @@
    /* Paragraphs */
    .vision-body p {
      font-size: 15.5px;
+     font-family:"Poppins", sans-serif;
      text-align: start;
      line-height: 1.8;
-     color: #6b7280;
+     color: #666666;
      margin-bottom: 20px;
    }
 
@@ -540,7 +541,8 @@
 
    .trust-card-text {
      font-size: 0.88rem;
-     color: #6c757d;
+     color: #666666;
+     font-family: "Poppins", sans-serif;
      line-height: 1.55;
      font-weight: 500;
    }
@@ -800,7 +802,7 @@
      font-size: 18px;
      font-weight: 400;
      color: #666666;
-     font-family: "Anek Kannada", "Poppins", sans-serif;
+     font-family: "Poppins", sans-serif;
      line-height: 1.7;
      margin-bottom: 28px;
    }
@@ -815,7 +817,7 @@
    .advantage-list li {
      display: flex;
      align-items: flex-start;
-     font-family: "Anek Kannada", "Poppins", sans-serif;
+     font-family: "Poppins", sans-serif;
      gap: 14px;
      padding: 10px 0;
      color: #374151;
@@ -1202,14 +1204,15 @@
 
    .item-title {
      font-weight: 700;
-     font-size: 17px;
+     font-size: 22px;
+     font-family: "Anek Kannada", "Poppins", sans-serif;
      color: #25356f;
      margin-bottom: 8px;
    }
 
    .item-body {
       font-size: 17px;
-      font-family: "Anek Kannada", "Poppins", sans-serif;
+      font-family: "Poppins", sans-serif;
       line-height: 30px;
       margin: 0;
       letter-spacing: 0%;
@@ -1851,7 +1854,8 @@
 
    .member-card .name {
      margin-top: 20px;
-     font-size: 1rem;
+     font-size: 18px;
+     font-family: "Anek Kannada", "Poppins", sans-serif;
      font-weight: 700;
      color: var(--brand);
    }
@@ -1860,6 +1864,7 @@
      font-size: .82rem;
      color: var(--muted);
      margin-top: 3px;
+     font-family: "Anek Kannada", "Poppins", sans-serif;
      font-weight: 500;
    }
 
@@ -2161,7 +2166,7 @@
      display: flex;
      align-items: center;
      gap: 16px;
-     font-family: "Anek Kannada", "Poppins", sans-serif;
+     font-family:  "Poppins", sans-serif;
      padding: 22px 28px;
      background: #ffffff;
      border: 1.5px solid #d6dce8;
@@ -2170,7 +2175,7 @@
      transition: all 0.25s ease;
      text-decoration: none;
      color: #000;
-     font-size: 26px;
+     font-size: 22px;
      font-weight: 400;
      margin-bottom: 20px;
    }
@@ -2383,9 +2388,9 @@
 
    /* Quote text */
    .testimonial-text {
-     font-size: 18px;
+     font-size: 16px;
      color: #666666;
-     font-family: "Anek Kannada", "Poppins", sans-serif;
+     font-family: "Poppins", sans-serif;
      line-height: 1.75;
      flex: 1;
      margin-bottom: 24px;
@@ -2410,14 +2415,16 @@
 
    .author-name {
      font-weight: 700;
-     font-size: 15px;
+     font-size: 18px;
      color: #1a2340;
+     font-family: "Anek Kannada", "Poppins", sans-serif;
      margin-bottom: 2px;
    }
 
    .author-role {
-     font-size: 12.5px;
-     color: #8a93a6;
+     font-size: 14px;
+     color: #666666;
+     font-family: "Anek Kannada", "Poppins", sans-serif;
    }
 
    /* Navigation Buttons */

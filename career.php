@@ -93,7 +93,7 @@ include_once('elements/header.php');
     .about-text p {
         font-size: 1rem;
         line-height: 1.8;
-        font-family: "Anek Kannada", "Poppins";
+        font-family: "Poppins";
         color: #4b5563;
         margin-bottom: 20px;
     }
@@ -331,7 +331,7 @@ include_once('elements/header.php');
     .job-body .intro {
         font-size: 18px;
         line-height: 1.75;
-        font-family: "Anek Kannada", "Poppins";
+        font-family: "Poppins";
         color: #4b5563;
         margin: 20px 0 22px;
     }
@@ -354,7 +354,7 @@ include_once('elements/header.php');
         display: flex;
         align-items: flex-start;
         gap: 10px;
-        font-family: "Anek Kannada", "Poppins";
+        font-family: "Poppins";
         font-size: 18px;
         color: #666666;
         line-height: 1.65;
@@ -364,7 +364,7 @@ include_once('elements/header.php');
     .job-body ul li::before {
         content: '';
         width: 8px;
-        font-family: "Anek Kannada", "Poppins";
+        font-family: "Poppins";
         height: 8px;
         border-radius: 50%;
         background: #25356f;
@@ -665,9 +665,9 @@ include_once('elements/header.php');
     /* ── INTRO ── */
     .intro-text {
         text-align: center;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 1.9;
-        font-family: "Anek Kannada", "Poppins";
+        font-family: "Poppins";
         color: #666666;
         max-width: 888px;
         margin: 0 auto 36px;
@@ -699,8 +699,9 @@ include_once('elements/header.php');
     }
 
     .feat-label {
-        font-size: 0.92rem;
+        font-size: 16px;
         font-weight: 500;
+        font-family: "Poppins", sans-serif;
         color: #000;
         line-height: 1.45;
     }
@@ -961,8 +962,9 @@ include_once('elements/header.php');
     }
 
     .fc-body p {
-        font-size: 0.8rem;
+        font-size: 14px;
         line-height: 1.65;
+        font-family: "Poppins", sans-serif;
         color: #4b5563;
         margin: 0;
     }
@@ -1183,14 +1185,14 @@ include_once('elements/header.php');
     .left-panel p {
         color: #6b7280;
         font-size: 15px;
-        font-family: "Anek Kannada", "Poppins";
+        font-family:  "Poppins";
         line-height: 1.6;
     }
 
     .contact-item {
         display: flex;
         align-items: center;
-        font-family: "Anek Kannada", "Poppins";
+        font-family:  "Poppins";
         gap: 10px;
         font-size: 20px;
         font-weight: 600;

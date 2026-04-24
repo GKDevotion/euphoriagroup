@@ -15,7 +15,7 @@
                     </div>
                     <div class="col-md-3 text-md-end social-icons">
                         <p class="mb-2 fw-bold">Follow #Euphoria</p>
-                        <div class="d-flex justify-content-end">
+                        <div class="d-md-flex justify-content-end">
                         <a href="#">
                             <img src="assets/img/icon/Facebook.png" alt="" class="social-circle-icons">
                         </a>
@@ -38,7 +38,7 @@
                 <div class="row footer-link-background">
                     <div class="col-lg-7 py-3">
                         <div class="row">
-                            <div class="col-md-4 col-6">
+                            <div class="col-md-4 col-12">
                                 <h5 class="footer-heading">Company</h5>
                                 <ul class="footer-links">
                                     <li>
@@ -73,7 +73,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-md-4 col-6">
+                            <div class="col-md-4 col-12">
                                 <h5 class="footer-heading">Inbound Services</h5>
                                 <ul class="footer-links">
                                     <li>
@@ -146,7 +146,7 @@
                 <div class="row copyright-bar mt-4">
                     <div class="col-md-12 text-center">
                         copyright &copy; 2026 The Euphoria Group. All rights reserved.
-                        <a href="terms-conditions">Terms & Conditions</a> | <a href="privacy-policy">Privacy Policy</a>
+                        <a href="terms-conditions">Terms & Conditions</a> <span class="d-none d-md-block">|</span><a href="privacy-policy">Privacy Policy</a>
                     </div>
                 </div>
             </div>

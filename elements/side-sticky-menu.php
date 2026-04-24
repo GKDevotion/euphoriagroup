@@ -70,7 +70,7 @@
 </style>
 
 <!-- Start Sticky Nav -->
-<div class="sticky-social d-none d-md-block">
+<div class="sticky-social">
 
     <?php
         foreach( $sideStickyMenu as $val ){

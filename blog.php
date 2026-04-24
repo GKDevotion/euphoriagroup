@@ -98,6 +98,7 @@ include_once('elements/header.php');
     .card-title {
         font-size: 1rem;
         font-weight: 700;
+        font-family: "Anek Kannada", "Poppins", sans-serif;
         line-height: 1.35;
         color: #25356F;
         margin-bottom: 10px;
@@ -139,7 +140,7 @@ include_once('elements/header.php');
     .excerpt {
         font-size: 17px;
         color: #6b7280;
-        font-family: "Anek Kannada", "Poppins";
+        font-family:  "Poppins";
         line-height: 1.6;
         flex: 1;
     }

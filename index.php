@@ -523,7 +523,7 @@ include_once('elements/home-slider.php');
                 </div><!-- /col-left -->
 
                 <!-- Right: img -->
-                <div class="col-lg-4">
+                <div class="col-lg-4 d-none d-md-block">
                     <div class="right-col">
                       
                         <img class="img-office" src="https://picsum.photos/300/200?2" alt="Professionals at work" data-aos="fade-left" data-aos-duration="1200">
@@ -543,6 +543,8 @@ include_once('elements/home-slider.php');
     .blog-sec {
         padding: 300px 0 60px;
     }
+
+    
 </style>
 
 <section class="about-section blog-sec pb-0 mt-5">
@@ -553,7 +555,7 @@ include_once('elements/home-slider.php');
 
             <h2 class="about-title h1 pb-5" data-aos="fade-up" data-aos-duration="400">Latest Announcement</h2>
 
-            <div class="col-lg-4 col-md-6 px-2 mx-auto" data-aos="fade-up" data-aos-duration="500">
+            <div class="col-lg-4 col-md-6 px-2 mx-auto mb-2" data-aos="fade-up" data-aos-duration="500">
                 <div class="card blog-card" style="transition-delay: 0.1s;">
                     <div class="card-img-wrapper">
                         <img src="assets/img/blog-image-2.png" class="card-img-top" alt="Penguin">
@@ -572,7 +574,7 @@ include_once('elements/home-slider.php');
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 px-2 mx-auto" data-aos="fade-up" data-aos-duration="600">
+            <div class="col-lg-4 col-md-6 px-2 mx-auto mb-2" data-aos="fade-up" data-aos-duration="600">
                 <div class="card blog-card" style="transition-delay: 0.3s;">
                     <div class="card-img-wrapper">
                         <img src="assets/img/blog-image-2.png" class="card-img-top" alt="Crow">
@@ -591,7 +593,7 @@ include_once('elements/home-slider.php');
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 px-2 mx-auto" data-aos="fade-up" data-aos-duration="700">
+            <div class="col-lg-4 col-md-6 px-2 mx-auto mb-2" data-aos="fade-up" data-aos-duration="700">
                 <div class="card blog-card" style="transition-delay: 0.5s;">
                     <div class="card-img-wrapper">
                         <img src="assets/img/blog-image-2.png" class="card-img-top" alt="Cityscape">
