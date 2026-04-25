@@ -199,17 +199,20 @@
   }
 
   .eg-mega-title {
-      font-size: .95rem;
-      font-weight: 700;
+      font-size: 18px;
+      font-weight: 600;
+      font-family: "Anek Kannada", "Poppins", sans-serif;
       color: var(--euphoria-blue);
       transition: color .2s;
   }
   .eg-mega-item:hover .eg-mega-title { color: var(--euphoria-red); }
 
   .eg-mega-desc {
-      font-size: .78rem;
-      color: #6b7a99;
+      font-size: 14px;
+      color: #666666;
+      font-family: "Poppins", sans-serif;
       line-height: 1.6;
+      font-weight: 400;
       display: block;
       margin-top: 10px;
   }
@@ -242,6 +245,7 @@
   .eg-dropdown a {
       display: flex;
       align-items: center;
+      font-family:"Poppins", sans-serif;
       gap: 10px;
       padding: 10px 20px;
       font-size: .86rem;

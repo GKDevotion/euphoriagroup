@@ -766,6 +766,8 @@ include_once('elements/header.php');
 
         .card-hover-text p {
           font-size: 13px;
+          font-weight: 400;
+          font-family: "Poppins", sans-serif;
         }
 
         .card-dashed:hover .card-front {
