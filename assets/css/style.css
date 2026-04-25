@@ -1122,10 +1122,8 @@ h2 {
 /* Card Body */
 .card-title {
   color: var(--euphoria-blue);
-  font-size: 1.15rem;
   font-weight: 700;
-  line-height: 1.4;
-  font-family: "Anek Kannada", "Poppins";
+  line-height: 1.5;
   margin-bottom: 15px;
   text-align: center;
 }

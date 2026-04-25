@@ -70,7 +70,7 @@ include_once ('elements/header.php');
 
             <!-- RIGHT CONTENT -->
             <div class="col-lg-7">
-                <div class="visa-content px-5">
+                <div class="visa-content px-md-5 px-3">
                     <p>
                        The Global Visa Assistance services offered by the Euphoria Group are intended to provide thorough, end-to-end support throughout the entire visa application process. We take the time to learn about your travel goals, destination, and needs from the very first individual consultation. Our staff ensures that every stage is managed with clarity, precision, and total transparency by helping with precise documentation preparation, meticulous application filing, and timely submission.
                     </p>

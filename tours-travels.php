@@ -344,7 +344,6 @@ include_once('elements/header.php');
   }
 
   .card-body-content p {
-    font-size: 14px;
     color: #fff;
     line-height: 1.5;
     font-family: "Poppins", sans-serif;
@@ -503,10 +502,6 @@ include_once('elements/header.php');
       padding: 15px;
     }
 
-    .card-body-content h5 {
-      font-size: 1.1rem;
-    }
-
     /* Move arrows to be more thumb-friendly or hide them if using touch-swipe */
     .carousel-btn {
       width: 36px;
@@ -535,7 +530,7 @@ include_once('elements/header.php');
     }
 
     .section-subtitle {
-      font-size: 13px;
+      font-size: 16px;
       padding: 0 10px;
     }
 
@@ -905,16 +900,6 @@ include_once('elements/header.php');
     color: var(--euphoria-red);
   }
 
-  /* .section-subtitle {
-    font-size: clamp(13px, 1.4vw, 16px);
-    color: #666;
-    max-width: 620px;
-    margin: 0 auto;
-    font-weight: 400;
-    line-height: 1.7;
-    animation: fadeUp .7s .15s ease both;
-  } */
-
   @keyframes fadeUp {
     from {
       opacity: 0;
@@ -1122,16 +1107,6 @@ include_once('elements/header.php');
     transition: fill .3s;
   }
 
-  .card-title {
-
-    font-size: clamp(16px, 1.8vw, 20px);
-    font-weight: 700;
-    color: var(--euphoria-blue);
-    margin-bottom: 10px;
-    line-height: 1.25;
-    transition: color .3s;
-  }
-
   .tcard:hover .card-title {
     color: var(--euphoria-red);
   }
@@ -1243,7 +1218,7 @@ include_once('elements/header.php');
 
     .section-subtitle {
       margin-top: 15px !important;
-      font-size: 14px;
+      font-size: 18px;
     }
 
     /* Single column for phones */
@@ -1727,12 +1702,11 @@ include_once('elements/header.php');
 
   /* ── CARD TEXT ── */
   .bus-card-title {
-
-    font-size: clamp(14px, 1.5vw, 17px);
+    font-size: 20px;
     font-weight: 700;
     color: var(--euphoria-blue);
     margin-bottom: 12px;
-    line-height: 1.3;
+    line-height: 1.5;
     transition: color .3s;
   }
 
@@ -1741,11 +1715,11 @@ include_once('elements/header.php');
   }
 
   .bus-card-text {
-    font-size: clamp(11.5px, 1.05vw, 13.5px);
+    font-size: 16px;
     color: #666666;
     font-weight: 400;
     font-family: "Poppins", sans-serif;
-    line-height: 1.7;
+    line-height: 1.5;
   }
 
   /* ── ARROW BUTTONS ── */
@@ -2261,7 +2235,7 @@ include_once('elements/header.php');
 
   /* bold subtitle */
   .taxi-bold-sub {
-    font-size: clamp(14px, 1.5vw, 18px);
+    font-size: 18px;
     font-weight: 600;
     color: var(--text-dark);
     margin-bottom: 14px;
@@ -2273,7 +2247,7 @@ include_once('elements/header.php');
     font-size: 16px;
     color: #666;
     font-family: "Poppins", sans-serif;
-    line-height: 1.8;
+    line-height: 1.5;
     margin-bottom: 28px;
   }
 
@@ -2332,7 +2306,7 @@ include_once('elements/header.php');
 
   /* feature label */
   .taxi-feat-label {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     color: var(--text-dark);
     font-family: "Poppins", sans-serif;
@@ -2394,13 +2368,10 @@ include_once('elements/header.php');
     }
 
     .taxi-bold-sub {
-      font-size: 15px;
       margin-top: 15px !important;
     }
 
     .taxi-desc {
-      font-size: 13px;
-      line-height: 1.6;
       margin-bottom: 20px;
     }
 
@@ -2413,7 +2384,7 @@ include_once('elements/header.php');
     }
 
     .taxi-feat {
-      padding: 8px 12px;
+      padding: 2px 12px;
     }
 
     .taxi-feat:hover {
@@ -2431,10 +2402,6 @@ include_once('elements/header.php');
     .taxi-main-img {
       height: 220px;
       border-radius: 15px;
-    }
-
-    .taxi-feat-label {
-      font-size: 13px;
     }
   }
 </style>
@@ -2690,7 +2657,6 @@ include_once('elements/header.php');
 
   /* card title */
   .lt-card-title {
-
     font-size: 22px;
     font-weight: 700;
     color: var(--euphoria-blue);
@@ -2795,10 +2761,6 @@ include_once('elements/header.php');
     .lt-main-img {
       height: 220px;
       width: 100%;
-    }
-
-    .lt-card-title {
-      font-size: 16px;
     }
   }
 </style>
@@ -3082,8 +3044,8 @@ include_once('elements/header.php');
     }
 
     .hp-left {
-      width: 60%;
-      max-width: 300px;
+      /* width: 60%;
+      max-width: 300px; */
     }
 
     /* Reset grid border logic for full-width grid */
@@ -3751,7 +3713,7 @@ include_once('elements/header.php');
       }
     </style>
     <!-- ★ CENTER GIRL IMAGE ★ -->
-    <div class="hotel-center-image">
+    <div class="hotel-center-image d-none d-md-block">
       <img src="assets/img/hotel-girl.png" alt="Hotel Receptionist">
     </div>
     <!-- ══ RIGHT 5 NODES ══ -->
@@ -3998,7 +3960,7 @@ include_once('elements/header.php');
     overflow: hidden;
     background-size: cover;
     background-image: url('assets/img/background/holiday-tour-package.png');
-    background-repeat: round;
+    background-repeat: space;
   }
 
   /* Content */

@@ -225,13 +225,10 @@ include_once('elements/header.php');
         text-align: center;
     }
 
- 
-
     .partner-card-text {
-        font-size: 12px;
+        font-size: 15px;
         color: #666666;
-        line-height: 1.7;
-        font-family: "Poppins", sans-serif;
+        line-height: 1.5;
         text-align: center;
     }
 
@@ -279,7 +276,6 @@ include_once('elements/header.php');
         }
 
         .card-title {
-            font-size: 0.95rem;
             margin-bottom: 8px;
         }
 
@@ -521,7 +517,6 @@ include_once('elements/header.php');
     .tab-text-col h4 {
         color: #25356F;
         font-size: 30px;
-        font-family: "Anek Kannada", "Poppins";
         font-weight: 600; 
         margin-bottom: 0px;
     }
@@ -656,11 +651,10 @@ include_once('elements/header.php');
 
         /* Text */
         .tab-text-col h4 {
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
 
         .tab-text-col p {
-            font-size: 0.85rem;
             line-height: 1.6;
         }
 

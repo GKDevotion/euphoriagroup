@@ -276,7 +276,7 @@ include_once('elements/header.php');
       }
   </style>
       <!-- Right Content -->
-      <div class="col-lg-6 px-5">
+      <div class="col-lg-6 px-md-5 px-3">
         <div class="stock-card">
           <h3 class="stock-title">Stock Market Opportunities</h3>
           <p>
@@ -2168,18 +2168,16 @@ include_once('elements/header.php');
     
 
     .service-title {
-      font-family: "Anek Kannada", "Poppins", sans-serif;
       font-weight: 600;
-      font-size: 19px;
+      font-size: 20px;
       color:  #25356F;
       margin-bottom: 10px;
     }
 
     .service-desc {
-      font-size: 14px;
+      font-size: 16px;
       color: #666666;
-      font-family: "Poppins", sans-serif;
-      line-height: 1.65;
+      line-height: 1.5;
       margin: 0;
     }
 
@@ -2202,7 +2200,7 @@ include_once('elements/header.php');
 
   .services-table td {
     width: 50%; /* 2 columns on tablet */
-    padding: 24px 16px;
+    padding: 20px 12px;
     border: none !important;
     border-bottom: 1px solid #eee;
   }
@@ -2214,14 +2212,6 @@ include_once('elements/header.php');
   .services-table td {
     width: 100%; /* 1 column on mobile */
     text-align: center;
-  }
-
-  .service-title {
-    font-size: 16px;
-  }
-
-  .service-desc {
-    font-size: 13px;
   }
 
   .services-grid-wrapper {
