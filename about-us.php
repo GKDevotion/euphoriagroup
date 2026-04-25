@@ -1355,10 +1355,6 @@
      .item-title {
        font-size: 15px;
      }
-
-     .item-body {
-       font-size: 13px;
-     }
    }
 
    /* ══════════════════════════════════════
@@ -1395,11 +1391,7 @@
      }
 
      .item-title {
-       font-size: 14px;
-     }
-
-     .item-body {
-       font-size: 12.5px;
+       font-size: 20px;
      }
 
      .mindset-item {

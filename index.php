@@ -378,7 +378,7 @@ include_once('elements/home-slider.php');
 
 
 <!-- Start Our Success Section-->
-<section class="our-success-banner ">
+<section class="our-success-banner">
     <h2 class="about-title h1">The Euphoria Timeline</h2>
     <div class="stats-row" data-aos="fade-up" data-aos-duration="200">
 
