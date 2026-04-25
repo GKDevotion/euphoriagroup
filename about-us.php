@@ -165,9 +165,9 @@
 
    /* Tagline */
    .vision-tagline {
-     font-size: 15px;
+     font-size: 18px;
      font-weight: 500;
-     color: #6b7280;
+     color: #666666;
      letter-spacing: 0.02em;
      margin-bottom: 28px;
      text-align: center;
@@ -259,7 +259,6 @@
      }
 
      .vision-tagline {
-       font-size: 14px;
        margin-bottom: 20px;
        text-align: left;
      }
@@ -319,7 +318,6 @@
      }
 
      .vision-tagline {
-       font-size: 13.5px;
        text-align: left;
        margin-bottom: 16px;
        line-height: 1.6;
@@ -540,7 +538,7 @@
    }
 
    .trust-card-text {
-     font-size: 0.88rem;
+     font-size: 0.9rem;
      color: #666666;
      font-family: "Poppins", sans-serif;
      line-height: 1.55;
@@ -651,7 +649,6 @@
      }
 
      .trust-card-text {
-       font-size: 0.85rem;
        line-height: 1.6;
      }
 
@@ -677,10 +674,6 @@
      .trust-icon-wrap svg {
        width: 24px;
        height: 24px;
-     }
-
-     .trust-card-text {
-       font-size: 0.82rem;
      }
 
 
@@ -915,7 +908,7 @@
      }
 
      .intro-text {
-       font-size: 0.95rem;
+       font-size: 1rem;
        margin-bottom: 20px;
      }
 
@@ -960,11 +953,7 @@
        height: 220px;
        border-radius: 12px;
      }
-
-     .intro-text {
-       font-size: 0.9rem;
-     }
-
+     
      .advantage-list li {
        font-size: 0.87rem;
      }

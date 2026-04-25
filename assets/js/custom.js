@@ -149,22 +149,23 @@ if( $('.benefit-item').length ){
         el.classList.toggle('active');
     }
 }
-
-if( $('.taxSwiper').length ){
-    const tax_swiper = new Swiper('.taxSwiper', {
-        slidesPerView: 1,
+    const taxSwiper = new Swiper('.taxSwiper', {
+         slidesPerView: 1,
         spaceBetween: 24,
         loop: true,
-        grabCursor: true,
-        autoplay: {
-            delay: 2500, // time in ms (2.5 sec)
-            disableOnInteraction: false, // keep autoplay after user swipe
-        },
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
         },
-        breakpoints: {
+        autoplay: {
+            delay: 2500, // time in ms (2.5 sec)
+            disableOnInteraction: false, // keep autoplay after user swipe
+        },
+        navigation: {
+            nextEl: '#nextBtn',
+            prevEl: '#prevBtn',
+        },
+         breakpoints: {
             576: {
                 slidesPerView: 2
             },
@@ -178,15 +179,7 @@ if( $('.taxSwiper').length ){
                 slidesPerView: 5
             },
         },
-        navigation: {
-            nextEl: '#taxNext',
-            prevEl: '#taxPrev',
-        },
     });
-
-    document.getElementById('taxNext').addEventListener('click', () => swiper.slideNext());
-    document.getElementById('taxPrev').addEventListener('click', () => swiper.slidePrev());
-}
 
 if( $('.benefitsSwiper').length ){
     const swiper = new Swiper('.benefitsSwiper', {

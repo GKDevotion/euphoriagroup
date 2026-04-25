@@ -933,7 +933,7 @@ h2 {
 /* ── MOBILE (max 575px) ── */
 @media (max-width: 575.98px) {
   .our-success-banner {
-    min-height: 75vh;
+    min-height: 47vh;
     padding: 50px 12px 60px;
     background-position: center center;
   }
@@ -952,7 +952,7 @@ h2 {
   /* Fix title positioning */
   .our-success-banner h2 {
     margin-top: 0;
-    font-size: 1.3rem !important;
+    font-size: 1rem !important;
     text-align: center;
     padding: 0 10px;
     margin-bottom: 30px;

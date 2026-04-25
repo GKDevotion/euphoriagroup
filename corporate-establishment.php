@@ -2209,6 +2209,7 @@ include_once('elements/header.php');
 
         <!-- Swiper -->
         <div class="swiper taxSwiper">
+
             <div class="swiper-wrapper">
 
                 <!-- Card 1 -->
@@ -2257,6 +2258,18 @@ include_once('elements/header.php');
                         </div>
                         <h5>GST Registration for Goods &amp; Services Tax Compliance</h5>
                         <p>GST registration allows businesses to legally collect and remit Goods and Services Tax on the supply of goods and services.</p>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="swiper-slide" data-aos="fade-down" data-aos-duration="1400">
+                    <div class="tax-card">
+                        <div class="mb-3">
+                            <!-- Handshake / transaction icon -->
+                            <img src="assets/img/icon/compliance-5.png" alt="Strong Investor Credibility" class="compliance-icon">
+                        </div>
+                        <h5>Smooth Business Transactions</h5>
+                        <p>Proper tax registrations enable seamless invoicing, billing, and financial transactions with clients, vendors, and government authorities.</p>
                     </div>
                 </div>
 
