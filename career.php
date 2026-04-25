@@ -301,7 +301,6 @@ include_once('elements/header.php');
         gap: 8px;
         padding-right: 24px;
         margin-right: 0;
-        font-family: "Anek Kannada", "Poppins";
         font-size: 16px;
         color: #4b5563;
         font-weight: 400;
@@ -955,90 +954,81 @@ include_once('elements/header.php');
     }
 
     .fc-body h6 {
-        font-size: 0.97rem;
+        font-size: 1rem;
         font-weight: 700;
         color: #1e1e2e;
         margin-bottom: 6px;
     }
 
     .fc-body p {
-        font-size: 14px;
-        line-height: 1.65;
+        font-size: 15px;
+        line-height: 1.5;
         font-family: "Poppins", sans-serif;
         color: #4b5563;
         margin: 0;
     }
 
     @media (max-width: 767px) {
-    /* 1. Reset section height and layout */
-    .growth-section {
-        min-height: auto;
-        display: block; /* Stack vertically */
-    }
+        /* 1. Reset section height and layout */
+        .growth-section {
+            min-height: auto;
+            display: block; /* Stack vertically */
+        }
 
-    /* 2. Adjust Background for Mobile */
-    .bg-left::before {
-        /* Change from horizontal gradient to vertical/solid for mobile readability */
-        background: linear-gradient(to bottom, 
-            #2a3e81 0%, 
-            rgba(37, 59, 124, 0.9) 100%);
-    }
+        /* 2. Adjust Background for Mobile */
+        .bg-left::before {
+            /* Change from horizontal gradient to vertical/solid for mobile readability */
+            background: linear-gradient(to bottom, 
+                #2a3e81 0%, 
+                rgba(37, 59, 124, 0.9) 100%);
+        }
 
-    /* 3. Adjust Watermark for Mobile */
-    .watermark-growth {
-     
-        font-size: 62px;
-        top: 14px;
-        left: 20px;
-        width: auto;
-    }
+        /* 3. Adjust Watermark for Mobile */
+        .watermark-growth {
+        
+            font-size: 62px;
+            top: 14px;
+            left: 20px;
+            width: auto;
+        }
 
-    /* 4. Content Spacing */
-    .growth-content {
-        padding: 40px 0;
-    }
+        /* 4. Content Spacing */
+        .growth-content {
+            padding: 40px 0;
+        }
 
-    .section-heading {
-        text-align: center;
-        font-size: 16px;
-        margin-bottom: 30px;
-        padding: 0 10px;
-    }
+        .section-heading {
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 30px;
+            padding: 0 10px;
+        }
 
-    /* 5. Feature Cards - Reset width and offsets */
-    .feature-card {
-        max-width: 100%;
-        margin-right: 0 !important; /* Remove the growth-card-2/4 offsets */
-        right: auto !important;
-        flex-direction: row; /* Keep icon side-by-side */
-        gap: 15px;
-        padding: 15px;
-        background: rgba(255, 255, 255, 1); /* Solid white for better contrast */
-    }
+        /* 5. Feature Cards - Reset width and offsets */
+        .feature-card {
+            max-width: 100%;
+            margin-right: 0 !important; /* Remove the growth-card-2/4 offsets */
+            right: auto !important;
+            flex-direction: row; /* Keep icon side-by-side */
+            gap: 15px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 1); /* Solid white for better contrast */
+        }
 
-    /* 6. Adjust Icon and Text sizes for small screens */
-    .fc-icon {
-        width: 45px;
-        height: 45px;
-    }
+        /* 6. Adjust Icon and Text sizes for small screens */
+        .fc-icon {
+            width: 45px;
+            height: 45px;
+        }
 
-    .fc-icon svg {
-        width: 24px;
-        height: 24px;
-    }
+        .fc-icon svg {
+            width: 24px;
+            height: 24px;
+        }
 
-    .fc-body {
-        padding-left: 12px;
-    }
-
-    .fc-body h6 {
-        font-size: 0.9rem;
-    }
-
-    .fc-body p {
-        font-size: 0.75rem;
-        line-height: 1.5;
-    }
+        .fc-body {
+            padding-left: 12px;
+        }
     }
 
 /* Extra small screens fix */

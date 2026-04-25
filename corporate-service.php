@@ -984,39 +984,16 @@ include_once('elements/header.php');
     transform: translateX(6px);
   }
 
-  .step-num {
-    font-size: 6rem;
-    font-weight: 700;
-    color: var(--euphoria-blue);
-    line-height: 1;
-    min-width: 60px;
-  }
-
-  .step-card h5 {
-    font-size: 1.05rem;
-    color: var(--euphoria-blue);
-    font-weight: 700;
-    margin-bottom: 8px;
-  }
-
   .step-card p {
     font-size: .86rem;
     color: #666;
     margin: 0;
   }
 
-  .step-img {
-    border-radius: 15px;
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-  }
-
   #restructuring .about-title-bg {
     top: 0 !important;
   }
 
-    
   .about-title-bg-transformation {
     position: absolute;
     top: -10px;
@@ -1033,7 +1010,9 @@ include_once('elements/header.php');
   }
 
     @media (max-width: 576px) {
-    
+    .step-num {
+      font-size: 4rem;
+  }
     .about-title-bg-transformation {
           font-size: 3.5rem !important;
           top: 74px !important;
@@ -1162,7 +1141,7 @@ include_once('elements/header.php');
 
   .lic-card h6 {
     font-size: 22px;
-    font-family: "Anek Kannada", "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     color: var(--euphoria-blue);
     transition: color .3s;
@@ -1190,13 +1169,15 @@ include_once('elements/header.php');
   .lic-sidebar h5 {
     color: #fff;
     margin-bottom: 16px;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
   }
 
   .lic-sidebar .lic-item {
     border-bottom: 1px solid rgba(255, 255, 255, .12);
     padding: 10px 0;
-    font-size: 20px;
-    font-family: "Anek Kannada", "Poppins", sans-serif;
+    font-size: 19px;
+    font-family: "Poppins", sans-serif;
     display: flex;
     gap: 10px;
   }
@@ -1325,7 +1306,7 @@ include_once('elements/header.php');
       <div class="col-lg-4 reveal-right">
         <div class="lic-sidebar">
          
-          <h5><i class="bi bi-list-check me-2"></i>Quick Checklist</h5>
+          <h5 class="text-center "><i class="bi bi-list-check me-2"></i>Quick Checklist</h5>
           <div class="lic-item"><img src="assets/img/icon/Group.png" alt=""><span>GST Registration</span></div>
           <div class="lic-item"><img src="assets/img/icon/Group.png" alt=""> PAN / TAN Registration</div>
           <div class="lic-item"><img src="assets/img/icon/Group.png" alt=""> Professional Tax</div>
@@ -1576,7 +1557,7 @@ include_once('elements/header.php');
   }
 
   .add-card-body h6 {
-    font-size: .97rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: var(--euphoria-blue);
     margin-bottom: 8px;
@@ -1586,7 +1567,6 @@ include_once('elements/header.php');
   }
 
   .add-card-body p {
-    font-size: .82rem;
     color: #666;
     margin: 0;
   }
