@@ -666,7 +666,8 @@ h2 {
   color: #fff;
   position: relative;
   z-index: 1;
-  margin-top: -360px;
+  /* margin-top: -360px; */
+  margin-top: -399px;
   font-size: 2.56rem !important;
 }
 

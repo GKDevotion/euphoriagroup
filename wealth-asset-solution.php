@@ -200,7 +200,7 @@ include_once('elements/header.php');
           font-size: 156px;
           font-weight: 700;
           color: #CC2831;
-          opacity: 0.2;
+          opacity: 0.1;
           letter-spacing: -2px;
           pointer-events: none;
           user-select: none;
