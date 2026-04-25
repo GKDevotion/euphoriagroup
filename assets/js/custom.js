@@ -149,6 +149,26 @@ if( $('.benefit-item').length ){
         el.classList.toggle('active');
     }
 }
+
+ const swiper = new Swiper('.blogSwiper', {
+    slidesPerView: 1,
+    spaceBetween: 24,
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      640: { slidesPerView: 2, spaceBetween: 20 },
+      992: { slidesPerView: 3, spaceBetween: 24 },
+    },
+  });
+  
     const taxSwiper = new Swiper('.taxSwiper', {
          slidesPerView: 1,
         spaceBetween: 24,

@@ -374,8 +374,7 @@ include_once('elements/home-slider.php');
 
         </div>
     </div>
-</section>
-
+</section> 
 
 <!-- Start Our Success Section-->
 <section class="our-success-banner">
@@ -534,13 +533,24 @@ include_once('elements/home-slider.php');
         </div><!-- /inner -->
     </div><!-- /card -->
 </div>
+
 <!-- End Our Success Section-->
 <style>
     .blog-sec {
         padding: 300px 0 60px;
+    } 
+@media (max-width: 576px) {
+    .blog-sec {
+        padding: 50px 0 40px;
     }
 
-    
+    .container.timeline-content {
+        padding-left: 24px;
+        padding-right: 24px;
+        margin-top: 50px;
+    }
+}
+
 </style>
 
 <section class="about-section blog-sec pb-0 mt-5">
@@ -551,73 +561,97 @@ include_once('elements/home-slider.php');
 
             <h2 class="about-title h1 pb-5" data-aos="fade-up" data-aos-duration="400">Latest Announcement</h2>
 
-            <div class="col-lg-4 col-md-6 px-2 mx-auto mb-2" data-aos="fade-up" data-aos-duration="500">
-                <div class="card blog-card" style="transition-delay: 0.1s;">
-                    <div class="card-img-wrapper">
-                        <img src="assets/img/blog-image-2.png" class="card-img-top" alt="Penguin">
-                        <div class="image-overlay-text d-none">Life Through That Penguin's Eyes</div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Be That Penguin: A Lesson in Bold Leadership, Global Expansion & Strategic Growth</h5>
-                        <div class="author-meta">
-                            <img src="https://i.pravatar.cc/150?u=ayushi" class="author-img" alt="Author">
-                            <span class="me-3">Ayushi Davda</span>
-                            <span><i class="far fa-calendar-alt me-1"></i> March 18, 2026</span>
+            <div class="swiper blogSwiper">
+
+                <div class="swiper-wrapper">
+        
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-duration="500">
+                        <div class="card blog-card" style="transition-delay: 0.1s;">
+                            <div class="card-img-wrapper">
+                                <img src="assets/img/blog-image-2.png" class="card-img-top" alt="Penguin">
+                                <div class="image-overlay-text d-none">Life Through That Penguin's Eyes</div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Be That Penguin: A Lesson in Bold Leadership, Global Expansion & Strategic Growth</h5>
+                                <div class="author-meta">
+                                    <img src="https://i.pravatar.cc/150?u=ayushi" class="author-img" alt="Author">
+                                    <span class="me-3">Ayushi Davda</span>
+                                    <span><i class="far fa-calendar-alt me-1"></i> March 18, 2026</span>
+                                </div>
+                                <p class="card-text">In the coldest and most unforgiving places on Earth, only the brave can survive. A single penguin walking toward the mountains is more than just a picture...</p>
+                                <a href="blog-detail" class="read-more">Read More <i class="fas fa-angle-double-right"></i></a>
+                            </div>
                         </div>
-                        <p class="card-text">In the coldest and most unforgiving places on Earth, only the brave can survive. A single penguin walking toward the mountains is more than just a picture...</p>
-                        <a href="blog-detail" class="read-more">Read More <i class="fas fa-angle-double-right"></i></a>
                     </div>
+                
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-duration="600">
+                        <div class="card blog-card" style="transition-delay: 0.3s;">
+                            <div class="card-img-wrapper">
+                                <img src="assets/img/blog-image-2.png" class="card-img-top" alt="Crow">
+                                <div class="image-overlay-text d-none">How Euphoria Group Helps Businesses Work Smarter</div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Innovation Beyond Tradition: How Euphoria Helps Businesses Scale Efficiently</h5>
+                                <div class="author-meta">
+                                    <img src="https://i.pravatar.cc/150?u=ayushi" class="author-img" alt="Author">
+                                    <span class="me-3">Ayushi Davda</span>
+                                    <span><i class="far fa-calendar-alt me-1"></i> March 18, 2026</span>
+                                </div>
+                                <p class="card-text">Innovation is No Longer Optional — It Is Essential. Traditional thinking is no longer sufficient to solve challenges in today's rapidly changing environment...</p>
+                                <a href="blog-detail" class="read-more">Read More <i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-duration="700">
+                        <div class="card blog-card" style="transition-delay: 0.5s;">
+                            <div class="card-img-wrapper">
+                                <img src="assets/img/blog-image-2.png" class="card-img-top" alt="Cityscape">
+                                <div class="image-overlay-text d-none">One Night. One Decision. Everything Changed.</div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">The Night That Changed Everything: A Journey with Euphoria Group</h5>
+                                <div class="author-meta">
+                                    <img src="https://i.pravatar.cc/150?u=ayushi" class="author-img" alt="Author">
+                                    <span class="me-3">Ayushi Davda</span>
+                                    <span><i class="far fa-calendar-alt me-1"></i> March 19, 2026</span>
+                                </div>
+                                <p class="card-text">Sometimes, life doesn't change in a day... It changes in a single night. A night full of questions. A night full of doubts. A night where everything begins...</p>
+                                <a href="blog-detail" class="read-more">Read More <i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div> 
+                    
+                    <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="card blog-card" style="transition-delay: 0.5s;">
+                            <div class="card-img-wrapper">
+                                <img src="assets/img/blog-image-2.png" class="card-img-top" alt="Cityscape">
+                                <div class="image-overlay-text d-none">One Night. One Decision. Everything Changed.</div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">The Night That Changed Everything: A Journey with Euphoria Group</h5>
+                                <div class="author-meta">
+                                    <img src="https://i.pravatar.cc/150?u=ayushi" class="author-img" alt="Author">
+                                    <span class="me-3">Ayushi Davda</span>
+                                    <span><i class="far fa-calendar-alt me-1"></i> March 19, 2026</span>
+                                </div>
+                                <p class="card-text">Sometimes, life doesn't change in a day... It changes in a single night. A night full of questions. A night full of doubts. A night where everything begins...</p>
+                                <a href="blog-detail" class="read-more">Read More <i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </div> 
+
                 </div>
+
+                <div class="swiper-pagination"></div> 
             </div>
 
-            <div class="col-lg-4 col-md-6 px-2 mx-auto mb-2" data-aos="fade-up" data-aos-duration="600">
-                <div class="card blog-card" style="transition-delay: 0.3s;">
-                    <div class="card-img-wrapper">
-                        <img src="assets/img/blog-image-2.png" class="card-img-top" alt="Crow">
-                        <div class="image-overlay-text d-none">How Euphoria Group Helps Businesses Work Smarter</div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Innovation Beyond Tradition: How Euphoria Helps Businesses Scale Efficiently</h5>
-                        <div class="author-meta">
-                            <img src="https://i.pravatar.cc/150?u=ayushi" class="author-img" alt="Author">
-                            <span class="me-3">Ayushi Davda</span>
-                            <span><i class="far fa-calendar-alt me-1"></i> March 18, 2026</span>
-                        </div>
-                        <p class="card-text">Innovation is No Longer Optional — It Is Essential. Traditional thinking is no longer sufficient to solve challenges in today's rapidly changing environment...</p>
-                        <a href="blog-detail" class="read-more">Read More <i class="fas fa-angle-double-right"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 px-2 mx-auto mb-2" data-aos="fade-up" data-aos-duration="700">
-                <div class="card blog-card" style="transition-delay: 0.5s;">
-                    <div class="card-img-wrapper">
-                        <img src="assets/img/blog-image-2.png" class="card-img-top" alt="Cityscape">
-                        <div class="image-overlay-text d-none">One Night. One Decision. Everything Changed.</div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">The Night That Changed Everything: A Journey with Euphoria Group</h5>
-                        <div class="author-meta">
-                            <img src="https://i.pravatar.cc/150?u=ayushi" class="author-img" alt="Author">
-                            <span class="me-3">Ayushi Davda</span>
-                            <span><i class="far fa-calendar-alt me-1"></i> March 19, 2026</span>
-                        </div>
-                        <p class="card-text">Sometimes, life doesn't change in a day... It changes in a single night. A night full of questions. A night full of doubts. A night where everything begins...</p>
-                        <a href="blog-detail" class="read-more">Read More <i class="fas fa-angle-double-right"></i></a>
-                    </div>
-                </div>
-            </div>
-
+            <div class="text-center mt-5" data-aos="fade-down" data-aos-duration="800">
+                <button class="btn btn-view-all">View All Post <i class="fas fa-arrow-right ms-2"></i></button>
         </div>
     </div>
 
-    <div class="text-center mt-5" data-aos="fade-down" data-aos-duration="800">
-        <button class="btn btn-view-all">View All Post <i class="fas fa-arrow-right ms-2"></i></button>
-    </div>
-    </div>
-
-</section>
-
+</section> 
 
 <?php
 include_once('elements/footer.php');
