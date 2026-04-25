@@ -42,7 +42,7 @@ include_once('elements/header.php');
     .hero-logo .logo-top { 
         font-size: 13px;
         font-weight: 700;
-        color: #1a2a5e;
+        color: #25356F;
     }
 
     .hero-logo .logo-sub {
@@ -58,7 +58,7 @@ include_once('elements/header.php');
 
     .hero-logo .logo-line {
         height: 2px;
-        background: linear-gradient(90deg, #1a2a5e, #e03131);
+        background: linear-gradient(90deg, #25356F, #e03131);
         border-radius: 2px;
         margin: 3px 0;
     }
@@ -66,7 +66,7 @@ include_once('elements/header.php');
     .hero-title { 
         font-size: clamp(1.4rem, 3vw, 2rem);
         font-weight: 800;
-        color: #1a2a5e;
+        color: #25356F;
         text-align: center;
         line-height: 1.3;
         margin-bottom: 24px;
@@ -88,7 +88,8 @@ include_once('elements/header.php');
     .blog-post-title { 
         font-size: clamp(1.3rem, 2.5vw, 1.75rem);
         font-weight: 800;
-        color: #1a2a5e;
+        color: #25356F;
+        font-family: "Anek Kannada", "Poppins", sans-serif;
         line-height: 1.3;
         margin-bottom: 20px;
     }
@@ -96,6 +97,8 @@ include_once('elements/header.php');
     .blog-body p {
         line-height: 1.75;
         color: #374151;
+        font-size: 16px;
+        font-family:"Poppins", sans-serif;
         margin-bottom: 14px;
     }
 
@@ -122,7 +125,7 @@ include_once('elements/header.php');
         width: 11px;
         height: 11px;
         border-radius: 50%;
-        background: #1a2a5e;
+        background: #25356F;
         flex-shrink: 0;
         margin-top: 4px;
     }
@@ -212,7 +215,7 @@ include_once('elements/header.php');
     .recent-item .ri-title {
         font-size: 0.85rem;
         font-weight: 600;
-        color: #1a2a5e;
+        color: #25356F;
         line-height: 1.4;
         transition: color 0.2s;
     }
@@ -237,9 +240,9 @@ include_once('elements/header.php');
     }
 
     .tag-badge:hover {
-        background: #1a2a5e;
+        background: #25356F;
         color: #fff;
-        border-color: #1a2a5e;
+        border-color: #25356F;
     }
 </style>
 

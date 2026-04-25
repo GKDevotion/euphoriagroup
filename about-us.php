@@ -2185,7 +2185,7 @@
     background: #1a3a6b;
     color: #fff;
     font-weight: 400;
-    font-family: "Anek Kannada", "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     box-shadow: 0 4px 16px rgba(26, 58, 107, 0.1);
    }
    .card-option:hover .focus-area-icon{

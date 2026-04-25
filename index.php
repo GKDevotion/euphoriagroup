@@ -234,11 +234,7 @@ include_once('elements/home-slider.php');
                     height: 100%;
 
                     background-image:
-                        url("assets/img/service-bg.svg"),
-                        url("assets/img/service-bg-1.svg"),
-                        url("assets/img/service-bg-2.svg"),
-                        url("assets/img/service-bg-3.svg"),
-                        url("assets/img/service-bg-4.svg");
+                        url("assets/img/Dubai-Background.png");
 
                     background-repeat: no-repeat;
                     background-position:
@@ -246,7 +242,7 @@ include_once('elements/home-slider.php');
                         25% 100%,
                         50% 100%,
                         75% 100%,
-                        100% 100%;
+                        100% 100%;                              
 
                     pointer-events: none;
                     z-index: 0;

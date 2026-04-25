@@ -428,7 +428,8 @@ include_once('elements/header.php');
     }
 
     .feature-circle .label {
-        font-size: 0.78rem;
+        font-size: 12px;
+        font-family: "Poppins", sans-serif;
         font-weight: 600;
         color: #fff;
         line-height: 1.4;
@@ -1643,7 +1644,7 @@ include_once('elements/header.php');
     .ownership::before {
         content: "Ownership";
         position: absolute;
-        top: 40px;
+        top: 24px;
         left: 68%;
         transform: translateX(-50%);
         font-size: clamp(60px, 10vw, 115px);
