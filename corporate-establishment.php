@@ -182,7 +182,7 @@ include_once('elements/header.php');
 
         /* Reduce card padding to save vertical space */
         .service-card-incorporation {
-            padding: 1.5rem 1rem;
+            padding: 0.5rem;
         }
 
         .icon-wrap-incorporation {
@@ -219,12 +219,7 @@ include_once('elements/header.php');
         uncomment the line below to switch to 1 column */
         /* .services-grid > .col { width: 100%; } */
 
-        .service-card-incorporation h5 {
-            font-size: 14px;
-        }
-
         .service-card-incorporation p {
-            font-size: 11px;
             line-height: 1.5;
         }
     }
@@ -798,8 +793,8 @@ include_once('elements/header.php');
     }
 
     .card-title-alliance {
-        font-size: 17px;
-        font-family: "Anek Kannada", "Poppins", sans-serif;
+        font-size: 18px;
+        font-family: "Poppins", sans-serif;
         font-weight: 400;
         color: #ffffff;
         margin-bottom: 8px;
@@ -807,9 +802,9 @@ include_once('elements/header.php');
     }
 
     .card-desc-alliance {
-        font-size: 14px;
+        font-size: 15px;
         color: #fff;
-        font-family:"Poppins", sans-serif;
+        font-family: "Poppins", sans-serif;
         line-height: 1.4;
         margin: 0;
     }
@@ -902,12 +897,7 @@ include_once('elements/header.php');
             padding: 20px 15px;
         }
 
-        .card-title-alliance {
-            font-size: 0.95rem;
-        }
-
         .card-desc-alliance {
-            font-size: 0.7rem;
             line-height: 1.5;
         }
 
@@ -1140,8 +1130,8 @@ include_once('elements/header.php');
 
     /* Description */
     .benefit-desc {
-        font-size: 0.85rem;
-        line-height: 1.7;
+        font-size: 0.9rem;
+        line-height: 1.5;
         width: 90%;
         overflow: hidden;
         margin-bottom: 0px;
@@ -1231,7 +1221,6 @@ include_once('elements/header.php');
         .benefit-desc {
             width: 100%;
             /* Use full width on small screens */
-            font-size: 0.8rem;
         }
 
         /* Ensure the image doesn't look squashed */
@@ -1341,7 +1330,7 @@ include_once('elements/header.php');
             </div><!-- /col-lg-7 -->
 
             <!-- RIGHT: Image -->
-            <div class="col-lg-4">
+            <div class="col-lg-4 d-none d-md-block">
                 <div class="img-wrapper preview">
                     <img src="assets/img/corporate-establishment/opc-1.png" alt="Solo Entrepreneur" id="previewImg">
                 </div>
@@ -1433,8 +1422,8 @@ include_once('elements/header.php');
 
     /* Text */
     .card-title {
-        font-size: 19px;
-        font-family: "Anek Kannada", "Poppins", sans-serif;
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
         font-weight: 600;
         color: #000;
         width: 260px;
@@ -1514,13 +1503,8 @@ include_once('elements/header.php');
             font-size: 1.5rem;
         }
 
-        .card-title {
-            font-size: 1rem;
-        }
-
         .card-desc {
-            font-size: 0.75rem;
-            line-height: 1.6;
+            line-height: 1.5;
         }
     }
 </style>
@@ -1737,7 +1721,7 @@ include_once('elements/header.php');
     }
 
     .check-label {
-        font-size: 0.92rem;
+        font-size: 1rem;
         font-weight: 600;
         color: #25356F;
         line-height: 1.4;
@@ -1783,7 +1767,6 @@ include_once('elements/header.php');
 
         .section-desc {
             text-align: center;
-            font-size: 0.85rem;
             margin-bottom: 25px;
         }
 
@@ -1798,10 +1781,6 @@ include_once('elements/header.php');
         .checklist {
             grid-template-columns: 1fr;
             max-width: 320px;
-        }
-
-        .check-label {
-            font-size: 0.88rem;
         }
 
         .check-icon,
@@ -2033,8 +2012,8 @@ include_once('elements/header.php');
     } 
 
     .tax-card h5 {
-        font-size: 14px;
-         font-family: "Anek Kannada", "Poppins", sans-serif;
+        font-size: 1rem;
+        font-family: "Poppins", sans-serif;
         font-weight: 700;
         color: #25356F;
         margin-bottom: 12px;
@@ -2164,14 +2143,9 @@ include_once('elements/header.php');
             padding: 0 15px;
         }
 
-        .tax-card h5 {
-            font-size: 0.95rem;
-        }
-
         .tax-card p {
-            font-size: 0.75rem;
             /* Slightly larger text for mobile readability */
-            line-height: 1.6;
+            line-height: 1.5;
         }
 
         /* Ensure navigation buttons are easy to tap */
@@ -2352,7 +2326,7 @@ include_once('elements/header.php');
 
     .np-feature__title {
         font-size: 20px;
-        font-family: "Anek Kannada", "Poppins", sans-serif;
+        font-family: "Poppins", sans-serif;
         font-weight: 700;
         color: #25356F;
         margin-bottom: 7px;
@@ -2360,7 +2334,7 @@ include_once('elements/header.php');
     }
 
     .np-feature__desc {
-        font-size: 18px;
+        font-size: 16px;
         font-family: "Poppins", sans-serif;
         line-height: 1.75;
         margin: 0;
@@ -2423,13 +2397,11 @@ include_once('elements/header.php');
         .np-feature__title,
         .np-col-right .np-feature__title {
             text-align: center;
-            font-size: 1.1rem;
         }
 
         .np-feature__desc,
         .np-col-right .np-feature__desc {
             text-align: center;
-            font-size: 0.85rem;
         }
     }
 
@@ -2591,7 +2563,7 @@ include_once('elements/header.php');
 
     .si-banner__desc {
         font-size: 18px;
-        line-height: 1.85;
+        line-height: 1.5;
         font-family: "Poppins", sans-serif;
         margin: 0 auto;
     }
@@ -2627,14 +2599,13 @@ include_once('elements/header.php');
         }
 
         .si-banner__title {
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             /* Slightly smaller for mobile */
             margin-bottom: 15px;
         }
 
         .si-banner__desc {
-            font-size: 0.85rem;
-            line-height: 1.6;
+            line-height: 1.5;
         }
 
         /* Hide brackets on very small screens to keep the layout clean */
@@ -2646,10 +2617,6 @@ include_once('elements/header.php');
     @media (max-width: 480px) {
         .si-banner {
             padding: 40px 10px;
-        }
-
-        .si-banner__title {
-            font-size: 1.4rem;
         }
     }
 </style>
