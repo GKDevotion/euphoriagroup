@@ -177,7 +177,7 @@ include_once('elements/header.php');
     @media (max-width: 767px) {
         .incorporation-heading {
             margin-bottom: 30px;
-            font-size: 12px;
+            font-size: 1.2rem;
         }
 
         /* Reduce card padding to save vertical space */
@@ -202,8 +202,8 @@ include_once('elements/header.php');
 
         /* Adjust watermark size for mobile */
         .incorporation::before {
-            top: 25px;
-            font-size: 50px;
+            top: 20px;
+            font-size: 58px;
             letter-spacing: 1px;
         }
     }
@@ -490,12 +490,13 @@ include_once('elements/header.php');
         .register::before {
             left: 50%;
             /* Center the watermark on smaller screens */
-            top: 10px;
+            top: 5px;
             font-size: 80px;
         }
 
         .register-heading {
             text-align: center;
+            font-size: 1.2rem;
             /* Center heading for better mobile flow */
             margin-bottom: 30px;
         }
@@ -874,7 +875,7 @@ include_once('elements/header.php');
         }
 
         .alliance::before {
-            top: 40px;
+            top: 30px;
             font-size: 80px;
             /* Smaller watermark */
         }
@@ -883,7 +884,7 @@ include_once('elements/header.php');
     @media (max-width: 767px) {
         .alliance-heading {
             margin-bottom: 30px;
-            font-size: 1.8rem;
+            font-size: 1.2rem;
             /* Scale down heading */
         }
 
@@ -1181,7 +1182,7 @@ include_once('elements/header.php');
 
         .individual-heading {
             margin-bottom: 20px;
-            font-size: 17px;
+            font-size: 1.2rem;
         }
 
         /* Adjust the grid spacing for the rows */
@@ -1477,7 +1478,7 @@ include_once('elements/header.php');
 
     @media (max-width: 767px) {
         .setup-heading {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             margin-bottom: 20px;
         }
 
@@ -1741,14 +1742,15 @@ include_once('elements/header.php');
 
         /* Fix watermark positioning for mobile to prevent overflow */
         .ownership::before {
-            top: -15px;
+            top: 15px;
             left: 50%;
-            font-size: 52px;
+            font-size: 66px;
             opacity: 0.2;
         }
 
         .ownership-heading {
             text-align: center;
+            font-size: 1.2rem;
             /* Better for mobile balance */
             margin-bottom: 25px;
         }
@@ -1807,7 +1809,7 @@ include_once('elements/header.php');
         <div class="row align-items-center g-5">
 
             <!-- LEFT: Image -->
-            <div class="col-lg-6">
+            <div class="col-lg-6 d-none d-md-block">
                 <div class="img-wrapper-ownership" data-aos="fade-up" data-aos-duration="800">
                     <img src="assets/img/corporate-establishment/pro-setup.png" alt="Proprietorship Setup" />
                 </div>
@@ -2371,7 +2373,7 @@ include_once('elements/header.php');
 
         /* Adjust watermark for smaller screens */
         .non-profit::before {
-            top: 20px;
+            top: 28px;
             font-size: clamp(40px, 10vw, 60px);
             opacity: 0.2;
         }
@@ -2407,7 +2409,7 @@ include_once('elements/header.php');
 
     @media (max-width: 767px) {
         .non-profit-heading {
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
 
         .np-feature {

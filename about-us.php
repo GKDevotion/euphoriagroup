@@ -307,7 +307,7 @@
      }
 
      .vision-section h2 {
-       font-size: 1.45rem;
+       font-size: 1.2rem;
        text-align: center;
        line-height: 1.3;
        margin-top: 0px;
@@ -608,11 +608,11 @@
        white-space: nowrap;
        overflow: hidden;
        width: 100%;
-       opacity: 0.15;
+       opacity: 0.2;
      }
 
      .section-heading-trust {
-       font-size: 1.45rem;
+       font-size: 1.2rem;
        margin-bottom: 40px;
      }
 
@@ -885,14 +885,14 @@
 
      /* clip watermark so it doesn't overflow on narrow screens */
      .why-section::before {
-       font-size: clamp(32px, 12vw, 60px);
-       top: 4px;
-       opacity: 0.15;
+       font-size: clamp(32px, 12vw, 50px);
+       top: 14px;
+       opacity: 0.2;
      }
 
      .section-heading {
        margin-bottom: 28px;
-       font-size: 1.4rem;
+       font-size: 1.2rem;
        padding: 0 8px;
      }
 
@@ -1291,16 +1291,15 @@
 
      /* Tame watermark on small screens */
      .section-wrapper::before {
-       font-size: clamp(36px, 11vw, 60px);
+       font-size: 80px;
        left: 50%;
        top: 0;
        opacity: 0.2;
      }
 
      .section-title {
-       font-size: 1.4rem;
-       left: 0px;
-       margin-bottom: 20px;
+       font-size: 1.2rem;
+       left: 0px; 
      }
 
      /* Stack left col: title then image, both centered */
@@ -1637,7 +1636,7 @@
      }
 
      .team-section::before {
-       font-size: clamp(30px, 14vw, 60px);
+       font-size: 45px !important;
        opacity: 0.2;
      }
 
@@ -1957,14 +1956,14 @@
 
     /* Watermark fix */
     .our-team::before {
-      font-size: clamp(35px, 14vw, 60px);
+      font-size: 70px;
       opacity: 0.2;
       top: 5px;
     }
 
     /* Heading spacing */
     .section-heading-our-team {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       margin-bottom: 50px;
     }
 
@@ -2206,7 +2205,7 @@
     }
 
     .section-heading-focus {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       margin-bottom: 25px;
     }
 
@@ -2494,7 +2493,7 @@
 
     /* Heading */
     .section-heading-testimonial {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       margin-bottom: 40px;
       padding: 0 10px;
     }

@@ -177,104 +177,118 @@ include_once('elements/header.php');
           <img src="assets/img/stock-graph.png" alt="Stock Market">
         </div>
       </div>
-  <style>
-      /* Watermark ghost text */
-        /* ── Card ── */
-      .stock-card {
-        position: relative;
-        background: #ffffff;
-        border-radius: 18px;
-        padding: 61px 48px 48px;
-        box-shadow: 0 6px 40px rgba(13, 34, 73, 0.08);
-        overflow: hidden;
-      }
-  
-  
-      /* Watermark ghost text */
-      .stock-card::before {
-      content: "Trading";
-      position: absolute;
-      top: 20px;
-      left: 35px;
-      font-family: "Anek Kannada", "Poppins", sans-serif;
-      font-size: 156px;
-      font-weight: 700;
-      color: #CC2831;
-      opacity: 0.2;
-      letter-spacing: -2px;
-      pointer-events: none;
-      user-select: none;
-      line-height: 1;
-      }
-  
-      /* ── Title ── */
-      .stock-title {
-      font-family: "Anek Kannada", "Poppins", sans-serif;
-      font-size: clamp(1.6rem, 3vw, 2.6rem);
-      font-weight: 700; 
-      line-height: 1.25;
-      margin-bottom: 5.25rem;
-      position: relative; 
-      color: #25356F;
-      }
+      <style>
+          /* Watermark ghost text */
+            /* ── Card ── */
+          .stock-card {
+            position: relative;
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 61px 48px 48px;
+            box-shadow: 0 6px 40px rgba(13, 34, 73, 0.08);
+            overflow: hidden;
+          }
+      
+      
+          /* Watermark ghost text */
+          .stock-card::before {
+          content: "Trading";
+          position: absolute;
+          top: 20px;
+          left: 35px;
+          font-family: "Anek Kannada", "Poppins", sans-serif;
+          font-size: 156px;
+          font-weight: 700;
+          color: #CC2831;
+          opacity: 0.2;
+          letter-spacing: -2px;
+          pointer-events: none;
+          user-select: none;
+          line-height: 1;
+          }
+      
+          /* ── Title ── */
+          .stock-title {
+          font-family: "Anek Kannada", "Poppins", sans-serif;
+          font-size: clamp(1.6rem, 3vw, 2.6rem);
+          font-weight: 700; 
+          line-height: 1.25;
+          margin-bottom: 5.25rem;
+          position: relative; 
+          color: #25356F;
+          }
 
-      .stock-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 14px 24px;
-      }
-  
-    
-  
-      .btn-invest {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        background: #25356F;
-        color: #fff;
-        font-family: 'DM Sans', sans-serif;
-        font-weight: 600;
-        font-size: 0.95rem;
-        padding: 14px 28px;
-        border-radius: 8px;
-        border: none;
-        text-decoration: none;
-        transition: background 0.25s, transform 0.2s;
-        margin-top: 36px;
-      }
-  
-      .btn-invest:hover {
-        background: #25356F;
-        transform: translateY(-2px);
-        color: #fff;
-      }
-  
-      .btn-invest svg {
-        width: 16px;
-        height: 16px;
-        stroke: currentColor;
-        fill: none;
-        stroke-width: 2.5;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-      }
-  
-      /* ── Responsive tweaks ── */
-      @media (max-width: 575px) {
-        .stock-card {
-          padding: 36px 24px 32px;
-        }
-        .stock-card::before {
-          font-size: 72px;
-        }
-        .stock-list {
-          grid-template-columns: 1fr;
-        }
-      }
-  </style>
+          .stock-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px 24px;
+          }
+      
+        
+      
+          .btn-invest {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #25356F;
+            color: #fff;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 14px 28px;
+            border-radius: 8px;
+            border: none;
+            text-decoration: none;
+            transition: background 0.25s, transform 0.2s;
+            margin-top: 36px;
+          }
+      
+          .btn-invest:hover {
+            background: #25356F;
+            transform: translateY(-2px);
+            color: #fff;
+          }
+      
+          .btn-invest svg {
+            width: 16px;
+            height: 16px;
+            stroke: currentColor;
+            fill: none;
+            stroke-width: 2.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+          }
+      
+          /* ── Responsive tweaks ── */
+          @media (max-width: 575px) {
+            .stock-card {
+              padding: 36px 24px 32px;
+            }
+            .stock-card::before {
+              font-size: 72px;
+            }
+            .stock-list {
+              grid-template-columns: 1fr;
+            }
+          }
+
+          @media (max-width: 991px) {
+            /* Re-adjust watermark position for tablet */
+              .stock-card::before {  
+                top: 15px;
+                font-size: 80px;
+              }
+
+              .stock-title{
+                font-size: 1.2rem;
+              }
+
+          }
+
+      </style>
       <!-- Right Content -->
       <div class="col-lg-6 px-md-5 px-3">
         <div class="stock-card">
@@ -674,7 +688,7 @@ include_once('elements/header.php');
     /* Reset the background watermark size for tablets */
     .capital-market-section .about-title-bg {
       font-size: 6rem !important;
-      top: -40px !important;
+      top: -31px !important;
     }
 
     /* Ensure cards have a consistent width on mobile so the track works */
@@ -696,7 +710,7 @@ include_once('elements/header.php');
 
   @media (max-width: 767px) {
     .section-title {
-      font-size: 1.8rem;
+      font-size: 1.2rem;
       margin-bottom: 5px;
     }
 
@@ -1100,12 +1114,12 @@ include_once('elements/header.php');
 
   @media (max-width: 767px) {
     .elite-insurance-bg-text {
-      font-size: 45px;
-      top: 25px;
+      font-size: 62px;
+      top: 18px;
     }
 
     .elite-insurance-title {
-      font-size: 26px;
+      font-size: 1.2rem;
     }
 
     .elite-insurance-card p {
@@ -1386,6 +1400,8 @@ include_once('elements/header.php');
       width: 100%;
       flex: 0 0 100%;
     }
+
+    
 
     .insurance-split-title {
       font-size: 24px;
@@ -1684,6 +1700,18 @@ include_once('elements/header.php');
                     font-size: 2rem;
                     color: #25356F;
                   }
+
+                  @media (max-width: 991px) {
+                    .security-insurance-heading .bg-text {
+                        font-size: 100px !important; 
+                        top: 65%; 
+                    }
+
+                  .security-insurance-heading h2{
+                    font-size: 1.2rem;
+                    margin-bottom: 40px;                  
+                  }
+                }
 
           </style>
           <div class="sticky-stage">
@@ -1992,6 +2020,10 @@ include_once('elements/header.php');
   @media (max-width: 991px) {
     .realestate-section {
       padding: 60px 0;
+    }
+
+    .section-title-bg{
+        font-size: 5rem;
     }
 
     /* Scale the background "Properties" text */

@@ -407,8 +407,12 @@ include_once('elements/header.php');
     @media (max-width: 600px) {
     /* 1. Adjust the watermark for smaller screens */
     .carrier-benefits::before {
-        top: 62px;
+        top: 67px;
         letter-spacing: 1px;
+    }
+    
+    .carrier-heading{
+        font-size: 1.2rem;
     }
 
     /* 2. Add more breathing room to the header */
@@ -740,6 +744,7 @@ include_once('elements/header.php');
     .why-euphoria-heading {
         margin-bottom: 30px;
         top: -30px;
+        font-size: 1.2rem;
     }
 
     .intro-text {
@@ -999,7 +1004,7 @@ include_once('elements/header.php');
 
         .section-heading {
             text-align: center;
-            font-size: 16px;
+            font-size: 1.2rem;
             margin-bottom: 30px;
             padding: 0 10px;
         }

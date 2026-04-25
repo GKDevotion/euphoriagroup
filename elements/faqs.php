@@ -192,6 +192,13 @@
       align-items: flex-start;
       padding: 22px 20px;
     }
+    .faq-heading{
+      font-size: 1.2rem;
+      padding-left: 10px;
+    }
+    .faq-watermark{
+        top: 15px;
+    }
     .btn-send-email {
       width: 100%;
       justify-content: center;

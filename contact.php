@@ -357,7 +357,7 @@ include_once('elements/header.php');
         /* Background text FIX */
         .bg-text {
             font-size: 4.5rem;
-            top: -14px;
+            top: -5px;
             right: 0;
             left: 0;
             text-align: center;
@@ -366,7 +366,7 @@ include_once('elements/header.php');
 
         /* Heading */
         .form-panel h2 {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             margin-bottom: 1rem;
         }
 

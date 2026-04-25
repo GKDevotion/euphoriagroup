@@ -206,6 +206,9 @@ include_once ('elements/header.php');
         .visa-box::before {
             font-size: 80px;
             top: 0;
+        } 
+        .about-visa-title{
+            font-size: 1.2rem !important;
         }
     }
 
@@ -213,6 +216,7 @@ include_once ('elements/header.php');
         .visa-form-section {
             padding: 40px 0 60px 0;
         }
+
 
         .visa-box {
             padding: 40px 20px;

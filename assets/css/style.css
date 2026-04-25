@@ -410,17 +410,20 @@ h2 {
   }
 
   .blog-title-bg {
-    top: 0px;
+    top: 68px;
+    font-size: 164px;
 }
 
   .about-title-bg {
-      font-size: 3.3rem !important;
-      top: 35px !important;
+      /* font-size: 3.3rem !important;
+      top: 30px !important; */
+      font-size: 6.3rem !important;
+      top: 3px !important;
       letter-spacing: 2px;
   }
 
   .about-title {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 30px;
     margin-top: 10px;
     padding: 0 15px;
@@ -1017,8 +1020,8 @@ h2 {
   }
 
   .card-watermark {
-    font-size: 3.5rem;
-    top: 15px;
+    font-size: 4rem;
+    top: 14px;
     left: 10px;
   }
 

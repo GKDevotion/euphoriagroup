@@ -1015,7 +1015,7 @@ include_once('elements/header.php');
   }
     .about-title-bg-transformation {
           font-size: 3.5rem !important;
-          top: 74px !important;
+          top: 69px !important;
           letter-spacing: 2px;
       }
     }
@@ -1415,7 +1415,7 @@ include_once('elements/header.php');
     @media (max-width: 576px) {
       .about-title-bg-guidance {
         font-size: 5.5rem !important;
-        top: 55px !important;
+        top: 47px !important;
         letter-spacing: 2px;
       }
 

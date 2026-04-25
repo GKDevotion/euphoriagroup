@@ -467,7 +467,7 @@ include_once('elements/header.php');
     /* Scale down the massive background watermark */
     .flight-section::before {
       font-size: 59px;
-      top: 40px;
+      top: 35px;
     }
 
     .section-title {
@@ -1181,7 +1181,7 @@ include_once('elements/header.php');
     .watermark {
       font-size: 80px;
       letter-spacing: 4px;
-      top: 10px;
+      top: 21px;
     }
 
     /* Reset the complex grid for tablets */
@@ -1212,7 +1212,7 @@ include_once('elements/header.php');
     }
 
     .section-title {
-      font-size: 1.8rem;
+      font-size: 1.2rem;
       margin-bottom: 20px;
     }
 
@@ -1813,7 +1813,7 @@ include_once('elements/header.php');
     .bus-watermark {
       font-size: 70px;
       letter-spacing: 3px;
-      top: 24px;
+      top: 20px;
     }
 
     /* Adjust track gap */
@@ -1834,7 +1834,7 @@ include_once('elements/header.php');
     }
 
     .bus-title {
-      font-size: 1.8rem;
+      font-size: 1.2rem;
     }
 
     /* CARD SIZE: 85vw lets the user see the edge of the next card, hinting at a swipe */
@@ -2364,7 +2364,8 @@ include_once('elements/header.php');
 
   @media (max-width: 767px) {
     .taxi-title {
-      font-size: 1.8rem;
+      font-size: 1.2rem;
+      margin-top: 20px;
     }
 
     .taxi-bold-sub {
@@ -2721,11 +2722,11 @@ include_once('elements/header.php');
 
   @media (max-width: 767px) {
     .lt-watermark {
-      font-size: 55px;
+      font-size: 68px;
     }
 
     .lt-title {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       margin-top: -40px;
     }
 
@@ -3032,7 +3033,7 @@ include_once('elements/header.php');
 
     /* Watermark fix */
     .hp-watermark {
-      top: -20px;
+      top: -28px;
       font-size: 70px;
     }
 
@@ -3058,7 +3059,7 @@ include_once('elements/header.php');
 
     /* Title sizing */
     .hp-title {
-      font-size: 1.8rem;
+      font-size: 1.2rem;
     }
 
     /* Grid: 2 columns */
@@ -3891,6 +3892,23 @@ include_once('elements/header.php');
           position: relative;
           z-index: 1;
         }
+
+        @media (max-width: 991px) {
+    /* Re-adjust watermark position for tablet */
+        .sight-watermark  {
+            left: 50%;
+            transform: translateX(-50%);
+            top: -36px;
+            font-size: 89px;
+        }
+
+        .sight-title{
+          font-size: 1.2rem;
+        }
+
+      
+      }
+
       </style>
       <!-- Left Content -->
       <div class="col-lg-6 mb-4 mb-lg-0">

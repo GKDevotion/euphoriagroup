@@ -584,7 +584,7 @@ include_once('elements/header.php');
         }
 
         .partner-heading {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             margin-bottom: 30px;
         }
 
