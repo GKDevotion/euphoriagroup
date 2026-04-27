@@ -479,7 +479,7 @@
       </li>
 
       <!-- Outbound Services — simple dropdown -->
-      <li class="">
+      <li class="d-none">
         <button aria-haspopup="true" aria-expanded="false">
           Outbound Services
           <svg class="eg-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
