@@ -968,14 +968,13 @@ h2 {
 }
 
 /* ── MOBILE (max 575px) ── */
-@media (max-width: 575.98px) {
+/* @media (max-width: 575.98px) {
   .our-success-banner {
     min-height: 58vh;
     padding: 50px 12px 60px;
     background-position: center center;
   }
-
-  /* Fix watermark overflow */
+ 
   .our-success-banner::before {
     font-size: 4.2rem;
     top: 48px;
@@ -985,8 +984,7 @@ h2 {
     overflow: hidden;
     width: 100%;
   }
-
-  /* Fix title positioning */
+ 
   .our-success-banner h2 {
     margin-top: -27px;
     font-size: 1rem !important;
@@ -994,8 +992,7 @@ h2 {
     padding: 0 10px;
     margin-bottom: 30px;
   }
-
-  /* Stats: 2x2 grid */
+ 
   .stats-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1015,13 +1012,11 @@ h2 {
     padding: 18px 10px;
     text-align: center;
   }
-
-  /* Remove right border on even items (right column) */
+ 
   .stat-item:nth-child(2n) {
     border-right: none;
   }
-
-  /* Remove bottom border on last row */
+ 
   .stat-item:nth-child(3),
   .stat-item:nth-child(4) {
     border-bottom: none;
@@ -1041,8 +1036,7 @@ h2 {
     width: 16px;
     margin-right: 3px;
   }
-
-  /* Content card */
+ 
   .opportunities-content-card {
     margin: -30px 10px 30px;
     max-width: 100%;
@@ -1067,8 +1061,7 @@ h2 {
     line-height: 1.3;
     margin-bottom: 10px;
   }
-
-  /* Accordion */
+ 
   .euphoria-accordion .accordion-button {
     font-size: 15px;
     padding: 14px 16px;
@@ -1082,8 +1075,7 @@ h2 {
   .euphoria-accordion .accordion-item {
     margin-bottom: 8px;
   }
-
-  /* Right col images stack below */
+ 
   .right-col {
     padding-left: 0;
     margin-top: 24px;
@@ -1099,6 +1091,166 @@ h2 {
     padding: 14px;
     min-height: 120px;
     border-radius: 10px;
+  }
+} */
+
+ 
+/* ── MOBILE (max 575px) ── */
+@media (max-width: 575.98px) {
+
+  /* ── Banner ── */
+  .our-success-banner {
+    min-height: auto;
+    padding: 60px 0px 80px;
+    background-position: center center;
+    overflow: hidden;
+  }
+
+  /* Watermark — clamp inside banner */
+  .our-success-banner::before {
+    font-size: 3.2rem;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  /* Title */
+  .our-success-banner h2 {
+    font-size: 1.3rem !important;
+    margin-top: 10px;
+    margin-bottom: 24px;
+    text-align: center;
+    padding: 0 16px;
+  }
+
+  /* ── Stats Grid ── */
+  .stats-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    width: calc(100% - 32px); /* 16px margin each side */
+    margin: 0 16px;
+    padding: 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 14px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .stat-item {
+    flex: unset;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px 8px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  /* Right column: no right border */
+  .stat-item:nth-child(2n) {
+    border-right: none;
+  }
+
+  /* Bottom row: no bottom border */
+  .stat-item:nth-child(3),
+  .stat-item:nth-child(4) {
+    border-bottom: none;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    margin-top: 8px;
+    line-height: 1.4;
+  }
+
+  .stat-icon {
+    width: 15px;
+  }
+
+  /* ── Content Card ── */
+  .opportunities-content-card {
+    transform: translateY(-60px);
+    margin: 0 12px;
+    max-width: 100%;
+    width: calc(100% - 24px);
+    border-radius: 16px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .opportunities-content-card-inner {
+    padding: 28px 18px 32px;
+  }
+
+  /* Card Watermark */
+  .card-watermark {
+    font-size: 3.5rem;
+    top: 10px;
+    left: 8px;
+  }
+
+  /* Section Title */
+  .opportunities-content-card .section-title {
+    font-size: 1.1rem;
+    top: 0;
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+
+  /* ── Accordion ── */
+  .euphoria-accordion .accordion-button {
+    font-size: 15px;
+    padding: 14px 16px;
+    line-height: 1.4;
+  }
+
+  .euphoria-accordion .accordion-body {
+    font-size: 14px;
+    padding: 0 16px 16px;
+    line-height: 1.6;
+  }
+
+  .euphoria-accordion .accordion-item {
+    margin-bottom: 8px;
+  }
+
+  /* ── Right Col ── */
+  .right-col {
+    padding-left: 0;
+    margin-top: 24px;
+    min-height: auto;
+  }
+
+  .img-office {
+    position: static;
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+  }
+
+  .img-world-card {
+    position: static;
+    width: 100%;
+    height: auto;
+    left: unset;
+    bottom: unset;
+    padding: 0;
+    margin-top: 14px;
+    border-radius: 12px;
+  }
+
+  .img-world-card img {
+    border-radius: 12px;
   }
 }
 

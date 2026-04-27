@@ -1,0 +1,26 @@
+RewriteEngine On
+
+# Allow real files/folders
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Service details URL
+RewriteRule ^service-details/([^/]+)$ service-details.php?slug=$1 [L,QSA]
+RewriteRule ^solution-details/([^/]+)$ solution-details.php?slug=$1 [L,QSA]
+RewriteRule ^projects$ projects.php?slug=$1 [L,QSA]
+RewriteRule ^about-us about-us.php?slug=$1 [L,QSA]
+RewriteRule ^gallery gallery.php?slug=$1 [L,QSA]
+RewriteRule ^faqs faqs.php?slug=$1 [L,QSA]
+RewriteRule ^contact-us contact-us.php?slug=$1 [L,QSA]
+RewriteRule ^index index.php?slug=$1 [L,QSA]
+RewriteRule ^corporate-establishment corporate-establishment.php?slug=$1 [L,QSA]
+RewriteRule ^corporate-service corporate-service.php?slug=$1 [L,QSA]
+RewriteRule ^tours-travels tours-travels.php?slug=$1 [L,QSA]
+RewriteRule ^wealth-asset-solution wealth-asset-solution.php?slug=$1 [L,QSA]
+RewriteRule ^visa-assistance visa-assistance.php?slug=$1 [L,QSA]
+RewriteRule ^partner-up partner-up.php?slug=$1 [L,QSA]
+RewriteRule ^career career.php?slug=$1 [L,QSA]
+RewriteRule ^blog blog.php?slug=$1 [L,QSA]
+RewriteRule ^contact contact.php?slug=$1 [L,QSA]
+RewriteRule ^terms-conditions terms-conditions.php?slug=$1 [L,QSA]
+RewriteRule ^privacy-policy privacy-policy.php?slug=$1 [L,QSA]
