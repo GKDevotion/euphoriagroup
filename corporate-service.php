@@ -1014,9 +1014,9 @@ include_once('elements/header.php');
       font-size: 4rem;
   }
     .about-title-bg-transformation {
-          font-size: 3.5rem !important;
-          top: 69px !important;
-          letter-spacing: 2px;
+          font-size: 3rem !important;
+          top: 74px !important;
+          letter-spacing: 1px;
       }
     }
 </style>
@@ -1414,9 +1414,9 @@ include_once('elements/header.php');
 
     @media (max-width: 576px) {
       .about-title-bg-guidance {
-        font-size: 5.5rem !important;
-        top: 47px !important;
-        letter-spacing: 2px;
+        font-size: 5rem !important;
+        top: 50px !important;
+        letter-spacing: 1px;
       }
 
       /* Fix mobile gap/overflow issues */
@@ -1598,9 +1598,9 @@ include_once('elements/header.php');
   @media (max-width: 576px) {
     
     .about-title-bg-extension {
-          font-size: 4.5rem !important;
-          top: 43px !important;
-          letter-spacing: 2px;
+          font-size: 4rem !important;
+          top: 45px !important;
+          letter-spacing: 1px;
       }
   }
 </style>
