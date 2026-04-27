@@ -281,7 +281,7 @@ include_once('elements/home-slider.php');
                                 <h3>Company Formation</h3>
                                 <p>Complete assistance with business setup, including registration, licensing, and legal documents.</p>
                             </div>
-                            <a href="#" class="read-more-btn">Read More <i class="bi bi-chevron-double-right"></i></a>
+                            <a href="javascript:void(0)" class="read-more-btn">Read More <i class="bi bi-chevron-double-right"></i></a>
                         </div>
                     </div>
 
@@ -295,7 +295,7 @@ include_once('elements/home-slider.php');
                                 <h3>Accounting Firm</h3>
                                 <p>Professional accounting, bookkeeping, tax planning, and compliance services for strong, compliant operations.</p>
                             </div>
-                            <a href="#" class="read-more-btn">Read More <i class="bi bi-chevron-double-right"></i></a>
+                            <a href="javascript:void(0)" class="read-more-btn">Read More <i class="bi bi-chevron-double-right"></i></a>
                         </div>
                     </div>
 
@@ -309,7 +309,7 @@ include_once('elements/home-slider.php');
                                 <h3>Real Estate</h3>
                                 <p>Expert advice on buying, selling, and leasing residential and commercial properties in India & Dubai.</p>
                             </div>
-                            <a href="#" class="read-more-btn">Read More <i class="bi bi-chevron-double-right"></i></a>
+                            <a href="javascript:void(0)" class="read-more-btn">Read More <i class="bi bi-chevron-double-right"></i></a>
                         </div>
                     </div>
 
@@ -323,7 +323,7 @@ include_once('elements/home-slider.php');
                                 <h3>Tours & Travel</h3>
                                 <p>Full-service travel solutions, visa help, flight bookings, and personalised global travel packages.</p>
                             </div>
-                            <a href="#" class="read-more-btn">Read More <i class="bi bi-chevron-double-right"></i></a>
+                            <a href="javascript:void(0)" class="read-more-btn">Read More <i class="bi bi-chevron-double-right"></i></a>
                         </div>
                     </div>
 
@@ -337,7 +337,7 @@ include_once('elements/home-slider.php');
                                 <h3>Immigration Services</h3>
                                 <p>Reliable assistance with residency, work permits, investor visas, and global relocation processes.</p>
                             </div>
-                            <a href="#" class="read-more-btn">Read More <i class="bi bi-chevron-double-right"></i></a>
+                            <a href="javascript:void(0)" class="read-more-btn">Read More <i class="bi bi-chevron-double-right"></i></a>
                         </div>
                     </div>
 
@@ -351,7 +351,7 @@ include_once('elements/home-slider.php');
                                 <h3>Wealth Markets</h3>
                                 <p>Strategic recommendations for profitable investment opportunities in India.</p>
                             </div>
-                            <a href="#" class="read-more-btn">Read More <i class="bi bi-chevron-double-right"></i></a>
+                            <a href="javascript:void(0)" class="read-more-btn">Read More <i class="bi bi-chevron-double-right"></i></a>
                         </div>
                     </div>
 
@@ -364,7 +364,7 @@ include_once('elements/home-slider.php');
                                 <h3>Elite Insurance</h3>
                                 <p>Customised insurance solutions for health, life, business, and assets to protect what is most important.</p>
                             </div>
-                            <a href="#" class="read-more-btn">Read More <i class="bi bi-chevron-double-right"></i></a>
+                            <a href="javascript:void(0)" class="read-more-btn">Read More <i class="bi bi-chevron-double-right"></i></a>
                         </div>
                     </div>
 

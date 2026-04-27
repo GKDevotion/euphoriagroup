@@ -498,7 +498,7 @@ include_once('elements/header.php');
                     </ul>
 
                     <div class="apply-row">
-                        <a href="#" class="btn-apply">
+                        <a href="#contact-us" class="btn-apply">
                             Apply Now
                             <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                                 <line x1="7" y1="17" x2="17" y2="7" />
@@ -547,7 +547,7 @@ include_once('elements/header.php');
                     </ul>
 
                     <div class="apply-row">
-                        <a href="#" class="btn-apply">
+                        <a href="#contact-us" class="btn-apply">
                             Apply Now
                             <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                                 <line x1="7" y1="17" x2="17" y2="7" />
@@ -596,7 +596,7 @@ include_once('elements/header.php');
                     </ul>
 
                     <div class="apply-row">
-                        <a href="#" class="btn-apply">
+                        <a href="#contact-us" class="btn-apply">
                             Apply Now
                             <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                                 <line x1="7" y1="17" x2="17" y2="7" />
@@ -1353,9 +1353,9 @@ include_once('elements/header.php');
     }
 </style>
 
-<section class="container py-5">
+<section class="container py-5" id="contact-us">
     <div>
-        <div class="card-contact-information">
+        <div class="card-contact-information" >
             <div class="row g-0">
 
                 <!-- Left Panel -->

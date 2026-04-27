@@ -1615,7 +1615,7 @@ include_once('elements/header.php');
           align-items  : center;
           font-family:  "Poppins", sans-serif;
           gap          : 5px;
-          font-size    : 16px;
+          font-size    : 14px;
           font-weight  : 500;
           white-space  : nowrap;
           overflow     : hidden;

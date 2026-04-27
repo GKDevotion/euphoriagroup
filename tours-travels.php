@@ -4127,16 +4127,15 @@ $sideStickyMenu = [
     'title' => 'Local Transport'
   ],
   [
-    'url' => 'hotel-section',
-    'img' => getBaseUrl().'/assets/img/icon/tours-travels/hotel-reservation.png',
-    'title' => 'Hotel'
-  ],
-  [
     'url' => 'holiday-package-section',
     'img' => getBaseUrl().'/assets/img/icon/tours-travels/holiday-package.png',
     'title' => 'Holiday Package'
   ],
-
+  [
+    'url' => 'hotel-section',
+    'img' => getBaseUrl().'/assets/img/icon/tours-travels/hotel-reservation.png',
+    'title' => 'Hotel'
+  ],
   [
     'url' => 'tour-package-section',
     'img' => getBaseUrl().'/assets/img/icon/tours-travels/seight-seeing-tours.png',

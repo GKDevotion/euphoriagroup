@@ -506,10 +506,67 @@ include_once('elements/header.php');
 
     </div><!-- /container -->
 
-
-
 </section>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+  const cardsPerPage = 3;
+  const cards = document.querySelectorAll('.blog-card');
+  const pageItems = document.querySelectorAll('.page-item:not(:first-child):not(:last-child)');
+  const prevBtn = document.querySelector('.page-item:first-child .page-link');
+  const nextBtn = document.querySelector('.page-item:last-child .page-link');
 
+  const totalPages = Math.ceil(cards.length / cardsPerPage);
+  let currentPage = 1;
+
+  function showPage(page) {
+    cards.forEach((card, index) => {
+      const cardWrapper = card.closest('.col-12');
+      const start = (page - 1) * cardsPerPage;
+      const end = start + cardsPerPage;
+      cardWrapper.style.display = (index >= start && index < end) ? '' : 'none';
+    });
+
+    // Update active page button
+    pageItems.forEach((item, index) => {
+      item.classList.toggle('active', index + 1 === page);
+    });
+
+    // Disable prev/next at boundaries
+    prevBtn.parentElement.classList.toggle('disabled', page === 1);
+    nextBtn.parentElement.classList.toggle('disabled', page === totalPages);
+  }
+
+  // Page number buttons
+  pageItems.forEach((item, index) => {
+    item.querySelector('.page-link').addEventListener('click', function (e) {
+      e.preventDefault();
+      currentPage = index + 1;
+      showPage(currentPage);
+    });
+  });
+
+  // Previous button
+  prevBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (currentPage > 1) {
+      currentPage--;
+      showPage(currentPage);
+    }
+  });
+
+  // Next button
+  nextBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (currentPage < totalPages) {
+      currentPage++;
+      showPage(currentPage);
+    }
+  });
+
+  // Init
+  showPage(1);
+});
+</script>
 <?php
 include_once('elements/faqs.php');
 include_once('elements/footer.php');

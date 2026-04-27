@@ -560,12 +560,12 @@ include_once('elements/header.php');
         background: #25356F;
         color: #fff !important;
         border-radius: 8px;
-        font-size: 20px;
+        font-size: 17px;
         font-family: "Anek Kannada", "Poppins";
         font-weight: 600;
         padding: 10px 14px;
         text-decoration: none;
-        width: 27%;
+        width: 26%;
         /* PUSH TO BOTTOM */
     }
 
