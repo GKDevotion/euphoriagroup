@@ -823,7 +823,7 @@
    .bullet-icon {
      flex-shrink: 0;
      width: 27px;
-     height: 21px;
+     height: 27px;
      border-radius: 50%;
      display: flex;
      align-items: center;
@@ -1396,9 +1396,9 @@
 
        <!-- LEFT COLUMN -->
        <div class="col-lg-5">
-         <h2 class="section-title mb-4">The Euphoria Mindset</h2>
+         <h2 class="section-title mb-5">The Euphoria Mindset</h2>
          <div class="image-box" data-aos="fade-up" data-aos-duration="500">
-           <img src="assets/img/about-us/mind-set.png" alt="Euphoria Mindset">
+           <img src="assets/img/how-we-bg.png" alt="Euphoria Mindset">
          </div>
        </div>
 
