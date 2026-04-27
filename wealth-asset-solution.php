@@ -2381,22 +2381,22 @@ include_once('elements/header.php');
 $sideStickyMenu = [
   [
     'url' => 'stock-market-section',
-    'img' => '',
+    'img' => getBaseUrl().'/assets/img/icon/wealth-asset-solutions/stock-market-opportunities.png',
     'title' => 'Stock Market'
   ],
   [
     'url' => 'insuarance-section',
-    'img' => '',
+    'img' => getBaseUrl().'/assets/img/icon/wealth-asset-solutions/insurance.png',
     'title' => 'Insuarance'
   ],
   [
     'url' => 'real-estate-section',
-    'img' => '',
+    'img' => getBaseUrl().'/assets/img/icon/wealth-asset-solutions/real-estate.png',
     'title' => 'Real Estate'
   ],
   [
     'url' => 'faqs',
-    'img' => '',
+    'img' => getBaseUrl().'/assets/img/icon/faqs.png',
     'title' => 'FAQs'
   ],
 ];

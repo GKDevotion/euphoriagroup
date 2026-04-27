@@ -4103,53 +4103,53 @@ include_once('elements/header.php');
 $sideStickyMenu = [
   [
     'url' => 'flight-section',
-    'img' => '',
+    'img' => getBaseUrl().'/assets/img/icon/tours-travels/flight.png',
     'title' => 'Flight'
   ],
   [
     'url' => 'train-section',
-    'img' => '',
+    'img' => getBaseUrl().'/assets/img/icon/tours-travels/train.png',
     'title' => 'Train'
   ],
   [
     'url' => 'bus-section',
-    'img' => '',
+    'img' => getBaseUrl().'/assets/img/icon/tours-travels/bus.png',
     'title' => 'Bus'
   ],
   [
     'url' => 'taxi-section',
-    'img' => '',
+    'img' => getBaseUrl().'/assets/img/icon/tours-travels/taxi.png',
     'title' => 'Taxi'
   ],
   [
     'url' => 'local-section',
-    'img' => '',
+    'img' => getBaseUrl().'/assets/img/icon/tours-travels/local-transportation.png',
     'title' => 'Local Transport'
   ],
   [
     'url' => 'hotel-section',
-    'img' => '',
+    'img' => getBaseUrl().'/assets/img/icon/tours-travels/hotel-reservation.png',
     'title' => 'Hotel'
   ],
   [
     'url' => 'holiday-package-section',
-    'img' => '',
+    'img' => getBaseUrl().'/assets/img/icon/tours-travels/holiday-package.png',
     'title' => 'Holiday Package'
   ],
 
   [
     'url' => 'tour-package-section',
-    'img' => '',
+    'img' => getBaseUrl().'/assets/img/icon/tours-travels/seight-seeing-tours.png',
     'title' => 'Tour Package'
   ],
-  [
-    'url' => 'guide-tour-section',
-    'img' => '',
-    'title' => 'Guide Tour'
-  ],
+  // [
+  //   'url' => 'guide-tour-section',
+  //   'img' => getBaseUrl().'/assets/img/icon/tours-travels/stock-market-opportunities.svg',
+  //   'title' => 'Guide Tour'
+  // ],
   [
     'url' => 'faqs',
-    'img' => '',
+    'img' => getBaseUrl().'/assets/img/icon/faqs.png',
     'title' => 'FAQs'
   ],
 ];

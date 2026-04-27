@@ -1,66 +1,59 @@
 <style>
-    .sticky-social {
-        position: fixed;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
-        display: flex;
-        flex-direction: column;
-        gap: 1px;
-        z-index: 9999;
-    }
+      .sticky-social {
+            position: fixed;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            padding: 0 0 0 4px;
+            z-index: 1000;
+        }
 
-    .sticky-social a {
-        position: relative;
-        display: flex;
-        align-items: center;
-        gap: 14px;
-        width: 162px;
-        padding: 5px 14px;
-        font-size: 13px;
-        font-weight: 600;
-        border-bottom: 1px solid #666666;
-        color: #fff;
-        text-decoration: none;
-        background: var(--euphoria-blue);
-        white-space: normal;
-        letter-spacing: 0.3px;
-        transform: translateX(118px);
-        transition: transform 0.35s ease-in-out, background 0.2s ease;
-    }
+        .sticky-social a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #fff;
+            background-color: var(--euphoria-blue);
+            padding: 8px;
+            transition: all 0.3s ease;
+            width: 45px; /* Initial width */
+            overflow: hidden;
+            white-space: nowrap;
+        }
 
-    /* Red left-edge peek strip */
-    .sticky-social a::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 4px;
-        background: var(--euphoria-red);
-        flex-shrink: 0;
-    }
+        .sticky-social a i {
+            font-size: 1rem;
+            min-width: 30px;
+            text-align: center;
+            margin-right: 10px;
+        }
 
-    .sticky-social a:first-child {
-        border-radius: 6px 0 0 0;
-    }
+        .sticky-social a img{
+            width: 30px;
+        }
 
-    .sticky-social a:last-child {
-        border-radius: 0 0 0 6px;
-    }
+        .sticky-social a span{
+            margin-left: 10px;
+        }
+        .social-name {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            margin-left: 10px;
+        }
 
-    .sticky-social a i {
-        font-size: 14px;
-        flex-shrink: 0;
-        width: 16px;
-        text-align: center;
-    }
+        /* Hover Effect: Expand to show name */
+        .sticky-social a:hover {
+            width: auto; /* Expand width on hover */
+            background-color: var(--euphoria-red); /* Change background on hover */
+            color: white;
+        }
 
-    /* Hover: slide fully in */
-    .sticky-social a:hover {
-        transform: translateX(0);
-        background: var(--euphoria-red);
-    }
+        .sticky-social a:hover .social-name {
+            opacity: 1;
+        }
 
     @media (max-width: 767px) {
         .sticky-social {
@@ -76,8 +69,8 @@
         foreach( $sideStickyMenu as $val ){
             ?>
             <a href="#<?= $val['url']; ?>">
-                <i class="bi bi-airplane-fill"></i>
-                <?= $val['title']; ?> 
+                <img src="<?php echo $val['img']; ?>" alt="<?= $val['title']; ?>">
+                <span><?= $val['title']; ?> </span>
             </a>
             <?php
         }

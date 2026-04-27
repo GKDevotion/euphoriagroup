@@ -1662,37 +1662,37 @@ include_once('elements/header.php');
 $sideStickyMenu = [
   [
     'url' => 'legal',
-    'img' => '',
+    'img' => getBaseUrl().'/assets/img/icon/corporate-service/legal-compliance.png',
     'title' => 'Legal & Compliance Services'
   ],
   [
     'url' => 'account-taxation',
-    'img' => '',
+    'img' => getBaseUrl().'/assets/img/icon/corporate-service/accounting-taxation.png',
     'title' => 'Accounting & Taxation'
     ],
   [
     'url' => 'restructuring',
-    'img' => '',
+    'img' => getBaseUrl().'/assets/img/icon/corporate-service/corporate-restructuring.png',
     'title' => 'Corporate Restructuring'
   ],
   [
     'url' => 'licensing-regulatory',
-    'img' => '',
+    'img' => getBaseUrl().'/assets/img/icon/corporate-service/licensing.png',
     'title' => 'Licensing Regulatory'
   ],
   [
     'url' => 'advisory-consultancy',
-    'img' => '',
+    'img' => getBaseUrl().'/assets/img/icon/corporate-service/advisory-consultancy.png',
     'title' => 'Advisory Consultancy'
   ],
   [
     'url' => 'additional-service',
-    'img' => '',
+    'img' => getBaseUrl().'/assets/img/icon/corporate-service/additional-services.png',
     'title' => 'Additional Service'
   ],
   [
     'url' => 'faqs',
-    'img' => '',
+    'img' => getBaseUrl().'/assets/img/icon/faqs.png',
     'title' => 'FAQs'
   ],
 ];

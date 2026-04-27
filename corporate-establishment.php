@@ -2645,48 +2645,48 @@ include_once('elements/header.php');
 $sideStickyMenu = [
   [
     'url' => 'business-formation',
-    'img' => '',
+    'img' => getBaseUrl().'/assets/img/icon/corporate-establishment/bussiness-formation.png',
     'title' => 'Business Formation'
   ],
   [
     'url' => 'private-company-setup',
-    'img' => '',
+    'img' => getBaseUrl().'/assets/img/icon/corporate-establishment/private-limited-company.png',
     'title' => 'Private Limited Company Setup'
   ],
   [
     'url' => 'llp-registration',
-    'img' => '',
+    'img' => getBaseUrl().'/assets/img/icon/corporate-establishment/llp.png',
     'title' => 'LLP'
   ],
   [
     'url' => 'opc',
-    'img' => '',
+    'img' => getBaseUrl().'/assets/img/icon/corporate-establishment/person-company.png',
     'title' => 'OPC'
   ],
   [
     'url' => 'partnership-firm',
-    'img' => '',
+    'img' => getBaseUrl().'/assets/img/icon/corporate-establishment/partnership-firm-registration.png',
     'title' => 'Partnership Firm'
   ],
   [
     'url' => 'pan-tan-gst',
-    'img' => '',
+    'img' => getBaseUrl().'/assets/img/icon/corporate-establishment/pan-tan.png',
     'title' => 'PAN, TAN, GST'
   ],
   [
     'url' => 'ngo-trust-registration',
-    'img' => '',
+    'img' => getBaseUrl().'/assets/img/icon/corporate-establishment/ngo.png',
     'title' => 'NGO / Trust / Section 8 Company'
   ],
 
   [
     'url' => 'startup-india-registration',
-    'img' => '',
+    'img' => getBaseUrl().'/assets/img/icon/corporate-establishment/start-up-india.png',
     'title' => 'Start-up India Registration'
   ], 
   [
     'url' => 'faqs',
-    'img' => '',
+    'img' => getBaseUrl().'/assets/img/icon/faqs.png',
     'title' => 'FAQs'
   ],
 ];
