@@ -1429,7 +1429,7 @@ include_once('elements/header.php');
         color: #000;
         width: 260px;
         margin-bottom: 10px;
-        letter-spacing: 0%;
+        letter-spacing: 1px;
         text-align: start;
         line-height: 100%;
     }
