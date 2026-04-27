@@ -3463,9 +3463,21 @@ include_once('elements/header.php');
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 18px 14px;
+      gap: 18px 41px;
       padding: 20px 0 10px;
       position: static;
+    }
+
+    .hr-watermark{
+      top:  -25px !important;
+    }
+    
+    .hotel-reserve-subtitle{
+      font-size: 20px; 
+      font-family: "Poppins", sans-serif;
+      color: #fff;
+      max-width: 401px;
+
     }
 
     .hotel-reserve-node {
@@ -3495,8 +3507,8 @@ include_once('elements/header.php');
     }
 
     .hotel-reserve-circle {
-      width: 80px;
-      height: 80px;
+      width: 120px;
+      height: 120px;
     }
 
     .hotel-reserve-icon {
@@ -3510,7 +3522,7 @@ include_once('elements/header.php');
     }
 
     .hotel-reserve-label {
-      font-size: .65rem;
+      font-size: .7rem;
       white-space: normal;
     }
   }
@@ -3566,13 +3578,13 @@ include_once('elements/header.php');
       z-index: 1;
     }
 
-    @media (max-width: 480px) {
-      .hr-watermark {
-        font-size: 80px;
-        top: -30px;
-        letter-spacing: 1px;
-      }
-  }
+      @media (max-width: 480px) {
+        .hr-watermark {
+          font-size: 80px;
+          top: -30px;
+          letter-spacing: 1px;
+        }
+    }
     .btn-explore-hotel {
       background-color: #FFF;
       color: #25356F;
@@ -3902,7 +3914,7 @@ include_once('elements/header.php');
         }
 
         @media (max-width: 991px) {
-    /* Re-adjust watermark position for tablet */
+         /* Re-adjust watermark position for tablet */
         .sight-watermark  {
             left: 50%;
             transform: translateX(-50%);
@@ -3915,7 +3927,7 @@ include_once('elements/header.php');
         }
 
       
-      }
+       }
 
       </style>
       <!-- Left Content -->
