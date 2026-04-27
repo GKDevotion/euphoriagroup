@@ -466,8 +466,8 @@ include_once('elements/header.php');
 
     /* Scale down the massive background watermark */
     .flight-section::before {
-      font-size: 59px;
-      top: 35px;
+      font-size: 50px;
+      top: 40px;
     }
 
     .section-title {
@@ -1255,8 +1255,8 @@ include_once('elements/header.php');
 
   @media (max-width: 480px) {
     .watermark {
-      font-size: 110px;
-      letter-spacing: 2px;
+      font-size: 80px;
+      letter-spacing: 1px;
     }
 
     .train-section::after {
@@ -1878,7 +1878,7 @@ include_once('elements/header.php');
 
     /* Smallest phones watermark scale */
     .bus-watermark {
-      font-size: 72px;
+      font-size: 70px;
       letter-spacing: 1px;
     }
 
@@ -2396,8 +2396,9 @@ include_once('elements/header.php');
 
   @media (max-width: 480px) {
     .taxi-watermark {
-      font-size: 83px;
-      top: -18px;
+      font-size: 80px;
+      top: -5px;
+      letter-spacing: 1px;
     }
 
     .taxi-main-img {
@@ -3565,6 +3566,13 @@ include_once('elements/header.php');
       z-index: 1;
     }
 
+    @media (max-width: 480px) {
+      .hr-watermark {
+        font-size: 80px;
+        top: -30px;
+        letter-spacing: 1px;
+      }
+  }
     .btn-explore-hotel {
       background-color: #FFF;
       color: #25356F;
