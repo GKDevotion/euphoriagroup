@@ -421,7 +421,7 @@ include_once('elements/home-slider.php');
 </section>
 
 <!-- ── Content Card ── -->
-<div class="container-fluid px-3 px-md-4 pb-5">
+<div class="container-fluid px-3 px-md-4">
     <div class="opportunities-content-card">
         <span class="card-watermark">Unrestricted</span>
         <div class="opportunities-content-card-inner">
@@ -536,13 +536,13 @@ include_once('elements/home-slider.php');
 
 <!-- End Our Success Section-->
 <style>
-    .blog-sec {
+    /* .blog-sec {
         padding: 300px 0 60px;
-    } 
+    }  */
 @media (max-width: 576px) {
-    .blog-sec {
+    /* .blog-sec {
         padding: 50px 0 40px;
-    }
+    } */
 
     .container.timeline-content {
         padding-left: 24px;
@@ -553,7 +553,7 @@ include_once('elements/home-slider.php');
 
 </style>
 
-<section class="about-section blog-sec pb-0 mt-5">
+<section class="about-section blog-sec pb-0">
     <div class="blog-title-bg">Blog</div>
 
     <div class="container timeline-content text-center">

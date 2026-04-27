@@ -887,7 +887,7 @@
      .why-section::before {
        font-size: clamp(32px, 12vw, 50px);
        top: 14px;
-       opacity: 0.2;
+       opacity: 0.3;
      }
 
      .section-heading {
@@ -1636,8 +1636,9 @@
      }
 
      .team-section::before {
-       font-size: 45px !important;
-       opacity: 0.2;
+        font-size: 35px !important;
+        opacity: 0.2;
+        top: 23px;
      }
 
 
@@ -2486,8 +2487,8 @@
 
     /* Watermark fix */
     .testimonial::before {
-      font-size: 55px;
-      top: 16px;
+      font-size: 49px;
+      top: 22px;
       opacity: 0.2;
     }
 

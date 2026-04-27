@@ -292,7 +292,8 @@ h2 {
 
 .blog-title-bg {
   position: absolute;
-  top: 200px;
+  /* top: 200px; */
+  top: 0px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 12.5rem;
@@ -401,66 +402,66 @@ h2 {
 
 /* ─── MOBILE (max 576px) ─── */
 @media (max-width: 576px) {
-  .about-section {
-    padding: 50px 0 40px;
-  }
+    .about-section {
+      padding: 50px 0 40px;
+    }
 
-  .blog-sec {
-    padding: 100px 0 60px !important;
-  }
+    /* .blog-sec {
+      padding: 100px 0 60px !important;
+    } */
 
-  .blog-title-bg {
-    top: 68px;
-    font-size: 164px;
-}
+    .blog-title-bg {
+      top: 18px;
+      font-size: 164px;
+    }
 
-  .about-title-bg {
-      /* font-size: 3.3rem !important;
-      top: 30px !important; */
-      font-size: 6.3rem !important;
-      top: 3px !important;
-      letter-spacing: 2px;
-  }
+    .about-title-bg {
+        /* font-size: 3.3rem !important;
+        top: 30px !important; */
+        font-size: 6.3rem !important;
+        top: 3px !important;
+        letter-spacing: 2px;
+    }
 
-  .about-title {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    margin-top: 10px;
-    padding: 0 15px;
-  }
+    .about-title {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      margin-top: 10px;
+      padding: 0 15px;
+    }
 
-  .image-overlap-container {
-    justify-content: center;
-    margin-bottom: 35px;
-    padding: 0 10px;
-  }
+    .image-overlap-container {
+      justify-content: center;
+      margin-bottom: 35px;
+      padding: 0 10px;
+    }
 
-  .img-large {
-    width: 175px;
-    height: 265px;
-  }
+    .img-large {
+      width: 175px;
+      height: 265px;
+    }
 
-  .img-small {
-    width: 150px;
-    height: 225px;
-    margin-left: -60px;
-    margin-top: 60px;
-  }
+    .img-small {
+      width: 150px;
+      height: 225px;
+      margin-left: -60px;
+      margin-top: 60px;
+    }
 
-  p.text-muted {
-    font-size: 1rem !important;
-    padding: 0 5px;
-  }
+    p.text-muted {
+      font-size: 1rem !important;
+      padding: 0 5px;
+    }
 
-  .about-list li {
-    font-size: 1rem;
-    margin-bottom: 12px;
-  }
+    .about-list li {
+      font-size: 1rem;
+      margin-bottom: 12px;
+    }
 
-  .about-list li i {
-    margin-top: 3px;
-    font-size: 0.9rem;
-  }
+    .about-list li i {
+      margin-top: 3px;
+      font-size: 0.9rem;
+    }
 }
 
 .services-section {
@@ -632,7 +633,7 @@ h2 {
  * Start Our Success Section
  */
 
-.our-success-banner {
+/* .our-success-banner {
   position: relative;
   min-height: 80vh;
   background-image: url("../img/our-success-taj.png");
@@ -643,6 +644,22 @@ h2 {
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
+} */
+.our-success-banner {
+  position: relative;
+  min-height: 50vh;
+
+  background-image: url("../img/our-success-taj.png");
+  background-size: cover;           /* ✅ FIX */
+  background-position: center;      /* ✅ FIX */
+  background-repeat: no-repeat;
+
+  padding: 120px 20px 220px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;          /* ✅ CENTER properly */
 }
 
 /* watermark text */
@@ -666,8 +683,8 @@ h2 {
   color: #fff;
   position: relative;
   z-index: 1;
-  /* margin-top: -360px; */
-  margin-top: -399px;
+  margin-top: -60px;
+  /* margin-top: -399px; */
   font-size: 2.56rem !important;
 }
 
@@ -720,7 +737,7 @@ h2 {
 }
 
 /* ── Content Card ── */
-.opportunities-content-card {
+/* .opportunities-content-card {
   background: #fff;
   border-radius: 18px;
   box-shadow:
@@ -731,6 +748,21 @@ h2 {
   position: relative;
   z-index: 10;
   overflow: hidden;
+} */
+
+.opportunities-content-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow:
+    0 8px 48px rgba(26, 48, 102, 0.1),
+    0 2px 8px rgba(0, 0, 0, 0.04);
+
+  margin: 0 auto;
+  max-width: 90%;
+
+  transform: translateY(-150px); /* clean overlap */
+  position: relative;
+  z-index: 10;
 }
 
 .opportunities-content-card-inner {
@@ -754,12 +786,13 @@ h2 {
 
 .opportunities-content-card .section-title {
   font-family: "Anek Kannada", "Poppins", sans-serif;
-  font-size: 2.7rem;
+  font-size: 1.8rem;
+  text-align: start;
+  margin-bottom: 120px;
   font-weight: 600;
   color: var(--euphoria-blue);
   position: relative;
-  z-index: 1;
-  text-align: center;
+  z-index: 1; 
   top: 20px;
 }
 
@@ -937,7 +970,7 @@ h2 {
 /* ── MOBILE (max 575px) ── */
 @media (max-width: 575.98px) {
   .our-success-banner {
-    min-height: 55vh;
+    min-height: 58vh;
     padding: 50px 12px 60px;
     background-position: center center;
   }
@@ -955,7 +988,7 @@ h2 {
 
   /* Fix title positioning */
   .our-success-banner h2 {
-    margin-top: 0;
+    margin-top: -27px;
     font-size: 1rem !important;
     text-align: center;
     padding: 0 10px;
@@ -1013,6 +1046,7 @@ h2 {
   .opportunities-content-card {
     margin: -30px 10px 30px;
     max-width: 100%;
+    top: 100px;
     border-radius: 14px;
   }
 
