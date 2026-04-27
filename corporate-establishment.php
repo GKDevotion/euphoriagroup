@@ -202,8 +202,8 @@ include_once('elements/header.php');
 
         /* Adjust watermark size for mobile */
         .incorporation::before {
-            top: 20px;
-            font-size: 58px;
+            top: 30px;
+            font-size: 46px;
             letter-spacing: 1px;
         }
     }
@@ -490,8 +490,8 @@ include_once('elements/header.php');
         .register::before {
             left: 50%;
             /* Center the watermark on smaller screens */
-            top: 5px;
-            font-size: 80px;
+            top: 12px;
+            font-size: 70px;
         }
 
         .register-heading {
@@ -1175,8 +1175,8 @@ include_once('elements/header.php');
         }
 
         .individual::before {
-            top: 15px;
-            font-size: 70px;
+            top: 20px;
+            font-size: 60px;
             /* Shrink watermark */
         }
 
@@ -1742,9 +1742,9 @@ include_once('elements/header.php');
 
         /* Fix watermark positioning for mobile to prevent overflow */
         .ownership::before {
-            top: 15px;
+            top: 20px;
             left: 50%;
-            font-size: 66px;
+            font-size: 60px;
             opacity: 0.2;
         }
 
@@ -2111,8 +2111,8 @@ include_once('elements/header.php');
 
         /* Adjust watermark positioning for mobile */
         .compliance::before {
-            top: 68px;
-            font-size: 63px;
+            top: 80px;
+            font-size: 50px;
             /* Scaled down for tablet/mobile */
             opacity: 0.2;
         }
@@ -2373,8 +2373,8 @@ include_once('elements/header.php');
 
         /* Adjust watermark for smaller screens */
         .non-profit::before {
-            top: 28px;
-            font-size: clamp(40px, 10vw, 60px);
+            top: 30px;
+            font-size: 35px;
             opacity: 0.2;
         }
 
