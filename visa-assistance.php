@@ -263,8 +263,9 @@ include_once ('elements/header.php');
 
     @media (max-width: 480px) {
         .visa-box::before {
-            font-size: 35px;
+            font-size: 52px;
             letter-spacing: 1px;
+            top: 28px;
         }
         
         .flag-box {

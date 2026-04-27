@@ -1703,8 +1703,8 @@ include_once('elements/header.php');
 
                   @media (max-width: 991px) {
                     .security-insurance-heading .bg-text {
-                        font-size: 100px !important; 
-                        top: 65%; 
+                        font-size: 80px !important; 
+                        top: 60%; 
                     }
 
                   .security-insurance-heading h2{
@@ -2023,7 +2023,8 @@ include_once('elements/header.php');
     }
 
     .section-title-bg{
-        font-size: 5rem;
+        font-size: 4rem;
+        top: 5px;
     }
 
     /* Scale the background "Properties" text */

@@ -554,7 +554,7 @@
       <div class="eg-mob-sub-card-desc">Investment planning, insurance advisory, and asset protection solutions.</div>
     </div>
     <div class="eg-mob-sub-card">
-      <div><a href="visa-assitance" class="eg-mob-sub-card-title">5. Get Visa Assistance</a></div>
+      <div><a href="visa-assistance" class="eg-mob-sub-card-title">5. Get Visa Assistance</a></div>
       <div class="eg-mob-sub-card-desc">Visa Assistance services provide professional, end-to-end support to help individuals and businesses navigate complex visa application processes for travel, work or study.</div>
     </div>
   </div>
