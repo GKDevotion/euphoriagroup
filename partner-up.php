@@ -241,8 +241,8 @@ include_once('elements/header.php');
 
         /* Watermark fix */
         .revenue-strategy::before {
-            font-size: 40px;
-            top: 34px;
+            font-size: 32px;
+            top: 40px;
             opacity: 0.2;
         }
 
@@ -578,8 +578,8 @@ include_once('elements/header.php');
 
         /* Watermark */
         .our-partner::before {
-            font-size: 55px;
-            top: 27px;
+            font-size: 50px;
+            top: 28px;
             opacity: 0.2;
         }
 

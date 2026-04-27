@@ -407,8 +407,9 @@ include_once('elements/header.php');
     @media (max-width: 600px) {
     /* 1. Adjust the watermark for smaller screens */
     .carrier-benefits::before {
-        top: 67px;
+        top: 70px;
         letter-spacing: 1px;
+        font-size: 55px;
     }
     
     .carrier-heading{
