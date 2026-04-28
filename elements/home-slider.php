@@ -85,7 +85,7 @@
     transform: translateY(-50%);
     background: rgba(255,255,255,0.15);
     backdrop-filter: blur(6px);
-    border-radius: 50%;
+    border-radius: 12%;
     border: 1px solid rgba(255,255,255,0.3);
     opacity: 1;
     z-index: 10;
