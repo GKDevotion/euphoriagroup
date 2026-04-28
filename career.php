@@ -1376,51 +1376,55 @@ include_once('elements/header.php');
 
                 <!-- Right Panel -->
                 <div class="col-md-8 right-panel">
-                    <div class="row g-3">
 
-                        <!-- First Name & Last Name -->
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="First Name *" />
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Last Name *" />
-                        </div>
+                    <form id="hrForm">
+                        <div class="row g-3">
 
-                        <!-- Email & Contact Number -->
-                        <div class="col-md-6">
-                            <input type="email" class="form-control" placeholder="Your Email *" />
-                        </div>
-                        <div class="col-md-6">
-                            <input type="tel" class="form-control" placeholder="Contact Number *" />
-                        </div>
-
-                        <!-- Area of Expertise -->
-                        <div class="col-12">
-                            <input type="text" class="form-control" placeholder="Area of Expertise *" />
-                        </div>
-
-                        <!-- Message -->
-                        <div class="col-12">
-                            <textarea class="form-control" placeholder="Your Message *"></textarea>
-                        </div>
-
-                        <!-- Upload Resume -->
-                        <div class="col-12">
-                            <div class="upload-area">
-                                <label for="file-input" class="btn-upload mb-0">Upload Resume / CV</label>
-                                <input type="file" id="file-input" accept=".pdf,.doc,.docx"
-                                    onchange="document.getElementById('file-name').textContent = this.files[0]?.name || 'No File Chosen'" />
-                                <span class="upload-label" id="file-name">No File Chosen</span>
-                                <span class="upload-hint">(Supported Formats: PDF, DOC, DOCX)</span>
+                            <!-- First Name & Last Name -->
+                            <div class="col-md-6">
+                                <input type="text" name="first_name" class="form-control" placeholder="First Name *" />
                             </div>
-                        </div>
+                            <div class="col-md-6">
+                                <input type="text" name="last_name" class="form-control" placeholder="Last Name *" />
+                            </div>
 
-                        <!-- Submit -->
-                        <div class="col-12">
-                            <button class="btn-submit">Submit</button>
-                        </div>
+                            <!-- Email & Contact Number -->
+                            <div class="col-md-6">
+                                <input type="email" name="email" class="form-control" placeholder="Your Email *" />
+                            </div>
+                            <div class="col-md-6">
+                                <input type="tel" name="phone" class="form-control" placeholder="Contact Number *" />
+                            </div>
 
-                    </div>
+                            <!-- Area of Expertise -->
+                            <div class="col-12">
+                                <input type="text" name="service" class="form-control" placeholder="Area of Expertise *" />
+                            </div>
+
+                            <!-- Message -->
+                            <div class="col-12">
+                                <textarea class="form-control" name="message" placeholder="Your Message *"></textarea>
+                            </div>
+
+                            <!-- Upload Resume -->
+                            <div class="col-12">
+                                <div class="upload-area">
+                                    <label for="file-input" class="btn-upload mb-0">Upload Resume / CV</label>
+                                    <input type="file" name="resume" id="file-input" accept=".pdf,.doc,.docx"
+                                        onchange="document.getElementById('file-name').textContent = this.files[0]?.name || 'No File Chosen'" />
+                                    <span class="upload-label" id="file-name">No File Chosen</span>
+                                    <span class="upload-hint">(Supported Formats: PDF, DOC, DOCX)</span>
+                                </div>
+                            </div>
+
+                            <!-- Submit -->
+                            <div class="col-12">
+                                <button type="submit" class="btn-submit">Submit</button>
+                            </div>
+
+                        </div>
+                    </form>
+
                 </div>
 
             </div>
@@ -1428,7 +1432,58 @@ include_once('elements/header.php');
     </div>
 </section>
 
+<script>
+        const form = document.getElementById("hrForm");
+        const btn = document.querySelector(".btn-submit");
 
+        const msgBox = document.createElement("div");
+        form.prepend(msgBox);
+
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            btn.disabled = true;
+            btn.innerHTML = "Sending...";
+
+            const formData = new FormData(form);
+
+            fetch("hr-mail.php", {
+                method: "POST",
+                body: formData
+            })
+            .then(res => res.text())
+            .then(text => {
+                let data;
+
+                try {
+                    data = JSON.parse(text);
+                } catch (e) {
+                    throw new Error("Invalid JSON: " + text);
+                }
+
+                if (data.status === "success") {
+                    msgBox.innerHTML = `<div class="alert alert-success">${data.message}</div>`;
+
+                    form.reset(); // ✅ reset here
+
+                    // ✅ also uncheck checkbox manually
+                    const checkbox = document.getElementById("robot");
+                    if (checkbox) checkbox.checked = false;
+
+                } else {
+                    msgBox.innerHTML = `<div class="alert alert-danger">${data.message}</div>`;
+                }
+
+                btn.disabled = false;
+                btn.innerHTML = "Send Message";
+            })
+            .catch(err => {
+                msgBox.innerHTML = `<div class="alert alert-danger">${err.message}</div>`;
+                btn.disabled = false;
+                btn.innerHTML = "Send Message";
+            });
+        });
+</script>
 <script>
     function toggleJob(id) {
         const el = document.getElementById(id);

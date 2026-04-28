@@ -420,66 +420,71 @@ include_once('elements/header.php');
                 <div class="form-panel">
                     <div class="bg-text">Let's Talk</div>
                     <h2>Send us a Message</h2>
+                    <form id="contactForm">
 
-                    <div class="row g-3">
+                        <div class="row g-3">
 
-                        <!-- Full Name & Email -->
-                        <div class="col-md-6">
-                            <label class="form-label">Full Name*</label>
-                            <input type="text" class="form-control" placeholder="Jason Russell" />
-                        </div>
-                        <div class="col-md-6">
-                            <label class="form-label">Email Address*</label>
-                            <input type="email" class="form-control" placeholder="Email Address*" />
-                        </div>
+                            <!-- Full Name & Email -->
+                            <div class="col-md-6">
+                                <label class="form-label">Full Name*</label>
+                                <input type="text" name="full_name" class="form-control" placeholder="Jason Russell" />
+                            </div>
 
-                        <!-- Phone & Company -->
-                        <div class="col-md-6">
-                            <label class="form-label">Phone Number*</label>
-                            <input type="tel" class="form-control" placeholder="Phone Number*" />
-                        </div>
-                        <div class="col-md-6">
-                            <label class="form-label">Company Name</label>
-                            <input type="text" class="form-control" placeholder="Company Name" />
-                        </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Email Address*</label>
+                                <input type="email" name="email" class="form-control" placeholder="Email Address*" />
+                            </div>
 
-                        <!-- Service Dropdown -->
-                        <div class="col-12">
-                            <label class="form-label">Service Interested In*</label>
-                            <select class="form-select">
-                                <option value="" disabled selected>Service Interested In*</option>
-                                <option>Web Development</option>
-                                <option>Mobile App Development</option>
-                                <option>UI/UX Design</option>
-                                <option>Digital Marketing</option>
-                                <option>Other</option>
-                            </select>
-                        </div>
+                            <!-- Phone & Company -->
+                            <div class="col-md-6">
+                                <label class="form-label">Phone Number*</label>
+                                <input type="tel" name="phone" class="form-control" placeholder="Phone Number*" />
+                            </div>
 
-                        <!-- Message -->
-                        <div class="col-12">
-                            <label class="form-label">Message*</label>
-                            <textarea class="form-control" placeholder="Message*"></textarea>
-                        </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Company Name</label>
+                                <input type="text" name="company" class="form-control" placeholder="Company Name" />
+                            </div>
 
-                        <!-- reCAPTCHA -->
-                        <div class="col-12">
-                            <div class="recaptcha-box">
-                                <input type="checkbox" id="robot" />
-                                <label for="robot" class="rc-label">I'm not a robot</label>
-                                <div class="recaptcha-logo">
-                                    <i class="bi bi-shield-check logo-icon"></i>
-                                    reCAPTCHA<br />Privacy · Terms
+                            <!-- Service Dropdown -->
+                            <div class="col-12">
+                                <label class="form-label">Service Interested In*</label>
+                                <select name="service" class="form-select">
+                                    <option value="" disabled selected>Service Interested In*</option>
+                                    <option>Web Development</option>
+                                    <option>Mobile App Development</option>
+                                    <option>UI/UX Design</option>
+                                    <option>Digital Marketing</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="col-12">
+                                <label class="form-label">Message*</label>
+                                <textarea class="form-control" name="message" placeholder="Message*"></textarea>
+                            </div>
+
+                            <!-- reCAPTCHA -->
+                            <div class="col-12">
+                                <div class="recaptcha-box">
+                                    <input type="checkbox" id="robot" />
+                                    <label for="robot" class="rc-label">I'm not a robot</label>
+                                    <div class="recaptcha-logo">
+                                        <i class="bi bi-shield-check logo-icon"></i>
+                                        reCAPTCHA<br />Privacy · Terms
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Submit -->
-                        <div class="col-12">
-                            <button class="btn-submit">Submit</button>
-                        </div>
+                            <!-- Submit -->
+                            <div class="col-12">
+                                <button type="submit" class="btn-submit">Submit</button>
+                            </div>
 
-                    </div>
+                        </div>
+                    </form>
+
                 </div>
             </div>
 
@@ -502,7 +507,58 @@ include_once('elements/header.php');
         display: block;
     }
 </style>
+<script>
+        const form = document.getElementById("contactForm");
+        const btn = document.querySelector(".btn-submit");
 
+        const msgBox = document.createElement("div");
+        form.prepend(msgBox);
+
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            btn.disabled = true;
+            btn.innerHTML = "Sending...";
+
+            const formData = new FormData(form);
+
+            fetch("contact-mail.php", {
+                method: "POST",
+                body: formData
+            })
+            .then(res => res.text())
+            .then(text => {
+                let data;
+
+                try {
+                    data = JSON.parse(text);
+                } catch (e) {
+                    throw new Error("Invalid JSON: " + text);
+                }
+
+                if (data.status === "success") {
+                    msgBox.innerHTML = `<div class="alert alert-success">${data.message}</div>`;
+
+                    form.reset(); // ✅ reset here
+
+                    // ✅ also uncheck checkbox manually
+                    const checkbox = document.getElementById("robot");
+                    if (checkbox) checkbox.checked = false;
+
+                } else {
+                    msgBox.innerHTML = `<div class="alert alert-danger">${data.message}</div>`;
+                }
+
+                btn.disabled = false;
+                btn.innerHTML = "Send Message";
+            })
+            .catch(err => {
+                msgBox.innerHTML = `<div class="alert alert-danger">${err.message}</div>`;
+                btn.disabled = false;
+                btn.innerHTML = "Send Message";
+            });
+        });
+</script>
 <?php
 include_once('elements/faqs.php');
 include_once('elements/footer.php');
