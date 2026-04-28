@@ -194,7 +194,7 @@ include_once('elements/header.php');
     .revenue-heading {
         position: relative;
         z-index: 1;
-        color: #1a2456;
+        color: #25356F;
         font-size: clamp(1.6rem, 3vw, 2.2rem);
         font-weight: 700;
         text-align: center;
@@ -397,7 +397,7 @@ include_once('elements/header.php');
     .partner-heading {
         position: relative;
         z-index: 1;
-        color: #1a2456;
+        color: #25356F;
         font-size: clamp(1.6rem, 3vw, 2.2rem);
         font-weight: 700;
         text-align: center;
@@ -442,7 +442,7 @@ include_once('elements/header.php');
     .partner-tab.active {
         flex: 3 1 0;
         background: #f4f5fb;
-        border-color: #1a2456;
+        border-color: #25356F;
         box-shadow: 0 8px 36px rgba(26, 36, 86, 0.10);
         z-index: 2;
     }
@@ -542,7 +542,7 @@ include_once('elements/header.php');
         font-size: 18px;
          font-family: "Anek Kannada", "Poppins";
         font-weight: 500;
-        color: #1a2456;
+        color: #25356F;
     }
 
     .tab-cta-text p{
@@ -710,7 +710,7 @@ include_once('elements/header.php');
                             <div class="tab-cta-text">
                                 <p>Let us grow together. Join our network of successful partners and discover</p>
                             </div>
-                            <a href="#" class="btn-meeting">Set Up a Meeting →</a>
+                            <a href="javascript:void(0)" class="btn-meeting">Set Up a Meeting →</a>
                         </div>
                     </div>
                 </div>
@@ -748,7 +748,7 @@ include_once('elements/header.php');
                             <div class="tab-cta-text">
                                     <p>Let us grow together. Join our network of successful partners and discover</p>
                             </div>
-                            <a href="#" class="btn-meeting">Set Up a Meeting →</a>
+                            <a href="javascript:void(0)" class="btn-meeting">Set Up a Meeting →</a>
                         </div>
                     </div>
                 </div>
@@ -786,7 +786,7 @@ include_once('elements/header.php');
                             <div class="tab-cta-text">
                                     <p>Let us grow together. Join our network of successful partners and discover</p>
                             </div>
-                            <a href="#" class="btn-meeting">Set Up a Meeting →</a>
+                            <a href="javascript:void(0)" class="btn-meeting">Set Up a Meeting →</a>
                         </div>
                     </div>
                 </div>
@@ -824,7 +824,7 @@ include_once('elements/header.php');
                             <div class="tab-cta-text">
                                     <p>Let us grow together. Join our network of successful partners and discover</p>
                             </div>
-                            <a href="#" class="btn-meeting">Set Up a Meeting →</a>
+                            <a href="javascript:void(0)" class="btn-meeting">Set Up a Meeting →</a>
                         </div>
                     </div>
                 </div>

@@ -154,7 +154,34 @@
 
         <!-- BACK TO TOP -->
         <button id="backTop" title="Back to top"><i class="bi bi-arrow-up"></i></button>
-        
+
+        <!-- intl-tel-input JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.2.1/js/intlTelInput.min.js"></script> 
+        <script> 
+                document.addEventListener("DOMContentLoaded", function() {
+                    const inputs = document.querySelectorAll("#mobile_number");
+
+                    inputs.forEach(function(input) {
+                        const iti = window.intlTelInput(input, {
+                            initialCountry: "in",
+                            separateDialCode: true,
+                            preferredCountries: ["in", "us", "gb"],
+                            autoPlaceholder: "polite",
+                            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.2.1/js/utils.js"
+                        });
+
+                        // If input already has value (edit mode), set it properly
+                        if(input.value) {
+                            iti.setNumber(input.value);
+                        }
+
+                        // Before form submit, replace input value with full international number
+                        input.closest('form').addEventListener('submit', function() {
+                            input.value = iti.getNumber(); // full number with +countrycode
+                        });
+                    });
+                });
+        </script> 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

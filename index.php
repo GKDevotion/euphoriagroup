@@ -213,8 +213,8 @@ include_once('elements/home-slider.php');
 
                 /* bullets */
                 .swiper-pagination-bullet {
-                    width: 10px;
-                    height: 10px;
+                    width: 12px;
+                    height: 12px;
                     background: #c5d2de;
                     opacity: 1;
                     transition: background 0.3s, transform 0.3s;
@@ -222,7 +222,10 @@ include_once('elements/home-slider.php');
 
                 .swiper-pagination-bullet-active {
                     background: #25356F;
-                    transform: scale(1.25);
+                    outline: 1px solid #25356F;
+                    outline-offset: 3px;
+                    border-radius: 100%;
+                    transform: scale(1);
                 }
 
                 .services-section::after {

@@ -208,6 +208,8 @@ include_once('elements/header.php');
     background: #25356F;
     width: 12px;
     height: 12px;
+    outline: 1px solid #25356F;
+    outline-offset: 3px; 
     border-radius: 100%;
   }
 
@@ -1316,7 +1318,7 @@ include_once('elements/header.php');
           <div class="lic-item"><img src="assets/img/icon/Group.png" alt=""> Drug License</div>
           <div class="lic-item"><img src="assets/img/icon/Group.png" alt=""> Environmental Clearance</div>
           <div class="mt-4 text-center">
-            <a href="#" class="hero-btn" style="font-size:.85rem;padding:10px 22px;">Get Started <i class="bi bi-arrow-right ms-1"></i></a>
+            <a href="javascript:void(0)" class="hero-btn" style="font-size:.85rem;padding:10px 22px;">Get Started <i class="bi bi-arrow-right ms-1"></i></a>
           </div>
         </div>
       </div>

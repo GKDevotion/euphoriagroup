@@ -1904,20 +1904,9 @@
    .swiper-pagination {
      margin-top: 36px;
      position: static !important;
-   }
+   } 
 
-   .swiper-pagination-bullet {
-     width: 10px;
-     height: 10px;
-     background: #d1d5f0;
-     opacity: 1;
-     transition: background .3s, transform .3s;
-   }
-
-   .swiper-pagination-bullet-active {
-     background: #2b3990;
-     transform: scale(1.25);
-   }
+    
 
    /* ── Swiper container position  */
    .swiper-outer {
@@ -2446,8 +2435,8 @@
    }
 
    .swiper-pagination-bullet {
-     width: 10px;
-     height: 10px;
+     width: 12px;
+     height: 12px;
      border-radius: 50%;
      background: #c8cdd8;
      opacity: 1;
@@ -2457,8 +2446,12 @@
 
    .swiper-pagination-bullet-active {
      background: #1a2340;
-     width: 28px;
-     border-radius: 999px;
+     width: 12px;
+     outline: 1px solid #25356F;
+     outline-offset: 3px;
+     border-radius: 100%;
+     transform: scale(1);
+     border-radius: 100%;
    }
 
    /* Nav + pagination row */

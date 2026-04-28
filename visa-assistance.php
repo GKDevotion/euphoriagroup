@@ -88,190 +88,202 @@ include_once ('elements/header.php');
 
 <!-- Visa Submit Form -->
 <style>
-  /* SECTION */
-    .visa-form-section{
-        padding: 50px 0 80px 0;
+    /* SECTION */
+        .visa-form-section{
+            padding: 50px 0 80px 0;
+        }
+
+    /* BOX */
+    .visa-box{
+        background:#f7f8fb;
+        border-radius:25px;
+        padding:60px 40px;
+        border:1px solid #dfe3eb;
+        position:relative;
+        overflow:hidden;
     }
 
-  /* BOX */
-  .visa-box{
-      background:#f7f8fb;
-      border-radius:25px;
-      padding:60px 40px;
-      border:1px solid #dfe3eb;
-      position:relative;
-      overflow:hidden;
-  }
-
-  /* BACK TEXT */
-  .visa-box::before{
-      content:"Let's Connect";
-      position:absolute;
-      font-family: "Anek Kannada", "Poppins";
-      top:0px;
-      left:50%;
-      transform:translateX(-50%);
-      font-size:150px;
-      font-weight:600;
-      color: var(--red-blur);
-      z-index:0;
-      white-space:nowrap;
-  }
-
-  /* TITLE */
-  .visa-title{
-      position:relative;
-      z-index:1;
-      font-weight:600;
-      color:#2d3e70;
-  }
-
-  /* INPUTS */
-  .form-control,
-  .form-select{
-      height:50px;
-      border-radius:8px;
-      font-family: "Poppins";
-      border:1px solid #cfd6e4;
-      font-size:14px;
-  }
-
-  .form-control:focus,
-  .form-select:focus{
-      border-color:#2d3e70;
-      box-shadow:none;
-  }
-
-  /* PHONE GROUP */
-  .phone-group{
-      display:flex;
-      gap:10px;
-  }
-
-  .flag-box{
-      width:70px;
-      border:1px solid #cfd6e4;
-      border-radius:8px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      background:#fff;
-  }
-
-  /* BUTTON */
-  .btn-submit{
-      background:#2d3e70;
-      color:#fff;
-      padding:12px 30px;
-      border-radius:6px;
-      font-size:14px;
-      transition:0.3s;
-  }
-
-  .btn-submit:hover{
-      background:#1f2c52;
-  }
-
-  /* ANIMATION */
-  .fade-up{
-      opacity:0;
-      transform:translateY(40px);
-      transition:0.8s ease;
-  }
-
-  .fade-up.show{
-      opacity:1;
-      transform:translateY(0);
-  }
-  .about-visa-title {
-    color: var(--euphoria-blue);
-    font-weight: 600;
-    margin-bottom: 50px;
-    font-size: 2.5rem !important;
-    margin-top: 15px;
-    position: relative;
-    z-index: 1; 
-    width: 100%;
-}
-
-  /* RESPONSIVE */
- /* --- Visa Form Mobile Styles --- */
-
-    @media (max-width: 991px) {
-        .visa-box {
-            padding: 50px 30px;
-        }
-        
-        /* Scale down the massive watermark for tablets */
-        .visa-box::before {
-            font-size: 80px;
-            top: 0;
-        } 
-        .about-visa-title{
-            font-size: 1.2rem !important;
-        }
+    /* BACK TEXT */
+    .visa-box::before{
+        content:"Let's Connect";
+        position:absolute;
+        font-family: "Anek Kannada", "Poppins";
+        top: 14px;
+        left:50%;
+        transform:translateX(-50%);
+        font-size:116px;
+        font-weight:600;
+        color: var(--red-blur);
+        z-index:0;
+        white-space:nowrap;
     }
 
-    @media (max-width: 767px) {
-        .visa-form-section {
-            padding: 40px 0 60px 0;
+    /* TITLE */
+    .visa-title{
+        position:relative;
+        z-index:1;
+        font-weight:600;
+        color:#2d3e70;
+    }
+
+    /* INPUTS */
+    .form-control,
+    .form-select{
+        height:50px;
+        border-radius:8px;
+        font-family: "Poppins";
+        border:1px solid #cfd6e4;
+        font-size:14px;
+    }
+
+    .form-control:focus,
+    .form-select:focus{
+        border-color:#2d3e70;
+        box-shadow:none;
+    }
+
+    /* PHONE GROUP */
+    .phone-group{
+        display:flex;
+        gap:10px;
+    }
+
+    .flag-box{
+        width:70px;
+        border:1px solid #cfd6e4;
+        border-radius:8px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        background:#fff;
+    }
+
+    /* BUTTON */
+    .btn-submit{
+        background:#2d3e70;
+        color:#fff;
+        padding:12px 30px;
+        border-radius:6px;
+        font-size:14px;
+        transition:0.3s;
+    }
+
+    .btn-submit:hover{
+        background:#1f2c52;
+    }
+
+    /* ANIMATION */
+    .fade-up{
+        opacity:0;
+        transform:translateY(40px);
+        transition:0.8s ease;
+    }
+
+    .fade-up.show{
+        opacity:1;
+        transform:translateY(0);
+    }
+    .about-visa-title {
+        color: var(--euphoria-blue);
+        font-weight: 600;
+        margin-bottom: 80px;
+        font-size: 2.2rem !important;
+        margin-top: 15px;
+        position: relative;
+        z-index: 1; 
+        width: 100%;
         }
 
+        /* RESPONSIVE */
+        /* --- Visa Form Mobile Styles --- */
 
-        .visa-box {
-            padding: 40px 20px;
-            border-radius: 15px; /* Softer corners for mobile */
+        @media (max-width: 991px) {
+            .visa-box {
+                padding: 50px 30px;
+            }
+            
+            /* Scale down the massive watermark for tablets */
+            .visa-box::before {
+                font-size: 80px;
+                top: 0;
+            } 
+            .about-visa-title{
+                font-size: 1.2rem !important;
+            }
         }
 
-        /* Adjust watermark positioning for mobile */
-        .visa-box::before {
-            font-size: 60px;
-            top: 20px;
+        @media (max-width: 767px) {
+            .visa-form-section {
+                padding: 40px 0 60px 0;
+            }
+
+
+            .visa-box {
+                padding: 40px 20px;
+                border-radius: 15px; /* Softer corners for mobile */
+            }
+
+            /* Adjust watermark positioning for mobile */
+            .visa-box::before {
+                font-size: 60px;
+                top: 20px;
+            }
+
+            .about-title.h1 {
+                font-size: 1.1rem; /* Smaller heading for mobile */
+                margin-bottom: 30px;
+                font-family: "Anek Kannada", "Poppins";
+            }
+
+            /* Stack phone input and flag vertically or adjust gaps */
+            .phone-group {
+                flex-direction: row; /* Keep them side-by-side but reduce gap */
+                gap: 5px;
+            }
+
+            .flag-box {
+                width: 60px; /* Slimmer flag box */
+                flex-shrink: 0;
+            }
+
+            /* Center the captcha on mobile */
+            .col-12 > div[style*="width:280px"] {
+                width: 100% !important;
+                max-width: 280px;
+                margin: 0 auto;
+            }
+
+            /* Make button full width for easier tapping */
+            .btn-submit {
+                width: 100%;
+                padding: 15px;
+                font-size: 16px;
+            }
         }
 
-        .about-title.h1 {
-            font-size: 1.1rem; /* Smaller heading for mobile */
-            margin-bottom: 30px;
-            font-family: "Anek Kannada", "Poppins";
+        @media (max-width: 480px) {
+            .visa-box::before {
+                font-size: 52px;
+                letter-spacing: 1px;
+                top: 28px;
+            }
+            
+            .flag-box {
+                font-size: 12px;
+            }
         }
 
-        /* Stack phone input and flag vertically or adjust gaps */
-        .phone-group {
-            flex-direction: row; /* Keep them side-by-side but reduce gap */
-            gap: 5px;
-        }
-
-        .flag-box {
-            width: 60px; /* Slimmer flag box */
-            flex-shrink: 0;
-        }
-
-        /* Center the captcha on mobile */
-        .col-12 > div[style*="width:280px"] {
-            width: 100% !important;
-            max-width: 280px;
-            margin: 0 auto;
-        }
-
-        /* Make button full width for easier tapping */
-        .btn-submit {
+        .iti {
             width: 100%;
-            padding: 15px;
-            font-size: 16px;
         }
-    }
 
-    @media (max-width: 480px) {
-        .visa-box::before {
-            font-size: 52px;
-            letter-spacing: 1px;
-            top: 28px;
+        .iti__flag-container {
+            position: absolute;
         }
-        
-        .flag-box {
-            font-size: 12px;
+
+        .iti input {
+            width: 100%;
         }
-    }
 </style>
 
 <section class="visa-form-section about-section">
@@ -296,11 +308,8 @@ include_once ('elements/header.php');
                   </div>
 
                   <div class="col-md-6">
-                      <div class="phone-group">
-                          <div class="flag-box">
-                              🇮🇳 <i class="bi bi-caret-down-fill ms-1"></i>
-                          </div>
-                          <input type="text" class="form-control" placeholder="Mobile Number*">
+                      <div class="phone-group"> 
+                          <input type="tel" id="mobile_number" name="mobile_number" class="form-control" placeholder="Mobile Number*">
                       </div>
                   </div>
 
@@ -340,7 +349,7 @@ include_once ('elements/header.php');
 
   </div>
 </section>
-
+    
 <?php
 include_once ('elements/faqs.php');
 include_once ('elements/footer.php');

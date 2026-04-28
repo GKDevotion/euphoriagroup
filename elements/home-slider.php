@@ -106,14 +106,16 @@
   }
 
   /* Indicators */
+
+  
   .carousel-indicators {
     z-index: 10;
     bottom: 20px;
   }
 
-  .carousel-indicators button {
-    width: 10px;
-    height: 10px;
+  .carousel-indicators button { 
+    width: 12px !important;
+    height: 12px !important;
     border-radius: 50%;
     background-color: rgba(255,255,255,0.5);
     border: none;
