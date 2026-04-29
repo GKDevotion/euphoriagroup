@@ -169,7 +169,8 @@ include_once ('elements/header.php');
     }
 
     .btn-submit:hover{
-        background:#1f2c52;
+        background:#2d3e70;
+        color: #fff;
     }
 
     /* ANIMATION */
