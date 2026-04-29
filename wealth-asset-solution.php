@@ -1666,7 +1666,39 @@ include_once('elements/header.php');
             justify-content: center;
             font-size      : 5rem;
           }
-          .icon-box i { opacity: .8; }
+          .icon-box i { opacity: .8; } 
+          @media (max-width: 767px) {
+            .scroll-section { height: auto !important; }
+            .sticky-stage {
+              position: static !important;
+              height: auto !important;
+              display: flex !important;
+              flex-direction: column !important;
+              align-items: stretch !important;
+              padding: 0 1rem 2rem !important;
+              overflow: visible !important;
+            }
+            .card-stack {
+              position: static !important;
+              height: auto !important;
+              display: flex !important;
+              flex-direction: column !important;
+              gap: 1.5rem !important;
+            }
+            .stack-card {
+              position: static !important;
+              inset: auto !important;
+              transform: none !important;
+              opacity: 1 !important;
+              z-index: auto !important;
+              padding: 1.25rem !important;
+            }
+            .row { flex-direction: column !important; gap: 1rem !important; }
+            .card-img-wrap { height: 200px !important; border-radius: 16px !important; }
+            .card-headline { font-size: 32px !important; }
+            .card-features-grid { grid-template-columns: repeat(2, 1fr) !important; }
+            .card-features-grid li { font-size: 12px !important; }
+        }
           
     </style> 
 
@@ -1705,7 +1737,7 @@ include_once('elements/header.php');
             @media (max-width: 991px) {
               .security-insurance-heading .bg-text {
                 font-size: 80px !important; 
-                top: 60%; 
+                top: 41%; 
               } 
               .security-insurance-heading h2{
                 font-size: 1.2rem;
