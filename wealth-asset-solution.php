@@ -1450,7 +1450,7 @@ include_once('elements/header.php');
     <div class="row g-0   insurance-split-wrapper">
 
       <!-- Image -->
-      <div class="col-lg-6 px-3">
+      <div class="col-lg-6 px-3 d-none d-md-block">
         <div class="insurance-split-image">
           <img src="assets/img/general-insurance.png" alt="">
         </div>
