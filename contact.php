@@ -552,18 +552,43 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
         method: "POST",
         body: formData
     })
-    .then(async response => {
-
-        // check raw response first
-        const text = await response.text();
+    .then(text => {
+        let data;
 
         try {
-            return JSON.parse(text);
-        } catch (err) {
-            console.error("Invalid JSON:", text);
-            throw new Error("Server returned invalid JSON");
+            data = JSON.parse(text);
+        } catch (e) {
+            throw new Error("Invalid JSON: " + text);
         }
+
+        if (data.status === "success") {
+            responseMsg.innerHTML = `<div class="alert alert-success">${data.message}</div>`;
+
+            form.reset(); // ✅ reset here
+
+            // ✅ also uncheck checkbox manually
+            const checkbox = document.getElementById("robot");
+            if (checkbox) checkbox.checked = false;
+
+        } else {
+            responseMsg.innerHTML = `<div class="alert alert-danger">${data.message}</div>`;
+        }
+
+        btn.disabled = false;
+        btn.innerHTML = "Send Message";
     })
+    // .then(async response => {
+
+    //     // check raw response first
+    //     const text = await response.text();
+
+    //     try {
+    //         return JSON.parse(text);
+    //     } catch (err) {
+    //         console.error("Invalid JSON:", text);
+    //         throw new Error("Server returned invalid JSON");
+    //     }
+    // })
     .then(data => {
 
         responseMsg.innerText = data.message;
