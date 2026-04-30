@@ -1433,58 +1433,57 @@ include_once('elements/header.php');
 </section>
 
 <script>
-        const form = document.getElementById("hrForm");
-        const btn = document.querySelector(".btn-submit");
+    const form = document.getElementById("hrForm");
+    const btn = document.querySelector(".btn-submit");
 
-        const msgBox = document.createElement("div");
-        form.prepend(msgBox);
+    const msgBox = document.createElement("div");
+    form.prepend(msgBox);
 
-        form.addEventListener("submit", function(e) {
-            e.preventDefault();
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
 
-            btn.disabled = true;
-            btn.innerHTML = "Sending...";
+        btn.disabled = true;
+        btn.innerHTML = "Sending...";
 
-            const formData = new FormData(form);
+        const formData = new FormData(form);
 
-            fetch("hr-mail.php", {
-                method: "POST",
-                body: formData
-            })
-            .then(res => res.text())
-            .then(text => {
-                let data;
+        fetch("hr-mail.php", {
+            method: "POST",
+            body: formData
+        })
+        .then(res => res.text())
+        .then(text => {
+            let data;
 
-                try {
-                    data = JSON.parse(text);
-                } catch (e) {
-                    throw new Error("Invalid JSON: " + text);
-                }
+            try {
+                data = JSON.parse(text);
+            } catch (e) {
+                throw new Error("Invalid JSON: " + text);
+            }
 
-                if (data.status === "success") {
-                    msgBox.innerHTML = `<div class="alert alert-success">${data.message}</div>`;
+            if (data.status === "success") {
+                msgBox.innerHTML = `<div class="alert alert-success">${data.message}</div>`;
 
-                    form.reset(); // ✅ reset here
+                form.reset(); // ✅ reset here
 
-                    // ✅ also uncheck checkbox manually
-                    const checkbox = document.getElementById("robot");
-                    if (checkbox) checkbox.checked = false;
+                // ✅ also uncheck checkbox manually
+                const checkbox = document.getElementById("robot");
+                if (checkbox) checkbox.checked = false;
 
-                } else {
-                    msgBox.innerHTML = `<div class="alert alert-danger">${data.message}</div>`;
-                }
+            } else {
+                msgBox.innerHTML = `<div class="alert alert-danger">${data.message}</div>`;
+            }
 
-                btn.disabled = false;
-                btn.innerHTML = "Send Message";
-            })
-            .catch(err => {
-                msgBox.innerHTML = `<div class="alert alert-danger">${err.message}</div>`;
-                btn.disabled = false;
-                btn.innerHTML = "Send Message";
-            });
+            btn.disabled = false;
+            btn.innerHTML = "Send Message";
+        })
+        .catch(err => {
+            msgBox.innerHTML = `<div class="alert alert-danger">${err.message}</div>`;
+            btn.disabled = false;
+            btn.innerHTML = "Send Message";
         });
-</script>
-<script>
+    });
+    
     function toggleJob(id) {
         const el = document.getElementById(id);
         const bsCollapse = bootstrap.Collapse.getOrCreateInstance(el, {

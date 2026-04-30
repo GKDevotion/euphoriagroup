@@ -427,18 +427,18 @@ include_once('elements/header.php');
                             <!-- Full Name & Email -->
                             <div class="col-md-6">
                                 <label class="form-label">Full Name*</label>
-                                <input type="text" name="full_name" class="form-control" placeholder="Jason Russell" />
+                                <input type="text" name="full_name" class="form-control" placeholder="Jason Russell">
                             </div>
 
                             <div class="col-md-6">
                                 <label class="form-label">Email Address*</label>
-                                <input type="email" name="email" class="form-control" placeholder="Email Address*" />
+                                <input type="email" name="email" class="form-control" placeholder="Email Address">
                             </div>
 
                             <!-- Phone & Company -->
                             <div class="col-md-6">
                                 <label class="form-label">Phone Number*</label>
-                                <input type="tel" name="phone" class="form-control" placeholder="Phone Number*" />
+                                <input type="tel" name="phone" class="form-control" placeholder="Phone Number">
                             </div>
 
                             <div class="col-md-6">
@@ -450,7 +450,7 @@ include_once('elements/header.php');
                             <div class="col-12">
                                 <label class="form-label">Service Interested In*</label>
                                 <select name="service" class="form-select">
-                                    <option value="" disabled selected>Service Interested In*</option>
+                                    <option disabled>Service Interested In</option>
                                     <option>Web Development</option>
                                     <option>Mobile App Development</option>
                                     <option>UI/UX Design</option>
@@ -468,7 +468,7 @@ include_once('elements/header.php');
                             <!-- reCAPTCHA -->
                             <div class="col-12">
                                 <div class="recaptcha-box">
-                                    <input type="checkbox" id="robot" />
+                                    <input type="checkbox" id="robot">
                                     <label for="robot" class="rc-label">I'm not a robot</label>
                                     <div class="recaptcha-logo">
                                         <i class="bi bi-shield-check logo-icon"></i>
@@ -476,7 +476,7 @@ include_once('elements/header.php');
                                     </div>
                                 </div>
                             </div>
-
+ 
                             <!-- Submit -->
                             <div class="col-12">
                                 <button type="submit" class="btn-submit">Submit</button>
@@ -484,7 +484,6 @@ include_once('elements/header.php');
 
                         </div>
                     </form>
-                        <div id="responseMsg"></div>
                 </div>
             </div>
 
@@ -507,105 +506,65 @@ include_once('elements/header.php');
         display: block;
     }
 </style>
+
 <script>
-    // document.getElementById("contactForm").addEventListener("submit", function(e) {
-    //     e.preventDefault();
+    document.addEventListener("DOMContentLoaded", function () {
 
-    //     let form = this;
-    //     let formData = new FormData(form);
-    //     let responseMsg = document.getElementById("responseMsg");
+        const form = document.getElementById("contactForm");
+        const btn = document.querySelector(".btn-submit");
 
-    //     // Show all form values
-    //     for (let pair of formData.entries()) {
-    //         console.log(pair[0] + ': ' + pair[1]);
-    //     }
+        const msgBox = document.createElement("div");
+        form.prepend(msgBox);
 
-    //     fetch("contact-mail.php", {
-    //         method: "POST",
-    //         body: formData
-    //     })
-    //     .then(response => response.json())
-    //     .then(data => {
-    //         responseMsg.innerText = data.message;
-    //         responseMsg.style.color =
-    //             data.status === "success" ? "green" : "red";
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
 
-    //         if (data.status === "success") {
-    //             form.reset();
-    //         }
-    //     })
-    //     .catch(error => {
-    //         responseMsg.innerText = "Something went wrong!";
-    //         responseMsg.style.color = "red";
-    //         console.error(error);
-    //     });
-    // }); 
-document.getElementById("contactForm").addEventListener("submit", function(e) {
+            btn.disabled = true;
+            btn.innerHTML = "Sending...";
 
-    e.preventDefault();
+            const formData = new FormData(form);
 
-    let form = this;
-    let formData = new FormData(form);
-    let responseMsg = document.getElementById("responseMsg");
+            fetch("contact-mail.php", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json()) // ✅ proper JSON
+            .then(data => {
 
-    fetch("contact-mail.php", {
-        method: "POST",
-        body: formData
-    })
-    .then(text => {
-        let data;
+                if (data.status === "success") {
 
-        try {
-            data = JSON.parse(text);
-        } catch (e) {
-            throw new Error("Invalid JSON: " + text);
-        }
+                    msgBox.innerHTML = `
+                        <div class="alert alert-success">${data.message}</div>
+                    `;
 
-        if (data.status === "success") {
-            responseMsg.innerHTML = `<div class="alert alert-success">${data.message}</div>`;
+                    form.reset();
 
-            form.reset(); // ✅ reset here
+                    const checkbox = document.getElementById("robot");
+                    if (checkbox) checkbox.checked = false;
 
-            // ✅ also uncheck checkbox manually
-            const checkbox = document.getElementById("robot");
-            if (checkbox) checkbox.checked = false;
+                } else {
+                    msgBox.innerHTML = `
+                        <div class="alert alert-danger">${data.message}</div>
+                    `;
+                }
 
-        } else {
-            responseMsg.innerHTML = `<div class="alert alert-danger">${data.message}</div>`;
-        }
+                btn.disabled = false;
+                btn.innerHTML = "Send Message";
+            })
+            .catch(error => {
 
-        btn.disabled = false;
-        btn.innerHTML = "Send Message";
-    })
-    // .then(async response => {
+                msgBox.innerHTML = `
+                    <div class="alert alert-danger">
+                        Something went wrong! Please try again.
+                    </div>
+                `;
 
-    //     // check raw response first
-    //     const text = await response.text();
-
-    //     try {
-    //         return JSON.parse(text);
-    //     } catch (err) {
-    //         console.error("Invalid JSON:", text);
-    //         throw new Error("Server returned invalid JSON");
-    //     }
-    // })
-    .then(data => {
-
-        responseMsg.innerText = data.message;
-
-        if(data.status === "success"){
-            form.reset();
-        }
-
-    })
-    .catch(error => {
-
-        console.error(error);
-        responseMsg.innerText = "Something went wrong!";
+                btn.disabled = false;
+                btn.innerHTML = "Send Message";
+            });
+        });
 
     });
-
-}); 
 </script>
 <?php
 include_once('elements/faqs.php');
