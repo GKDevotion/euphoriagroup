@@ -484,7 +484,7 @@ include_once('elements/header.php');
 
                         </div>
                     </form>
-                        <div id="msgBox"></div>
+                        <div id="responseMsg"></div>
                 </div>
             </div>
 
@@ -508,107 +508,31 @@ include_once('elements/header.php');
     }
 </style>
 <script>
-// document.getElementById("contactForm").addEventListener("submit", function(e) {
-//     e.preventDefault();
-
-//     let form = this;
-//     let formData = new FormData(form);
-//     let responseMsg = document.getElementById("responseMsg");
-
-//     fetch("contact-mail.php", {
-//         method: "POST",
-//         body: formData
-//     })
-//     .then(response => response.json())
-//     .then(data => {
-//         responseMsg.innerText = data.message;
-//         responseMsg.style.color = data.status === "success" ? "green" : "red";
-
-//         if (data.status === "success") {
-//             form.reset(); // clear form
-//         }
-//     })
-//     .catch(error => {
-//         responseMsg.innerText = "Something went wrong!";
-//         responseMsg.style.color = "red";
-//     });
-// }); 
- 
-    const form = document.getElementById("contactForm");
-    const btn = document.querySelector(".btn-submit");
-
-    // Create message box
-    const msgBox = document.createElement("div");
-    form.prepend(msgBox);
-
-    form.addEventListener("submit", function(e) {
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
         e.preventDefault();
 
-        // Disable button while sending
-        btn.disabled = true;
-        btn.innerHTML = "Sending...";
-
-        const formData = new FormData(form);
+        let form = this;
+        let formData = new FormData(form);
+        let responseMsg = document.getElementById("responseMsg");
 
         fetch("contact-mail.php", {
             method: "POST",
             body: formData
         })
-        .then(res => res.text())
-        .then(text => {
-            let data;
+        .then(response => response.json())
+        .then(data => {
+            responseMsg.innerText = data.message;
+            responseMsg.style.color = data.status === "success" ? "green" : "red";
 
-            try {
-                data = JSON.parse(text);
-            } catch (e) {
-                throw new Error("Invalid JSON: " + text);
-            }
-
-            // Success Message
             if (data.status === "success") {
-
-                msgBox.innerHTML = `
-                    <div class="alert alert-success">
-                        ${data.message}
-                    </div>
-                `;
-
-                // Reset form
-                form.reset();
-
-                // Optional checkbox reset
-                const checkbox = document.getElementById("robot");
-                if (checkbox) {
-                    checkbox.checked = false;
-                }
-
-            } else {
-
-                // Error Message
-                msgBox.innerHTML = `
-                    <div class="alert alert-danger">
-                        ${data.message}
-                    </div>
-                `;
+                form.reset(); // clear form
             }
-
-            // Enable button again
-            btn.disabled = false;
-            btn.innerHTML = "Send Message";
         })
-        .catch(err => {
-
-            msgBox.innerHTML = `
-                <div class="alert alert-danger">
-                    ${err.message}
-                </div>
-            `;
-
-            btn.disabled = false;
-            btn.innerHTML = "Send Message";
+        .catch(error => {
+            responseMsg.innerText = "Something went wrong!";
+            responseMsg.style.color = "red";
         });
-    });
- 
+    }); 
 </script>
 <?php
 include_once('elements/faqs.php');
