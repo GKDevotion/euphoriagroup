@@ -86,41 +86,29 @@ include_once ('elements/header.php');
     </div>
 </section>
 
-
 <style>
-
-        .visa-tab-box{ 
-            border-radius:25px;
-            padding:60px 40px; 
-            position:relative;
-            overflow:hidden;
-        }
-
+    .visa-tab-box{ 
+        border-radius:25px;
+        padding:60px 40px; 
+        position:relative;
+        overflow:hidden;
+    }
         /* BACK TEXT */
-        .visa-tab-box::before{
-            content:"Visa Guide";
-            position:absolute;
-            font-family: "Anek Kannada", "Poppins";
-            top: 14px;
-            left:50%;
-            transform:translateX(-50%);
-            font-size:116px;
-            font-weight:600;
-            color: var(--red-blur);
-            z-index:0;
-            white-space:nowrap;
-        }
-
-        /* TITLE */
-        .visa-tab-title{
-            position:relative;
-            z-index:1;
-            font-weight:600;
-            color:#2d3e70;
-        } 
-
+    .visa-tab-box::before{
+        content:"Visa Guide";
+        position:absolute;
+        font-family: "Anek Kannada", "Poppins";
+        top: 14px;
+        left:50%;
+        transform:translateX(-50%);
+        font-size:116px;
+        font-weight:600;
+        color: var(--red-blur);
+        z-index:0;
+        white-space:nowrap;
+    } 
         /* ── COUNTRY SIDEBAR ── */
-        .sidebar-title {
+    .sidebar-title {
         font-size: 18px;
         font-weight: 600;
         letter-spacing: 0%;
@@ -129,16 +117,16 @@ include_once ('elements/header.php');
         text-transform: uppercase;
         text-align: center;
         padding: .75rem 0 .5rem;
-        }
-        .country-list {
+    }
+    .country-list {
         list-style: none;
         padding: 0;
         margin: 0;
         display: flex;
         flex-direction: column;
         gap: 8px; /* ← adds spacing between items like image 1 */
-        }
-        .country-list li a {
+    }
+    .country-list li a {
         display: flex;
         align-items: center;
         gap: 12px;
@@ -151,14 +139,14 @@ include_once ('elements/header.php');
         font-weight: 400;
         font-size: 16px;
         transition: background .18s;
-        }
+    }
 
-        .country-list li a:hover {
+    .country-list li a:hover {
         background: #25356F; 
         color: #fff;
         border: 1px solid #F8F9FA;
-        }
-        .country-list li.active a {
+    }
+    .country-list li.active a {
         background: #25356F;
         font-family: "Poppins";
         border-radius: 5px;
@@ -166,159 +154,186 @@ include_once ('elements/header.php');
         color: #fff;
         border: 1px solid #25356F;
         position: relative;
-        }
+    }
 
         /* ── Arrow icon on active item (↗ like image 1) ── */
-        .country-list li.active a::after {
+    .country-list li.active a::after {
         content: url('assets/img/icon/explore-icon.png');
         margin-left: auto; 
         font-size: 18px;
         color: #fff;
         line-height: 1;
-        }
+    }
 
-        .flag-img { width: 26px; height: 18px; object-fit: cover; border-radius: 2px; }
+    .flag-img { 
+        width: 26px; 
+        height: 18px; 
+        object-fit: cover; 
+        border-radius: 2px; 
+    }
 
         /* ── Wrapper card shadow (like image 1) ── */
-        .country-sidebar {
+    .country-sidebar {
         background: #fff;
         border-radius: 12px;
         padding: 0.5rem 1rem 1rem;
         box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10); /* ← card shadow */
         width: fit-content;
-        }
-        .visa-nav-tab{
-                background: #F8F9FA;
-            height: 515px;
-            border-radius: 15px;
-        }
-        .country-title {
+    }
+    .visa-nav-tab{
+        background: #F8F9FA;
+        height: 515px;
+        border-radius: 15px;
+    }
+    .country-title {
         font-family: "Anek Kannada", "Poppins";
         font-size: 55px;
         font-weight: 500;
         color: #2d3e70;
         margin-bottom: .2rem;
-        }
-        .dot-red {
-        display: inline-block;
-        width: 10px; height: 10px;
-        background: var(--red);
+    }
+    /* CSS */
+    .hr-bullet {
+        position: relative;
+        border: none;
+        border-top: 1px solid #CC2831;
+        margin: 1rem 0 2rem 0;
+        overflow: visible;
+        opacity: 80%;
+    }
+    .hr-bullet::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 15px;
+        height: 15px; 
+        background-color: #CC2831; /* match your theme */
         border-radius: 50%;
-        margin-left: .5rem;
-        vertical-align: middle;
-        }
-        .content-panel { 
+    } 
+    .content-panel { 
         border-radius: 4px;
         background: #fff;
         max-width: 900px;
         margin: 20px auto;
-        }
+    } 
 
-        .country-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.2rem;
-            color: #1a2550;
-            margin-bottom: .2rem;
-        }
-
-        .dot-red {
-            display: inline-block;
-            width: 10px; height: 10px;
-            background: #e63946;
-            border-radius: 50%;
-            margin-left: .5rem;
-            vertical-align: middle;
-        }
-
-        .country-desc {
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 32px;
-            color: #444;
-            font-family: "Poppins";
-            margin-bottom: 1rem;
-        }
+    .country-desc {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        color: #444;
+        font-family: "Poppins";
+        margin-bottom: 1rem;
+    }
 
         /* ── KEY CHANGE: checklist + sketch side by side ── */
-        .checklist-sketch-row {
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-        }
+    .checklist-sketch-row {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
 
-        .checklist-col {
-            flex: 1 1 55%;
-        }
+    .checklist-col {
+        flex: 1 1 55%;
+    }
 
-        .sketch-col {
-            flex: 0 0 42%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+    .sketch-col {
+        flex: 0 0 42%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-        /* ── CHECKLIST ── */
-        .checklist { list-style: none; padding: 0; margin: 0; }
-        .checklist li {
-            display: flex;
-            gap: .5rem;
-            font-size: 16px;
-            font-weight: 500;
-            font-family: "Poppins";
-            color: #333;
-            line-height: 1.5;
-            margin-bottom: .55rem;
-        }
-        .checklist li::before {
-            content: url('assets/img/icon/Checke.png');
-            color: #c0392b;
-            font-weight: 700;
-            flex-shrink: 0;
-            margin-top: 1px;
-        }
+    /* ── CHECKLIST ── */
+    .checklist { 
+        list-style: none; 
+        padding: 0; 
+        margin: 0; 
+    }
+    .checklist li {
+        display: flex;
+        gap: .5rem;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: "Poppins";
+        color: #333;
+        line-height: 1.5;
+        margin-bottom: .55rem;     
+    }
+    .checklist li::before {
+        content: url('assets/img/icon/Checke.png');
+        color: #c0392b;
+        font-weight: 700;
+        flex-shrink: 0;
+        margin-top: 1px;
+    }
 
         /* ── CITY SKETCH ── */
-        .city-sketch {
-            width: 100%;
-            max-width: 340px;
-            opacity: .6;
-            filter: grayscale(1);
+    .city-sketch {
+        width: 100%;
+        max-width: 340px;
+        opacity: .6;
+        filter: grayscale(1);
+    }
+
+    /* ── SECTION ── */
+    .section-title {
+        font-family: "Anek Kannada", "Poppins";
+        font-size: 30px;
+        color: #1a2550;
+        font-weight: 500;
+        margin: 1.5rem 0 .6rem;
+        border-bottom: 1px solid #e2e5ef;
+        padding-bottom: .4rem;
+    }
+    .section-body {
+        font-size: 16px;
+        line-height: 1.75;
+        font-weight: 400;
+        font-family: "Poppins";
+        color: #444;
+        letter-spacing: 0%;
+        margin-bottom: 1rem;
+    }
+
+    @media (max-width: 600px) {
+        .checklist-sketch-row { flex-direction: column; }
+        .sketch-col { order: -1; }
+    }
+    @media (max-width: 767px) { 
+        .visa-tab-box {
+            padding: 40px 20px;
+            border-radius: 15px; /* Softer corners for mobile */
         }
 
-        /* ── SECTION ── */
-        .section-title {
+        /* Adjust watermark positioning for mobile */
+        .visa-tab-box::before {
+            font-size: 85px;
+            top: 10px;
+        }
+
+        .about-visa-title.h1 {
+            font-size: 1.1rem; /* Smaller heading for mobile */
+            margin-bottom: 30px;
             font-family: "Anek Kannada", "Poppins";
-            font-size: 30px;
-            color: #1a2550;
-            font-weight: 500;
-            margin: 1.5rem 0 .6rem;
-            border-bottom: 1px solid #e2e5ef;
-            padding-bottom: .4rem;
-        }
-        .section-body {
-            font-size: 16px;
-            line-height: 1.75;
-            font-weight: 400;
-            font-family: "Poppins";
-            color: #444;
-            letter-spacing: 0%;
-            margin-bottom: 1rem;
         }
 
-        @media (max-width: 600px) {
-            .checklist-sketch-row { flex-direction: column; }
-            .sketch-col { order: -1; }
-        }
+    }
 </style>
 
 <section>
+
      <div class="container">
          
-         <div class="container-fluid visa-tab-box px-3 px-md-4 pb-5">
-             <h2 class="text-center about-visa-title">
-                  Explore Country Visa Requirements
-              </h2>
-             <div class="row g-3">
+        <div class="container-fluid visa-tab-box px-3 px-md-4 pb-5">
+
+            <h2 class="text-center about-visa-title">
+                Explore Country Visa Requirements
+            </h2>
+
+            <div class="row g-3">
                
                 <!-- SIDEBAR -->
                 <div class="col-12 col-md-3 visa-nav-tab">
@@ -373,8 +388,8 @@ include_once ('elements/header.php');
                                         </a>
                                     </li>
                                 </ul>
-                        </div>
                     </div>
+                </div>
 
                 <!-- MAIN CONTENT -->
                 <div class="col-12 col-md-9"> 
@@ -382,7 +397,9 @@ include_once ('elements/header.php');
 
                             <!-- Title -->
                             <div style="margin-bottom:1rem;">
-                                <h2 class="country-title">Dubai <span class="dot-red"></span></h2>
+                                <h2 class="country-title">Dubai</h2>
+                                <!-- HTML -->
+                                <hr class="hr-bullet">
                             </div>
 
                             <!-- Description -->
@@ -446,16 +463,49 @@ include_once ('elements/header.php');
 
                     </div>
                 </div>
-             </div>
+
+            </div>
 
         </div>
 
      </div>
+
 </section>
+ 
+<!-- ══════════════ JS ══════════════ -->
+<script>
+  (function () {
+    const list    = document.getElementById('countryList');
+    const items   = list.querySelectorAll('li[data-target]');
+    const panels  = document.querySelectorAll('.country-panel');
+
+    function activate(target) {
+      // 1. Update sidebar active state
+      items.forEach(function(li) {
+        li.classList.toggle('active', li.dataset.target === target);
+      });
+
+      // 2. Show the matching panel, hide others
+      panels.forEach(function(panel) {
+        if (panel.id === 'panel-' + target) {
+          panel.classList.add('active');
+        } else {
+          panel.classList.remove('active');
+        }
+      });
+    }
+
+    // 3. Attach click events to each list item
+    items.forEach(function(li) {
+      li.querySelector('a').addEventListener('click', function() {
+        activate(li.dataset.target);
+      });
+    });
+  })();
+</script>
 
 
  
-
 <!-- Visa Submit Form -->
 <style>
     /* SECTION */
@@ -563,7 +613,7 @@ include_once ('elements/header.php');
         position: relative;
         z-index: 1; 
         width: 100%;
-        }
+    }
 
         /* RESPONSIVE */
         /* --- Visa Form Mobile Styles --- */
