@@ -508,38 +508,79 @@ include_once('elements/header.php');
     }
 </style>
 <script>
+    // document.getElementById("contactForm").addEventListener("submit", function(e) {
+    //     e.preventDefault();
+
+    //     let form = this;
+    //     let formData = new FormData(form);
+    //     let responseMsg = document.getElementById("responseMsg");
+
+    //     // Show all form values
+    //     for (let pair of formData.entries()) {
+    //         console.log(pair[0] + ': ' + pair[1]);
+    //     }
+
+    //     fetch("contact-mail.php", {
+    //         method: "POST",
+    //         body: formData
+    //     })
+    //     .then(response => response.json())
+    //     .then(data => {
+    //         responseMsg.innerText = data.message;
+    //         responseMsg.style.color =
+    //             data.status === "success" ? "green" : "red";
+
+    //         if (data.status === "success") {
+    //             form.reset();
+    //         }
+    //     })
+    //     .catch(error => {
+    //         responseMsg.innerText = "Something went wrong!";
+    //         responseMsg.style.color = "red";
+    //         console.error(error);
+    //     });
+    // }); 
 document.getElementById("contactForm").addEventListener("submit", function(e) {
+
     e.preventDefault();
 
     let form = this;
     let formData = new FormData(form);
     let responseMsg = document.getElementById("responseMsg");
 
-    // Show all form values
-    for (let pair of formData.entries()) {
-        console.log(pair[0] + ': ' + pair[1]);
-    }
-
     fetch("contact-mail.php", {
         method: "POST",
         body: formData
     })
-    .then(response => response.json())
-    .then(data => {
-        responseMsg.innerText = data.message;
-        responseMsg.style.color =
-            data.status === "success" ? "green" : "red";
+    .then(async response => {
 
-        if (data.status === "success") {
-            form.reset();
+        // check raw response first
+        const text = await response.text();
+
+        try {
+            return JSON.parse(text);
+        } catch (err) {
+            console.error("Invalid JSON:", text);
+            throw new Error("Server returned invalid JSON");
         }
     })
+    .then(data => {
+
+        responseMsg.innerText = data.message;
+
+        if(data.status === "success"){
+            form.reset();
+        }
+
+    })
     .catch(error => {
-        responseMsg.innerText = "Something went wrong!";
-        responseMsg.style.color = "red";
+
         console.error(error);
+        responseMsg.innerText = "Something went wrong!";
+
     });
-});
+
+}); 
 </script>
 <?php
 include_once('elements/faqs.php');
