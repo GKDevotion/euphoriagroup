@@ -508,31 +508,38 @@ include_once('elements/header.php');
     }
 </style>
 <script>
-    document.getElementById("contactForm").addEventListener("submit", function(e) {
-        e.preventDefault();
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
 
-        let form = this;
-        let formData = new FormData(form);
-        let responseMsg = document.getElementById("responseMsg");
+    let form = this;
+    let formData = new FormData(form);
+    let responseMsg = document.getElementById("responseMsg");
 
-        fetch("contact-mail.php", {
-            method: "POST",
-            body: formData
-        })
-        .then(response => response.json())
-        .then(data => {
-            responseMsg.innerText = data.message;
-            responseMsg.style.color = data.status === "success" ? "green" : "red";
+    // Show all form values
+    for (let pair of formData.entries()) {
+        console.log(pair[0] + ': ' + pair[1]);
+    }
 
-            if (data.status === "success") {
-                form.reset(); // clear form
-            }
-        })
-        .catch(error => {
-            responseMsg.innerText = "Something went wrong!";
-            responseMsg.style.color = "red";
-        });
-    }); 
+    fetch("contact-mail.php", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        responseMsg.innerText = data.message;
+        responseMsg.style.color =
+            data.status === "success" ? "green" : "red";
+
+        if (data.status === "success") {
+            form.reset();
+        }
+    })
+    .catch(error => {
+        responseMsg.innerText = "Something went wrong!";
+        responseMsg.style.color = "red";
+        console.error(error);
+    });
+});
 </script>
 <?php
 include_once('elements/faqs.php');
