@@ -60,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     // ─── Prepare Email ───────────────────────────────
-    $to      = "hr@theeuphoriagroup.com";
+    $to      = "gk@devotiontech.io";//hr@theeuphoriagroup.com
     $subject = "New Job Application From Euphoria Website";
 
     $boundary = md5(time());
