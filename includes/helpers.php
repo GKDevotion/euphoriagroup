@@ -33,9 +33,9 @@ function getBaseUrl() {
 
 function gmailAccess(){
     return [
-        'username' => 'gk@devotiontech.io',
-        'password' => 'fkpj uhwr xslz xdlf',
-        'secure' => 'tls',
-        'port' => '587'
+        'username' => 'backoffice@theeuphoriagroup.com',
+        'password' => 'wdyj jjji wtdk hnef',
+        'secure' => 'tls',//ssl
+        'port' => '587'//465
     ]
 }

@@ -67,8 +67,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->SMTPSecure = $gmailAccess['secure'];//'tls';
             $mail->Port = $gmailAccess['port'];//587;
 
-            $mail->setFrom('accounts@pvltourism.com', 'Contact Form Submission: '.$service.' ('.$name.')');
-            $mail->addAddress('accounts@pvltourism.com');
+            $mail->setFrom('gk@devotiontech.io', 'Contact Form Submission: '.$service.' ('.$name.')');
+            $mail->addAddress('gk@devotiontech.io');
 
             $mail->addReplyTo($email, $name);
 

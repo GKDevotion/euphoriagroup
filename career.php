@@ -107,8 +107,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->SMTPSecure = $gmailAccess['secure'];//'tls';
             $mail->Port = $gmailAccess['port'];//587;
 
-            $mail->setFrom('accounts@pvltourism.com', 'New Career Form Submission: '.$service.' ('.$first_name.' '.$last_name.')');
-            $mail->addAddress('accounts@pvltourism.com');
+            $mail->setFrom('gk@devotiontech.io', 'New Career Form Submission: '.$service.' ('.$first_name.' '.$last_name.')');
+            $mail->addAddress('gk@devotiontech.io');
 
             // Attach uploaded file
             $mail->addAttachment($upload_path);
