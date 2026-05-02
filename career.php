@@ -1,7 +1,151 @@
 <?php
 include_once('elements/header.php');
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+$success = 0;
+$msg = '';
+
+// Helper function
+function clean_input($data='') {
+    return htmlspecialchars(strip_tags(trim($data)));
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    require_once 'PHPMailer/src/Exception.php';
+    require_once 'PHPMailer/src/PHPMailer.php';
+    require_once 'PHPMailer/src/SMTP.php';
+
+    $errors = [];
+
+    // ✅ Sanitize Inputs
+    $first_name = clean_input($_POST['first_name'] ?? '');
+    $last_name  = clean_input($_POST['last_name'] ?? '');
+    $email      = clean_input($_POST['email'] ?? '');
+    $phone      = clean_input($_POST['phone'] ?? '');
+    $service    = clean_input($_POST['service'] ?? '');
+    $message    = clean_input($_POST['message'] ?? '');
+
+    // ✅ Validation
+    if (empty($first_name)) {
+        $errors[] = "First name is required";
+    }
+
+    if (empty($last_name)) {
+        $errors[] = "Last name is required";
+    }
+
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $errors[] = "Valid email is required";
+    }
+
+    if (!preg_match('/^[0-9]{10}$/', $phone)) {
+        $errors[] = "Phone must be 10 digits";
+    }
+
+    if (empty($service)) {
+        $errors[] = "Area of expertise is required";
+    }
+
+    if (empty($message)) {
+        $errors[] = "Message is required";
+    }
+
+    // ✅ File Validation
+    if (!isset($_FILES['resume']) || $_FILES['resume']['error'] != 0) {
+        $errors[] = "Resume is required";
+    } else {
+        $allowed_types = ['pdf', 'doc', 'docx'];
+        $file_name = $_FILES['resume']['name'];
+        $file_tmp  = $_FILES['resume']['tmp_name'];
+        $file_size = $_FILES['resume']['size'];
+
+        $file_ext = strtolower(pathinfo($file_name, PATHINFO_EXTENSION));
+
+        if (!in_array($file_ext, $allowed_types)) {
+            $errors[] = "Only PDF, DOC, DOCX allowed";
+        }
+
+        if ($file_size > 2 * 1024 * 1024) {
+            $errors[] = "File size must be less than 2MB";
+        }
+    }
+
+    // ❌ If errors → stop
+    if (!empty($errors)) {
+        $msg .= "<h3>Errors:</h3><ul>";
+        foreach ($errors as $err) {
+            $msg .= "<li>$err</li>";
+        }
+    } else {
+
+        // ✅ Upload file (optional but recommended)
+        $upload_dir = "uploads/";
+        if (!is_dir($upload_dir)) {
+            mkdir($upload_dir, 0777, true);
+        }
+
+        $new_file_name = time() . "_" . basename($file_name);
+        $upload_path = $upload_dir . $new_file_name;
+
+        move_uploaded_file($file_tmp, $upload_path);
+
+        // ✅ Send Email
+        $mail = new PHPMailer(true);
+
+        try {
+
+            $gmailAccess = gmailAccess();
+            
+            $mail->isSMTP();
+            $mail->Host       = 'smtp.gmail.com';
+            $mail->SMTPAuth   = true;
+            $mail->Username   = $gmailAccess['username'];//'gk@devotiontech.io';
+            $mail->Password   = $gmailAccess['password'];//'fkpj uhwr xslz xdlf';
+            $mail->SMTPSecure = $gmailAccess['secure'];//'tls';
+            $mail->Port = $gmailAccess['port'];//587;
+
+            $mail->setFrom('accounts@pvltourism.com', 'New Career Form Submission: '.$service.' ('.$first_name.' '.$last_name.')');
+            $mail->addAddress('accounts@pvltourism.com');
+
+            // Attach uploaded file
+            $mail->addAttachment($upload_path);
+
+            $mail->isHTML(true);
+            $mail->Subject = "New Career Form Submission";
+
+            $mail->Body = "
+                <h2>Candidate Details</h2>
+                <p><b>Name:</b> $first_name $last_name</p>
+                <p><b>Email:</b> $email</p>
+                <p><b>Phone:</b> $phone</p>
+                <p><b>Expertise:</b> $service</p>
+                <p><b>Message:</b> $message</p>
+            ";
+
+            $mail->send();
+
+            $msg .= "Form submitted successfully";
+            $success = 1;
+
+        } catch (Exception $e) {
+            $msg .= "Mailer Error: " . $mail->ErrorInfo;
+        }
+    }
+
+    echo '
+    <script>
+        window.onload = function() {
+            document.getElementById("contact-us").scrollIntoView({
+                behavior: "smooth"
+            });
+        };
+    </script>
+    ';
+}
 ?>
- 
  
 <!-- HERO -->
  <section class="top-banner-background" style="background-image: url('assets/img/background/Career.png');">
@@ -1037,7 +1181,7 @@ include_once('elements/header.php');
         }
     }
 
-/* Extra small screens fix */
+    /* Extra small screens fix */
     @media (max-width: 480px) {
         .feature-card {
             /* On very small phones, icon on top looks cleaner */
@@ -1377,41 +1521,47 @@ include_once('elements/header.php');
                 <!-- Right Panel -->
                 <div class="col-md-8 right-panel">
 
-                    <form id="hrForm">
+                    <form id="hrForm" method="POST" action="#contact-us" enctype="multipart/form-data">
                         <div class="row g-3">
 
+                            <?php
+                            if( $success == 1 ){
+                                echo '<div class="alert alert-success">'.$msg.'</div>';
+                            } else if( $msg != '' ) {
+                                echo '<div class="alert alert-danger">'.$msg.'</div>';
+                            }
+                            ?>
                             <!-- First Name & Last Name -->
                             <div class="col-md-6">
-                                <input type="text" name="first_name" class="form-control" placeholder="First Name *" />
+                                <input type="text" name="first_name" class="form-control" placeholder="First Name *" required/>
                             </div>
                             <div class="col-md-6">
-                                <input type="text" name="last_name" class="form-control" placeholder="Last Name *" />
+                                <input type="text" name="last_name" class="form-control" placeholder="Last Name *" required/>
                             </div>
 
                             <!-- Email & Contact Number -->
                             <div class="col-md-6">
-                                <input type="email" name="email" class="form-control" placeholder="Your Email *" />
+                                <input type="email" name="email" class="form-control" placeholder="Your Email *" required/>
                             </div>
                             <div class="col-md-6">
-                                <input type="tel" name="phone" class="form-control" placeholder="Contact Number *" />
+                                <input type="tel" name="phone" class="form-control" placeholder="Contact Number *" required pattern="[0-9]{10}"/>
                             </div>
 
                             <!-- Area of Expertise -->
                             <div class="col-12">
-                                <input type="text" name="service" class="form-control" placeholder="Area of Expertise *" />
+                                <input type="text" name="service" class="form-control" placeholder="Area of Expertise *" required />
                             </div>
 
                             <!-- Message -->
                             <div class="col-12">
-                                <textarea class="form-control" name="message" placeholder="Your Message *"></textarea>
+                                <textarea class="form-control" name="message" placeholder="Your Message *" required></textarea>
                             </div>
 
                             <!-- Upload Resume -->
                             <div class="col-12">
                                 <div class="upload-area">
                                     <label for="file-input" class="btn-upload mb-0">Upload Resume / CV</label>
-                                    <input type="file" name="resume" id="file-input" accept=".pdf,.doc,.docx"
-                                        onchange="document.getElementById('file-name').textContent = this.files[0]?.name || 'No File Chosen'" />
+                                    <input type="file" name="resume" id="file-input" accept=".pdf,.doc,.docx" onchange="document.getElementById('file-name').textContent = this.files[0]?.name || 'No File Chosen'" required/>
                                     <span class="upload-label" id="file-name">No File Chosen</span>
                                     <span class="upload-hint">(Supported Formats: PDF, DOC, DOCX)</span>
                                 </div>
@@ -1432,66 +1582,6 @@ include_once('elements/header.php');
     </div>
 </section>
 
-<script>
-    const form = document.getElementById("hrForm");
-    const btn = document.querySelector(".btn-submit");
-
-    const msgBox = document.createElement("div");
-    form.prepend(msgBox);
-
-    form.addEventListener("submit", function(e) {
-        e.preventDefault();
-
-        btn.disabled = true;
-        btn.innerHTML = "Sending...";
-
-        const formData = new FormData(form);
-
-        fetch("hr-mail.php", {
-            method: "POST",
-            body: formData
-        })
-        .then(res => res.text())
-        .then(text => {
-            let data;
-
-            try {
-                data = JSON.parse(text);
-            } catch (e) {
-                throw new Error("Invalid JSON: " + text);
-            }
-
-            if (data.status === "success") {
-                msgBox.innerHTML = `<div class="alert alert-success">${data.message}</div>`;
-
-                form.reset(); // ✅ reset here
-
-                // ✅ also uncheck checkbox manually
-                const checkbox = document.getElementById("robot");
-                if (checkbox) checkbox.checked = false;
-
-            } else {
-                msgBox.innerHTML = `<div class="alert alert-danger">${data.message}</div>`;
-            }
-
-            btn.disabled = false;
-            btn.innerHTML = "Send Message";
-        })
-        .catch(err => {
-            msgBox.innerHTML = `<div class="alert alert-danger">${err.message}</div>`;
-            btn.disabled = false;
-            btn.innerHTML = "Send Message";
-        });
-    });
-    
-    function toggleJob(id) {
-        const el = document.getElementById(id);
-        const bsCollapse = bootstrap.Collapse.getOrCreateInstance(el, {
-            toggle: false
-        });
-        bsCollapse.toggle();
-    }
-</script>
 <?php
 include_once('elements/faqs.php');
 include_once('elements/footer.php');

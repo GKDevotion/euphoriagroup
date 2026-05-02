@@ -1,5 +1,111 @@
 <?php
 include_once('elements/header.php');
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+$success = 0;
+$msg = '';
+
+function clean($data='') {
+    return htmlspecialchars(strip_tags(trim($data)));
+}
+    
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        
+    require 'PHPMailer/src/Exception.php';
+    require 'PHPMailer/src/PHPMailer.php';
+    require 'PHPMailer/src/SMTP.php';
+
+    $errors = [];
+
+    $name    = clean($_POST['full_name'] ?? '');
+    $email   = clean($_POST['email'] ?? '');
+    $phone   = clean($_POST['phone'] ?? '');
+    $company = clean($_POST['company'] ?? '');
+    $service = clean($_POST['service'] ?? '');
+    $message = clean($_POST['message'] ?? '');
+
+    // ✅ Validation
+    if (empty($name)) $errors[] = "Full name required";
+
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL))
+        $errors[] = "Valid email required";
+
+    if (!preg_match('/^[0-9]{10}$/', $phone))
+        $errors[] = "Phone must be 10 digits";
+
+    if (empty($service))
+        $errors[] = "Select a service";
+
+    if (empty($message))
+        $errors[] = "Message required";
+
+    // if (!isset($_POST['robot']))
+    //     $errors[] = "Please confirm you're not a robot";
+
+    // ❌ If errors → redirect back
+    if (!empty($errors)) {
+        $msg .= "<h3>Errors:</h3><ul>";
+        foreach ($errors as $err) {
+            $msg .= "<li>$err</li>";
+        }
+    } else {
+
+        // ✅ Send Mail
+        $mail = new PHPMailer(true);
+
+        try {
+
+            $gmailAccess = gmailAccess();
+
+            $mail->isSMTP();
+            $mail->Host = 'smtp.gmail.com';
+            $mail->SMTPAuth = true;
+            $mail->Username   = $gmailAccess['username'];//'gk@devotiontech.io';
+            $mail->Password   = $gmailAccess['password'];//'fkpj uhwr xslz xdlf';
+            $mail->SMTPSecure = $gmailAccess['secure'];//'tls';
+            $mail->Port = $gmailAccess['port'];//587;
+
+            $mail->setFrom('accounts@pvltourism.com', 'Contact Form Submission: '.$service.' ('.$name.')');
+            $mail->addAddress('accounts@pvltourism.com');
+
+            $mail->addReplyTo($email, $name);
+
+            $mail->isHTML(true);
+            $mail->Subject = "New Contact Inquiry";
+
+            $mail->Body = "
+                <h3>Contact Details</h3>
+                <p><b>Name:</b> $name</p>
+                <p><b>Email:</b> $email</p>
+                <p><b>Phone:</b> $phone</p>
+                <p><b>Company:</b> $company</p>
+                <p><b>Service:</b> $service</p>
+                <p><b>Message:</b> $message</p>
+            ";
+
+            $mail->send();
+
+            $msg = "Message sent successfully!";
+            $success = 1;
+
+        } catch (Exception $e) {
+            $msg = "Mailer Error: " . $mail->ErrorInfo;
+        }
+    }
+
+    echo '
+    <script>
+        window.onload = function() {
+            document.getElementById("contactForm").scrollIntoView({
+                behavior: "smooth"
+            });
+        };
+    </script>
+    ';
+}
+
 ?>
  
 <!-- HERO -->
@@ -420,37 +526,44 @@ include_once('elements/header.php');
                 <div class="form-panel">
                     <div class="bg-text">Let's Talk</div>
                     <h2>Send us a Message</h2>
-                    <form id="contactForm">
+                    <form id="contactForm" method="post" action="">
 
                         <div class="row g-3">
 
+                            <?php
+                            if( $success == 1 ){
+                                echo '<div class="alert alert-success">'.$msg.'</div>';
+                            } else if( $msg != '' ) {
+                                echo '<div class="alert alert-danger">'.$msg.'</div>';
+                            }
+                            ?>
                             <!-- Full Name & Email -->
                             <div class="col-md-6">
                                 <label class="form-label">Full Name*</label>
-                                <input type="text" name="full_name" class="form-control" placeholder="Jason Russell">
+                                <input type="text" name="full_name" class="form-control" placeholder="Jason Russell" required>
                             </div>
 
                             <div class="col-md-6">
                                 <label class="form-label">Email Address*</label>
-                                <input type="email" name="email" class="form-control" placeholder="Email Address">
+                                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
                             </div>
 
                             <!-- Phone & Company -->
                             <div class="col-md-6">
                                 <label class="form-label">Phone Number*</label>
-                                <input type="tel" name="phone" class="form-control" placeholder="Phone Number">
+                                <input type="tel" name="phone" class="form-control" placeholder="Phone Number" required>
                             </div>
 
                             <div class="col-md-6">
                                 <label class="form-label">Company Name</label>
-                                <input type="text" name="company" class="form-control" placeholder="Company Name" />
+                                <input type="text" name="company" class="form-control" placeholder="Company Name" required>
                             </div>
 
                             <!-- Service Dropdown -->
                             <div class="col-12">
                                 <label class="form-label">Service Interested In*</label>
-                                <select name="service" class="form-select">
-                                    <option disabled>Service Interested In</option>
+                                <select name="service" class="form-select" required>
+                                    <option value="" selected disabled>Select Service</option>
                                     <option>Web Development</option>
                                     <option>Mobile App Development</option>
                                     <option>UI/UX Design</option>
@@ -462,13 +575,13 @@ include_once('elements/header.php');
                             <!-- Message -->
                             <div class="col-12">
                                 <label class="form-label">Message*</label>
-                                <textarea class="form-control" name="message" placeholder="Message*"></textarea>
+                                <textarea class="form-control" name="message" placeholder="Message*" required></textarea>
                             </div>
 
                             <!-- reCAPTCHA -->
                             <div class="col-12">
                                 <div class="recaptcha-box">
-                                    <input type="checkbox" id="robot">
+                                    <input type="checkbox" id="robot" required>
                                     <label for="robot" class="rc-label">I'm not a robot</label>
                                     <div class="recaptcha-logo">
                                         <i class="bi bi-shield-check logo-icon"></i>
@@ -507,65 +620,6 @@ include_once('elements/header.php');
     }
 </style>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-
-        const form = document.getElementById("contactForm");
-        const btn = document.querySelector(".btn-submit");
-
-        const msgBox = document.createElement("div");
-        form.prepend(msgBox);
-
-        form.addEventListener("submit", function (e) {
-            e.preventDefault();
-
-            btn.disabled = true;
-            btn.innerHTML = "Sending...";
-
-            const formData = new FormData(form);
-
-            fetch("contact-mail.php", {
-                method: "POST",
-                body: formData
-            })
-            .then(response => response.json()) // ✅ proper JSON
-            .then(data => {
-
-                if (data.status === "success") {
-
-                    msgBox.innerHTML = `
-                        <div class="alert alert-success">${data.message}</div>
-                    `;
-
-                    form.reset();
-
-                    const checkbox = document.getElementById("robot");
-                    if (checkbox) checkbox.checked = false;
-
-                } else {
-                    msgBox.innerHTML = `
-                        <div class="alert alert-danger">${data.message}</div>
-                    `;
-                }
-
-                btn.disabled = false;
-                btn.innerHTML = "Send Message";
-            })
-            .catch(error => {
-
-                msgBox.innerHTML = `
-                    <div class="alert alert-danger">
-                        Something went wrong! Please try again.
-                    </div>
-                `;
-
-                btn.disabled = false;
-                btn.innerHTML = "Send Message";
-            });
-        });
-
-    });
-</script>
 <?php
 include_once('elements/faqs.php');
 include_once('elements/footer.php');

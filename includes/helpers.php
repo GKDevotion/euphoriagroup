@@ -30,3 +30,12 @@ function getBaseUrl() {
 
     return $base_url;
 }
+
+function gmailAccess(){
+    return [
+        'username' => 'gk@devotiontech.io',
+        'password' => 'fkpj uhwr xslz xdlf',
+        'secure' => 'tls',
+        'port' => '587'
+    ]
+}
