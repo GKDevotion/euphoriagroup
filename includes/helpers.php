@@ -35,7 +35,7 @@ function gmailAccess(){
     return [
         'username' => 'backoffice@theeuphoriagroup.com',
         'password' => 'wdyj jjji wtdk hnef',
-        'secure' => 'tls',//ssl
-        'port' => '587'//465
+        'secure' => 'ssl',//ssl, tls
+        'port' => '465'//465, 587
     ];
 }
