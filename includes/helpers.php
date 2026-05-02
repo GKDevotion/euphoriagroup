@@ -33,11 +33,11 @@ function getBaseUrl() {
 
 function gmailAccess(){
     return [
-        'host' => 'smtp-relay.gmail.com',// localhost, smtp.gmail.com, smtp-relay.gmail.com
+        'host' => 'localhost',// localhost, smtp.gmail.com, smtp-relay.gmail.com
         'username' => 'backoffice@theeuphoriagroup.com',
         'password' => 'wdyj jjji wtdk hnef',
         'secure' => 'tls',//ssl, tls
         'port' => '587',//465, 587
-        'auth' => false, //true
+        'auth' => true, //true
     ];
 }
