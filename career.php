@@ -99,11 +99,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             $gmailAccess = gmailAccess();
             
-            $mail->isSMTP();
+            $mail->isMail();
             $mail->Host = $gmailAccess['host'];
             $mail->SMTPOptions = [
-                'socket' => [
-                    'bindto' => '0.0.0.0:0'
+                // 'socket' => [
+                //     'bindto' => '0.0.0.0:0'
+                // ],
+                'ssl' => [
+                    'verify_peer' => false,
+                    'verify_peer_name' => false,
+                    'allow_self_signed' => true
                 ]
             ];
             $mail->SMTPAuth   = $gmailAccess['auth'];
