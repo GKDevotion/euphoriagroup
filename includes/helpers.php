@@ -33,6 +33,7 @@ function getBaseUrl() {
 
 function gmailAccess(){
     return [
+        'host' => 'localhost',// localhost, smtp.gmail.com
         'username' => 'backoffice@theeuphoriagroup.com',
         'password' => 'wdyj jjji wtdk hnef',
         'secure' => 'ssl',//ssl, tls
