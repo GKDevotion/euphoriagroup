@@ -113,13 +113,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             ];
             $mail->SMTPAuth   = $gmailAccess['auth'];
             $mail->SMTPDebug = 2;
-            $mail->Username   = $gmailAccess['username'];//'gk@devotiontech.io';
-            $mail->Password   = $gmailAccess['password'];//'fkpj uhwr xslz xdlf';
+            $mail->Username   = $gmailAccess['username'];//hr@theeuphoriagroup.com
+            $mail->Password   = $gmailAccess['password'];
             $mail->SMTPSecure = $gmailAccess['secure'];//'tls';
             $mail->Port = $gmailAccess['port'];//587;
 
-            $mail->setFrom('gk@devotiontech.io', 'New Career Form Submission: '.$service.' ('.$first_name.' '.$last_name.')');
-            $mail->addAddress('gk@devotiontech.io');
+            $mail->setFrom('hr@theeuphoriagroup.com', 'New Career Form Submission: '.$service.' ('.$first_name.' '.$last_name.')');
+            $mail->addAddress('hr@theeuphoriagroup.com');
 
             // Attach uploaded file
             $mail->addAttachment($upload_path);
