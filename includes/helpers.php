@@ -36,8 +36,8 @@ function gmailAccess(){
         'host' => 'smtp-relay.gmail.com',// localhost, smtp.gmail.com, smtp-relay.gmail.com
         'username' => 'backoffice@theeuphoriagroup.com',
         'password' => 'wdyj jjji wtdk hnef',
-        'secure' => 'ssl',//ssl, tls
-        'port' => '465',//465, 587
+        'secure' => 'tls',//ssl, tls
+        'port' => '587',//465, 587
         'auth' => false, //true
     ];
 }
