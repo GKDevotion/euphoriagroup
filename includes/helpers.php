@@ -37,5 +37,5 @@ function gmailAccess(){
         'password' => 'wdyj jjji wtdk hnef',
         'secure' => 'tls',//ssl
         'port' => '587'//465
-    ]
+    ];
 }
