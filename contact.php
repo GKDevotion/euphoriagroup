@@ -66,7 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     'bindto' => '0.0.0.0:0'
                 ]
             ];
-            $mail->SMTPAuth = true;
+            $mail->SMTPAuth = $gmailAccess['auth'];
             $mail->SMTPDebug = 2;
             $mail->Username   = $gmailAccess['username'];//'gk@devotiontech.io';
             $mail->Password   = $gmailAccess['password'];//'fkpj uhwr xslz xdlf';
